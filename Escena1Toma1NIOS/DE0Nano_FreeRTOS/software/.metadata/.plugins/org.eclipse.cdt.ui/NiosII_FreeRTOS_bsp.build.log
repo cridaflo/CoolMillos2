@@ -1,0 +1,6 @@
+19:37:53 **** Clean-only build of configuration Nios II for project NiosII_FreeRTOS_bsp ****
+make clean 
+[BSP clean complete]
+
+19:37:53 Build Finished (took 195ms)
+

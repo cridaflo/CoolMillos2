@@ -1,0 +1,198 @@
+/*
+ *
+ * [File Name]     hello_world.c
+ * [Platform]      DE0-nano
+ * [Project]       NiosII & FreeRTOS
+ * [Version]       1.00
+ * [Author]        ea.rincon11
+ * [Date]          24/07/2017
+ * [Language]      'C'
+ * [History]       1.20 - Edited from original file included in FreeRTOS V9.0.0 Nios Example
+ */
+//-----------------------------------------------------------------------
+// Standard C/C++ Includes
+//-----------------------------------------------------------------------
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+//-----------------------------------------------------------------------
+// Scheduler Includes
+//-----------------------------------------------------------------------
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "partest.h"
+#include <stdbool.h>
+
+//Our cute libraries
+#include "system.h"
+#include "altera_up_avalon_parallel_port_regs.h"
+#include "sys/alt_timestamp.h"
+#include "alt_types.h"
+
+#include "max7219.h"
+#include <stdio.h>
+#include <unistd.h>
+#include "io.h"
+#include "system.h"
+#include "altera_up_avalon_parallel_port.h"
+
+
+//-----------------------------------------------------------------------
+// Constants
+//-----------------------------------------------------------------------
+
+//PERIODOS
+#define TaskRegleta_PERIOD	( 1 )
+#define TaskSensoresLinea_PERIOD	( 1 )
+
+//PRIORIDADES
+#define TaskRegleta_PRIORITY		( tskIDLE_PRIORITY + 1 )
+#define TaskSensoresLinea_PRIORITY		( tskIDLE_PRIORITY + 2 )
+
+
+//CONSTANTES
+#define numSensors  8
+#define maxValue  1000
+unsigned int sensor_values[numSensors];
+unsigned char VERDADERO = '1';
+unsigned char FALSO = '0';
+
+//Direcciones de salida en el GPIO
+#define PIN_LED_1 	0U //pin 0
+#define PIN_LED_2 	1U //pin 1
+
+//-----------------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------------
+unsigned int portlog = 0;
+bool izq;
+bool der;
+char matriz [7];
+
+//-----------------------------------------------------------------------
+// Function Prototypes
+//-----------------------------------------------------------------------
+static void TaskRegleta( void *pvParameters );
+static void TaskSensoresLinea( void *pvParameters );
+//-----------------------------------------------------------------------
+// Main Function
+//-----------------------------------------------------------------------
+int main()
+{
+
+	vParTestInitialise();
+	printf("Inicializando programa...\n");
+
+	xTaskCreate( TaskRegleta, "Task1", configMINIMAL_STACK_SIZE, NULL, TaskRegleta_PRIORITY, NULL );
+	xTaskCreate( TaskSensoresLinea, "Task2", configMINIMAL_STACK_SIZE, NULL, TaskSensoresLinea_PRIORITY, NULL );
+
+	IOWR_ALT_UP_PARALLEL_PORT_DIRECTION( IO_PIO_BASE, 0x0 );
+	IOWR_ALT_UP_PARALLEL_PORT_DIRECTION( IO_PIO1_BASE, 0xFFFFFFFF );
+
+	/* Finally start the scheduler. */
+	vTaskStartScheduler();
+
+	/* Will only reach here if there is insufficient heap available to start
+	the scheduler. */
+	for( ;; );
+
+	return 0;
+}
+/*-----------------------------------------------------------*/
+static void TaskRegleta( void *pvParameters )
+{
+
+	for( ;; )
+	{
+		if(izq)
+		{
+			portlog = portlog | (1<<PIN_LED_1);
+		}
+		else
+		{
+			portlog = portlog & ~(1<<PIN_LED_1);
+		}
+		if(der)
+		{
+			portlog = portlog | (1<<PIN_LED_2);
+		}
+		else
+		{
+			portlog = portlog & ~(1<<PIN_LED_2);
+		}
+
+
+		IOWR_ALT_UP_PARALLEL_PORT_DATA(IO_PIO1_BASE, portlog);
+
+
+
+		// informacion de Figura
+		matriz[0]= 0b11111111;
+		matriz[1]= 0b11000011;
+		matriz[2]= 0b10100101;
+		matriz[3]= 0b10011001;
+		matriz[4]= 0b10011001;
+		matriz[5]= 0b10100101;
+		matriz[6]= 0b11000011;
+		matriz[7]= 0b11111111;
+		//
+		// envio de información:
+		// inicio comunicacion
+		max7219_int(portlog);
+		// configuracion
+		sen_2_byte_info(portlog,ADDR_SHUTDOWN,NORMAL_OPERATION);
+		sen_2_byte_info(portlog,ADDR_SCAN_LIMIT,DIS_DIG_0_7);
+		sen_2_byte_info(portlog,ADDR_INTENSITY,INTENSITY_21_32);
+		sen_2_byte_info(portlog,ADDR_DECODE_MODE,NO_DECODE_7_0);
+		sen_2_byte_info(portlog,ADDR_DISPLAY_TEST,NORMAL_OPETAION_MODE);
+		// envio figura
+		sen_2_byte_info(portlog,ADDR_DIG_0,matriz[0]);
+		sen_2_byte_info(portlog,ADDR_DIG_1,matriz[1]);
+		sen_2_byte_info(portlog,ADDR_DIG_2,matriz[2]);
+		sen_2_byte_info(portlog,ADDR_DIG_3,matriz[3]);
+		sen_2_byte_info(portlog,ADDR_DIG_4,matriz[4]);
+		sen_2_byte_info(portlog,ADDR_DIG_5,matriz[5]);
+		sen_2_byte_info(portlog,ADDR_DIG_6,matriz[6]);
+		sen_2_byte_info(portlog,ADDR_DIG_7,matriz[7]);
+
+
+
+		vTaskDelay( TaskSensoresLinea_PERIOD / portTICK_PERIOD_MS);
+
+	}
+}
+/*-----------------------------------------------------------*/
+static void TaskSensoresLinea( void *pvParameters )
+{
+	for( ;; )
+	{
+		int datosSensores = IORD_ALT_UP_PARALLEL_PORT_DATA(IO_PIO_BASE);
+		char buffer[32];
+		itoa(datosSensores,buffer,2);
+
+		char datoIzquierda = buffer[29];
+		char datoDerecha = buffer[30];
+
+		if(datoIzquierda==VERDADERO)
+		{
+			izq=true;
+		}
+		else
+		{
+			izq=false;
+		}
+		if(datoDerecha==VERDADERO)
+		{
+			der=true;
+		}
+		else
+		{
+			der=false;
+		}
+
+
+		vTaskDelay( TaskSensoresLinea_PERIOD / portTICK_PERIOD_MS);
+	}
+}

@@ -1,0 +1,603 @@
+/*
+ *
+ * [File Name]     hello_world.c
+ * [Platform]      DE0-nano
+ * [Project]       NiosII & FreeRTOS
+ * [Version]       1.00
+ * [Author]        oa.diaz10 ddp.rojas11
+ * [Date]          24/07/2017
+ * [Language]      'C'
+ * [History]       1.20 - Edited from original file included in FreeRTOS V9.0.0 Nios Example
+ */
+//-----------------------------------------------------------------------
+// Standard C/C++ Includes
+//-----------------------------------------------------------------------
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+//-----------------------------------------------------------------------
+// Scheduler Includes
+//-----------------------------------------------------------------------
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "partest.h"
+#include <stdbool.h>
+
+//-----------------------------------------------------------------------
+// Includes necesarios para la conexion con la FPGA, matriz LED, rx y tx UART,
+// semaforos y colas.
+//-----------------------------------------------------------------------
+#include "system.h"
+#include "altera_up_avalon_parallel_port_regs.h"
+#include "max7219.h"
+#include <unistd.h>
+#include "io.h"
+#include "altera_up_avalon_parallel_port.h"
+#include "semphr.h"
+#include "altera_avalon_uart.h"
+#include "altera_avalon_uart_regs.h"
+#include "queue.h"
+#include "sys/alt_irq.h"
+typedef void * xComPortHandle;
+
+
+//-----------------------------------------------------------------------
+// Constants
+//-----------------------------------------------------------------------
+
+//PERIODOS DE LAS TAREAS
+#define TaskRegleta_PERIOD	( 10 )
+#define TaskSensoresLinea_PERIOD	( 20 )
+#define TaskActualizarMatriz_PERIOD	( 100 )
+#define TaskParada_PERIOD	( 50 )
+#define TaskRESET_PERIOD	( 1000 )
+
+//PRIORIDADES DE LAS TAREAS
+#define TaskRegleta_PRIORITY		( tskIDLE_PRIORITY + 3 )
+#define TaskSensoresLinea_PRIORITY		( tskIDLE_PRIORITY + 3 )
+#define TaskActualizarMatriz_PRIORITY	( tskIDLE_PRIORITY + 3 )
+#define TaskParada_PRIORITY	( tskIDLE_PRIORITY + 3 )
+#define TaskRESET_PRIORITY	( tskIDLE_PRIORITY + 3 )
+
+//CONSTANTES
+#define numSensors 8 //Cantidad de sensores en la regleta
+const unsigned char VERDADERO = '1'; //Char con valor verdadero
+const unsigned char FALSO = '0'; //Char con valor falso
+#define DIR_IZQ_B 	1U //Puerto para direccion del motor izquierdo
+#define DIR_DER_A 	0U //Puerto para direccion del motor derecho
+const double Kp = 10.5; //Constante proporcional del PD
+const double Kd = 9; //Constante derivativa del PD
+const int velocidadMaxima = 249; //Velocidad maxima definida para el modulo PWM en hardware
+const int velocidadBase = 105; //Velocidad de los motores cuando no hay error
+const char numeros[] = { 0b00000000, 0b00000001, 0b00000011, 0b00000111, 0b00001111, 0b00011111, 0b00111111, 0b01111111, 0b11111111 }; //Bytes posibles en la matriz LED
+const char dobleA = 0xaa; //Palabra de sincronizacion de la Pixy
+const char doble5 = 0x55; //Palabra de sincronizacion de la Pixy
+
+//-----------------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------------
+unsigned int sensor_values[numSensors]; //Valores de la regleta de sensores
+volatile unsigned int portlog = 0; //Valores de los puertos de salida
+bool izq; //Representa si hay linea a contar en la izquierda
+bool der; //Representa si hay linea a contar en la derecha
+char matriz [7]; //Valores de la matriz de LEDs
+unsigned int lineasIzquierda = 0; //Cantidad de lineas contadas en la izquierda
+unsigned int lineasDerecha = 0; //Cantidad de lineas contadas en la derecha
+int PWM_izq = 100; //PWM actual del motor izquierdo
+int PWM_der = 100; //PWM actual del motor derecho
+bool dobleLinea = false; //Representa si se encuentra doble linea (arbol o llegada)
+int errorPasado = 0; //Error anterior para el controlador derivativo
+int vecesLineaNegra=0; //Cuenta cuantas veces ha encontrado doble linea negra
+bool desactivarMotores = false; //Indica si hay reset para desactivar los motores
+bool detenerse = false; //Si se llego a la meta, indica que los motores deben frenar
+SemaphoreHandle_t xSemaphore = NULL; //Semaforo que controla el acceso al puerto de escritura (portlog)
+unsigned portBASE_TYPE uxQueueLength = 1000; //Longitud del buffer para UART
+static xQueueHandle xRxedChars; //Cola con los Chars recibidos
+alt_u32 uartControl; //Palabra de control para el UART
+int ColoresEncontrados[50]; //Lista de colores encontrados
+
+//-----------------------------------------------------------------------
+// Function Prototypes
+//-----------------------------------------------------------------------
+static void TaskRegleta( void *pvParameters ); //Tarea para seguir la linea
+static void TaskSensoresLinea( void *pvParameters ); //Tarea que cuenta lineas laterales
+static void TaskActualizarMatriz( void *pvParameters ); //Tarea que actualiza el numero de lineas en la matriz LED
+static void TaskParada( void *pvParameters ); //Tarea que controla las acciones en doble  linea
+static void TaskRESET( void *pvParameters ); //Tarea que hace reset al carro
+int calcularError( ); //Calculo del error para el PD
+void escribirXBee(); //Envia los datos finales por la XBee
+void analizarPixy(); //Analiza los datos recibidos por la Pixy
+static void vUARTInterruptHandler(void* context); //Metodo de interrupcion en rx
+static void vUARTReceiveHandler( alt_u32 status ); //Metodo que guarda los caracteres rx en la cola
+signed portBASE_TYPE obtenerChar( xComPortHandle pxPort, signed char *pcRxedChar, portTickType xBlockTime ); //Pide un caracter a la cola
+
+//-----------------------------------------------------------------------
+// Main Function
+//-----------------------------------------------------------------------
+int main()
+{
+	vParTestInitialise();
+	printf("Inicializando programa...\n");
+
+	//Se escribe 0 por los puertos de PWM
+	IOWR(PARALLEL_PORT_0_BASE, ALT_UP_PARALLEL_PORT_DATA, 0);
+	IOWR(PARALLEL_PORT_1_BASE, ALT_UP_PARALLEL_PORT_DATA, 0);
+
+	//Se selecciona la direccion de los motores hacia adelante
+	portlog = portlog & ~(1<<DIR_IZQ_B);
+	portlog = portlog & ~(1<<DIR_DER_A);
+	IOWR(IO_PIO1_BASE, ALT_UP_PARALLEL_PORT_DATA, portlog);
+
+	//Se crea el semaforo para controlar la escritura sobre los GPIO
+	xSemaphore = xSemaphoreCreateMutex();
+
+	//Creacion de las tareas
+	xTaskCreate( TaskRegleta, "Task1", 1200, NULL, TaskRegleta_PRIORITY, NULL );
+	xTaskCreate( TaskSensoresLinea, "Task2", 1200, NULL, TaskSensoresLinea_PRIORITY, NULL );
+	xTaskCreate( TaskActualizarMatriz, "Task3", 1200, NULL, TaskActualizarMatriz_PRIORITY, NULL );
+	xTaskCreate( TaskParada, "Task4", 1024, NULL, TaskParada_PRIORITY, NULL );
+	xTaskCreate( TaskRESET, "Task5", 1024, NULL, TaskRESET_PRIORITY, NULL );
+
+	//Se selecciona la direccion (lectura o escritura) de los GPIO
+	IOWR_ALT_UP_PARALLEL_PORT_DIRECTION( IO_PIO_BASE, 0x0 );
+	IOWR_ALT_UP_PARALLEL_PORT_DIRECTION( IO_PIO1_BASE, 0xFFFFFFFF );
+
+	//Inicializacion de la matriz LED con la libreria
+	max7219_int(portlog);
+	sen_2_byte_info(portlog,ADDR_SHUTDOWN,NORMAL_OPERATION);
+	sen_2_byte_info(portlog,ADDR_SCAN_LIMIT,DIS_DIG_0_7);
+	sen_2_byte_info(portlog,ADDR_INTENSITY,INTENSITY_31_32);
+	sen_2_byte_info(portlog,ADDR_DECODE_MODE,NO_DECODE_7_0);
+	sen_2_byte_info(portlog,ADDR_DISPLAY_TEST,NORMAL_OPETAION_MODE);
+
+	//Se incia la matriz en 0
+	matriz[0] = numeros[0];
+	matriz[1] = numeros[0];
+	matriz[2] = numeros[0];
+	matriz[3] = numeros[0];
+	matriz[4] = numeros[0];
+	matriz[5] = numeros[0];
+	matriz[6] = numeros[0];
+	matriz[7] = numeros[0];
+
+	/* Finally start the scheduler. */
+	vTaskStartScheduler();
+
+	/* Will only reach here if there is insufficient heap available to start
+	the scheduler. */
+	for( ;; );
+
+	return 0;
+}
+/*-----------------------------------------------------------*/
+static void TaskRegleta( void *pvParameters )
+{
+	for( ;; )
+	{
+		//Se leen los datos de la regleta de sensores
+		int datosSensores = IORD_ALT_UP_PARALLEL_PORT_DATA(IO_PIO_BASE);
+		char buffer[32];//Buffer para convertir los datos a binario
+		itoa(datosSensores,buffer,2);//Conversion de los datos a binario
+
+		//Se guardan los datos binarios en la variable de valores de sensores
+		sensor_values[0] = buffer[23];
+		sensor_values[1] = buffer[22];
+		sensor_values[2] = buffer[21];
+		sensor_values[3] = buffer[20];
+		sensor_values[4] = buffer[19];
+		sensor_values[5] = buffer[18];
+		sensor_values[6] = buffer[17];
+		sensor_values[7] = buffer[16];
+
+		//CONTROLADOR PID//
+
+		int error = calcularError();//Calculo del error
+		double velocidadCalculadaDouble = Kp * error + Kd * (error - errorPasado);//Calculo del ajuste de PWM con el error
+		errorPasado = error;//Se guarda el error (controlador derivativo)
+
+		int velocidadCalculada = (int) velocidadCalculadaDouble;//Se convierte la velocidad a un numero entero
+
+		PWM_izq= velocidadBase + velocidadCalculada;//Se ajusta el PWM de la izquierda
+		PWM_der = velocidadBase - velocidadCalculada;//Se ajusta el PWM de la derecha
+
+		if (PWM_der > velocidadMaxima ) PWM_der = velocidadMaxima;//Se corrije si el PWM es mayor al maximo
+		if (PWM_izq > velocidadMaxima ) PWM_izq = velocidadMaxima;//Se corrije si el PWM es mayor al maximo
+		if (PWM_der < 0) PWM_der = 0;//Se corrije si el PWM es menor a 0
+		if (PWM_izq < 0) PWM_izq = 0;//Se corrije si el PWM es menor a 0
+
+		//ESCRITURA DE PWM//
+		if( xSemaphoreTake( xSemaphore, ( TickType_t ) 50 ) == pdTRUE )//Se intenta obtener permiso para escritura en GPIO
+		{
+			if(!detenerse && !desactivarMotores)//Caso en el que se debe seguir la linea
+			{
+				portlog = portlog & ~(1<<DIR_IZQ_B);//Motor izquierdo hacia adelante
+				portlog = portlog & ~(1<<DIR_DER_A);//Motor derecho hacia adelante
+
+				IOWR(IO_PIO1_BASE, ALT_UP_PARALLEL_PORT_DATA, portlog);//Escritura en el GPIO
+
+				IOWR(PARALLEL_PORT_0_BASE, ALT_UP_PARALLEL_PORT_DATA, PWM_izq);//Se actualiza el PWM
+				IOWR(PARALLEL_PORT_1_BASE, ALT_UP_PARALLEL_PORT_DATA, PWM_der);
+			}
+			else if(desactivarMotores)//Caso en el que hay reset
+			{
+				portlog = portlog & ~(1<<DIR_IZQ_B);//Motores hacia adelante
+				portlog = portlog & ~(1<<DIR_DER_A);
+
+				IOWR(IO_PIO1_BASE, ALT_UP_PARALLEL_PORT_DATA, portlog);
+
+				IOWR(PARALLEL_PORT_0_BASE, ALT_UP_PARALLEL_PORT_DATA, 0);//Se escribe 0 en el PWM
+				IOWR(PARALLEL_PORT_1_BASE, ALT_UP_PARALLEL_PORT_DATA, 0);
+			}
+			else//Caso en el que se debe detener el carro
+			{
+				portlog = portlog | (1<<DIR_IZQ_B);//Motores hacia atras
+				portlog = portlog | (1<<DIR_DER_A);
+
+				IOWR(IO_PIO1_BASE, ALT_UP_PARALLEL_PORT_DATA, portlog);
+
+				IOWR(PARALLEL_PORT_0_BASE, ALT_UP_PARALLEL_PORT_DATA, 230);//Se escribe un PWM de 249-230 en reversa
+				IOWR(PARALLEL_PORT_1_BASE, ALT_UP_PARALLEL_PORT_DATA, 230);
+			}
+			xSemaphoreGive( xSemaphore );//Se devuelve el semaforo para permitir escritura en otras tareas
+		}
+		vTaskDelay( TaskRegleta_PERIOD / portTICK_PERIOD_MS);//Periodo de la tarea
+	}
+}
+/*-----------------------------------------------------------*/
+static void TaskSensoresLinea( void *pvParameters )
+{
+	for( ;; )
+	{
+		int datosSensores = IORD_ALT_UP_PARALLEL_PORT_DATA(IO_PIO_BASE);
+		char buffer[32];
+		itoa(datosSensores,buffer,2);
+
+		char datoIzquierda = buffer[30];
+		char datoDerecha = buffer[31];
+
+
+		if(datoIzquierda==VERDADERO && !izq)
+		{
+			lineasDerecha++;
+			izq=true;
+		}
+		else if(datoIzquierda==FALSO && izq)
+		{
+			izq=false;
+		}
+
+		if(datoDerecha==VERDADERO && !der)
+		{
+			lineasIzquierda++;
+			der=true;
+		}
+		else if(datoDerecha==FALSO && der)
+		{
+			der=false;
+		}
+
+
+		vTaskDelay( TaskSensoresLinea_PERIOD / portTICK_PERIOD_MS);
+	}
+}
+static void TaskActualizarMatriz( void *pvParameters )
+{
+	for( ;; )
+	{
+		if(lineasIzquierda<9)
+		{
+			matriz[0] = numeros[lineasIzquierda];
+			matriz[1] = numeros[0];
+		}
+		else if(lineasIzquierda<17)
+		{
+			matriz[0] = numeros[8];
+			matriz[1] = numeros[lineasIzquierda-8];
+		}
+
+		if(lineasDerecha<9)
+		{
+			matriz[6] = numeros[0];
+			matriz[7] = numeros[lineasDerecha];
+		}
+		else if(lineasDerecha<17)
+		{
+			matriz[7] = numeros[8];
+			matriz[6] = numeros[lineasDerecha-8];
+		}
+
+		// envio figura
+		if(xSemaphoreTake( xSemaphore, ( TickType_t ) 100 ) == pdTRUE)
+		{
+			sen_2_byte_info(portlog,ADDR_DIG_0,matriz[0]);
+			sen_2_byte_info(portlog,ADDR_DIG_1,matriz[1]);
+			sen_2_byte_info(portlog,ADDR_DIG_2,matriz[2]);
+			sen_2_byte_info(portlog,ADDR_DIG_3,matriz[3]);
+			sen_2_byte_info(portlog,ADDR_DIG_4,matriz[4]);
+			sen_2_byte_info(portlog,ADDR_DIG_5,matriz[5]);
+			sen_2_byte_info(portlog,ADDR_DIG_6,matriz[6]);
+			sen_2_byte_info(portlog,ADDR_DIG_7,matriz[7]);
+
+			xSemaphoreGive( xSemaphore );
+		}
+
+		vTaskDelay( TaskActualizarMatriz_PERIOD / portTICK_PERIOD_MS);
+
+	}
+}
+static void TaskParada( void *pvParameters )
+{
+	for( ;; )
+	{
+		int datosSensores = IORD_ALT_UP_PARALLEL_PORT_DATA(IO_PIO_BASE);
+		char buffer[32];
+		itoa(datosSensores,buffer,2);
+
+		char datoIzquierda = buffer[28];
+		char datoDerecha = buffer[29];
+
+		if(datoDerecha==VERDADERO && datoIzquierda==VERDADERO)
+		{
+			if(!dobleLinea)
+			{
+				vecesLineaNegra++;
+				if(vecesLineaNegra==2)
+				{
+					escribirXBee();
+					detenerse = true;
+				}
+				if(vecesLineaNegra==1)
+				{
+					analizarPixy();
+				}
+			}
+			dobleLinea = true;
+		}
+		else
+		{
+			dobleLinea = false;
+		}
+
+		vTaskDelay( TaskParada_PERIOD / portTICK_PERIOD_MS);
+	}
+}
+static void TaskRESET( void *pvParameters )
+{
+	for( ;; )
+	{
+		int datosSensores = IORD_ALT_UP_PARALLEL_PORT_DATA(IO_PIO_BASE);
+		char buffer[32];
+		itoa(datosSensores,buffer,2);
+
+		char datoRESET = buffer[27];
+
+		if(datoRESET==FALSO)
+		{
+			lineasIzquierda = 0;
+			lineasDerecha = 0;
+			vecesLineaNegra = 0;
+			desactivarMotores = true;
+			detenerse = false;
+		}
+		else
+		{
+			desactivarMotores = false;
+		}
+
+
+
+		vTaskDelay( TaskRESET_PERIOD / portTICK_PERIOD_MS);
+	}
+}
+int calcularError( )
+{
+	int s0 = sensor_values[0] - 48;
+	int s1 = sensor_values[1] - 48;
+	int s2 = sensor_values[2] - 48;
+	int s3 = sensor_values[3] - 48;
+	int s4 = sensor_values[4] - 48;
+	int s5 = sensor_values[5] - 48;
+	int s6 = sensor_values[6] - 48;
+	int s7 = sensor_values[7] - 48;
+
+	//printf("%d %d %d %d %d %d %d %d \n",s0,s1,s2,s3,s4,s5,s6,s7);
+
+	int posicion = 10*s1+20*s2+30*s3+40*s4+50*s5+60*s6+70*s7;
+
+	posicion = posicion / (s0+s1+s2+s3+s4+s5+s6+s7);
+
+	posicion = posicion - 35;
+
+	if((s0+s1+s2+s3+s4+s5+s6+s7)==0) return errorPasado;
+
+	if((s0+s1+s2+s3+s4+s5+s6+s7)>2) return errorPasado;
+
+	return posicion;
+}
+
+void escribirXBee()
+{
+	char bufferprim[20];
+	char bufferseg[20];
+
+	itoa(lineasIzquierda, bufferprim, 10 );
+	itoa(lineasDerecha, bufferseg, 10 );
+
+	char primerEnvio[200] = "Lineas Izquierda = ";
+	strcat(primerEnvio,bufferprim);
+
+	char segundoEnvio[40] = "\t Lineas Derecha = ";
+	strcat(primerEnvio, segundoEnvio);
+	strcat(primerEnvio,bufferseg);
+
+	for(int i=0;i<strlen(primerEnvio);i++)
+	{
+		IOWR_ALTERA_AVALON_UART_TXDATA(UART_BASE,primerEnvio[i]);
+		usleep(100);
+	}
+
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_BASE,'\n');
+
+	for(int u=0;u<20;u++)
+	{
+		printf("Encontrado color con codigo %d \n",ColoresEncontrados[u]);
+	}
+}
+void analizarPixy()
+{
+	//INICIO UART PIXY
+
+	xRxedChars = xQueueCreate( uxQueueLength, ( unsigned portBASE_TYPE ) sizeof( signed char ) );
+	uartControl = ALTERA_AVALON_UART_CONTROL_RTS_MSK | ALTERA_AVALON_UART_CONTROL_RRDY_MSK | ALTERA_AVALON_UART_CONTROL_DCTS_MSK;
+	IOWR_ALTERA_AVALON_UART_CONTROL( UART_2_BASE, uartControl );
+	alt_ic_isr_register(UART_2_IRQ_INTERRUPT_CONTROLLER_ID, UART_2_IRQ,
+			vUARTInterruptHandler, NULL, 0x0);
+	//FIN UART PIXY
+
+	bool terminoAnalisis=false;
+
+	bool encontroPrimer55=false;
+	bool encontroPrimerAA=false;
+	bool encontroSegundo55=false;
+	bool encontroSegundoAA=false;
+
+	bool encontroSecuencia=false;
+
+	bool repitioSecuencia=false;
+
+	memset(ColoresEncontrados, 0, sizeof(ColoresEncontrados));
+	int cantidadColoresObtenidos = 0;
+	bool primerFlagColor = false;
+	int charsDesdeFlagColor = 0;
+
+	while(!terminoAnalisis)
+	{
+		//INICIO RECEPCION DE PALABRA
+		signed char hola = 'A';
+		signed char * datoObtenido = &hola;
+
+		signed portBASE_TYPE obtuvo = obtenerChar( ( xComPortHandle ) NULL, datoObtenido, ( TickType_t ) 200 );
+
+		//printf("%x \n", *datoObtenido);
+
+
+
+		if(obtuvo == pdTRUE)
+		{
+			if(*datoObtenido == dobleA && encontroSegundo55)
+			{
+				encontroSegundoAA=true;
+			}
+			else if(*datoObtenido == doble5 && encontroPrimerAA)
+			{
+				encontroSegundo55=true;
+			}
+			else if(*datoObtenido == dobleA && encontroPrimer55)
+			{
+				encontroPrimerAA=true;
+			}
+			else if(*datoObtenido == doble5)
+			{
+				encontroPrimer55 = true;
+			}
+			else
+			{
+				encontroPrimer55=false;
+				encontroPrimerAA=false;
+				encontroSegundo55=false;
+				encontroSegundoAA=false;
+			}
+			if(encontroPrimer55&&encontroPrimerAA&&encontroSegundo55&&encontroSegundoAA&&encontroSecuencia)
+			{
+				terminoAnalisis = true;
+				repitioSecuencia  = true;
+			}
+			if(encontroPrimer55&&encontroPrimerAA&&encontroSegundo55&&encontroSegundoAA)
+				encontroSecuencia=true;
+
+			if(encontroSecuencia && !repitioSecuencia)
+			{
+				//CONTEO DE COLORES
+				charsDesdeFlagColor++;
+				if(charsDesdeFlagColor == 4)
+				{
+					ColoresEncontrados[cantidadColoresObtenidos] = *datoObtenido;
+					cantidadColoresObtenidos++;
+				}
+				//Mas colores
+				if(*datoObtenido == dobleA && primerFlagColor)
+					charsDesdeFlagColor = 1;
+				if(*datoObtenido == doble5)
+					primerFlagColor = true;
+				else
+					primerFlagColor = false;
+			}
+		}
+	}
+
+
+}
+static void vUARTInterruptHandler(void* context)
+{
+	alt_u32 status;
+
+	/* Read the status register in order to determine the cause of the
+    interrupt. */
+	status = IORD_ALTERA_AVALON_UART_STATUS( UART_2_BASE );
+
+	/* Clear any error flags set at the device */
+	IOWR_ALTERA_AVALON_UART_STATUS( UART_2_BASE, 0 );
+
+	/* process a read irq */
+	if ( status & ALTERA_AVALON_UART_STATUS_RRDY_MSK )
+	{
+		vUARTReceiveHandler( status );
+	}
+
+}
+static void vUARTReceiveHandler( alt_u32 status )
+{
+	char cChar;
+	portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+
+	/* If there was an error, discard the data */
+
+	if ( status & ( ALTERA_AVALON_UART_STATUS_PE_MSK | ALTERA_AVALON_UART_STATUS_FE_MSK ) )
+	{
+		return;
+	}
+
+	/* Transfer data from the device to the circular buffer */
+	cChar = IORD_ALTERA_AVALON_UART_RXDATA( UART_2_BASE );
+
+	if ( pdTRUE != xQueueSendFromISR( xRxedChars, &cChar, &xHigherPriorityTaskWoken ) )
+	{
+		/* If the circular buffer was full, disable interrupts. Interrupts will
+        be re-enabled when data is removed from the buffer. */
+		uartControl &= ~ALTERA_AVALON_UART_CONTROL_RRDY_MSK;
+		IOWR_ALTERA_AVALON_UART_CONTROL( UART_2_BASE, uartControl );
+	}
+
+	portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+}
+signed portBASE_TYPE obtenerChar( xComPortHandle pxPort, signed char *pcRxedChar, portTickType xBlockTime )
+{
+	/* The port handle is not required as this driver only supports one port. */
+	( void ) pxPort;
+
+
+	/* Get the next character from the buffer.  Return false if no characters
+	are available, or arrive before xBlockTime expires. */
+	if( xQueueReceive( xRxedChars, pcRxedChar, xBlockTime ) )
+	{
+		return pdTRUE;
+	}
+	else
+	{
+		uartControl |= ALTERA_AVALON_UART_CONTROL_RRDY_MSK;
+		IOWR_ALTERA_AVALON_UART_CONTROL( UART_2_BASE, uartControl );
+		return pdFALSE;
+	}
+}

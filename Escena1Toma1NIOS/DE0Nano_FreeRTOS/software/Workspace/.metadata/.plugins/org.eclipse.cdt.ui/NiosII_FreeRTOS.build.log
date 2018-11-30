@@ -1,0 +1,18 @@
+16:18:01 **** Incremental Build of configuration Nios II for project NiosII_FreeRTOS ****
+make all 
+Info: Building ../NiosII_FreeRTOS_bsp/
+C:/intelFPGA_lite/17.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../NiosII_FreeRTOS_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../NiosII_FreeRTOS_bsp//HAL/inc -I../NiosII_FreeRTOS_bsp/ -I../NiosII_FreeRTOS_bsp//drivers/inc -IFreeRTOS -IFreeRTOS/Common_Demo_Tasks -IFreeRTOS/Common_Demo_Tasks/include -IFreeRTOS/Source -IFreeRTOS/Source/include -IFreeRTOS/Source/portable/MemMang -IFreeRTOS/Source/portable/GCC/NiosII -IFreeRTOS/ParTest -I../NiosII_FreeRTOS_bsp -I../NiosII_FreeRTOS_bsp/HAL -I../NiosII_FreeRTOS_bsp/HAL/src -I../NiosII_FreeRTOS_bsp/HAL/inc -I../NiosII_FreeRTOS_bsp/drivers -I../NiosII_FreeRTOS_bsp/drivers/inc -I../NiosII_FreeRTOS_bsp/drivers/src  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking NiosII_FreeRTOS.elf
+nios2-elf-g++  -T'../NiosII_FreeRTOS_bsp//linker.x' -msys-crt0='../NiosII_FreeRTOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../NiosII_FreeRTOS_bsp/   -Wl,-Map=NiosII_FreeRTOS.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o NiosII_FreeRTOS.elf obj/default/FreeRTOS/Common_Demo_Tasks/BlockQ.o obj/default/FreeRTOS/Common_Demo_Tasks/GenQTest.o obj/default/FreeRTOS/Common_Demo_Tasks/PollQ.o obj/default/FreeRTOS/Common_Demo_Tasks/QPeek.o obj/default/FreeRTOS/Common_Demo_Tasks/blocktim.o obj/default/FreeRTOS/Common_Demo_Tasks/comtest.o obj/default/FreeRTOS/Common_Demo_Tasks/countsem.o obj/default/FreeRTOS/Common_Demo_Tasks/death.o obj/default/FreeRTOS/Common_Demo_Tasks/dynamic.o obj/default/FreeRTOS/Common_Demo_Tasks/flash.o obj/default/FreeRTOS/Common_Demo_Tasks/integer.o obj/default/FreeRTOS/Common_Demo_Tasks/recmutex.o obj/default/FreeRTOS/Common_Demo_Tasks/semtest.o obj/default/FreeRTOS/ParTest/ParTest.o obj/default/FreeRTOS/Source/list.o obj/default/FreeRTOS/Source/portable/GCC/NiosII/port.o obj/default/FreeRTOS/Source/portable/MemMang/heap_2.o obj/default/FreeRTOS/Source/queue.o obj/default/FreeRTOS/Source/tasks.o obj/default/FreeRTOS/max7219.o obj/default/FreeRTOS/serial.o obj/default/hello_world.o obj/default/FreeRTOS/Source/portable/GCC/NiosII/port_asm.o -lm -msys-lib=m
+nios2-elf-insert NiosII_FreeRTOS.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x4002090 --timestamp 1509590874 --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name niosII --quartus_project_dir "C:/PROYECTO_NIOS/Escena1Toma1NIOS/DE0Nano_FreeRTOS" --jdi C:/PROYECTO_NIOS/Escena1Toma1NIOS/DE0Nano_FreeRTOS/software/NiosII_FreeRTOS_bsp/../../DE0Nano_FreeRTOS.jdi --sopcinfo C:/PROYECTO_NIOS/Escena1Toma1NIOS/DE0Nano_FreeRTOS/software/NiosII_FreeRTOS_bsp/../../niosII.sopcinfo
+Info: (NiosII_FreeRTOS.elf) 8274 KBytes program size (code + initialized data).
+Info:                       24494 KBytes free for stack + heap.
+Info: Creating NiosII_FreeRTOS.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source NiosII_FreeRTOS.elf >NiosII_FreeRTOS.objdump
+[NiosII_FreeRTOS build complete]
+
+16:18:03 Build Finished (took 2s.480ms)
+

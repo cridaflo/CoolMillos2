@@ -1,0 +1,6 @@
+DATE = "21:10:40 July 23, 2017"
+QUARTUS_VERSION = "10.1"
+
+# Revisions
+
+PROJECT_REVISION = "DE0Nano_FreeRTOS"
