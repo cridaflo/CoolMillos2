@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Dec 03 16:01:40 2018
+Analysis & Synthesis Status : Successful - Mon Dec 03 17:00:38 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : DE0Nano_FreeRTOS
 Top-level Entity Name : DE0Nano_FreeRTOS
 Family : Cyclone IV E
-Total logic elements : 4,959
-    Total combinational functions : 3,682
+Total logic elements : 4,964
+    Total combinational functions : 3,687
     Dedicated logic registers : 3,240
 Total registers : 3240
 Total pins : 128
