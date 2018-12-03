@@ -1,0 +1,106 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/03/2018 12:57:22"
+                                                                                
+// Verilog Test Bench template for design : DE0Nano_FreeRTOS
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module DE0Nano_FreeRTOS_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg CLOCK_50;
+reg [15:0] treg_DRAM_DQ;
+reg EPCS_DATA0;
+reg [33:0] treg_GPIO;
+reg [33:0] treg_GPIO_0;
+reg [1:0] GPIO_Lindo_IN;
+reg [1:0] KEY;
+reg [3:0] SW;
+// wires                                               
+wire [12:0]  DRAM_ADDR;
+wire [1:0]  DRAM_BA;
+wire DRAM_CAS_N;
+wire DRAM_CKE;
+wire DRAM_CLK;
+wire DRAM_CS_N;
+wire [15:0]  DRAM_DQ;
+wire [1:0]  DRAM_DQM;
+wire DRAM_RAS_N;
+wire DRAM_WE_N;
+wire EPCS_ASDO;
+wire EPCS_DCLK;
+wire EPCS_NCSO;
+wire [33:0]  GPIO;
+wire [33:0]  GPIO_0;
+wire [7:0]  LED;
+
+// assign statements (if any)                          
+assign DRAM_DQ = treg_DRAM_DQ;
+assign GPIO = treg_GPIO;
+assign GPIO_0 = treg_GPIO_0;
+DE0Nano_FreeRTOS i1 (
+// port map - connection between master ports and signals/registers   
+	.CLOCK_50(CLOCK_50),
+	.DRAM_ADDR(DRAM_ADDR),
+	.DRAM_BA(DRAM_BA),
+	.DRAM_CAS_N(DRAM_CAS_N),
+	.DRAM_CKE(DRAM_CKE),
+	.DRAM_CLK(DRAM_CLK),
+	.DRAM_CS_N(DRAM_CS_N),
+	.DRAM_DQ(DRAM_DQ),
+	.DRAM_DQM(DRAM_DQM),
+	.DRAM_RAS_N(DRAM_RAS_N),
+	.DRAM_WE_N(DRAM_WE_N),
+	.EPCS_ASDO(EPCS_ASDO),
+	.EPCS_DATA0(EPCS_DATA0),
+	.EPCS_DCLK(EPCS_DCLK),
+	.EPCS_NCSO(EPCS_NCSO),
+	.GPIO(GPIO),
+	.GPIO_0(GPIO_0),
+	.GPIO_Lindo_IN(GPIO_Lindo_IN),
+	.KEY(KEY),
+	.LED(LED),
+	.SW(SW)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

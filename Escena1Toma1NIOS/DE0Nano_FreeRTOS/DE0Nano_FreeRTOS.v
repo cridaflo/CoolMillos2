@@ -99,7 +99,9 @@ input 		     [1:0]		GPIO_Lindo_IN;
 
 wire [7:0] outPWMIZQ;
 wire [7:0] outPWMDER;
-
+wire [4:0] test;
+wire [33:0]GPIO_0_fake;
+wire [7:0] LED_fake;
 
 
 //=======================================================
@@ -110,6 +112,9 @@ moduloPWM PWMIZQ(0, CLOCK_50, outPWMIZQ, GPIO[32]);
 moduloPWM PWMDER(0, CLOCK_50, outPWMDER, GPIO[33]);
 
 
+moduloEstadoInfrarojo #(.TIMEOUT(16250)) izq2 (.reset(KEY[0]),  .clock(CLOCK_50),  .inSignal(GPIO_0[0]),  .outSignal(GPIO_0[1]),  .conteo(LED));
+
+
     niosII u0 (
         .clk_clk            (CLOCK_50),            //         clk.clk
 		  .nios_pwm_izq_export			(outPWMIZQ),
@@ -118,16 +123,16 @@ moduloPWM PWMDER(0, CLOCK_50, outPWMDER, GPIO[33]);
         .epcs_sce           (EPCS_NCSO),           //            .sce
         .epcs_sdo           (EPCS_ASDO),           //            .sdo
         .epcs_data0         (EPCS_DATA0),         //            .data0
-        .port_led_export    (LED),    					//    port_led.export
-		  .port_keys_export    (KEY),    					//    port_led.export
-        .port_gpio_0_export (GPIO_0[31:0]), 			// port_gpio_0.export
+        .port_led_export    (LED_fake),    					//    port_led.export
+		  .port_keys_export    (test[1:0]),    					//    port_led.export
+        .port_gpio_0_export (GPIO_0_fake[31:0]), 			// port_gpio_0.export
 		  .io_pio1_external_interface_export (GPIO[31:0]), 			// io_pio1_external_interface
 		  .ram_clk_clk        (DRAM_CLK),         //     ram_clk.clk
         .reset_reset_n      (1),      				//       reset.reset_n	  
         .uart_rxd           (GPIO_Lindo_IN[0]),           //        uart.rxd
-        .uart_txd           (GPIO_0[32]),            //            .txd
+        .uart_txd           (GPIO_0_fake[32]),            //            .txd
 		  .uart_2_rxd           (GPIO_Lindo_IN[1]),           //        uart_2.rxd
-        .uart_2_txd           (GPIO_0[33]),            //            .txd_2
+        .uart_2_txd           (GPIO_0_fake[33]),            //            .txd_2
         .sdram_addr         (DRAM_ADDR),         					  //       sdram.addr
         .sdram_ba           (DRAM_BA),           //            .ba
         .sdram_cas_n        (DRAM_CAS_N),        //            .cas_n

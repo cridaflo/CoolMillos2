@@ -1,0 +1,2369 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cd.florez10/CoolMillos2/Escena1Toma1NIOS/DE0Nano_FreeRTOS/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1543863018
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+ISzZa;[BcSYQ;CZ6JM73oU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1543862896
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_sc_fifo.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1543863018.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z7 o-vlog01compat -work niosII
+Z8 !s92 -vlog01compat -work niosII +incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules
+Z9 tCvgOpt 0
+valtera_avalon_st_clock_crosser
+Z10 !s110 1543863024
+!i10b 1
+!s100 YbU`iK^TYJ_9Hz`CZekjQ3
+Ii]=PF7_Mn7Q]0`@=0bE8I1
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v
+L0 22
+R5
+r1
+!s85 0
+31
+Z11 !s108 1543863024.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_st_handshake_clock_crosser
+Z12 !s110 1543863025
+!i10b 1
+!s100 3f<J9K;e[9FU@JKn0^PK?0
+IVK1JIO3nnzBYM:h4CP24P1
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z13 L0 24
+R5
+r1
+!s85 0
+31
+Z14 !s108 1543863025.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_irq_clock_crosser
+Z15 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R12
+!i10b 1
+!s100 h4R`cF8cBH7NA_@W;Oa@73
+IXXd9N8N8C=nB`:FLoTS1G0
+R2
+!s105 altera_irq_clock_crosser_sv_unit
+S1
+R0
+Z16 w1543862891
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_irq_clock_crosser.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_irq_clock_crosser.sv
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_irq_clock_crosser.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_irq_clock_crosser.sv|
+!i113 1
+Z17 o-sv -work niosII
+Z18 !s92 -sv -work niosII +incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules
+R9
+valtera_merlin_arb_adder
+R15
+R12
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+IE8K<z`fHiOi6AKO3acji12
+R2
+Z19 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R3
+Z20 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_arbitrator.sv
+Z21 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+R14
+Z22 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_arbitrator.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_arbitrator
+R15
+R12
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IjcY7B=cYEHVl??zV<C`KW0
+R2
+R19
+S1
+R0
+R3
+R20
+R21
+L0 103
+R5
+r1
+!s85 0
+31
+R14
+R22
+R23
+!i113 1
+R17
+R18
+R9
+valtera_merlin_burst_adapter
+R15
+R12
+!i10b 1
+!s100 OCc70X^k:B?GW6i71n`L_3
+I=UllGe9ZAfEl9fUHDPOej0
+R2
+!s105 altera_merlin_burst_adapter_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_burst_adapter_uncompressed_only
+R15
+R12
+!i10b 1
+!s100 STH]BdUM[JDMJZNJGXCd>0
+I399T<MmO2W5^V1[9RMbzX1
+R2
+!s105 altera_merlin_burst_adapter_uncmpr_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv
+L0 39
+R5
+r1
+!s85 0
+31
+R14
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_burst_uncompressor
+R15
+Z24 !s110 1543863026
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+I>>Ude1T>Ye9OFdCj8B2Db3
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+Z25 !s108 1543863026.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_master_agent
+R15
+R24
+!i10b 1
+!s100 _CJm:YX=>U2LQKH;8=@cb0
+IHQi4P]5KOjjJ=6`S=j;HI0
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_agent.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_agent.sv
+L0 28
+R5
+r1
+!s85 0
+31
+R25
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_master_translator
+R15
+R24
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+Ii8baVj:kH3@O1ehFNT2IC2
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_translator.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_translator.sv
+L0 32
+R5
+r1
+!s85 0
+31
+R25
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_slave_agent
+R15
+R24
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+IiQE^kRQm:IeZ`:^9E?J730
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_agent.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_agent.sv
+Z26 L0 34
+R5
+r1
+!s85 0
+31
+R25
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_slave_translator
+R15
+Z27 !s110 1543863027
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+IBn9nRZ@OeT^;LGb>M[C9;3
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_translator.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+Z28 !s108 1543863027.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_width_adapter
+R15
+R27
+!i10b 1
+!s100 QzdA5DP6CReOTH<9QzODa3
+IO?Fn?W8;W`on18mH06=oe0
+R2
+!s105 altera_merlin_width_adapter_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_width_adapter.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_width_adapter.sv
+L0 25
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_width_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_merlin_width_adapter.sv|
+!i113 1
+R17
+R18
+R9
+valtera_reset_controller
+R1
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+I1no`5K`L7C1_aVHma_gOZ0
+R2
+R0
+R16
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_controller.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+R6
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+Z29 !s110 1543863019
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+IS24M[Jg__@=eMl[_o201_1
+R2
+R0
+R16
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_synchronizer.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_synchronizer.v
+R13
+R5
+r1
+!s85 0
+31
+Z30 !s108 1543863019.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+valtera_std_synchronizer_nocut
+R27
+!i10b 1
+!s100 b8zV2<79GgkNg0GC<P[GJ2
+IK;3g[<6c08:ThS>PGW9nl3
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v
+L0 44
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v|
+!i113 1
+R7
+R8
+R9
+vniosII
+R1
+!i10b 1
+!s100 01LVnAoncDHOcl8D]_AWo0
+IQJCbQ3[LYeHoLfA@mKK8]2
+R2
+R0
+Z31 w1543862876
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/niosii.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/niosii.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/niosii.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/niosii.v|
+!i113 1
+R7
+!s92 -vlog01compat -work niosII +incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii
+R9
+nnios@i@i
+vniosII_cpu
+R29
+!i10b 1
+!s100 3o6=iaffRjU;[1jn]g<@>3
+I2a;bS>^k>oaUF9OAPI?9V0
+R2
+R0
+R31
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu.v
+L0 9
+R5
+r1
+!s85 0
+31
+R30
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu
+vniosII_cpu_cpu
+Z32 !s110 1543863020
+!i10b 1
+!s100 =FldLL3SbgUc<6JQc;zkQ1
+I@;jmT:IKM;P>CXA[BdUd:2
+R2
+R0
+R3
+Z33 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu.v
+Z34 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu.v
+L0 2834
+R5
+r1
+!s85 0
+31
+Z35 !s108 1543863020.000000
+Z36 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu.v|
+Z37 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu
+vniosII_cpu_cpu_debug_slave_sysclk
+R32
+!i10b 1
+!s100 4M5Cj1D2;PdAE`OifmXoc2
+I^Q=gZA6_^YXTG>@PQbR040
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v
+R4
+R5
+r1
+!s85 0
+31
+R35
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_sysclk
+vniosII_cpu_cpu_debug_slave_tck
+R32
+!i10b 1
+!s100 CBh4BDz^Ql^fk2R180G3a1
+ICn;6_mVoGmR7]ZTP_AI6n3
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v
+R4
+R5
+r1
+!s85 0
+31
+R35
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_tck
+vniosII_cpu_cpu_debug_slave_wrapper
+Z38 !s110 1543863021
+!i10b 1
+!s100 YgoMe8F`KgSDa83_PACMo2
+I6_83[Md]@_OOe9Ej3mD7o0
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v
+R4
+R5
+r1
+!s85 0
+31
+Z39 !s108 1543863021.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_wrapper
+vniosII_cpu_cpu_nios2_avalon_reg
+R32
+!i10b 1
+!s100 `Ze[17>;Fahz@:18o=D[G2
+I:COX0Le<WQF[i8JCzEjC43
+R2
+R0
+R3
+R33
+R34
+L0 2023
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_avalon_reg
+vniosII_cpu_cpu_nios2_oci
+R32
+!i10b 1
+!s100 BWL5O1EBVY<F3P4CZkoC32
+I1I?57<1GR]_:ASfLGGz:B2
+R2
+R0
+R3
+R33
+R34
+L0 2362
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci
+vniosII_cpu_cpu_nios2_oci_break
+R32
+!i10b 1
+!s100 mJ;oXg79i74BjR[DAL=UY1
+Ia`m`S^l6UZdmQ^PQPzR872
+R2
+R0
+R3
+R33
+R34
+L0 295
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_break
+vniosII_cpu_cpu_nios2_oci_compute_input_tm_cnt
+R32
+!i10b 1
+!s100 3>47cSFBRJ`L>PYzoV65I2
+IEjA7KY;IO`QnC>gH4AD[f2
+R2
+R0
+R3
+R33
+R34
+L0 1265
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_compute_input_tm_cnt
+vniosII_cpu_cpu_nios2_oci_dbrk
+R32
+!i10b 1
+!s100 =TT5XUacR`gj[>iQOU<mB2
+IF6DYmPDEA=MSmhzzW<UcP0
+R2
+R0
+R3
+R33
+R34
+L0 795
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_dbrk
+vniosII_cpu_cpu_nios2_oci_debug
+R32
+!i10b 1
+!s100 nzAa82`PU2dikHa52aF>B0
+IVSHGz]C:_I_[InUE]PJmL3
+R2
+R0
+R3
+R33
+R34
+L0 153
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_debug
+vniosII_cpu_cpu_nios2_oci_dtrace
+R32
+!i10b 1
+!s100 6K4@=`Gc<;K6F4^8HCma80
+I2Q1WfRfGkE6<b;;F2SEn30
+R2
+R0
+R3
+R33
+R34
+L0 1183
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_dtrace
+vniosII_cpu_cpu_nios2_oci_fifo
+R32
+!i10b 1
+!s100 QHPfTRCXGGd_jUna[eAEf2
+IgA_kR`a:N2FTGHi[bmoEM3
+R2
+R0
+R3
+R33
+R34
+L0 1427
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo
+vniosII_cpu_cpu_nios2_oci_fifo_cnt_inc
+R32
+!i10b 1
+!s100 ?Xb=D9[i[hBJ3A[F04G=n2
+I[kEn1YO35a`jdf<<8D0OX1
+R2
+R0
+R3
+R33
+R34
+L0 1380
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo_cnt_inc
+vniosII_cpu_cpu_nios2_oci_fifo_wrptr_inc
+R32
+!i10b 1
+!s100 @;[?DjQ0UcAmDo5h8Fl183
+I2a60zmD?U^`2zLWfYIWPQ3
+R2
+R0
+R3
+R33
+R34
+L0 1337
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo_wrptr_inc
+vniosII_cpu_cpu_nios2_oci_im
+R32
+!i10b 1
+!s100 DmT6Ma]NV4Oo8FCS`IbQZ0
+IWE@O:Jz7g`j5UIDY?BQg]3
+R2
+R0
+R3
+R33
+R34
+L0 1936
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_im
+vniosII_cpu_cpu_nios2_oci_itrace
+R32
+!i10b 1
+!s100 4_`9`ocemga2o:>eR4TQ70
+I9IkL2Oad;@DI88d6zX11>2
+R2
+R0
+R3
+R33
+R34
+L0 982
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_itrace
+vniosII_cpu_cpu_nios2_oci_pib
+R32
+!i10b 1
+!s100 Nh8^`LB77d0jAdBHaW3de1
+Ib[k16R:>JO`<g`oDSjTKN0
+R2
+R0
+R3
+R33
+R34
+L0 1913
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_pib
+vniosII_cpu_cpu_nios2_oci_td_mode
+R32
+!i10b 1
+!s100 H4L@i?XYNefRh9z:l0DP91
+I6JbW`aa]ZXSJFO47HnER02
+R2
+R0
+R3
+R33
+R34
+L0 1115
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_td_mode
+vniosII_cpu_cpu_nios2_oci_xbrk
+R32
+!i10b 1
+!s100 Fn2La>19PkL:N7]^<LCGJ1
+Idon54]ePVY@Hommm67PIP3
+R2
+R0
+R3
+R33
+R34
+L0 588
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_xbrk
+vniosII_cpu_cpu_nios2_ocimem
+R32
+!i10b 1
+!s100 9UM^;?60d`@b3G01DV9`^0
+I16JBiS`kDJlOA;I?;]I2_3
+R2
+R0
+R3
+R33
+R34
+L0 2181
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_ocimem
+vniosII_cpu_cpu_nios2_performance_monitors
+R32
+!i10b 1
+!s100 US@<8BS]QSEJ@NYKJP5Nh3
+Ifn1b^Rd_WX?loLdz5zhUk2
+R2
+R0
+R3
+R33
+R34
+L0 2006
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_performance_monitors
+vniosII_cpu_cpu_ociram_sp_ram_module
+R32
+!i10b 1
+!s100 M]`:P<UgjIcS1K;DRTQME0
+IhZR>KS_0zSV7:J34Cjed80
+R2
+R0
+R3
+R33
+R34
+L0 2116
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_ociram_sp_ram_module
+vniosII_cpu_cpu_register_bank_a_module
+R32
+!i10b 1
+!s100 B5WM`Bc9YhRNMJ_Kgn>Wa3
+I0^?Am2>6iO[P6[nQQEb4n1
+R2
+R0
+R3
+R33
+R34
+R4
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_register_bank_a_module
+vniosII_cpu_cpu_register_bank_b_module
+R32
+!i10b 1
+!s100 aCeVPa?`jUnZi;U;=E1:K2
+I80^[7<RhLej_KFPbkd;EZ2
+R2
+R0
+R3
+R33
+R34
+L0 87
+R5
+r1
+!s85 0
+31
+R35
+R36
+R37
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_register_bank_b_module
+vniosII_cpu_cpu_test_bench
+R38
+!i10b 1
+!s100 9c?cPaT3bZmDVIze<0a@a2
+IC11S:@WQ>_Te5U8@zWoTH0
+R2
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v
+R4
+R5
+r1
+!s85 0
+31
+R39
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_test_bench
+vniosII_epcs
+R38
+!i10b 1
+!s100 Bz@QnMXK:UeOG3=V:W=1g2
+I>TkOfJdoz`eo[UBTfAEM10
+R2
+R0
+Z40 w1543862877
+Z41 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_epcs.v
+Z42 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_epcs.v
+L0 425
+R5
+r1
+!s85 0
+31
+R39
+Z43 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_epcs.v|
+Z44 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_epcs.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_epcs
+vniosII_epcs_sub
+R38
+!i10b 1
+!s100 4alj_2klXn`f`5aO4ilhQ0
+I=8DhO0mgR?<WEj`b3=3]h0
+R2
+R0
+R40
+R41
+R42
+L0 41
+R5
+r1
+!s85 0
+31
+R39
+R43
+R44
+!i113 1
+R7
+R8
+R9
+nnios@i@i_epcs_sub
+vniosII_IO_Pio
+R29
+!i10b 1
+!s100 X>PX>Lk2Lh1E[WcO9IA;71
+IdR6^jnz3KK5eA;MfSU=Y^2
+R2
+R0
+R31
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio.v
+Z45 L0 30
+R5
+r1
+!s85 0
+31
+R30
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_@i@o_@pio
+vniosII_IO_Pio1
+R29
+!i10b 1
+!s100 D^gCP_@@kTQH<ICM54F4F2
+IQ952`T==^<@K367bJzz@G3
+R2
+R0
+R31
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio1.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio1.v
+R45
+R5
+r1
+!s85 0
+31
+R30
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_io_pio1.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_@i@o_@pio1
+vniosII_irq_mapper
+R15
+R27
+!i10b 1
+!s100 a[NUQ94g^5F4D3`PGk_ak1
+IbioLCl[`I`5NQHl124C8S0
+R2
+!s105 niosii_irq_mapper_sv_unit
+S1
+R0
+R16
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_irq_mapper.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_irq_mapper.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_irq_mapper
+vniosII_jtag
+Z46 !s110 1543863022
+!i10b 1
+!s100 aG[VR732baVF]R92:_OIY0
+I9Unn1h[2_2C=0OSNmZ;Kk2
+R2
+R0
+Z47 w1543862878
+Z48 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_jtag.v
+Z49 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_jtag.v
+L0 331
+R5
+r1
+!s85 0
+31
+R39
+Z50 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_jtag.v|
+Z51 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_jtag.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag
+vniosII_jtag_scfifo_r
+R46
+!i10b 1
+!s100 XmYamOYU4]IkkOG@OOLGK2
+IBXCl^GhgWKP;PfkW_F[4M2
+R2
+R0
+R47
+R48
+R49
+L0 243
+R5
+r1
+!s85 0
+31
+R39
+R50
+R51
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_scfifo_r
+vniosII_jtag_scfifo_w
+R38
+!i10b 1
+!s100 HYZclTkV`TlHQf<5ICQ@?2
+ID;1?Q2>3d6A0mI8Sgz`2c1
+R2
+R0
+R47
+R48
+R49
+L0 78
+R5
+r1
+!s85 0
+31
+R39
+R50
+R51
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_scfifo_w
+vniosII_jtag_sim_scfifo_r
+R38
+!i10b 1
+!s100 52iBoGIV@z@ccJFNZAVS71
+IE6ahYUUM_d]JbM6H0M`cI1
+R2
+R0
+R47
+R48
+R49
+L0 164
+R5
+r1
+!s85 0
+31
+R39
+R50
+R51
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_sim_scfifo_r
+vniosII_jtag_sim_scfifo_w
+R38
+!i10b 1
+!s100 kXYhIJT;HE0FKZbmaJISI3
+I>TELeoF^7BEk6kNUB?M?[0
+R2
+R0
+R47
+R48
+R49
+R4
+R5
+r1
+!s85 0
+31
+R39
+R50
+R51
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_sim_scfifo_w
+vniosII_KEYS
+R29
+!i10b 1
+!s100 G7f1F3dXm?^h=HD2DDU>B0
+I5G6@>[I3cOHm5DLXW`0V:2
+R2
+R0
+R31
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_keys.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_keys.v
+R45
+R5
+r1
+!s85 0
+31
+R30
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_keys.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_keys.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_@k@e@y@s
+vniosII_mm_interconnect_0
+R46
+!i10b 1
+!s100 a?F^kaH5IRnI68ja1JZ6B2
+I]E57BO_cX24b3aGn[TQz03
+R2
+R0
+R16
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+Z52 !s108 1543863022.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0
+vniosII_mm_interconnect_0_avalon_st_adapter
+R46
+!i10b 1
+!s100 @zkYkeIK:iSKn8ASjOd=S2
+IT0=U23UdimK`[hS1b4eMZ0
+R2
+R0
+Z53 w1543862897
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+R52
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter
+vniosII_mm_interconnect_0_avalon_st_adapter_011
+R46
+!i10b 1
+!s100 E9CA8D5oWC8OcMIJ1i6<d2
+IbLob=C<QFNgVQ74MYClYL1
+R2
+R0
+R53
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011.v
+L0 9
+R5
+r1
+!s85 0
+31
+R52
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_011
+vniosII_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+R15
+R27
+!i10b 1
+!s100 o0Y9_4cABjHj@18mKjW9j2
+IUGa>l7iIcL<PG2@Re2PRU1
+R2
+!s105 niosii_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0_sv_unit
+S1
+R0
+R53
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv
+Z54 L0 66
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_011_error_adapter_0
+vniosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R15
+Z55 !s110 1543863028
+!i10b 1
+!s100 hGDifMP79ziN:i0@=T35a3
+ICkkeViQP:U`3f10[iZ4zS1
+R2
+!s105 niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R53
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R54
+R5
+r1
+!s85 0
+31
+Z56 !s108 1543863028.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+vniosII_mm_interconnect_0_cmd_demux
+R15
+R55
+!i10b 1
+!s100 W4[1dH[nTVMfk?]l5J_YT1
+InFbLHfiLJ;z3Y7A>a5P[c2
+R2
+!s105 niosii_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv
+Z57 L0 43
+R5
+r1
+!s85 0
+31
+R56
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_cmd_demux
+vniosII_mm_interconnect_0_cmd_demux_001
+R15
+R55
+!i10b 1
+!s100 H?_bDGREPcdek5if3c[1K1
+In3OF=GDB^0Gioej?6[NWa1
+R2
+!s105 niosii_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv
+R57
+R5
+r1
+!s85 0
+31
+R56
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_cmd_demux_001
+vniosII_mm_interconnect_0_cmd_mux
+R15
+R55
+!i10b 1
+!s100 BYh_CmVF5C3L8E53GkDmf1
+Ia5A56NF3W0oR[mhG4d`RW3
+R2
+!s105 niosii_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv
+Z58 L0 51
+R5
+r1
+!s85 0
+31
+R56
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_cmd_mux
+vniosII_mm_interconnect_0_cmd_mux_008
+R15
+Z59 !s110 1543863029
+!i10b 1
+!s100 eR2gKF76T4RK^mMkAc^iQ0
+I0]6ijjJDSMcXBSS0[=blh0
+R2
+!s105 niosii_mm_interconnect_0_cmd_mux_008_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_008.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_008.sv
+R58
+R5
+r1
+!s85 0
+31
+R56
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_008.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_008.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_cmd_mux_008
+vniosII_mm_interconnect_0_router
+R15
+R59
+!i10b 1
+!s100 YMfoXhln@8]g?j]D>OV2n0
+IzO3bEhjLn<HaH>`U9G8e@1
+R2
+Z60 !s105 niosii_mm_interconnect_0_router_sv_unit
+S1
+R0
+R3
+Z61 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv
+Z62 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv
+Z63 L0 84
+R5
+r1
+!s85 0
+31
+Z64 !s108 1543863029.000000
+Z65 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv|
+Z66 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router
+vniosII_mm_interconnect_0_router_001
+R15
+R59
+!i10b 1
+!s100 B`XUibSVRlF<7iSM^VQEN0
+Ib@z1C9A52o;?2OKc5bgH_1
+R2
+Z67 !s105 niosii_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R3
+Z68 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv
+Z69 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv
+R63
+R5
+r1
+!s85 0
+31
+R64
+Z70 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv|
+Z71 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_001
+vniosII_mm_interconnect_0_router_001_default_decode
+R15
+R59
+!i10b 1
+!s100 UN`9IbYnPGmU[Xo^n9SLc2
+Ihl;HY6V^G7U>FME[TUKLV2
+R2
+R67
+S1
+R0
+R3
+R68
+R69
+Z72 L0 45
+R5
+r1
+!s85 0
+31
+R64
+R70
+R71
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_001_default_decode
+vniosII_mm_interconnect_0_router_002
+R15
+R59
+!i10b 1
+!s100 Xz[Me_V;@k]VX6QZ9foDC2
+IjmF1J;]_>]MIY=XOHDn0S1
+R2
+Z73 !s105 niosii_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R3
+Z74 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv
+Z75 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv
+R63
+R5
+r1
+!s85 0
+31
+R64
+Z76 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv|
+Z77 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_002
+vniosII_mm_interconnect_0_router_002_default_decode
+R15
+R59
+!i10b 1
+!s100 zdfFgnQAUPF4GQIQA6;U60
+I?IMXk<]M`h>79oIiF;L;62
+R2
+R73
+S1
+R0
+R3
+R74
+R75
+R72
+R5
+r1
+!s85 0
+31
+R64
+R76
+R77
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_002_default_decode
+vniosII_mm_interconnect_0_router_010
+R15
+R59
+!i10b 1
+!s100 iNXnm4UgBYj;ddFd]DePm3
+Ig_]J2FSJlY[RSn5ChBA?E1
+R2
+Z78 !s105 niosii_mm_interconnect_0_router_010_sv_unit
+S1
+R0
+R3
+Z79 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_010.sv
+Z80 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_010.sv
+R63
+R5
+r1
+!s85 0
+31
+R64
+Z81 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_010.sv|
+Z82 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_010.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_010
+vniosII_mm_interconnect_0_router_010_default_decode
+R15
+R59
+!i10b 1
+!s100 OhX9J[gjcIMSdai_e@cka0
+I=XznJe77476:YRWal^<WX3
+R2
+R78
+S1
+R0
+R3
+R79
+R80
+R72
+R5
+r1
+!s85 0
+31
+R64
+R81
+R82
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_010_default_decode
+vniosII_mm_interconnect_0_router_013
+R15
+Z83 !s110 1543863030
+!i10b 1
+!s100 e0U^MQLnc[]_?VX=>HiaF1
+ICfg7W;mg7N;KFNCm?<:IO2
+R2
+Z84 !s105 niosii_mm_interconnect_0_router_013_sv_unit
+S1
+R0
+R3
+Z85 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_013.sv
+Z86 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_013.sv
+R63
+R5
+r1
+!s85 0
+31
+Z87 !s108 1543863030.000000
+Z88 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_013.sv|
+Z89 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_013.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_013
+vniosII_mm_interconnect_0_router_013_default_decode
+R15
+R83
+!i10b 1
+!s100 5lo3R^U:aCecPSHgABC172
+IDYM`5R0SODR_k?<aN9jde1
+R2
+R84
+S1
+R0
+R3
+R85
+R86
+R72
+R5
+r1
+!s85 0
+31
+R87
+R88
+R89
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_013_default_decode
+vniosII_mm_interconnect_0_router_default_decode
+R15
+R59
+!i10b 1
+!s100 <T3B@i65jX?j`WK=;`S6N3
+I]O<=SzGEY9Y:]Mi[kaf_J3
+R2
+R60
+S1
+R0
+R3
+R61
+R62
+R72
+R5
+r1
+!s85 0
+31
+R64
+R65
+R66
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_router_default_decode
+vniosII_mm_interconnect_0_rsp_demux
+R15
+R83
+!i10b 1
+!s100 mL`TmDojKFkn8]dCE1o742
+Io9zbSb=DchZS<;Gg`@_Hk2
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv
+R57
+R5
+r1
+!s85 0
+31
+R87
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux
+vniosII_mm_interconnect_0_rsp_demux_001
+R15
+R83
+!i10b 1
+!s100 eIN@QkTm;=mkczCALZ6^L0
+IZ3_9A6@izNc22Edf3]@[n0
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_001_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv
+R57
+R5
+r1
+!s85 0
+31
+R87
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux_001
+vniosII_mm_interconnect_0_rsp_demux_008
+R15
+R83
+!i10b 1
+!s100 TD[Xj[D]<PZnNV5N7]TeR0
+IVW]2?]G<57kJ?D?@7dLXE1
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_008_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_008.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_008.sv
+R57
+R5
+r1
+!s85 0
+31
+R87
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_008.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_008.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux_008
+vniosII_mm_interconnect_0_rsp_mux
+R15
+R83
+!i10b 1
+!s100 KcihkV4SRY0HO>czl97m90
+IVe>fahGAaJMo`6=^1QKWY1
+R2
+!s105 niosii_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv
+R58
+R5
+r1
+!s85 0
+31
+R87
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_rsp_mux
+vniosII_mm_interconnect_0_rsp_mux_001
+R15
+!s110 1543863031
+!i10b 1
+!s100 4Ykh_H22I[h_ZYfZedm=B0
+IeEGzQZJDN2MVUE;8R:H<:3
+R2
+!s105 niosii_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R3
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv
+R58
+R5
+r1
+!s85 0
+31
+!s108 1543863031.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R17
+R18
+R9
+nnios@i@i_mm_interconnect_0_rsp_mux_001
+vniosII_parallel_port_0
+R46
+!i10b 1
+!s100 ISBCflz=2fPJM[WGiYX0Q3
+IO6VM=fzQeSmM`=oc55I_e2
+R2
+R0
+R47
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_parallel_port_0.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_parallel_port_0.v
+R45
+R5
+r1
+!s85 0
+31
+R52
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_parallel_port_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_parallel_port_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_parallel_port_0
+vniosII_reloj_feo
+Z90 !s110 1543863023
+!i10b 1
+!s100 ^:HeI8?l_U@AKoj>neTkf2
+I@T5bMlV[ORg<]SYR53X=33
+R2
+R0
+R47
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_reloj_feo.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_reloj_feo.v
+R4
+R5
+r1
+!s85 0
+31
+Z91 !s108 1543863023.000000
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_reloj_feo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_reloj_feo.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_reloj_feo
+vniosII_sdram
+R90
+!i10b 1
+!s100 ]R>:3ZH5b9A<bQ@2QKiYg0
+I^oI=3d;S8URPCNNYbdQ^h3
+R2
+R0
+Z92 w1543862879
+Z93 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sdram.v
+Z94 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sdram.v
+L0 159
+R5
+r1
+!s85 0
+31
+R91
+Z95 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sdram.v|
+Z96 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sdram.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sdram
+vniosII_sdram_input_efifo_module
+R90
+!i10b 1
+!s100 ODD<G=8?0[N:>fN7n`0Q50
+IobEc=9bWeIbWd7f`Sm]d]0
+R2
+R0
+R92
+R93
+R94
+R4
+R5
+r1
+!s85 0
+31
+R91
+R95
+R96
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sdram_input_efifo_module
+vniosII_sys_clk_timer_n
+R90
+!i10b 1
+!s100 _I]kR4SeP4g5Ln88EQVZH2
+IWb1GQBfbXlVS5LVhRlKRV1
+R2
+R0
+Z97 w1543862880
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_clk_timer_n.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_clk_timer_n.v
+R4
+R5
+r1
+!s85 0
+31
+R91
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_clk_timer_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_clk_timer_n.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_clk_timer_n
+vniosII_sys_id
+R90
+!i10b 1
+!s100 NNb5`>kMoMO8oLo???oAA2
+IYibHXAE=P]2J72dk0bA6W0
+R2
+R0
+R97
+8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_id.v
+Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_id.v
+R26
+R5
+r1
+!s85 0
+31
+R91
+!s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_id.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_id.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_id
+vniosII_sys_pll
+R90
+!i10b 1
+!s100 >bZ[^4A5hBA^6`ZhS>N4]1
+IW_;7:gP7HY;a;3oE;`UGB1
+R2
+R0
+Z98 w1543862883
+Z99 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_pll.v
+Z100 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_pll.v
+L0 217
+R5
+r1
+!s85 0
+31
+R91
+Z101 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_pll.v|
+Z102 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_sys_pll.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll
+vniosII_sys_pll_altpll_8ra2
+R90
+!i10b 1
+!s100 XYaSF:Z?HR85YbGRUd4TD1
+I6RQD0FH0GfhYd1YTTk_j<2
+R2
+R0
+R98
+R99
+R100
+L0 130
+R5
+r1
+!s85 0
+31
+R91
+R101
+R102
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_altpll_8ra2
+vniosII_sys_pll_dffpipe_l2c
+R90
+!i10b 1
+!s100 T7l3g@AYDY=^8:OS:XC@I0
+IS@f=l5D;L9GMEFCm=_kQR3
+R2
+R0
+R98
+R99
+R100
+L0 37
+R5
+r1
+!s85 0
+31
+R91
+R101
+R102
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_dffpipe_l2c
+vniosII_sys_pll_stdsync_sv6
+R90
+!i10b 1
+!s100 e`ZdZT9Pg=me8K[Of^GZN3
+IMUdUdHOUJd=]cM_koFe@K2
+R2
+R0
+R98
+R99
+R100
+L0 98
+R5
+r1
+!s85 0
+31
+R91
+R101
+R102
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_stdsync_sv6
+vniosII_uart
+R10
+!i10b 1
+!s100 R7kgJ]=Mc<5GIiljMRVX_1
+IJhn6<AJIARhJXk^V]D4]:1
+R2
+R0
+Z103 w1543862884
+Z104 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart.v
+Z105 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart.v
+Z106 L0 793
+R5
+r1
+!s85 0
+31
+R11
+Z107 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart.v|
+Z108 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart
+vniosII_uart_2
+R10
+!i10b 1
+!s100 k<eI6Mzn77>06lWjPg5f31
+IhC<TgMXlX>kMG>6a5V=Fi1
+R2
+R0
+Z109 w1543862885
+Z110 8c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart_2.v
+Z111 Fc:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart_2.v
+R106
+R5
+r1
+!s85 0
+31
+R11
+Z112 !s107 c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart_2.v|
+Z113 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules|c:/users/cd.florez10/coolmillos2/escena1toma1nios/de0nano_freertos/db/ip/niosii/submodules/niosii_uart_2.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_2
+vniosII_uart_2_regs
+R10
+!i10b 1
+!s100 20?PXBz0QbhGAM<?^f;<H2
+II1e5hm3YWeUIZdmc`[YYC1
+R2
+R0
+R109
+R110
+R111
+Z114 L0 547
+R5
+r1
+!s85 0
+31
+R11
+R112
+R113
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_2_regs
+vniosII_uart_2_rx
+R10
+!i10b 1
+!s100 :FB^ai^MHFVKbA:UC`oEc0
+IOeleMW8jT@_V9WoYdj`NT2
+R2
+R0
+R109
+R110
+R111
+Z115 L0 288
+R5
+r1
+!s85 0
+31
+R11
+R112
+R113
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_2_rx
+vniosII_uart_2_rx_stimulus_source
+R10
+!i10b 1
+!s100 VJ^Gb_>6O^<W5BKYEa[251
+IlE[QF_JfhDE=TTG[=OF;H0
+R2
+R0
+R109
+R110
+R111
+Z116 L0 194
+R5
+r1
+!s85 0
+31
+R11
+R112
+R113
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_2_rx_stimulus_source
+vniosII_uart_2_tx
+R10
+!i10b 1
+!s100 aPR]O_d>gU`Q5TmfK1^C_3
+Ilf:G5YZ1Gk9jnY?a]z0?=2
+R2
+R0
+R109
+R110
+R111
+R4
+R5
+r1
+!s85 0
+31
+R11
+R112
+R113
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_2_tx
+vniosII_uart_regs
+R10
+!i10b 1
+!s100 5^CLl6aW^I_4?H^8@PY[J0
+IzZli=5hP1h7S4afDf;7[g1
+R2
+R0
+R103
+R104
+R105
+R114
+R5
+r1
+!s85 0
+31
+R11
+R107
+R108
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_regs
+vniosII_uart_rx
+R10
+!i10b 1
+!s100 EfS4FiW<<P]znHdf[Qz8;3
+I_OJ07;cIVkz0P^g25Ne6b0
+R2
+R0
+R103
+R104
+R105
+R115
+R5
+r1
+!s85 0
+31
+R11
+R107
+R108
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_rx
+vniosII_uart_rx_stimulus_source
+R10
+!i10b 1
+!s100 AK@gM=9<@eCfB?h0QeP^I0
+ILPSeeG@5g3JUIMB^M_JFZ1
+R2
+R0
+R103
+R104
+R105
+R116
+R5
+r1
+!s85 0
+31
+R11
+R107
+R108
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_rx_stimulus_source
+vniosII_uart_tx
+R10
+!i10b 1
+!s100 ;:hUeJSjBJ4iDzLiDffJM0
+IGSek_nhlJ5gW`X<OEfjdG0
+R2
+R0
+R103
+R104
+R105
+R4
+R5
+r1
+!s85 0
+31
+R11
+R107
+R108
+!i113 1
+R7
+R8
+R9
+nnios@i@i_uart_tx
