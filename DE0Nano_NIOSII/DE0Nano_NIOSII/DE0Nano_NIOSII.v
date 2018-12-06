@@ -136,17 +136,15 @@ wire [33:0] GPIO_0_fake;
 //=======================================================
 //  Structural coding
 //=======================================================
-moduloEstadoInfrarojo #(.TIMEOUT(2000
-)) u1(
+moduloEstadoInfrarojo #(.TIMEOUT(32768)) u1(
          .reset(~KEY[0]),
 			.clock(CLOCK_50),
 			.inSignal(GPIO_0[0]),
 			.outSignal(GPIO_0[1]),
-			.conteo(LED_fake3),
+			.conteo(LED),
 			.contadorOut(LED_fake2),
-			.hayNegro(LED[0])
+			.hayNegro(LED_fake3[0])
 );
-assign LED[1]=~LED[0];
     niosII u0 (
         .clk_clk            (CLOCK_50),            //         clk.clk
         .reset_reset_n      (1'b1),      				//       reset.reset_n

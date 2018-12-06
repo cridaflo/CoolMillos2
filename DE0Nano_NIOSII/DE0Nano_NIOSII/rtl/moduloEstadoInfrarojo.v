@@ -1,4 +1,4 @@
-module moduloEstadoInfrarojo #(parameter TIMEOUT = 2000)(reset, clock, inSignal, outSignal, conteo,contadorOut, hayNegro);
+module moduloEstadoInfrarojo #(parameter TIMEOUT = 32768)(reset, clock, inSignal, outSignal, conteo,contadorOut, hayNegro);
 
 //INPUTS AND OUTPUTS
 input reset;//Reset
