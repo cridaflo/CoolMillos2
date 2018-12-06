@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sat Jul 22 20:43:13 2017
-Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Fitter Status : Successful - Thu Dec 06 12:17:16 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : DE0Nano_NIOSII
 Top-level Entity Name : DE0Nano_NIOSII
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 4,056 / 22,320 ( 18 % )
-    Total combinational functions : 3,362 / 22,320 ( 15 % )
-    Dedicated logic registers : 2,765 / 22,320 ( 12 % )
-Total registers : 2834
-Total pins : 94 / 154 ( 61 % )
+Total logic elements : 4,284 / 22,320 ( 19 % )
+    Total combinational functions : 3,482 / 22,320 ( 16 % )
+    Dedicated logic registers : 2,957 / 22,320 ( 13 % )
+Total registers : 3026
+Total pins : 154 / 154 ( 100 % )
 Total virtual pins : 0
-Total memory bits : 23,552 / 608,256 ( 4 % )
+Total memory bits : 21,504 / 608,256 ( 4 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 1 / 4 ( 25 % )

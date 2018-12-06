@@ -9,9 +9,12 @@
 			port_key_export    : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- export
 			port_led_export    : out   std_logic_vector(7 downto 0);                     -- export
 			port_sw_export     : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			ram_clk_clk        : out   std_logic;                                        -- clk
 			reset_reset_n      : in    std_logic                     := 'X';             -- reset_n
 			rs232_0_RXD        : in    std_logic                     := 'X';             -- RXD
 			rs232_0_TXD        : out   std_logic;                                        -- TXD
+			rs232_1_RXD        : in    std_logic                     := 'X';             -- RXD
+			rs232_1_TXD        : out   std_logic;                                        -- TXD
 			sdram_addr         : out   std_logic_vector(12 downto 0);                    -- addr
 			sdram_ba           : out   std_logic_vector(1 downto 0);                     -- ba
 			sdram_cas_n        : out   std_logic;                                        -- cas_n
@@ -21,9 +24,10 @@
 			sdram_dqm          : out   std_logic_vector(1 downto 0);                     -- dqm
 			sdram_ras_n        : out   std_logic;                                        -- ras_n
 			sdram_we_n         : out   std_logic;                                        -- we_n
-			ram_clk_clk        : out   std_logic;                                        -- clk
-			rs232_1_RXD        : in    std_logic                     := 'X';             -- RXD
-			rs232_1_TXD        : out   std_logic                                         -- TXD
+			adc_0_sclk         : out   std_logic;                                        -- sclk
+			adc_0_cs_n         : out   std_logic;                                        -- cs_n
+			adc_0_dout         : in    std_logic                     := 'X';             -- dout
+			adc_0_din          : out   std_logic                                         -- din
 		);
 	end component niosII;
 
@@ -38,9 +42,12 @@
 			port_key_export    => CONNECTED_TO_port_key_export,    --    port_key.export
 			port_led_export    => CONNECTED_TO_port_led_export,    --    port_led.export
 			port_sw_export     => CONNECTED_TO_port_sw_export,     --     port_sw.export
+			ram_clk_clk        => CONNECTED_TO_ram_clk_clk,        --     ram_clk.clk
 			reset_reset_n      => CONNECTED_TO_reset_reset_n,      --       reset.reset_n
 			rs232_0_RXD        => CONNECTED_TO_rs232_0_RXD,        --     rs232_0.RXD
 			rs232_0_TXD        => CONNECTED_TO_rs232_0_TXD,        --            .TXD
+			rs232_1_RXD        => CONNECTED_TO_rs232_1_RXD,        --     rs232_1.RXD
+			rs232_1_TXD        => CONNECTED_TO_rs232_1_TXD,        --            .TXD
 			sdram_addr         => CONNECTED_TO_sdram_addr,         --       sdram.addr
 			sdram_ba           => CONNECTED_TO_sdram_ba,           --            .ba
 			sdram_cas_n        => CONNECTED_TO_sdram_cas_n,        --            .cas_n
@@ -50,8 +57,9 @@
 			sdram_dqm          => CONNECTED_TO_sdram_dqm,          --            .dqm
 			sdram_ras_n        => CONNECTED_TO_sdram_ras_n,        --            .ras_n
 			sdram_we_n         => CONNECTED_TO_sdram_we_n,         --            .we_n
-			ram_clk_clk        => CONNECTED_TO_ram_clk_clk,        --     ram_clk.clk
-			rs232_1_RXD        => CONNECTED_TO_rs232_1_RXD,        --     rs232_1.RXD
-			rs232_1_TXD        => CONNECTED_TO_rs232_1_TXD         --            .TXD
+			adc_0_sclk         => CONNECTED_TO_adc_0_sclk,         --       adc_0.sclk
+			adc_0_cs_n         => CONNECTED_TO_adc_0_cs_n,         --            .cs_n
+			adc_0_dout         => CONNECTED_TO_adc_0_dout,         --            .dout
+			adc_0_din          => CONNECTED_TO_adc_0_din           --            .din
 		);
 

@@ -1,5 +1,9 @@
 	component niosII is
 		port (
+			adc_0_sclk         : out   std_logic;                                        -- sclk
+			adc_0_cs_n         : out   std_logic;                                        -- cs_n
+			adc_0_dout         : in    std_logic                     := 'X';             -- dout
+			adc_0_din          : out   std_logic;                                        -- din
 			clk_clk            : in    std_logic                     := 'X';             -- clk
 			epcs_dclk          : out   std_logic;                                        -- dclk
 			epcs_sce           : out   std_logic;                                        -- sce

@@ -35,9 +35,29 @@ module DE0Nano_NIOSII(
 	EPCS_DCLK,
 	EPCS_NCSO,
 
+	//////////// Accelerometer and EEPROM //////////
+	G_SENSOR_CS_N,
+	G_SENSOR_INT,
+	I2C_SCLK,
+	I2C_SDAT,
+
+	//////////// ADC //////////
+	ADC_CS_N,
+	ADC_SADDR,
+	ADC_SCLK,
+	ADC_SDAT,
+
+	//////////// 2x13 GPIO Header //////////
+	GPIO_2,
+	GPIO_2_IN,
+
 	//////////// GPIO_0, GPIO_0 connect to GPIO Default //////////
 	GPIO_0,
-	GPIO_0_IN 
+	GPIO_0_IN,
+
+	//////////// GPIO_1, GPIO_1 connect to GPIO Default //////////
+	GPIO_1,
+	GPIO_1_IN 
 );
 
 //=======================================================
@@ -79,33 +99,65 @@ input 		          		EPCS_DATA0;
 output		          		EPCS_DCLK;
 output		          		EPCS_NCSO;
 
+//////////// Accelerometer and EEPROM //////////
+output		          		G_SENSOR_CS_N;
+input 		          		G_SENSOR_INT;
+output		          		I2C_SCLK;
+inout 		          		I2C_SDAT;
+
+//////////// ADC //////////
+output		          		ADC_CS_N;
+output		          		ADC_SADDR;
+output		          		ADC_SCLK;
+input 		          		ADC_SDAT;
+
+//////////// 2x13 GPIO Header //////////
+inout 		    [12:0]		GPIO_2;
+input 		     [2:0]		GPIO_2_IN;
+
 //////////// GPIO_0, GPIO_0 connect to GPIO Default //////////
 inout 		    [33:0]		GPIO_0;
 input 		     [1:0]		GPIO_0_IN;
+
+//////////// GPIO_1, GPIO_1 connect to GPIO Default //////////
+inout 		    [33:0]		GPIO_1;
+input 		     [1:0]		GPIO_1_IN;
 
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 
-
-
-
+wire [7:0] LED_fake;
+wire [7:0] LED_fake2;
+wire [7:0] LED_fake3;
+wire [33:0] GPIO_0_fake;
 
 //=======================================================
 //  Structural coding
 //=======================================================
+moduloEstadoInfrarojo #(.TIMEOUT(2000
+)) u1(
+         .reset(~KEY[0]),
+			.clock(CLOCK_50),
+			.inSignal(GPIO_0[0]),
+			.outSignal(GPIO_0[1]),
+			.conteo(LED_fake3),
+			.contadorOut(LED_fake2),
+			.hayNegro(LED[0])
+);
+assign LED[1]=~LED[0];
     niosII u0 (
         .clk_clk            (CLOCK_50),            //         clk.clk
         .reset_reset_n      (1'b1),      				//       reset.reset_n
         .rs232_0_RXD        (GPIO_0_IN[0]),        //     rs232_0.RXD
-        .rs232_0_TXD        (GPIO_0[32]),        //            .TXD
+        .rs232_0_TXD        (GPIO_0_fake[32]),        //            .TXD
         .rs232_1_RXD        (GPIO_0_IN[1]),        //     rs232_1.RXD
-        .rs232_1_TXD        (GPIO_0[33]),         //            .TXD
-        .port_led_export    (LED),    					//    port_led.export
+        .rs232_1_TXD        (GPIO_0_fake[33]),         //            .TXD
+        .port_led_export    (LED_fake),    					//    port_led.export
         .port_key_export    (KEY),    					//    port_key.export
         .port_sw_export     (SW),     					//     port_sw.export
-        .port_gpio_0_export (GPIO_0[31:0]), 			// port_gpio_0.export
+        .port_gpio_0_export (GPIO_0_fake[31:0]), 			// port_gpio_0.export
         .epcs_dclk          (EPCS_DCLK),          //        epcs.dclk
         .epcs_sce           (EPCS_NCSO),           //            .sce
         .epcs_sdo           (EPCS_ASDO),           //            .sdo
@@ -119,7 +171,13 @@ input 		     [1:0]		GPIO_0_IN;
         .sdram_dqm          (DRAM_DQM),          //            .dqm
         .sdram_ras_n        (DRAM_RAS_N),        //            .ras_n
         .sdram_we_n         (DRAM_WE_N),          //            .we_n
-		  .ram_clk_clk        (DRAM_CLK)         //     ram_clk.clk
+		  .ram_clk_clk        (DRAM_CLK),         //     ram_clk.clk
+		  .adc_0_sclk         (ADC_SCLK),         //       adc_0.sclk
+        .adc_0_cs_n         (ADC_CS_N),         //            .cs_n
+        .adc_0_dout         (ADC_SDAT),         //            .dout
+        .adc_0_din          (ADC_SADDR)           //            .din
+
     );
-	
+
+
 endmodule

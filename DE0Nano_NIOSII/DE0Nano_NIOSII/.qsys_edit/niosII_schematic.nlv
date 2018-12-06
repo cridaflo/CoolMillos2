@@ -1,39 +1,42 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst niosII.sdram -pg 1 -lvl 5 -y 1000
+preplace inst niosII.sdram -pg 1 -lvl 5 -y 1090
 preplace inst niosII -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst niosII.rs232 -pg 1 -lvl 5 -y 500
 preplace inst niosII.cpu.cpu -pg 1
-preplace inst niosII.port_sw -pg 1 -lvl 5 -y 900
-preplace inst niosII.clock_50 -pg 1 -lvl 1 -y 240
-preplace inst niosII.sys_pll -pg 1 -lvl 2 -y 240
-preplace inst niosII.port_gpio_0 -pg 1 -lvl 5 -y 1100
-preplace inst niosII.timer_0 -pg 1 -lvl 5 -y 400
-preplace inst niosII.ram_clk -pg 1 -lvl 5 -y 340
-preplace inst niosII.jtag -pg 1 -lvl 5 -y 240
-preplace inst niosII.sys_id -pg 1 -lvl 5 -y 620
-preplace inst niosII.port_key -pg 1 -lvl 5 -y 700
+preplace inst niosII.rs232_0 -pg 1 -lvl 5 -y 90
+preplace inst niosII.port_sw -pg 1 -lvl 5 -y 990
+preplace inst niosII.clock_50 -pg 1 -lvl 1 -y 330
+preplace inst niosII.sys_pll -pg 1 -lvl 2 -y 330
+preplace inst niosII.rs232_1 -pg 1 -lvl 5 -y 770
+preplace inst niosII.port_gpio_0 -pg 1 -lvl 5 -y 1190
+preplace inst niosII.timer_0 -pg 1 -lvl 5 -y 490
+preplace inst niosII.ram_clk -pg 1 -lvl 5 -y 430
+preplace inst niosII.jtag -pg 1 -lvl 5 -y 330
+preplace inst niosII.sys_id -pg 1 -lvl 5 -y 590
+preplace inst niosII.port_key -pg 1 -lvl 5 -y 670
 preplace inst niosII.cpu.clock_bridge -pg 1
-preplace inst niosII.sys_clk -pg 1 -lvl 3 -y 240
-preplace inst niosII.epcs -pg 1 -lvl 5 -y 120
+preplace inst niosII.sys_clk -pg 1 -lvl 3 -y 330
+preplace inst niosII.epcs -pg 1 -lvl 5 -y 210
 preplace inst niosII.cpu.reset_bridge -pg 1
-preplace inst niosII.port_led -pg 1 -lvl 5 -y 800
-preplace inst niosII.cpu -pg 1 -lvl 4 -y 50
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)rs232.external_interface,(SLAVE)niosII.rs232) 1 0 5 NJ 550 NJ 550 NJ 550 NJ 550 NJ
-preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sys_clk.clk_in,(MASTER)sys_pll.c0,(SLAVE)epcs.clk) 1 2 3 570 310 NJ 310 1230
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)sdram.wire,(SLAVE)niosII.sdram) 1 0 5 NJ 1070 NJ 1070 NJ 1070 NJ 1070 NJ
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)clock_50.clk_in_reset,(SLAVE)niosII.reset) 1 0 1 NJ
-preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(MASTER)sys_pll.c1,(SLAVE)ram_clk.clk_in) 1 2 3 550 350 NJ 350 NJ
-preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)port_key.avalon_parallel_port_slave,(MASTER)cpu.instruction_master,(SLAVE)port_led.avalon_parallel_port_slave,(SLAVE)rs232.avalon_rs232_slave,(SLAVE)port_sw.avalon_parallel_port_slave,(SLAVE)port_gpio_0.avalon_parallel_port_slave,(SLAVE)sys_pll.pll_slave,(MASTER)cpu.data_master,(SLAVE)sdram.s1,(SLAVE)jtag.avalon_jtag_slave,(SLAVE)sys_id.control_slave,(SLAVE)epcs.epcs_control_port,(SLAVE)cpu.debug_mem_slave,(SLAVE)timer_0.s1) 1 1 4 330 190 NJ 190 790 190 1210
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)port_gpio_0.external_interface,(SLAVE)niosII.port_gpio_0) 1 0 5 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.clk,(SLAVE)clock_50.clk_in) 1 0 1 NJ
-preplace netloc FAN_OUT<net_container>niosII</net_container>(MASTER)cpu.irq,(SLAVE)epcs.irq,(SLAVE)rs232.interrupt,(SLAVE)jtag.irq,(SLAVE)timer_0.irq) 1 4 1 1190
-preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)jtag.clk,(SLAVE)sys_pll.inclk_interface,(MASTER)clock_50.clk) 1 1 4 290 330 NJ 330 NJ 330 1290
-preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)port_gpio_0.clk,(SLAVE)sys_id.clk,(SLAVE)cpu.clk,(MASTER)sys_clk.clk,(SLAVE)port_key.clk,(SLAVE)rs232.clk,(SLAVE)port_led.clk,(SLAVE)port_sw.clk,(SLAVE)sdram.clk,(SLAVE)timer_0.clk) 1 3 2 810 370 1230
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_led,(SLAVE)port_led.external_interface) 1 0 5 NJ 850 NJ 850 NJ 850 NJ 850 NJ
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)port_sw.external_interface,(SLAVE)niosII.port_sw) 1 0 5 NJ 950 NJ 950 NJ 950 NJ 950 NJ
-preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)ram_clk.clk_in_reset,(SLAVE)sys_pll.inclk_interface_reset,(SLAVE)cpu.reset,(SLAVE)sys_clk.clk_in_reset,(SLAVE)timer_0.reset,(SLAVE)port_sw.reset,(MASTER)clock_50.clk_reset,(SLAVE)rs232.reset,(SLAVE)jtag.reset,(SLAVE)sdram.reset,(SLAVE)epcs.reset,(MASTER)cpu.debug_reset_request,(SLAVE)sys_id.reset,(SLAVE)port_led.reset,(SLAVE)port_key.reset,(SLAVE)port_gpio_0.reset) 1 1 4 310 230 590 230 830 230 1270
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)port_key.external_interface,(SLAVE)niosII.port_key) 1 0 5 NJ 750 NJ 750 NJ 750 NJ 750 NJ
-preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.epcs,(SLAVE)epcs.external) 1 0 5 NJ 210 NJ 210 NJ 210 NJ 210 NJ
-levelinfo -pg 1 0 80 1520
-levelinfo -hier niosII 90 120 360 620 950 1320 1510
+preplace inst niosII.port_led -pg 1 -lvl 5 -y 890
+preplace inst niosII.cpu -pg 1 -lvl 4 -y 140
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)timer_0.irq,(SLAVE)rs232_0.interrupt,(SLAVE)rs232_1.interrupt,(SLAVE)jtag.irq,(SLAVE)epcs.irq,(MASTER)cpu.irq) 1 4 1 1310
+preplace netloc POINT_TO_POINT<net_container>niosII</net_container>(MASTER)sys_pll.c1,(SLAVE)ram_clk.clk_in) 1 2 3 550 440 NJ 440 NJ
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(SLAVE)jtag.avalon_jtag_slave,(SLAVE)port_led.avalon_parallel_port_slave,(SLAVE)cpu.debug_mem_slave,(SLAVE)sdram.s1,(SLAVE)port_key.avalon_parallel_port_slave,(SLAVE)port_sw.avalon_parallel_port_slave,(SLAVE)sys_pll.pll_slave,(SLAVE)sys_id.control_slave,(SLAVE)rs232_1.avalon_rs232_slave,(MASTER)cpu.instruction_master,(SLAVE)timer_0.s1,(SLAVE)epcs.epcs_control_port,(SLAVE)rs232_0.avalon_rs232_slave,(MASTER)cpu.data_master,(SLAVE)port_gpio_0.avalon_parallel_port_slave) 1 1 4 330 300 NJ 300 810 280 1270
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)epcs.external,(SLAVE)niosII.epcs) 1 0 5 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc INTERCONNECT<net_container>niosII</net_container>(MASTER)clock_50.clk_reset,(SLAVE)sdram.reset,(SLAVE)epcs.reset,(SLAVE)port_key.reset,(SLAVE)ram_clk.clk_in_reset,(SLAVE)cpu.reset,(SLAVE)jtag.reset,(MASTER)cpu.debug_reset_request,(SLAVE)port_sw.reset,(SLAVE)rs232_1.reset,(SLAVE)sys_id.reset,(SLAVE)timer_0.reset,(SLAVE)sys_pll.inclk_interface_reset,(SLAVE)sys_clk.clk_in_reset,(SLAVE)rs232_0.reset,(SLAVE)port_gpio_0.reset,(SLAVE)port_led.reset) 1 1 4 310 280 570 320 850 300 1290
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)jtag.clk,(SLAVE)sys_pll.inclk_interface,(MASTER)clock_50.clk) 1 1 4 290 260 NJ 260 NJ 360 N
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.sdram,(SLAVE)sdram.wire) 1 0 5 NJ 1160 NJ 1160 NJ 1160 NJ 1160 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)rs232_1.external_interface,(SLAVE)niosII.rs232_1) 1 0 5 NJ 820 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sdram.clk,(SLAVE)rs232_0.clk,(SLAVE)port_gpio_0.clk,(SLAVE)sys_id.clk,(MASTER)sys_clk.clk,(SLAVE)timer_0.clk,(SLAVE)port_key.clk,(SLAVE)port_led.clk,(SLAVE)cpu.clk,(SLAVE)port_sw.clk,(SLAVE)rs232_1.clk) 1 3 2 830 30 1230
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_led,(SLAVE)port_led.external_interface) 1 0 5 NJ 940 NJ 940 NJ 940 NJ 940 NJ
+preplace netloc FAN_OUT<net_container>niosII</net_container>(SLAVE)sys_clk.clk_in,(SLAVE)epcs.clk,(MASTER)sys_pll.c0) 1 2 3 550 240 NJ 320 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)port_sw.external_interface,(SLAVE)niosII.port_sw) 1 0 5 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)clock_50.clk_in,(SLAVE)niosII.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(MASTER)ram_clk.clk,(MASTER)niosII.ram_clk) 1 5 1 N
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_gpio_0,(SLAVE)port_gpio_0.external_interface) 1 0 5 NJ 1240 NJ 1240 NJ 1240 NJ 1240 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.reset,(SLAVE)clock_50.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.rs232_0,(SLAVE)rs232_0.external_interface) 1 0 5 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc EXPORT<net_container>niosII</net_container>(SLAVE)niosII.port_key,(SLAVE)port_key.external_interface) 1 0 5 NJ 720 NJ 720 NJ 720 NJ 720 NJ
+levelinfo -pg 1 0 80 1650
+levelinfo -hier niosII 90 120 360 620 990 1380 1570

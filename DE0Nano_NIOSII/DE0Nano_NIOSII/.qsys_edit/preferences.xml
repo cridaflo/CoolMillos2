@@ -8,8 +8,8 @@
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/University Program/Communications,Library/University Program,Library,Project" />
- <window width="1296" height="1000" x="-1288" y="-264" />
+   expandedCategories="Project,Library/University Program/Generic IO,Library/University Program,Library,Library/Processors and Peripherals,Library/Processors and Peripherals/Peripherals" />
+ <window width="1920" height="1040" x="0" y="0" />
  <generation greybox="1" />
  <hdlexample language="VERILOG" />
 </preferences>
