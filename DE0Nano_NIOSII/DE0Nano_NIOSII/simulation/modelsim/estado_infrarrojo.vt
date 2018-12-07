@@ -1,0 +1,98 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/06/2018 19:50:34"
+                                                                                
+// Verilog Test Bench template for design : DE0Nano_NIOSII
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ns
+module estado_infrarrojo();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg CLOCK_50;
+reg r_RESET;
+reg r_SIGNAL;
+// wires                                               
+wire out_Signal;
+wire [7:0] conteo;
+wire [7:0] contadorOut;
+wire hayNegro;
+
+moduloEstadoInfrarojo #(2300) i1 (
+// port map - connection between master ports and signals/registers   
+	.reset(r_RESET),
+	.clock(CLOCK_50),
+	.inSignal(r_SIGNAL),
+	.outSignal(out_Signal),
+	.conteo(conteo),
+	.contadorOut(contadorOut),
+	.hayNegro(hayNegro)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+#0 r_RESET<=1;
+
+#1000000 r_RESET<=0;
+
+#40 r_SIGNAL<=1;
+
+#50000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=1;
+
+#50000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=1;
+
+#100000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=1;
+
+#100000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=1;
+
+#50000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=1;
+
+#50000 r_SIGNAL<=0;
+
+#50 r_SIGNAL<=0;                    
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

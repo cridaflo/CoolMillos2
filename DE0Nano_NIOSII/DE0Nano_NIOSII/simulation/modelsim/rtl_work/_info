@@ -1,0 +1,123 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim
+vcontador
+Z1 !s110 1544146111
+!i10b 1
+!s100 gfN`n0i>hET]d_NYQdOTT0
+Izh`kkb[3<RXiEIXQEbIX80
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1544118957
+8E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/contador.v
+FE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/contador.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1544146111.000000
+!s107 E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl|E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/contador.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl
+Z7 tCvgOpt 0
+vDE0Nano_NIOSII
+R1
+!i10b 1
+!s100 =80:_9XBdh9OM[zUSDLV_0
+IZO17[baZ=4[HEECOPDN[E0
+R2
+R0
+w1544121793
+8E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/de0nano_niosii.v
+FE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/de0nano_niosii.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/de0nano_niosii.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII|E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/de0nano_niosii.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII
+R7
+n@d@e0@nano_@n@i@o@s@i@i
+vestado_infrarrojo
+!s110 1544146120
+!i10b 1
+!s100 lAjA@ZhY7319Xb2JlE_]b1
+IHVPh;@:aaW6B_ii^4QG133
+R2
+R0
+w1544146081
+8E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim/estado_infrarrojo.vt
+FE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim/estado_infrarrojo.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1544146120.000000
+!s107 E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim/estado_infrarrojo.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim|E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim/estado_infrarrojo.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim
+R7
+vmoduloContadorInfrarojo
+R1
+!i10b 1
+!s100 bP7QeRJ0<T@;U@3eH=O9Z0
+IiPcGemQZKK]ZDGRMQO]`o3
+R2
+R0
+w1544144428
+8E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloContadorInfrarojo.v
+FE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloContadorInfrarojo.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1544146110.000000
+!s107 E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloContadorInfrarojo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl|E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloContadorInfrarojo.v|
+!i113 1
+R5
+R6
+R7
+nmodulo@contador@infrarojo
+vmoduloEstadoInfrarojo
+!s110 1544146110
+!i10b 1
+!s100 hJJB`@`@lX7Z:B>_oRI300
+Ila[jOQOX98h[>AMa`FGUX2
+R2
+R0
+w1544144582
+8E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloEstadoInfrarojo.v
+FE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloEstadoInfrarojo.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloEstadoInfrarojo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl|E:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/rtl/moduloEstadoInfrarojo.v|
+!i113 1
+R5
+R6
+R7
+nmodulo@estado@infrarojo

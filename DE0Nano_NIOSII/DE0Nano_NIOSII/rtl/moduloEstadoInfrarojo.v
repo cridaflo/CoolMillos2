@@ -14,7 +14,7 @@ output wire [7:0] contadorOut;
 
 
 //MODULOS
-moduloContadorInfrarojo #(TIMEOUT) contador (reset, clock, inSignal, outSignal, contadorOut);
+moduloContadorInfrarojo #(TIMEOUT) contador (reset, clock, inSignal, outSignal, contadorOut, hayNegro);
 
 //Logica secuencial MAQUINA DE ESTADOS
 always@(posedge clock)

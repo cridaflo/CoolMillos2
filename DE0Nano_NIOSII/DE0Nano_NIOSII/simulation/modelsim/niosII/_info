@@ -1,0 +1,2272 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/ArquiDig/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1544146111
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+Ia7cDCXVVE0Ni6Fo^iWPS_0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1544144970
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_sc_fifo.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1544146111.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z7 o-vlog01compat -work niosII
+Z8 !s92 -vlog01compat -work niosII +incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules
+Z9 tCvgOpt 0
+valtera_avalon_st_clock_crosser
+Z10 !s110 1544146116
+!i10b 1
+!s100 YbU`iK^TYJ_9Hz`CZekjQ3
+I3_oU?8a7:;H>n45jf4Fe_3
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v
+Z11 L0 22
+R5
+r1
+!s85 0
+31
+Z12 !s108 1544146116.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_st_handshake_clock_crosser
+R10
+!i10b 1
+!s100 3f<J9K;e[9FU@JKn0^PK?0
+Ij`clLY0jF6^UDK7?n>EJA2
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z13 L0 24
+R5
+r1
+!s85 0
+31
+R12
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_irq_clock_crosser
+Z14 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R10
+!i10b 1
+!s100 h4R`cF8cBH7NA_@W;Oa@73
+IZNIo:gGI2@niOV3A8PDLY1
+R2
+!s105 altera_irq_clock_crosser_sv_unit
+S1
+R0
+Z15 w1544144966
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_irq_clock_crosser.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_irq_clock_crosser.sv
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_irq_clock_crosser.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_irq_clock_crosser.sv|
+!i113 1
+Z16 o-sv -work niosII
+Z17 !s92 -sv -work niosII +incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules
+R9
+valtera_merlin_arb_adder
+R14
+R10
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+Ij=H3^I<^0UcFWZCZ9iMDM2
+R2
+Z18 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R3
+Z19 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_arbitrator.sv
+Z20 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+R12
+Z21 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_arbitrator.sv|
+Z22 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_arbitrator
+R14
+R10
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IJFFB=M]WCo2fLCgDD_UjG1
+R2
+R18
+S1
+R0
+R3
+R19
+R20
+L0 103
+R5
+r1
+!s85 0
+31
+R12
+R21
+R22
+!i113 1
+R16
+R17
+R9
+valtera_merlin_burst_adapter
+R14
+R10
+!i10b 1
+!s100 OCc70X^k:B?GW6i71n`L_3
+I=W2c8P<eO4XeQK4nHMVj;1
+R2
+!s105 altera_merlin_burst_adapter_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv
+R4
+R5
+r1
+!s85 0
+31
+R12
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_burst_adapter_uncompressed_only
+R14
+R10
+!i10b 1
+!s100 STH]BdUM[JDMJZNJGXCd>0
+Io[cWd597H6`W;P3IkUoZ02
+R2
+!s105 altera_merlin_burst_adapter_uncmpr_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv
+L0 39
+R5
+r1
+!s85 0
+31
+R12
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_adapter_uncmpr.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_burst_uncompressor
+R14
+R10
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+Id]0mQ3hC9dQYlDH<9z5cU3
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+R12
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_master_agent
+R14
+Z23 !s110 1544146117
+!i10b 1
+!s100 _CJm:YX=>U2LQKH;8=@cb0
+IGDO1]4H@K8;aBWRU>j:i]1
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_agent.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_agent.sv
+Z24 L0 28
+R5
+r1
+!s85 0
+31
+Z25 !s108 1544146117.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_master_translator
+R14
+R23
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+Ifg8da0>W9OGko@mg?i<[D1
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_translator.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_translator.sv
+L0 32
+R5
+r1
+!s85 0
+31
+R25
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_slave_agent
+R14
+R23
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+IjVENFY`23>4?`S6P6i[cJ1
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_agent.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_agent.sv
+Z26 L0 34
+R5
+r1
+!s85 0
+31
+R25
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_slave_translator
+R14
+R23
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+I>cHeWEo0FWlNgA6<WGJQO3
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_translator.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+R25
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R16
+R17
+R9
+valtera_merlin_width_adapter
+R14
+R23
+!i10b 1
+!s100 QzdA5DP6CReOTH<9QzODa3
+ITCVP^8L6m3YR6zAc;W;I?3
+R2
+!s105 altera_merlin_width_adapter_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_width_adapter.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_width_adapter.sv
+L0 25
+R5
+r1
+!s85 0
+31
+R25
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_width_adapter.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_merlin_width_adapter.sv|
+!i113 1
+R16
+R17
+R9
+valtera_reset_controller
+R1
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+IXON@b;601?5W9ODh^b2@L0
+R2
+R0
+R15
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_controller.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+R6
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I4HGVGHjS7X@Lg5]Co5:5S3
+R2
+R0
+R15
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_synchronizer.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_synchronizer.v
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+valtera_std_synchronizer_nocut
+Z27 !s110 1544146118
+!i10b 1
+!s100 b8zV2<79GgkNg0GC<P[GJ2
+I6W=n:F:oZ<;[<?U;=WN7H0
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v
+L0 44
+R5
+r1
+!s85 0
+31
+R25
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_std_synchronizer_nocut.v|
+!i113 1
+R7
+R8
+R9
+valtera_up_avalon_adv_adc
+Z28 !s110 1544146112
+!i10b 1
+!s100 Fj4=HVHERR26f]F5nnoNa3
+Ia`J3UQnKUeJ[M@Ua6ID]f3
+R2
+R0
+Z29 w1544144922
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_avalon_adv_adc.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_avalon_adv_adc.v
+L0 23
+R5
+r1
+!s85 0
+31
+Z30 !s108 1544146112.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_avalon_adv_adc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_avalon_adv_adc.v|
+!i113 1
+R7
+R8
+R9
+valtera_up_rs232_counters
+R28
+!i10b 1
+!s100 g9Lz=2g>^?fJWGo?k6FIM1
+IM`JHJ6`O[A7`Do4:I2V382
+R2
+R0
+Z31 w1544144925
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_counters.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_counters.v
+Z32 L0 29
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_counters.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_counters.v|
+!i113 1
+R7
+R8
+R9
+valtera_up_rs232_in_deserializer
+R28
+!i10b 1
+!s100 hSQGWK2XE=ja:`El]N;1a3
+IJ?<Z>D7la65kN4OE3VBl^3
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_in_deserializer.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_in_deserializer.v
+R24
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_in_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_in_deserializer.v|
+!i113 1
+R7
+R8
+R9
+valtera_up_rs232_out_serializer
+R28
+!i10b 1
+!s100 :akFWh]G]CDl];i9FfkBA0
+I]Z`bDhM2HaZ0=L6=4]fh<2
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_out_serializer.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_out_serializer.v
+R24
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_out_serializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_rs232_out_serializer.v|
+!i113 1
+R7
+R8
+R9
+valtera_up_sync_fifo
+R28
+!i10b 1
+!s100 d7WZV`gzKOF0bG`8>8mG32
+IRdYKLEC;BLQNE0@K2[Yk32
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_sync_fifo.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_sync_fifo.v
+R24
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/altera_up_sync_fifo.v|
+!i113 1
+R7
+R8
+R9
+vniosII
+R1
+!i10b 1
+!s100 WiBZBFICg:6U?MUzeFY722
+IYXGJ9Aa=<;[SmH>IFdITU3
+R2
+R0
+w1544144919
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/niosii.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/niosii.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/niosii.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/niosii.v|
+!i113 1
+R7
+!s92 -vlog01compat -work niosII +incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii
+R9
+nnios@i@i
+vniosII_adc_0
+R28
+!i10b 1
+!s100 SRVP`m5nO>Z:HZ1ig?3k93
+IT[PWEV_REFQTYRVHSh>Kg0
+R2
+R0
+R29
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_adc_0.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_adc_0.v
+R11
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_adc_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_adc_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_adc_0
+vniosII_cpu
+Z33 !s110 1544146113
+!i10b 1
+!s100 3o6=iaffRjU;[1jn]g<@>3
+IN27[Y4JT@M<6UPz>B>Ti43
+R2
+R0
+Z34 w1544144924
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu.v
+L0 9
+R5
+r1
+!s85 0
+31
+R30
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu
+vniosII_cpu_cpu
+R33
+!i10b 1
+!s100 O3F^FRHJcigZiE3Pg0Rb41
+ID7SBzYY4@Q^MiSVdNbB>80
+R2
+R0
+R3
+Z35 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu.v
+Z36 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu.v
+L0 2834
+R5
+r1
+!s85 0
+31
+Z37 !s108 1544146113.000000
+Z38 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu.v|
+Z39 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu
+vniosII_cpu_cpu_debug_slave_sysclk
+R33
+!i10b 1
+!s100 4M5Cj1D2;PdAE`OifmXoc2
+I0cmzj52@5d[W[On=YR]S60
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v
+R4
+R5
+r1
+!s85 0
+31
+R37
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_sysclk.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_sysclk
+vniosII_cpu_cpu_debug_slave_tck
+R33
+!i10b 1
+!s100 CBh4BDz^Ql^fk2R180G3a1
+ID>H?5nMe^NG2]?nQXS:0m2
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v
+R4
+R5
+r1
+!s85 0
+31
+R37
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_tck.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_tck
+vniosII_cpu_cpu_debug_slave_wrapper
+R33
+!i10b 1
+!s100 YgoMe8F`KgSDa83_PACMo2
+InS612AC5b=ILYJ3cRSN0K2
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v
+R4
+R5
+r1
+!s85 0
+31
+R37
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_debug_slave_wrapper.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_debug_slave_wrapper
+vniosII_cpu_cpu_nios2_avalon_reg
+R33
+!i10b 1
+!s100 ^8ZJQXJ[8Q_c@48LPMik@0
+I^Hm2VL>kCTlQh`QF3ol@J3
+R2
+R0
+R3
+R35
+R36
+L0 2023
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_avalon_reg
+vniosII_cpu_cpu_nios2_oci
+R33
+!i10b 1
+!s100 BWL5O1EBVY<F3P4CZkoC32
+Ijc6k]H^S8aOBlFbb3IMI@2
+R2
+R0
+R3
+R35
+R36
+L0 2362
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci
+vniosII_cpu_cpu_nios2_oci_break
+R33
+!i10b 1
+!s100 mJ;oXg79i74BjR[DAL=UY1
+IDHfc4VNV]Oh9KXPEGILIl1
+R2
+R0
+R3
+R35
+R36
+L0 295
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_break
+vniosII_cpu_cpu_nios2_oci_compute_input_tm_cnt
+R33
+!i10b 1
+!s100 3>47cSFBRJ`L>PYzoV65I2
+I=CT09oDm=bITd]HzRkBGo2
+R2
+R0
+R3
+R35
+R36
+L0 1265
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_compute_input_tm_cnt
+vniosII_cpu_cpu_nios2_oci_dbrk
+R33
+!i10b 1
+!s100 =TT5XUacR`gj[>iQOU<mB2
+IzVo1=2PXA_K<_Q3CZ5P_Z2
+R2
+R0
+R3
+R35
+R36
+L0 795
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_dbrk
+vniosII_cpu_cpu_nios2_oci_debug
+R33
+!i10b 1
+!s100 nzAa82`PU2dikHa52aF>B0
+I^D:nRDkXjMfZ^db1BJc_Y3
+R2
+R0
+R3
+R35
+R36
+L0 153
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_debug
+vniosII_cpu_cpu_nios2_oci_dtrace
+R33
+!i10b 1
+!s100 6K4@=`Gc<;K6F4^8HCma80
+ImEZRf[hUCIgCXll7e[5Z;1
+R2
+R0
+R3
+R35
+R36
+L0 1183
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_dtrace
+vniosII_cpu_cpu_nios2_oci_fifo
+R33
+!i10b 1
+!s100 QHPfTRCXGGd_jUna[eAEf2
+IgOJ1zRgD?=E^alR0aif5Y1
+R2
+R0
+R3
+R35
+R36
+L0 1427
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo
+vniosII_cpu_cpu_nios2_oci_fifo_cnt_inc
+R33
+!i10b 1
+!s100 ?Xb=D9[i[hBJ3A[F04G=n2
+ILDjcFGKaG4V3[MI@;1Fh02
+R2
+R0
+R3
+R35
+R36
+L0 1380
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo_cnt_inc
+vniosII_cpu_cpu_nios2_oci_fifo_wrptr_inc
+R33
+!i10b 1
+!s100 @;[?DjQ0UcAmDo5h8Fl183
+I=U<YNQ2dCBT[h_n@Rg83T0
+R2
+R0
+R3
+R35
+R36
+L0 1337
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_fifo_wrptr_inc
+vniosII_cpu_cpu_nios2_oci_im
+R33
+!i10b 1
+!s100 DmT6Ma]NV4Oo8FCS`IbQZ0
+IL;Xog<nz=bK3^L76:UkDM1
+R2
+R0
+R3
+R35
+R36
+L0 1936
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_im
+vniosII_cpu_cpu_nios2_oci_itrace
+R33
+!i10b 1
+!s100 4_`9`ocemga2o:>eR4TQ70
+IMOA<I:<YE:?S83j<L=98Y0
+R2
+R0
+R3
+R35
+R36
+L0 982
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_itrace
+vniosII_cpu_cpu_nios2_oci_pib
+R33
+!i10b 1
+!s100 Nh8^`LB77d0jAdBHaW3de1
+IFihmLgZ]VfAD=`_WM]a]Z1
+R2
+R0
+R3
+R35
+R36
+L0 1913
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_pib
+vniosII_cpu_cpu_nios2_oci_td_mode
+R33
+!i10b 1
+!s100 H4L@i?XYNefRh9z:l0DP91
+IFFE2PgGk];@Pjb6Z8T9]l1
+R2
+R0
+R3
+R35
+R36
+L0 1115
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_td_mode
+vniosII_cpu_cpu_nios2_oci_xbrk
+R33
+!i10b 1
+!s100 Fn2La>19PkL:N7]^<LCGJ1
+IeWYXBXlTO?=D2aRHSF@Pd1
+R2
+R0
+R3
+R35
+R36
+L0 588
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_oci_xbrk
+vniosII_cpu_cpu_nios2_ocimem
+R33
+!i10b 1
+!s100 9UM^;?60d`@b3G01DV9`^0
+IlCWL[gMf9M[bL>;^jeHS00
+R2
+R0
+R3
+R35
+R36
+L0 2181
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_ocimem
+vniosII_cpu_cpu_nios2_performance_monitors
+R33
+!i10b 1
+!s100 US@<8BS]QSEJ@NYKJP5Nh3
+IQPV<E1O=eS`FjQiReMMk;3
+R2
+R0
+R3
+R35
+R36
+L0 2006
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_nios2_performance_monitors
+vniosII_cpu_cpu_ociram_sp_ram_module
+R33
+!i10b 1
+!s100 M]`:P<UgjIcS1K;DRTQME0
+IQWUOcTe=P[N7g_dj1Q:kR3
+R2
+R0
+R3
+R35
+R36
+L0 2116
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_ociram_sp_ram_module
+vniosII_cpu_cpu_register_bank_a_module
+R33
+!i10b 1
+!s100 B5WM`Bc9YhRNMJ_Kgn>Wa3
+Ic2n51C:8X9eZUnBiKz]>M3
+R2
+R0
+R3
+R35
+R36
+R4
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_register_bank_a_module
+vniosII_cpu_cpu_register_bank_b_module
+R33
+!i10b 1
+!s100 aCeVPa?`jUnZi;U;=E1:K2
+IFJ9<NoJWXR:=7KDD5hM[n2
+R2
+R0
+R3
+R35
+R36
+L0 87
+R5
+r1
+!s85 0
+31
+R37
+R38
+R39
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_register_bank_b_module
+vniosII_cpu_cpu_test_bench
+R33
+!i10b 1
+!s100 9c?cPaT3bZmDVIze<0a@a2
+I<jfYO<=FF8T5bOTF9A7<k1
+R2
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v
+R4
+R5
+r1
+!s85 0
+31
+R37
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_cpu_cpu_test_bench.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_cpu_cpu_test_bench
+vniosII_epcs
+Z40 !s110 1544146114
+!i10b 1
+!s100 Bz@QnMXK:UeOG3=V:W=1g2
+IEBG;WZ>HMTE2@Q3k5l5>Z3
+R2
+R0
+R34
+Z41 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_epcs.v
+Z42 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_epcs.v
+L0 425
+R5
+r1
+!s85 0
+31
+Z43 !s108 1544146114.000000
+Z44 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_epcs.v|
+Z45 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_epcs.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_epcs
+vniosII_epcs_sub
+R40
+!i10b 1
+!s100 4alj_2klXn`f`5aO4ilhQ0
+Ia]FN[B1<_z=BW2[1?KB7L1
+R2
+R0
+R34
+R41
+R42
+L0 41
+R5
+r1
+!s85 0
+31
+R43
+R44
+R45
+!i113 1
+R7
+R8
+R9
+nnios@i@i_epcs_sub
+vniosII_irq_mapper
+R14
+R27
+!i10b 1
+!s100 `D78?:T?FPgd9^HiTaazL3
+I2QhCbd1@FdE2]lBj6c7CB0
+R2
+!s105 niosii_irq_mapper_sv_unit
+S1
+R0
+R15
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_irq_mapper.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+Z46 !s108 1544146118.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_irq_mapper.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_irq_mapper
+vniosII_jtag
+R40
+!i10b 1
+!s100 aG[VR732baVF]R92:_OIY0
+IjICFQ:JbZ;I?SR:LQg^^`3
+R2
+R0
+R31
+Z47 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_jtag.v
+Z48 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_jtag.v
+L0 331
+R5
+r1
+!s85 0
+31
+R43
+Z49 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_jtag.v|
+Z50 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_jtag.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag
+vniosII_jtag_scfifo_r
+R40
+!i10b 1
+!s100 XmYamOYU4]IkkOG@OOLGK2
+Ii8kjNVlgc=VABMfP1CDKI2
+R2
+R0
+R31
+R47
+R48
+L0 243
+R5
+r1
+!s85 0
+31
+R43
+R49
+R50
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_scfifo_r
+vniosII_jtag_scfifo_w
+R40
+!i10b 1
+!s100 HYZclTkV`TlHQf<5ICQ@?2
+ICNY2D@e^ST5QY1GMOD7J?1
+R2
+R0
+R31
+R47
+R48
+L0 78
+R5
+r1
+!s85 0
+31
+R43
+R49
+R50
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_scfifo_w
+vniosII_jtag_sim_scfifo_r
+R40
+!i10b 1
+!s100 52iBoGIV@z@ccJFNZAVS71
+I^?4[kDTWR^V07j3MVNKSQ0
+R2
+R0
+R31
+R47
+R48
+L0 164
+R5
+r1
+!s85 0
+31
+R43
+R49
+R50
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_sim_scfifo_r
+vniosII_jtag_sim_scfifo_w
+R40
+!i10b 1
+!s100 kXYhIJT;HE0FKZbmaJISI3
+IEbaPb51nIJdW:g;]JWC@c2
+R2
+R0
+R31
+R47
+R48
+R4
+R5
+r1
+!s85 0
+31
+R43
+R49
+R50
+!i113 1
+R7
+R8
+R9
+nnios@i@i_jtag_sim_scfifo_w
+vniosII_mm_interconnect_0
+R40
+!i10b 1
+!s100 [P;SI@Ti3z^nFOVDdjlH03
+IGB8Tzh3WQhdDY:CWNHdIZ2
+R2
+R0
+R15
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+R43
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0
+vniosII_mm_interconnect_0_avalon_st_adapter
+R40
+!i10b 1
+!s100 @zkYkeIK:iSKn8ASjOd=S2
+I=^Wno2aPz`z9V5]Jf9;h00
+R2
+R0
+w1544144972
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+R43
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter
+vniosII_mm_interconnect_0_avalon_st_adapter_012
+R40
+!i10b 1
+!s100 WPL@m63>AiLaDhF8mVgWL2
+Ia8=f;>GNc;VoH_8:n>m112
+R2
+R0
+Z51 w1544144973
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012.v
+L0 9
+R5
+r1
+!s85 0
+31
+R43
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_012
+vniosII_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+R14
+R27
+!i10b 1
+!s100 l;IIAN8;1JcbS3XCBTNme1
+INb_JJZ2HloMf=PcWQIEIf2
+R2
+!s105 niosii_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0_sv_unit
+S1
+R0
+R51
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv
+Z52 L0 66
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_012_error_adapter_0
+vniosII_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R14
+R27
+!i10b 1
+!s100 hGDifMP79ziN:i0@=T35a3
+I1V9m:Be1G1_cKOfFSj70Q1
+R2
+!s105 niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R51
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+R52
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+vniosII_mm_interconnect_0_cmd_demux
+R14
+R27
+!i10b 1
+!s100 c=j^0dmLiL`Di6LO20mWd2
+I^=E^<`z`h[ii34054i<>;3
+R2
+!s105 niosii_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv
+Z53 L0 43
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_cmd_demux
+vniosII_mm_interconnect_0_cmd_demux_001
+R14
+R27
+!i10b 1
+!s100 O_S0OXca]a3eiMeE6J^nf1
+I0^2OLHa7FIFH8oSn63@EX1
+R2
+!s105 niosii_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv
+R53
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_cmd_demux_001
+vniosII_mm_interconnect_0_cmd_mux
+R14
+R27
+!i10b 1
+!s100 hI[?jAmM7gHTM6P[`AOz[2
+IS:adU=<m`IOWT5EgClWa02
+R2
+!s105 niosii_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv
+Z54 L0 51
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_cmd_mux
+vniosII_mm_interconnect_0_cmd_mux_009
+R14
+R27
+!i10b 1
+!s100 :Pc9Z7]HA:ZCV;KdYn3jV3
+ITK6ZO0cS>>a<29XFhY[?O3
+R2
+!s105 niosii_mm_interconnect_0_cmd_mux_009_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_009.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_009.sv
+R54
+R5
+r1
+!s85 0
+31
+R46
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_009.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_cmd_mux_009.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_cmd_mux_009
+vniosII_mm_interconnect_0_router
+R14
+Z55 !s110 1544146119
+!i10b 1
+!s100 1oNkmVD?kEiWQzZlALc5D3
+Ia2kC3mKW@j3jD=89H4HFQ3
+R2
+Z56 !s105 niosii_mm_interconnect_0_router_sv_unit
+S1
+R0
+R3
+Z57 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv
+Z58 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv
+Z59 L0 84
+R5
+r1
+!s85 0
+31
+Z60 !s108 1544146119.000000
+Z61 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv|
+Z62 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router
+vniosII_mm_interconnect_0_router_001
+R14
+R55
+!i10b 1
+!s100 ]z31?Sbj;f7h_]ZIaJRUR3
+I_m@X]l2d>0S]>dGDM4Ek;0
+R2
+Z63 !s105 niosii_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R3
+Z64 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv
+Z65 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv
+R59
+R5
+r1
+!s85 0
+31
+R60
+Z66 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv|
+Z67 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_001.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_001
+vniosII_mm_interconnect_0_router_001_default_decode
+R14
+R55
+!i10b 1
+!s100 k2eB?ZazCJ@gK3WMKXoOi0
+IYamSbUZlR1QHMFYNlHD`51
+R2
+R63
+S1
+R0
+R3
+R64
+R65
+Z68 L0 45
+R5
+r1
+!s85 0
+31
+R60
+R66
+R67
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_001_default_decode
+vniosII_mm_interconnect_0_router_002
+R14
+R55
+!i10b 1
+!s100 NEin2eShz6NL>MP_lhSV12
+IM2>iLn=f72Z>XFVOn^<ee0
+R2
+Z69 !s105 niosii_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R3
+Z70 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv
+Z71 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv
+R59
+R5
+r1
+!s85 0
+31
+R60
+Z72 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv|
+Z73 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_002.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_002
+vniosII_mm_interconnect_0_router_002_default_decode
+R14
+R55
+!i10b 1
+!s100 U@09cXF4]8<ZCI_EcDk@M3
+IYSIn4O6J6UTGQHzZEJAU82
+R2
+R69
+S1
+R0
+R3
+R70
+R71
+R68
+R5
+r1
+!s85 0
+31
+R60
+R72
+R73
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_002_default_decode
+vniosII_mm_interconnect_0_router_011
+R14
+R55
+!i10b 1
+!s100 PR2<47K?4BH2o6MglRjT@1
+IoaHfoMVT[mLeQE>QNjY3^3
+R2
+Z74 !s105 niosii_mm_interconnect_0_router_011_sv_unit
+S1
+R0
+R3
+Z75 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_011.sv
+Z76 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_011.sv
+R59
+R5
+r1
+!s85 0
+31
+R60
+Z77 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_011.sv|
+Z78 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_011.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_011
+vniosII_mm_interconnect_0_router_011_default_decode
+R14
+R55
+!i10b 1
+!s100 L<T9[Cakin^UL230hS1zH3
+I90I:13BX<aFFkY9e7e8eM3
+R2
+R74
+S1
+R0
+R3
+R75
+R76
+R68
+R5
+r1
+!s85 0
+31
+R60
+R77
+R78
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_011_default_decode
+vniosII_mm_interconnect_0_router_014
+R14
+R55
+!i10b 1
+!s100 ]g`2hfgkB2cRdlH[03CF;1
+IZ6a:B3nKAdVBYh]YGKgz82
+R2
+Z79 !s105 niosii_mm_interconnect_0_router_014_sv_unit
+S1
+R0
+R3
+Z80 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_014.sv
+Z81 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_014.sv
+R59
+R5
+r1
+!s85 0
+31
+R60
+Z82 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_014.sv|
+Z83 !s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_router_014.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_014
+vniosII_mm_interconnect_0_router_014_default_decode
+R14
+R55
+!i10b 1
+!s100 JPEbEhi9]5?K=o7J4DJ9c2
+I5<<MCQWbHM?^;h@:Gf7c71
+R2
+R79
+S1
+R0
+R3
+R80
+R81
+R68
+R5
+r1
+!s85 0
+31
+R60
+R82
+R83
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_014_default_decode
+vniosII_mm_interconnect_0_router_default_decode
+R14
+R55
+!i10b 1
+!s100 oNRCooK[]GcZ?P@6g;Q:j2
+I<85]N:1U1]lP;Ak?]Ha4f1
+R2
+R56
+S1
+R0
+R3
+R57
+R58
+R68
+R5
+r1
+!s85 0
+31
+R60
+R61
+R62
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_router_default_decode
+vniosII_mm_interconnect_0_rsp_demux
+R14
+R55
+!i10b 1
+!s100 zCX@AV;=I>Vf`g:6[TE0D2
+I@N?XXgh0LSBl`9MRObG@_0
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv
+R53
+R5
+r1
+!s85 0
+31
+R60
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux
+vniosII_mm_interconnect_0_rsp_demux_001
+R14
+Z84 !s110 1544146120
+!i10b 1
+!s100 M_2NV4LWWgdnNoi9H4FMK2
+I_W6ZzMUI`IFhTHIf_L9]N0
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_001_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv
+R53
+R5
+r1
+!s85 0
+31
+R60
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_001.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux_001
+vniosII_mm_interconnect_0_rsp_demux_009
+R14
+R84
+!i10b 1
+!s100 VfdfeD7d=JFHQC@AQmjLg2
+I[JLmbg5MoaFWl[VDNC8=e2
+R2
+!s105 niosii_mm_interconnect_0_rsp_demux_009_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_009.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_009.sv
+R53
+R5
+r1
+!s85 0
+31
+Z85 !s108 1544146120.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_009.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_demux_009.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_rsp_demux_009
+vniosII_mm_interconnect_0_rsp_mux
+R14
+R84
+!i10b 1
+!s100 ZAlG9Cnidh3?QiK7bDcgC0
+INFK?>4Q]jj:^FUQS848?Z0
+R2
+!s105 niosii_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv
+R54
+R5
+r1
+!s85 0
+31
+R85
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_rsp_mux
+vniosII_mm_interconnect_0_rsp_mux_001
+R14
+R84
+!i10b 1
+!s100 >8^5jec^@RoQBzXkogNGK1
+IFA0?G@;hPZQ@WhR^1UXPS2
+R2
+!s105 niosii_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R3
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv
+R54
+R5
+r1
+!s85 0
+31
+R85
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R16
+R17
+R9
+nnios@i@i_mm_interconnect_0_rsp_mux_001
+vniosII_port_gpio_0
+R40
+!i10b 1
+!s100 Nl[l_k=g6Ukkh=M2g;V_R0
+IgNo]W>e6S=djR0z[U?A`f0
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_gpio_0.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_gpio_0.v
+Z86 L0 30
+R5
+r1
+!s85 0
+31
+R43
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_gpio_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_gpio_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_port_gpio_0
+vniosII_port_key
+Z87 !s110 1544146115
+!i10b 1
+!s100 _WBAkW?@j973<K?88UiDF0
+I=JG?5[T:BQ`@TE2NL]96>2
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_key.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_key.v
+R86
+R5
+r1
+!s85 0
+31
+R43
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_key.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_port_key
+vniosII_port_led
+R87
+!i10b 1
+!s100 dnHE5^e@RLfSOnzVl_jXc2
+IOX2DXISoG2eW<HSdQj>=P2
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_led.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_led.v
+R86
+R5
+r1
+!s85 0
+31
+Z88 !s108 1544146115.000000
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_led.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_port_led
+vniosII_port_sw
+R87
+!i10b 1
+!s100 HK4LK7Tc4z=VlmNS=manC3
+IjDRWDACeg<iOO9=6hRQ?F1
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_sw.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_sw.v
+R86
+R5
+r1
+!s85 0
+31
+R88
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_sw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_port_sw.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_port_sw
+vniosII_rs232_0
+R87
+!i10b 1
+!s100 XXTQ20Pe?3UMWDY6cN`mh1
+IfzFEgMloTJKA`gS91BiAO3
+R2
+R0
+R31
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_rs232_0.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_rs232_0.v
+R32
+R5
+r1
+!s85 0
+31
+R88
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_rs232_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_rs232_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_rs232_0
+vniosII_sdram
+R87
+!i10b 1
+!s100 ]R>:3ZH5b9A<bQ@2QKiYg0
+IPD`Te=3nLbW7<a3Aln0;R3
+R2
+R0
+Z89 w1544144926
+Z90 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sdram.v
+Z91 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sdram.v
+L0 159
+R5
+r1
+!s85 0
+31
+R88
+Z92 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sdram.v|
+Z93 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sdram.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sdram
+vniosII_sdram_input_efifo_module
+R87
+!i10b 1
+!s100 ODD<G=8?0[N:>fN7n`0Q50
+IRCF36_di48>oGlF:ZNNoD2
+R2
+R0
+R89
+R90
+R91
+R4
+R5
+r1
+!s85 0
+31
+R88
+R92
+R93
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sdram_input_efifo_module
+vniosII_sys_id
+R87
+!i10b 1
+!s100 d`HUIigFm65M5bDW7kodX3
+Il[;FimfUb?BVIfS=oAcPH1
+R2
+R0
+R89
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_id.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_id.v
+R26
+R5
+r1
+!s85 0
+31
+R88
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_id.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_id.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_id
+vniosII_sys_pll
+R87
+!i10b 1
+!s100 >bZ[^4A5hBA^6`ZhS>N4]1
+I6<8[P`HkS1M2:ZXO6MP7[3
+R2
+R0
+Z94 w1544144928
+Z95 8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_pll.v
+Z96 Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_pll.v
+L0 217
+R5
+r1
+!s85 0
+31
+R88
+Z97 !s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_pll.v|
+Z98 !s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_sys_pll.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll
+vniosII_sys_pll_altpll_8ra2
+R87
+!i10b 1
+!s100 XYaSF:Z?HR85YbGRUd4TD1
+IHT@8@9d>jEU]aCAS;_6cD2
+R2
+R0
+R94
+R95
+R96
+L0 130
+R5
+r1
+!s85 0
+31
+R88
+R97
+R98
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_altpll_8ra2
+vniosII_sys_pll_dffpipe_l2c
+R87
+!i10b 1
+!s100 T7l3g@AYDY=^8:OS:XC@I0
+IaIVSh2@A^[OPaNf;9W9zn1
+R2
+R0
+R94
+R95
+R96
+L0 37
+R5
+r1
+!s85 0
+31
+R88
+R97
+R98
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_dffpipe_l2c
+vniosII_sys_pll_stdsync_sv6
+R87
+!i10b 1
+!s100 e`ZdZT9Pg=me8K[Of^GZN3
+IoF2`i[<Q0_a<7FGK9HLI]2
+R2
+R0
+R94
+R95
+R96
+L0 98
+R5
+r1
+!s85 0
+31
+R88
+R97
+R98
+!i113 1
+R7
+R8
+R9
+nnios@i@i_sys_pll_stdsync_sv6
+vniosII_timer_0
+R10
+!i10b 1
+!s100 ]dk0B2`58OCYB[Xznm><63
+IdkBjT61dz3Xfm7D_j=aF42
+R2
+R0
+R94
+8e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_timer_0.v
+Fe:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_timer_0.v
+R4
+R5
+r1
+!s85 0
+31
+R88
+!s107 e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_timer_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|niosII|+incdir+e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules|e:/arquidig/coolmillos2/de0nano_niosii/de0nano_niosii/db/ip/niosii/submodules/niosii_timer_0.v|
+!i113 1
+R7
+R8
+R9
+nnios@i@i_timer_0

@@ -1,0 +1,132 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/06/2018 19:50:34"
+                                                                                
+// Verilog Test Bench template for design : DE0Nano_NIOSII
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module DE0Nano_NIOSII_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg ADC_SDAT;
+reg CLOCK_50;
+reg [15:0] treg_DRAM_DQ;
+reg EPCS_DATA0;
+reg [33:0] treg_GPIO_0;
+reg [1:0] GPIO_0_IN;
+reg [33:0] treg_GPIO_1;
+reg [1:0] GPIO_1_IN;
+reg [12:0] treg_GPIO_2;
+reg [2:0] GPIO_2_IN;
+reg G_SENSOR_INT;
+reg treg_I2C_SDAT;
+reg [1:0] KEY;
+reg [3:0] SW;
+// wires                                               
+wire ADC_CS_N;
+wire ADC_SADDR;
+wire ADC_SCLK;
+wire [12:0]  DRAM_ADDR;
+wire [1:0]  DRAM_BA;
+wire DRAM_CAS_N;
+wire DRAM_CKE;
+wire DRAM_CLK;
+wire DRAM_CS_N;
+wire [15:0]  DRAM_DQ;
+wire [1:0]  DRAM_DQM;
+wire DRAM_RAS_N;
+wire DRAM_WE_N;
+wire EPCS_ASDO;
+wire EPCS_DCLK;
+wire EPCS_NCSO;
+wire [33:0]  GPIO_0;
+wire [33:0]  GPIO_1;
+wire [12:0]  GPIO_2;
+wire G_SENSOR_CS_N;
+wire I2C_SCLK;
+wire I2C_SDAT;
+wire [7:0]  LED;
+
+// assign statements (if any)                          
+assign DRAM_DQ = treg_DRAM_DQ;
+assign GPIO_0 = treg_GPIO_0;
+assign GPIO_1 = treg_GPIO_1;
+assign GPIO_2 = treg_GPIO_2;
+assign I2C_SDAT = treg_I2C_SDAT;
+DE0Nano_NIOSII i1 (
+// port map - connection between master ports and signals/registers   
+	.ADC_CS_N(ADC_CS_N),
+	.ADC_SADDR(ADC_SADDR),
+	.ADC_SCLK(ADC_SCLK),
+	.ADC_SDAT(ADC_SDAT),
+	.CLOCK_50(CLOCK_50),
+	.DRAM_ADDR(DRAM_ADDR),
+	.DRAM_BA(DRAM_BA),
+	.DRAM_CAS_N(DRAM_CAS_N),
+	.DRAM_CKE(DRAM_CKE),
+	.DRAM_CLK(DRAM_CLK),
+	.DRAM_CS_N(DRAM_CS_N),
+	.DRAM_DQ(DRAM_DQ),
+	.DRAM_DQM(DRAM_DQM),
+	.DRAM_RAS_N(DRAM_RAS_N),
+	.DRAM_WE_N(DRAM_WE_N),
+	.EPCS_ASDO(EPCS_ASDO),
+	.EPCS_DATA0(EPCS_DATA0),
+	.EPCS_DCLK(EPCS_DCLK),
+	.EPCS_NCSO(EPCS_NCSO),
+	.GPIO_0(GPIO_0),
+	.GPIO_0_IN(GPIO_0_IN),
+	.GPIO_1(GPIO_1),
+	.GPIO_1_IN(GPIO_1_IN),
+	.GPIO_2(GPIO_2),
+	.GPIO_2_IN(GPIO_2_IN),
+	.G_SENSOR_CS_N(G_SENSOR_CS_N),
+	.G_SENSOR_INT(G_SENSOR_INT),
+	.I2C_SCLK(I2C_SCLK),
+	.I2C_SDAT(I2C_SDAT),
+	.KEY(KEY),
+	.LED(LED),
+	.SW(SW)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
