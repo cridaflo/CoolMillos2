@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
 
-// DATE "12/06/2018 09:08:56"
+// DATE "12/07/2018 16:09:20"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -208,8 +208,6 @@ wire \jtag|niosII_jtag_alt_jtag_atlantic|tdo~q ;
 wire \rst_controller|r_sync_rst~q ;
 wire \rst_controller_001|r_sync_rst~q ;
 wire \mm_interconnect_0|cmd_mux_010|saved_grant[0]~q ;
-wire \mm_interconnect_0|cmd_mux_010|saved_grant[1]~q ;
-wire \mm_interconnect_0|crosser_003|clock_xer|out_data_buffer[38]~q ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[38]~combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[39]~combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[40]~combout ;
@@ -218,7 +216,7 @@ wire \sdram|the_niosII_sdram_input_efifo_module|entries[1]~q ;
 wire \sdram|the_niosII_sdram_input_efifo_module|entries[0]~q ;
 wire \mm_interconnect_0|adc_0_adc_slave_agent_rsp_fifo|mem_used[1]~q ;
 wire \cpu|cpu|d_read~q ;
-wire \mm_interconnect_0|cpu_data_master_translator|read_accepted~q ;
+wire \mm_interconnect_0|cpu_data_master_translator|uav_read~0_combout ;
 wire \mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ;
 wire \cpu|cpu|d_write~q ;
 wire \mm_interconnect_0|cpu_data_master_translator|write_accepted~q ;
@@ -239,23 +237,23 @@ wire \mm_interconnect_0|cmd_mux_010|src_payload~2_combout ;
 wire \cpu|cpu|d_writedata[0]~q ;
 wire \port_led|data~0_combout ;
 wire \cpu|cpu|d_byteenable[0]~q ;
-wire \timer_0|Equal6~0_combout ;
-wire \mm_interconnect_0|router|Equal9~0_combout ;
+wire \port_led|data~1_combout ;
+wire \mm_interconnect_0|router|Equal9~2_combout ;
 wire \mm_interconnect_0|port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ;
 wire \cpu|cpu|d_writedata[1]~q ;
-wire \port_led|data~3_combout ;
-wire \cpu|cpu|d_writedata[2]~q ;
 wire \port_led|data~4_combout ;
-wire \cpu|cpu|d_writedata[3]~q ;
+wire \cpu|cpu|d_writedata[2]~q ;
 wire \port_led|data~5_combout ;
-wire \cpu|cpu|d_writedata[4]~q ;
+wire \cpu|cpu|d_writedata[3]~q ;
 wire \port_led|data~6_combout ;
-wire \cpu|cpu|d_writedata[5]~q ;
+wire \cpu|cpu|d_writedata[4]~q ;
 wire \port_led|data~7_combout ;
-wire \cpu|cpu|d_writedata[6]~q ;
+wire \cpu|cpu|d_writedata[5]~q ;
 wire \port_led|data~8_combout ;
-wire \cpu|cpu|d_writedata[7]~q ;
+wire \cpu|cpu|d_writedata[6]~q ;
 wire \port_led|data~9_combout ;
+wire \cpu|cpu|d_writedata[7]~q ;
+wire \port_led|data~10_combout ;
 wire \mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[0]~q ;
 wire \mm_interconnect_0|crosser_002|clock_xer|out_data_toggle_flopped~q ;
 wire \mm_interconnect_0|crosser_002|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
@@ -270,7 +268,6 @@ wire \cpu|cpu|d_byteenable[1]~q ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ;
 wire \mm_interconnect_0|cmd_mux_012|saved_grant[1]~q ;
 wire \mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ;
-wire \sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ;
 wire \cpu|cpu|i_read~q ;
 wire \cpu|cpu|F_pc[24]~q ;
 wire \cpu|cpu|F_pc[23]~q ;
@@ -287,16 +284,16 @@ wire \cpu|cpu|F_pc[13]~q ;
 wire \cpu|cpu|F_pc[12]~q ;
 wire \cpu|cpu|F_pc[11]~q ;
 wire \cpu|cpu|F_pc[10]~q ;
-wire \mm_interconnect_0|router|Equal1~0_combout ;
-wire \mm_interconnect_0|router|Equal4~1_combout ;
-wire \mm_interconnect_0|cmd_mux_012|WideOr1~combout ;
-wire \mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ;
-wire \mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ;
+wire \mm_interconnect_0|cmd_mux_012|src_valid~0_combout ;
+wire \sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ;
 wire \mm_interconnect_0|cmd_mux_012|src_data[66]~combout ;
+wire \mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ;
+wire \mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ;
+wire \mm_interconnect_0|router|Equal4~1_combout ;
+wire \mm_interconnect_0|cmd_demux|src12_valid~0_combout ;
+wire \mm_interconnect_0|router|Equal1~0_combout ;
 wire \cpu|cpu|F_pc[8]~q ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[28]~0_combout ;
-wire \mm_interconnect_0|cmd_mux_012|src_valid~0_combout ;
-wire \mm_interconnect_0|cmd_demux|src12_valid~0_combout ;
 wire \mm_interconnect_0|sdram_s1_agent|m0_write~combout ;
 wire \mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[42]~1_combout ;
 wire \cpu|cpu|F_pc[9]~q ;
@@ -415,6 +412,8 @@ wire \adc_0|waitrequest~0_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][84]~q ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][66]~q ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|read_latency_shift_reg[0]~q ;
+wire \mm_interconnect_0|crosser_005|clock_xer|out_data_toggle_flopped~q ;
+wire \mm_interconnect_0|crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
 wire \mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ;
 wire \mm_interconnect_0|sys_id_control_slave_translator|read_latency_shift_reg[0]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem[0][54]~q ;
@@ -430,13 +429,13 @@ wire \mm_interconnect_0|rs232_0_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q 
 wire \mm_interconnect_0|cmd_mux_009|saved_grant[0]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_ocimem|waitrequest~q ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ;
-wire \mm_interconnect_0|cpu_data_master_translator|av_waitrequest~1_combout ;
-wire \timer_0|Equal6~1_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~3_combout ;
+wire \mm_interconnect_0|cpu_data_master_translator|av_waitrequest~3_combout ;
+wire \timer_0|Equal6~0_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[66]~combout ;
 wire \mm_interconnect_0|epcs_epcs_control_port_translator|av_begintransfer~0_combout ;
 wire \cpu|cpu|d_writedata[10]~q ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~4_combout ;
+wire \mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[6]~q ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~3_combout ;
 wire \jtag|niosII_jtag_alt_jtag_atlantic|rst1~q ;
 wire \mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[66]~q ;
 wire \cpu|cpu|d_byteenable[2]~q ;
@@ -466,18 +465,18 @@ wire \mm_interconnect_0|port_key_avalon_parallel_port_slave_agent_rsp_fifo|write
 wire \mm_interconnect_0|router|Equal12~2_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_agent|rf_source_valid~0_combout ;
 wire \mm_interconnect_0|cpu_data_master_translator|uav_write~0_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~5_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~4_combout ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_valid~combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[0]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[0]~q ;
 wire \mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[0]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[0]~q ;
-wire \mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ;
+wire \mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~1_combout ;
 wire \cpu|cpu|F_iw[0]~5_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[1]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[1]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[1]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[1]~16_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[1]~14_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[2]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[2]~q ;
 wire \mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[2]~q ;
@@ -486,13 +485,12 @@ wire \cpu|cpu|F_iw[2]~10_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[3]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[3]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[3]~17_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[3]~15_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[4]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[4]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[4]~18_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[4]~16_combout ;
 wire \rs232_0|data_to_uart[0]~q ;
-wire \port_led|data~10_combout ;
 wire \mm_interconnect_0|rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~1_combout ;
 wire \rst_controller|r_early_rst~q ;
 wire \jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ;
@@ -518,11 +516,11 @@ wire \mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped~q ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[11]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[11]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[11]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[11]~19_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[11]~17_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[13]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[13]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[13]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[13]~20_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[13]~18_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[16]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[16]~q ;
 wire \mm_interconnect_0|rsp_mux_001|src_payload~0_combout ;
@@ -534,7 +532,7 @@ wire \cpu|cpu|F_iw[12]~23_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[5]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[5]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[5]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[5]~21_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[5]~19_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[14]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[14]~q ;
 wire \mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[14]~q ;
@@ -543,7 +541,7 @@ wire \cpu|cpu|F_iw[14]~28_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[15]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[15]~q ;
 wire \mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[15]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[15]~22_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[15]~20_combout ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[10]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[10]~q ;
 wire \mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[10]~q ;
@@ -597,13 +595,15 @@ wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[18]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[18]~q ;
 wire \mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[17]~q ;
 wire \mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[17]~q ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~6_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~5_combout ;
 wire \port_led|readdata[0]~q ;
 wire \port_sw|readdata[0]~q ;
 wire \port_key|readdata[0]~q ;
 wire \port_gpio_0|readdata[0]~q ;
+wire \mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ;
+wire \mm_interconnect_0|rsp_mux|src_payload~2_combout ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_valid~combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[0]~30_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[0]~28_combout ;
 wire \irq_synchronizer_001|sync|sync[0].u|dreg[1]~q ;
 wire \timer_0|timeout_occurred~q ;
 wire \timer_0|control_register[0]~q ;
@@ -616,41 +616,40 @@ wire \port_led|readdata[1]~q ;
 wire \port_sw|readdata[1]~q ;
 wire \port_key|readdata[1]~q ;
 wire \port_gpio_0|readdata[1]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[1]~38_combout ;
-wire \mm_interconnect_0|rsp_mux|src_data[2]~39_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[1]~36_combout ;
 wire \port_led|readdata[2]~q ;
 wire \port_gpio_0|readdata[2]~q ;
 wire \port_sw|readdata[2]~q ;
 wire \rs232_1|readdata[2]~q ;
 wire \rs232_0|readdata[2]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[2]~45_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[2]~42_combout ;
 wire \port_led|readdata[3]~q ;
 wire \port_gpio_0|readdata[3]~q ;
 wire \port_sw|readdata[3]~q ;
 wire \rs232_1|readdata[3]~q ;
 wire \rs232_0|readdata[3]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[3]~52_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[3]~48_combout ;
 wire \port_led|readdata[4]~q ;
+wire \mm_interconnect_0|rsp_demux_009|src0_valid~0_combout ;
 wire \rs232_0|readdata[4]~q ;
 wire \port_gpio_0|readdata[4]~q ;
 wire \rs232_1|readdata[4]~q ;
-wire \mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[4]~58_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[4]~54_combout ;
 wire \port_led|readdata[5]~q ;
 wire \rs232_0|readdata[5]~q ;
 wire \port_gpio_0|readdata[5]~q ;
 wire \rs232_1|readdata[5]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[5]~64_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[5]~60_combout ;
 wire \port_led|readdata[6]~q ;
 wire \rs232_0|readdata[6]~q ;
 wire \port_gpio_0|readdata[6]~q ;
 wire \rs232_1|readdata[6]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[6]~70_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[6]~66_combout ;
 wire \port_led|readdata[7]~q ;
 wire \rs232_0|readdata[7]~q ;
 wire \port_gpio_0|readdata[7]~q ;
 wire \rs232_1|readdata[7]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[7]~76_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[7]~72_combout ;
 wire \rs232_0|data_to_uart[1]~q ;
 wire \mm_interconnect_0|cmd_mux_009|src_payload~0_combout ;
 wire \mm_interconnect_0|cmd_mux_009|src_payload~1_combout ;
@@ -691,66 +690,66 @@ wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[9]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[8]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[7]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[6]~q ;
-wire \port_gpio_0|readdata[26]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[26]~q ;
+wire \port_gpio_0|readdata[26]~q ;
+wire \mm_interconnect_0|rsp_mux|src_payload~7_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[21]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[30]~q ;
 wire \port_gpio_0|readdata[25]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[25]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~5_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[29]~q ;
 wire \port_gpio_0|readdata[24]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[24]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[28]~q ;
 wire \port_gpio_0|readdata[23]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~9_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~11_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[27]~q ;
 wire \port_gpio_0|readdata[22]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~14_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~16_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[26]~q ;
 wire \port_gpio_0|readdata[21]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~19_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~21_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[25]~q ;
 wire \port_gpio_0|readdata[20]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~24_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~26_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[24]~q ;
 wire \port_gpio_0|readdata[19]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~29_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~31_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[23]~q ;
 wire \port_gpio_0|readdata[18]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~34_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~36_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[22]~q ;
 wire \port_gpio_0|readdata[17]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~39_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~41_combout ;
 wire \port_gpio_0|readdata[16]~q ;
-wire \mm_interconnect_0|rsp_mux|src_payload~44_combout ;
+wire \mm_interconnect_0|rsp_mux|src_payload~46_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[20]~q ;
 wire \port_gpio_0|readdata[15]~q ;
 wire \rs232_1|readdata[15]~q ;
 wire \rs232_0|readdata[15]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[15]~82_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[15]~78_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[19]~q ;
 wire \port_gpio_0|readdata[14]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[14]~85_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[14]~82_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[18]~q ;
 wire \port_gpio_0|readdata[13]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[13]~89_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[13]~86_combout ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[17]~q ;
 wire \port_gpio_0|readdata[12]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[12]~92_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[12]~89_combout ;
 wire \port_gpio_0|readdata[11]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[11]~96_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[11]~93_combout ;
 wire \port_gpio_0|readdata[10]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[10]~101_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[10]~97_combout ;
 wire \port_gpio_0|readdata[9]~q ;
 wire \rs232_1|readdata[9]~q ;
 wire \rs232_0|readdata[9]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[9]~107_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[9]~103_combout ;
 wire \port_gpio_0|readdata[8]~q ;
 wire \rs232_1|readdata[8]~q ;
 wire \rs232_0|readdata[8]~q ;
-wire \mm_interconnect_0|rsp_mux|src_data[8]~113_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~7_combout ;
+wire \mm_interconnect_0|rsp_mux|src_data[8]~109_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~6_combout ;
 wire \mm_interconnect_0|adc_0_adc_slave_translator|av_readdata_pre[0]~0_combout ;
 wire \adc_0|readdata[0]~4_combout ;
 wire \timer_0|readdata[0]~q ;
@@ -781,12 +780,12 @@ wire \jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count
 wire \jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ;
 wire \port_gpio_0|readdata[27]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[27]~q ;
-wire \port_gpio_0|readdata[28]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[28]~q ;
+wire \port_gpio_0|readdata[28]~q ;
 wire \port_gpio_0|readdata[29]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[29]~q ;
-wire \port_gpio_0|readdata[30]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[30]~q ;
+wire \port_gpio_0|readdata[30]~q ;
 wire \port_gpio_0|readdata[31]~q ;
 wire \mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[31]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[31]~q ;
@@ -804,7 +803,7 @@ wire \timer_0|readdata[9]~q ;
 wire \adc_0|readdata[8]~60_combout ;
 wire \timer_0|readdata[8]~q ;
 wire \cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_oci_debug|resetrequest~q ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~8_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~7_combout ;
 wire \rs232_0|RS232_In_Deserializer|comb~1_combout ;
 wire \mm_interconnect_0|cmd_mux_009|src_payload~3_combout ;
 wire \mm_interconnect_0|cmd_mux_009|src_payload~4_combout ;
@@ -858,7 +857,7 @@ wire \epcs|readdata[20]~27_combout ;
 wire \epcs|readdata[19]~28_combout ;
 wire \epcs|readdata[18]~29_combout ;
 wire \epcs|readdata[17]~30_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~9_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~8_combout ;
 wire \jtag|read_0~q ;
 wire \jtag|av_readdata[0]~0_combout ;
 wire \sys_pll|readdata[0]~1_combout ;
@@ -871,7 +870,6 @@ wire \mm_interconnect_0|cmd_mux_010|src_data[42]~combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[43]~combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[44]~combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_data[45]~combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~10_combout ;
 wire \jtag|av_readdata[1]~1_combout ;
 wire \sys_pll|readdata[1]~2_combout ;
 wire \jtag|av_readdata[2]~2_combout ;
@@ -919,14 +917,14 @@ wire \jtag|av_readdata[8]~8_combout ;
 wire \mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[1]~q ;
 wire \rs232_0|data_to_uart[5]~q ;
 wire \mm_interconnect_0|crosser|clock_xer|out_data_buffer[3]~q ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~9_combout ;
+wire \mm_interconnect_0|cmd_mux_010|src_payload~10_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_payload~11_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_payload~12_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_payload~13_combout ;
+wire \mm_interconnect_0|cmd_mux_009|src_payload~32_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_payload~14_combout ;
 wire \mm_interconnect_0|cmd_mux_010|src_payload~15_combout ;
-wire \mm_interconnect_0|cmd_mux_009|src_payload~32_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~16_combout ;
-wire \mm_interconnect_0|cmd_mux_010|src_payload~17_combout ;
 wire \mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]~q ;
 wire \rs232_0|data_to_uart[6]~q ;
 wire \mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]~q ;
@@ -1246,21 +1244,85 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \altera_internal_jtag~TDO ;
 
 
-niosII_niosII_epcs epcs(
+niosII_niosII_mm_interconnect_0 mm_interconnect_0(
 	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.SCLK_reg(\epcs|the_niosII_epcs_sub|SCLK_reg~q ),
-	.sce(\epcs|the_niosII_epcs_sub|SS_n~0_combout ),
-	.shift_reg_7(\epcs|the_niosII_epcs_sub|shift_reg[7]~q ),
-	.r_sync_rst(\rst_controller_001|r_sync_rst~q ),
+	.W_alu_result_6(\cpu|cpu|W_alu_result[6]~q ),
+	.W_alu_result_26(\cpu|cpu|W_alu_result[26]~q ),
+	.W_alu_result_25(\cpu|cpu|W_alu_result[25]~q ),
+	.W_alu_result_24(\cpu|cpu|W_alu_result[24]~q ),
+	.W_alu_result_23(\cpu|cpu|W_alu_result[23]~q ),
+	.W_alu_result_22(\cpu|cpu|W_alu_result[22]~q ),
+	.W_alu_result_21(\cpu|cpu|W_alu_result[21]~q ),
+	.W_alu_result_20(\cpu|cpu|W_alu_result[20]~q ),
+	.W_alu_result_19(\cpu|cpu|W_alu_result[19]~q ),
+	.W_alu_result_18(\cpu|cpu|W_alu_result[18]~q ),
+	.W_alu_result_17(\cpu|cpu|W_alu_result[17]~q ),
+	.W_alu_result_16(\cpu|cpu|W_alu_result[16]~q ),
+	.W_alu_result_15(\cpu|cpu|W_alu_result[15]~q ),
+	.W_alu_result_14(\cpu|cpu|W_alu_result[14]~q ),
+	.W_alu_result_13(\cpu|cpu|W_alu_result[13]~q ),
+	.W_alu_result_12(\cpu|cpu|W_alu_result[12]~q ),
+	.W_alu_result_11(\cpu|cpu|W_alu_result[11]~q ),
+	.W_alu_result_10(\cpu|cpu|W_alu_result[10]~q ),
+	.W_alu_result_5(\cpu|cpu|W_alu_result[5]~q ),
+	.W_alu_result_7(\cpu|cpu|W_alu_result[7]~q ),
+	.W_alu_result_9(\cpu|cpu|W_alu_result[9]~q ),
+	.W_alu_result_8(\cpu|cpu|W_alu_result[8]~q ),
+	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
+	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
+	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
+	.byteen_reg_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[0]~q ),
+	.byteen_reg_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[1]~q ),
+	.d_writedata_24(\cpu|cpu|d_writedata[24]~q ),
+	.d_writedata_25(\cpu|cpu|d_writedata[25]~q ),
+	.d_writedata_26(\cpu|cpu|d_writedata[26]~q ),
+	.d_writedata_27(\cpu|cpu|d_writedata[27]~q ),
+	.d_writedata_28(\cpu|cpu|d_writedata[28]~q ),
+	.d_writedata_29(\cpu|cpu|d_writedata[29]~q ),
+	.d_writedata_30(\cpu|cpu|d_writedata[30]~q ),
+	.d_writedata_31(\cpu|cpu|d_writedata[31]~q ),
+	.readdata_0(\rs232_0|readdata[0]~q ),
+	.readdata_01(\rs232_1|readdata[0]~q ),
+	.readdata_4(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[4]~q ),
+	.readdata_1(\rs232_0|readdata[1]~q ),
+	.readdata_11(\rs232_1|readdata[1]~q ),
+	.readdata_23(\rs232_0|readdata[23]~q ),
+	.readdata_231(\rs232_1|readdata[23]~q ),
+	.readdata_22(\rs232_1|readdata[22]~q ),
+	.readdata_221(\rs232_0|readdata[22]~q ),
+	.readdata_21(\rs232_1|readdata[21]~q ),
+	.readdata_211(\rs232_0|readdata[21]~q ),
+	.readdata_20(\rs232_1|readdata[20]~q ),
+	.readdata_201(\rs232_0|readdata[20]~q ),
+	.readdata_19(\rs232_1|readdata[19]~q ),
+	.readdata_191(\rs232_0|readdata[19]~q ),
+	.readdata_18(\rs232_1|readdata[18]~q ),
+	.readdata_181(\rs232_0|readdata[18]~q ),
+	.readdata_17(\rs232_1|readdata[17]~q ),
+	.readdata_171(\rs232_0|readdata[17]~q ),
+	.readdata_16(\rs232_1|readdata[16]~q ),
+	.readdata_161(\rs232_0|readdata[16]~q ),
+	.r_sync_rst(\rst_controller|r_sync_rst~q ),
+	.r_sync_rst1(\rst_controller_001|r_sync_rst~q ),
 	.saved_grant_0(\mm_interconnect_0|cmd_mux_010|saved_grant[0]~q ),
-	.saved_grant_1(\mm_interconnect_0|cmd_mux_010|saved_grant[1]~q ),
-	.out_data_buffer_38(\mm_interconnect_0|crosser_003|clock_xer|out_data_buffer[38]~q ),
 	.src_data_38(\mm_interconnect_0|cmd_mux_010|src_data[38]~combout ),
 	.src_data_39(\mm_interconnect_0|cmd_mux_010|src_data[39]~combout ),
 	.src_data_40(\mm_interconnect_0|cmd_mux_010|src_data[40]~combout ),
 	.src_payload(\mm_interconnect_0|cmd_mux_010|src_payload~0_combout ),
+	.entries_1(\sdram|the_niosII_sdram_input_efifo_module|entries[1]~q ),
+	.entries_0(\sdram|the_niosII_sdram_input_efifo_module|entries[0]~q ),
+	.mem_used_1(\mm_interconnect_0|adc_0_adc_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.d_read(\cpu|cpu|d_read~q ),
+	.uav_read(\mm_interconnect_0|cpu_data_master_translator|uav_read~0_combout ),
+	.hold_waitrequest(\mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ),
+	.d_write(\cpu|cpu|d_write~q ),
+	.write_accepted(\mm_interconnect_0|cpu_data_master_translator|write_accepted~q ),
+	.cp_valid(\mm_interconnect_0|cpu_data_master_agent|cp_valid~0_combout ),
+	.Equal3(\mm_interconnect_0|router|Equal3~6_combout ),
+	.m0_read(\mm_interconnect_0|adc_0_adc_slave_agent|m0_read~combout ),
+	.m0_write(\mm_interconnect_0|timer_0_s1_agent|m0_write~0_combout ),
 	.src_payload1(\mm_interconnect_0|cmd_mux_010|src_payload~1_combout ),
-	.mem_used_1(\mm_interconnect_0|epcs_epcs_control_port_agent_rsp_fifo|mem_used[1]~q ),
+	.mem_used_11(\mm_interconnect_0|epcs_epcs_control_port_agent_rsp_fifo|mem_used[1]~q ),
 	.wait_latency_counter_1(\mm_interconnect_0|epcs_epcs_control_port_translator|wait_latency_counter[1]~q ),
 	.src_valid(\mm_interconnect_0|cmd_mux_010|src_valid~0_combout ),
 	.src_valid1(\mm_interconnect_0|cmd_mux_010|src_valid~1_combout ),
@@ -1268,70 +1330,337 @@ niosII_niosII_epcs epcs(
 	.out_data_buffer_65(\mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[65]~q ),
 	.p1_wr_strobe(\epcs|the_niosII_epcs_sub|p1_wr_strobe~1_combout ),
 	.src_payload2(\mm_interconnect_0|cmd_mux_010|src_payload~2_combout ),
-	.src_payload3(\mm_interconnect_0|cmd_mux_010|src_payload~3_combout ),
-	.src_data_66(\mm_interconnect_0|cmd_mux_010|src_data[66]~combout ),
-	.av_begintransfer(\mm_interconnect_0|epcs_epcs_control_port_translator|av_begintransfer~0_combout ),
-	.src_payload4(\mm_interconnect_0|cmd_mux_010|src_payload~4_combout ),
-	.src_payload5(\mm_interconnect_0|cmd_mux_010|src_payload~5_combout ),
-	.src_payload6(\mm_interconnect_0|cmd_mux_010|src_payload~6_combout ),
-	.src_payload7(\mm_interconnect_0|cmd_mux_010|src_payload~7_combout ),
-	.src_payload8(\mm_interconnect_0|cmd_mux_010|src_payload~8_combout ),
-	.readdata_0(\epcs|readdata[0]~0_combout ),
-	.readdata_1(\epcs|readdata[1]~1_combout ),
-	.readdata_2(\epcs|readdata[2]~2_combout ),
-	.readdata_3(\epcs|readdata[3]~3_combout ),
-	.readdata_4(\epcs|readdata[4]~4_combout ),
-	.readdata_11(\epcs|readdata[11]~5_combout ),
-	.readdata_13(\epcs|readdata[13]~6_combout ),
-	.readdata_16(\epcs|readdata[16]~7_combout ),
-	.readdata_12(\epcs|readdata[12]~8_combout ),
-	.readdata_5(\epcs|readdata[5]~9_combout ),
-	.readdata_14(\epcs|readdata[14]~10_combout ),
-	.readdata_15(\epcs|readdata[15]~11_combout ),
-	.readdata_10(\epcs|readdata[10]~12_combout ),
-	.readdata_9(\epcs|readdata[9]~13_combout ),
-	.readdata_8(\epcs|readdata[8]~14_combout ),
-	.readdata_7(\epcs|readdata[7]~15_combout ),
-	.readdata_6(\epcs|readdata[6]~16_combout ),
-	.readdata_21(\epcs|readdata[21]~17_combout ),
-	.readdata_30(\epcs|readdata[30]~18_combout ),
-	.readdata_29(\epcs|readdata[29]~19_combout ),
-	.readdata_28(\epcs|readdata[28]~20_combout ),
-	.readdata_27(\epcs|readdata[27]~21_combout ),
-	.readdata_26(\epcs|readdata[26]~22_combout ),
-	.readdata_25(\epcs|readdata[25]~23_combout ),
-	.readdata_24(\epcs|readdata[24]~24_combout ),
-	.readdata_23(\epcs|readdata[23]~25_combout ),
-	.readdata_22(\epcs|readdata[22]~26_combout ),
-	.readdata_20(\epcs|readdata[20]~27_combout ),
-	.readdata_19(\epcs|readdata[19]~28_combout ),
-	.readdata_18(\epcs|readdata[18]~29_combout ),
-	.readdata_17(\epcs|readdata[17]~30_combout ),
-	.src_payload9(\mm_interconnect_0|cmd_mux_010|src_payload~9_combout ),
-	.irq_reg(\epcs|the_niosII_epcs_sub|irq_reg~q ),
-	.r_early_rst(\rst_controller_001|r_early_rst~q ),
-	.src_data_41(\mm_interconnect_0|cmd_mux_010|src_data[41]~combout ),
-	.src_data_42(\mm_interconnect_0|cmd_mux_010|src_data[42]~combout ),
-	.src_data_43(\mm_interconnect_0|cmd_mux_010|src_data[43]~combout ),
-	.src_data_44(\mm_interconnect_0|cmd_mux_010|src_data[44]~combout ),
-	.src_data_45(\mm_interconnect_0|cmd_mux_010|src_data[45]~combout ),
-	.src_payload10(\mm_interconnect_0|cmd_mux_010|src_payload~10_combout ),
-	.readdata_31(\epcs|readdata[31]~31_combout ),
-	.src_payload11(\mm_interconnect_0|cmd_mux_010|src_payload~11_combout ),
-	.src_payload12(\mm_interconnect_0|cmd_mux_010|src_payload~12_combout ),
-	.src_payload13(\mm_interconnect_0|cmd_mux_010|src_payload~13_combout ),
-	.src_payload14(\mm_interconnect_0|cmd_mux_010|src_payload~14_combout ),
-	.src_payload15(\mm_interconnect_0|cmd_mux_010|src_payload~15_combout ),
-	.src_payload16(\mm_interconnect_0|cmd_mux_010|src_payload~16_combout ),
-	.src_payload17(\mm_interconnect_0|cmd_mux_010|src_payload~17_combout ),
-	.epcs_data0(\epcs_data0~input_o ));
-
-niosII_niosII_jtag jtag(
-	.tdo(\jtag|niosII_jtag_alt_jtag_atlantic|tdo~q ),
+	.d_writedata_0(\cpu|cpu|d_writedata[0]~q ),
+	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
+	.Equal9(\mm_interconnect_0|router|Equal9~2_combout ),
+	.read_latency_shift_reg(\mm_interconnect_0|port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ),
+	.d_writedata_1(\cpu|cpu|d_writedata[1]~q ),
+	.d_writedata_2(\cpu|cpu|d_writedata[2]~q ),
+	.d_writedata_3(\cpu|cpu|d_writedata[3]~q ),
+	.d_writedata_4(\cpu|cpu|d_writedata[4]~q ),
+	.d_writedata_5(\cpu|cpu|d_writedata[5]~q ),
+	.d_writedata_6(\cpu|cpu|d_writedata[6]~q ),
+	.d_writedata_7(\cpu|cpu|d_writedata[7]~q ),
+	.out_data_buffer_0(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[0]~q ),
+	.out_data_toggle_flopped(\mm_interconnect_0|crosser_002|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_0(\mm_interconnect_0|crosser_002|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.mem_used_12(\mm_interconnect_0|sys_pll_pll_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.wire_pfdena_reg_ena(\sys_pll|wire_pfdena_reg_ena~0_combout ),
+	.out_data_buffer_651(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[65]~q ),
+	.out_data_buffer_38(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_39(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[39]~q ),
 	.altera_reset_synchronizer_int_chain_out(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
+	.saved_grant_01(\mm_interconnect_0|cmd_mux_012|saved_grant[0]~q ),
+	.d_byteenable_1(\cpu|cpu|d_byteenable[1]~q ),
+	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
+	.saved_grant_1(\mm_interconnect_0|cmd_mux_012|saved_grant[1]~q ),
+	.WideOr0(\mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ),
+	.i_read(\cpu|cpu|i_read~q ),
+	.F_pc_24(\cpu|cpu|F_pc[24]~q ),
+	.F_pc_23(\cpu|cpu|F_pc[23]~q ),
+	.F_pc_22(\cpu|cpu|F_pc[22]~q ),
+	.F_pc_21(\cpu|cpu|F_pc[21]~q ),
+	.F_pc_20(\cpu|cpu|F_pc[20]~q ),
+	.F_pc_19(\cpu|cpu|F_pc[19]~q ),
+	.F_pc_18(\cpu|cpu|F_pc[18]~q ),
+	.F_pc_17(\cpu|cpu|F_pc[17]~q ),
+	.F_pc_16(\cpu|cpu|F_pc[16]~q ),
+	.F_pc_15(\cpu|cpu|F_pc[15]~q ),
+	.F_pc_14(\cpu|cpu|F_pc[14]~q ),
+	.F_pc_13(\cpu|cpu|F_pc[13]~q ),
+	.F_pc_12(\cpu|cpu|F_pc[12]~q ),
+	.F_pc_11(\cpu|cpu|F_pc[11]~q ),
+	.F_pc_10(\cpu|cpu|F_pc[10]~q ),
+	.src_valid2(\mm_interconnect_0|cmd_mux_012|src_valid~0_combout ),
+	.Equal0(\sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ),
+	.src_data_66(\mm_interconnect_0|cmd_mux_012|src_data[66]~combout ),
+	.mem_used_7(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
+	.m0_write1(\mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ),
+	.Equal4(\mm_interconnect_0|router|Equal4~1_combout ),
+	.src12_valid(\mm_interconnect_0|cmd_demux|src12_valid~0_combout ),
+	.Equal1(\mm_interconnect_0|router|Equal1~0_combout ),
+	.F_pc_8(\cpu|cpu|F_pc[8]~q ),
+	.out_data_28(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[28]~0_combout ),
+	.m0_write2(\mm_interconnect_0|sdram_s1_agent|m0_write~combout ),
+	.out_data_42(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[42]~1_combout ),
+	.F_pc_9(\cpu|cpu|F_pc[9]~q ),
+	.out_data_29(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[29]~2_combout ),
+	.out_data_31(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[31]~3_combout ),
+	.out_data_30(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[30]~4_combout ),
+	.out_data_33(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[33]~5_combout ),
+	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~6_combout ),
+	.out_data_35(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[35]~7_combout ),
+	.out_data_34(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[34]~8_combout ),
+	.out_data_37(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[37]~9_combout ),
+	.out_data_36(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[36]~10_combout ),
+	.out_data_39(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[39]~11_combout ),
+	.out_data_38(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[38]~12_combout ),
+	.out_data_41(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[41]~13_combout ),
+	.out_data_40(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[40]~14_combout ),
+	.out_data_19(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[19]~15_combout ),
+	.F_pc_0(\cpu|cpu|F_pc[0]~q ),
+	.out_data_20(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[20]~16_combout ),
+	.F_pc_1(\cpu|cpu|F_pc[1]~q ),
+	.out_data_21(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[21]~17_combout ),
+	.F_pc_2(\cpu|cpu|F_pc[2]~q ),
+	.out_data_22(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[22]~18_combout ),
+	.F_pc_3(\cpu|cpu|F_pc[3]~q ),
+	.out_data_23(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[23]~19_combout ),
+	.F_pc_4(\cpu|cpu|F_pc[4]~q ),
+	.out_data_24(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[24]~20_combout ),
+	.F_pc_5(\cpu|cpu|F_pc[5]~q ),
+	.out_data_25(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[25]~21_combout ),
+	.F_pc_6(\cpu|cpu|F_pc[6]~q ),
+	.out_data_26(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[26]~22_combout ),
+	.F_pc_7(\cpu|cpu|F_pc[7]~q ),
+	.out_data_27(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[27]~23_combout ),
+	.always0(\adc_0|always0~1_combout ),
+	.waitrequest(\adc_0|waitrequest~0_combout ),
+	.mem_84_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][84]~q ),
+	.mem_66_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][66]~q ),
+	.read_latency_shift_reg_0(\mm_interconnect_0|cpu_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
+	.out_data_toggle_flopped1(\mm_interconnect_0|crosser_005|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_01(\mm_interconnect_0|crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.read_latency_shift_reg_01(\mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_02(\mm_interconnect_0|sys_id_control_slave_translator|read_latency_shift_reg[0]~q ),
+	.mem_54_0(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem[0][54]~q ),
+	.src0_valid(\mm_interconnect_0|rsp_demux_012|src0_valid~0_combout ),
+	.WideOr1(\mm_interconnect_0|rsp_mux|WideOr1~combout ),
+	.mem_used_13(\mm_interconnect_0|timer_0_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.wait_latency_counter_0(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[0]~q ),
+	.wait_latency_counter_11(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[1]~q ),
+	.read_latency_shift_reg1(\mm_interconnect_0|rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~2_combout ),
+	.write(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~2_combout ),
+	.Equal12(\mm_interconnect_0|router|Equal12~1_combout ),
+	.mem_used_14(\mm_interconnect_0|rs232_0_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.saved_grant_02(\mm_interconnect_0|cmd_mux_009|saved_grant[0]~q ),
+	.waitrequest1(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_ocimem|waitrequest~q ),
+	.mem_used_15(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.cpu_data_master_waitrequest(\mm_interconnect_0|cpu_data_master_translator|av_waitrequest~3_combout ),
+	.src_data_661(\mm_interconnect_0|cmd_mux_010|src_data[66]~combout ),
+	.av_begintransfer(\mm_interconnect_0|epcs_epcs_control_port_translator|av_begintransfer~0_combout ),
+	.d_writedata_10(\cpu|cpu|d_writedata[10]~q ),
+	.out_data_buffer_6(\mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[6]~q ),
+	.src_payload3(\mm_interconnect_0|cmd_mux_010|src_payload~3_combout ),
 	.rst1(\jtag|niosII_jtag_alt_jtag_atlantic|rst1~q ),
+	.out_data_buffer_66(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[66]~q ),
+	.d_byteenable_2(\cpu|cpu|d_byteenable[2]~q ),
+	.d_byteenable_3(\cpu|cpu|d_byteenable[3]~q ),
+	.src1_valid(\mm_interconnect_0|rsp_demux_009|src1_valid~0_combout ),
+	.read_accepted(\mm_interconnect_0|cpu_instruction_master_translator|read_accepted~2_combout ),
+	.src1_valid1(\mm_interconnect_0|rsp_demux_012|src1_valid~0_combout ),
+	.hbreak_enabled(\cpu|cpu|hbreak_enabled~q ),
+	.read_latency_shift_reg2(\mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ),
+	.d_writedata_8(\cpu|cpu|d_writedata[8]~q ),
+	.d_writedata_9(\cpu|cpu|d_writedata[9]~q ),
+	.d_writedata_11(\cpu|cpu|d_writedata[11]~q ),
+	.d_writedata_12(\cpu|cpu|d_writedata[12]~q ),
+	.d_writedata_13(\cpu|cpu|d_writedata[13]~q ),
+	.d_writedata_14(\cpu|cpu|d_writedata[14]~q ),
+	.d_writedata_15(\cpu|cpu|d_writedata[15]~q ),
+	.d_writedata_16(\cpu|cpu|d_writedata[16]~q ),
+	.d_writedata_17(\cpu|cpu|d_writedata[17]~q ),
+	.d_writedata_18(\cpu|cpu|d_writedata[18]~q ),
+	.d_writedata_19(\cpu|cpu|d_writedata[19]~q ),
+	.d_writedata_20(\cpu|cpu|d_writedata[20]~q ),
+	.d_writedata_21(\cpu|cpu|d_writedata[21]~q ),
+	.d_writedata_22(\cpu|cpu|d_writedata[22]~q ),
+	.d_writedata_23(\cpu|cpu|d_writedata[23]~q ),
+	.WideOr11(\mm_interconnect_0|cmd_mux_009|WideOr1~combout ),
+	.write1(\mm_interconnect_0|port_key_avalon_parallel_port_slave_agent_rsp_fifo|write~0_combout ),
+	.Equal121(\mm_interconnect_0|router|Equal12~2_combout ),
+	.rf_source_valid(\mm_interconnect_0|cpu_debug_mem_slave_agent|rf_source_valid~0_combout ),
+	.uav_write(\mm_interconnect_0|cpu_data_master_translator|uav_write~0_combout ),
+	.src_payload4(\mm_interconnect_0|cmd_mux_010|src_payload~4_combout ),
+	.out_valid(\mm_interconnect_0|crosser_006|clock_xer|out_valid~combout ),
+	.av_readdata_pre_0(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[0]~q ),
+	.out_data_buffer_01(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[0]~q ),
+	.data_reg_0(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[0]~q ),
+	.out_payload_0(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[0]~q ),
+	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~1_combout ),
+	.F_iw_0(\cpu|cpu|F_iw[0]~5_combout ),
+	.av_readdata_pre_1(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[1]~q ),
+	.out_data_buffer_1(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[1]~q ),
+	.out_payload_1(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[1]~q ),
+	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~14_combout ),
+	.av_readdata_pre_2(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[2]~q ),
+	.out_data_buffer_2(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[2]~q ),
+	.data_reg_2(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[2]~q ),
+	.out_payload_2(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[2]~q ),
+	.F_iw_2(\cpu|cpu|F_iw[2]~10_combout ),
+	.av_readdata_pre_3(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[3]~q ),
+	.out_data_buffer_3(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[3]~q ),
+	.out_payload_3(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ),
+	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~15_combout ),
+	.av_readdata_pre_4(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[4]~q ),
+	.out_data_buffer_4(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[4]~q ),
+	.out_payload_4(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ),
+	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~16_combout ),
+	.read_latency_shift_reg3(\mm_interconnect_0|rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~1_combout ),
 	.b_full(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
-	.out_data_toggle_flopped(\mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped~q ),
+	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~24_combout ),
+	.out_data_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[1]~25_combout ),
+	.out_data_2(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[2]~26_combout ),
+	.out_data_3(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[3]~27_combout ),
+	.out_data_4(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[4]~28_combout ),
+	.out_data_5(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[5]~29_combout ),
+	.out_data_6(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[6]~30_combout ),
+	.out_data_7(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[7]~31_combout ),
+	.out_data_8(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[8]~32_combout ),
+	.out_data_9(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[9]~33_combout ),
+	.out_data_10(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[10]~34_combout ),
+	.out_data_11(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[11]~35_combout ),
+	.out_data_12(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[12]~36_combout ),
+	.out_data_13(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[13]~37_combout ),
+	.out_data_14(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[14]~38_combout ),
+	.out_data_15(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[15]~39_combout ),
+	.period_l_wr_strobe(\timer_0|period_l_wr_strobe~2_combout ),
+	.src_data_461(\mm_interconnect_0|cmd_mux_009|src_data[46]~combout ),
+	.out_data_toggle_flopped2(\mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped~q ),
+	.av_readdata_pre_11(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[11]~q ),
+	.out_data_buffer_11(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[11]~q ),
+	.out_payload_11(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[11]~q ),
+	.src_data_11(\mm_interconnect_0|rsp_mux|src_data[11]~17_combout ),
+	.av_readdata_pre_13(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[13]~q ),
+	.out_data_buffer_13(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[13]~q ),
+	.out_payload_13(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[13]~q ),
+	.src_data_13(\mm_interconnect_0|rsp_mux|src_data[13]~18_combout ),
+	.av_readdata_pre_16(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[16]~q ),
+	.out_data_buffer_16(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[16]~q ),
+	.src_payload5(\mm_interconnect_0|rsp_mux_001|src_payload~0_combout ),
+	.av_readdata_pre_12(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[12]~q ),
+	.out_data_buffer_12(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[12]~q ),
+	.data_reg_12(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[12]~q ),
+	.out_payload_12(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[12]~q ),
+	.F_iw_12(\cpu|cpu|F_iw[12]~23_combout ),
+	.av_readdata_pre_5(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[5]~q ),
+	.out_data_buffer_5(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[5]~q ),
+	.out_payload_5(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[5]~q ),
+	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~19_combout ),
+	.av_readdata_pre_14(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[14]~q ),
+	.out_data_buffer_14(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[14]~q ),
+	.data_reg_14(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[14]~q ),
+	.out_payload_14(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[14]~q ),
+	.F_iw_14(\cpu|cpu|F_iw[14]~28_combout ),
+	.av_readdata_pre_15(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[15]~q ),
+	.out_data_buffer_15(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[15]~q ),
+	.out_payload_15(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[15]~q ),
+	.src_data_15(\mm_interconnect_0|rsp_mux|src_data[15]~20_combout ),
+	.av_readdata_pre_10(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[10]~q ),
+	.out_data_buffer_10(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[10]~q ),
+	.data_reg_10(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[10]~q ),
+	.out_payload_10(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[10]~q ),
+	.F_iw_10(\cpu|cpu|F_iw[10]~33_combout ),
+	.av_readdata_pre_9(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[9]~q ),
+	.out_data_buffer_9(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[9]~q ),
+	.data_reg_9(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[9]~q ),
+	.out_payload_9(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[9]~q ),
+	.F_iw_9(\cpu|cpu|F_iw[9]~36_combout ),
+	.av_readdata_pre_8(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[8]~q ),
+	.out_data_buffer_8(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[8]~q ),
+	.data_reg_8(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[8]~q ),
+	.out_payload_8(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[8]~q ),
+	.F_iw_8(\cpu|cpu|F_iw[8]~39_combout ),
+	.av_readdata_pre_7(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[7]~q ),
+	.out_data_buffer_7(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[7]~q ),
+	.data_reg_7(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[7]~q ),
+	.out_payload_7(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[7]~q ),
+	.F_iw_7(\cpu|cpu|F_iw[7]~42_combout ),
+	.av_readdata_pre_6(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[6]~q ),
+	.out_data_buffer_61(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[6]~q ),
+	.data_reg_6(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[6]~q ),
+	.out_payload_6(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[6]~q ),
+	.F_iw_6(\cpu|cpu|F_iw[6]~45_combout ),
+	.av_readdata_pre_21(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[21]~q ),
+	.out_data_buffer_21(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[21]~q ),
+	.av_readdata_pre_30(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[30]~q ),
+	.out_data_buffer_30(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[30]~q ),
+	.av_readdata_pre_29(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[29]~q ),
+	.out_data_buffer_29(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[29]~q ),
+	.av_readdata_pre_28(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[28]~q ),
+	.out_data_buffer_28(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[28]~q ),
+	.av_readdata_pre_27(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[27]~q ),
+	.out_data_buffer_27(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[27]~q ),
+	.av_readdata_pre_26(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[26]~q ),
+	.out_data_buffer_26(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[26]~q ),
+	.av_readdata_pre_25(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[25]~q ),
+	.out_data_buffer_25(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[25]~q ),
+	.av_readdata_pre_24(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[24]~q ),
+	.out_data_buffer_24(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[24]~q ),
+	.av_readdata_pre_23(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[23]~q ),
+	.out_data_buffer_23(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[23]~q ),
+	.av_readdata_pre_22(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[22]~q ),
+	.out_data_buffer_22(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[22]~q ),
+	.av_readdata_pre_20(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[20]~q ),
+	.out_data_buffer_20(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[20]~q ),
+	.av_readdata_pre_19(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[19]~q ),
+	.out_data_buffer_19(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[19]~q ),
+	.av_readdata_pre_18(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[18]~q ),
+	.out_data_buffer_18(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[18]~q ),
+	.av_readdata_pre_17(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[17]~q ),
+	.out_data_buffer_17(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[17]~q ),
+	.src_payload6(\mm_interconnect_0|cmd_mux_010|src_payload~5_combout ),
+	.readdata_02(\port_led|readdata[0]~q ),
+	.readdata_03(\port_sw|readdata[0]~q ),
+	.readdata_04(\port_key|readdata[0]~q ),
+	.readdata_05(\port_gpio_0|readdata[0]~q ),
+	.av_readdata_pre_301(\mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ),
+	.src_payload7(\mm_interconnect_0|rsp_mux|src_payload~2_combout ),
+	.out_valid1(\mm_interconnect_0|crosser_005|clock_xer|out_valid~combout ),
+	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~28_combout ),
+	.readdata_06(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[0]~q ),
+	.readdata_12(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[1]~q ),
+	.readdata_2(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[2]~q ),
+	.readdata_3(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[3]~q ),
+	.readdata_13(\port_led|readdata[1]~q ),
+	.readdata_14(\port_sw|readdata[1]~q ),
+	.readdata_15(\port_key|readdata[1]~q ),
+	.readdata_110(\port_gpio_0|readdata[1]~q ),
+	.src_data_12(\mm_interconnect_0|rsp_mux|src_data[1]~36_combout ),
+	.readdata_24(\port_led|readdata[2]~q ),
+	.readdata_25(\port_gpio_0|readdata[2]~q ),
+	.readdata_26(\port_sw|readdata[2]~q ),
+	.readdata_27(\rs232_1|readdata[2]~q ),
+	.readdata_28(\rs232_0|readdata[2]~q ),
+	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~42_combout ),
+	.readdata_31(\port_led|readdata[3]~q ),
+	.readdata_32(\port_gpio_0|readdata[3]~q ),
+	.readdata_33(\port_sw|readdata[3]~q ),
+	.readdata_34(\rs232_1|readdata[3]~q ),
+	.readdata_35(\rs232_0|readdata[3]~q ),
+	.src_data_31(\mm_interconnect_0|rsp_mux|src_data[3]~48_combout ),
+	.readdata_41(\port_led|readdata[4]~q ),
+	.src0_valid1(\mm_interconnect_0|rsp_demux_009|src0_valid~0_combout ),
+	.readdata_42(\rs232_0|readdata[4]~q ),
+	.readdata_43(\port_gpio_0|readdata[4]~q ),
+	.readdata_44(\rs232_1|readdata[4]~q ),
+	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~54_combout ),
+	.readdata_5(\port_led|readdata[5]~q ),
+	.readdata_51(\rs232_0|readdata[5]~q ),
+	.readdata_52(\port_gpio_0|readdata[5]~q ),
+	.readdata_53(\rs232_1|readdata[5]~q ),
+	.src_data_51(\mm_interconnect_0|rsp_mux|src_data[5]~60_combout ),
+	.readdata_6(\port_led|readdata[6]~q ),
+	.readdata_61(\rs232_0|readdata[6]~q ),
+	.readdata_62(\port_gpio_0|readdata[6]~q ),
+	.readdata_63(\rs232_1|readdata[6]~q ),
+	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~66_combout ),
+	.readdata_7(\port_led|readdata[7]~q ),
+	.readdata_71(\rs232_0|readdata[7]~q ),
+	.readdata_72(\port_gpio_0|readdata[7]~q ),
+	.readdata_73(\rs232_1|readdata[7]~q ),
+	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~72_combout ),
+	.src_payload8(\mm_interconnect_0|cmd_mux_009|src_payload~0_combout ),
+	.src_payload9(\mm_interconnect_0|cmd_mux_009|src_payload~1_combout ),
+	.src_data_381(\mm_interconnect_0|cmd_mux_009|src_data[38]~combout ),
+	.src_data_391(\mm_interconnect_0|cmd_mux_009|src_data[39]~combout ),
+	.src_data_401(\mm_interconnect_0|cmd_mux_009|src_data[40]~combout ),
+	.src_data_411(\mm_interconnect_0|cmd_mux_009|src_data[41]~combout ),
+	.src_data_42(\mm_interconnect_0|cmd_mux_009|src_data[42]~combout ),
+	.src_data_43(\mm_interconnect_0|cmd_mux_009|src_data[43]~combout ),
+	.src_data_44(\mm_interconnect_0|cmd_mux_009|src_data[44]~combout ),
+	.src_data_45(\mm_interconnect_0|cmd_mux_009|src_data[45]~combout ),
+	.src_data_32(\mm_interconnect_0|cmd_mux_009|src_data[32]~combout ),
 	.b_non_empty(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
 	.counter_reg_bit_5(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
 	.counter_reg_bit_4(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
@@ -1339,14 +1668,104 @@ niosII_niosII_jtag jtag(
 	.counter_reg_bit_2(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
 	.counter_reg_bit_1(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
 	.counter_reg_bit_0(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.dreg_0(\mm_interconnect_0|crosser|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.av_waitrequest1(\jtag|av_waitrequest~q ),
-	.mem_used_1(\mm_interconnect_0|jtag_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.out_data_buffer_66(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[66]~q ),
-	.out_data_buffer_38(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[38]~q ),
-	.out_data_buffer_7(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[7]~q ),
-	.out_data_buffer_65(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[65]~q ),
-	.out_data_buffer_0(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[0]~q ),
+	.dreg_02(\mm_interconnect_0|crosser|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.av_waitrequest(\jtag|av_waitrequest~q ),
+	.mem_used_16(\mm_interconnect_0|jtag_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.out_data_buffer_661(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[66]~q ),
+	.out_data_buffer_381(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_71(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[7]~q ),
+	.za_valid(\sdram|za_valid~q ),
+	.readdata_111(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[11]~q ),
+	.readdata_131(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[13]~q ),
+	.readdata_162(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[16]~q ),
+	.readdata_121(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[12]~q ),
+	.readdata_54(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[5]~q ),
+	.readdata_141(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[14]~q ),
+	.readdata_151(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[15]~q ),
+	.readdata_10(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[10]~q ),
+	.av_readdata_pre_31(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[31]~q ),
+	.out_data_buffer_31(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[31]~q ),
+	.readdata_9(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[9]~q ),
+	.readdata_8(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[8]~q ),
+	.readdata_74(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[7]~q ),
+	.readdata_64(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[6]~q ),
+	.out_data_buffer_261(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[26]~q ),
+	.src_payload10(\mm_interconnect_0|rsp_mux|src_payload~7_combout ),
+	.readdata_212(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[21]~q ),
+	.readdata_30(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[30]~q ),
+	.out_data_buffer_251(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[25]~q ),
+	.readdata_29(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[29]~q ),
+	.out_data_buffer_241(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[24]~q ),
+	.readdata_281(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[28]~q ),
+	.readdata_232(\port_gpio_0|readdata[23]~q ),
+	.src_payload11(\mm_interconnect_0|rsp_mux|src_payload~11_combout ),
+	.readdata_271(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[27]~q ),
+	.readdata_222(\port_gpio_0|readdata[22]~q ),
+	.src_payload12(\mm_interconnect_0|rsp_mux|src_payload~16_combout ),
+	.readdata_261(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[26]~q ),
+	.readdata_213(\port_gpio_0|readdata[21]~q ),
+	.src_payload13(\mm_interconnect_0|rsp_mux|src_payload~21_combout ),
+	.readdata_251(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[25]~q ),
+	.readdata_202(\port_gpio_0|readdata[20]~q ),
+	.src_payload14(\mm_interconnect_0|rsp_mux|src_payload~26_combout ),
+	.readdata_241(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[24]~q ),
+	.readdata_192(\port_gpio_0|readdata[19]~q ),
+	.src_payload15(\mm_interconnect_0|rsp_mux|src_payload~31_combout ),
+	.readdata_233(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[23]~q ),
+	.readdata_182(\port_gpio_0|readdata[18]~q ),
+	.src_payload16(\mm_interconnect_0|rsp_mux|src_payload~36_combout ),
+	.readdata_223(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[22]~q ),
+	.readdata_172(\port_gpio_0|readdata[17]~q ),
+	.src_payload17(\mm_interconnect_0|rsp_mux|src_payload~41_combout ),
+	.readdata_163(\port_gpio_0|readdata[16]~q ),
+	.src_payload18(\mm_interconnect_0|rsp_mux|src_payload~46_combout ),
+	.readdata_203(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[20]~q ),
+	.readdata_152(\port_gpio_0|readdata[15]~q ),
+	.readdata_153(\rs232_1|readdata[15]~q ),
+	.readdata_154(\rs232_0|readdata[15]~q ),
+	.src_data_151(\mm_interconnect_0|rsp_mux|src_data[15]~78_combout ),
+	.readdata_193(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[19]~q ),
+	.readdata_142(\port_gpio_0|readdata[14]~q ),
+	.src_data_14(\mm_interconnect_0|rsp_mux|src_data[14]~82_combout ),
+	.readdata_183(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[18]~q ),
+	.readdata_132(\port_gpio_0|readdata[13]~q ),
+	.src_data_131(\mm_interconnect_0|rsp_mux|src_data[13]~86_combout ),
+	.readdata_173(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[17]~q ),
+	.readdata_122(\port_gpio_0|readdata[12]~q ),
+	.src_data_121(\mm_interconnect_0|rsp_mux|src_data[12]~89_combout ),
+	.readdata_112(\port_gpio_0|readdata[11]~q ),
+	.src_data_111(\mm_interconnect_0|rsp_mux|src_data[11]~93_combout ),
+	.readdata_101(\port_gpio_0|readdata[10]~q ),
+	.src_data_10(\mm_interconnect_0|rsp_mux|src_data[10]~97_combout ),
+	.readdata_91(\port_gpio_0|readdata[9]~q ),
+	.readdata_92(\rs232_1|readdata[9]~q ),
+	.readdata_93(\rs232_0|readdata[9]~q ),
+	.src_data_9(\mm_interconnect_0|rsp_mux|src_data[9]~103_combout ),
+	.readdata_81(\port_gpio_0|readdata[8]~q ),
+	.readdata_82(\rs232_1|readdata[8]~q ),
+	.readdata_83(\rs232_0|readdata[8]~q ),
+	.src_data_8(\mm_interconnect_0|rsp_mux|src_data[8]~109_combout ),
+	.src_payload19(\mm_interconnect_0|cmd_mux_010|src_payload~6_combout ),
+	.av_readdata_pre_01(\mm_interconnect_0|adc_0_adc_slave_translator|av_readdata_pre[0]~0_combout ),
+	.readdata_07(\adc_0|readdata[0]~4_combout ),
+	.readdata_08(\timer_0|readdata[0]~q ),
+	.readdata_113(\adc_0|readdata[1]~9_combout ),
+	.readdata_114(\timer_0|readdata[1]~q ),
+	.readdata_210(\adc_0|readdata[2]~14_combout ),
+	.readdata_214(\timer_0|readdata[2]~q ),
+	.readdata_36(\adc_0|readdata[3]~19_combout ),
+	.readdata_37(\timer_0|readdata[3]~q ),
+	.readdata_45(\adc_0|readdata[4]~24_combout ),
+	.readdata_46(\timer_0|readdata[4]~q ),
+	.readdata_55(\adc_0|readdata[5]~29_combout ),
+	.readdata_56(\timer_0|readdata[5]~q ),
+	.readdata_65(\adc_0|readdata[6]~34_combout ),
+	.readdata_66(\timer_0|readdata[6]~q ),
+	.readdata_75(\adc_0|readdata[7]~39_combout ),
+	.readdata_76(\timer_0|readdata[7]~q ),
+	.src_payload20(\mm_interconnect_0|cmd_mux_009|src_payload~2_combout ),
+	.out_data_buffer_652(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[65]~q ),
+	.out_data_buffer_02(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[0]~q ),
 	.b_full1(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
 	.counter_reg_bit_21(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
 	.counter_reg_bit_11(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
@@ -1354,38 +1773,377 @@ niosII_niosII_jtag jtag(
 	.counter_reg_bit_41(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
 	.counter_reg_bit_31(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
 	.counter_reg_bit_01(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.out_data_buffer_1(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]~q ),
-	.read_01(\jtag|read_0~q ),
+	.out_data_buffer_271(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[27]~q ),
+	.out_data_buffer_281(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[28]~q ),
+	.out_data_buffer_291(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[29]~q ),
+	.out_data_buffer_301(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[30]~q ),
+	.out_data_buffer_311(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[31]~q ),
+	.readdata_311(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[31]~q ),
+	.readdata_155(\adc_0|readdata[15]~40_combout ),
+	.readdata_156(\timer_0|readdata[15]~q ),
+	.readdata_143(\timer_0|readdata[14]~q ),
+	.readdata_133(\timer_0|readdata[13]~q ),
+	.readdata_123(\timer_0|readdata[12]~q ),
+	.readdata_115(\adc_0|readdata[11]~45_combout ),
+	.readdata_116(\timer_0|readdata[11]~q ),
+	.readdata_102(\timer_0|readdata[10]~q ),
+	.readdata_103(\adc_0|readdata[10]~50_combout ),
+	.readdata_94(\adc_0|readdata[9]~55_combout ),
+	.readdata_95(\timer_0|readdata[9]~q ),
+	.readdata_84(\adc_0|readdata[8]~60_combout ),
+	.readdata_85(\timer_0|readdata[8]~q ),
+	.src_payload21(\mm_interconnect_0|cmd_mux_010|src_payload~7_combout ),
+	.src_payload22(\mm_interconnect_0|cmd_mux_009|src_payload~3_combout ),
+	.src_payload23(\mm_interconnect_0|cmd_mux_009|src_payload~4_combout ),
+	.src_payload24(\mm_interconnect_0|cmd_mux_009|src_payload~5_combout ),
+	.readdata_09(\epcs|readdata[0]~0_combout ),
+	.za_data_0(\sdram|za_data[0]~q ),
+	.readdata_117(\epcs|readdata[1]~1_combout ),
+	.za_data_1(\sdram|za_data[1]~q ),
+	.readdata_215(\epcs|readdata[2]~2_combout ),
+	.za_data_2(\sdram|za_data[2]~q ),
+	.readdata_38(\epcs|readdata[3]~3_combout ),
+	.za_data_3(\sdram|za_data[3]~q ),
+	.readdata_47(\epcs|readdata[4]~4_combout ),
+	.za_data_4(\sdram|za_data[4]~q ),
+	.out_data_buffer_110(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]~q ),
+	.readdata_118(\epcs|readdata[11]~5_combout ),
+	.za_data_11(\sdram|za_data[11]~q ),
+	.readdata_134(\epcs|readdata[13]~6_combout ),
+	.za_data_13(\sdram|za_data[13]~q ),
+	.readdata_164(\epcs|readdata[16]~7_combout ),
+	.readdata_124(\epcs|readdata[12]~8_combout ),
+	.za_data_12(\sdram|za_data[12]~q ),
+	.readdata_57(\epcs|readdata[5]~9_combout ),
+	.za_data_5(\sdram|za_data[5]~q ),
+	.readdata_144(\epcs|readdata[14]~10_combout ),
+	.za_data_14(\sdram|za_data[14]~q ),
+	.readdata_157(\epcs|readdata[15]~11_combout ),
+	.za_data_15(\sdram|za_data[15]~q ),
+	.readdata_104(\epcs|readdata[10]~12_combout ),
+	.za_data_10(\sdram|za_data[10]~q ),
+	.readdata_96(\epcs|readdata[9]~13_combout ),
+	.za_data_9(\sdram|za_data[9]~q ),
+	.readdata_86(\epcs|readdata[8]~14_combout ),
+	.za_data_8(\sdram|za_data[8]~q ),
+	.readdata_77(\epcs|readdata[7]~15_combout ),
+	.za_data_7(\sdram|za_data[7]~q ),
+	.readdata_67(\epcs|readdata[6]~16_combout ),
+	.za_data_6(\sdram|za_data[6]~q ),
+	.readdata_216(\epcs|readdata[21]~17_combout ),
+	.readdata_301(\epcs|readdata[30]~18_combout ),
+	.readdata_291(\epcs|readdata[29]~19_combout ),
+	.readdata_282(\epcs|readdata[28]~20_combout ),
+	.readdata_272(\epcs|readdata[27]~21_combout ),
+	.readdata_262(\epcs|readdata[26]~22_combout ),
+	.readdata_252(\epcs|readdata[25]~23_combout ),
+	.readdata_242(\epcs|readdata[24]~24_combout ),
+	.readdata_234(\epcs|readdata[23]~25_combout ),
+	.readdata_224(\epcs|readdata[22]~26_combout ),
+	.readdata_204(\epcs|readdata[20]~27_combout ),
+	.readdata_194(\epcs|readdata[19]~28_combout ),
+	.readdata_184(\epcs|readdata[18]~29_combout ),
+	.readdata_174(\epcs|readdata[17]~30_combout ),
+	.src_payload25(\mm_interconnect_0|cmd_mux_010|src_payload~8_combout ),
+	.read_0(\jtag|read_0~q ),
 	.av_readdata_0(\jtag|av_readdata[0]~0_combout ),
+	.readdata_010(\sys_pll|readdata[0]~1_combout ),
 	.av_readdata_9(\jtag|av_readdata[9]~combout ),
-	.av_irq1(\jtag|av_irq~combout ),
+	.src_data_412(\mm_interconnect_0|cmd_mux_010|src_data[41]~combout ),
+	.src_data_421(\mm_interconnect_0|cmd_mux_010|src_data[42]~combout ),
+	.src_data_431(\mm_interconnect_0|cmd_mux_010|src_data[43]~combout ),
+	.src_data_441(\mm_interconnect_0|cmd_mux_010|src_data[44]~combout ),
+	.src_data_451(\mm_interconnect_0|cmd_mux_010|src_data[45]~combout ),
 	.av_readdata_1(\jtag|av_readdata[1]~1_combout ),
+	.readdata_119(\sys_pll|readdata[1]~2_combout ),
 	.av_readdata_2(\jtag|av_readdata[2]~2_combout ),
 	.av_readdata_3(\jtag|av_readdata[3]~3_combout ),
 	.av_readdata_4(\jtag|av_readdata[4]~4_combout ),
 	.av_readdata_5(\jtag|av_readdata[5]~5_combout ),
 	.av_readdata_6(\jtag|av_readdata[6]~6_combout ),
 	.av_readdata_7(\jtag|av_readdata[7]~7_combout ),
-	.out_data_buffer_2(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]~q ),
-	.rvalid1(\jtag|rvalid~q ),
-	.woverflow1(\jtag|woverflow~q ),
-	.ac1(\jtag|ac~q ),
+	.out_data_buffer_210(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]~q ),
+	.src_payload26(\mm_interconnect_0|cmd_mux_009|src_payload~6_combout ),
+	.src_data_33(\mm_interconnect_0|cmd_mux_009|src_data[33]~combout ),
+	.src_payload27(\mm_interconnect_0|cmd_mux_009|src_payload~7_combout ),
+	.src_payload28(\mm_interconnect_0|cmd_mux_009|src_payload~8_combout ),
+	.src_data_34(\mm_interconnect_0|cmd_mux_009|src_data[34]~combout ),
+	.src_payload29(\mm_interconnect_0|cmd_mux_009|src_payload~9_combout ),
+	.src_payload30(\mm_interconnect_0|cmd_mux_009|src_payload~10_combout ),
+	.src_payload31(\mm_interconnect_0|cmd_mux_009|src_payload~11_combout ),
+	.src_payload32(\mm_interconnect_0|cmd_mux_009|src_payload~12_combout ),
+	.src_payload33(\mm_interconnect_0|cmd_mux_009|src_payload~13_combout ),
+	.readdata_312(\epcs|readdata[31]~31_combout ),
+	.src_payload34(\mm_interconnect_0|cmd_mux_009|src_payload~14_combout ),
+	.src_payload35(\mm_interconnect_0|cmd_mux_009|src_payload~15_combout ),
+	.src_payload36(\mm_interconnect_0|cmd_mux_009|src_payload~16_combout ),
+	.src_payload37(\mm_interconnect_0|cmd_mux_009|src_payload~17_combout ),
+	.src_payload38(\mm_interconnect_0|cmd_mux_009|src_payload~18_combout ),
+	.src_payload39(\mm_interconnect_0|cmd_mux_009|src_payload~19_combout ),
+	.src_data_35(\mm_interconnect_0|cmd_mux_009|src_data[35]~combout ),
+	.src_payload40(\mm_interconnect_0|cmd_mux_009|src_payload~20_combout ),
+	.src_payload41(\mm_interconnect_0|cmd_mux_009|src_payload~21_combout ),
+	.src_payload42(\mm_interconnect_0|cmd_mux_009|src_payload~22_combout ),
+	.src_payload43(\mm_interconnect_0|cmd_mux_009|src_payload~23_combout ),
+	.src_payload44(\mm_interconnect_0|cmd_mux_009|src_payload~24_combout ),
+	.src_payload45(\mm_interconnect_0|cmd_mux_009|src_payload~25_combout ),
+	.src_payload46(\mm_interconnect_0|cmd_mux_009|src_payload~26_combout ),
+	.src_payload47(\mm_interconnect_0|cmd_mux_009|src_payload~27_combout ),
+	.src_payload48(\mm_interconnect_0|cmd_mux_009|src_payload~28_combout ),
+	.rvalid(\jtag|rvalid~q ),
+	.src_payload49(\mm_interconnect_0|cmd_mux_009|src_payload~29_combout ),
+	.woverflow(\jtag|woverflow~q ),
+	.src_payload50(\mm_interconnect_0|cmd_mux_009|src_payload~30_combout ),
+	.src_payload51(\mm_interconnect_0|cmd_mux_009|src_payload~31_combout ),
+	.ac(\jtag|ac~q ),
 	.av_readdata_8(\jtag|av_readdata[8]~8_combout ),
-	.out_data_buffer_3(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[3]~q ),
-	.out_data_buffer_10(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]~q ),
-	.out_data_buffer_4(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]~q ),
-	.out_data_buffer_5(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[5]~q ),
-	.out_data_buffer_6(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]~q ),
-	.altera_internal_jtag(\altera_internal_jtag~TCKUTAP ),
-	.altera_internal_jtag1(\altera_internal_jtag~TDIUTAP ),
-	.state_4(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[4]~q ),
-	.splitter_nodes_receive_0_3(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_0[3]~q ),
-	.virtual_ir_scan_reg(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
-	.clr_reg(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q ),
-	.state_3(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[3]~q ),
-	.state_8(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[8]~q ),
-	.irf_reg_0_1(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][0]~q ),
+	.out_data_buffer_111(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[1]~q ),
+	.out_data_buffer_32(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[3]~q ),
+	.src_payload52(\mm_interconnect_0|cmd_mux_010|src_payload~9_combout ),
+	.src_payload53(\mm_interconnect_0|cmd_mux_010|src_payload~10_combout ),
+	.src_payload54(\mm_interconnect_0|cmd_mux_010|src_payload~11_combout ),
+	.src_payload55(\mm_interconnect_0|cmd_mux_010|src_payload~12_combout ),
+	.src_payload56(\mm_interconnect_0|cmd_mux_010|src_payload~13_combout ),
+	.src_payload57(\mm_interconnect_0|cmd_mux_009|src_payload~32_combout ),
+	.src_payload58(\mm_interconnect_0|cmd_mux_010|src_payload~14_combout ),
+	.src_payload59(\mm_interconnect_0|cmd_mux_010|src_payload~15_combout ),
+	.out_data_buffer_101(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]~q ),
+	.out_data_buffer_41(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]~q ),
+	.out_data_buffer_51(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[5]~q ),
+	.out_data_buffer_62(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]~q ),
+	.write2(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~3_combout ),
 	.clk_clk(\clk_clk~input_o ));
+
+niosII_niosII_timer_0 timer_0(
+	.clk(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
+	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
+	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
+	.reset_n(\rst_controller|r_sync_rst~q ),
+	.hold_waitrequest(\mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ),
+	.d_write(\cpu|cpu|d_write~q ),
+	.write_accepted(\mm_interconnect_0|cpu_data_master_translator|write_accepted~q ),
+	.read_mux_out(\timer_0|read_mux_out~0_combout ),
+	.writedata({\cpu|cpu|d_writedata[15]~q ,\cpu|cpu|d_writedata[14]~q ,\cpu|cpu|d_writedata[13]~q ,\cpu|cpu|d_writedata[12]~q ,\cpu|cpu|d_writedata[11]~q ,\cpu|cpu|d_writedata[10]~q ,\cpu|cpu|d_writedata[9]~q ,\cpu|cpu|d_writedata[8]~q ,\cpu|cpu|d_writedata[7]~q ,
+\cpu|cpu|d_writedata[6]~q ,\cpu|cpu|d_writedata[5]~q ,\cpu|cpu|d_writedata[4]~q ,\cpu|cpu|d_writedata[3]~q ,\cpu|cpu|d_writedata[2]~q ,\cpu|cpu|d_writedata[1]~q ,\cpu|cpu|d_writedata[0]~q }),
+	.Equal4(\mm_interconnect_0|router|Equal4~1_combout ),
+	.mem_used_1(\mm_interconnect_0|timer_0_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.wait_latency_counter_0(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[0]~q ),
+	.wait_latency_counter_1(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[1]~q ),
+	.Equal6(\timer_0|Equal6~0_combout ),
+	.uav_write(\mm_interconnect_0|cpu_data_master_translator|uav_write~0_combout ),
+	.period_l_wr_strobe1(\timer_0|period_l_wr_strobe~2_combout ),
+	.timeout_occurred1(\timer_0|timeout_occurred~q ),
+	.control_register_0(\timer_0|control_register[0]~q ),
+	.readdata_0(\timer_0|readdata[0]~q ),
+	.readdata_1(\timer_0|readdata[1]~q ),
+	.readdata_2(\timer_0|readdata[2]~q ),
+	.readdata_3(\timer_0|readdata[3]~q ),
+	.readdata_4(\timer_0|readdata[4]~q ),
+	.readdata_5(\timer_0|readdata[5]~q ),
+	.readdata_6(\timer_0|readdata[6]~q ),
+	.readdata_7(\timer_0|readdata[7]~q ),
+	.readdata_15(\timer_0|readdata[15]~q ),
+	.readdata_14(\timer_0|readdata[14]~q ),
+	.readdata_13(\timer_0|readdata[13]~q ),
+	.readdata_12(\timer_0|readdata[12]~q ),
+	.readdata_11(\timer_0|readdata[11]~q ),
+	.readdata_10(\timer_0|readdata[10]~q ),
+	.readdata_9(\timer_0|readdata[9]~q ),
+	.readdata_8(\timer_0|readdata[8]~q ));
+
+niosII_niosII_sys_pll sys_pll(
+	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.wire_pll7_clk_1(\sys_pll|sd1|wire_pll7_clk[1] ),
+	.out_data_buffer_0(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[0]~q ),
+	.out_data_toggle_flopped(\mm_interconnect_0|crosser_002|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_0(\mm_interconnect_0|crosser_002|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.mem_used_1(\mm_interconnect_0|sys_pll_pll_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.wire_pfdena_reg_ena(\sys_pll|wire_pfdena_reg_ena~0_combout ),
+	.out_data_buffer_65(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[65]~q ),
+	.out_data_buffer_38(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_39(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[39]~q ),
+	.reset(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
+	.out_data_buffer_66(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[66]~q ),
+	.readdata_0(\sys_pll|readdata[0]~1_combout ),
+	.readdata_1(\sys_pll|readdata[1]~2_combout ),
+	.out_data_buffer_1(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[1]~q ),
+	.clk_clk(\clk_clk~input_o ));
+
+niosII_niosII_sdram sdram(
+	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.m_addr_0(\sdram|m_addr[0]~q ),
+	.m_addr_1(\sdram|m_addr[1]~q ),
+	.m_addr_2(\sdram|m_addr[2]~q ),
+	.m_addr_3(\sdram|m_addr[3]~q ),
+	.m_addr_4(\sdram|m_addr[4]~q ),
+	.m_addr_5(\sdram|m_addr[5]~q ),
+	.m_addr_6(\sdram|m_addr[6]~q ),
+	.m_addr_7(\sdram|m_addr[7]~q ),
+	.m_addr_8(\sdram|m_addr[8]~q ),
+	.byteen_reg_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[0]~q ),
+	.byteen_reg_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[1]~q ),
+	.oe1(\sdram|oe~q ),
+	.m_addr_9(\sdram|m_addr[9]~q ),
+	.m_addr_10(\sdram|m_addr[10]~q ),
+	.m_addr_11(\sdram|m_addr[11]~q ),
+	.m_addr_12(\sdram|m_addr[12]~q ),
+	.m_bank_0(\sdram|m_bank[0]~q ),
+	.m_bank_1(\sdram|m_bank[1]~q ),
+	.m_cmd_1(\sdram|m_cmd[1]~q ),
+	.m_cmd_3(\sdram|m_cmd[3]~q ),
+	.m_dqm_0(\sdram|m_dqm[0]~q ),
+	.m_dqm_1(\sdram|m_dqm[1]~q ),
+	.m_cmd_2(\sdram|m_cmd[2]~q ),
+	.m_cmd_0(\sdram|m_cmd[0]~q ),
+	.r_sync_rst(\rst_controller|r_sync_rst~q ),
+	.entries_1(\sdram|the_niosII_sdram_input_efifo_module|entries[1]~q ),
+	.entries_0(\sdram|the_niosII_sdram_input_efifo_module|entries[0]~q ),
+	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
+	.saved_grant_0(\mm_interconnect_0|cmd_mux_012|saved_grant[0]~q ),
+	.d_byteenable_1(\cpu|cpu|d_byteenable[1]~q ),
+	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
+	.saved_grant_1(\mm_interconnect_0|cmd_mux_012|saved_grant[1]~q ),
+	.WideOr0(\mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ),
+	.src_valid(\mm_interconnect_0|cmd_mux_012|src_valid~0_combout ),
+	.Equal0(\sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ),
+	.src_data_66(\mm_interconnect_0|cmd_mux_012|src_data[66]~combout ),
+	.mem_used_7(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
+	.m0_write(\mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ),
+	.src12_valid(\mm_interconnect_0|cmd_demux|src12_valid~0_combout ),
+	.Equal1(\mm_interconnect_0|router|Equal1~0_combout ),
+	.out_data_28(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[28]~0_combout ),
+	.m0_write1(\mm_interconnect_0|sdram_s1_agent|m0_write~combout ),
+	.out_data_42(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[42]~1_combout ),
+	.out_data_29(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[29]~2_combout ),
+	.out_data_31(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[31]~3_combout ),
+	.out_data_30(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[30]~4_combout ),
+	.out_data_33(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[33]~5_combout ),
+	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~6_combout ),
+	.out_data_35(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[35]~7_combout ),
+	.out_data_34(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[34]~8_combout ),
+	.out_data_37(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[37]~9_combout ),
+	.out_data_36(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[36]~10_combout ),
+	.out_data_39(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[39]~11_combout ),
+	.out_data_38(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[38]~12_combout ),
+	.out_data_41(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[41]~13_combout ),
+	.out_data_40(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[40]~14_combout ),
+	.out_data_19(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[19]~15_combout ),
+	.out_data_20(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[20]~16_combout ),
+	.out_data_21(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[21]~17_combout ),
+	.out_data_22(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[22]~18_combout ),
+	.out_data_23(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[23]~19_combout ),
+	.out_data_24(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[24]~20_combout ),
+	.out_data_25(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[25]~21_combout ),
+	.out_data_26(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[26]~22_combout ),
+	.out_data_27(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[27]~23_combout ),
+	.m_data_0(\sdram|m_data[0]~q ),
+	.m_data_1(\sdram|m_data[1]~q ),
+	.m_data_2(\sdram|m_data[2]~q ),
+	.m_data_3(\sdram|m_data[3]~q ),
+	.m_data_4(\sdram|m_data[4]~q ),
+	.m_data_5(\sdram|m_data[5]~q ),
+	.m_data_6(\sdram|m_data[6]~q ),
+	.m_data_7(\sdram|m_data[7]~q ),
+	.m_data_8(\sdram|m_data[8]~q ),
+	.m_data_9(\sdram|m_data[9]~q ),
+	.m_data_10(\sdram|m_data[10]~q ),
+	.m_data_11(\sdram|m_data[11]~q ),
+	.m_data_12(\sdram|m_data[12]~q ),
+	.m_data_13(\sdram|m_data[13]~q ),
+	.m_data_14(\sdram|m_data[14]~q ),
+	.m_data_15(\sdram|m_data[15]~q ),
+	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~24_combout ),
+	.out_data_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[1]~25_combout ),
+	.out_data_2(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[2]~26_combout ),
+	.out_data_3(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[3]~27_combout ),
+	.out_data_4(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[4]~28_combout ),
+	.out_data_5(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[5]~29_combout ),
+	.out_data_6(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[6]~30_combout ),
+	.out_data_7(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[7]~31_combout ),
+	.out_data_8(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[8]~32_combout ),
+	.out_data_9(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[9]~33_combout ),
+	.out_data_10(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[10]~34_combout ),
+	.out_data_11(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[11]~35_combout ),
+	.out_data_12(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[12]~36_combout ),
+	.out_data_13(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[13]~37_combout ),
+	.out_data_14(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[14]~38_combout ),
+	.out_data_15(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[15]~39_combout ),
+	.za_valid1(\sdram|za_valid~q ),
+	.za_data_0(\sdram|za_data[0]~q ),
+	.za_data_1(\sdram|za_data[1]~q ),
+	.za_data_2(\sdram|za_data[2]~q ),
+	.za_data_3(\sdram|za_data[3]~q ),
+	.za_data_4(\sdram|za_data[4]~q ),
+	.za_data_11(\sdram|za_data[11]~q ),
+	.za_data_13(\sdram|za_data[13]~q ),
+	.za_data_12(\sdram|za_data[12]~q ),
+	.za_data_5(\sdram|za_data[5]~q ),
+	.za_data_14(\sdram|za_data[14]~q ),
+	.za_data_15(\sdram|za_data[15]~q ),
+	.za_data_10(\sdram|za_data[10]~q ),
+	.za_data_9(\sdram|za_data[9]~q ),
+	.za_data_8(\sdram|za_data[8]~q ),
+	.za_data_7(\sdram|za_data[7]~q ),
+	.za_data_6(\sdram|za_data[6]~q ),
+	.sdram_dq_0(\sdram_dq[0]~input_o ),
+	.sdram_dq_1(\sdram_dq[1]~input_o ),
+	.sdram_dq_2(\sdram_dq[2]~input_o ),
+	.sdram_dq_3(\sdram_dq[3]~input_o ),
+	.sdram_dq_4(\sdram_dq[4]~input_o ),
+	.sdram_dq_5(\sdram_dq[5]~input_o ),
+	.sdram_dq_6(\sdram_dq[6]~input_o ),
+	.sdram_dq_7(\sdram_dq[7]~input_o ),
+	.sdram_dq_8(\sdram_dq[8]~input_o ),
+	.sdram_dq_9(\sdram_dq[9]~input_o ),
+	.sdram_dq_10(\sdram_dq[10]~input_o ),
+	.sdram_dq_11(\sdram_dq[11]~input_o ),
+	.sdram_dq_12(\sdram_dq[12]~input_o ),
+	.sdram_dq_13(\sdram_dq[13]~input_o ),
+	.sdram_dq_14(\sdram_dq[14]~input_o ),
+	.sdram_dq_15(\sdram_dq[15]~input_o ));
+
+niosII_niosII_rs232_0_1 rs232_1(
+	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
+	.readdata_0(\rs232_1|readdata[0]~q ),
+	.irq1(\rs232_1|irq~q ),
+	.readdata_1(\rs232_1|readdata[1]~q ),
+	.readdata_23(\rs232_1|readdata[23]~q ),
+	.readdata_22(\rs232_1|readdata[22]~q ),
+	.readdata_21(\rs232_1|readdata[21]~q ),
+	.readdata_20(\rs232_1|readdata[20]~q ),
+	.readdata_19(\rs232_1|readdata[19]~q ),
+	.readdata_18(\rs232_1|readdata[18]~q ),
+	.readdata_17(\rs232_1|readdata[17]~q ),
+	.readdata_16(\rs232_1|readdata[16]~q ),
+	.serial_data_out(\rs232_1|RS232_Out_Serializer|serial_data_out~q ),
+	.r_sync_rst(\rst_controller|r_sync_rst~q ),
+	.cp_valid(\mm_interconnect_0|cpu_data_master_agent|cp_valid~0_combout ),
+	.data(\port_led|data~0_combout ),
+	.data1(\port_led|data~1_combout ),
+	.data2(\port_led|data~4_combout ),
+	.read_latency_shift_reg(\mm_interconnect_0|rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~2_combout ),
+	.data_to_uart_0(\rs232_0|data_to_uart[0]~q ),
+	.readdata_2(\rs232_1|readdata[2]~q ),
+	.readdata_3(\rs232_1|readdata[3]~q ),
+	.readdata_4(\rs232_1|readdata[4]~q ),
+	.readdata_5(\rs232_1|readdata[5]~q ),
+	.readdata_6(\rs232_1|readdata[6]~q ),
+	.readdata_7(\rs232_1|readdata[7]~q ),
+	.data_to_uart_1(\rs232_0|data_to_uart[1]~q ),
+	.readdata_15(\rs232_1|readdata[15]~q ),
+	.readdata_9(\rs232_1|readdata[9]~q ),
+	.readdata_8(\rs232_1|readdata[8]~q ),
+	.data_to_uart_2(\rs232_0|data_to_uart[2]~q ),
+	.comb(\rs232_0|RS232_In_Deserializer|comb~1_combout ),
+	.data_to_uart_3(\rs232_0|data_to_uart[3]~q ),
+	.data_to_uart_4(\rs232_0|data_to_uart[4]~q ),
+	.data_to_uart_5(\rs232_0|data_to_uart[5]~q ),
+	.data_to_uart_6(\rs232_0|data_to_uart[6]~q ),
+	.data_to_uart_7(\rs232_0|data_to_uart[7]~q ),
+	.GND_port(\~GND~combout ),
+	.rs232_1_RXD(\rs232_1_RXD~input_o ));
 
 niosII_niosII_rs232_0 rs232_0(
 	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
@@ -1403,25 +2161,24 @@ niosII_niosII_rs232_0 rs232_0(
 	.readdata_16(\rs232_0|readdata[16]~q ),
 	.serial_data_out(\rs232_0|RS232_Out_Serializer|serial_data_out~q ),
 	.r_sync_rst(\rst_controller|r_sync_rst~q ),
-	.d_read(\cpu|cpu|d_read~q ),
-	.read_accepted(\mm_interconnect_0|cpu_data_master_translator|read_accepted~q ),
+	.uav_read(\mm_interconnect_0|cpu_data_master_translator|uav_read~0_combout ),
 	.hold_waitrequest(\mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ),
 	.cp_valid(\mm_interconnect_0|cpu_data_master_agent|cp_valid~0_combout ),
 	.data(\port_led|data~0_combout ),
 	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
-	.Equal9(\mm_interconnect_0|router|Equal9~0_combout ),
-	.data1(\port_led|data~3_combout ),
+	.data1(\port_led|data~1_combout ),
+	.Equal9(\mm_interconnect_0|router|Equal9~2_combout ),
 	.data2(\port_led|data~4_combout ),
 	.data3(\port_led|data~5_combout ),
 	.data4(\port_led|data~6_combout ),
 	.data5(\port_led|data~7_combout ),
 	.data6(\port_led|data~8_combout ),
 	.data7(\port_led|data~9_combout ),
+	.data8(\port_led|data~10_combout ),
 	.Equal12(\mm_interconnect_0|router|Equal12~1_combout ),
 	.mem_used_1(\mm_interconnect_0|rs232_0_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ),
 	.Equal121(\mm_interconnect_0|router|Equal12~2_combout ),
 	.data_to_uart_0(\rs232_0|data_to_uart[0]~q ),
-	.data8(\port_led|data~10_combout ),
 	.read_latency_shift_reg(\mm_interconnect_0|rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~1_combout ),
 	.readdata_2(\rs232_0|readdata[2]~q ),
 	.readdata_3(\rs232_0|readdata[3]~q ),
@@ -1476,22 +2233,21 @@ niosII_niosII_port_led port_led(
 	.d_writedata_0(\cpu|cpu|d_writedata[0]~q ),
 	.data(\port_led|data~0_combout ),
 	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
-	.Equal6(\timer_0|Equal6~0_combout ),
+	.data1(\port_led|data~1_combout ),
 	.read_latency_shift_reg(\mm_interconnect_0|port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ),
 	.d_writedata_1(\cpu|cpu|d_writedata[1]~q ),
-	.data1(\port_led|data~3_combout ),
-	.d_writedata_2(\cpu|cpu|d_writedata[2]~q ),
 	.data2(\port_led|data~4_combout ),
-	.d_writedata_3(\cpu|cpu|d_writedata[3]~q ),
+	.d_writedata_2(\cpu|cpu|d_writedata[2]~q ),
 	.data3(\port_led|data~5_combout ),
-	.d_writedata_4(\cpu|cpu|d_writedata[4]~q ),
+	.d_writedata_3(\cpu|cpu|d_writedata[3]~q ),
 	.data4(\port_led|data~6_combout ),
-	.d_writedata_5(\cpu|cpu|d_writedata[5]~q ),
+	.d_writedata_4(\cpu|cpu|d_writedata[4]~q ),
 	.data5(\port_led|data~7_combout ),
-	.d_writedata_6(\cpu|cpu|d_writedata[6]~q ),
+	.d_writedata_5(\cpu|cpu|d_writedata[5]~q ),
 	.data6(\port_led|data~8_combout ),
-	.d_writedata_7(\cpu|cpu|d_writedata[7]~q ),
+	.d_writedata_6(\cpu|cpu|d_writedata[6]~q ),
 	.data7(\port_led|data~9_combout ),
+	.d_writedata_7(\cpu|cpu|d_writedata[7]~q ),
 	.data8(\port_led|data~10_combout ),
 	.readdata_0(\port_led|readdata[0]~q ),
 	.readdata_1(\port_led|readdata[1]~q ),
@@ -1531,13 +2287,13 @@ niosII_niosII_port_gpio_0 port_gpio_0(
 	.m0_write(\mm_interconnect_0|timer_0_s1_agent|m0_write~0_combout ),
 	.data(\port_led|data~0_combout ),
 	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
-	.data1(\port_led|data~3_combout ),
-	.data2(\port_led|data~4_combout ),
-	.data3(\port_led|data~5_combout ),
-	.data4(\port_led|data~6_combout ),
-	.data5(\port_led|data~7_combout ),
-	.data6(\port_led|data~8_combout ),
-	.data7(\port_led|data~9_combout ),
+	.data1(\port_led|data~4_combout ),
+	.data2(\port_led|data~5_combout ),
+	.data3(\port_led|data~6_combout ),
+	.data4(\port_led|data~7_combout ),
+	.data5(\port_led|data~8_combout ),
+	.data6(\port_led|data~9_combout ),
+	.data7(\port_led|data~10_combout ),
 	.d_byteenable_1(\cpu|cpu|d_byteenable[1]~q ),
 	.data_out_0(\port_gpio_0|data_out[0]~q ),
 	.direction_0(\port_gpio_0|direction[0]~q ),
@@ -1687,910 +2443,6 @@ niosII_niosII_port_gpio_0 port_gpio_0(
 	.port_gpio_0_export_30(\port_gpio_0_export[30]~input_o ),
 	.port_gpio_0_export_31(\port_gpio_0_export[31]~input_o ));
 
-niosII_niosII_rs232_0_1 rs232_1(
-	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
-	.readdata_0(\rs232_1|readdata[0]~q ),
-	.irq1(\rs232_1|irq~q ),
-	.readdata_1(\rs232_1|readdata[1]~q ),
-	.readdata_23(\rs232_1|readdata[23]~q ),
-	.readdata_22(\rs232_1|readdata[22]~q ),
-	.readdata_21(\rs232_1|readdata[21]~q ),
-	.readdata_20(\rs232_1|readdata[20]~q ),
-	.readdata_19(\rs232_1|readdata[19]~q ),
-	.readdata_18(\rs232_1|readdata[18]~q ),
-	.readdata_17(\rs232_1|readdata[17]~q ),
-	.readdata_16(\rs232_1|readdata[16]~q ),
-	.serial_data_out(\rs232_1|RS232_Out_Serializer|serial_data_out~q ),
-	.r_sync_rst(\rst_controller|r_sync_rst~q ),
-	.cp_valid(\mm_interconnect_0|cpu_data_master_agent|cp_valid~0_combout ),
-	.data(\port_led|data~0_combout ),
-	.data1(\port_led|data~3_combout ),
-	.read_latency_shift_reg(\mm_interconnect_0|rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~2_combout ),
-	.data_to_uart_0(\rs232_0|data_to_uart[0]~q ),
-	.data2(\port_led|data~10_combout ),
-	.readdata_2(\rs232_1|readdata[2]~q ),
-	.readdata_3(\rs232_1|readdata[3]~q ),
-	.readdata_4(\rs232_1|readdata[4]~q ),
-	.readdata_5(\rs232_1|readdata[5]~q ),
-	.readdata_6(\rs232_1|readdata[6]~q ),
-	.readdata_7(\rs232_1|readdata[7]~q ),
-	.data_to_uart_1(\rs232_0|data_to_uart[1]~q ),
-	.readdata_15(\rs232_1|readdata[15]~q ),
-	.readdata_9(\rs232_1|readdata[9]~q ),
-	.readdata_8(\rs232_1|readdata[8]~q ),
-	.data_to_uart_2(\rs232_0|data_to_uart[2]~q ),
-	.comb(\rs232_0|RS232_In_Deserializer|comb~1_combout ),
-	.data_to_uart_3(\rs232_0|data_to_uart[3]~q ),
-	.data_to_uart_4(\rs232_0|data_to_uart[4]~q ),
-	.data_to_uart_5(\rs232_0|data_to_uart[5]~q ),
-	.data_to_uart_6(\rs232_0|data_to_uart[6]~q ),
-	.data_to_uart_7(\rs232_0|data_to_uart[7]~q ),
-	.GND_port(\~GND~combout ),
-	.rs232_1_RXD(\rs232_1_RXD~input_o ));
-
-niosII_niosII_sdram sdram(
-	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.m_addr_0(\sdram|m_addr[0]~q ),
-	.m_addr_1(\sdram|m_addr[1]~q ),
-	.m_addr_2(\sdram|m_addr[2]~q ),
-	.m_addr_3(\sdram|m_addr[3]~q ),
-	.m_addr_4(\sdram|m_addr[4]~q ),
-	.m_addr_5(\sdram|m_addr[5]~q ),
-	.m_addr_6(\sdram|m_addr[6]~q ),
-	.m_addr_7(\sdram|m_addr[7]~q ),
-	.m_addr_8(\sdram|m_addr[8]~q ),
-	.byteen_reg_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[0]~q ),
-	.byteen_reg_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[1]~q ),
-	.oe1(\sdram|oe~q ),
-	.m_addr_9(\sdram|m_addr[9]~q ),
-	.m_addr_10(\sdram|m_addr[10]~q ),
-	.m_addr_11(\sdram|m_addr[11]~q ),
-	.m_addr_12(\sdram|m_addr[12]~q ),
-	.m_bank_0(\sdram|m_bank[0]~q ),
-	.m_bank_1(\sdram|m_bank[1]~q ),
-	.m_cmd_1(\sdram|m_cmd[1]~q ),
-	.m_cmd_3(\sdram|m_cmd[3]~q ),
-	.m_dqm_0(\sdram|m_dqm[0]~q ),
-	.m_dqm_1(\sdram|m_dqm[1]~q ),
-	.m_cmd_2(\sdram|m_cmd[2]~q ),
-	.m_cmd_0(\sdram|m_cmd[0]~q ),
-	.r_sync_rst(\rst_controller|r_sync_rst~q ),
-	.entries_1(\sdram|the_niosII_sdram_input_efifo_module|entries[1]~q ),
-	.entries_0(\sdram|the_niosII_sdram_input_efifo_module|entries[0]~q ),
-	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
-	.saved_grant_0(\mm_interconnect_0|cmd_mux_012|saved_grant[0]~q ),
-	.d_byteenable_1(\cpu|cpu|d_byteenable[1]~q ),
-	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
-	.saved_grant_1(\mm_interconnect_0|cmd_mux_012|saved_grant[1]~q ),
-	.WideOr0(\mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ),
-	.Equal0(\sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ),
-	.Equal1(\mm_interconnect_0|router|Equal1~0_combout ),
-	.WideOr1(\mm_interconnect_0|cmd_mux_012|WideOr1~combout ),
-	.m0_write(\mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ),
-	.mem_used_7(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_66(\mm_interconnect_0|cmd_mux_012|src_data[66]~combout ),
-	.out_data_28(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[28]~0_combout ),
-	.src_valid(\mm_interconnect_0|cmd_mux_012|src_valid~0_combout ),
-	.src12_valid(\mm_interconnect_0|cmd_demux|src12_valid~0_combout ),
-	.m0_write1(\mm_interconnect_0|sdram_s1_agent|m0_write~combout ),
-	.out_data_42(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[42]~1_combout ),
-	.out_data_29(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[29]~2_combout ),
-	.out_data_31(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[31]~3_combout ),
-	.out_data_30(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[30]~4_combout ),
-	.out_data_33(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[33]~5_combout ),
-	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~6_combout ),
-	.out_data_35(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[35]~7_combout ),
-	.out_data_34(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[34]~8_combout ),
-	.out_data_37(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[37]~9_combout ),
-	.out_data_36(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[36]~10_combout ),
-	.out_data_39(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[39]~11_combout ),
-	.out_data_38(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[38]~12_combout ),
-	.out_data_41(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[41]~13_combout ),
-	.out_data_40(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[40]~14_combout ),
-	.out_data_19(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[19]~15_combout ),
-	.out_data_20(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[20]~16_combout ),
-	.out_data_21(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[21]~17_combout ),
-	.out_data_22(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[22]~18_combout ),
-	.out_data_23(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[23]~19_combout ),
-	.out_data_24(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[24]~20_combout ),
-	.out_data_25(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[25]~21_combout ),
-	.out_data_26(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[26]~22_combout ),
-	.out_data_27(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[27]~23_combout ),
-	.m_data_0(\sdram|m_data[0]~q ),
-	.m_data_1(\sdram|m_data[1]~q ),
-	.m_data_2(\sdram|m_data[2]~q ),
-	.m_data_3(\sdram|m_data[3]~q ),
-	.m_data_4(\sdram|m_data[4]~q ),
-	.m_data_5(\sdram|m_data[5]~q ),
-	.m_data_6(\sdram|m_data[6]~q ),
-	.m_data_7(\sdram|m_data[7]~q ),
-	.m_data_8(\sdram|m_data[8]~q ),
-	.m_data_9(\sdram|m_data[9]~q ),
-	.m_data_10(\sdram|m_data[10]~q ),
-	.m_data_11(\sdram|m_data[11]~q ),
-	.m_data_12(\sdram|m_data[12]~q ),
-	.m_data_13(\sdram|m_data[13]~q ),
-	.m_data_14(\sdram|m_data[14]~q ),
-	.m_data_15(\sdram|m_data[15]~q ),
-	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~24_combout ),
-	.out_data_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[1]~25_combout ),
-	.out_data_2(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[2]~26_combout ),
-	.out_data_3(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[3]~27_combout ),
-	.out_data_4(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[4]~28_combout ),
-	.out_data_5(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[5]~29_combout ),
-	.out_data_6(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[6]~30_combout ),
-	.out_data_7(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[7]~31_combout ),
-	.out_data_8(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[8]~32_combout ),
-	.out_data_9(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[9]~33_combout ),
-	.out_data_10(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[10]~34_combout ),
-	.out_data_11(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[11]~35_combout ),
-	.out_data_12(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[12]~36_combout ),
-	.out_data_13(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[13]~37_combout ),
-	.out_data_14(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[14]~38_combout ),
-	.out_data_15(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[15]~39_combout ),
-	.za_valid1(\sdram|za_valid~q ),
-	.za_data_0(\sdram|za_data[0]~q ),
-	.za_data_1(\sdram|za_data[1]~q ),
-	.za_data_2(\sdram|za_data[2]~q ),
-	.za_data_3(\sdram|za_data[3]~q ),
-	.za_data_4(\sdram|za_data[4]~q ),
-	.za_data_11(\sdram|za_data[11]~q ),
-	.za_data_13(\sdram|za_data[13]~q ),
-	.za_data_12(\sdram|za_data[12]~q ),
-	.za_data_5(\sdram|za_data[5]~q ),
-	.za_data_14(\sdram|za_data[14]~q ),
-	.za_data_15(\sdram|za_data[15]~q ),
-	.za_data_10(\sdram|za_data[10]~q ),
-	.za_data_9(\sdram|za_data[9]~q ),
-	.za_data_8(\sdram|za_data[8]~q ),
-	.za_data_7(\sdram|za_data[7]~q ),
-	.za_data_6(\sdram|za_data[6]~q ),
-	.sdram_dq_0(\sdram_dq[0]~input_o ),
-	.sdram_dq_1(\sdram_dq[1]~input_o ),
-	.sdram_dq_2(\sdram_dq[2]~input_o ),
-	.sdram_dq_3(\sdram_dq[3]~input_o ),
-	.sdram_dq_4(\sdram_dq[4]~input_o ),
-	.sdram_dq_5(\sdram_dq[5]~input_o ),
-	.sdram_dq_6(\sdram_dq[6]~input_o ),
-	.sdram_dq_7(\sdram_dq[7]~input_o ),
-	.sdram_dq_8(\sdram_dq[8]~input_o ),
-	.sdram_dq_9(\sdram_dq[9]~input_o ),
-	.sdram_dq_10(\sdram_dq[10]~input_o ),
-	.sdram_dq_11(\sdram_dq[11]~input_o ),
-	.sdram_dq_12(\sdram_dq[12]~input_o ),
-	.sdram_dq_13(\sdram_dq[13]~input_o ),
-	.sdram_dq_14(\sdram_dq[14]~input_o ),
-	.sdram_dq_15(\sdram_dq[15]~input_o ));
-
-niosII_niosII_mm_interconnect_0 mm_interconnect_0(
-	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.W_alu_result_6(\cpu|cpu|W_alu_result[6]~q ),
-	.W_alu_result_26(\cpu|cpu|W_alu_result[26]~q ),
-	.W_alu_result_25(\cpu|cpu|W_alu_result[25]~q ),
-	.W_alu_result_24(\cpu|cpu|W_alu_result[24]~q ),
-	.W_alu_result_23(\cpu|cpu|W_alu_result[23]~q ),
-	.W_alu_result_22(\cpu|cpu|W_alu_result[22]~q ),
-	.W_alu_result_21(\cpu|cpu|W_alu_result[21]~q ),
-	.W_alu_result_20(\cpu|cpu|W_alu_result[20]~q ),
-	.W_alu_result_19(\cpu|cpu|W_alu_result[19]~q ),
-	.W_alu_result_18(\cpu|cpu|W_alu_result[18]~q ),
-	.W_alu_result_17(\cpu|cpu|W_alu_result[17]~q ),
-	.W_alu_result_16(\cpu|cpu|W_alu_result[16]~q ),
-	.W_alu_result_15(\cpu|cpu|W_alu_result[15]~q ),
-	.W_alu_result_14(\cpu|cpu|W_alu_result[14]~q ),
-	.W_alu_result_13(\cpu|cpu|W_alu_result[13]~q ),
-	.W_alu_result_12(\cpu|cpu|W_alu_result[12]~q ),
-	.W_alu_result_11(\cpu|cpu|W_alu_result[11]~q ),
-	.W_alu_result_10(\cpu|cpu|W_alu_result[10]~q ),
-	.W_alu_result_5(\cpu|cpu|W_alu_result[5]~q ),
-	.W_alu_result_7(\cpu|cpu|W_alu_result[7]~q ),
-	.W_alu_result_9(\cpu|cpu|W_alu_result[9]~q ),
-	.W_alu_result_8(\cpu|cpu|W_alu_result[8]~q ),
-	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
-	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
-	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
-	.byteen_reg_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[0]~q ),
-	.byteen_reg_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|byteen_reg[1]~q ),
-	.d_writedata_24(\cpu|cpu|d_writedata[24]~q ),
-	.d_writedata_25(\cpu|cpu|d_writedata[25]~q ),
-	.d_writedata_26(\cpu|cpu|d_writedata[26]~q ),
-	.d_writedata_27(\cpu|cpu|d_writedata[27]~q ),
-	.d_writedata_28(\cpu|cpu|d_writedata[28]~q ),
-	.d_writedata_29(\cpu|cpu|d_writedata[29]~q ),
-	.d_writedata_30(\cpu|cpu|d_writedata[30]~q ),
-	.d_writedata_31(\cpu|cpu|d_writedata[31]~q ),
-	.readdata_0(\rs232_0|readdata[0]~q ),
-	.readdata_01(\rs232_1|readdata[0]~q ),
-	.readdata_4(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[4]~q ),
-	.readdata_1(\rs232_0|readdata[1]~q ),
-	.readdata_11(\rs232_1|readdata[1]~q ),
-	.readdata_23(\rs232_0|readdata[23]~q ),
-	.readdata_231(\rs232_1|readdata[23]~q ),
-	.readdata_22(\rs232_1|readdata[22]~q ),
-	.readdata_221(\rs232_0|readdata[22]~q ),
-	.readdata_21(\rs232_1|readdata[21]~q ),
-	.readdata_211(\rs232_0|readdata[21]~q ),
-	.readdata_20(\rs232_1|readdata[20]~q ),
-	.readdata_201(\rs232_0|readdata[20]~q ),
-	.readdata_19(\rs232_1|readdata[19]~q ),
-	.readdata_191(\rs232_0|readdata[19]~q ),
-	.readdata_18(\rs232_1|readdata[18]~q ),
-	.readdata_181(\rs232_0|readdata[18]~q ),
-	.readdata_17(\rs232_1|readdata[17]~q ),
-	.readdata_171(\rs232_0|readdata[17]~q ),
-	.readdata_16(\rs232_1|readdata[16]~q ),
-	.readdata_161(\rs232_0|readdata[16]~q ),
-	.r_sync_rst(\rst_controller|r_sync_rst~q ),
-	.r_sync_rst1(\rst_controller_001|r_sync_rst~q ),
-	.saved_grant_0(\mm_interconnect_0|cmd_mux_010|saved_grant[0]~q ),
-	.saved_grant_1(\mm_interconnect_0|cmd_mux_010|saved_grant[1]~q ),
-	.out_data_buffer_38(\mm_interconnect_0|crosser_003|clock_xer|out_data_buffer[38]~q ),
-	.src_data_38(\mm_interconnect_0|cmd_mux_010|src_data[38]~combout ),
-	.src_data_39(\mm_interconnect_0|cmd_mux_010|src_data[39]~combout ),
-	.src_data_40(\mm_interconnect_0|cmd_mux_010|src_data[40]~combout ),
-	.src_payload(\mm_interconnect_0|cmd_mux_010|src_payload~0_combout ),
-	.entries_1(\sdram|the_niosII_sdram_input_efifo_module|entries[1]~q ),
-	.entries_0(\sdram|the_niosII_sdram_input_efifo_module|entries[0]~q ),
-	.mem_used_1(\mm_interconnect_0|adc_0_adc_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.d_read(\cpu|cpu|d_read~q ),
-	.read_accepted(\mm_interconnect_0|cpu_data_master_translator|read_accepted~q ),
-	.hold_waitrequest(\mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ),
-	.d_write(\cpu|cpu|d_write~q ),
-	.write_accepted(\mm_interconnect_0|cpu_data_master_translator|write_accepted~q ),
-	.cp_valid(\mm_interconnect_0|cpu_data_master_agent|cp_valid~0_combout ),
-	.Equal3(\mm_interconnect_0|router|Equal3~6_combout ),
-	.m0_read(\mm_interconnect_0|adc_0_adc_slave_agent|m0_read~combout ),
-	.m0_write(\mm_interconnect_0|timer_0_s1_agent|m0_write~0_combout ),
-	.src_payload1(\mm_interconnect_0|cmd_mux_010|src_payload~1_combout ),
-	.mem_used_11(\mm_interconnect_0|epcs_epcs_control_port_agent_rsp_fifo|mem_used[1]~q ),
-	.wait_latency_counter_1(\mm_interconnect_0|epcs_epcs_control_port_translator|wait_latency_counter[1]~q ),
-	.src_valid(\mm_interconnect_0|cmd_mux_010|src_valid~0_combout ),
-	.src_valid1(\mm_interconnect_0|cmd_mux_010|src_valid~1_combout ),
-	.src_data_46(\mm_interconnect_0|cmd_mux_010|src_data[46]~combout ),
-	.out_data_buffer_65(\mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[65]~q ),
-	.p1_wr_strobe(\epcs|the_niosII_epcs_sub|p1_wr_strobe~1_combout ),
-	.src_payload2(\mm_interconnect_0|cmd_mux_010|src_payload~2_combout ),
-	.d_writedata_0(\cpu|cpu|d_writedata[0]~q ),
-	.d_byteenable_0(\cpu|cpu|d_byteenable[0]~q ),
-	.Equal9(\mm_interconnect_0|router|Equal9~0_combout ),
-	.read_latency_shift_reg(\mm_interconnect_0|port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ),
-	.d_writedata_1(\cpu|cpu|d_writedata[1]~q ),
-	.d_writedata_2(\cpu|cpu|d_writedata[2]~q ),
-	.d_writedata_3(\cpu|cpu|d_writedata[3]~q ),
-	.d_writedata_4(\cpu|cpu|d_writedata[4]~q ),
-	.d_writedata_5(\cpu|cpu|d_writedata[5]~q ),
-	.d_writedata_6(\cpu|cpu|d_writedata[6]~q ),
-	.d_writedata_7(\cpu|cpu|d_writedata[7]~q ),
-	.out_data_buffer_0(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[0]~q ),
-	.out_data_toggle_flopped(\mm_interconnect_0|crosser_002|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\mm_interconnect_0|crosser_002|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.mem_used_12(\mm_interconnect_0|sys_pll_pll_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.wire_pfdena_reg_ena(\sys_pll|wire_pfdena_reg_ena~0_combout ),
-	.out_data_buffer_651(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[65]~q ),
-	.out_data_buffer_381(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[38]~q ),
-	.out_data_buffer_39(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[39]~q ),
-	.altera_reset_synchronizer_int_chain_out(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
-	.saved_grant_01(\mm_interconnect_0|cmd_mux_012|saved_grant[0]~q ),
-	.d_byteenable_1(\cpu|cpu|d_byteenable[1]~q ),
-	.use_reg(\mm_interconnect_0|sdram_s1_cmd_width_adapter|use_reg~q ),
-	.saved_grant_11(\mm_interconnect_0|cmd_mux_012|saved_grant[1]~q ),
-	.WideOr0(\mm_interconnect_0|sdram_s1_agent|WideOr0~2_combout ),
-	.Equal0(\sdram|the_niosII_sdram_input_efifo_module|Equal0~0_combout ),
-	.i_read(\cpu|cpu|i_read~q ),
-	.F_pc_24(\cpu|cpu|F_pc[24]~q ),
-	.F_pc_23(\cpu|cpu|F_pc[23]~q ),
-	.F_pc_22(\cpu|cpu|F_pc[22]~q ),
-	.F_pc_21(\cpu|cpu|F_pc[21]~q ),
-	.F_pc_20(\cpu|cpu|F_pc[20]~q ),
-	.F_pc_19(\cpu|cpu|F_pc[19]~q ),
-	.F_pc_18(\cpu|cpu|F_pc[18]~q ),
-	.F_pc_17(\cpu|cpu|F_pc[17]~q ),
-	.F_pc_16(\cpu|cpu|F_pc[16]~q ),
-	.F_pc_15(\cpu|cpu|F_pc[15]~q ),
-	.F_pc_14(\cpu|cpu|F_pc[14]~q ),
-	.F_pc_13(\cpu|cpu|F_pc[13]~q ),
-	.F_pc_12(\cpu|cpu|F_pc[12]~q ),
-	.F_pc_11(\cpu|cpu|F_pc[11]~q ),
-	.F_pc_10(\cpu|cpu|F_pc[10]~q ),
-	.Equal1(\mm_interconnect_0|router|Equal1~0_combout ),
-	.Equal4(\mm_interconnect_0|router|Equal4~1_combout ),
-	.WideOr1(\mm_interconnect_0|cmd_mux_012|WideOr1~combout ),
-	.m0_write1(\mm_interconnect_0|sdram_s1_agent|m0_write~2_combout ),
-	.mem_used_7(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem_used[7]~q ),
-	.src_data_66(\mm_interconnect_0|cmd_mux_012|src_data[66]~combout ),
-	.F_pc_8(\cpu|cpu|F_pc[8]~q ),
-	.out_data_28(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[28]~0_combout ),
-	.src_valid2(\mm_interconnect_0|cmd_mux_012|src_valid~0_combout ),
-	.src12_valid(\mm_interconnect_0|cmd_demux|src12_valid~0_combout ),
-	.m0_write2(\mm_interconnect_0|sdram_s1_agent|m0_write~combout ),
-	.out_data_42(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[42]~1_combout ),
-	.F_pc_9(\cpu|cpu|F_pc[9]~q ),
-	.out_data_29(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[29]~2_combout ),
-	.out_data_31(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[31]~3_combout ),
-	.out_data_30(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[30]~4_combout ),
-	.out_data_33(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[33]~5_combout ),
-	.out_data_32(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[32]~6_combout ),
-	.out_data_35(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[35]~7_combout ),
-	.out_data_34(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[34]~8_combout ),
-	.out_data_37(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[37]~9_combout ),
-	.out_data_36(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[36]~10_combout ),
-	.out_data_39(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[39]~11_combout ),
-	.out_data_38(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[38]~12_combout ),
-	.out_data_41(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[41]~13_combout ),
-	.out_data_40(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[40]~14_combout ),
-	.out_data_19(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[19]~15_combout ),
-	.F_pc_0(\cpu|cpu|F_pc[0]~q ),
-	.out_data_20(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[20]~16_combout ),
-	.F_pc_1(\cpu|cpu|F_pc[1]~q ),
-	.out_data_21(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[21]~17_combout ),
-	.F_pc_2(\cpu|cpu|F_pc[2]~q ),
-	.out_data_22(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[22]~18_combout ),
-	.F_pc_3(\cpu|cpu|F_pc[3]~q ),
-	.out_data_23(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[23]~19_combout ),
-	.F_pc_4(\cpu|cpu|F_pc[4]~q ),
-	.out_data_24(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[24]~20_combout ),
-	.F_pc_5(\cpu|cpu|F_pc[5]~q ),
-	.out_data_25(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[25]~21_combout ),
-	.F_pc_6(\cpu|cpu|F_pc[6]~q ),
-	.out_data_26(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[26]~22_combout ),
-	.F_pc_7(\cpu|cpu|F_pc[7]~q ),
-	.out_data_27(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[27]~23_combout ),
-	.always0(\adc_0|always0~1_combout ),
-	.waitrequest(\adc_0|waitrequest~0_combout ),
-	.mem_84_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][84]~q ),
-	.mem_66_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][66]~q ),
-	.read_latency_shift_reg_0(\mm_interconnect_0|cpu_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_01(\mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_02(\mm_interconnect_0|sys_id_control_slave_translator|read_latency_shift_reg[0]~q ),
-	.mem_54_0(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem[0][54]~q ),
-	.src0_valid(\mm_interconnect_0|rsp_demux_012|src0_valid~0_combout ),
-	.WideOr11(\mm_interconnect_0|rsp_mux|WideOr1~combout ),
-	.mem_used_13(\mm_interconnect_0|timer_0_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.wait_latency_counter_0(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[0]~q ),
-	.wait_latency_counter_11(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[1]~q ),
-	.read_latency_shift_reg1(\mm_interconnect_0|rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~2_combout ),
-	.write(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~2_combout ),
-	.Equal12(\mm_interconnect_0|router|Equal12~1_combout ),
-	.mem_used_14(\mm_interconnect_0|rs232_0_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.saved_grant_02(\mm_interconnect_0|cmd_mux_009|saved_grant[0]~q ),
-	.waitrequest1(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_ocimem|waitrequest~q ),
-	.mem_used_15(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.cpu_data_master_waitrequest(\mm_interconnect_0|cpu_data_master_translator|av_waitrequest~1_combout ),
-	.src_payload3(\mm_interconnect_0|cmd_mux_010|src_payload~3_combout ),
-	.src_data_661(\mm_interconnect_0|cmd_mux_010|src_data[66]~combout ),
-	.av_begintransfer(\mm_interconnect_0|epcs_epcs_control_port_translator|av_begintransfer~0_combout ),
-	.d_writedata_10(\cpu|cpu|d_writedata[10]~q ),
-	.src_payload4(\mm_interconnect_0|cmd_mux_010|src_payload~4_combout ),
-	.rst1(\jtag|niosII_jtag_alt_jtag_atlantic|rst1~q ),
-	.out_data_buffer_66(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[66]~q ),
-	.d_byteenable_2(\cpu|cpu|d_byteenable[2]~q ),
-	.d_byteenable_3(\cpu|cpu|d_byteenable[3]~q ),
-	.src1_valid(\mm_interconnect_0|rsp_demux_009|src1_valid~0_combout ),
-	.read_accepted1(\mm_interconnect_0|cpu_instruction_master_translator|read_accepted~2_combout ),
-	.src1_valid1(\mm_interconnect_0|rsp_demux_012|src1_valid~0_combout ),
-	.hbreak_enabled(\cpu|cpu|hbreak_enabled~q ),
-	.read_latency_shift_reg2(\mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg~0_combout ),
-	.d_writedata_8(\cpu|cpu|d_writedata[8]~q ),
-	.d_writedata_9(\cpu|cpu|d_writedata[9]~q ),
-	.d_writedata_11(\cpu|cpu|d_writedata[11]~q ),
-	.d_writedata_12(\cpu|cpu|d_writedata[12]~q ),
-	.d_writedata_13(\cpu|cpu|d_writedata[13]~q ),
-	.d_writedata_14(\cpu|cpu|d_writedata[14]~q ),
-	.d_writedata_15(\cpu|cpu|d_writedata[15]~q ),
-	.d_writedata_16(\cpu|cpu|d_writedata[16]~q ),
-	.d_writedata_17(\cpu|cpu|d_writedata[17]~q ),
-	.d_writedata_18(\cpu|cpu|d_writedata[18]~q ),
-	.d_writedata_19(\cpu|cpu|d_writedata[19]~q ),
-	.d_writedata_20(\cpu|cpu|d_writedata[20]~q ),
-	.d_writedata_21(\cpu|cpu|d_writedata[21]~q ),
-	.d_writedata_22(\cpu|cpu|d_writedata[22]~q ),
-	.d_writedata_23(\cpu|cpu|d_writedata[23]~q ),
-	.WideOr12(\mm_interconnect_0|cmd_mux_009|WideOr1~combout ),
-	.write1(\mm_interconnect_0|port_key_avalon_parallel_port_slave_agent_rsp_fifo|write~0_combout ),
-	.Equal121(\mm_interconnect_0|router|Equal12~2_combout ),
-	.rf_source_valid(\mm_interconnect_0|cpu_debug_mem_slave_agent|rf_source_valid~0_combout ),
-	.uav_write(\mm_interconnect_0|cpu_data_master_translator|uav_write~0_combout ),
-	.src_payload5(\mm_interconnect_0|cmd_mux_010|src_payload~5_combout ),
-	.out_valid(\mm_interconnect_0|crosser_006|clock_xer|out_valid~combout ),
-	.av_readdata_pre_0(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[0]~q ),
-	.out_data_buffer_01(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[0]~q ),
-	.data_reg_0(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[0]~q ),
-	.out_payload_0(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[0]~q ),
-	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
-	.F_iw_0(\cpu|cpu|F_iw[0]~5_combout ),
-	.av_readdata_pre_1(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[1]~q ),
-	.out_data_buffer_1(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[1]~q ),
-	.out_payload_1(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[1]~q ),
-	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~16_combout ),
-	.av_readdata_pre_2(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[2]~q ),
-	.out_data_buffer_2(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[2]~q ),
-	.data_reg_2(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[2]~q ),
-	.out_payload_2(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[2]~q ),
-	.F_iw_2(\cpu|cpu|F_iw[2]~10_combout ),
-	.av_readdata_pre_3(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[3]~q ),
-	.out_data_buffer_3(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[3]~q ),
-	.out_payload_3(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ),
-	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~17_combout ),
-	.av_readdata_pre_4(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[4]~q ),
-	.out_data_buffer_4(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[4]~q ),
-	.out_payload_4(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ),
-	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~18_combout ),
-	.read_latency_shift_reg3(\mm_interconnect_0|rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~1_combout ),
-	.b_full(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
-	.out_data_0(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[0]~24_combout ),
-	.out_data_1(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[1]~25_combout ),
-	.out_data_2(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[2]~26_combout ),
-	.out_data_3(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[3]~27_combout ),
-	.out_data_4(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[4]~28_combout ),
-	.out_data_5(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[5]~29_combout ),
-	.out_data_6(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[6]~30_combout ),
-	.out_data_7(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[7]~31_combout ),
-	.out_data_8(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[8]~32_combout ),
-	.out_data_9(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[9]~33_combout ),
-	.out_data_10(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[10]~34_combout ),
-	.out_data_11(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[11]~35_combout ),
-	.out_data_12(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[12]~36_combout ),
-	.out_data_13(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[13]~37_combout ),
-	.out_data_14(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[14]~38_combout ),
-	.out_data_15(\mm_interconnect_0|sdram_s1_cmd_width_adapter|out_data[15]~39_combout ),
-	.period_l_wr_strobe(\timer_0|period_l_wr_strobe~2_combout ),
-	.src_data_461(\mm_interconnect_0|cmd_mux_009|src_data[46]~combout ),
-	.out_data_toggle_flopped1(\mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped~q ),
-	.av_readdata_pre_11(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[11]~q ),
-	.out_data_buffer_11(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[11]~q ),
-	.out_payload_11(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[11]~q ),
-	.src_data_11(\mm_interconnect_0|rsp_mux|src_data[11]~19_combout ),
-	.av_readdata_pre_13(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[13]~q ),
-	.out_data_buffer_13(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[13]~q ),
-	.out_payload_13(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[13]~q ),
-	.src_data_13(\mm_interconnect_0|rsp_mux|src_data[13]~20_combout ),
-	.av_readdata_pre_16(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[16]~q ),
-	.out_data_buffer_16(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[16]~q ),
-	.src_payload6(\mm_interconnect_0|rsp_mux_001|src_payload~0_combout ),
-	.av_readdata_pre_12(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[12]~q ),
-	.out_data_buffer_12(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[12]~q ),
-	.data_reg_12(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[12]~q ),
-	.out_payload_12(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[12]~q ),
-	.F_iw_12(\cpu|cpu|F_iw[12]~23_combout ),
-	.av_readdata_pre_5(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[5]~q ),
-	.out_data_buffer_5(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[5]~q ),
-	.out_payload_5(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[5]~q ),
-	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~21_combout ),
-	.av_readdata_pre_14(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[14]~q ),
-	.out_data_buffer_14(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[14]~q ),
-	.data_reg_14(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[14]~q ),
-	.out_payload_14(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[14]~q ),
-	.F_iw_14(\cpu|cpu|F_iw[14]~28_combout ),
-	.av_readdata_pre_15(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[15]~q ),
-	.out_data_buffer_15(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[15]~q ),
-	.out_payload_15(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[15]~q ),
-	.src_data_15(\mm_interconnect_0|rsp_mux|src_data[15]~22_combout ),
-	.av_readdata_pre_10(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[10]~q ),
-	.out_data_buffer_10(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[10]~q ),
-	.data_reg_10(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[10]~q ),
-	.out_payload_10(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[10]~q ),
-	.F_iw_10(\cpu|cpu|F_iw[10]~33_combout ),
-	.av_readdata_pre_9(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[9]~q ),
-	.out_data_buffer_9(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[9]~q ),
-	.data_reg_9(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[9]~q ),
-	.out_payload_9(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[9]~q ),
-	.F_iw_9(\cpu|cpu|F_iw[9]~36_combout ),
-	.av_readdata_pre_8(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[8]~q ),
-	.out_data_buffer_8(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[8]~q ),
-	.data_reg_8(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[8]~q ),
-	.out_payload_8(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[8]~q ),
-	.F_iw_8(\cpu|cpu|F_iw[8]~39_combout ),
-	.av_readdata_pre_7(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[7]~q ),
-	.out_data_buffer_7(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[7]~q ),
-	.data_reg_7(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[7]~q ),
-	.out_payload_7(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[7]~q ),
-	.F_iw_7(\cpu|cpu|F_iw[7]~42_combout ),
-	.av_readdata_pre_6(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[6]~q ),
-	.out_data_buffer_6(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[6]~q ),
-	.data_reg_6(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[6]~q ),
-	.out_payload_6(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[6]~q ),
-	.F_iw_6(\cpu|cpu|F_iw[6]~45_combout ),
-	.av_readdata_pre_21(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[21]~q ),
-	.out_data_buffer_21(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[21]~q ),
-	.av_readdata_pre_30(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[30]~q ),
-	.out_data_buffer_30(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[30]~q ),
-	.av_readdata_pre_29(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[29]~q ),
-	.out_data_buffer_29(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[29]~q ),
-	.av_readdata_pre_28(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[28]~q ),
-	.out_data_buffer_28(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[28]~q ),
-	.av_readdata_pre_27(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[27]~q ),
-	.out_data_buffer_27(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[27]~q ),
-	.av_readdata_pre_26(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[26]~q ),
-	.out_data_buffer_26(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[26]~q ),
-	.av_readdata_pre_25(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[25]~q ),
-	.out_data_buffer_25(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[25]~q ),
-	.av_readdata_pre_24(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[24]~q ),
-	.out_data_buffer_24(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[24]~q ),
-	.av_readdata_pre_23(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[23]~q ),
-	.out_data_buffer_23(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[23]~q ),
-	.av_readdata_pre_22(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[22]~q ),
-	.out_data_buffer_22(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[22]~q ),
-	.av_readdata_pre_20(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[20]~q ),
-	.out_data_buffer_20(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[20]~q ),
-	.av_readdata_pre_19(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[19]~q ),
-	.out_data_buffer_19(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[19]~q ),
-	.av_readdata_pre_18(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[18]~q ),
-	.out_data_buffer_18(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[18]~q ),
-	.av_readdata_pre_17(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[17]~q ),
-	.out_data_buffer_17(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[17]~q ),
-	.src_payload7(\mm_interconnect_0|cmd_mux_010|src_payload~6_combout ),
-	.readdata_02(\port_led|readdata[0]~q ),
-	.readdata_03(\port_sw|readdata[0]~q ),
-	.readdata_04(\port_key|readdata[0]~q ),
-	.readdata_05(\port_gpio_0|readdata[0]~q ),
-	.out_valid1(\mm_interconnect_0|crosser_005|clock_xer|out_valid~combout ),
-	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~30_combout ),
-	.readdata_06(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[0]~q ),
-	.readdata_12(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[1]~q ),
-	.readdata_2(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[2]~q ),
-	.readdata_3(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[3]~q ),
-	.readdata_13(\port_led|readdata[1]~q ),
-	.readdata_14(\port_sw|readdata[1]~q ),
-	.readdata_15(\port_key|readdata[1]~q ),
-	.readdata_110(\port_gpio_0|readdata[1]~q ),
-	.src_data_12(\mm_interconnect_0|rsp_mux|src_data[1]~38_combout ),
-	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~39_combout ),
-	.readdata_24(\port_led|readdata[2]~q ),
-	.readdata_25(\port_gpio_0|readdata[2]~q ),
-	.readdata_26(\port_sw|readdata[2]~q ),
-	.readdata_27(\rs232_1|readdata[2]~q ),
-	.readdata_28(\rs232_0|readdata[2]~q ),
-	.src_data_21(\mm_interconnect_0|rsp_mux|src_data[2]~45_combout ),
-	.readdata_31(\port_led|readdata[3]~q ),
-	.readdata_32(\port_gpio_0|readdata[3]~q ),
-	.readdata_33(\port_sw|readdata[3]~q ),
-	.readdata_34(\rs232_1|readdata[3]~q ),
-	.readdata_35(\rs232_0|readdata[3]~q ),
-	.src_data_31(\mm_interconnect_0|rsp_mux|src_data[3]~52_combout ),
-	.readdata_41(\port_led|readdata[4]~q ),
-	.readdata_42(\rs232_0|readdata[4]~q ),
-	.readdata_43(\port_gpio_0|readdata[4]~q ),
-	.readdata_44(\rs232_1|readdata[4]~q ),
-	.av_readdata_pre_301(\mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ),
-	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~58_combout ),
-	.readdata_5(\port_led|readdata[5]~q ),
-	.readdata_51(\rs232_0|readdata[5]~q ),
-	.readdata_52(\port_gpio_0|readdata[5]~q ),
-	.readdata_53(\rs232_1|readdata[5]~q ),
-	.src_data_51(\mm_interconnect_0|rsp_mux|src_data[5]~64_combout ),
-	.readdata_6(\port_led|readdata[6]~q ),
-	.readdata_61(\rs232_0|readdata[6]~q ),
-	.readdata_62(\port_gpio_0|readdata[6]~q ),
-	.readdata_63(\rs232_1|readdata[6]~q ),
-	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~70_combout ),
-	.readdata_7(\port_led|readdata[7]~q ),
-	.readdata_71(\rs232_0|readdata[7]~q ),
-	.readdata_72(\port_gpio_0|readdata[7]~q ),
-	.readdata_73(\rs232_1|readdata[7]~q ),
-	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~76_combout ),
-	.src_payload8(\mm_interconnect_0|cmd_mux_009|src_payload~0_combout ),
-	.src_payload9(\mm_interconnect_0|cmd_mux_009|src_payload~1_combout ),
-	.src_data_381(\mm_interconnect_0|cmd_mux_009|src_data[38]~combout ),
-	.src_data_391(\mm_interconnect_0|cmd_mux_009|src_data[39]~combout ),
-	.src_data_401(\mm_interconnect_0|cmd_mux_009|src_data[40]~combout ),
-	.src_data_411(\mm_interconnect_0|cmd_mux_009|src_data[41]~combout ),
-	.src_data_42(\mm_interconnect_0|cmd_mux_009|src_data[42]~combout ),
-	.src_data_43(\mm_interconnect_0|cmd_mux_009|src_data[43]~combout ),
-	.src_data_44(\mm_interconnect_0|cmd_mux_009|src_data[44]~combout ),
-	.src_data_45(\mm_interconnect_0|cmd_mux_009|src_data[45]~combout ),
-	.src_data_32(\mm_interconnect_0|cmd_mux_009|src_data[32]~combout ),
-	.b_non_empty(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
-	.counter_reg_bit_5(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.counter_reg_bit_4(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
-	.counter_reg_bit_3(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.counter_reg_bit_2(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
-	.counter_reg_bit_1(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
-	.counter_reg_bit_0(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.dreg_01(\mm_interconnect_0|crosser|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.av_waitrequest(\jtag|av_waitrequest~q ),
-	.mem_used_16(\mm_interconnect_0|jtag_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.out_data_buffer_661(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[66]~q ),
-	.out_data_buffer_382(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[38]~q ),
-	.out_data_buffer_71(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[7]~q ),
-	.za_valid(\sdram|za_valid~q ),
-	.readdata_111(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[11]~q ),
-	.readdata_131(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[13]~q ),
-	.readdata_162(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[16]~q ),
-	.readdata_121(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[12]~q ),
-	.readdata_54(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[5]~q ),
-	.readdata_141(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[14]~q ),
-	.readdata_151(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[15]~q ),
-	.readdata_10(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[10]~q ),
-	.av_readdata_pre_31(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[31]~q ),
-	.out_data_buffer_31(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[31]~q ),
-	.readdata_9(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[9]~q ),
-	.readdata_8(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[8]~q ),
-	.readdata_74(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[7]~q ),
-	.readdata_64(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[6]~q ),
-	.out_data_buffer_261(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[26]~q ),
-	.readdata_212(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[21]~q ),
-	.readdata_30(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[30]~q ),
-	.out_data_buffer_251(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[25]~q ),
-	.src_payload10(\mm_interconnect_0|rsp_mux|src_payload~5_combout ),
-	.readdata_29(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[29]~q ),
-	.out_data_buffer_241(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[24]~q ),
-	.readdata_281(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[28]~q ),
-	.readdata_232(\port_gpio_0|readdata[23]~q ),
-	.src_payload11(\mm_interconnect_0|rsp_mux|src_payload~9_combout ),
-	.readdata_271(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[27]~q ),
-	.readdata_222(\port_gpio_0|readdata[22]~q ),
-	.src_payload12(\mm_interconnect_0|rsp_mux|src_payload~14_combout ),
-	.readdata_261(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[26]~q ),
-	.readdata_213(\port_gpio_0|readdata[21]~q ),
-	.src_payload13(\mm_interconnect_0|rsp_mux|src_payload~19_combout ),
-	.readdata_251(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[25]~q ),
-	.readdata_202(\port_gpio_0|readdata[20]~q ),
-	.src_payload14(\mm_interconnect_0|rsp_mux|src_payload~24_combout ),
-	.readdata_241(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[24]~q ),
-	.readdata_192(\port_gpio_0|readdata[19]~q ),
-	.src_payload15(\mm_interconnect_0|rsp_mux|src_payload~29_combout ),
-	.readdata_233(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[23]~q ),
-	.readdata_182(\port_gpio_0|readdata[18]~q ),
-	.src_payload16(\mm_interconnect_0|rsp_mux|src_payload~34_combout ),
-	.readdata_223(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[22]~q ),
-	.readdata_172(\port_gpio_0|readdata[17]~q ),
-	.src_payload17(\mm_interconnect_0|rsp_mux|src_payload~39_combout ),
-	.readdata_163(\port_gpio_0|readdata[16]~q ),
-	.src_payload18(\mm_interconnect_0|rsp_mux|src_payload~44_combout ),
-	.readdata_203(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[20]~q ),
-	.readdata_152(\port_gpio_0|readdata[15]~q ),
-	.readdata_153(\rs232_1|readdata[15]~q ),
-	.readdata_154(\rs232_0|readdata[15]~q ),
-	.src_data_151(\mm_interconnect_0|rsp_mux|src_data[15]~82_combout ),
-	.readdata_193(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[19]~q ),
-	.readdata_142(\port_gpio_0|readdata[14]~q ),
-	.src_data_14(\mm_interconnect_0|rsp_mux|src_data[14]~85_combout ),
-	.readdata_183(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[18]~q ),
-	.readdata_132(\port_gpio_0|readdata[13]~q ),
-	.src_data_131(\mm_interconnect_0|rsp_mux|src_data[13]~89_combout ),
-	.readdata_173(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[17]~q ),
-	.readdata_122(\port_gpio_0|readdata[12]~q ),
-	.src_data_121(\mm_interconnect_0|rsp_mux|src_data[12]~92_combout ),
-	.readdata_112(\port_gpio_0|readdata[11]~q ),
-	.src_data_111(\mm_interconnect_0|rsp_mux|src_data[11]~96_combout ),
-	.readdata_101(\port_gpio_0|readdata[10]~q ),
-	.src_data_10(\mm_interconnect_0|rsp_mux|src_data[10]~101_combout ),
-	.readdata_91(\port_gpio_0|readdata[9]~q ),
-	.readdata_92(\rs232_1|readdata[9]~q ),
-	.readdata_93(\rs232_0|readdata[9]~q ),
-	.src_data_9(\mm_interconnect_0|rsp_mux|src_data[9]~107_combout ),
-	.readdata_81(\port_gpio_0|readdata[8]~q ),
-	.readdata_82(\rs232_1|readdata[8]~q ),
-	.readdata_83(\rs232_0|readdata[8]~q ),
-	.src_data_8(\mm_interconnect_0|rsp_mux|src_data[8]~113_combout ),
-	.src_payload19(\mm_interconnect_0|cmd_mux_010|src_payload~7_combout ),
-	.av_readdata_pre_01(\mm_interconnect_0|adc_0_adc_slave_translator|av_readdata_pre[0]~0_combout ),
-	.readdata_07(\adc_0|readdata[0]~4_combout ),
-	.readdata_08(\timer_0|readdata[0]~q ),
-	.readdata_113(\adc_0|readdata[1]~9_combout ),
-	.readdata_114(\timer_0|readdata[1]~q ),
-	.readdata_210(\adc_0|readdata[2]~14_combout ),
-	.readdata_214(\timer_0|readdata[2]~q ),
-	.readdata_36(\adc_0|readdata[3]~19_combout ),
-	.readdata_37(\timer_0|readdata[3]~q ),
-	.readdata_45(\adc_0|readdata[4]~24_combout ),
-	.readdata_46(\timer_0|readdata[4]~q ),
-	.readdata_55(\adc_0|readdata[5]~29_combout ),
-	.readdata_56(\timer_0|readdata[5]~q ),
-	.readdata_65(\adc_0|readdata[6]~34_combout ),
-	.readdata_66(\timer_0|readdata[6]~q ),
-	.readdata_75(\adc_0|readdata[7]~39_combout ),
-	.readdata_76(\timer_0|readdata[7]~q ),
-	.src_payload20(\mm_interconnect_0|cmd_mux_009|src_payload~2_combout ),
-	.out_data_buffer_652(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[65]~q ),
-	.out_data_buffer_02(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[0]~q ),
-	.b_full1(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
-	.counter_reg_bit_21(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
-	.counter_reg_bit_11(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
-	.counter_reg_bit_51(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
-	.counter_reg_bit_41(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
-	.counter_reg_bit_31(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
-	.counter_reg_bit_01(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
-	.out_data_buffer_271(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[27]~q ),
-	.out_data_buffer_281(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[28]~q ),
-	.out_data_buffer_291(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[29]~q ),
-	.out_data_buffer_301(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[30]~q ),
-	.out_data_buffer_311(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[31]~q ),
-	.readdata_311(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[31]~q ),
-	.readdata_155(\adc_0|readdata[15]~40_combout ),
-	.readdata_156(\timer_0|readdata[15]~q ),
-	.readdata_143(\timer_0|readdata[14]~q ),
-	.readdata_133(\timer_0|readdata[13]~q ),
-	.readdata_123(\timer_0|readdata[12]~q ),
-	.readdata_115(\adc_0|readdata[11]~45_combout ),
-	.readdata_116(\timer_0|readdata[11]~q ),
-	.readdata_102(\timer_0|readdata[10]~q ),
-	.readdata_103(\adc_0|readdata[10]~50_combout ),
-	.readdata_94(\adc_0|readdata[9]~55_combout ),
-	.readdata_95(\timer_0|readdata[9]~q ),
-	.readdata_84(\adc_0|readdata[8]~60_combout ),
-	.readdata_85(\timer_0|readdata[8]~q ),
-	.src_payload21(\mm_interconnect_0|cmd_mux_010|src_payload~8_combout ),
-	.src_payload22(\mm_interconnect_0|cmd_mux_009|src_payload~3_combout ),
-	.src_payload23(\mm_interconnect_0|cmd_mux_009|src_payload~4_combout ),
-	.src_payload24(\mm_interconnect_0|cmd_mux_009|src_payload~5_combout ),
-	.readdata_09(\epcs|readdata[0]~0_combout ),
-	.za_data_0(\sdram|za_data[0]~q ),
-	.readdata_117(\epcs|readdata[1]~1_combout ),
-	.za_data_1(\sdram|za_data[1]~q ),
-	.readdata_215(\epcs|readdata[2]~2_combout ),
-	.za_data_2(\sdram|za_data[2]~q ),
-	.readdata_38(\epcs|readdata[3]~3_combout ),
-	.za_data_3(\sdram|za_data[3]~q ),
-	.readdata_47(\epcs|readdata[4]~4_combout ),
-	.za_data_4(\sdram|za_data[4]~q ),
-	.out_data_buffer_110(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]~q ),
-	.readdata_118(\epcs|readdata[11]~5_combout ),
-	.za_data_11(\sdram|za_data[11]~q ),
-	.readdata_134(\epcs|readdata[13]~6_combout ),
-	.za_data_13(\sdram|za_data[13]~q ),
-	.readdata_164(\epcs|readdata[16]~7_combout ),
-	.readdata_124(\epcs|readdata[12]~8_combout ),
-	.za_data_12(\sdram|za_data[12]~q ),
-	.readdata_57(\epcs|readdata[5]~9_combout ),
-	.za_data_5(\sdram|za_data[5]~q ),
-	.readdata_144(\epcs|readdata[14]~10_combout ),
-	.za_data_14(\sdram|za_data[14]~q ),
-	.readdata_157(\epcs|readdata[15]~11_combout ),
-	.za_data_15(\sdram|za_data[15]~q ),
-	.readdata_104(\epcs|readdata[10]~12_combout ),
-	.za_data_10(\sdram|za_data[10]~q ),
-	.readdata_96(\epcs|readdata[9]~13_combout ),
-	.za_data_9(\sdram|za_data[9]~q ),
-	.readdata_86(\epcs|readdata[8]~14_combout ),
-	.za_data_8(\sdram|za_data[8]~q ),
-	.readdata_77(\epcs|readdata[7]~15_combout ),
-	.za_data_7(\sdram|za_data[7]~q ),
-	.readdata_67(\epcs|readdata[6]~16_combout ),
-	.za_data_6(\sdram|za_data[6]~q ),
-	.readdata_216(\epcs|readdata[21]~17_combout ),
-	.readdata_301(\epcs|readdata[30]~18_combout ),
-	.readdata_291(\epcs|readdata[29]~19_combout ),
-	.readdata_282(\epcs|readdata[28]~20_combout ),
-	.readdata_272(\epcs|readdata[27]~21_combout ),
-	.readdata_262(\epcs|readdata[26]~22_combout ),
-	.readdata_252(\epcs|readdata[25]~23_combout ),
-	.readdata_242(\epcs|readdata[24]~24_combout ),
-	.readdata_234(\epcs|readdata[23]~25_combout ),
-	.readdata_224(\epcs|readdata[22]~26_combout ),
-	.readdata_204(\epcs|readdata[20]~27_combout ),
-	.readdata_194(\epcs|readdata[19]~28_combout ),
-	.readdata_184(\epcs|readdata[18]~29_combout ),
-	.readdata_174(\epcs|readdata[17]~30_combout ),
-	.src_payload25(\mm_interconnect_0|cmd_mux_010|src_payload~9_combout ),
-	.read_0(\jtag|read_0~q ),
-	.av_readdata_0(\jtag|av_readdata[0]~0_combout ),
-	.readdata_010(\sys_pll|readdata[0]~1_combout ),
-	.av_readdata_9(\jtag|av_readdata[9]~combout ),
-	.src_data_412(\mm_interconnect_0|cmd_mux_010|src_data[41]~combout ),
-	.src_data_421(\mm_interconnect_0|cmd_mux_010|src_data[42]~combout ),
-	.src_data_431(\mm_interconnect_0|cmd_mux_010|src_data[43]~combout ),
-	.src_data_441(\mm_interconnect_0|cmd_mux_010|src_data[44]~combout ),
-	.src_data_451(\mm_interconnect_0|cmd_mux_010|src_data[45]~combout ),
-	.src_payload26(\mm_interconnect_0|cmd_mux_010|src_payload~10_combout ),
-	.av_readdata_1(\jtag|av_readdata[1]~1_combout ),
-	.readdata_119(\sys_pll|readdata[1]~2_combout ),
-	.av_readdata_2(\jtag|av_readdata[2]~2_combout ),
-	.av_readdata_3(\jtag|av_readdata[3]~3_combout ),
-	.av_readdata_4(\jtag|av_readdata[4]~4_combout ),
-	.av_readdata_5(\jtag|av_readdata[5]~5_combout ),
-	.av_readdata_6(\jtag|av_readdata[6]~6_combout ),
-	.av_readdata_7(\jtag|av_readdata[7]~7_combout ),
-	.out_data_buffer_210(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]~q ),
-	.src_payload27(\mm_interconnect_0|cmd_mux_009|src_payload~6_combout ),
-	.src_data_33(\mm_interconnect_0|cmd_mux_009|src_data[33]~combout ),
-	.src_payload28(\mm_interconnect_0|cmd_mux_009|src_payload~7_combout ),
-	.src_payload29(\mm_interconnect_0|cmd_mux_009|src_payload~8_combout ),
-	.src_data_34(\mm_interconnect_0|cmd_mux_009|src_data[34]~combout ),
-	.src_payload30(\mm_interconnect_0|cmd_mux_009|src_payload~9_combout ),
-	.src_payload31(\mm_interconnect_0|cmd_mux_009|src_payload~10_combout ),
-	.src_payload32(\mm_interconnect_0|cmd_mux_009|src_payload~11_combout ),
-	.src_payload33(\mm_interconnect_0|cmd_mux_009|src_payload~12_combout ),
-	.src_payload34(\mm_interconnect_0|cmd_mux_009|src_payload~13_combout ),
-	.readdata_312(\epcs|readdata[31]~31_combout ),
-	.src_payload35(\mm_interconnect_0|cmd_mux_009|src_payload~14_combout ),
-	.src_payload36(\mm_interconnect_0|cmd_mux_009|src_payload~15_combout ),
-	.src_payload37(\mm_interconnect_0|cmd_mux_009|src_payload~16_combout ),
-	.src_payload38(\mm_interconnect_0|cmd_mux_009|src_payload~17_combout ),
-	.src_payload39(\mm_interconnect_0|cmd_mux_009|src_payload~18_combout ),
-	.src_payload40(\mm_interconnect_0|cmd_mux_009|src_payload~19_combout ),
-	.src_data_35(\mm_interconnect_0|cmd_mux_009|src_data[35]~combout ),
-	.src_payload41(\mm_interconnect_0|cmd_mux_009|src_payload~20_combout ),
-	.src_payload42(\mm_interconnect_0|cmd_mux_009|src_payload~21_combout ),
-	.src_payload43(\mm_interconnect_0|cmd_mux_009|src_payload~22_combout ),
-	.src_payload44(\mm_interconnect_0|cmd_mux_009|src_payload~23_combout ),
-	.src_payload45(\mm_interconnect_0|cmd_mux_009|src_payload~24_combout ),
-	.src_payload46(\mm_interconnect_0|cmd_mux_009|src_payload~25_combout ),
-	.src_payload47(\mm_interconnect_0|cmd_mux_009|src_payload~26_combout ),
-	.src_payload48(\mm_interconnect_0|cmd_mux_009|src_payload~27_combout ),
-	.src_payload49(\mm_interconnect_0|cmd_mux_009|src_payload~28_combout ),
-	.rvalid(\jtag|rvalid~q ),
-	.src_payload50(\mm_interconnect_0|cmd_mux_009|src_payload~29_combout ),
-	.woverflow(\jtag|woverflow~q ),
-	.src_payload51(\mm_interconnect_0|cmd_mux_009|src_payload~30_combout ),
-	.src_payload52(\mm_interconnect_0|cmd_mux_009|src_payload~31_combout ),
-	.ac(\jtag|ac~q ),
-	.av_readdata_8(\jtag|av_readdata[8]~8_combout ),
-	.out_data_buffer_111(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[1]~q ),
-	.out_data_buffer_32(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[3]~q ),
-	.src_payload53(\mm_interconnect_0|cmd_mux_010|src_payload~11_combout ),
-	.src_payload54(\mm_interconnect_0|cmd_mux_010|src_payload~12_combout ),
-	.src_payload55(\mm_interconnect_0|cmd_mux_010|src_payload~13_combout ),
-	.src_payload56(\mm_interconnect_0|cmd_mux_010|src_payload~14_combout ),
-	.src_payload57(\mm_interconnect_0|cmd_mux_010|src_payload~15_combout ),
-	.src_payload58(\mm_interconnect_0|cmd_mux_009|src_payload~32_combout ),
-	.src_payload59(\mm_interconnect_0|cmd_mux_010|src_payload~16_combout ),
-	.src_payload60(\mm_interconnect_0|cmd_mux_010|src_payload~17_combout ),
-	.out_data_buffer_101(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]~q ),
-	.out_data_buffer_41(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]~q ),
-	.out_data_buffer_51(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[5]~q ),
-	.out_data_buffer_61(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]~q ),
-	.write2(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~3_combout ),
-	.clk_clk(\clk_clk~input_o ));
-
-niosII_niosII_timer_0 timer_0(
-	.clk(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
-	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
-	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
-	.reset_n(\rst_controller|r_sync_rst~q ),
-	.hold_waitrequest(\mm_interconnect_0|cpu_data_master_agent|hold_waitrequest~q ),
-	.d_write(\cpu|cpu|d_write~q ),
-	.write_accepted(\mm_interconnect_0|cpu_data_master_translator|write_accepted~q ),
-	.read_mux_out(\timer_0|read_mux_out~0_combout ),
-	.writedata({\cpu|cpu|d_writedata[15]~q ,\cpu|cpu|d_writedata[14]~q ,\cpu|cpu|d_writedata[13]~q ,\cpu|cpu|d_writedata[12]~q ,\cpu|cpu|d_writedata[11]~q ,\cpu|cpu|d_writedata[10]~q ,\cpu|cpu|d_writedata[9]~q ,\cpu|cpu|d_writedata[8]~q ,\cpu|cpu|d_writedata[7]~q ,
-\cpu|cpu|d_writedata[6]~q ,\cpu|cpu|d_writedata[5]~q ,\cpu|cpu|d_writedata[4]~q ,\cpu|cpu|d_writedata[3]~q ,\cpu|cpu|d_writedata[2]~q ,\cpu|cpu|d_writedata[1]~q ,\cpu|cpu|d_writedata[0]~q }),
-	.Equal6(\timer_0|Equal6~0_combout ),
-	.Equal4(\mm_interconnect_0|router|Equal4~1_combout ),
-	.mem_used_1(\mm_interconnect_0|timer_0_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.wait_latency_counter_0(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[0]~q ),
-	.wait_latency_counter_1(\mm_interconnect_0|timer_0_s1_translator|wait_latency_counter[1]~q ),
-	.Equal61(\timer_0|Equal6~1_combout ),
-	.uav_write(\mm_interconnect_0|cpu_data_master_translator|uav_write~0_combout ),
-	.period_l_wr_strobe1(\timer_0|period_l_wr_strobe~2_combout ),
-	.timeout_occurred1(\timer_0|timeout_occurred~q ),
-	.control_register_0(\timer_0|control_register[0]~q ),
-	.readdata_0(\timer_0|readdata[0]~q ),
-	.readdata_1(\timer_0|readdata[1]~q ),
-	.readdata_2(\timer_0|readdata[2]~q ),
-	.readdata_3(\timer_0|readdata[3]~q ),
-	.readdata_4(\timer_0|readdata[4]~q ),
-	.readdata_5(\timer_0|readdata[5]~q ),
-	.readdata_6(\timer_0|readdata[6]~q ),
-	.readdata_7(\timer_0|readdata[7]~q ),
-	.readdata_15(\timer_0|readdata[15]~q ),
-	.readdata_14(\timer_0|readdata[14]~q ),
-	.readdata_13(\timer_0|readdata[13]~q ),
-	.readdata_12(\timer_0|readdata[12]~q ),
-	.readdata_11(\timer_0|readdata[11]~q ),
-	.readdata_10(\timer_0|readdata[10]~q ),
-	.readdata_9(\timer_0|readdata[9]~q ),
-	.readdata_8(\timer_0|readdata[8]~q ));
-
-niosII_niosII_sys_pll sys_pll(
-	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.wire_pll7_clk_1(\sys_pll|sd1|wire_pll7_clk[1] ),
-	.out_data_buffer_0(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[0]~q ),
-	.out_data_toggle_flopped(\mm_interconnect_0|crosser_002|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\mm_interconnect_0|crosser_002|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.mem_used_1(\mm_interconnect_0|sys_pll_pll_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.wire_pfdena_reg_ena(\sys_pll|wire_pfdena_reg_ena~0_combout ),
-	.out_data_buffer_65(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[65]~q ),
-	.out_data_buffer_38(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[38]~q ),
-	.out_data_buffer_39(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[39]~q ),
-	.reset(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
-	.out_data_buffer_66(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[66]~q ),
-	.readdata_0(\sys_pll|readdata[0]~1_combout ),
-	.readdata_1(\sys_pll|readdata[1]~2_combout ),
-	.out_data_buffer_1(\mm_interconnect_0|crosser_002|clock_xer|out_data_buffer[1]~q ),
-	.clk_clk(\clk_clk~input_o ));
-
 niosII_altera_reset_controller rst_controller(
 	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
 	.r_sync_rst1(\rst_controller|r_sync_rst~q ),
@@ -2621,6 +2473,180 @@ niosII_altera_reset_controller_1 rst_controller_001(
 	.resetrequest(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_oci_debug|resetrequest~q ),
 	.r_early_rst1(\rst_controller_001|r_early_rst~q ),
 	.reset_reset_n(\reset_reset_n~input_o ));
+
+niosII_niosII_adc_0 adc_0(
+	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
+	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
+	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
+	.sclk(\adc_0|ADC_CTRL|sclk~q ),
+	.cs_n(\adc_0|ADC_CTRL|cs_n~2_combout ),
+	.addr_shift_reg_5(\adc_0|ADC_CTRL|addr_shift_reg[5]~q ),
+	.r_sync_rst(\rst_controller|r_sync_rst~q ),
+	.mem_used_1(\mm_interconnect_0|adc_0_adc_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.Equal3(\mm_interconnect_0|router|Equal3~6_combout ),
+	.m0_read(\mm_interconnect_0|adc_0_adc_slave_agent|m0_read~combout ),
+	.m0_write(\mm_interconnect_0|timer_0_s1_agent|m0_write~0_combout ),
+	.read_mux_out(\timer_0|read_mux_out~0_combout ),
+	.d_writedata_0(\cpu|cpu|d_writedata[0]~q ),
+	.always0(\adc_0|always0~1_combout ),
+	.waitrequest(\adc_0|waitrequest~0_combout ),
+	.Equal6(\timer_0|Equal6~0_combout ),
+	.av_readdata_pre_0(\mm_interconnect_0|adc_0_adc_slave_translator|av_readdata_pre[0]~0_combout ),
+	.readdata_0(\adc_0|readdata[0]~4_combout ),
+	.readdata_1(\adc_0|readdata[1]~9_combout ),
+	.readdata_2(\adc_0|readdata[2]~14_combout ),
+	.readdata_3(\adc_0|readdata[3]~19_combout ),
+	.readdata_4(\adc_0|readdata[4]~24_combout ),
+	.readdata_5(\adc_0|readdata[5]~29_combout ),
+	.readdata_6(\adc_0|readdata[6]~34_combout ),
+	.readdata_7(\adc_0|readdata[7]~39_combout ),
+	.readdata_15(\adc_0|readdata[15]~40_combout ),
+	.readdata_11(\adc_0|readdata[11]~45_combout ),
+	.readdata_10(\adc_0|readdata[10]~50_combout ),
+	.readdata_9(\adc_0|readdata[9]~55_combout ),
+	.readdata_8(\adc_0|readdata[8]~60_combout ),
+	.write(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~3_combout ),
+	.GND_port(\~GND~combout ),
+	.adc_0_dout(\adc_0_dout~input_o ));
+
+niosII_niosII_jtag jtag(
+	.tdo(\jtag|niosII_jtag_alt_jtag_atlantic|tdo~q ),
+	.altera_reset_synchronizer_int_chain_out(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
+	.rst1(\jtag|niosII_jtag_alt_jtag_atlantic|rst1~q ),
+	.b_full(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.out_data_toggle_flopped(\mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped~q ),
+	.b_non_empty(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|b_non_empty~q ),
+	.counter_reg_bit_5(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.counter_reg_bit_4(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.counter_reg_bit_3(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.counter_reg_bit_2(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.counter_reg_bit_1(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.counter_reg_bit_0(\jtag|the_niosII_jtag_scfifo_r|rfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.dreg_0(\mm_interconnect_0|crosser|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.av_waitrequest1(\jtag|av_waitrequest~q ),
+	.mem_used_1(\mm_interconnect_0|jtag_avalon_jtag_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.out_data_buffer_66(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[66]~q ),
+	.out_data_buffer_38(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_7(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[7]~q ),
+	.out_data_buffer_65(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[65]~q ),
+	.out_data_buffer_0(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[0]~q ),
+	.b_full1(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|b_full~q ),
+	.counter_reg_bit_21(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[2]~q ),
+	.counter_reg_bit_11(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[1]~q ),
+	.counter_reg_bit_51(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[5]~q ),
+	.counter_reg_bit_41(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[4]~q ),
+	.counter_reg_bit_31(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[3]~q ),
+	.counter_reg_bit_01(\jtag|the_niosII_jtag_scfifo_w|wfifo|auto_generated|dpfifo|fifo_state|count_usedw|counter_reg_bit[0]~q ),
+	.out_data_buffer_1(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]~q ),
+	.read_01(\jtag|read_0~q ),
+	.av_readdata_0(\jtag|av_readdata[0]~0_combout ),
+	.av_readdata_9(\jtag|av_readdata[9]~combout ),
+	.av_irq1(\jtag|av_irq~combout ),
+	.av_readdata_1(\jtag|av_readdata[1]~1_combout ),
+	.av_readdata_2(\jtag|av_readdata[2]~2_combout ),
+	.av_readdata_3(\jtag|av_readdata[3]~3_combout ),
+	.av_readdata_4(\jtag|av_readdata[4]~4_combout ),
+	.av_readdata_5(\jtag|av_readdata[5]~5_combout ),
+	.av_readdata_6(\jtag|av_readdata[6]~6_combout ),
+	.av_readdata_7(\jtag|av_readdata[7]~7_combout ),
+	.out_data_buffer_2(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]~q ),
+	.rvalid1(\jtag|rvalid~q ),
+	.woverflow1(\jtag|woverflow~q ),
+	.ac1(\jtag|ac~q ),
+	.av_readdata_8(\jtag|av_readdata[8]~8_combout ),
+	.out_data_buffer_3(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[3]~q ),
+	.out_data_buffer_10(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]~q ),
+	.out_data_buffer_4(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]~q ),
+	.out_data_buffer_5(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[5]~q ),
+	.out_data_buffer_6(\mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]~q ),
+	.altera_internal_jtag(\altera_internal_jtag~TCKUTAP ),
+	.altera_internal_jtag1(\altera_internal_jtag~TDIUTAP ),
+	.state_4(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[4]~q ),
+	.splitter_nodes_receive_0_3(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_0[3]~q ),
+	.virtual_ir_scan_reg(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
+	.clr_reg(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q ),
+	.state_3(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[3]~q ),
+	.state_8(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[8]~q ),
+	.irf_reg_0_1(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][0]~q ),
+	.clk_clk(\clk_clk~input_o ));
+
+niosII_niosII_epcs epcs(
+	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
+	.SCLK_reg(\epcs|the_niosII_epcs_sub|SCLK_reg~q ),
+	.sce(\epcs|the_niosII_epcs_sub|SS_n~0_combout ),
+	.shift_reg_7(\epcs|the_niosII_epcs_sub|shift_reg[7]~q ),
+	.r_sync_rst(\rst_controller_001|r_sync_rst~q ),
+	.saved_grant_0(\mm_interconnect_0|cmd_mux_010|saved_grant[0]~q ),
+	.src_data_38(\mm_interconnect_0|cmd_mux_010|src_data[38]~combout ),
+	.src_data_39(\mm_interconnect_0|cmd_mux_010|src_data[39]~combout ),
+	.src_data_40(\mm_interconnect_0|cmd_mux_010|src_data[40]~combout ),
+	.src_payload(\mm_interconnect_0|cmd_mux_010|src_payload~0_combout ),
+	.src_payload1(\mm_interconnect_0|cmd_mux_010|src_payload~1_combout ),
+	.mem_used_1(\mm_interconnect_0|epcs_epcs_control_port_agent_rsp_fifo|mem_used[1]~q ),
+	.wait_latency_counter_1(\mm_interconnect_0|epcs_epcs_control_port_translator|wait_latency_counter[1]~q ),
+	.src_valid(\mm_interconnect_0|cmd_mux_010|src_valid~0_combout ),
+	.src_valid1(\mm_interconnect_0|cmd_mux_010|src_valid~1_combout ),
+	.src_data_46(\mm_interconnect_0|cmd_mux_010|src_data[46]~combout ),
+	.out_data_buffer_65(\mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[65]~q ),
+	.p1_wr_strobe(\epcs|the_niosII_epcs_sub|p1_wr_strobe~1_combout ),
+	.src_payload2(\mm_interconnect_0|cmd_mux_010|src_payload~2_combout ),
+	.src_data_66(\mm_interconnect_0|cmd_mux_010|src_data[66]~combout ),
+	.av_begintransfer(\mm_interconnect_0|epcs_epcs_control_port_translator|av_begintransfer~0_combout ),
+	.out_data_buffer_6(\mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[6]~q ),
+	.src_payload3(\mm_interconnect_0|cmd_mux_010|src_payload~3_combout ),
+	.src_payload4(\mm_interconnect_0|cmd_mux_010|src_payload~4_combout ),
+	.src_payload5(\mm_interconnect_0|cmd_mux_010|src_payload~5_combout ),
+	.src_payload6(\mm_interconnect_0|cmd_mux_010|src_payload~6_combout ),
+	.src_payload7(\mm_interconnect_0|cmd_mux_010|src_payload~7_combout ),
+	.readdata_0(\epcs|readdata[0]~0_combout ),
+	.readdata_1(\epcs|readdata[1]~1_combout ),
+	.readdata_2(\epcs|readdata[2]~2_combout ),
+	.readdata_3(\epcs|readdata[3]~3_combout ),
+	.readdata_4(\epcs|readdata[4]~4_combout ),
+	.readdata_11(\epcs|readdata[11]~5_combout ),
+	.readdata_13(\epcs|readdata[13]~6_combout ),
+	.readdata_16(\epcs|readdata[16]~7_combout ),
+	.readdata_12(\epcs|readdata[12]~8_combout ),
+	.readdata_5(\epcs|readdata[5]~9_combout ),
+	.readdata_14(\epcs|readdata[14]~10_combout ),
+	.readdata_15(\epcs|readdata[15]~11_combout ),
+	.readdata_10(\epcs|readdata[10]~12_combout ),
+	.readdata_9(\epcs|readdata[9]~13_combout ),
+	.readdata_8(\epcs|readdata[8]~14_combout ),
+	.readdata_7(\epcs|readdata[7]~15_combout ),
+	.readdata_6(\epcs|readdata[6]~16_combout ),
+	.readdata_21(\epcs|readdata[21]~17_combout ),
+	.readdata_30(\epcs|readdata[30]~18_combout ),
+	.readdata_29(\epcs|readdata[29]~19_combout ),
+	.readdata_28(\epcs|readdata[28]~20_combout ),
+	.readdata_27(\epcs|readdata[27]~21_combout ),
+	.readdata_26(\epcs|readdata[26]~22_combout ),
+	.readdata_25(\epcs|readdata[25]~23_combout ),
+	.readdata_24(\epcs|readdata[24]~24_combout ),
+	.readdata_23(\epcs|readdata[23]~25_combout ),
+	.readdata_22(\epcs|readdata[22]~26_combout ),
+	.readdata_20(\epcs|readdata[20]~27_combout ),
+	.readdata_19(\epcs|readdata[19]~28_combout ),
+	.readdata_18(\epcs|readdata[18]~29_combout ),
+	.readdata_17(\epcs|readdata[17]~30_combout ),
+	.src_payload8(\mm_interconnect_0|cmd_mux_010|src_payload~8_combout ),
+	.irq_reg(\epcs|the_niosII_epcs_sub|irq_reg~q ),
+	.r_early_rst(\rst_controller_001|r_early_rst~q ),
+	.src_data_41(\mm_interconnect_0|cmd_mux_010|src_data[41]~combout ),
+	.src_data_42(\mm_interconnect_0|cmd_mux_010|src_data[42]~combout ),
+	.src_data_43(\mm_interconnect_0|cmd_mux_010|src_data[43]~combout ),
+	.src_data_44(\mm_interconnect_0|cmd_mux_010|src_data[44]~combout ),
+	.src_data_45(\mm_interconnect_0|cmd_mux_010|src_data[45]~combout ),
+	.readdata_31(\epcs|readdata[31]~31_combout ),
+	.src_payload9(\mm_interconnect_0|cmd_mux_010|src_payload~9_combout ),
+	.src_payload10(\mm_interconnect_0|cmd_mux_010|src_payload~10_combout ),
+	.src_payload11(\mm_interconnect_0|cmd_mux_010|src_payload~11_combout ),
+	.src_payload12(\mm_interconnect_0|cmd_mux_010|src_payload~12_combout ),
+	.src_payload13(\mm_interconnect_0|cmd_mux_010|src_payload~13_combout ),
+	.src_payload14(\mm_interconnect_0|cmd_mux_010|src_payload~14_combout ),
+	.src_payload15(\mm_interconnect_0|cmd_mux_010|src_payload~15_combout ),
+	.epcs_data0(\epcs_data0~input_o ));
 
 niosII_niosII_cpu cpu(
 	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
@@ -2705,6 +2731,8 @@ niosII_niosII_cpu cpu(
 	.mem_84_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][84]~q ),
 	.mem_66_0(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem[0][66]~q ),
 	.read_latency_shift_reg_0(\mm_interconnect_0|cpu_debug_mem_slave_translator|read_latency_shift_reg[0]~q ),
+	.out_data_toggle_flopped(\mm_interconnect_0|crosser_005|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_0(\mm_interconnect_0|crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
 	.read_latency_shift_reg_01(\mm_interconnect_0|port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
 	.read_latency_shift_reg_02(\mm_interconnect_0|sys_id_control_slave_translator|read_latency_shift_reg[0]~q ),
 	.mem_54_0(\mm_interconnect_0|sdram_s1_agent_rsp_fifo|mem[0][54]~q ),
@@ -2713,7 +2741,7 @@ niosII_niosII_cpu cpu(
 	.saved_grant_0(\mm_interconnect_0|cmd_mux_009|saved_grant[0]~q ),
 	.debug_mem_slave_waitrequest(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_ocimem|waitrequest~q ),
 	.mem_used_1(\mm_interconnect_0|cpu_debug_mem_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.av_waitrequest(\mm_interconnect_0|cpu_data_master_translator|av_waitrequest~1_combout ),
+	.av_waitrequest(\mm_interconnect_0|cpu_data_master_translator|av_waitrequest~3_combout ),
 	.d_writedata_10(\cpu|cpu|d_writedata[10]~q ),
 	.d_byteenable_2(\cpu|cpu|d_byteenable[2]~q ),
 	.d_byteenable_3(\cpu|cpu|d_byteenable[3]~q ),
@@ -2744,12 +2772,12 @@ niosII_niosII_cpu cpu(
 	.out_data_buffer_0(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[0]~q ),
 	.data_reg_0(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[0]~q ),
 	.out_payload_0(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[0]~q ),
-	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
+	.source_addr_1(\mm_interconnect_0|sdram_s1_agent|uncompressor|source_addr[1]~1_combout ),
 	.F_iw_0(\cpu|cpu|F_iw[0]~5_combout ),
 	.av_readdata_pre_1(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[1]~q ),
 	.out_data_buffer_1(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[1]~q ),
 	.out_payload_1(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[1]~q ),
-	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~16_combout ),
+	.src_data_1(\mm_interconnect_0|rsp_mux|src_data[1]~14_combout ),
 	.av_readdata_pre_2(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[2]~q ),
 	.out_data_buffer_2(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[2]~q ),
 	.data_reg_2(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[2]~q ),
@@ -2758,21 +2786,21 @@ niosII_niosII_cpu cpu(
 	.av_readdata_pre_3(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[3]~q ),
 	.out_data_buffer_3(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[3]~q ),
 	.out_payload_3(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[3]~q ),
-	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~17_combout ),
+	.src_data_3(\mm_interconnect_0|rsp_mux|src_data[3]~15_combout ),
 	.av_readdata_pre_4(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[4]~q ),
 	.out_data_buffer_4(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[4]~q ),
 	.out_payload_4(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[4]~q ),
-	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~18_combout ),
+	.src_data_4(\mm_interconnect_0|rsp_mux|src_data[4]~16_combout ),
 	.r_early_rst(\rst_controller|r_early_rst~q ),
 	.src_data_46(\mm_interconnect_0|cmd_mux_009|src_data[46]~combout ),
 	.av_readdata_pre_11(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[11]~q ),
 	.out_data_buffer_11(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[11]~q ),
 	.out_payload_11(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[11]~q ),
-	.src_data_11(\mm_interconnect_0|rsp_mux|src_data[11]~19_combout ),
+	.src_data_11(\mm_interconnect_0|rsp_mux|src_data[11]~17_combout ),
 	.av_readdata_pre_13(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[13]~q ),
 	.out_data_buffer_13(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[13]~q ),
 	.out_payload_13(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[13]~q ),
-	.src_data_13(\mm_interconnect_0|rsp_mux|src_data[13]~20_combout ),
+	.src_data_13(\mm_interconnect_0|rsp_mux|src_data[13]~18_combout ),
 	.av_readdata_pre_16(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[16]~q ),
 	.out_data_buffer_16(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[16]~q ),
 	.src_payload(\mm_interconnect_0|rsp_mux_001|src_payload~0_combout ),
@@ -2784,7 +2812,7 @@ niosII_niosII_cpu cpu(
 	.av_readdata_pre_5(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[5]~q ),
 	.out_data_buffer_5(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[5]~q ),
 	.out_payload_5(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[5]~q ),
-	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~21_combout ),
+	.src_data_5(\mm_interconnect_0|rsp_mux|src_data[5]~19_combout ),
 	.av_readdata_pre_14(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[14]~q ),
 	.out_data_buffer_14(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[14]~q ),
 	.data_reg_14(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[14]~q ),
@@ -2793,7 +2821,7 @@ niosII_niosII_cpu cpu(
 	.av_readdata_pre_15(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[15]~q ),
 	.out_data_buffer_15(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[15]~q ),
 	.out_payload_15(\mm_interconnect_0|sdram_s1_agent_rdata_fifo|out_payload[15]~q ),
-	.src_data_15(\mm_interconnect_0|rsp_mux|src_data[15]~22_combout ),
+	.src_data_15(\mm_interconnect_0|rsp_mux|src_data[15]~20_combout ),
 	.av_readdata_pre_10(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[10]~q ),
 	.out_data_buffer_10(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[10]~q ),
 	.data_reg_10(\mm_interconnect_0|sdram_s1_rsp_width_adapter|data_reg[10]~q ),
@@ -2847,8 +2875,10 @@ niosII_niosII_cpu cpu(
 	.out_data_buffer_18(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[18]~q ),
 	.av_readdata_pre_17(\mm_interconnect_0|cpu_debug_mem_slave_translator|av_readdata_pre[17]~q ),
 	.out_data_buffer_17(\mm_interconnect_0|crosser_006|clock_xer|out_data_buffer[17]~q ),
+	.av_readdata_pre_301(\mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ),
+	.src_payload1(\mm_interconnect_0|rsp_mux|src_payload~2_combout ),
 	.out_valid1(\mm_interconnect_0|crosser_005|clock_xer|out_valid~combout ),
-	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~30_combout ),
+	.src_data_0(\mm_interconnect_0|rsp_mux|src_data[0]~28_combout ),
 	.dreg_1(\irq_synchronizer_001|sync|sync[0].u|dreg[1]~q ),
 	.timeout_occurred(\timer_0|timeout_occurred~q ),
 	.control_register_0(\timer_0|control_register[0]~q ),
@@ -2857,17 +2887,16 @@ niosII_niosII_cpu cpu(
 	.readdata_1(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[1]~q ),
 	.readdata_2(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[2]~q ),
 	.readdata_3(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[3]~q ),
-	.src_data_12(\mm_interconnect_0|rsp_mux|src_data[1]~38_combout ),
-	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~39_combout ),
-	.src_data_21(\mm_interconnect_0|rsp_mux|src_data[2]~45_combout ),
-	.src_data_31(\mm_interconnect_0|rsp_mux|src_data[3]~52_combout ),
-	.av_readdata_pre_301(\mm_interconnect_0|sys_id_control_slave_translator|av_readdata_pre[30]~q ),
-	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~58_combout ),
-	.src_data_51(\mm_interconnect_0|rsp_mux|src_data[5]~64_combout ),
-	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~70_combout ),
-	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~76_combout ),
-	.src_payload1(\mm_interconnect_0|cmd_mux_009|src_payload~0_combout ),
-	.src_payload2(\mm_interconnect_0|cmd_mux_009|src_payload~1_combout ),
+	.src_data_12(\mm_interconnect_0|rsp_mux|src_data[1]~36_combout ),
+	.src_data_2(\mm_interconnect_0|rsp_mux|src_data[2]~42_combout ),
+	.src_data_31(\mm_interconnect_0|rsp_mux|src_data[3]~48_combout ),
+	.src0_valid1(\mm_interconnect_0|rsp_demux_009|src0_valid~0_combout ),
+	.src_data_41(\mm_interconnect_0|rsp_mux|src_data[4]~54_combout ),
+	.src_data_51(\mm_interconnect_0|rsp_mux|src_data[5]~60_combout ),
+	.src_data_6(\mm_interconnect_0|rsp_mux|src_data[6]~66_combout ),
+	.src_data_7(\mm_interconnect_0|rsp_mux|src_data[7]~72_combout ),
+	.src_payload2(\mm_interconnect_0|cmd_mux_009|src_payload~0_combout ),
+	.src_payload3(\mm_interconnect_0|cmd_mux_009|src_payload~1_combout ),
 	.src_data_38(\mm_interconnect_0|cmd_mux_009|src_data[38]~combout ),
 	.src_data_39(\mm_interconnect_0|cmd_mux_009|src_data[39]~combout ),
 	.src_data_40(\mm_interconnect_0|cmd_mux_009|src_data[40]~combout ),
@@ -2891,89 +2920,89 @@ niosII_niosII_cpu cpu(
 	.readdata_8(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[8]~q ),
 	.readdata_7(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[7]~q ),
 	.readdata_6(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[6]~q ),
-	.readdata_26(\port_gpio_0|readdata[26]~q ),
 	.out_data_buffer_261(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[26]~q ),
+	.readdata_26(\port_gpio_0|readdata[26]~q ),
+	.src_payload4(\mm_interconnect_0|rsp_mux|src_payload~7_combout ),
 	.readdata_21(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[21]~q ),
 	.readdata_30(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[30]~q ),
 	.readdata_25(\port_gpio_0|readdata[25]~q ),
 	.out_data_buffer_251(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[25]~q ),
-	.src_payload3(\mm_interconnect_0|rsp_mux|src_payload~5_combout ),
 	.readdata_29(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[29]~q ),
 	.readdata_24(\port_gpio_0|readdata[24]~q ),
 	.out_data_buffer_241(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[24]~q ),
 	.readdata_28(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[28]~q ),
-	.src_payload4(\mm_interconnect_0|rsp_mux|src_payload~9_combout ),
+	.src_payload5(\mm_interconnect_0|rsp_mux|src_payload~11_combout ),
 	.readdata_27(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[27]~q ),
-	.src_payload5(\mm_interconnect_0|rsp_mux|src_payload~14_combout ),
+	.src_payload6(\mm_interconnect_0|rsp_mux|src_payload~16_combout ),
 	.readdata_261(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[26]~q ),
-	.src_payload6(\mm_interconnect_0|rsp_mux|src_payload~19_combout ),
+	.src_payload7(\mm_interconnect_0|rsp_mux|src_payload~21_combout ),
 	.readdata_251(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[25]~q ),
-	.src_payload7(\mm_interconnect_0|rsp_mux|src_payload~24_combout ),
+	.src_payload8(\mm_interconnect_0|rsp_mux|src_payload~26_combout ),
 	.readdata_241(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[24]~q ),
-	.src_payload8(\mm_interconnect_0|rsp_mux|src_payload~29_combout ),
+	.src_payload9(\mm_interconnect_0|rsp_mux|src_payload~31_combout ),
 	.readdata_23(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[23]~q ),
-	.src_payload9(\mm_interconnect_0|rsp_mux|src_payload~34_combout ),
+	.src_payload10(\mm_interconnect_0|rsp_mux|src_payload~36_combout ),
 	.readdata_22(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[22]~q ),
-	.src_payload10(\mm_interconnect_0|rsp_mux|src_payload~39_combout ),
-	.src_payload11(\mm_interconnect_0|rsp_mux|src_payload~44_combout ),
+	.src_payload11(\mm_interconnect_0|rsp_mux|src_payload~41_combout ),
+	.src_payload12(\mm_interconnect_0|rsp_mux|src_payload~46_combout ),
 	.readdata_20(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[20]~q ),
-	.src_data_151(\mm_interconnect_0|rsp_mux|src_data[15]~82_combout ),
+	.src_data_151(\mm_interconnect_0|rsp_mux|src_data[15]~78_combout ),
 	.readdata_19(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[19]~q ),
-	.src_data_14(\mm_interconnect_0|rsp_mux|src_data[14]~85_combout ),
+	.src_data_14(\mm_interconnect_0|rsp_mux|src_data[14]~82_combout ),
 	.readdata_18(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[18]~q ),
-	.src_data_131(\mm_interconnect_0|rsp_mux|src_data[13]~89_combout ),
+	.src_data_131(\mm_interconnect_0|rsp_mux|src_data[13]~86_combout ),
 	.readdata_17(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[17]~q ),
-	.src_data_121(\mm_interconnect_0|rsp_mux|src_data[12]~92_combout ),
-	.src_data_111(\mm_interconnect_0|rsp_mux|src_data[11]~96_combout ),
-	.src_data_10(\mm_interconnect_0|rsp_mux|src_data[10]~101_combout ),
-	.src_data_9(\mm_interconnect_0|rsp_mux|src_data[9]~107_combout ),
-	.src_data_8(\mm_interconnect_0|rsp_mux|src_data[8]~113_combout ),
-	.src_payload12(\mm_interconnect_0|cmd_mux_009|src_payload~2_combout ),
+	.src_data_121(\mm_interconnect_0|rsp_mux|src_data[12]~89_combout ),
+	.src_data_111(\mm_interconnect_0|rsp_mux|src_data[11]~93_combout ),
+	.src_data_10(\mm_interconnect_0|rsp_mux|src_data[10]~97_combout ),
+	.src_data_9(\mm_interconnect_0|rsp_mux|src_data[9]~103_combout ),
+	.src_data_8(\mm_interconnect_0|rsp_mux|src_data[8]~109_combout ),
+	.src_payload13(\mm_interconnect_0|cmd_mux_009|src_payload~2_combout ),
 	.readdata_271(\port_gpio_0|readdata[27]~q ),
 	.out_data_buffer_271(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[27]~q ),
-	.readdata_281(\port_gpio_0|readdata[28]~q ),
 	.out_data_buffer_281(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[28]~q ),
+	.readdata_281(\port_gpio_0|readdata[28]~q ),
 	.readdata_291(\port_gpio_0|readdata[29]~q ),
 	.out_data_buffer_291(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[29]~q ),
-	.readdata_301(\port_gpio_0|readdata[30]~q ),
 	.out_data_buffer_301(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[30]~q ),
+	.readdata_301(\port_gpio_0|readdata[30]~q ),
 	.readdata_31(\port_gpio_0|readdata[31]~q ),
 	.out_data_buffer_311(\mm_interconnect_0|crosser_005|clock_xer|out_data_buffer[31]~q ),
 	.readdata_311(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|readdata[31]~q ),
 	.debug_reset_request(\cpu|cpu|the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_oci_debug|resetrequest~q ),
-	.src_payload13(\mm_interconnect_0|cmd_mux_009|src_payload~3_combout ),
-	.src_payload14(\mm_interconnect_0|cmd_mux_009|src_payload~4_combout ),
-	.src_payload15(\mm_interconnect_0|cmd_mux_009|src_payload~5_combout ),
-	.src_payload16(\mm_interconnect_0|cmd_mux_009|src_payload~6_combout ),
+	.src_payload14(\mm_interconnect_0|cmd_mux_009|src_payload~3_combout ),
+	.src_payload15(\mm_interconnect_0|cmd_mux_009|src_payload~4_combout ),
+	.src_payload16(\mm_interconnect_0|cmd_mux_009|src_payload~5_combout ),
+	.src_payload17(\mm_interconnect_0|cmd_mux_009|src_payload~6_combout ),
 	.src_data_33(\mm_interconnect_0|cmd_mux_009|src_data[33]~combout ),
-	.src_payload17(\mm_interconnect_0|cmd_mux_009|src_payload~7_combout ),
-	.src_payload18(\mm_interconnect_0|cmd_mux_009|src_payload~8_combout ),
+	.src_payload18(\mm_interconnect_0|cmd_mux_009|src_payload~7_combout ),
+	.src_payload19(\mm_interconnect_0|cmd_mux_009|src_payload~8_combout ),
 	.src_data_34(\mm_interconnect_0|cmd_mux_009|src_data[34]~combout ),
-	.src_payload19(\mm_interconnect_0|cmd_mux_009|src_payload~9_combout ),
-	.src_payload20(\mm_interconnect_0|cmd_mux_009|src_payload~10_combout ),
-	.src_payload21(\mm_interconnect_0|cmd_mux_009|src_payload~11_combout ),
-	.src_payload22(\mm_interconnect_0|cmd_mux_009|src_payload~12_combout ),
-	.src_payload23(\mm_interconnect_0|cmd_mux_009|src_payload~13_combout ),
-	.src_payload24(\mm_interconnect_0|cmd_mux_009|src_payload~14_combout ),
-	.src_payload25(\mm_interconnect_0|cmd_mux_009|src_payload~15_combout ),
-	.src_payload26(\mm_interconnect_0|cmd_mux_009|src_payload~16_combout ),
-	.src_payload27(\mm_interconnect_0|cmd_mux_009|src_payload~17_combout ),
-	.src_payload28(\mm_interconnect_0|cmd_mux_009|src_payload~18_combout ),
-	.src_payload29(\mm_interconnect_0|cmd_mux_009|src_payload~19_combout ),
+	.src_payload20(\mm_interconnect_0|cmd_mux_009|src_payload~9_combout ),
+	.src_payload21(\mm_interconnect_0|cmd_mux_009|src_payload~10_combout ),
+	.src_payload22(\mm_interconnect_0|cmd_mux_009|src_payload~11_combout ),
+	.src_payload23(\mm_interconnect_0|cmd_mux_009|src_payload~12_combout ),
+	.src_payload24(\mm_interconnect_0|cmd_mux_009|src_payload~13_combout ),
+	.src_payload25(\mm_interconnect_0|cmd_mux_009|src_payload~14_combout ),
+	.src_payload26(\mm_interconnect_0|cmd_mux_009|src_payload~15_combout ),
+	.src_payload27(\mm_interconnect_0|cmd_mux_009|src_payload~16_combout ),
+	.src_payload28(\mm_interconnect_0|cmd_mux_009|src_payload~17_combout ),
+	.src_payload29(\mm_interconnect_0|cmd_mux_009|src_payload~18_combout ),
+	.src_payload30(\mm_interconnect_0|cmd_mux_009|src_payload~19_combout ),
 	.src_data_35(\mm_interconnect_0|cmd_mux_009|src_data[35]~combout ),
-	.src_payload30(\mm_interconnect_0|cmd_mux_009|src_payload~20_combout ),
-	.src_payload31(\mm_interconnect_0|cmd_mux_009|src_payload~21_combout ),
-	.src_payload32(\mm_interconnect_0|cmd_mux_009|src_payload~22_combout ),
-	.src_payload33(\mm_interconnect_0|cmd_mux_009|src_payload~23_combout ),
-	.src_payload34(\mm_interconnect_0|cmd_mux_009|src_payload~24_combout ),
-	.src_payload35(\mm_interconnect_0|cmd_mux_009|src_payload~25_combout ),
-	.src_payload36(\mm_interconnect_0|cmd_mux_009|src_payload~26_combout ),
-	.src_payload37(\mm_interconnect_0|cmd_mux_009|src_payload~27_combout ),
-	.src_payload38(\mm_interconnect_0|cmd_mux_009|src_payload~28_combout ),
-	.src_payload39(\mm_interconnect_0|cmd_mux_009|src_payload~29_combout ),
-	.src_payload40(\mm_interconnect_0|cmd_mux_009|src_payload~30_combout ),
-	.src_payload41(\mm_interconnect_0|cmd_mux_009|src_payload~31_combout ),
-	.src_payload42(\mm_interconnect_0|cmd_mux_009|src_payload~32_combout ),
+	.src_payload31(\mm_interconnect_0|cmd_mux_009|src_payload~20_combout ),
+	.src_payload32(\mm_interconnect_0|cmd_mux_009|src_payload~21_combout ),
+	.src_payload33(\mm_interconnect_0|cmd_mux_009|src_payload~22_combout ),
+	.src_payload34(\mm_interconnect_0|cmd_mux_009|src_payload~23_combout ),
+	.src_payload35(\mm_interconnect_0|cmd_mux_009|src_payload~24_combout ),
+	.src_payload36(\mm_interconnect_0|cmd_mux_009|src_payload~25_combout ),
+	.src_payload37(\mm_interconnect_0|cmd_mux_009|src_payload~26_combout ),
+	.src_payload38(\mm_interconnect_0|cmd_mux_009|src_payload~27_combout ),
+	.src_payload39(\mm_interconnect_0|cmd_mux_009|src_payload~28_combout ),
+	.src_payload40(\mm_interconnect_0|cmd_mux_009|src_payload~29_combout ),
+	.src_payload41(\mm_interconnect_0|cmd_mux_009|src_payload~30_combout ),
+	.src_payload42(\mm_interconnect_0|cmd_mux_009|src_payload~31_combout ),
+	.src_payload43(\mm_interconnect_0|cmd_mux_009|src_payload~32_combout ),
 	.altera_internal_jtag(\altera_internal_jtag~TCKUTAP ),
 	.altera_internal_jtag1(\altera_internal_jtag~TDIUTAP ),
 	.state_1(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state[1]~q ),
@@ -2984,42 +3013,6 @@ niosII_niosII_cpu cpu(
 	.splitter_nodes_receive_1_3(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_1[3]~q ),
 	.irf_reg_0_2(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]~q ),
 	.irf_reg_1_2(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][1]~q ));
-
-niosII_niosII_adc_0 adc_0(
-	.wire_pll7_clk_0(\sys_pll|sd1|wire_pll7_clk[0] ),
-	.W_alu_result_4(\cpu|cpu|W_alu_result[4]~q ),
-	.W_alu_result_3(\cpu|cpu|W_alu_result[3]~q ),
-	.W_alu_result_2(\cpu|cpu|W_alu_result[2]~q ),
-	.sclk(\adc_0|ADC_CTRL|sclk~q ),
-	.cs_n(\adc_0|ADC_CTRL|cs_n~2_combout ),
-	.addr_shift_reg_5(\adc_0|ADC_CTRL|addr_shift_reg[5]~q ),
-	.r_sync_rst(\rst_controller|r_sync_rst~q ),
-	.mem_used_1(\mm_interconnect_0|adc_0_adc_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.Equal3(\mm_interconnect_0|router|Equal3~6_combout ),
-	.m0_read(\mm_interconnect_0|adc_0_adc_slave_agent|m0_read~combout ),
-	.m0_write(\mm_interconnect_0|timer_0_s1_agent|m0_write~0_combout ),
-	.read_mux_out(\timer_0|read_mux_out~0_combout ),
-	.d_writedata_0(\cpu|cpu|d_writedata[0]~q ),
-	.always0(\adc_0|always0~1_combout ),
-	.waitrequest(\adc_0|waitrequest~0_combout ),
-	.Equal6(\timer_0|Equal6~1_combout ),
-	.av_readdata_pre_0(\mm_interconnect_0|adc_0_adc_slave_translator|av_readdata_pre[0]~0_combout ),
-	.readdata_0(\adc_0|readdata[0]~4_combout ),
-	.readdata_1(\adc_0|readdata[1]~9_combout ),
-	.readdata_2(\adc_0|readdata[2]~14_combout ),
-	.readdata_3(\adc_0|readdata[3]~19_combout ),
-	.readdata_4(\adc_0|readdata[4]~24_combout ),
-	.readdata_5(\adc_0|readdata[5]~29_combout ),
-	.readdata_6(\adc_0|readdata[6]~34_combout ),
-	.readdata_7(\adc_0|readdata[7]~39_combout ),
-	.readdata_15(\adc_0|readdata[15]~40_combout ),
-	.readdata_11(\adc_0|readdata[11]~45_combout ),
-	.readdata_10(\adc_0|readdata[10]~50_combout ),
-	.readdata_9(\adc_0|readdata[9]~55_combout ),
-	.readdata_8(\adc_0|readdata[8]~60_combout ),
-	.write(\mm_interconnect_0|port_sw_avalon_parallel_port_slave_agent_rsp_fifo|write~3_combout ),
-	.GND_port(\~GND~combout ),
-	.adc_0_dout(\adc_0_dout~input_o ));
 
 dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_0[3] (
 	.clk(\altera_internal_jtag~TCKUTAP ),
@@ -10839,8 +10832,8 @@ wire \counter~5_combout ;
 wire \counter[7]~q ;
 wire \Equal1~0_combout ;
 wire \sclk~0_combout ;
-wire \addr_shift_reg~5_combout ;
 wire \addr_shift_reg~9_combout ;
+wire \addr_shift_reg~5_combout ;
 wire \addr_shift_reg~10_combout ;
 wire \addr_shift_reg[0]~q ;
 wire \addr_shift_reg~7_combout ;
@@ -10857,18 +10850,16 @@ wire \addr_shift_reg[4]~q ;
 wire \addr_shift_reg~0_combout ;
 wire \Selector2~0_combout ;
 wire \Selector2~1_combout ;
-wire \Decoder0~12_combout ;
-wire \Decoder0~2_combout ;
-wire \Decoder0~3_combout ;
+wire \Decoder0~11_combout ;
 wire \Decoder0~4_combout ;
 wire \Decoder0~5_combout ;
 wire \Decoder0~6_combout ;
 wire \reading7[6]~0_combout ;
+wire \Decoder0~12_combout ;
 wire \Decoder0~7_combout ;
 wire \Decoder0~8_combout ;
 wire \Decoder0~9_combout ;
 wire \Decoder0~10_combout ;
-wire \Decoder0~11_combout ;
 wire \always7~0_combout ;
 wire \shift_reg[0]~q ;
 wire \shift_reg[1]~q ;
@@ -10944,7 +10935,7 @@ dffeas \reading6[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_0),
 	.prn(vcc));
 defparam \reading6[0] .is_wysiwyg = "true";
@@ -10958,7 +10949,7 @@ dffeas \reading5[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_0),
 	.prn(vcc));
 defparam \reading5[0] .is_wysiwyg = "true";
@@ -11000,7 +10991,7 @@ dffeas \reading2[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_0),
 	.prn(vcc));
 defparam \reading2[0] .is_wysiwyg = "true";
@@ -11014,7 +11005,7 @@ dffeas \reading1[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_0),
 	.prn(vcc));
 defparam \reading1[0] .is_wysiwyg = "true";
@@ -11028,7 +11019,7 @@ dffeas \reading0[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_0),
 	.prn(vcc));
 defparam \reading0[0] .is_wysiwyg = "true";
@@ -11042,7 +11033,7 @@ dffeas \reading3[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_0),
 	.prn(vcc));
 defparam \reading3[0] .is_wysiwyg = "true";
@@ -11056,7 +11047,7 @@ dffeas \reading6[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_1),
 	.prn(vcc));
 defparam \reading6[1] .is_wysiwyg = "true";
@@ -11070,7 +11061,7 @@ dffeas \reading5[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_1),
 	.prn(vcc));
 defparam \reading5[1] .is_wysiwyg = "true";
@@ -11112,7 +11103,7 @@ dffeas \reading2[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_1),
 	.prn(vcc));
 defparam \reading2[1] .is_wysiwyg = "true";
@@ -11126,7 +11117,7 @@ dffeas \reading1[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_1),
 	.prn(vcc));
 defparam \reading1[1] .is_wysiwyg = "true";
@@ -11140,7 +11131,7 @@ dffeas \reading0[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_1),
 	.prn(vcc));
 defparam \reading0[1] .is_wysiwyg = "true";
@@ -11154,7 +11145,7 @@ dffeas \reading3[1] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_1),
 	.prn(vcc));
 defparam \reading3[1] .is_wysiwyg = "true";
@@ -11168,7 +11159,7 @@ dffeas \reading6[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_2),
 	.prn(vcc));
 defparam \reading6[2] .is_wysiwyg = "true";
@@ -11182,7 +11173,7 @@ dffeas \reading5[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_2),
 	.prn(vcc));
 defparam \reading5[2] .is_wysiwyg = "true";
@@ -11224,7 +11215,7 @@ dffeas \reading2[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_2),
 	.prn(vcc));
 defparam \reading2[2] .is_wysiwyg = "true";
@@ -11238,7 +11229,7 @@ dffeas \reading1[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_2),
 	.prn(vcc));
 defparam \reading1[2] .is_wysiwyg = "true";
@@ -11252,7 +11243,7 @@ dffeas \reading0[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_2),
 	.prn(vcc));
 defparam \reading0[2] .is_wysiwyg = "true";
@@ -11266,7 +11257,7 @@ dffeas \reading3[2] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_2),
 	.prn(vcc));
 defparam \reading3[2] .is_wysiwyg = "true";
@@ -11280,7 +11271,7 @@ dffeas \reading6[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_3),
 	.prn(vcc));
 defparam \reading6[3] .is_wysiwyg = "true";
@@ -11294,7 +11285,7 @@ dffeas \reading5[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_3),
 	.prn(vcc));
 defparam \reading5[3] .is_wysiwyg = "true";
@@ -11336,7 +11327,7 @@ dffeas \reading2[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_3),
 	.prn(vcc));
 defparam \reading2[3] .is_wysiwyg = "true";
@@ -11350,7 +11341,7 @@ dffeas \reading1[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_3),
 	.prn(vcc));
 defparam \reading1[3] .is_wysiwyg = "true";
@@ -11364,7 +11355,7 @@ dffeas \reading0[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_3),
 	.prn(vcc));
 defparam \reading0[3] .is_wysiwyg = "true";
@@ -11378,7 +11369,7 @@ dffeas \reading3[3] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_3),
 	.prn(vcc));
 defparam \reading3[3] .is_wysiwyg = "true";
@@ -11392,7 +11383,7 @@ dffeas \reading6[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_4),
 	.prn(vcc));
 defparam \reading6[4] .is_wysiwyg = "true";
@@ -11406,7 +11397,7 @@ dffeas \reading5[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_4),
 	.prn(vcc));
 defparam \reading5[4] .is_wysiwyg = "true";
@@ -11448,7 +11439,7 @@ dffeas \reading2[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_4),
 	.prn(vcc));
 defparam \reading2[4] .is_wysiwyg = "true";
@@ -11462,7 +11453,7 @@ dffeas \reading1[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_4),
 	.prn(vcc));
 defparam \reading1[4] .is_wysiwyg = "true";
@@ -11476,7 +11467,7 @@ dffeas \reading0[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_4),
 	.prn(vcc));
 defparam \reading0[4] .is_wysiwyg = "true";
@@ -11490,7 +11481,7 @@ dffeas \reading3[4] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_4),
 	.prn(vcc));
 defparam \reading3[4] .is_wysiwyg = "true";
@@ -11504,7 +11495,7 @@ dffeas \reading6[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_5),
 	.prn(vcc));
 defparam \reading6[5] .is_wysiwyg = "true";
@@ -11518,7 +11509,7 @@ dffeas \reading5[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_5),
 	.prn(vcc));
 defparam \reading5[5] .is_wysiwyg = "true";
@@ -11560,7 +11551,7 @@ dffeas \reading2[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_5),
 	.prn(vcc));
 defparam \reading2[5] .is_wysiwyg = "true";
@@ -11574,7 +11565,7 @@ dffeas \reading1[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_5),
 	.prn(vcc));
 defparam \reading1[5] .is_wysiwyg = "true";
@@ -11588,7 +11579,7 @@ dffeas \reading0[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_5),
 	.prn(vcc));
 defparam \reading0[5] .is_wysiwyg = "true";
@@ -11602,7 +11593,7 @@ dffeas \reading3[5] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_5),
 	.prn(vcc));
 defparam \reading3[5] .is_wysiwyg = "true";
@@ -11616,7 +11607,7 @@ dffeas \reading6[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_6),
 	.prn(vcc));
 defparam \reading6[6] .is_wysiwyg = "true";
@@ -11630,7 +11621,7 @@ dffeas \reading5[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_6),
 	.prn(vcc));
 defparam \reading5[6] .is_wysiwyg = "true";
@@ -11672,7 +11663,7 @@ dffeas \reading2[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_6),
 	.prn(vcc));
 defparam \reading2[6] .is_wysiwyg = "true";
@@ -11686,7 +11677,7 @@ dffeas \reading1[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_6),
 	.prn(vcc));
 defparam \reading1[6] .is_wysiwyg = "true";
@@ -11700,7 +11691,7 @@ dffeas \reading0[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_6),
 	.prn(vcc));
 defparam \reading0[6] .is_wysiwyg = "true";
@@ -11714,7 +11705,7 @@ dffeas \reading3[6] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_6),
 	.prn(vcc));
 defparam \reading3[6] .is_wysiwyg = "true";
@@ -11728,7 +11719,7 @@ dffeas \reading6[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_7),
 	.prn(vcc));
 defparam \reading6[7] .is_wysiwyg = "true";
@@ -11742,7 +11733,7 @@ dffeas \reading5[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_7),
 	.prn(vcc));
 defparam \reading5[7] .is_wysiwyg = "true";
@@ -11784,7 +11775,7 @@ dffeas \reading2[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_7),
 	.prn(vcc));
 defparam \reading2[7] .is_wysiwyg = "true";
@@ -11798,7 +11789,7 @@ dffeas \reading1[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_7),
 	.prn(vcc));
 defparam \reading1[7] .is_wysiwyg = "true";
@@ -11812,7 +11803,7 @@ dffeas \reading0[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_7),
 	.prn(vcc));
 defparam \reading0[7] .is_wysiwyg = "true";
@@ -11826,7 +11817,7 @@ dffeas \reading3[7] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_7),
 	.prn(vcc));
 defparam \reading3[7] .is_wysiwyg = "true";
@@ -11840,7 +11831,7 @@ dffeas \reading6[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_11),
 	.prn(vcc));
 defparam \reading6[11] .is_wysiwyg = "true";
@@ -11854,7 +11845,7 @@ dffeas \reading5[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_11),
 	.prn(vcc));
 defparam \reading5[11] .is_wysiwyg = "true";
@@ -11896,7 +11887,7 @@ dffeas \reading2[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_11),
 	.prn(vcc));
 defparam \reading2[11] .is_wysiwyg = "true";
@@ -11910,7 +11901,7 @@ dffeas \reading1[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_11),
 	.prn(vcc));
 defparam \reading1[11] .is_wysiwyg = "true";
@@ -11924,7 +11915,7 @@ dffeas \reading0[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_11),
 	.prn(vcc));
 defparam \reading0[11] .is_wysiwyg = "true";
@@ -11938,7 +11929,7 @@ dffeas \reading3[11] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_11),
 	.prn(vcc));
 defparam \reading3[11] .is_wysiwyg = "true";
@@ -11952,7 +11943,7 @@ dffeas \reading6[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_10),
 	.prn(vcc));
 defparam \reading6[10] .is_wysiwyg = "true";
@@ -11966,7 +11957,7 @@ dffeas \reading5[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_10),
 	.prn(vcc));
 defparam \reading5[10] .is_wysiwyg = "true";
@@ -12008,7 +11999,7 @@ dffeas \reading2[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_10),
 	.prn(vcc));
 defparam \reading2[10] .is_wysiwyg = "true";
@@ -12022,7 +12013,7 @@ dffeas \reading1[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_10),
 	.prn(vcc));
 defparam \reading1[10] .is_wysiwyg = "true";
@@ -12036,7 +12027,7 @@ dffeas \reading0[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_10),
 	.prn(vcc));
 defparam \reading0[10] .is_wysiwyg = "true";
@@ -12050,7 +12041,7 @@ dffeas \reading3[10] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_10),
 	.prn(vcc));
 defparam \reading3[10] .is_wysiwyg = "true";
@@ -12064,7 +12055,7 @@ dffeas \reading6[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_9),
 	.prn(vcc));
 defparam \reading6[9] .is_wysiwyg = "true";
@@ -12078,7 +12069,7 @@ dffeas \reading5[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_9),
 	.prn(vcc));
 defparam \reading5[9] .is_wysiwyg = "true";
@@ -12120,7 +12111,7 @@ dffeas \reading2[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_9),
 	.prn(vcc));
 defparam \reading2[9] .is_wysiwyg = "true";
@@ -12134,7 +12125,7 @@ dffeas \reading1[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_9),
 	.prn(vcc));
 defparam \reading1[9] .is_wysiwyg = "true";
@@ -12148,7 +12139,7 @@ dffeas \reading0[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_9),
 	.prn(vcc));
 defparam \reading0[9] .is_wysiwyg = "true";
@@ -12162,7 +12153,7 @@ dffeas \reading3[9] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_9),
 	.prn(vcc));
 defparam \reading3[9] .is_wysiwyg = "true";
@@ -12176,7 +12167,7 @@ dffeas \reading6[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~2_combout ),
+	.ena(\Decoder0~11_combout ),
 	.q(reading6_8),
 	.prn(vcc));
 defparam \reading6[8] .is_wysiwyg = "true";
@@ -12190,7 +12181,7 @@ dffeas \reading5[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~4_combout ),
+	.ena(\Decoder0~5_combout ),
 	.q(reading5_8),
 	.prn(vcc));
 defparam \reading5[8] .is_wysiwyg = "true";
@@ -12232,7 +12223,7 @@ dffeas \reading2[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~8_combout ),
+	.ena(\Decoder0~12_combout ),
 	.q(reading2_8),
 	.prn(vcc));
 defparam \reading2[8] .is_wysiwyg = "true";
@@ -12246,7 +12237,7 @@ dffeas \reading1[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~9_combout ),
+	.ena(\Decoder0~7_combout ),
 	.q(reading1_8),
 	.prn(vcc));
 defparam \reading1[8] .is_wysiwyg = "true";
@@ -12260,7 +12251,7 @@ dffeas \reading0[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~10_combout ),
+	.ena(\Decoder0~9_combout ),
 	.q(reading0_8),
 	.prn(vcc));
 defparam \reading0[8] .is_wysiwyg = "true";
@@ -12274,7 +12265,7 @@ dffeas \reading3[8] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\Decoder0~11_combout ),
+	.ena(\Decoder0~10_combout ),
 	.q(reading3_8),
 	.prn(vcc));
 defparam \reading3[8] .is_wysiwyg = "true";
@@ -13083,6 +13074,17 @@ cycloneive_lcell_comb \sclk~0 (
 defparam \sclk~0 .lut_mask = 16'hFF96;
 defparam \sclk~0 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \addr_shift_reg~9 (
+	.dataa(\addr_shift_reg~7_combout ),
+	.datab(sclk1),
+	.datac(\Equal1~0_combout ),
+	.datad(\Equal1~1_combout ),
+	.cin(gnd),
+	.combout(\addr_shift_reg~9_combout ),
+	.cout());
+defparam \addr_shift_reg~9 .lut_mask = 16'hFFFE;
+defparam \addr_shift_reg~9 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \addr_shift_reg~5 (
 	.dataa(\currState.pauseState~q ),
 	.datab(\address[2]~q ),
@@ -13094,22 +13096,11 @@ cycloneive_lcell_comb \addr_shift_reg~5 (
 defparam \addr_shift_reg~5 .lut_mask = 16'hBFFF;
 defparam \addr_shift_reg~5 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \addr_shift_reg~9 (
-	.dataa(\addr_shift_reg~7_combout ),
-	.datab(\Equal1~0_combout ),
-	.datac(sclk1),
-	.datad(\Equal1~1_combout ),
-	.cin(gnd),
-	.combout(\addr_shift_reg~9_combout ),
-	.cout());
-defparam \addr_shift_reg~9 .lut_mask = 16'hFFFE;
-defparam \addr_shift_reg~9 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \addr_shift_reg~10 (
-	.dataa(\next_addr[0]~q ),
-	.datab(\addr_shift_reg~5_combout ),
-	.datac(\Selector1~0_combout ),
-	.datad(\addr_shift_reg~9_combout ),
+	.dataa(\Selector1~0_combout ),
+	.datab(\addr_shift_reg~9_combout ),
+	.datac(\next_addr[0]~q ),
+	.datad(\addr_shift_reg~5_combout ),
 	.cin(gnd),
 	.combout(\addr_shift_reg~10_combout ),
 	.cout());
@@ -13296,110 +13287,99 @@ cycloneive_lcell_comb \Selector2~1 (
 defparam \Selector2~1 .lut_mask = 16'hFEFE;
 defparam \Selector2~1 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Decoder0~12 (
+cycloneive_lcell_comb \Decoder0~11 (
 	.dataa(\address[1]~q ),
 	.datab(\address[0]~q ),
-	.datac(sclk1),
-	.datad(\sclk_counter[3]~q ),
+	.datac(\always5~1_combout ),
+	.datad(\address[2]~q ),
 	.cin(gnd),
-	.combout(\Decoder0~12_combout ),
+	.combout(\Decoder0~11_combout ),
 	.cout());
-defparam \Decoder0~12 .lut_mask = 16'hFFFE;
-defparam \Decoder0~12 .sum_lutc_input = "datac";
+defparam \Decoder0~11 .lut_mask = 16'hFFFE;
+defparam \Decoder0~11 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Decoder0~2 (
-	.dataa(\address[2]~q ),
-	.datab(\always5~0_combout ),
-	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~12_combout ),
-	.cin(gnd),
-	.combout(\Decoder0~2_combout ),
-	.cout());
-defparam \Decoder0~2 .lut_mask = 16'hFFEF;
-defparam \Decoder0~2 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Decoder0~3 (
+cycloneive_lcell_comb \Decoder0~4 (
 	.dataa(\address[0]~q ),
 	.datab(sclk1),
 	.datac(\sclk_counter[3]~q ),
 	.datad(\always5~0_combout ),
 	.cin(gnd),
-	.combout(\Decoder0~3_combout ),
-	.cout());
-defparam \Decoder0~3 .lut_mask = 16'hFFFD;
-defparam \Decoder0~3 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Decoder0~4 (
-	.dataa(\address[2]~q ),
-	.datab(\address[1]~q ),
-	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~3_combout ),
-	.cin(gnd),
 	.combout(\Decoder0~4_combout ),
 	.cout());
-defparam \Decoder0~4 .lut_mask = 16'hFFEF;
+defparam \Decoder0~4 .lut_mask = 16'hFFFD;
 defparam \Decoder0~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Decoder0~5 (
-	.dataa(\address[1]~q ),
-	.datab(sclk1),
-	.datac(\sclk_counter[3]~q ),
-	.datad(\always5~0_combout ),
+	.dataa(\address[2]~q ),
+	.datab(\address[1]~q ),
+	.datac(\Equal1~3_combout ),
+	.datad(\Decoder0~4_combout ),
 	.cin(gnd),
 	.combout(\Decoder0~5_combout ),
 	.cout());
-defparam \Decoder0~5 .lut_mask = 16'hFFFD;
+defparam \Decoder0~5 .lut_mask = 16'hFFEF;
 defparam \Decoder0~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Decoder0~6 (
-	.dataa(\address[2]~q ),
-	.datab(\address[0]~q ),
-	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~5_combout ),
+	.dataa(\always5~1_combout ),
+	.datab(\address[2]~q ),
+	.datac(\address[0]~q ),
+	.datad(\address[1]~q ),
 	.cin(gnd),
 	.combout(\Decoder0~6_combout ),
 	.cout());
-defparam \Decoder0~6 .lut_mask = 16'hFFEF;
+defparam \Decoder0~6 .lut_mask = 16'hFEFF;
 defparam \Decoder0~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \reading7[6]~0 (
 	.dataa(\address[2]~q ),
 	.datab(\address[1]~q ),
 	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~3_combout ),
+	.datad(\Decoder0~4_combout ),
 	.cin(gnd),
 	.combout(\reading7[6]~0_combout ),
 	.cout());
 defparam \reading7[6]~0 .lut_mask = 16'hFF7F;
 defparam \reading7[6]~0 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Decoder0~12 (
+	.dataa(\address[1]~q ),
+	.datab(\address[0]~q ),
+	.datac(\always5~1_combout ),
+	.datad(\address[2]~q ),
+	.cin(gnd),
+	.combout(\Decoder0~12_combout ),
+	.cout());
+defparam \Decoder0~12 .lut_mask = 16'hFEFF;
+defparam \Decoder0~12 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \Decoder0~7 (
-	.dataa(\address[2]~q ),
-	.datab(sclk1),
-	.datac(\sclk_counter[3]~q ),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\Decoder0~7_combout ),
-	.cout());
-defparam \Decoder0~7 .lut_mask = 16'hFDFD;
-defparam \Decoder0~7 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Decoder0~8 (
-	.dataa(\Add5~0_combout ),
-	.datab(\always5~0_combout ),
-	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~7_combout ),
-	.cin(gnd),
-	.combout(\Decoder0~8_combout ),
-	.cout());
-defparam \Decoder0~8 .lut_mask = 16'hFFEF;
-defparam \Decoder0~8 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Decoder0~9 (
 	.dataa(\address[1]~q ),
 	.datab(\address[2]~q ),
 	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~3_combout ),
+	.datad(\Decoder0~4_combout ),
+	.cin(gnd),
+	.combout(\Decoder0~7_combout ),
+	.cout());
+defparam \Decoder0~7 .lut_mask = 16'hFFBF;
+defparam \Decoder0~7 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Decoder0~8 (
+	.dataa(\address[1]~q ),
+	.datab(sclk1),
+	.datac(\sclk_counter[3]~q ),
+	.datad(\always5~0_combout ),
+	.cin(gnd),
+	.combout(\Decoder0~8_combout ),
+	.cout());
+defparam \Decoder0~8 .lut_mask = 16'hFFFD;
+defparam \Decoder0~8 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Decoder0~9 (
+	.dataa(\address[0]~q ),
+	.datab(\address[2]~q ),
+	.datac(\Equal1~3_combout ),
+	.datad(\Decoder0~8_combout ),
 	.cin(gnd),
 	.combout(\Decoder0~9_combout ),
 	.cout());
@@ -13407,26 +13387,15 @@ defparam \Decoder0~9 .lut_mask = 16'hFFBF;
 defparam \Decoder0~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Decoder0~10 (
-	.dataa(\address[0]~q ),
-	.datab(\address[2]~q ),
-	.datac(\Equal1~3_combout ),
-	.datad(\Decoder0~5_combout ),
-	.cin(gnd),
-	.combout(\Decoder0~10_combout ),
-	.cout());
-defparam \Decoder0~10 .lut_mask = 16'hFFBF;
-defparam \Decoder0~10 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Decoder0~11 (
 	.dataa(\always5~1_combout ),
 	.datab(\address[2]~q ),
 	.datac(\address[1]~q ),
 	.datad(\address[0]~q ),
 	.cin(gnd),
-	.combout(\Decoder0~11_combout ),
+	.combout(\Decoder0~10_combout ),
 	.cout());
-defparam \Decoder0~11 .lut_mask = 16'hEFFF;
-defparam \Decoder0~11 .sum_lutc_input = "datac";
+defparam \Decoder0~10 .lut_mask = 16'hEFFF;
+defparam \Decoder0~10 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \always7~0 (
 	.dataa(\Equal1~3_combout ),
@@ -13678,6 +13647,8 @@ module niosII_niosII_cpu (
 	mem_84_0,
 	mem_66_0,
 	read_latency_shift_reg_0,
+	out_data_toggle_flopped,
+	dreg_0,
 	read_latency_shift_reg_01,
 	read_latency_shift_reg_02,
 	mem_54_0,
@@ -13820,6 +13791,8 @@ module niosII_niosII_cpu (
 	out_data_buffer_18,
 	av_readdata_pre_17,
 	out_data_buffer_17,
+	av_readdata_pre_301,
+	src_payload1,
 	out_valid1,
 	src_data_0,
 	dreg_1,
@@ -13832,15 +13805,14 @@ module niosII_niosII_cpu (
 	readdata_3,
 	src_data_12,
 	src_data_2,
-	src_data_21,
 	src_data_31,
-	av_readdata_pre_301,
+	src0_valid1,
 	src_data_41,
 	src_data_51,
 	src_data_6,
 	src_data_7,
-	src_payload1,
 	src_payload2,
+	src_payload3,
 	src_data_38,
 	src_data_39,
 	src_data_40,
@@ -13864,31 +13836,31 @@ module niosII_niosII_cpu (
 	readdata_8,
 	readdata_7,
 	readdata_6,
-	readdata_26,
 	out_data_buffer_261,
+	readdata_26,
+	src_payload4,
 	readdata_21,
 	readdata_30,
 	readdata_25,
 	out_data_buffer_251,
-	src_payload3,
 	readdata_29,
 	readdata_24,
 	out_data_buffer_241,
 	readdata_28,
-	src_payload4,
-	readdata_27,
 	src_payload5,
-	readdata_261,
+	readdata_27,
 	src_payload6,
-	readdata_251,
+	readdata_261,
 	src_payload7,
-	readdata_241,
+	readdata_251,
 	src_payload8,
-	readdata_23,
+	readdata_241,
 	src_payload9,
-	readdata_22,
+	readdata_23,
 	src_payload10,
+	readdata_22,
 	src_payload11,
+	src_payload12,
 	readdata_20,
 	src_data_151,
 	readdata_19,
@@ -13901,28 +13873,27 @@ module niosII_niosII_cpu (
 	src_data_10,
 	src_data_9,
 	src_data_8,
-	src_payload12,
+	src_payload13,
 	readdata_271,
 	out_data_buffer_271,
-	readdata_281,
 	out_data_buffer_281,
+	readdata_281,
 	readdata_291,
 	out_data_buffer_291,
-	readdata_301,
 	out_data_buffer_301,
+	readdata_301,
 	readdata_31,
 	out_data_buffer_311,
 	readdata_311,
 	debug_reset_request,
-	src_payload13,
 	src_payload14,
 	src_payload15,
 	src_payload16,
-	src_data_33,
 	src_payload17,
+	src_data_33,
 	src_payload18,
-	src_data_34,
 	src_payload19,
+	src_data_34,
 	src_payload20,
 	src_payload21,
 	src_payload22,
@@ -13933,8 +13904,8 @@ module niosII_niosII_cpu (
 	src_payload27,
 	src_payload28,
 	src_payload29,
-	src_data_35,
 	src_payload30,
+	src_data_35,
 	src_payload31,
 	src_payload32,
 	src_payload33,
@@ -13947,6 +13918,7 @@ module niosII_niosII_cpu (
 	src_payload40,
 	src_payload41,
 	src_payload42,
+	src_payload43,
 	altera_internal_jtag,
 	altera_internal_jtag1,
 	state_1,
@@ -14039,6 +14011,8 @@ output 	F_pc_7;
 input 	mem_84_0;
 input 	mem_66_0;
 input 	read_latency_shift_reg_0;
+input 	out_data_toggle_flopped;
+input 	dreg_0;
 input 	read_latency_shift_reg_01;
 input 	read_latency_shift_reg_02;
 input 	mem_54_0;
@@ -14181,6 +14155,8 @@ input 	av_readdata_pre_18;
 input 	out_data_buffer_18;
 input 	av_readdata_pre_17;
 input 	out_data_buffer_17;
+input 	av_readdata_pre_301;
+input 	src_payload1;
 input 	out_valid1;
 input 	src_data_0;
 input 	dreg_1;
@@ -14193,15 +14169,14 @@ output 	readdata_2;
 output 	readdata_3;
 input 	src_data_12;
 input 	src_data_2;
-input 	src_data_21;
 input 	src_data_31;
-input 	av_readdata_pre_301;
+input 	src0_valid1;
 input 	src_data_41;
 input 	src_data_51;
 input 	src_data_6;
 input 	src_data_7;
-input 	src_payload1;
 input 	src_payload2;
+input 	src_payload3;
 input 	src_data_38;
 input 	src_data_39;
 input 	src_data_40;
@@ -14225,31 +14200,31 @@ output 	readdata_9;
 output 	readdata_8;
 output 	readdata_7;
 output 	readdata_6;
-input 	readdata_26;
 input 	out_data_buffer_261;
+input 	readdata_26;
+input 	src_payload4;
 output 	readdata_21;
 output 	readdata_30;
 input 	readdata_25;
 input 	out_data_buffer_251;
-input 	src_payload3;
 output 	readdata_29;
 input 	readdata_24;
 input 	out_data_buffer_241;
 output 	readdata_28;
-input 	src_payload4;
-output 	readdata_27;
 input 	src_payload5;
-output 	readdata_261;
+output 	readdata_27;
 input 	src_payload6;
-output 	readdata_251;
+output 	readdata_261;
 input 	src_payload7;
-output 	readdata_241;
+output 	readdata_251;
 input 	src_payload8;
-output 	readdata_23;
+output 	readdata_241;
 input 	src_payload9;
-output 	readdata_22;
+output 	readdata_23;
 input 	src_payload10;
+output 	readdata_22;
 input 	src_payload11;
+input 	src_payload12;
 output 	readdata_20;
 input 	src_data_151;
 output 	readdata_19;
@@ -14262,28 +14237,27 @@ input 	src_data_111;
 input 	src_data_10;
 input 	src_data_9;
 input 	src_data_8;
-input 	src_payload12;
+input 	src_payload13;
 input 	readdata_271;
 input 	out_data_buffer_271;
-input 	readdata_281;
 input 	out_data_buffer_281;
+input 	readdata_281;
 input 	readdata_291;
 input 	out_data_buffer_291;
-input 	readdata_301;
 input 	out_data_buffer_301;
+input 	readdata_301;
 input 	readdata_31;
 input 	out_data_buffer_311;
 output 	readdata_311;
 output 	debug_reset_request;
-input 	src_payload13;
 input 	src_payload14;
 input 	src_payload15;
 input 	src_payload16;
-input 	src_data_33;
 input 	src_payload17;
+input 	src_data_33;
 input 	src_payload18;
-input 	src_data_34;
 input 	src_payload19;
+input 	src_data_34;
 input 	src_payload20;
 input 	src_payload21;
 input 	src_payload22;
@@ -14294,8 +14268,8 @@ input 	src_payload26;
 input 	src_payload27;
 input 	src_payload28;
 input 	src_payload29;
-input 	src_data_35;
 input 	src_payload30;
+input 	src_data_35;
 input 	src_payload31;
 input 	src_payload32;
 input 	src_payload33;
@@ -14308,6 +14282,7 @@ input 	src_payload39;
 input 	src_payload40;
 input 	src_payload41;
 input 	src_payload42;
+input 	src_payload43;
 input 	altera_internal_jtag;
 input 	altera_internal_jtag1;
 input 	state_1;
@@ -14413,6 +14388,8 @@ niosII_niosII_cpu_cpu cpu(
 	.mem_84_0(mem_84_0),
 	.mem_66_0(mem_66_0),
 	.read_latency_shift_reg_0(read_latency_shift_reg_0),
+	.out_data_toggle_flopped(out_data_toggle_flopped),
+	.dreg_0(dreg_0),
 	.read_latency_shift_reg_01(read_latency_shift_reg_01),
 	.read_latency_shift_reg_02(read_latency_shift_reg_02),
 	.mem_54_0(mem_54_0),
@@ -14555,6 +14532,8 @@ niosII_niosII_cpu_cpu cpu(
 	.out_data_buffer_18(out_data_buffer_18),
 	.av_readdata_pre_17(av_readdata_pre_17),
 	.out_data_buffer_17(out_data_buffer_17),
+	.av_readdata_pre_301(av_readdata_pre_301),
+	.src_payload1(src_payload1),
 	.out_valid1(out_valid1),
 	.src_data_0(src_data_0),
 	.dreg_1(dreg_1),
@@ -14567,15 +14546,14 @@ niosII_niosII_cpu_cpu cpu(
 	.readdata_3(readdata_3),
 	.src_data_12(src_data_12),
 	.src_data_2(src_data_2),
-	.src_data_21(src_data_21),
 	.src_data_31(src_data_31),
-	.av_readdata_pre_301(av_readdata_pre_301),
+	.src0_valid1(src0_valid1),
 	.src_data_41(src_data_41),
 	.src_data_51(src_data_51),
 	.src_data_6(src_data_6),
 	.src_data_7(src_data_7),
-	.src_payload1(src_payload1),
 	.src_payload2(src_payload2),
+	.src_payload3(src_payload3),
 	.src_data_38(src_data_38),
 	.src_data_39(src_data_39),
 	.src_data_40(src_data_40),
@@ -14599,31 +14577,31 @@ niosII_niosII_cpu_cpu cpu(
 	.readdata_8(readdata_8),
 	.readdata_7(readdata_7),
 	.readdata_6(readdata_6),
-	.readdata_26(readdata_26),
 	.out_data_buffer_261(out_data_buffer_261),
+	.readdata_26(readdata_26),
+	.src_payload4(src_payload4),
 	.readdata_21(readdata_21),
 	.readdata_30(readdata_30),
 	.readdata_25(readdata_25),
 	.out_data_buffer_251(out_data_buffer_251),
-	.src_payload3(src_payload3),
 	.readdata_29(readdata_29),
 	.readdata_24(readdata_24),
 	.out_data_buffer_241(out_data_buffer_241),
 	.readdata_28(readdata_28),
-	.src_payload4(src_payload4),
-	.readdata_27(readdata_27),
 	.src_payload5(src_payload5),
-	.readdata_261(readdata_261),
+	.readdata_27(readdata_27),
 	.src_payload6(src_payload6),
-	.readdata_251(readdata_251),
+	.readdata_261(readdata_261),
 	.src_payload7(src_payload7),
-	.readdata_241(readdata_241),
+	.readdata_251(readdata_251),
 	.src_payload8(src_payload8),
-	.readdata_23(readdata_23),
+	.readdata_241(readdata_241),
 	.src_payload9(src_payload9),
-	.readdata_22(readdata_22),
+	.readdata_23(readdata_23),
 	.src_payload10(src_payload10),
+	.readdata_22(readdata_22),
 	.src_payload11(src_payload11),
+	.src_payload12(src_payload12),
 	.readdata_20(readdata_20),
 	.src_data_151(src_data_151),
 	.readdata_19(readdata_19),
@@ -14636,28 +14614,27 @@ niosII_niosII_cpu_cpu cpu(
 	.src_data_10(src_data_10),
 	.src_data_9(src_data_9),
 	.src_data_8(src_data_8),
-	.src_payload12(src_payload12),
+	.src_payload13(src_payload13),
 	.readdata_271(readdata_271),
 	.out_data_buffer_271(out_data_buffer_271),
-	.readdata_281(readdata_281),
 	.out_data_buffer_281(out_data_buffer_281),
+	.readdata_281(readdata_281),
 	.readdata_291(readdata_291),
 	.out_data_buffer_291(out_data_buffer_291),
-	.readdata_301(readdata_301),
 	.out_data_buffer_301(out_data_buffer_301),
+	.readdata_301(readdata_301),
 	.readdata_31(readdata_31),
 	.out_data_buffer_311(out_data_buffer_311),
 	.readdata_311(readdata_311),
 	.debug_reset_request(debug_reset_request),
-	.src_payload13(src_payload13),
 	.src_payload14(src_payload14),
 	.src_payload15(src_payload15),
 	.src_payload16(src_payload16),
-	.src_data_33(src_data_33),
 	.src_payload17(src_payload17),
+	.src_data_33(src_data_33),
 	.src_payload18(src_payload18),
-	.src_data_34(src_data_34),
 	.src_payload19(src_payload19),
+	.src_data_34(src_data_34),
 	.src_payload20(src_payload20),
 	.src_payload21(src_payload21),
 	.src_payload22(src_payload22),
@@ -14668,8 +14645,8 @@ niosII_niosII_cpu_cpu cpu(
 	.src_payload27(src_payload27),
 	.src_payload28(src_payload28),
 	.src_payload29(src_payload29),
-	.src_data_35(src_data_35),
 	.src_payload30(src_payload30),
+	.src_data_35(src_data_35),
 	.src_payload31(src_payload31),
 	.src_payload32(src_payload32),
 	.src_payload33(src_payload33),
@@ -14682,6 +14659,7 @@ niosII_niosII_cpu_cpu cpu(
 	.src_payload40(src_payload40),
 	.src_payload41(src_payload41),
 	.src_payload42(src_payload42),
+	.src_payload43(src_payload43),
 	.altera_internal_jtag(altera_internal_jtag),
 	.altera_internal_jtag1(altera_internal_jtag1),
 	.state_1(state_1),
@@ -14778,6 +14756,8 @@ module niosII_niosII_cpu_cpu (
 	mem_84_0,
 	mem_66_0,
 	read_latency_shift_reg_0,
+	out_data_toggle_flopped,
+	dreg_0,
 	read_latency_shift_reg_01,
 	read_latency_shift_reg_02,
 	mem_54_0,
@@ -14920,6 +14900,8 @@ module niosII_niosII_cpu_cpu (
 	out_data_buffer_18,
 	av_readdata_pre_17,
 	out_data_buffer_17,
+	av_readdata_pre_301,
+	src_payload1,
 	out_valid1,
 	src_data_0,
 	dreg_1,
@@ -14932,15 +14914,14 @@ module niosII_niosII_cpu_cpu (
 	readdata_3,
 	src_data_12,
 	src_data_2,
-	src_data_21,
 	src_data_31,
-	av_readdata_pre_301,
+	src0_valid1,
 	src_data_41,
 	src_data_51,
 	src_data_6,
 	src_data_7,
-	src_payload1,
 	src_payload2,
+	src_payload3,
 	src_data_38,
 	src_data_39,
 	src_data_40,
@@ -14964,31 +14945,31 @@ module niosII_niosII_cpu_cpu (
 	readdata_8,
 	readdata_7,
 	readdata_6,
-	readdata_26,
 	out_data_buffer_261,
+	readdata_26,
+	src_payload4,
 	readdata_21,
 	readdata_30,
 	readdata_25,
 	out_data_buffer_251,
-	src_payload3,
 	readdata_29,
 	readdata_24,
 	out_data_buffer_241,
 	readdata_28,
-	src_payload4,
-	readdata_27,
 	src_payload5,
-	readdata_261,
+	readdata_27,
 	src_payload6,
-	readdata_251,
+	readdata_261,
 	src_payload7,
-	readdata_241,
+	readdata_251,
 	src_payload8,
-	readdata_23,
+	readdata_241,
 	src_payload9,
-	readdata_22,
+	readdata_23,
 	src_payload10,
+	readdata_22,
 	src_payload11,
+	src_payload12,
 	readdata_20,
 	src_data_151,
 	readdata_19,
@@ -15001,28 +14982,27 @@ module niosII_niosII_cpu_cpu (
 	src_data_10,
 	src_data_9,
 	src_data_8,
-	src_payload12,
+	src_payload13,
 	readdata_271,
 	out_data_buffer_271,
-	readdata_281,
 	out_data_buffer_281,
+	readdata_281,
 	readdata_291,
 	out_data_buffer_291,
-	readdata_301,
 	out_data_buffer_301,
+	readdata_301,
 	readdata_31,
 	out_data_buffer_311,
 	readdata_311,
 	debug_reset_request,
-	src_payload13,
 	src_payload14,
 	src_payload15,
 	src_payload16,
-	src_data_33,
 	src_payload17,
+	src_data_33,
 	src_payload18,
-	src_data_34,
 	src_payload19,
+	src_data_34,
 	src_payload20,
 	src_payload21,
 	src_payload22,
@@ -15033,8 +15013,8 @@ module niosII_niosII_cpu_cpu (
 	src_payload27,
 	src_payload28,
 	src_payload29,
-	src_data_35,
 	src_payload30,
+	src_data_35,
 	src_payload31,
 	src_payload32,
 	src_payload33,
@@ -15047,6 +15027,7 @@ module niosII_niosII_cpu_cpu (
 	src_payload40,
 	src_payload41,
 	src_payload42,
+	src_payload43,
 	altera_internal_jtag,
 	altera_internal_jtag1,
 	state_1,
@@ -15139,6 +15120,8 @@ output 	F_pc_7;
 input 	mem_84_0;
 input 	mem_66_0;
 input 	read_latency_shift_reg_0;
+input 	out_data_toggle_flopped;
+input 	dreg_0;
 input 	read_latency_shift_reg_01;
 input 	read_latency_shift_reg_02;
 input 	mem_54_0;
@@ -15281,6 +15264,8 @@ input 	av_readdata_pre_18;
 input 	out_data_buffer_18;
 input 	av_readdata_pre_17;
 input 	out_data_buffer_17;
+input 	av_readdata_pre_301;
+input 	src_payload1;
 input 	out_valid1;
 input 	src_data_0;
 input 	dreg_1;
@@ -15293,15 +15278,14 @@ output 	readdata_2;
 output 	readdata_3;
 input 	src_data_12;
 input 	src_data_2;
-input 	src_data_21;
 input 	src_data_31;
-input 	av_readdata_pre_301;
+input 	src0_valid1;
 input 	src_data_41;
 input 	src_data_51;
 input 	src_data_6;
 input 	src_data_7;
-input 	src_payload1;
 input 	src_payload2;
+input 	src_payload3;
 input 	src_data_38;
 input 	src_data_39;
 input 	src_data_40;
@@ -15325,31 +15309,31 @@ output 	readdata_9;
 output 	readdata_8;
 output 	readdata_7;
 output 	readdata_6;
-input 	readdata_26;
 input 	out_data_buffer_261;
+input 	readdata_26;
+input 	src_payload4;
 output 	readdata_21;
 output 	readdata_30;
 input 	readdata_25;
 input 	out_data_buffer_251;
-input 	src_payload3;
 output 	readdata_29;
 input 	readdata_24;
 input 	out_data_buffer_241;
 output 	readdata_28;
-input 	src_payload4;
-output 	readdata_27;
 input 	src_payload5;
-output 	readdata_261;
+output 	readdata_27;
 input 	src_payload6;
-output 	readdata_251;
+output 	readdata_261;
 input 	src_payload7;
-output 	readdata_241;
+output 	readdata_251;
 input 	src_payload8;
-output 	readdata_23;
+output 	readdata_241;
 input 	src_payload9;
-output 	readdata_22;
+output 	readdata_23;
 input 	src_payload10;
+output 	readdata_22;
 input 	src_payload11;
+input 	src_payload12;
 output 	readdata_20;
 input 	src_data_151;
 output 	readdata_19;
@@ -15362,28 +15346,27 @@ input 	src_data_111;
 input 	src_data_10;
 input 	src_data_9;
 input 	src_data_8;
-input 	src_payload12;
+input 	src_payload13;
 input 	readdata_271;
 input 	out_data_buffer_271;
-input 	readdata_281;
 input 	out_data_buffer_281;
+input 	readdata_281;
 input 	readdata_291;
 input 	out_data_buffer_291;
-input 	readdata_301;
 input 	out_data_buffer_301;
+input 	readdata_301;
 input 	readdata_31;
 input 	out_data_buffer_311;
 output 	readdata_311;
 output 	debug_reset_request;
-input 	src_payload13;
 input 	src_payload14;
 input 	src_payload15;
 input 	src_payload16;
-input 	src_data_33;
 input 	src_payload17;
+input 	src_data_33;
 input 	src_payload18;
-input 	src_data_34;
 input 	src_payload19;
+input 	src_data_34;
 input 	src_payload20;
 input 	src_payload21;
 input 	src_payload22;
@@ -15394,8 +15377,8 @@ input 	src_payload26;
 input 	src_payload27;
 input 	src_payload28;
 input 	src_payload29;
-input 	src_data_35;
 input 	src_payload30;
+input 	src_data_35;
 input 	src_payload31;
 input 	src_payload32;
 input 	src_payload33;
@@ -15408,6 +15391,7 @@ input 	src_payload39;
 input 	src_payload40;
 input 	src_payload41;
 input 	src_payload42;
+input 	src_payload43;
 input 	altera_internal_jtag;
 input 	altera_internal_jtag1;
 input 	state_1;
@@ -15613,11 +15597,10 @@ wire \D_dst_regnum[1]~1_combout ;
 wire \D_dst_regnum[2]~2_combout ;
 wire \D_dst_regnum[2]~3_combout ;
 wire \D_dst_regnum[2]~4_combout ;
-wire \D_dst_regnum[2]~5_combout ;
-wire \D_dst_regnum[4]~6_combout ;
-wire \D_dst_regnum[3]~7_combout ;
-wire \Equal0~19_combout ;
-wire \D_dst_regnum[0]~8_combout ;
+wire \D_dst_regnum[4]~5_combout ;
+wire \D_dst_regnum[3]~6_combout ;
+wire \Equal0~18_combout ;
+wire \D_dst_regnum[0]~7_combout ;
 wire \D_wr_dst_reg~2_combout ;
 wire \av_ld_rshift8~0_combout ;
 wire \av_ld_rshift8~1_combout ;
@@ -15634,7 +15617,6 @@ wire \the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_avalon_reg|oci_ienab
 wire \the_niosII_cpu_cpu_nios2_oci|the_niosII_cpu_cpu_nios2_avalon_reg|oci_single_step_mode~q ;
 wire \W_control_rd_data[1]~0_combout ;
 wire \E_control_rd_data[1]~4_combout ;
-wire \av_ld_byte0_data_nxt[2]~14_combout ;
 wire \E_control_rd_data[2]~5_combout ;
 wire \E_control_rd_data[3]~6_combout ;
 wire \E_control_rd_data[4]~7_combout ;
@@ -15689,13 +15671,14 @@ wire \av_ld_byte3_data_nxt~32_combout ;
 wire \av_ld_byte3_data_nxt~33_combout ;
 wire \av_ld_byte3_data_nxt~34_combout ;
 wire \av_ld_byte3_data_nxt~35_combout ;
-wire \av_ld_byte0_data_nxt[0]~15_combout ;
-wire \av_ld_byte0_data_nxt[1]~16_combout ;
-wire \av_ld_byte0_data_nxt[3]~17_combout ;
-wire \av_ld_byte0_data_nxt[4]~18_combout ;
-wire \av_ld_byte0_data_nxt[5]~19_combout ;
-wire \av_ld_byte0_data_nxt[6]~20_combout ;
-wire \av_ld_byte0_data_nxt[7]~21_combout ;
+wire \av_ld_byte0_data_nxt[0]~16_combout ;
+wire \av_ld_byte0_data_nxt[1]~17_combout ;
+wire \av_ld_byte0_data_nxt[2]~18_combout ;
+wire \av_ld_byte0_data_nxt[3]~19_combout ;
+wire \av_ld_byte0_data_nxt[4]~20_combout ;
+wire \av_ld_byte0_data_nxt[5]~21_combout ;
+wire \av_ld_byte0_data_nxt[6]~22_combout ;
+wire \av_ld_byte0_data_nxt[7]~23_combout ;
 wire \F_valid~0_combout ;
 wire \D_valid~q ;
 wire \R_valid~q ;
@@ -15706,23 +15689,23 @@ wire \D_iw[8]~q ;
 wire \F_iw[4]~14_combout ;
 wire \F_iw[4]~15_combout ;
 wire \D_iw[4]~q ;
-wire \F_iw[5]~25_combout ;
-wire \F_iw[5]~26_combout ;
-wire \D_iw[5]~q ;
-wire \F_iw[0]~4_combout ;
-wire \F_iw[0]~6_combout ;
-wire \D_iw[0]~q ;
 wire \F_iw[1]~7_combout ;
 wire \F_iw[1]~8_combout ;
 wire \D_iw[1]~q ;
+wire \F_iw[0]~4_combout ;
+wire \F_iw[0]~6_combout ;
+wire \D_iw[0]~q ;
 wire \F_iw[3]~12_combout ;
 wire \F_iw[3]~13_combout ;
 wire \D_iw[3]~q ;
 wire \F_iw[2]~9_combout ;
 wire \F_iw[2]~11_combout ;
 wire \D_iw[2]~q ;
+wire \Equal0~2_combout ;
+wire \F_iw[5]~25_combout ;
+wire \F_iw[5]~26_combout ;
+wire \D_iw[5]~q ;
 wire \Equal0~7_combout ;
-wire \Equal0~8_combout ;
 wire \F_iw[15]~30_combout ;
 wire \F_iw[15]~31_combout ;
 wire \D_iw[15]~q ;
@@ -15765,18 +15748,17 @@ wire \E_shift_rot_cnt[0]~5_combout ;
 wire \D_ctrl_hi_imm16~0_combout ;
 wire \D_ctrl_hi_imm16~1_combout ;
 wire \R_ctrl_hi_imm16~q ;
-wire \Equal0~14_combout ;
+wire \Equal0~13_combout ;
 wire \D_ctrl_alu_force_xor~14_combout ;
+wire \Equal0~14_combout ;
 wire \Equal0~15_combout ;
-wire \Equal0~16_combout ;
 wire \D_ctrl_force_src2_zero~0_combout ;
 wire \Equal62~14_combout ;
 wire \Equal62~13_combout ;
 wire \D_ctrl_force_src2_zero~1_combout ;
 wire \Equal62~8_combout ;
 wire \D_ctrl_force_src2_zero~2_combout ;
-wire \Equal0~13_combout ;
-wire \Equal0~2_combout ;
+wire \Equal0~12_combout ;
 wire \D_ctrl_force_src2_zero~3_combout ;
 wire \D_ctrl_force_src2_zero~4_combout ;
 wire \Equal62~9_combout ;
@@ -15784,31 +15766,32 @@ wire \D_ctrl_uncond_cti_non_br~1_combout ;
 wire \Equal62~10_combout ;
 wire \Equal0~3_combout ;
 wire \D_op_cmpge~0_combout ;
-wire \D_ctrl_exception~13_combout ;
+wire \D_ctrl_exception~9_combout ;
 wire \Equal62~11_combout ;
 wire \D_op_opx_rsv17~0_combout ;
-wire \D_ctrl_exception~14_combout ;
+wire \D_ctrl_exception~10_combout ;
 wire \Equal62~2_combout ;
 wire \D_op_opx_rsv00~0_combout ;
+wire \D_ctrl_exception~11_combout ;
+wire \D_ctrl_exception~12_combout ;
+wire \D_ctrl_exception~13_combout ;
+wire \D_ctrl_exception~14_combout ;
+wire \Equal62~3_combout ;
+wire \Equal62~12_combout ;
 wire \D_ctrl_exception~15_combout ;
+wire \Equal62~1_combout ;
 wire \D_ctrl_exception~16_combout ;
 wire \D_ctrl_exception~17_combout ;
+wire \Equal0~11_combout ;
 wire \D_ctrl_exception~18_combout ;
-wire \Equal0~12_combout ;
 wire \D_ctrl_exception~19_combout ;
-wire \Equal62~12_combout ;
-wire \Equal62~3_combout ;
-wire \Equal62~1_combout ;
-wire \D_ctrl_exception~20_combout ;
-wire \D_ctrl_exception~23_combout ;
-wire \D_ctrl_exception~21_combout ;
 wire \Equal0~4_combout ;
 wire \D_ctrl_jmp_direct~0_combout ;
-wire \D_ctrl_retaddr~0_combout ;
-wire \D_ctrl_retaddr~1_combout ;
-wire \D_ctrl_retaddr~2_combout ;
+wire \D_ctrl_retaddr~7_combout ;
+wire \D_ctrl_retaddr~8_combout ;
+wire \D_ctrl_retaddr~9_combout ;
 wire \D_ctrl_force_src2_zero~5_combout ;
-wire \Equal0~18_combout ;
+wire \Equal0~17_combout ;
 wire \D_ctrl_force_src2_zero~6_combout ;
 wire \D_ctrl_force_src2_zero~7_combout ;
 wire \R_ctrl_force_src2_zero~q ;
@@ -15820,9 +15803,9 @@ wire \D_ctrl_src_imm5_shift_rot~0_combout ;
 wire \D_ctrl_src_imm5_shift_rot~1_combout ;
 wire \R_ctrl_src_imm5_shift_rot~q ;
 wire \D_ctrl_implicit_dst_eretaddr~7_combout ;
-wire \D_ctrl_unsigned_lo_imm16~0_combout ;
-wire \D_ctrl_unsigned_lo_imm16~1_combout ;
-wire \Equal0~17_combout ;
+wire \D_ctrl_unsigned_lo_imm16~2_combout ;
+wire \D_ctrl_unsigned_lo_imm16~5_combout ;
+wire \Equal0~16_combout ;
 wire \D_ctrl_b_is_dst~0_combout ;
 wire \D_ctrl_b_is_dst~1_combout ;
 wire \D_ctrl_b_is_dst~2_combout ;
@@ -15900,11 +15883,12 @@ wire \F_pc_plus_one[2]~4_combout ;
 wire \R_ctrl_br~q ;
 wire \D_ctrl_retaddr~3_combout ;
 wire \D_ctrl_retaddr~4_combout ;
-wire \D_ctrl_retaddr~5_combout ;
-wire \Equal0~10_combout ;
-wire \D_ctrl_retaddr~6_combout ;
-wire \D_ctrl_retaddr~7_combout ;
-wire \D_ctrl_retaddr~8_combout ;
+wire \D_ctrl_retaddr~14_combout ;
+wire \D_ctrl_retaddr~10_combout ;
+wire \Equal0~9_combout ;
+wire \D_ctrl_retaddr~11_combout ;
+wire \D_ctrl_retaddr~12_combout ;
+wire \D_ctrl_retaddr~13_combout ;
 wire \R_ctrl_retaddr~q ;
 wire \R_src1~15_combout ;
 wire \E_src1[4]~q ;
@@ -15942,15 +15926,15 @@ wire \W_ipending_reg[0]~q ;
 wire \E_wrctl_estatus~0_combout ;
 wire \E_wrctl_status~1_combout ;
 wire \W_estatus_reg_inst_nxt~0_combout ;
+wire \D_ctrl_exception~3_combout ;
+wire \D_ctrl_exception~21_combout ;
+wire \D_ctrl_exception~6_combout ;
 wire \D_ctrl_exception~7_combout ;
-wire \D_ctrl_exception~24_combout ;
-wire \D_ctrl_exception~10_combout ;
-wire \D_ctrl_exception~11_combout ;
-wire \D_ctrl_exception~12_combout ;
+wire \D_ctrl_exception~8_combout ;
 wire \D_ctrl_implicit_dst_eretaddr~0_combout ;
 wire \D_ctrl_implicit_dst_eretaddr~1_combout ;
 wire \D_ctrl_implicit_dst_eretaddr~2_combout ;
-wire \D_ctrl_exception~22_combout ;
+wire \D_ctrl_exception~20_combout ;
 wire \R_ctrl_exception~q ;
 wire \W_estatus_reg_inst_nxt~1_combout ;
 wire \W_estatus_reg~q ;
@@ -16017,8 +16001,8 @@ wire \R_logic_op[1]~q ;
 wire \D_logic_op[0]~1_combout ;
 wire \R_logic_op[0]~q ;
 wire \E_logic_result[6]~0_combout ;
-wire \Equal0~9_combout ;
-wire \Equal0~11_combout ;
+wire \Equal0~8_combout ;
+wire \Equal0~10_combout ;
 wire \D_ctrl_logic~0_combout ;
 wire \D_ctrl_logic~combout ;
 wire \R_ctrl_logic~q ;
@@ -16240,8 +16224,8 @@ wire \D_ctrl_br_cmp~4_combout ;
 wire \R_ctrl_br_cmp~q ;
 wire \E_alu_result~0_combout ;
 wire \E_src2[26]~0_combout ;
-wire \D_ctrl_unsigned_lo_imm16~2_combout ;
 wire \D_ctrl_unsigned_lo_imm16~3_combout ;
+wire \D_ctrl_unsigned_lo_imm16~4_combout ;
 wire \R_ctrl_unsigned_lo_imm16~q ;
 wire \R_src2_hi~0_combout ;
 wire \E_src2[26]~q ;
@@ -16415,7 +16399,7 @@ wire \i_read_nxt~0_combout ;
 wire \D_ctrl_uncond_cti_non_br~0_combout ;
 wire \D_ctrl_uncond_cti_non_br~2_combout ;
 wire \R_ctrl_uncond_cti_non_br~q ;
-wire \Equal0~20_combout ;
+wire \Equal0~19_combout ;
 wire \R_ctrl_br_uncond~q ;
 wire \R_compare_op[1]~q ;
 wire \D_logic_op_raw[0]~1_combout ;
@@ -16546,9 +16530,9 @@ niosII_niosII_cpu_cpu_nios2_oci the_niosII_cpu_cpu_nios2_oci(
 	.readdata_1(readdata_1),
 	.readdata_2(readdata_2),
 	.readdata_3(readdata_3),
-	.debugaccess_nxt(src_payload1),
-	.writedata_nxt({src_payload42,src_payload29,src_payload30,src_payload31,src_payload32,src_payload33,src_payload34,src_payload35,src_payload36,src_payload37,src_payload28,src_payload38,src_payload39,src_payload40,src_payload41,src_payload18,src_payload22,src_payload21,src_payload17,
-src_payload19,src_payload16,src_payload23,src_payload24,src_payload25,src_payload26,src_payload27,src_payload20,src_payload13,src_payload14,src_payload15,src_payload12,src_payload2}),
+	.debugaccess_nxt(src_payload2),
+	.writedata_nxt({src_payload43,src_payload30,src_payload31,src_payload32,src_payload33,src_payload34,src_payload35,src_payload36,src_payload37,src_payload38,src_payload29,src_payload39,src_payload40,src_payload41,src_payload42,src_payload19,src_payload23,src_payload22,src_payload18,
+src_payload20,src_payload17,src_payload24,src_payload25,src_payload26,src_payload27,src_payload28,src_payload21,src_payload14,src_payload15,src_payload16,src_payload13,src_payload3}),
 	.byteenable_nxt({src_data_35,src_data_34,src_data_33,src_data_32}),
 	.readdata_11(readdata_11),
 	.readdata_13(readdata_13),
@@ -17145,7 +17129,7 @@ defparam \W_alu_result[31] .is_wysiwyg = "true";
 defparam \W_alu_result[31] .power_up = "low";
 
 cycloneive_lcell_comb \av_ld_byte2_data[7]~0 (
-	.dataa(src_payload4),
+	.dataa(src_payload5),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17156,7 +17140,7 @@ defparam \av_ld_byte2_data[7]~0 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[7]~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[6]~1 (
-	.dataa(src_payload5),
+	.dataa(src_payload6),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17167,7 +17151,7 @@ defparam \av_ld_byte2_data[6]~1 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[6]~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[5]~2 (
-	.dataa(src_payload6),
+	.dataa(src_payload7),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17178,7 +17162,7 @@ defparam \av_ld_byte2_data[5]~2 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[5]~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[4]~3 (
-	.dataa(src_payload7),
+	.dataa(src_payload8),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17189,7 +17173,7 @@ defparam \av_ld_byte2_data[4]~3 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[4]~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[3]~4 (
-	.dataa(src_payload8),
+	.dataa(src_payload9),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17200,7 +17184,7 @@ defparam \av_ld_byte2_data[3]~4 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[3]~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[2]~5 (
-	.dataa(src_payload9),
+	.dataa(src_payload10),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17211,7 +17195,7 @@ defparam \av_ld_byte2_data[2]~5 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[2]~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[1]~6 (
-	.dataa(src_payload10),
+	.dataa(src_payload11),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17222,7 +17206,7 @@ defparam \av_ld_byte2_data[1]~6 .lut_mask = 16'hAACC;
 defparam \av_ld_byte2_data[1]~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte2_data[0]~7 (
-	.dataa(src_payload11),
+	.dataa(src_payload12),
 	.datab(\av_fill_bit~0_combout ),
 	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
@@ -17413,7 +17397,7 @@ defparam W_rf_wren.sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[0] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[0]~15_combout ),
+	.d(\av_ld_byte0_data_nxt[0]~16_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17474,7 +17458,7 @@ defparam \W_rf_wr_data[0]~2 .sum_lutc_input = "datac";
 
 dffeas \R_dst_regnum[0] (
 	.clk(wire_pll7_clk_0),
-	.d(\D_dst_regnum[0]~8_combout ),
+	.d(\D_dst_regnum[0]~7_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17502,7 +17486,7 @@ defparam \R_dst_regnum[1] .power_up = "low";
 
 dffeas \R_dst_regnum[2] (
 	.clk(wire_pll7_clk_0),
-	.d(\D_dst_regnum[2]~5_combout ),
+	.d(\D_dst_regnum[2]~4_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17516,7 +17500,7 @@ defparam \R_dst_regnum[2] .power_up = "low";
 
 dffeas \R_dst_regnum[3] (
 	.clk(wire_pll7_clk_0),
-	.d(\D_dst_regnum[3]~7_combout ),
+	.d(\D_dst_regnum[3]~6_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17530,7 +17514,7 @@ defparam \R_dst_regnum[3] .power_up = "low";
 
 dffeas \R_dst_regnum[4] (
 	.clk(wire_pll7_clk_0),
-	.d(\D_dst_regnum[4]~6_combout ),
+	.d(\D_dst_regnum[4]~5_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17544,7 +17528,7 @@ defparam \R_dst_regnum[4] .power_up = "low";
 
 dffeas \av_ld_byte0_data[1] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[1]~16_combout ),
+	.d(\av_ld_byte0_data_nxt[1]~17_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17594,7 +17578,7 @@ defparam \W_rf_wr_data[1]~4 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[2] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[2]~14_combout ),
+	.d(\av_ld_byte0_data_nxt[2]~18_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17644,7 +17628,7 @@ defparam \W_rf_wr_data[2]~6 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[3] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[3]~17_combout ),
+	.d(\av_ld_byte0_data_nxt[3]~19_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17694,7 +17678,7 @@ defparam \W_rf_wr_data[3]~8 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[4] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[4]~18_combout ),
+	.d(\av_ld_byte0_data_nxt[4]~20_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17744,7 +17728,7 @@ defparam \W_rf_wr_data[4]~10 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[5] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[5]~19_combout ),
+	.d(\av_ld_byte0_data_nxt[5]~21_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17769,7 +17753,7 @@ defparam \W_rf_wr_data[5]~11 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[6] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[6]~20_combout ),
+	.d(\av_ld_byte0_data_nxt[6]~22_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -17794,7 +17778,7 @@ defparam \W_rf_wr_data[6]~12 .sum_lutc_input = "datac";
 
 dffeas \av_ld_byte0_data[7] (
 	.clk(wire_pll7_clk_0),
-	.d(\av_ld_byte0_data_nxt[7]~21_combout ),
+	.d(\av_ld_byte0_data_nxt[7]~23_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -18083,8 +18067,8 @@ defparam \W_rf_wr_data[8]~32 .lut_mask = 16'hB8FF;
 defparam \W_rf_wr_data[8]~32 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_wr_dst_reg~0 (
-	.dataa(\Equal0~16_combout ),
-	.datab(\Equal0~14_combout ),
+	.dataa(\Equal0~15_combout ),
+	.datab(\Equal0~13_combout ),
 	.datac(\D_iw[5]~q ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
@@ -18094,7 +18078,7 @@ defparam \D_wr_dst_reg~0 .lut_mask = 16'hEFFF;
 defparam \D_wr_dst_reg~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_wr_dst_reg~1 (
-	.dataa(\Equal0~17_combout ),
+	.dataa(\Equal0~16_combout ),
 	.datab(\D_iw[1]~q ),
 	.datac(\D_iw[2]~q ),
 	.datad(\R_ctrl_br_nxt~0_combout ),
@@ -18138,9 +18122,9 @@ defparam \D_ctrl_implicit_dst_eretaddr~4 .lut_mask = 16'hFBFF;
 defparam \D_ctrl_implicit_dst_eretaddr~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~5 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_ctrl_implicit_dst_eretaddr~3_combout ),
-	.datac(\D_ctrl_exception~11_combout ),
+	.datac(\D_ctrl_exception~7_combout ),
 	.datad(\D_ctrl_implicit_dst_eretaddr~4_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_implicit_dst_eretaddr~5_combout ),
@@ -18150,8 +18134,8 @@ defparam \D_ctrl_implicit_dst_eretaddr~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~6 (
 	.dataa(\D_ctrl_implicit_dst_eretaddr~5_combout ),
-	.datab(\D_ctrl_exception~17_combout ),
-	.datac(\D_ctrl_exception~21_combout ),
+	.datab(\D_ctrl_exception~13_combout ),
+	.datac(\D_ctrl_exception~19_combout ),
 	.datad(\D_ctrl_implicit_dst_eretaddr~2_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_implicit_dst_eretaddr~6_combout ),
@@ -18171,98 +18155,87 @@ defparam \D_dst_regnum[1]~1 .lut_mask = 16'hFEFF;
 defparam \D_dst_regnum[1]~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_dst_regnum[2]~2 (
-	.dataa(\Equal0~14_combout ),
+	.dataa(\Equal0~4_combout ),
 	.datab(\D_iw[4]~q ),
-	.datac(\Equal0~4_combout ),
-	.datad(\D_iw[5]~q ),
+	.datac(\D_iw[5]~q ),
+	.datad(\D_ctrl_implicit_dst_eretaddr~5_combout ),
 	.cin(gnd),
 	.combout(\D_dst_regnum[2]~2_combout ),
 	.cout());
-defparam \D_dst_regnum[2]~2 .lut_mask = 16'hDF1F;
+defparam \D_dst_regnum[2]~2 .lut_mask = 16'hFFBF;
 defparam \D_dst_regnum[2]~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_dst_regnum[2]~3 (
-	.dataa(\D_ctrl_implicit_dst_eretaddr~5_combout ),
-	.datab(\D_ctrl_force_src2_zero~0_combout ),
-	.datac(\D_iw[4]~q ),
+	.dataa(\D_ctrl_exception~13_combout ),
+	.datab(\D_ctrl_exception~19_combout ),
+	.datac(\D_ctrl_implicit_dst_eretaddr~2_combout ),
 	.datad(\D_dst_regnum[2]~2_combout ),
 	.cin(gnd),
 	.combout(\D_dst_regnum[2]~3_combout ),
 	.cout());
-defparam \D_dst_regnum[2]~3 .lut_mask = 16'hFFDF;
+defparam \D_dst_regnum[2]~3 .lut_mask = 16'hFEFF;
 defparam \D_dst_regnum[2]~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_dst_regnum[2]~4 (
-	.dataa(\D_ctrl_exception~17_combout ),
-	.datab(\D_ctrl_exception~21_combout ),
-	.datac(\D_ctrl_implicit_dst_eretaddr~1_combout ),
+	.dataa(\D_iw[24]~q ),
+	.datab(\D_iw[19]~q ),
+	.datac(\D_ctrl_b_is_dst~2_combout ),
 	.datad(\D_dst_regnum[2]~3_combout ),
 	.cin(gnd),
 	.combout(\D_dst_regnum[2]~4_combout ),
 	.cout());
-defparam \D_dst_regnum[2]~4 .lut_mask = 16'hFFFE;
+defparam \D_dst_regnum[2]~4 .lut_mask = 16'hACFF;
 defparam \D_dst_regnum[2]~4 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_dst_regnum[2]~5 (
-	.dataa(\D_iw[24]~q ),
-	.datab(\D_iw[19]~q ),
-	.datac(\D_ctrl_b_is_dst~2_combout ),
-	.datad(\D_dst_regnum[2]~4_combout ),
-	.cin(gnd),
-	.combout(\D_dst_regnum[2]~5_combout ),
-	.cout());
-defparam \D_dst_regnum[2]~5 .lut_mask = 16'hACFF;
-defparam \D_dst_regnum[2]~5 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \D_dst_regnum[4]~6 (
+cycloneive_lcell_comb \D_dst_regnum[4]~5 (
 	.dataa(\D_iw[26]~q ),
 	.datab(\D_iw[21]~q ),
 	.datac(\D_ctrl_b_is_dst~2_combout ),
-	.datad(\D_dst_regnum[2]~4_combout ),
+	.datad(\D_dst_regnum[2]~3_combout ),
 	.cin(gnd),
-	.combout(\D_dst_regnum[4]~6_combout ),
+	.combout(\D_dst_regnum[4]~5_combout ),
 	.cout());
-defparam \D_dst_regnum[4]~6 .lut_mask = 16'hACFF;
-defparam \D_dst_regnum[4]~6 .sum_lutc_input = "datac";
+defparam \D_dst_regnum[4]~5 .lut_mask = 16'hACFF;
+defparam \D_dst_regnum[4]~5 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_dst_regnum[3]~7 (
+cycloneive_lcell_comb \D_dst_regnum[3]~6 (
 	.dataa(\D_iw[25]~q ),
 	.datab(\D_iw[20]~q ),
 	.datac(\D_ctrl_b_is_dst~2_combout ),
-	.datad(\D_dst_regnum[2]~4_combout ),
+	.datad(\D_dst_regnum[2]~3_combout ),
 	.cin(gnd),
-	.combout(\D_dst_regnum[3]~7_combout ),
+	.combout(\D_dst_regnum[3]~6_combout ),
 	.cout());
-defparam \D_dst_regnum[3]~7 .lut_mask = 16'hACFF;
-defparam \D_dst_regnum[3]~7 .sum_lutc_input = "datac";
+defparam \D_dst_regnum[3]~6 .lut_mask = 16'hACFF;
+defparam \D_dst_regnum[3]~6 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~19 (
+cycloneive_lcell_comb \Equal0~18 (
 	.dataa(\D_dst_regnum[1]~1_combout ),
-	.datab(\D_dst_regnum[2]~5_combout ),
-	.datac(\D_dst_regnum[4]~6_combout ),
-	.datad(\D_dst_regnum[3]~7_combout ),
+	.datab(\D_dst_regnum[2]~4_combout ),
+	.datac(\D_dst_regnum[4]~5_combout ),
+	.datad(\D_dst_regnum[3]~6_combout ),
 	.cin(gnd),
-	.combout(\Equal0~19_combout ),
+	.combout(\Equal0~18_combout ),
 	.cout());
-defparam \Equal0~19 .lut_mask = 16'h7FFF;
-defparam \Equal0~19 .sum_lutc_input = "datac";
+defparam \Equal0~18 .lut_mask = 16'h7FFF;
+defparam \Equal0~18 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_dst_regnum[0]~8 (
+cycloneive_lcell_comb \D_dst_regnum[0]~7 (
 	.dataa(\D_iw[22]~q ),
 	.datab(\D_iw[17]~q ),
 	.datac(\D_ctrl_b_is_dst~2_combout ),
-	.datad(\D_dst_regnum[2]~4_combout ),
+	.datad(\D_dst_regnum[2]~3_combout ),
 	.cin(gnd),
-	.combout(\D_dst_regnum[0]~8_combout ),
+	.combout(\D_dst_regnum[0]~7_combout ),
 	.cout());
-defparam \D_dst_regnum[0]~8 .lut_mask = 16'hACFF;
-defparam \D_dst_regnum[0]~8 .sum_lutc_input = "datac";
+defparam \D_dst_regnum[0]~7 .lut_mask = 16'hACFF;
+defparam \D_dst_regnum[0]~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_wr_dst_reg~2 (
 	.dataa(\D_wr_dst_reg~0_combout ),
 	.datab(\D_wr_dst_reg~1_combout ),
-	.datac(\Equal0~19_combout ),
-	.datad(\D_dst_regnum[0]~8_combout ),
+	.datac(\Equal0~18_combout ),
+	.datad(\D_dst_regnum[0]~7_combout ),
 	.cin(gnd),
 	.combout(\D_wr_dst_reg~2_combout ),
 	.cout());
@@ -18367,17 +18340,6 @@ cycloneive_lcell_comb \E_control_rd_data[1]~4 (
 	.cout());
 defparam \E_control_rd_data[1]~4 .lut_mask = 16'hACFF;
 defparam \E_control_rd_data[1]~4 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[2]~14 (
-	.dataa(\av_ld_byte1_data[2]~q ),
-	.datab(src_data_2),
-	.datac(src_data_21),
-	.datad(\av_ld_rshift8~1_combout ),
-	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[2]~14_combout ),
-	.cout());
-defparam \av_ld_byte0_data_nxt[2]~14 .lut_mask = 16'hFAFC;
-defparam \av_ld_byte0_data_nxt[2]~14 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \E_control_rd_data[2]~5 (
 	.dataa(\W_ienable_reg[2]~q ),
@@ -18585,32 +18547,32 @@ defparam \av_fill_bit~0 .lut_mask = 16'hFAFC;
 defparam \av_fill_bit~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~0 (
-	.dataa(source_addr_1),
-	.datab(src0_valid),
-	.datac(out_payload_10),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\av_ld_byte3_data_nxt~0_combout ),
-	.cout());
-defparam \av_ld_byte3_data_nxt~0 .lut_mask = 16'hFEFE;
-defparam \av_ld_byte3_data_nxt~0 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \av_ld_byte3_data_nxt~1 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(av_readdata_pre_26),
 	.datac(mem_84_0),
 	.datad(mem_66_0),
 	.cin(gnd),
+	.combout(\av_ld_byte3_data_nxt~0_combout ),
+	.cout());
+defparam \av_ld_byte3_data_nxt~0 .lut_mask = 16'hEFFF;
+defparam \av_ld_byte3_data_nxt~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_ld_byte3_data_nxt~1 (
+	.dataa(out_data_buffer_261),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped),
+	.datad(dreg_0),
+	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~1_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~1 .lut_mask = 16'hEFFF;
+defparam \av_ld_byte3_data_nxt~1 .lut_mask = 16'hAFFA;
 defparam \av_ld_byte3_data_nxt~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~2 (
-	.dataa(read_latency_shift_reg_02),
-	.datab(read_latency_shift_reg_01),
-	.datac(readdata_26),
-	.datad(av_readdata_pre_301),
+	.dataa(src_payload1),
+	.datab(\av_ld_byte3_data_nxt~1_combout ),
+	.datac(read_latency_shift_reg_01),
+	.datad(readdata_26),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~2_combout ),
 	.cout());
@@ -18618,10 +18580,10 @@ defparam \av_ld_byte3_data_nxt~2 .lut_mask = 16'hFFFE;
 defparam \av_ld_byte3_data_nxt~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~3 (
-	.dataa(\av_ld_byte3_data_nxt~1_combout ),
+	.dataa(\av_ld_byte3_data_nxt~0_combout ),
 	.datab(\av_ld_byte3_data_nxt~2_combout ),
-	.datac(out_valid1),
-	.datad(out_data_buffer_261),
+	.datac(out_payload_10),
+	.datad(src_payload4),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~3_combout ),
 	.cout());
@@ -18630,24 +18592,24 @@ defparam \av_ld_byte3_data_nxt~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~4 (
 	.dataa(\av_fill_bit~0_combout ),
-	.datab(\av_ld_byte3_data_nxt~0_combout ),
-	.datac(\av_ld_byte3_data_nxt~3_combout ),
+	.datab(\av_ld_byte3_data_nxt~3_combout ),
+	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~4_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~4 .lut_mask = 16'hFAFC;
+defparam \av_ld_byte3_data_nxt~4 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~5 (
-	.dataa(read_latency_shift_reg_0),
-	.datab(av_readdata_pre_25),
-	.datac(mem_84_0),
-	.datad(mem_66_0),
+	.dataa(source_addr_1),
+	.datab(src0_valid),
+	.datac(out_payload_9),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~5_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~5 .lut_mask = 16'hEFFF;
+defparam \av_ld_byte3_data_nxt~5 .lut_mask = 16'hFEFE;
 defparam \av_ld_byte3_data_nxt~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~6 (
@@ -18662,25 +18624,25 @@ defparam \av_ld_byte3_data_nxt~6 .lut_mask = 16'hFFFE;
 defparam \av_ld_byte3_data_nxt~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~7 (
-	.dataa(\av_ld_byte3_data_nxt~5_combout ),
-	.datab(\av_ld_byte3_data_nxt~6_combout ),
-	.datac(out_payload_9),
-	.datad(src_payload3),
+	.dataa(\av_ld_byte3_data_nxt~6_combout ),
+	.datab(src0_valid1),
+	.datac(av_readdata_pre_25),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~7_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~7 .lut_mask = 16'hFFFE;
+defparam \av_ld_byte3_data_nxt~7 .lut_mask = 16'hFEFE;
 defparam \av_ld_byte3_data_nxt~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~8 (
 	.dataa(\av_fill_bit~0_combout ),
-	.datab(\av_ld_byte3_data_nxt~7_combout ),
-	.datac(gnd),
+	.datab(\av_ld_byte3_data_nxt~5_combout ),
+	.datac(\av_ld_byte3_data_nxt~7_combout ),
 	.datad(\av_ld_aligning_data~q ),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~8_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~8 .lut_mask = 16'hAACC;
+defparam \av_ld_byte3_data_nxt~8 .lut_mask = 16'hFAFC;
 defparam \av_ld_byte3_data_nxt~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~9 (
@@ -18709,7 +18671,7 @@ cycloneive_lcell_comb \av_ld_byte3_data_nxt~11 (
 	.dataa(\av_ld_byte3_data_nxt~9_combout ),
 	.datab(\av_ld_byte3_data_nxt~10_combout ),
 	.datac(out_payload_8),
-	.datad(src_payload3),
+	.datad(src_payload4),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~11_combout ),
 	.cout());
@@ -18794,32 +18756,32 @@ defparam \av_ld_byte3_data_nxt~17 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~17 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~18 (
-	.dataa(source_addr_1),
-	.datab(src0_valid),
-	.datac(out_payload_12),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\av_ld_byte3_data_nxt~18_combout ),
-	.cout());
-defparam \av_ld_byte3_data_nxt~18 .lut_mask = 16'hFEFE;
-defparam \av_ld_byte3_data_nxt~18 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \av_ld_byte3_data_nxt~19 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(av_readdata_pre_28),
 	.datac(mem_84_0),
 	.datad(mem_66_0),
 	.cin(gnd),
+	.combout(\av_ld_byte3_data_nxt~18_combout ),
+	.cout());
+defparam \av_ld_byte3_data_nxt~18 .lut_mask = 16'hEFFF;
+defparam \av_ld_byte3_data_nxt~18 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_ld_byte3_data_nxt~19 (
+	.dataa(out_data_buffer_281),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped),
+	.datad(dreg_0),
+	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~19_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~19 .lut_mask = 16'hEFFF;
+defparam \av_ld_byte3_data_nxt~19 .lut_mask = 16'hAFFA;
 defparam \av_ld_byte3_data_nxt~19 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~20 (
-	.dataa(read_latency_shift_reg_02),
-	.datab(read_latency_shift_reg_01),
-	.datac(readdata_281),
-	.datad(av_readdata_pre_301),
+	.dataa(src_payload1),
+	.datab(\av_ld_byte3_data_nxt~19_combout ),
+	.datac(read_latency_shift_reg_01),
+	.datad(readdata_281),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~20_combout ),
 	.cout());
@@ -18827,10 +18789,10 @@ defparam \av_ld_byte3_data_nxt~20 .lut_mask = 16'hFFFE;
 defparam \av_ld_byte3_data_nxt~20 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~21 (
-	.dataa(\av_ld_byte3_data_nxt~19_combout ),
+	.dataa(\av_ld_byte3_data_nxt~18_combout ),
 	.datab(\av_ld_byte3_data_nxt~20_combout ),
-	.datac(out_valid1),
-	.datad(out_data_buffer_281),
+	.datac(out_payload_12),
+	.datad(src_payload4),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~21_combout ),
 	.cout());
@@ -18839,13 +18801,13 @@ defparam \av_ld_byte3_data_nxt~21 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~22 (
 	.dataa(\av_fill_bit~0_combout ),
-	.datab(\av_ld_byte3_data_nxt~18_combout ),
-	.datac(\av_ld_byte3_data_nxt~21_combout ),
+	.datab(\av_ld_byte3_data_nxt~21_combout ),
+	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~22_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~22 .lut_mask = 16'hFAFC;
+defparam \av_ld_byte3_data_nxt~22 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~22 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~23 (
@@ -18874,7 +18836,7 @@ cycloneive_lcell_comb \av_ld_byte3_data_nxt~25 (
 	.dataa(\av_ld_byte3_data_nxt~23_combout ),
 	.datab(\av_ld_byte3_data_nxt~24_combout ),
 	.datac(out_payload_13),
-	.datad(src_payload3),
+	.datad(src_payload4),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~25_combout ),
 	.cout());
@@ -18893,32 +18855,32 @@ defparam \av_ld_byte3_data_nxt~26 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~26 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~27 (
-	.dataa(source_addr_1),
-	.datab(src0_valid),
-	.datac(out_payload_14),
-	.datad(gnd),
+	.dataa(out_data_buffer_301),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped),
+	.datad(dreg_0),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~27_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~27 .lut_mask = 16'hFEFE;
+defparam \av_ld_byte3_data_nxt~27 .lut_mask = 16'hAFFA;
 defparam \av_ld_byte3_data_nxt~27 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~28 (
-	.dataa(read_latency_shift_reg_0),
-	.datab(av_readdata_pre_30),
-	.datac(mem_84_0),
-	.datad(mem_66_0),
-	.cin(gnd),
-	.combout(\av_ld_byte3_data_nxt~28_combout ),
-	.cout());
-defparam \av_ld_byte3_data_nxt~28 .lut_mask = 16'hEFFF;
-defparam \av_ld_byte3_data_nxt~28 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \av_ld_byte3_data_nxt~29 (
 	.dataa(read_latency_shift_reg_02),
 	.datab(read_latency_shift_reg_01),
 	.datac(readdata_301),
 	.datad(av_readdata_pre_301),
+	.cin(gnd),
+	.combout(\av_ld_byte3_data_nxt~28_combout ),
+	.cout());
+defparam \av_ld_byte3_data_nxt~28 .lut_mask = 16'hFFFE;
+defparam \av_ld_byte3_data_nxt~28 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_ld_byte3_data_nxt~29 (
+	.dataa(\av_ld_byte3_data_nxt~27_combout ),
+	.datab(\av_ld_byte3_data_nxt~28_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_30),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~29_combout ),
 	.cout());
@@ -18926,10 +18888,10 @@ defparam \av_ld_byte3_data_nxt~29 .lut_mask = 16'hFFFE;
 defparam \av_ld_byte3_data_nxt~29 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~30 (
-	.dataa(\av_ld_byte3_data_nxt~28_combout ),
-	.datab(\av_ld_byte3_data_nxt~29_combout ),
-	.datac(out_valid1),
-	.datad(out_data_buffer_301),
+	.dataa(\av_ld_byte3_data_nxt~29_combout ),
+	.datab(source_addr_1),
+	.datac(src0_valid),
+	.datad(out_payload_14),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~30_combout ),
 	.cout());
@@ -18938,13 +18900,13 @@ defparam \av_ld_byte3_data_nxt~30 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~31 (
 	.dataa(\av_fill_bit~0_combout ),
-	.datab(\av_ld_byte3_data_nxt~27_combout ),
-	.datac(\av_ld_byte3_data_nxt~30_combout ),
+	.datab(\av_ld_byte3_data_nxt~30_combout ),
+	.datac(gnd),
 	.datad(\av_ld_aligning_data~q ),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~31_combout ),
 	.cout());
-defparam \av_ld_byte3_data_nxt~31 .lut_mask = 16'hFAFC;
+defparam \av_ld_byte3_data_nxt~31 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~31 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \av_ld_byte3_data_nxt~32 (
@@ -18973,7 +18935,7 @@ cycloneive_lcell_comb \av_ld_byte3_data_nxt~34 (
 	.dataa(\av_ld_byte3_data_nxt~32_combout ),
 	.datab(\av_ld_byte3_data_nxt~33_combout ),
 	.datac(out_payload_15),
-	.datad(src_payload3),
+	.datad(src_payload4),
 	.cin(gnd),
 	.combout(\av_ld_byte3_data_nxt~34_combout ),
 	.cout());
@@ -18991,82 +18953,93 @@ cycloneive_lcell_comb \av_ld_byte3_data_nxt~35 (
 defparam \av_ld_byte3_data_nxt~35 .lut_mask = 16'hAACC;
 defparam \av_ld_byte3_data_nxt~35 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[0]~15 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[0]~16 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[0]~q ),
 	.datad(src_data_0),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[0]~15_combout ),
+	.combout(\av_ld_byte0_data_nxt[0]~16_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[0]~15 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[0]~15 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[0]~16 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[0]~16 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[1]~16 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[1]~17 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[1]~q ),
 	.datad(src_data_12),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[1]~16_combout ),
+	.combout(\av_ld_byte0_data_nxt[1]~17_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[1]~16 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[1]~16 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[1]~17 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[1]~17 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[3]~17 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[2]~18 (
+	.dataa(\av_ld_aligning_data~q ),
+	.datab(\av_ld_rshift8~0_combout ),
+	.datac(\av_ld_byte1_data[2]~q ),
+	.datad(src_data_2),
+	.cin(gnd),
+	.combout(\av_ld_byte0_data_nxt[2]~18_combout ),
+	.cout());
+defparam \av_ld_byte0_data_nxt[2]~18 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[2]~18 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[3]~19 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[3]~q ),
 	.datad(src_data_31),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[3]~17_combout ),
+	.combout(\av_ld_byte0_data_nxt[3]~19_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[3]~17 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[3]~17 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[3]~19 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[3]~19 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[4]~18 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[4]~20 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[4]~q ),
 	.datad(src_data_41),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[4]~18_combout ),
+	.combout(\av_ld_byte0_data_nxt[4]~20_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[4]~18 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[4]~18 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[4]~20 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[4]~20 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[5]~19 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[5]~21 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[5]~q ),
 	.datad(src_data_51),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[5]~19_combout ),
+	.combout(\av_ld_byte0_data_nxt[5]~21_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[5]~19 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[5]~19 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[5]~21 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[5]~21 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[6]~20 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[6]~22 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[6]~q ),
 	.datad(src_data_6),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[6]~20_combout ),
+	.combout(\av_ld_byte0_data_nxt[6]~22_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[6]~20 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[6]~20 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[6]~22 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[6]~22 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \av_ld_byte0_data_nxt[7]~21 (
+cycloneive_lcell_comb \av_ld_byte0_data_nxt[7]~23 (
 	.dataa(\av_ld_aligning_data~q ),
 	.datab(\av_ld_rshift8~0_combout ),
 	.datac(\av_ld_byte1_data[7]~q ),
 	.datad(src_data_7),
 	.cin(gnd),
-	.combout(\av_ld_byte0_data_nxt[7]~21_combout ),
+	.combout(\av_ld_byte0_data_nxt[7]~23_combout ),
 	.cout());
-defparam \av_ld_byte0_data_nxt[7]~21 .lut_mask = 16'hFFF6;
-defparam \av_ld_byte0_data_nxt[7]~21 .sum_lutc_input = "datac";
+defparam \av_ld_byte0_data_nxt[7]~23 .lut_mask = 16'hFFF6;
+defparam \av_ld_byte0_data_nxt[7]~23 .sum_lutc_input = "datac";
 
 dffeas \W_alu_result[6] (
 	.clk(wire_pll7_clk_0),
@@ -20549,41 +20522,41 @@ dffeas \D_iw[4] (
 defparam \D_iw[4] .is_wysiwyg = "true";
 defparam \D_iw[4] .power_up = "low";
 
-cycloneive_lcell_comb \F_iw[5]~25 (
+cycloneive_lcell_comb \F_iw[1]~7 (
 	.dataa(out_valid),
 	.datab(src1_valid),
-	.datac(av_readdata_pre_5),
-	.datad(out_data_buffer_5),
+	.datac(av_readdata_pre_1),
+	.datad(out_data_buffer_1),
 	.cin(gnd),
-	.combout(\F_iw[5]~25_combout ),
+	.combout(\F_iw[1]~7_combout ),
 	.cout());
-defparam \F_iw[5]~25 .lut_mask = 16'hFFFE;
-defparam \F_iw[5]~25 .sum_lutc_input = "datac";
+defparam \F_iw[1]~7 .lut_mask = 16'hFFFE;
+defparam \F_iw[1]~7 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \F_iw[5]~26 (
-	.dataa(\F_iw[5]~25_combout ),
+cycloneive_lcell_comb \F_iw[1]~8 (
+	.dataa(\F_iw[1]~7_combout ),
 	.datab(src1_valid1),
-	.datac(src_data_5),
+	.datac(src_data_1),
 	.datad(\D_iw[1]~2_combout ),
 	.cin(gnd),
-	.combout(\F_iw[5]~26_combout ),
+	.combout(\F_iw[1]~8_combout ),
 	.cout());
-defparam \F_iw[5]~26 .lut_mask = 16'hFEFF;
-defparam \F_iw[5]~26 .sum_lutc_input = "datac";
+defparam \F_iw[1]~8 .lut_mask = 16'hFEFF;
+defparam \F_iw[1]~8 .sum_lutc_input = "datac";
 
-dffeas \D_iw[5] (
+dffeas \D_iw[1] (
 	.clk(wire_pll7_clk_0),
-	.d(\F_iw[5]~26_combout ),
+	.d(\F_iw[1]~8_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
 	.ena(\F_valid~0_combout ),
-	.q(\D_iw[5]~q ),
+	.q(\D_iw[1]~q ),
 	.prn(vcc));
-defparam \D_iw[5] .is_wysiwyg = "true";
-defparam \D_iw[5] .power_up = "low";
+defparam \D_iw[1] .is_wysiwyg = "true";
+defparam \D_iw[1] .power_up = "low";
 
 cycloneive_lcell_comb \F_iw[0]~4 (
 	.dataa(out_valid),
@@ -20620,42 +20593,6 @@ dffeas \D_iw[0] (
 	.prn(vcc));
 defparam \D_iw[0] .is_wysiwyg = "true";
 defparam \D_iw[0] .power_up = "low";
-
-cycloneive_lcell_comb \F_iw[1]~7 (
-	.dataa(out_valid),
-	.datab(src1_valid),
-	.datac(av_readdata_pre_1),
-	.datad(out_data_buffer_1),
-	.cin(gnd),
-	.combout(\F_iw[1]~7_combout ),
-	.cout());
-defparam \F_iw[1]~7 .lut_mask = 16'hFFFE;
-defparam \F_iw[1]~7 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \F_iw[1]~8 (
-	.dataa(\F_iw[1]~7_combout ),
-	.datab(src1_valid1),
-	.datac(src_data_1),
-	.datad(\D_iw[1]~2_combout ),
-	.cin(gnd),
-	.combout(\F_iw[1]~8_combout ),
-	.cout());
-defparam \F_iw[1]~8 .lut_mask = 16'hFEFF;
-defparam \F_iw[1]~8 .sum_lutc_input = "datac";
-
-dffeas \D_iw[1] (
-	.clk(wire_pll7_clk_0),
-	.d(\F_iw[1]~8_combout ),
-	.asdata(vcc),
-	.clrn(!r_sync_rst),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\F_valid~0_combout ),
-	.q(\D_iw[1]~q ),
-	.prn(vcc));
-defparam \D_iw[1] .is_wysiwyg = "true";
-defparam \D_iw[1] .power_up = "low";
 
 cycloneive_lcell_comb \F_iw[3]~12 (
 	.dataa(out_valid),
@@ -20729,27 +20666,63 @@ dffeas \D_iw[2] (
 defparam \D_iw[2] .is_wysiwyg = "true";
 defparam \D_iw[2] .power_up = "low";
 
-cycloneive_lcell_comb \Equal0~7 (
+cycloneive_lcell_comb \Equal0~2 (
 	.dataa(\D_iw[1]~q ),
-	.datab(\D_iw[3]~q ),
-	.datac(\D_iw[2]~q ),
+	.datab(\D_iw[0]~q ),
+	.datac(\D_iw[3]~q ),
+	.datad(\D_iw[2]~q ),
+	.cin(gnd),
+	.combout(\Equal0~2_combout ),
+	.cout());
+defparam \Equal0~2 .lut_mask = 16'hFBFF;
+defparam \Equal0~2 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \F_iw[5]~25 (
+	.dataa(out_valid),
+	.datab(src1_valid),
+	.datac(av_readdata_pre_5),
+	.datad(out_data_buffer_5),
+	.cin(gnd),
+	.combout(\F_iw[5]~25_combout ),
+	.cout());
+defparam \F_iw[5]~25 .lut_mask = 16'hFFFE;
+defparam \F_iw[5]~25 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \F_iw[5]~26 (
+	.dataa(\F_iw[5]~25_combout ),
+	.datab(src1_valid1),
+	.datac(src_data_5),
+	.datad(\D_iw[1]~2_combout ),
+	.cin(gnd),
+	.combout(\F_iw[5]~26_combout ),
+	.cout());
+defparam \F_iw[5]~26 .lut_mask = 16'hFEFF;
+defparam \F_iw[5]~26 .sum_lutc_input = "datac";
+
+dffeas \D_iw[5] (
+	.clk(wire_pll7_clk_0),
+	.d(\F_iw[5]~26_combout ),
+	.asdata(vcc),
+	.clrn(!r_sync_rst),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\F_valid~0_combout ),
+	.q(\D_iw[5]~q ),
+	.prn(vcc));
+defparam \D_iw[5] .is_wysiwyg = "true";
+defparam \D_iw[5] .power_up = "low";
+
+cycloneive_lcell_comb \Equal0~7 (
+	.dataa(\D_iw[4]~q ),
+	.datab(\Equal0~2_combout ),
+	.datac(\D_iw[5]~q ),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(\Equal0~7_combout ),
 	.cout());
-defparam \Equal0~7 .lut_mask = 16'hEFEF;
+defparam \Equal0~7 .lut_mask = 16'hFEFE;
 defparam \Equal0~7 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal0~8 (
-	.dataa(\D_iw[4]~q ),
-	.datab(\D_iw[5]~q ),
-	.datac(\D_iw[0]~q ),
-	.datad(\Equal0~7_combout ),
-	.cin(gnd),
-	.combout(\Equal0~8_combout ),
-	.cout());
-defparam \Equal0~8 .lut_mask = 16'hFFEF;
-defparam \Equal0~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \F_iw[15]~30 (
 	.dataa(out_valid),
@@ -21178,7 +21151,7 @@ defparam \D_ctrl_shift_rot~2 .lut_mask = 16'hACFF;
 defparam \D_ctrl_shift_rot~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_shift_rot~3 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_ctrl_shift_rot~0_combout ),
 	.datac(\D_ctrl_shift_rot~1_combout ),
 	.datad(\D_ctrl_shift_rot~2_combout ),
@@ -21249,16 +21222,16 @@ dffeas R_ctrl_hi_imm16(
 defparam R_ctrl_hi_imm16.is_wysiwyg = "true";
 defparam R_ctrl_hi_imm16.power_up = "low";
 
-cycloneive_lcell_comb \Equal0~14 (
+cycloneive_lcell_comb \Equal0~13 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
 	.datac(\D_iw[3]~q ),
 	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\Equal0~14_combout ),
+	.combout(\Equal0~13_combout ),
 	.cout());
-defparam \Equal0~14 .lut_mask = 16'hDFFF;
-defparam \Equal0~14 .sum_lutc_input = "datac";
+defparam \Equal0~13 .lut_mask = 16'hDFFF;
+defparam \Equal0~13 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_alu_force_xor~14 (
 	.dataa(\D_iw[1]~q ),
@@ -21271,6 +21244,17 @@ cycloneive_lcell_comb \D_ctrl_alu_force_xor~14 (
 defparam \D_ctrl_alu_force_xor~14 .lut_mask = 16'hF6FF;
 defparam \D_ctrl_alu_force_xor~14 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Equal0~14 (
+	.dataa(\D_iw[1]~q ),
+	.datab(\D_iw[0]~q ),
+	.datac(\D_iw[3]~q ),
+	.datad(\D_iw[2]~q ),
+	.cin(gnd),
+	.combout(\Equal0~14_combout ),
+	.cout());
+defparam \Equal0~14 .lut_mask = 16'hFFFE;
+defparam \Equal0~14 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \Equal0~15 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
@@ -21279,25 +21263,14 @@ cycloneive_lcell_comb \Equal0~15 (
 	.cin(gnd),
 	.combout(\Equal0~15_combout ),
 	.cout());
-defparam \Equal0~15 .lut_mask = 16'hFFFE;
+defparam \Equal0~15 .lut_mask = 16'hFFFD;
 defparam \Equal0~15 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal0~16 (
-	.dataa(\D_iw[1]~q ),
-	.datab(\D_iw[0]~q ),
-	.datac(\D_iw[3]~q ),
-	.datad(\D_iw[2]~q ),
-	.cin(gnd),
-	.combout(\Equal0~16_combout ),
-	.cout());
-defparam \Equal0~16 .lut_mask = 16'hFFFD;
-defparam \Equal0~16 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~0 (
 	.dataa(\D_iw[5]~q ),
 	.datab(\D_ctrl_alu_force_xor~14_combout ),
-	.datac(\Equal0~15_combout ),
-	.datad(\Equal0~16_combout ),
+	.datac(\Equal0~14_combout ),
+	.datad(\Equal0~15_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_force_src2_zero~0_combout ),
 	.cout());
@@ -21349,7 +21322,7 @@ defparam \Equal62~8 .lut_mask = 16'hEFFF;
 defparam \Equal62~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~2 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_ctrl_force_src2_zero~1_combout ),
 	.datac(\Equal62~8_combout ),
 	.datad(\D_iw[15]~q ),
@@ -21359,31 +21332,20 @@ cycloneive_lcell_comb \D_ctrl_force_src2_zero~2 (
 defparam \D_ctrl_force_src2_zero~2 .lut_mask = 16'hFEFF;
 defparam \D_ctrl_force_src2_zero~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~13 (
+cycloneive_lcell_comb \Equal0~12 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
 	.datac(\D_iw[3]~q ),
 	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\Equal0~13_combout ),
+	.combout(\Equal0~12_combout ),
 	.cout());
-defparam \Equal0~13 .lut_mask = 16'hBFFF;
-defparam \Equal0~13 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal0~2 (
-	.dataa(\D_iw[1]~q ),
-	.datab(\D_iw[0]~q ),
-	.datac(\D_iw[3]~q ),
-	.datad(\D_iw[2]~q ),
-	.cin(gnd),
-	.combout(\Equal0~2_combout ),
-	.cout());
-defparam \Equal0~2 .lut_mask = 16'hFBFF;
-defparam \Equal0~2 .sum_lutc_input = "datac";
+defparam \Equal0~12 .lut_mask = 16'hBFFF;
+defparam \Equal0~12 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~3 (
 	.dataa(\D_iw[4]~q ),
-	.datab(\Equal0~13_combout ),
+	.datab(\Equal0~12_combout ),
 	.datac(\D_iw[5]~q ),
 	.datad(\Equal0~2_combout ),
 	.cin(gnd),
@@ -21417,7 +21379,7 @@ defparam \Equal62~9 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \D_ctrl_uncond_cti_non_br~1 (
 	.dataa(\D_iw[15]~q ),
 	.datab(gnd),
-	.datac(\Equal0~8_combout ),
+	.datac(\Equal0~7_combout ),
 	.datad(\Equal62~9_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_uncond_cti_non_br~1_combout ),
@@ -21458,16 +21420,16 @@ cycloneive_lcell_comb \D_op_cmpge~0 (
 defparam \D_op_cmpge~0 .lut_mask = 16'hFEFF;
 defparam \D_op_cmpge~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~13 (
+cycloneive_lcell_comb \D_ctrl_exception~9 (
 	.dataa(gnd),
 	.datab(\Equal62~4_combout ),
 	.datac(\Equal62~10_combout ),
 	.datad(\D_op_cmpge~0_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~13_combout ),
+	.combout(\D_ctrl_exception~9_combout ),
 	.cout());
-defparam \D_ctrl_exception~13 .lut_mask = 16'h3FFF;
-defparam \D_ctrl_exception~13 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~9 .lut_mask = 16'h3FFF;
+defparam \D_ctrl_exception~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal62~11 (
 	.dataa(\D_iw[11]~q ),
@@ -21491,16 +21453,16 @@ cycloneive_lcell_comb \D_op_opx_rsv17~0 (
 defparam \D_op_opx_rsv17~0 .lut_mask = 16'hFEFF;
 defparam \D_op_opx_rsv17~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~14 (
+cycloneive_lcell_comb \D_ctrl_exception~10 (
 	.dataa(gnd),
 	.datab(\Equal62~9_combout ),
 	.datac(\Equal62~11_combout ),
 	.datad(\D_op_opx_rsv17~0_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~14_combout ),
+	.combout(\D_ctrl_exception~10_combout ),
 	.cout());
-defparam \D_ctrl_exception~14 .lut_mask = 16'h3FFF;
-defparam \D_ctrl_exception~14 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~10 .lut_mask = 16'h3FFF;
+defparam \D_ctrl_exception~10 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal62~2 (
 	.dataa(\D_iw[11]~q ),
@@ -21524,82 +21486,49 @@ cycloneive_lcell_comb \D_op_opx_rsv00~0 (
 defparam \D_op_opx_rsv00~0 .lut_mask = 16'hFEFF;
 defparam \D_op_opx_rsv00~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~15 (
+cycloneive_lcell_comb \D_ctrl_exception~11 (
 	.dataa(\D_iw[14]~q ),
 	.datab(\Equal62~2_combout ),
 	.datac(\Equal62~0_combout ),
 	.datad(\D_op_opx_rsv00~0_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~15_combout ),
+	.combout(\D_ctrl_exception~11_combout ),
 	.cout());
-defparam \D_ctrl_exception~15 .lut_mask = 16'hBFFF;
-defparam \D_ctrl_exception~15 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~11 .lut_mask = 16'hBFFF;
+defparam \D_ctrl_exception~11 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~16 (
+cycloneive_lcell_comb \D_ctrl_exception~12 (
 	.dataa(\D_iw[14]~q ),
 	.datab(\Equal62~5_combout ),
 	.datac(\Equal62~6_combout ),
 	.datad(\D_op_opx_rsv00~0_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~16_combout ),
+	.combout(\D_ctrl_exception~12_combout ),
 	.cout());
-defparam \D_ctrl_exception~16 .lut_mask = 16'hBFFF;
-defparam \D_ctrl_exception~16 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~12 .lut_mask = 16'hBFFF;
+defparam \D_ctrl_exception~12 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~17 (
-	.dataa(\D_ctrl_exception~13_combout ),
-	.datab(\D_ctrl_exception~14_combout ),
-	.datac(\D_ctrl_exception~15_combout ),
-	.datad(\D_ctrl_exception~16_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~13 (
+	.dataa(\D_ctrl_exception~9_combout ),
+	.datab(\D_ctrl_exception~10_combout ),
+	.datac(\D_ctrl_exception~11_combout ),
+	.datad(\D_ctrl_exception~12_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~17_combout ),
+	.combout(\D_ctrl_exception~13_combout ),
 	.cout());
-defparam \D_ctrl_exception~17 .lut_mask = 16'hFFFE;
-defparam \D_ctrl_exception~17 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~13 .lut_mask = 16'hFFFE;
+defparam \D_ctrl_exception~13 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~18 (
-	.dataa(\Equal62~6_combout ),
-	.datab(\D_op_opx_rsv17~0_combout ),
-	.datac(\Equal62~5_combout ),
-	.datad(\D_op_cmpge~0_combout ),
-	.cin(gnd),
-	.combout(\D_ctrl_exception~18_combout ),
-	.cout());
-defparam \D_ctrl_exception~18 .lut_mask = 16'h7FFF;
-defparam \D_ctrl_exception~18 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal0~12 (
-	.dataa(\D_iw[1]~q ),
-	.datab(\D_iw[0]~q ),
-	.datac(\D_iw[3]~q ),
-	.datad(\D_iw[2]~q ),
-	.cin(gnd),
-	.combout(\Equal0~12_combout ),
-	.cout());
-defparam \Equal0~12 .lut_mask = 16'hFDFF;
-defparam \Equal0~12 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \D_ctrl_exception~19 (
+cycloneive_lcell_comb \D_ctrl_exception~14 (
 	.dataa(\D_op_opx_rsv17~0_combout ),
-	.datab(\Equal0~12_combout ),
-	.datac(\Equal62~8_combout ),
-	.datad(gnd),
+	.datab(\Equal62~5_combout ),
+	.datac(\D_op_cmpge~0_combout ),
+	.datad(\Equal62~8_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~19_combout ),
+	.combout(\D_ctrl_exception~14_combout ),
 	.cout());
-defparam \D_ctrl_exception~19 .lut_mask = 16'h7F7F;
-defparam \D_ctrl_exception~19 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal62~12 (
-	.dataa(\D_iw[11]~q ),
-	.datab(\D_iw[13]~q ),
-	.datac(\D_iw[16]~q ),
-	.datad(\D_iw[12]~q ),
-	.cin(gnd),
-	.combout(\Equal62~12_combout ),
-	.cout());
-defparam \Equal62~12 .lut_mask = 16'hFFFE;
-defparam \Equal62~12 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~14 .lut_mask = 16'h7FFF;
+defparam \D_ctrl_exception~14 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal62~3 (
 	.dataa(\D_iw[11]~q ),
@@ -21612,6 +21541,28 @@ cycloneive_lcell_comb \Equal62~3 (
 defparam \Equal62~3 .lut_mask = 16'hFFFD;
 defparam \Equal62~3 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Equal62~12 (
+	.dataa(\D_iw[11]~q ),
+	.datab(\D_iw[13]~q ),
+	.datac(\D_iw[16]~q ),
+	.datad(\D_iw[12]~q ),
+	.cin(gnd),
+	.combout(\Equal62~12_combout ),
+	.cout());
+defparam \Equal62~12 .lut_mask = 16'hFFFE;
+defparam \Equal62~12 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \D_ctrl_exception~15 (
+	.dataa(\D_iw[15]~q ),
+	.datab(\D_iw[14]~q ),
+	.datac(\Equal62~12_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\D_ctrl_exception~15_combout ),
+	.cout());
+defparam \D_ctrl_exception~15 .lut_mask = 16'h7F7F;
+defparam \D_ctrl_exception~15 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \Equal62~1 (
 	.dataa(\D_iw[11]~q ),
 	.datab(\D_iw[13]~q ),
@@ -21623,38 +21574,60 @@ cycloneive_lcell_comb \Equal62~1 (
 defparam \Equal62~1 .lut_mask = 16'hF7FF;
 defparam \Equal62~1 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~20 (
-	.dataa(\Equal62~3_combout ),
-	.datab(\Equal62~13_combout ),
-	.datac(\Equal62~1_combout ),
-	.datad(\Equal62~9_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~16 (
+	.dataa(\Equal62~1_combout ),
+	.datab(\Equal62~9_combout ),
+	.datac(\Equal62~13_combout ),
+	.datad(gnd),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~20_combout ),
+	.combout(\D_ctrl_exception~16_combout ),
 	.cout());
-defparam \D_ctrl_exception~20 .lut_mask = 16'h7FFF;
-defparam \D_ctrl_exception~20 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~16 .lut_mask = 16'h7F7F;
+defparam \D_ctrl_exception~16 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~23 (
-	.dataa(\D_iw[15]~q ),
-	.datab(\D_iw[14]~q ),
-	.datac(\Equal62~12_combout ),
-	.datad(\D_ctrl_exception~20_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~17 (
+	.dataa(\D_op_opx_rsv63~0_combout ),
+	.datab(\Equal62~3_combout ),
+	.datac(\D_ctrl_exception~15_combout ),
+	.datad(\D_ctrl_exception~16_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~23_combout ),
+	.combout(\D_ctrl_exception~17_combout ),
 	.cout());
-defparam \D_ctrl_exception~23 .lut_mask = 16'hFF7F;
-defparam \D_ctrl_exception~23 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~17 .lut_mask = 16'hFFF7;
+defparam \D_ctrl_exception~17 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~21 (
-	.dataa(\Equal0~8_combout ),
-	.datab(\D_ctrl_exception~18_combout ),
-	.datac(\D_ctrl_exception~19_combout ),
-	.datad(\D_ctrl_exception~23_combout ),
+cycloneive_lcell_comb \Equal0~11 (
+	.dataa(\D_iw[1]~q ),
+	.datab(\D_iw[0]~q ),
+	.datac(\D_iw[3]~q ),
+	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~21_combout ),
+	.combout(\Equal0~11_combout ),
 	.cout());
-defparam \D_ctrl_exception~21 .lut_mask = 16'hFFFD;
-defparam \D_ctrl_exception~21 .sum_lutc_input = "datac";
+defparam \Equal0~11 .lut_mask = 16'hFDFF;
+defparam \Equal0~11 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \D_ctrl_exception~18 (
+	.dataa(\Equal62~6_combout ),
+	.datab(\D_op_opx_rsv17~0_combout ),
+	.datac(\Equal0~11_combout ),
+	.datad(\D_op_cmpge~0_combout ),
+	.cin(gnd),
+	.combout(\D_ctrl_exception~18_combout ),
+	.cout());
+defparam \D_ctrl_exception~18 .lut_mask = 16'h7FFF;
+defparam \D_ctrl_exception~18 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \D_ctrl_exception~19 (
+	.dataa(\Equal0~7_combout ),
+	.datab(\D_ctrl_exception~14_combout ),
+	.datac(\D_ctrl_exception~17_combout ),
+	.datad(\D_ctrl_exception~18_combout ),
+	.cin(gnd),
+	.combout(\D_ctrl_exception~19_combout ),
+	.cout());
+defparam \D_ctrl_exception~19 .lut_mask = 16'hFFFD;
+defparam \D_ctrl_exception~19 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal0~4 (
 	.dataa(\D_iw[1]~q ),
@@ -21678,66 +21651,66 @@ cycloneive_lcell_comb \D_ctrl_jmp_direct~0 (
 defparam \D_ctrl_jmp_direct~0 .lut_mask = 16'h0FFF;
 defparam \D_ctrl_jmp_direct~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~0 (
+cycloneive_lcell_comb \D_ctrl_retaddr~7 (
 	.dataa(\D_iw[15]~q ),
 	.datab(\Equal62~11_combout ),
 	.datac(\Equal62~8_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~0_combout ),
+	.combout(\D_ctrl_retaddr~7_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~0 .lut_mask = 16'hFEFE;
-defparam \D_ctrl_retaddr~0 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~7 .lut_mask = 16'hFEFE;
+defparam \D_ctrl_retaddr~7 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~1 (
+cycloneive_lcell_comb \D_ctrl_retaddr~8 (
 	.dataa(\Equal62~14_combout ),
 	.datab(\Equal62~13_combout ),
 	.datac(gnd),
 	.datad(\D_iw[15]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~1_combout ),
+	.combout(\D_ctrl_retaddr~8_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~1 .lut_mask = 16'hEEFF;
-defparam \D_ctrl_retaddr~1 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~8 .lut_mask = 16'hEEFF;
+defparam \D_ctrl_retaddr~8 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~2 (
-	.dataa(\Equal0~8_combout ),
+cycloneive_lcell_comb \D_ctrl_retaddr~9 (
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[14]~q ),
-	.datac(\D_ctrl_retaddr~0_combout ),
-	.datad(\D_ctrl_retaddr~1_combout ),
+	.datac(\D_ctrl_retaddr~7_combout ),
+	.datad(\D_ctrl_retaddr~8_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~2_combout ),
+	.combout(\D_ctrl_retaddr~9_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~2 .lut_mask = 16'hFFFE;
-defparam \D_ctrl_retaddr~2 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~9 .lut_mask = 16'hFFFE;
+defparam \D_ctrl_retaddr~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~5 (
 	.dataa(\Equal0~4_combout ),
-	.datab(\Equal0~13_combout ),
+	.datab(\Equal0~12_combout ),
 	.datac(\D_ctrl_jmp_direct~0_combout ),
-	.datad(\D_ctrl_retaddr~2_combout ),
+	.datad(\D_ctrl_retaddr~9_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_force_src2_zero~5_combout ),
 	.cout());
 defparam \D_ctrl_force_src2_zero~5 .lut_mask = 16'h7FFF;
 defparam \D_ctrl_force_src2_zero~5 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~18 (
+cycloneive_lcell_comb \Equal0~17 (
 	.dataa(\Equal0~2_combout ),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(\D_iw[5]~q ),
 	.cin(gnd),
-	.combout(\Equal0~18_combout ),
+	.combout(\Equal0~17_combout ),
 	.cout());
-defparam \Equal0~18 .lut_mask = 16'hAAFF;
-defparam \Equal0~18 .sum_lutc_input = "datac";
+defparam \Equal0~17 .lut_mask = 16'hAAFF;
+defparam \Equal0~17 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~6 (
-	.dataa(\D_ctrl_exception~17_combout ),
-	.datab(\D_ctrl_exception~21_combout ),
+	.dataa(\D_ctrl_exception~13_combout ),
+	.datab(\D_ctrl_exception~19_combout ),
 	.datac(\D_ctrl_force_src2_zero~5_combout ),
-	.datad(\Equal0~18_combout ),
+	.datad(\Equal0~17_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_force_src2_zero~6_combout ),
 	.cout());
@@ -21745,7 +21718,7 @@ defparam \D_ctrl_force_src2_zero~6 .lut_mask = 16'hFEFF;
 defparam \D_ctrl_force_src2_zero~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_force_src2_zero~7 (
-	.dataa(\Equal0~14_combout ),
+	.dataa(\Equal0~13_combout ),
 	.datab(\D_ctrl_force_src2_zero~4_combout ),
 	.datac(\D_ctrl_uncond_cti_non_br~1_combout ),
 	.datad(\D_ctrl_force_src2_zero~6_combout ),
@@ -21828,7 +21801,7 @@ defparam \D_ctrl_src_imm5_shift_rot~0 .lut_mask = 16'hBBF3;
 defparam \D_ctrl_src_imm5_shift_rot~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_src_imm5_shift_rot~1 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[12]~q ),
 	.datac(\D_iw[13]~q ),
 	.datad(\D_ctrl_src_imm5_shift_rot~0_combout ),
@@ -21863,38 +21836,38 @@ cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~7 (
 defparam \D_ctrl_implicit_dst_eretaddr~7 .lut_mask = 16'hAAFF;
 defparam \D_ctrl_implicit_dst_eretaddr~7 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~0 (
+cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~2 (
 	.dataa(\D_op_opx_rsv63~0_combout ),
 	.datab(\Equal62~5_combout ),
 	.datac(\Equal62~4_combout ),
 	.datad(\D_ctrl_implicit_dst_eretaddr~7_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_unsigned_lo_imm16~0_combout ),
+	.combout(\D_ctrl_unsigned_lo_imm16~2_combout ),
 	.cout());
-defparam \D_ctrl_unsigned_lo_imm16~0 .lut_mask = 16'hFEFF;
-defparam \D_ctrl_unsigned_lo_imm16~0 .sum_lutc_input = "datac";
+defparam \D_ctrl_unsigned_lo_imm16~2 .lut_mask = 16'hFEFF;
+defparam \D_ctrl_unsigned_lo_imm16~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~1 (
-	.dataa(\Equal0~8_combout ),
-	.datab(\D_ctrl_unsigned_lo_imm16~0_combout ),
-	.datac(gnd),
-	.datad(gnd),
+cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~5 (
+	.dataa(\D_iw[4]~q ),
+	.datab(\Equal0~2_combout ),
+	.datac(\D_iw[5]~q ),
+	.datad(\D_ctrl_unsigned_lo_imm16~2_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_unsigned_lo_imm16~1_combout ),
+	.combout(\D_ctrl_unsigned_lo_imm16~5_combout ),
 	.cout());
-defparam \D_ctrl_unsigned_lo_imm16~1 .lut_mask = 16'hEEEE;
-defparam \D_ctrl_unsigned_lo_imm16~1 .sum_lutc_input = "datac";
+defparam \D_ctrl_unsigned_lo_imm16~5 .lut_mask = 16'hFFFE;
+defparam \D_ctrl_unsigned_lo_imm16~5 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~17 (
+cycloneive_lcell_comb \Equal0~16 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
 	.datac(\D_iw[3]~q ),
 	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\Equal0~17_combout ),
+	.combout(\Equal0~16_combout ),
 	.cout());
-defparam \Equal0~17 .lut_mask = 16'hFFDF;
-defparam \Equal0~17 .sum_lutc_input = "datac";
+defparam \Equal0~16 .lut_mask = 16'hFFDF;
+defparam \Equal0~16 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_b_is_dst~0 (
 	.dataa(\D_iw[2]~q ),
@@ -21930,9 +21903,9 @@ defparam \D_ctrl_b_is_dst~2 .lut_mask = 16'h96FF;
 defparam \D_ctrl_b_is_dst~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \R_src2_use_imm~0 (
-	.dataa(\Equal0~17_combout ),
+	.dataa(\Equal0~16_combout ),
 	.datab(\D_ctrl_b_is_dst~2_combout ),
-	.datac(\Equal0~16_combout ),
+	.datac(\Equal0~15_combout ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
 	.combout(\R_src2_use_imm~0_combout ),
@@ -21963,7 +21936,7 @@ defparam \R_ctrl_br_nxt~1 .lut_mask = 16'hEEFF;
 defparam \R_ctrl_br_nxt~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \R_src2_use_imm~1 (
-	.dataa(\D_ctrl_unsigned_lo_imm16~1_combout ),
+	.dataa(\D_ctrl_unsigned_lo_imm16~5_combout ),
 	.datab(\R_src2_use_imm~0_combout ),
 	.datac(\R_valid~q ),
 	.datad(\R_ctrl_br_nxt~1_combout ),
@@ -22744,85 +22717,96 @@ defparam R_ctrl_br.is_wysiwyg = "true";
 defparam R_ctrl_br.power_up = "low";
 
 cycloneive_lcell_comb \D_ctrl_retaddr~3 (
-	.dataa(\Equal62~13_combout ),
-	.datab(\Equal62~12_combout ),
-	.datac(\D_iw[15]~q ),
-	.datad(\D_iw[14]~q ),
+	.dataa(\D_iw[11]~q ),
+	.datab(\D_iw[16]~q ),
+	.datac(\D_iw[12]~q ),
+	.datad(\D_iw[15]~q ),
 	.cin(gnd),
 	.combout(\D_ctrl_retaddr~3_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~3 .lut_mask = 16'hEFFF;
+defparam \D_ctrl_retaddr~3 .lut_mask = 16'hBEFF;
 defparam \D_ctrl_retaddr~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_retaddr~4 (
-	.dataa(\D_ctrl_retaddr~3_combout ),
-	.datab(\Equal62~14_combout ),
-	.datac(\Equal62~10_combout ),
-	.datad(\D_ctrl_implicit_dst_eretaddr~7_combout ),
+	.dataa(\D_iw[11]~q ),
+	.datab(\D_iw[16]~q ),
+	.datac(\D_iw[12]~q ),
+	.datad(\D_iw[15]~q ),
 	.cin(gnd),
 	.combout(\D_ctrl_retaddr~4_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~4 .lut_mask = 16'hFEFF;
+defparam \D_ctrl_retaddr~4 .lut_mask = 16'hFFBE;
 defparam \D_ctrl_retaddr~4 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~5 (
-	.dataa(\Equal0~8_combout ),
+cycloneive_lcell_comb \D_ctrl_retaddr~14 (
+	.dataa(\D_ctrl_retaddr~3_combout ),
 	.datab(\D_ctrl_retaddr~4_combout ),
+	.datac(\D_iw[14]~q ),
+	.datad(\D_iw[13]~q ),
+	.cin(gnd),
+	.combout(\D_ctrl_retaddr~14_combout ),
+	.cout());
+defparam \D_ctrl_retaddr~14 .lut_mask = 16'hFFAC;
+defparam \D_ctrl_retaddr~14 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \D_ctrl_retaddr~10 (
+	.dataa(\Equal0~7_combout ),
+	.datab(\D_ctrl_retaddr~14_combout ),
 	.datac(\D_ctrl_force_src2_zero~6_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~5_combout ),
+	.combout(\D_ctrl_retaddr~10_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~5 .lut_mask = 16'hF7F7;
-defparam \D_ctrl_retaddr~5 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~10 .lut_mask = 16'hF7F7;
+defparam \D_ctrl_retaddr~10 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~10 (
+cycloneive_lcell_comb \Equal0~9 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
 	.datac(\D_iw[3]~q ),
 	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\Equal0~10_combout ),
+	.combout(\Equal0~9_combout ),
 	.cout());
-defparam \Equal0~10 .lut_mask = 16'hFF7F;
-defparam \Equal0~10 .sum_lutc_input = "datac";
+defparam \Equal0~9 .lut_mask = 16'hFF7F;
+defparam \Equal0~9 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~6 (
-	.dataa(\Equal0~14_combout ),
+cycloneive_lcell_comb \D_ctrl_retaddr~11 (
+	.dataa(\Equal0~13_combout ),
 	.datab(\D_ctrl_force_src2_zero~0_combout ),
-	.datac(\Equal0~10_combout ),
+	.datac(\Equal0~9_combout ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~6_combout ),
+	.combout(\D_ctrl_retaddr~11_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~6 .lut_mask = 16'hFDFE;
-defparam \D_ctrl_retaddr~6 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~11 .lut_mask = 16'hFDFE;
+defparam \D_ctrl_retaddr~11 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~7 (
+cycloneive_lcell_comb \D_ctrl_retaddr~12 (
 	.dataa(\D_iw[5]~q ),
-	.datab(\Equal0~13_combout ),
+	.datab(\Equal0~12_combout ),
 	.datac(\D_iw[4]~q ),
-	.datad(\D_ctrl_retaddr~6_combout ),
+	.datad(\D_ctrl_retaddr~11_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~7_combout ),
+	.combout(\D_ctrl_retaddr~12_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~7 .lut_mask = 16'hFFBE;
-defparam \D_ctrl_retaddr~7 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~12 .lut_mask = 16'hFFBE;
+defparam \D_ctrl_retaddr~12 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_retaddr~8 (
+cycloneive_lcell_comb \D_ctrl_retaddr~13 (
 	.dataa(\Equal0~2_combout ),
-	.datab(\D_ctrl_retaddr~5_combout ),
+	.datab(\D_ctrl_retaddr~10_combout ),
 	.datac(\D_iw[4]~q ),
-	.datad(\D_ctrl_retaddr~7_combout ),
+	.datad(\D_ctrl_retaddr~12_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_retaddr~8_combout ),
+	.combout(\D_ctrl_retaddr~13_combout ),
 	.cout());
-defparam \D_ctrl_retaddr~8 .lut_mask = 16'hBFFB;
-defparam \D_ctrl_retaddr~8 .sum_lutc_input = "datac";
+defparam \D_ctrl_retaddr~13 .lut_mask = 16'hBFFB;
+defparam \D_ctrl_retaddr~13 .sum_lutc_input = "datac";
 
 dffeas R_ctrl_retaddr(
 	.clk(wire_pll7_clk_0),
-	.d(\D_ctrl_retaddr~8_combout ),
+	.d(\D_ctrl_retaddr~13_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -22882,7 +22866,7 @@ defparam \Equal135~1 .lut_mask = 16'hFEFF;
 defparam \Equal135~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb D_op_wrctl(
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[14]~q ),
 	.datac(\Equal62~3_combout ),
 	.datad(\D_iw[15]~q ),
@@ -23256,65 +23240,65 @@ cycloneive_lcell_comb \W_estatus_reg_inst_nxt~0 (
 defparam \W_estatus_reg_inst_nxt~0 .lut_mask = 16'hEFFE;
 defparam \W_estatus_reg_inst_nxt~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~7 (
+cycloneive_lcell_comb \D_ctrl_exception~3 (
 	.dataa(\D_iw[15]~q ),
 	.datab(\D_iw[14]~q ),
 	.datac(\D_iw[16]~q ),
 	.datad(\D_iw[12]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~7_combout ),
+	.combout(\D_ctrl_exception~3_combout ),
 	.cout());
-defparam \D_ctrl_exception~7 .lut_mask = 16'hEBBE;
-defparam \D_ctrl_exception~7 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~3 .lut_mask = 16'hEBBE;
+defparam \D_ctrl_exception~3 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~24 (
-	.dataa(\D_ctrl_exception~7_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~21 (
+	.dataa(\D_ctrl_exception~3_combout ),
 	.datab(\D_iw[13]~q ),
 	.datac(\D_iw[11]~q ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~24_combout ),
+	.combout(\D_ctrl_exception~21_combout ),
 	.cout());
-defparam \D_ctrl_exception~24 .lut_mask = 16'hFEFE;
-defparam \D_ctrl_exception~24 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~21 .lut_mask = 16'hFEFE;
+defparam \D_ctrl_exception~21 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~10 (
+cycloneive_lcell_comb \D_ctrl_exception~6 (
 	.dataa(\D_iw[11]~q ),
 	.datab(\D_iw[12]~q ),
 	.datac(\D_iw[13]~q ),
 	.datad(\D_iw[14]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~10_combout ),
+	.combout(\D_ctrl_exception~6_combout ),
 	.cout());
-defparam \D_ctrl_exception~10 .lut_mask = 16'hFBFF;
-defparam \D_ctrl_exception~10 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~6 .lut_mask = 16'hFBFF;
+defparam \D_ctrl_exception~6 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~11 (
+cycloneive_lcell_comb \D_ctrl_exception~7 (
 	.dataa(\D_iw[16]~q ),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(\D_iw[15]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~11_combout ),
+	.combout(\D_ctrl_exception~7_combout ),
 	.cout());
-defparam \D_ctrl_exception~11 .lut_mask = 16'hAAFF;
-defparam \D_ctrl_exception~11 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~7 .lut_mask = 16'hAAFF;
+defparam \D_ctrl_exception~7 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~12 (
-	.dataa(\Equal0~8_combout ),
-	.datab(\D_ctrl_exception~24_combout ),
-	.datac(\D_ctrl_exception~10_combout ),
-	.datad(\D_ctrl_exception~11_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~8 (
+	.dataa(\Equal0~7_combout ),
+	.datab(\D_ctrl_exception~21_combout ),
+	.datac(\D_ctrl_exception~6_combout ),
+	.datad(\D_ctrl_exception~7_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~12_combout ),
+	.combout(\D_ctrl_exception~8_combout ),
 	.cout());
-defparam \D_ctrl_exception~12 .lut_mask = 16'hFFFE;
-defparam \D_ctrl_exception~12 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~8 .lut_mask = 16'hFFFE;
+defparam \D_ctrl_exception~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~0 (
 	.dataa(\D_iw[5]~q ),
-	.datab(\Equal0~14_combout ),
-	.datac(\Equal0~10_combout ),
+	.datab(\Equal0~13_combout ),
+	.datac(\Equal0~9_combout ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
 	.combout(\D_ctrl_implicit_dst_eretaddr~0_combout ),
@@ -23325,7 +23309,7 @@ defparam \D_ctrl_implicit_dst_eretaddr~0 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~1 (
 	.dataa(\Equal0~3_combout ),
 	.datab(\Equal0~2_combout ),
-	.datac(\Equal0~13_combout ),
+	.datac(\Equal0~12_combout ),
 	.datad(\D_ctrl_implicit_dst_eretaddr~0_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_implicit_dst_eretaddr~1_combout ),
@@ -23336,7 +23320,7 @@ defparam \D_ctrl_implicit_dst_eretaddr~1 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~2 (
 	.dataa(\D_ctrl_implicit_dst_eretaddr~1_combout ),
 	.datab(\D_ctrl_force_src2_zero~0_combout ),
-	.datac(\Equal0~14_combout ),
+	.datac(\Equal0~13_combout ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
 	.combout(\D_ctrl_implicit_dst_eretaddr~2_combout ),
@@ -23344,20 +23328,20 @@ cycloneive_lcell_comb \D_ctrl_implicit_dst_eretaddr~2 (
 defparam \D_ctrl_implicit_dst_eretaddr~2 .lut_mask = 16'hEFFF;
 defparam \D_ctrl_implicit_dst_eretaddr~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_exception~22 (
-	.dataa(\D_ctrl_exception~12_combout ),
-	.datab(\D_ctrl_exception~17_combout ),
-	.datac(\D_ctrl_exception~21_combout ),
+cycloneive_lcell_comb \D_ctrl_exception~20 (
+	.dataa(\D_ctrl_exception~8_combout ),
+	.datab(\D_ctrl_exception~13_combout ),
+	.datac(\D_ctrl_exception~19_combout ),
 	.datad(\D_ctrl_implicit_dst_eretaddr~2_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_exception~22_combout ),
+	.combout(\D_ctrl_exception~20_combout ),
 	.cout());
-defparam \D_ctrl_exception~22 .lut_mask = 16'hBFFF;
-defparam \D_ctrl_exception~22 .sum_lutc_input = "datac";
+defparam \D_ctrl_exception~20 .lut_mask = 16'hBFFF;
+defparam \D_ctrl_exception~20 .sum_lutc_input = "datac";
 
 dffeas R_ctrl_exception(
 	.clk(wire_pll7_clk_0),
-	.d(\D_ctrl_exception~22_combout ),
+	.d(\D_ctrl_exception~20_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -23500,7 +23484,7 @@ defparam \W_status_reg_pie_inst_nxt~1 .lut_mask = 16'hEFFE;
 defparam \W_status_reg_pie_inst_nxt~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb D_op_eret(
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\Equal62~9_combout ),
 	.datac(\D_iw[15]~q ),
 	.datad(\D_iw[14]~q ),
@@ -23662,7 +23646,7 @@ defparam \D_ctrl_alu_subtract~10 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \E_alu_sub~0 (
 	.dataa(\R_valid~q ),
 	.datab(\D_ctrl_alu_subtract~9_combout ),
-	.datac(\Equal0~8_combout ),
+	.datac(\Equal0~7_combout ),
 	.datad(\D_ctrl_alu_subtract~10_combout ),
 	.cin(gnd),
 	.combout(\E_alu_sub~0_combout ),
@@ -24029,7 +24013,7 @@ defparam \D_ctrl_alu_force_xor~13 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \D_ctrl_alu_force_xor~12 (
 	.dataa(\D_ctrl_alu_force_xor~10_combout ),
 	.datab(\D_ctrl_alu_force_xor~11_combout ),
-	.datac(\Equal0~8_combout ),
+	.datac(\Equal0~7_combout ),
 	.datad(\D_ctrl_alu_force_xor~13_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_alu_force_xor~12_combout ),
@@ -24066,7 +24050,7 @@ cycloneive_lcell_comb \D_logic_op[0]~1 (
 	.dataa(\D_ctrl_alu_force_xor~12_combout ),
 	.datab(\D_iw[14]~q ),
 	.datac(\D_iw[3]~q ),
-	.datad(\Equal0~8_combout ),
+	.datad(\Equal0~7_combout ),
 	.cin(gnd),
 	.combout(\D_logic_op[0]~1_combout ),
 	.cout());
@@ -24098,33 +24082,33 @@ cycloneive_lcell_comb \E_logic_result[6]~0 (
 defparam \E_logic_result[6]~0 .lut_mask = 16'h6996;
 defparam \E_logic_result[6]~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~9 (
+cycloneive_lcell_comb \Equal0~8 (
 	.dataa(\D_iw[13]~q ),
 	.datab(gnd),
 	.datac(\D_iw[11]~q ),
 	.datad(\D_iw[16]~q ),
 	.cin(gnd),
-	.combout(\Equal0~9_combout ),
+	.combout(\Equal0~8_combout ),
 	.cout());
-defparam \Equal0~9 .lut_mask = 16'hAFFF;
-defparam \Equal0~9 .sum_lutc_input = "datac";
+defparam \Equal0~8 .lut_mask = 16'hAFFF;
+defparam \Equal0~8 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal0~11 (
+cycloneive_lcell_comb \Equal0~10 (
 	.dataa(\D_iw[1]~q ),
 	.datab(\D_iw[0]~q ),
 	.datac(\D_iw[3]~q ),
 	.datad(\D_iw[2]~q ),
 	.cin(gnd),
-	.combout(\Equal0~11_combout ),
+	.combout(\Equal0~10_combout ),
 	.cout());
-defparam \Equal0~11 .lut_mask = 16'hFFF7;
-defparam \Equal0~11 .sum_lutc_input = "datac";
+defparam \Equal0~10 .lut_mask = 16'hFFF7;
+defparam \Equal0~10 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_logic~0 (
 	.dataa(gnd),
 	.datab(\D_iw[4]~q ),
-	.datac(\Equal0~10_combout ),
-	.datad(\Equal0~11_combout ),
+	.datac(\Equal0~9_combout ),
+	.datad(\Equal0~10_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_logic~0_combout ),
 	.cout());
@@ -24132,9 +24116,9 @@ defparam \D_ctrl_logic~0 .lut_mask = 16'h3FFF;
 defparam \D_ctrl_logic~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb D_ctrl_logic(
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[12]~q ),
-	.datac(\Equal0~9_combout ),
+	.datac(\Equal0~8_combout ),
 	.datad(\D_ctrl_logic~0_combout ),
 	.cin(gnd),
 	.combout(\D_ctrl_logic~combout ),
@@ -24179,7 +24163,7 @@ defparam \D_ctrl_shift_rot_right~0 .lut_mask = 16'hFEFF;
 defparam \D_ctrl_shift_rot_right~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_shift_rot_right~1 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[14]~q ),
 	.datac(\D_ctrl_shift_rot_right~0_combout ),
 	.datad(\D_iw[13]~q ),
@@ -24354,7 +24338,7 @@ defparam \E_shift_rot_result[0] .is_wysiwyg = "true";
 defparam \E_shift_rot_result[0] .power_up = "low";
 
 cycloneive_lcell_comb \R_ctrl_rot_right_nxt~0 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[14]~q ),
 	.datac(\Equal62~7_combout ),
 	.datad(\D_iw[15]~q ),
@@ -24390,7 +24374,7 @@ defparam \D_ctrl_shift_logical~1 .lut_mask = 16'hFFB8;
 defparam \D_ctrl_shift_logical~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_shift_logical~2 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\D_iw[15]~q ),
 	.datac(\D_ctrl_shift_logical~1_combout ),
 	.datad(gnd),
@@ -26447,7 +26431,7 @@ defparam \E_shift_rot_result[6] .is_wysiwyg = "true";
 defparam \E_shift_rot_result[6] .power_up = "low";
 
 cycloneive_lcell_comb D_op_rdctl(
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\Equal62~3_combout ),
 	.datac(\D_iw[15]~q ),
 	.datad(\D_iw[14]~q ),
@@ -26506,7 +26490,7 @@ defparam \D_ctrl_br_cmp~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_br_cmp~3 (
 	.dataa(\R_ctrl_br_nxt~1_combout ),
-	.datab(\Equal0~8_combout ),
+	.datab(\Equal0~7_combout ),
 	.datac(\D_ctrl_br_cmp~5_combout ),
 	.datad(gnd),
 	.cin(gnd),
@@ -26562,31 +26546,31 @@ cycloneive_lcell_comb \E_src2[26]~0 (
 defparam \E_src2[26]~0 .lut_mask = 16'hAACC;
 defparam \E_src2[26]~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~2 (
+cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~3 (
 	.dataa(\D_iw[5]~q ),
 	.datab(\Equal0~4_combout ),
 	.datac(\Equal0~6_combout ),
 	.datad(\D_iw[4]~q ),
 	.cin(gnd),
-	.combout(\D_ctrl_unsigned_lo_imm16~2_combout ),
+	.combout(\D_ctrl_unsigned_lo_imm16~3_combout ),
 	.cout());
-defparam \D_ctrl_unsigned_lo_imm16~2 .lut_mask = 16'hFAFC;
-defparam \D_ctrl_unsigned_lo_imm16~2 .sum_lutc_input = "datac";
+defparam \D_ctrl_unsigned_lo_imm16~3 .lut_mask = 16'hFAFC;
+defparam \D_ctrl_unsigned_lo_imm16~3 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~3 (
-	.dataa(\D_ctrl_unsigned_lo_imm16~1_combout ),
-	.datab(\D_ctrl_unsigned_lo_imm16~2_combout ),
+cycloneive_lcell_comb \D_ctrl_unsigned_lo_imm16~4 (
+	.dataa(\D_ctrl_unsigned_lo_imm16~5_combout ),
+	.datab(\D_ctrl_unsigned_lo_imm16~3_combout ),
 	.datac(\D_iw[5]~q ),
 	.datad(\D_ctrl_logic~0_combout ),
 	.cin(gnd),
-	.combout(\D_ctrl_unsigned_lo_imm16~3_combout ),
+	.combout(\D_ctrl_unsigned_lo_imm16~4_combout ),
 	.cout());
-defparam \D_ctrl_unsigned_lo_imm16~3 .lut_mask = 16'hEFFF;
-defparam \D_ctrl_unsigned_lo_imm16~3 .sum_lutc_input = "datac";
+defparam \D_ctrl_unsigned_lo_imm16~4 .lut_mask = 16'hEFFF;
+defparam \D_ctrl_unsigned_lo_imm16~4 .sum_lutc_input = "datac";
 
 dffeas R_ctrl_unsigned_lo_imm16(
 	.clk(wire_pll7_clk_0),
-	.d(\D_ctrl_unsigned_lo_imm16~3_combout ),
+	.d(\D_ctrl_unsigned_lo_imm16~4_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -28232,7 +28216,7 @@ defparam \i_read_nxt~0 .lut_mask = 16'hFFF7;
 defparam \i_read_nxt~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \D_ctrl_uncond_cti_non_br~0 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\Equal62~8_combout ),
 	.datac(\D_iw[14]~q ),
 	.datad(\D_iw[15]~q ),
@@ -28267,20 +28251,20 @@ dffeas R_ctrl_uncond_cti_non_br(
 defparam R_ctrl_uncond_cti_non_br.is_wysiwyg = "true";
 defparam R_ctrl_uncond_cti_non_br.power_up = "low";
 
-cycloneive_lcell_comb \Equal0~20 (
+cycloneive_lcell_comb \Equal0~19 (
 	.dataa(\D_iw[4]~q ),
 	.datab(\D_iw[5]~q ),
 	.datac(\Equal0~5_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\Equal0~20_combout ),
+	.combout(\Equal0~19_combout ),
 	.cout());
-defparam \Equal0~20 .lut_mask = 16'hF7F7;
-defparam \Equal0~20 .sum_lutc_input = "datac";
+defparam \Equal0~19 .lut_mask = 16'hF7F7;
+defparam \Equal0~19 .sum_lutc_input = "datac";
 
 dffeas R_ctrl_br_uncond(
 	.clk(wire_pll7_clk_0),
-	.d(\Equal0~20_combout ),
+	.d(\Equal0~19_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -28666,7 +28650,7 @@ defparam \E_cmp_result~0 .lut_mask = 16'h6996;
 defparam \E_cmp_result~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \E_invert_arith_src_msb~0 (
-	.dataa(\Equal0~8_combout ),
+	.dataa(\Equal0~7_combout ),
 	.datab(\Equal62~0_combout ),
 	.datac(\D_iw[15]~q ),
 	.datad(\D_iw[14]~q ),
@@ -29742,8 +29726,24 @@ wire \readdata~36_combout ;
 wire \readdata~37_combout ;
 
 
-niosII_niosII_cpu_cpu_nios2_oci_break the_niosII_cpu_cpu_nios2_oci_break(
+niosII_niosII_cpu_cpu_debug_slave_wrapper the_niosII_cpu_cpu_debug_slave_wrapper(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.sr_0(sr_0),
+	.MonDReg_0(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[0]~q ),
+	.MonDReg_1(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[1]~q ),
+	.MonDReg_3(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[3]~q ),
+	.MonDReg_4(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[4]~q ),
+	.MonDReg_25(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[25]~q ),
+	.MonDReg_26(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[26]~q ),
+	.MonDReg_5(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[5]~q ),
+	.MonDReg_29(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[29]~q ),
+	.MonDReg_11(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[11]~q ),
+	.MonDReg_12(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[12]~q ),
+	.MonDReg_9(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[9]~q ),
+	.MonDReg_8(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[8]~q ),
+	.MonDReg_18(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[18]~q ),
+	.ir_out_0(ir_out_0),
+	.ir_out_1(ir_out_1),
 	.break_readreg_0(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[0]~q ),
 	.break_readreg_1(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[1]~q ),
 	.jdo_0(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[0]~q ),
@@ -29753,43 +29753,73 @@ niosII_niosII_cpu_cpu_nios2_oci_break the_niosII_cpu_cpu_nios2_oci_break(
 	.ir_1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|ir[1]~q ),
 	.enable_action_strobe(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|enable_action_strobe~q ),
 	.jdo_3(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[3]~q ),
+	.take_action_ocimem_b(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
+	.take_action_ocimem_a(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
+	.monitor_ready(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_ready~q ),
+	.hbreak_enabled(hbreak_enabled),
 	.break_readreg_2(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[2]~q ),
+	.MonDReg_2(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[2]~q ),
 	.jdo_1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[1]~q ),
 	.jdo_4(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[4]~q ),
 	.jdo_26(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[26]~q ),
+	.jdo_34(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[34]~q ),
+	.take_action_ocimem_a1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
 	.jdo_28(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[28]~q ),
 	.jdo_27(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[27]~q ),
 	.jdo_25(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[25]~q ),
 	.jdo_17(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[17]~q ),
 	.jdo_21(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[21]~q ),
 	.jdo_20(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.take_action_ocimem_a2(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
 	.break_readreg_3(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[3]~q ),
 	.jdo_2(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[2]~q ),
 	.jdo_5(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[5]~q ),
 	.jdo_29(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[29]~q ),
 	.jdo_30(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[30]~q ),
 	.jdo_31(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[31]~q ),
+	.jdo_32(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[32]~q ),
+	.jdo_33(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[33]~q ),
 	.jdo_19(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[19]~q ),
 	.jdo_18(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.monitor_error(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_error~q ),
 	.break_readreg_4(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[4]~q ),
 	.jdo_6(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[6]~q ),
 	.break_readreg_25(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[25]~q ),
 	.break_readreg_27(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[27]~q ),
+	.MonDReg_27(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[27]~q ),
 	.break_readreg_26(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[26]~q ),
 	.break_readreg_24(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[24]~q ),
+	.MonDReg_24(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[24]~q ),
 	.break_readreg_16(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[16]~q ),
+	.MonDReg_16(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[16]~q ),
 	.break_readreg_20(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[20]~q ),
+	.MonDReg_20(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[20]~q ),
 	.break_readreg_19(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[19]~q ),
+	.MonDReg_19(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[19]~q ),
 	.jdo_23(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[23]~q ),
 	.break_readreg_5(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[5]~q ),
 	.jdo_7(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[7]~q ),
 	.break_readreg_28(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[28]~q ),
+	.MonDReg_28(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[28]~q ),
 	.break_readreg_29(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[29]~q ),
 	.break_readreg_30(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[30]~q ),
+	.MonDReg_30(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[30]~q ),
 	.break_readreg_31(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[31]~q ),
+	.MonDReg_31(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[31]~q ),
+	.resetlatch(\the_niosII_cpu_cpu_nios2_oci_debug|resetlatch~q ),
 	.jdo_24(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[24]~q ),
 	.break_readreg_17(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[17]~q ),
+	.MonDReg_17(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[17]~q ),
 	.jdo_16(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[16]~q ),
+	.MonDReg_13(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[13]~q ),
+	.MonDReg_14(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[14]~q ),
+	.MonDReg_15(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[15]~q ),
+	.MonDReg_10(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[10]~q ),
+	.MonDReg_7(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[7]~q ),
+	.MonDReg_6(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[6]~q ),
+	.MonDReg_21(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[21]~q ),
+	.MonDReg_23(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[23]~q ),
+	.MonDReg_22(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[22]~q ),
 	.jdo_22(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[22]~q ),
 	.break_readreg_18(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[18]~q ),
 	.break_readreg_21(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[21]~q ),
@@ -29812,32 +29842,16 @@ niosII_niosII_cpu_cpu_nios2_oci_break the_niosII_cpu_cpu_nios2_oci_break(
 	.break_readreg_12(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[12]~q ),
 	.break_readreg_11(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[11]~q ),
 	.break_readreg_10(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[10]~q ),
-	.break_readreg_9(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[9]~q ));
-
-niosII_niosII_cpu_cpu_nios2_oci_debug the_niosII_cpu_cpu_nios2_oci_debug(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.jtag_break1(jtag_break),
-	.r_sync_rst(r_sync_rst),
-	.take_action_ocimem_a(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
-	.monitor_ready1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_ready~q ),
-	.jdo_34(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[34]~q ),
-	.writedata_0(\writedata[0]~q ),
-	.take_action_ocireg(\the_niosII_cpu_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
-	.jdo_25(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[25]~q ),
-	.jdo_21(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[21]~q ),
-	.jdo_20(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.take_action_ocimem_a1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
-	.writedata_1(\writedata[1]~q ),
-	.jdo_19(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[19]~q ),
-	.jdo_18(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[18]~q ),
-	.monitor_error1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_error~q ),
-	.monitor_go1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_go~q ),
-	.resetrequest1(resetrequest),
-	.jdo_23(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[23]~q ),
-	.resetlatch1(\the_niosII_cpu_cpu_nios2_oci_debug|resetlatch~q ),
-	.jdo_24(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[24]~q ),
-	.jdo_22(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[22]~q ),
-	.state_1(state_1));
+	.break_readreg_9(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[9]~q ),
+	.altera_internal_jtag(altera_internal_jtag),
+	.altera_internal_jtag1(altera_internal_jtag1),
+	.state_4(state_4),
+	.virtual_ir_scan_reg(virtual_ir_scan_reg),
+	.state_3(state_3),
+	.state_8(state_8),
+	.splitter_nodes_receive_1_3(splitter_nodes_receive_1_3),
+	.irf_reg_0_2(irf_reg_0_2),
+	.irf_reg_1_2(irf_reg_1_2));
 
 niosII_niosII_cpu_cpu_nios2_ocimem the_niosII_cpu_cpu_nios2_ocimem(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
@@ -30023,24 +30037,8 @@ niosII_niosII_cpu_cpu_nios2_avalon_reg the_niosII_cpu_cpu_nios2_avalon_reg(
 	.oci_reg_readdata(\the_niosII_cpu_cpu_nios2_avalon_reg|oci_reg_readdata~0_combout ),
 	.oci_ienable_23(\the_niosII_cpu_cpu_nios2_avalon_reg|oci_ienable[23]~q ));
 
-niosII_niosII_cpu_cpu_debug_slave_wrapper the_niosII_cpu_cpu_debug_slave_wrapper(
+niosII_niosII_cpu_cpu_nios2_oci_break the_niosII_cpu_cpu_nios2_oci_break(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.sr_0(sr_0),
-	.MonDReg_0(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[0]~q ),
-	.MonDReg_1(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[1]~q ),
-	.MonDReg_3(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[3]~q ),
-	.MonDReg_4(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[4]~q ),
-	.MonDReg_25(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[25]~q ),
-	.MonDReg_26(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[26]~q ),
-	.MonDReg_5(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[5]~q ),
-	.MonDReg_29(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[29]~q ),
-	.MonDReg_11(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[11]~q ),
-	.MonDReg_12(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[12]~q ),
-	.MonDReg_9(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[9]~q ),
-	.MonDReg_8(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[8]~q ),
-	.MonDReg_18(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[18]~q ),
-	.ir_out_0(ir_out_0),
-	.ir_out_1(ir_out_1),
 	.break_readreg_0(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[0]~q ),
 	.break_readreg_1(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[1]~q ),
 	.jdo_0(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[0]~q ),
@@ -30050,73 +30048,43 @@ niosII_niosII_cpu_cpu_debug_slave_wrapper the_niosII_cpu_cpu_debug_slave_wrapper
 	.ir_1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|ir[1]~q ),
 	.enable_action_strobe(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|enable_action_strobe~q ),
 	.jdo_3(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[3]~q ),
-	.take_action_ocimem_b(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_b~combout ),
-	.take_action_ocimem_a(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
-	.monitor_ready(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_ready~q ),
-	.hbreak_enabled(hbreak_enabled),
 	.break_readreg_2(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[2]~q ),
-	.MonDReg_2(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[2]~q ),
 	.jdo_1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[1]~q ),
 	.jdo_4(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[4]~q ),
 	.jdo_26(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[26]~q ),
-	.jdo_34(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[34]~q ),
-	.take_action_ocimem_a1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~1_combout ),
 	.jdo_28(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[28]~q ),
 	.jdo_27(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[27]~q ),
 	.jdo_25(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[25]~q ),
 	.jdo_17(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[17]~q ),
 	.jdo_21(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[21]~q ),
 	.jdo_20(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[20]~q ),
-	.take_action_ocimem_a2(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
 	.break_readreg_3(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[3]~q ),
 	.jdo_2(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[2]~q ),
 	.jdo_5(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[5]~q ),
 	.jdo_29(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[29]~q ),
 	.jdo_30(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[30]~q ),
 	.jdo_31(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[31]~q ),
-	.jdo_32(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[32]~q ),
-	.jdo_33(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[33]~q ),
 	.jdo_19(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[19]~q ),
 	.jdo_18(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[18]~q ),
-	.monitor_error(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_error~q ),
 	.break_readreg_4(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[4]~q ),
 	.jdo_6(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[6]~q ),
 	.break_readreg_25(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[25]~q ),
 	.break_readreg_27(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[27]~q ),
-	.MonDReg_27(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[27]~q ),
 	.break_readreg_26(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[26]~q ),
 	.break_readreg_24(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[24]~q ),
-	.MonDReg_24(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[24]~q ),
 	.break_readreg_16(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[16]~q ),
-	.MonDReg_16(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[16]~q ),
 	.break_readreg_20(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[20]~q ),
-	.MonDReg_20(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[20]~q ),
 	.break_readreg_19(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[19]~q ),
-	.MonDReg_19(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[19]~q ),
 	.jdo_23(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[23]~q ),
 	.break_readreg_5(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[5]~q ),
 	.jdo_7(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[7]~q ),
 	.break_readreg_28(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[28]~q ),
-	.MonDReg_28(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[28]~q ),
 	.break_readreg_29(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[29]~q ),
 	.break_readreg_30(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[30]~q ),
-	.MonDReg_30(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[30]~q ),
 	.break_readreg_31(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[31]~q ),
-	.MonDReg_31(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[31]~q ),
-	.resetlatch(\the_niosII_cpu_cpu_nios2_oci_debug|resetlatch~q ),
 	.jdo_24(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[24]~q ),
 	.break_readreg_17(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[17]~q ),
-	.MonDReg_17(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[17]~q ),
 	.jdo_16(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[16]~q ),
-	.MonDReg_13(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[13]~q ),
-	.MonDReg_14(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[14]~q ),
-	.MonDReg_15(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[15]~q ),
-	.MonDReg_10(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[10]~q ),
-	.MonDReg_7(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[7]~q ),
-	.MonDReg_6(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[6]~q ),
-	.MonDReg_21(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[21]~q ),
-	.MonDReg_23(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[23]~q ),
-	.MonDReg_22(\the_niosII_cpu_cpu_nios2_ocimem|MonDReg[22]~q ),
 	.jdo_22(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[22]~q ),
 	.break_readreg_18(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[18]~q ),
 	.break_readreg_21(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[21]~q ),
@@ -30139,16 +30107,32 @@ niosII_niosII_cpu_cpu_debug_slave_wrapper the_niosII_cpu_cpu_debug_slave_wrapper
 	.break_readreg_12(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[12]~q ),
 	.break_readreg_11(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[11]~q ),
 	.break_readreg_10(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[10]~q ),
-	.break_readreg_9(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[9]~q ),
-	.altera_internal_jtag(altera_internal_jtag),
-	.altera_internal_jtag1(altera_internal_jtag1),
-	.state_4(state_4),
-	.virtual_ir_scan_reg(virtual_ir_scan_reg),
-	.state_3(state_3),
-	.state_8(state_8),
-	.splitter_nodes_receive_1_3(splitter_nodes_receive_1_3),
-	.irf_reg_0_2(irf_reg_0_2),
-	.irf_reg_1_2(irf_reg_1_2));
+	.break_readreg_9(\the_niosII_cpu_cpu_nios2_oci_break|break_readreg[9]~q ));
+
+niosII_niosII_cpu_cpu_nios2_oci_debug the_niosII_cpu_cpu_nios2_oci_debug(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.jtag_break1(jtag_break),
+	.r_sync_rst(r_sync_rst),
+	.take_action_ocimem_a(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~0_combout ),
+	.monitor_ready1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_ready~q ),
+	.jdo_34(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[34]~q ),
+	.writedata_0(\writedata[0]~q ),
+	.take_action_ocireg(\the_niosII_cpu_cpu_nios2_avalon_reg|take_action_ocireg~0_combout ),
+	.jdo_25(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[25]~q ),
+	.jdo_21(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[21]~q ),
+	.jdo_20(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[20]~q ),
+	.take_action_ocimem_a1(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|take_action_ocimem_a~combout ),
+	.writedata_1(\writedata[1]~q ),
+	.jdo_19(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[19]~q ),
+	.jdo_18(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[18]~q ),
+	.monitor_error1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_error~q ),
+	.monitor_go1(\the_niosII_cpu_cpu_nios2_oci_debug|monitor_go~q ),
+	.resetrequest1(resetrequest),
+	.jdo_23(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[23]~q ),
+	.resetlatch1(\the_niosII_cpu_cpu_nios2_oci_debug|resetlatch~q ),
+	.jdo_24(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[24]~q ),
+	.jdo_22(\the_niosII_cpu_cpu_debug_slave_wrapper|the_niosII_cpu_cpu_debug_slave_sysclk|jdo[22]~q ),
+	.state_1(state_1));
 
 dffeas write(
 	.clk(wire_pll7_clk_0),
@@ -32027,6 +32011,17 @@ wire \the_niosII_cpu_cpu_debug_slave_tck|sr[11]~q ;
 wire \the_niosII_cpu_cpu_debug_slave_tck|sr[10]~q ;
 
 
+niosII_sld_virtual_jtag_basic_1 niosII_cpu_cpu_debug_slave_phy(
+	.virtual_state_cdr1(\niosII_cpu_cpu_debug_slave_phy|virtual_state_cdr~combout ),
+	.virtual_state_sdr(\niosII_cpu_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
+	.virtual_state_uir(\niosII_cpu_cpu_debug_slave_phy|virtual_state_uir~0_combout ),
+	.virtual_state_udr(\niosII_cpu_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
+	.state_4(state_4),
+	.virtual_ir_scan_reg(virtual_ir_scan_reg),
+	.state_3(state_3),
+	.state_8(state_8),
+	.splitter_nodes_receive_1_3(splitter_nodes_receive_1_3));
+
 niosII_niosII_cpu_cpu_debug_slave_sysclk the_niosII_cpu_cpu_debug_slave_sysclk(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
 	.sr_0(sr_0),
@@ -32236,17 +32231,6 @@ niosII_niosII_cpu_cpu_debug_slave_tck the_niosII_cpu_cpu_debug_slave_tck(
 	.irf_reg_0_2(irf_reg_0_2),
 	.irf_reg_1_2(irf_reg_1_2));
 
-niosII_sld_virtual_jtag_basic_1 niosII_cpu_cpu_debug_slave_phy(
-	.virtual_state_cdr1(\niosII_cpu_cpu_debug_slave_phy|virtual_state_cdr~combout ),
-	.virtual_state_sdr(\niosII_cpu_cpu_debug_slave_phy|virtual_state_sdr~0_combout ),
-	.virtual_state_uir(\niosII_cpu_cpu_debug_slave_phy|virtual_state_uir~0_combout ),
-	.virtual_state_udr(\niosII_cpu_cpu_debug_slave_phy|virtual_state_udr~0_combout ),
-	.state_4(state_4),
-	.virtual_ir_scan_reg(virtual_ir_scan_reg),
-	.state_3(state_3),
-	.state_8(state_8),
-	.splitter_nodes_receive_1_3(splitter_nodes_receive_1_3));
-
 endmodule
 
 module niosII_niosII_cpu_cpu_debug_slave_sysclk (
@@ -32443,15 +32427,15 @@ wire \jxuir~q ;
 wire \jdo[35]~q ;
 
 
-niosII_altera_std_synchronizer_2 the_altera_std_synchronizer3(
-	.clk(wire_pll7_clk_0),
-	.dreg_0(\the_altera_std_synchronizer3|dreg[0]~q ),
-	.din(virtual_state_udr));
-
 niosII_altera_std_synchronizer_3 the_altera_std_synchronizer4(
 	.clk(wire_pll7_clk_0),
 	.din(virtual_state_uir),
 	.dreg_0(\the_altera_std_synchronizer4|dreg[0]~q ));
+
+niosII_altera_std_synchronizer_2 the_altera_std_synchronizer3(
+	.clk(wire_pll7_clk_0),
+	.dreg_0(\the_altera_std_synchronizer3|dreg[0]~q ),
+	.din(virtual_state_udr));
 
 dffeas \jdo[0] (
 	.clk(wire_pll7_clk_0),
@@ -34231,36 +34215,36 @@ defparam \sr[35]~6 .lut_mask = 16'hAACC;
 defparam \sr[35]~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \sr~23 (
-	.dataa(irf_reg_1_2),
-	.datab(state_3),
-	.datac(splitter_nodes_receive_1_3),
-	.datad(virtual_ir_scan_reg),
+	.dataa(sr_35),
+	.datab(virtual_state_cdr),
+	.datac(irf_reg_0_2),
+	.datad(irf_reg_1_2),
 	.cin(gnd),
 	.combout(\sr~23_combout ),
 	.cout());
-defparam \sr~23 .lut_mask = 16'hFDFF;
+defparam \sr~23 .lut_mask = 16'hFFFE;
 defparam \sr~23 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \sr~24 (
-	.dataa(irf_reg_0_2),
-	.datab(irf_reg_1_2),
+	.dataa(state_3),
+	.datab(splitter_nodes_receive_1_3),
 	.datac(\the_altera_std_synchronizer1|dreg[0]~q ),
-	.datad(\sr~23_combout ),
+	.datad(virtual_ir_scan_reg),
 	.cin(gnd),
 	.combout(\sr~24_combout ),
 	.cout());
-defparam \sr~24 .lut_mask = 16'hFFD8;
+defparam \sr~24 .lut_mask = 16'hFEFF;
 defparam \sr~24 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \sr~25 (
-	.dataa(sr_35),
-	.datab(virtual_state_cdr),
-	.datac(\sr~23_combout ),
-	.datad(\sr~24_combout ),
+	.dataa(\sr~23_combout ),
+	.datab(\sr~24_combout ),
+	.datac(irf_reg_0_2),
+	.datad(irf_reg_1_2),
 	.cin(gnd),
 	.combout(\sr~25_combout ),
 	.cout());
-defparam \sr~25 .lut_mask = 16'hFFFE;
+defparam \sr~25 .lut_mask = 16'hEFFF;
 defparam \sr~25 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \sr[31]~51 (
@@ -45348,8 +45332,6 @@ module niosII_niosII_epcs (
 	shift_reg_7,
 	r_sync_rst,
 	saved_grant_0,
-	saved_grant_1,
-	out_data_buffer_38,
 	src_data_38,
 	src_data_39,
 	src_data_40,
@@ -45363,14 +45345,14 @@ module niosII_niosII_epcs (
 	out_data_buffer_65,
 	p1_wr_strobe,
 	src_payload2,
-	src_payload3,
 	src_data_66,
 	av_begintransfer,
+	out_data_buffer_6,
+	src_payload3,
 	src_payload4,
 	src_payload5,
 	src_payload6,
 	src_payload7,
-	src_payload8,
 	readdata_0,
 	readdata_1,
 	readdata_2,
@@ -45402,7 +45384,7 @@ module niosII_niosII_epcs (
 	readdata_19,
 	readdata_18,
 	readdata_17,
-	src_payload9,
+	src_payload8,
 	irq_reg,
 	r_early_rst,
 	src_data_41,
@@ -45410,15 +45392,14 @@ module niosII_niosII_epcs (
 	src_data_43,
 	src_data_44,
 	src_data_45,
-	src_payload10,
 	readdata_31,
+	src_payload9,
+	src_payload10,
 	src_payload11,
 	src_payload12,
 	src_payload13,
 	src_payload14,
 	src_payload15,
-	src_payload16,
-	src_payload17,
 	epcs_data0)/* synthesis synthesis_greybox=1 */;
 input 	wire_pll7_clk_0;
 output 	SCLK_reg;
@@ -45426,8 +45407,6 @@ output 	sce;
 output 	shift_reg_7;
 input 	r_sync_rst;
 input 	saved_grant_0;
-input 	saved_grant_1;
-input 	out_data_buffer_38;
 input 	src_data_38;
 input 	src_data_39;
 input 	src_data_40;
@@ -45441,14 +45420,14 @@ input 	src_data_46;
 input 	out_data_buffer_65;
 output 	p1_wr_strobe;
 input 	src_payload2;
-input 	src_payload3;
 input 	src_data_66;
 input 	av_begintransfer;
+input 	out_data_buffer_6;
+input 	src_payload3;
 input 	src_payload4;
 input 	src_payload5;
 input 	src_payload6;
 input 	src_payload7;
-input 	src_payload8;
 output 	readdata_0;
 output 	readdata_1;
 output 	readdata_2;
@@ -45480,7 +45459,7 @@ output 	readdata_20;
 output 	readdata_19;
 output 	readdata_18;
 output 	readdata_17;
-input 	src_payload9;
+input 	src_payload8;
 output 	irq_reg;
 input 	r_early_rst;
 input 	src_data_41;
@@ -45488,15 +45467,14 @@ input 	src_data_42;
 input 	src_data_43;
 input 	src_data_44;
 input 	src_data_45;
-input 	src_payload10;
 output 	readdata_31;
+input 	src_payload9;
+input 	src_payload10;
 input 	src_payload11;
 input 	src_payload12;
 input 	src_payload13;
 input 	src_payload14;
 input 	src_payload15;
-input 	src_payload16;
-input 	src_payload17;
 input 	epcs_data0;
 
 wire gnd;
@@ -45578,12 +45556,10 @@ niosII_niosII_epcs_sub the_niosII_epcs_sub(
 	.shift_reg_7(shift_reg_7),
 	.reset_n(r_sync_rst),
 	.saved_grant_0(saved_grant_0),
-	.saved_grant_1(saved_grant_1),
-	.out_data_buffer_38(out_data_buffer_38),
 	.src_data_38(src_data_38),
 	.src_data_39(src_data_39),
 	.src_data_40(src_data_40),
-	.data_from_cpu({src_payload15,src_payload14,src_payload12,src_payload13,src_payload11,src_payload,src_payload16,src_payload17,src_payload2,src_payload4,src_payload5,src_payload6,src_payload7,src_payload8,src_payload9,src_payload1}),
+	.data_from_cpu({src_payload13,src_payload12,src_payload10,src_payload11,src_payload9,src_payload,src_payload14,src_payload15,src_payload2,src_payload3,src_payload4,src_payload5,src_payload6,src_payload7,src_payload8,src_payload1}),
 	.mem_used_1(mem_used_1),
 	.wait_latency_counter_1(wait_latency_counter_1),
 	.src_valid(src_valid),
@@ -45591,8 +45567,8 @@ niosII_niosII_epcs_sub the_niosII_epcs_sub(
 	.src_data_46(src_data_46),
 	.out_data_buffer_65(out_data_buffer_65),
 	.p1_wr_strobe(p1_wr_strobe),
-	.src_payload(src_payload3),
 	.src_data_66(src_data_66),
+	.out_data_buffer_6(out_data_buffer_6),
 	.data_to_cpu_0(\the_niosII_epcs_sub|data_to_cpu[0]~q ),
 	.data_to_cpu_1(\the_niosII_epcs_sub|data_to_cpu[1]~q ),
 	.data_to_cpu_2(\the_niosII_epcs_sub|data_to_cpu[2]~q ),
@@ -45609,7 +45585,6 @@ niosII_niosII_epcs_sub the_niosII_epcs_sub(
 	.data_to_cpu_7(\the_niosII_epcs_sub|data_to_cpu[7]~q ),
 	.data_to_cpu_6(\the_niosII_epcs_sub|data_to_cpu[6]~q ),
 	.irq_reg1(irq_reg),
-	.src_payload1(src_payload10),
 	.epcs_data0(epcs_data0));
 
 cycloneive_lcell_comb \readdata[0]~0 (
@@ -47562,8 +47537,6 @@ module niosII_niosII_epcs_sub (
 	shift_reg_7,
 	reset_n,
 	saved_grant_0,
-	saved_grant_1,
-	out_data_buffer_38,
 	src_data_38,
 	src_data_39,
 	src_data_40,
@@ -47575,8 +47548,8 @@ module niosII_niosII_epcs_sub (
 	src_data_46,
 	out_data_buffer_65,
 	p1_wr_strobe,
-	src_payload,
 	src_data_66,
+	out_data_buffer_6,
 	data_to_cpu_0,
 	data_to_cpu_1,
 	data_to_cpu_2,
@@ -47593,7 +47566,6 @@ module niosII_niosII_epcs_sub (
 	data_to_cpu_7,
 	data_to_cpu_6,
 	irq_reg1,
-	src_payload1,
 	epcs_data0)/* synthesis synthesis_greybox=1 */;
 input 	clk;
 output 	data_to_cpu_5;
@@ -47602,8 +47574,6 @@ output 	SS_n;
 output 	shift_reg_7;
 input 	reset_n;
 input 	saved_grant_0;
-input 	saved_grant_1;
-input 	out_data_buffer_38;
 input 	src_data_38;
 input 	src_data_39;
 input 	src_data_40;
@@ -47615,8 +47585,8 @@ input 	src_valid1;
 input 	src_data_46;
 input 	out_data_buffer_65;
 output 	p1_wr_strobe;
-input 	src_payload;
 input 	src_data_66;
+input 	out_data_buffer_6;
 output 	data_to_cpu_0;
 output 	data_to_cpu_1;
 output 	data_to_cpu_2;
@@ -47633,7 +47603,6 @@ output 	data_to_cpu_8;
 output 	data_to_cpu_7;
 output 	data_to_cpu_6;
 output 	irq_reg1;
-input 	src_payload1;
 input 	epcs_data0;
 
 wire gnd;
@@ -47645,11 +47614,10 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \p1_data_wr_strobe~0_combout ;
 wire \p1_wr_strobe~0_combout ;
 wire \p1_wr_strobe~2_combout ;
 wire \wr_strobe~q ;
-wire \p1_wr_strobe~3_combout ;
+wire \p1_data_wr_strobe~0_combout ;
 wire \p1_data_wr_strobe~combout ;
 wire \data_wr_strobe~q ;
 wire \tx_holding_primed~0_combout ;
@@ -47750,9 +47718,9 @@ wire \data_to_cpu[4]~2_combout ;
 wire \epcs_slave_select_holding_reg[3]~q ;
 wire \epcs_slave_select_reg[3]~q ;
 wire \status_wr_strobe~combout ;
-wire \p1_data_rd_strobe~0_combout ;
 wire \p1_rd_strobe~0_combout ;
 wire \rd_strobe~q ;
+wire \p1_data_rd_strobe~0_combout ;
 wire \p1_data_rd_strobe~combout ;
 wire \data_rd_strobe~q ;
 wire \RRDY~0_combout ;
@@ -47796,10 +47764,10 @@ wire \endofpacketvalue_reg[15]~q ;
 wire \epcs_slave_select_holding_reg[15]~q ;
 wire \epcs_slave_select_reg[15]~q ;
 wire \p1_data_to_cpu[15]~21_combout ;
-wire \endofpacketvalue_reg[10]~q ;
 wire \epcs_slave_select_holding_reg[10]~q ;
 wire \epcs_slave_select_reg[10]~q ;
 wire \p1_data_to_cpu[10]~22_combout ;
+wire \endofpacketvalue_reg[10]~q ;
 wire \p1_data_to_cpu[10]~23_combout ;
 wire \p1_data_to_cpu[10]~24_combout ;
 wire \endofpacketvalue_reg[9]~q ;
@@ -47809,26 +47777,26 @@ wire \p1_data_to_cpu[9]~25_combout ;
 wire \data_to_cpu[8]~3_combout ;
 wire \iEOP_reg~q ;
 wire \EOP~0_combout ;
-wire \endofpacketvalue_reg[8]~q ;
+wire \endofpacketvalue_reg[7]~q ;
+wire \endofpacketvalue_reg[6]~q ;
+wire \Equal8~0_combout ;
 wire \EOP~1_combout ;
 wire \EOP~2_combout ;
 wire \EOP~3_combout ;
 wire \EOP~4_combout ;
-wire \endofpacketvalue_reg[7]~q ;
-wire \endofpacketvalue_reg[6]~q ;
-wire \rx_holding_reg[6]~q ;
-wire \rx_holding_reg[7]~q ;
 wire \EOP~5_combout ;
 wire \EOP~6_combout ;
 wire \EOP~7_combout ;
+wire \rx_holding_reg[6]~q ;
+wire \rx_holding_reg[7]~q ;
 wire \EOP~8_combout ;
 wire \EOP~9_combout ;
 wire \EOP~10_combout ;
 wire \EOP~11_combout ;
 wire \EOP~12_combout ;
+wire \endofpacketvalue_reg[8]~q ;
 wire \EOP~13_combout ;
 wire \EOP~14_combout ;
-wire \EOP~15_combout ;
 wire \EOP~q ;
 wire \p1_data_to_cpu[9]~26_combout ;
 wire \p1_data_to_cpu[9]~27_combout ;
@@ -48147,17 +48115,6 @@ dffeas irq_reg(
 defparam irq_reg.is_wysiwyg = "true";
 defparam irq_reg.power_up = "low";
 
-cycloneive_lcell_comb \p1_data_wr_strobe~0 (
-	.dataa(src_payload),
-	.datab(saved_grant_1),
-	.datac(out_data_buffer_38),
-	.datad(src_data_40),
-	.cin(gnd),
-	.combout(\p1_data_wr_strobe~0_combout ),
-	.cout());
-defparam \p1_data_wr_strobe~0 .lut_mask = 16'hFEFF;
-defparam \p1_data_wr_strobe~0 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \p1_wr_strobe~0 (
 	.dataa(src_data_46),
 	.datab(src_valid),
@@ -48194,26 +48151,26 @@ dffeas wr_strobe(
 defparam wr_strobe.is_wysiwyg = "true";
 defparam wr_strobe.power_up = "low";
 
-cycloneive_lcell_comb \p1_wr_strobe~3 (
-	.dataa(saved_grant_0),
-	.datab(out_data_buffer_65),
+cycloneive_lcell_comb \p1_data_wr_strobe~0 (
+	.dataa(src_data_39),
+	.datab(p1_wr_strobe),
 	.datac(\wr_strobe~q ),
 	.datad(wait_latency_counter_1),
 	.cin(gnd),
-	.combout(\p1_wr_strobe~3_combout ),
+	.combout(\p1_data_wr_strobe~0_combout ),
 	.cout());
-defparam \p1_wr_strobe~3 .lut_mask = 16'hEFFF;
-defparam \p1_wr_strobe~3 .sum_lutc_input = "datac";
+defparam \p1_data_wr_strobe~0 .lut_mask = 16'hDFFF;
+defparam \p1_data_wr_strobe~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb p1_data_wr_strobe(
-	.dataa(\p1_data_wr_strobe~0_combout ),
-	.datab(\p1_wr_strobe~0_combout ),
-	.datac(\p1_wr_strobe~3_combout ),
-	.datad(src_data_39),
+	.dataa(src_data_38),
+	.datab(src_data_40),
+	.datac(\p1_wr_strobe~0_combout ),
+	.datad(\p1_data_wr_strobe~0_combout ),
 	.cin(gnd),
 	.combout(\p1_data_wr_strobe~combout ),
 	.cout());
-defparam p1_data_wr_strobe.lut_mask = 16'hFEFF;
+defparam p1_data_wr_strobe.lut_mask = 16'hFFFB;
 defparam p1_data_wr_strobe.sum_lutc_input = "datac";
 
 dffeas data_wr_strobe(
@@ -49354,13 +49311,13 @@ defparam iROE_reg.power_up = "low";
 
 cycloneive_lcell_comb \data_to_cpu[4]~2 (
 	.dataa(src_data_39),
-	.datab(src_payload),
-	.datac(src_payload1),
+	.datab(src_data_38),
+	.datac(gnd),
 	.datad(src_data_40),
 	.cin(gnd),
 	.combout(\data_to_cpu[4]~2_combout ),
 	.cout());
-defparam \data_to_cpu[4]~2 .lut_mask = 16'hFAFC;
+defparam \data_to_cpu[4]~2 .lut_mask = 16'hAACC;
 defparam \data_to_cpu[4]~2 .sum_lutc_input = "datac";
 
 dffeas \epcs_slave_select_holding_reg[3] (
@@ -49402,17 +49359,6 @@ cycloneive_lcell_comb status_wr_strobe(
 defparam status_wr_strobe.lut_mask = 16'hEFFF;
 defparam status_wr_strobe.sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \p1_data_rd_strobe~0 (
-	.dataa(src_payload),
-	.datab(src_payload1),
-	.datac(src_data_40),
-	.datad(src_data_39),
-	.cin(gnd),
-	.combout(\p1_data_rd_strobe~0_combout ),
-	.cout());
-defparam \p1_data_rd_strobe~0 .lut_mask = 16'h7FFF;
-defparam \p1_data_rd_strobe~0 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \p1_rd_strobe~0 (
 	.dataa(\p1_wr_strobe~0_combout ),
 	.datab(src_data_66),
@@ -49438,15 +49384,26 @@ dffeas rd_strobe(
 defparam rd_strobe.is_wysiwyg = "true";
 defparam rd_strobe.power_up = "low";
 
-cycloneive_lcell_comb p1_data_rd_strobe(
-	.dataa(\p1_wr_strobe~0_combout ),
+cycloneive_lcell_comb \p1_data_rd_strobe~0 (
+	.dataa(src_data_38),
 	.datab(src_data_66),
-	.datac(\p1_data_rd_strobe~0_combout ),
-	.datad(\rd_strobe~q ),
+	.datac(\rd_strobe~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\p1_data_rd_strobe~0_combout ),
+	.cout());
+defparam \p1_data_rd_strobe~0 .lut_mask = 16'hDFDF;
+defparam \p1_data_rd_strobe~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb p1_data_rd_strobe(
+	.dataa(src_data_40),
+	.datab(src_data_39),
+	.datac(\p1_wr_strobe~0_combout ),
+	.datad(\p1_data_rd_strobe~0_combout ),
 	.cin(gnd),
 	.combout(\p1_data_rd_strobe~combout ),
 	.cout());
-defparam p1_data_rd_strobe.lut_mask = 16'hFEFF;
+defparam p1_data_rd_strobe.lut_mask = 16'hFFF7;
 defparam p1_data_rd_strobe.sum_lutc_input = "datac";
 
 dffeas data_rd_strobe(
@@ -49989,20 +49946,6 @@ cycloneive_lcell_comb \p1_data_to_cpu[15]~21 (
 defparam \p1_data_to_cpu[15]~21 .lut_mask = 16'hFAFC;
 defparam \p1_data_to_cpu[15]~21 .sum_lutc_input = "datac";
 
-dffeas \endofpacketvalue_reg[10] (
-	.clk(clk),
-	.d(data_from_cpu[10]),
-	.asdata(vcc),
-	.clrn(!reset_n),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\endofpacketvalue_wr_strobe~combout ),
-	.q(\endofpacketvalue_reg[10]~q ),
-	.prn(vcc));
-defparam \endofpacketvalue_reg[10] .is_wysiwyg = "true";
-defparam \endofpacketvalue_reg[10] .power_up = "low";
-
 dffeas \epcs_slave_select_holding_reg[10] (
 	.clk(clk),
 	.d(data_from_cpu[10]),
@@ -50032,36 +49975,50 @@ defparam \epcs_slave_select_reg[10] .is_wysiwyg = "true";
 defparam \epcs_slave_select_reg[10] .power_up = "low";
 
 cycloneive_lcell_comb \p1_data_to_cpu[10]~22 (
-	.dataa(\endofpacketvalue_reg[10]~q ),
-	.datab(\epcs_slave_select_reg[10]~q ),
-	.datac(gnd),
-	.datad(src_data_39),
+	.dataa(\epcs_slave_select_reg[10]~q ),
+	.datab(src_data_40),
+	.datac(\SSO_reg~q ),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\p1_data_to_cpu[10]~22_combout ),
 	.cout());
-defparam \p1_data_to_cpu[10]~22 .lut_mask = 16'hAACC;
+defparam \p1_data_to_cpu[10]~22 .lut_mask = 16'hB8B8;
 defparam \p1_data_to_cpu[10]~22 .sum_lutc_input = "datac";
 
+dffeas \endofpacketvalue_reg[10] (
+	.clk(clk),
+	.d(data_from_cpu[10]),
+	.asdata(vcc),
+	.clrn(!reset_n),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\endofpacketvalue_wr_strobe~combout ),
+	.q(\endofpacketvalue_reg[10]~q ),
+	.prn(vcc));
+defparam \endofpacketvalue_reg[10] .is_wysiwyg = "true";
+defparam \endofpacketvalue_reg[10] .power_up = "low";
+
 cycloneive_lcell_comb \p1_data_to_cpu[10]~23 (
-	.dataa(src_data_40),
-	.datab(\p1_data_to_cpu[10]~22_combout ),
-	.datac(src_data_38),
-	.datad(src_data_39),
+	.dataa(\endofpacketvalue_reg[10]~q ),
+	.datab(src_data_38),
+	.datac(src_data_40),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\p1_data_to_cpu[10]~23_combout ),
 	.cout());
-defparam \p1_data_to_cpu[10]~23 .lut_mask = 16'hEFFE;
+defparam \p1_data_to_cpu[10]~23 .lut_mask = 16'hFEFE;
 defparam \p1_data_to_cpu[10]~23 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \p1_data_to_cpu[10]~24 (
-	.dataa(\p1_data_to_cpu[10]~23_combout ),
-	.datab(\SSO_reg~q ),
-	.datac(\p1_data_wr_strobe~0_combout ),
-	.datad(src_data_39),
+	.dataa(src_data_39),
+	.datab(\p1_data_to_cpu[10]~22_combout ),
+	.datac(src_data_38),
+	.datad(\p1_data_to_cpu[10]~23_combout ),
 	.cin(gnd),
 	.combout(\p1_data_to_cpu[10]~24_combout ),
 	.cout());
-defparam \p1_data_to_cpu[10]~24 .lut_mask = 16'hFFFE;
+defparam \p1_data_to_cpu[10]~24 .lut_mask = 16'hEDDE;
 defparam \p1_data_to_cpu[10]~24 .sum_lutc_input = "datac";
 
 dffeas \endofpacketvalue_reg[9] (
@@ -50143,73 +50100,15 @@ defparam iEOP_reg.is_wysiwyg = "true";
 defparam iEOP_reg.power_up = "low";
 
 cycloneive_lcell_comb \EOP~0 (
-	.dataa(\endofpacketvalue_reg[13]~q ),
-	.datab(\endofpacketvalue_reg[12]~q ),
-	.datac(\endofpacketvalue_reg[15]~q ),
-	.datad(\endofpacketvalue_reg[14]~q ),
+	.dataa(data_from_cpu[5]),
+	.datab(data_from_cpu[4]),
+	.datac(\endofpacketvalue_reg[4]~q ),
+	.datad(\endofpacketvalue_reg[5]~q ),
 	.cin(gnd),
 	.combout(\EOP~0_combout ),
 	.cout());
-defparam \EOP~0 .lut_mask = 16'h7FFF;
+defparam \EOP~0 .lut_mask = 16'h6996;
 defparam \EOP~0 .sum_lutc_input = "datac";
-
-dffeas \endofpacketvalue_reg[8] (
-	.clk(clk),
-	.d(data_from_cpu[8]),
-	.asdata(vcc),
-	.clrn(!reset_n),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(\endofpacketvalue_wr_strobe~combout ),
-	.q(\endofpacketvalue_reg[8]~q ),
-	.prn(vcc));
-defparam \endofpacketvalue_reg[8] .is_wysiwyg = "true";
-defparam \endofpacketvalue_reg[8] .power_up = "low";
-
-cycloneive_lcell_comb \EOP~1 (
-	.dataa(\endofpacketvalue_reg[11]~q ),
-	.datab(\endofpacketvalue_reg[9]~q ),
-	.datac(\endofpacketvalue_reg[10]~q ),
-	.datad(\endofpacketvalue_reg[8]~q ),
-	.cin(gnd),
-	.combout(\EOP~1_combout ),
-	.cout());
-defparam \EOP~1 .lut_mask = 16'h7FFF;
-defparam \EOP~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~2 (
-	.dataa(\rx_holding_reg[0]~q ),
-	.datab(\rx_holding_reg[1]~q ),
-	.datac(\endofpacketvalue_reg[1]~q ),
-	.datad(\endofpacketvalue_reg[0]~q ),
-	.cin(gnd),
-	.combout(\EOP~2_combout ),
-	.cout());
-defparam \EOP~2 .lut_mask = 16'h6996;
-defparam \EOP~2 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~3 (
-	.dataa(\rx_holding_reg[2]~q ),
-	.datab(\endofpacketvalue_reg[3]~q ),
-	.datac(\rx_holding_reg[3]~q ),
-	.datad(\endofpacketvalue_reg[2]~q ),
-	.cin(gnd),
-	.combout(\EOP~3_combout ),
-	.cout());
-defparam \EOP~3 .lut_mask = 16'h6996;
-defparam \EOP~3 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~4 (
-	.dataa(\endofpacketvalue_reg[4]~q ),
-	.datab(\rx_holding_reg[5]~q ),
-	.datac(\endofpacketvalue_reg[5]~q ),
-	.datad(\rx_holding_reg[4]~q ),
-	.cin(gnd),
-	.combout(\EOP~4_combout ),
-	.cout());
-defparam \EOP~4 .lut_mask = 16'h6996;
-defparam \EOP~4 .sum_lutc_input = "datac";
 
 dffeas \endofpacketvalue_reg[7] (
 	.clk(clk),
@@ -50239,6 +50138,94 @@ dffeas \endofpacketvalue_reg[6] (
 defparam \endofpacketvalue_reg[6] .is_wysiwyg = "true";
 defparam \endofpacketvalue_reg[6] .power_up = "low";
 
+cycloneive_lcell_comb \Equal8~0 (
+	.dataa(gnd),
+	.datab(\endofpacketvalue_reg[6]~q ),
+	.datac(saved_grant_0),
+	.datad(out_data_buffer_6),
+	.cin(gnd),
+	.combout(\Equal8~0_combout ),
+	.cout());
+defparam \Equal8~0 .lut_mask = 16'hC33C;
+defparam \Equal8~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~1 (
+	.dataa(\EOP~0_combout ),
+	.datab(data_from_cpu[7]),
+	.datac(\endofpacketvalue_reg[7]~q ),
+	.datad(\Equal8~0_combout ),
+	.cin(gnd),
+	.combout(\EOP~1_combout ),
+	.cout());
+defparam \EOP~1 .lut_mask = 16'hBEFF;
+defparam \EOP~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~2 (
+	.dataa(data_from_cpu[0]),
+	.datab(data_from_cpu[1]),
+	.datac(\endofpacketvalue_reg[1]~q ),
+	.datad(\endofpacketvalue_reg[0]~q ),
+	.cin(gnd),
+	.combout(\EOP~2_combout ),
+	.cout());
+defparam \EOP~2 .lut_mask = 16'h6996;
+defparam \EOP~2 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~3 (
+	.dataa(data_from_cpu[3]),
+	.datab(data_from_cpu[2]),
+	.datac(\endofpacketvalue_reg[2]~q ),
+	.datad(\endofpacketvalue_reg[3]~q ),
+	.cin(gnd),
+	.combout(\EOP~3_combout ),
+	.cout());
+defparam \EOP~3 .lut_mask = 16'h6996;
+defparam \EOP~3 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~4 (
+	.dataa(\p1_data_wr_strobe~combout ),
+	.datab(\EOP~2_combout ),
+	.datac(\EOP~3_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\EOP~4_combout ),
+	.cout());
+defparam \EOP~4 .lut_mask = 16'hFEFE;
+defparam \EOP~4 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~5 (
+	.dataa(\rx_holding_reg[0]~q ),
+	.datab(\rx_holding_reg[1]~q ),
+	.datac(\endofpacketvalue_reg[1]~q ),
+	.datad(\endofpacketvalue_reg[0]~q ),
+	.cin(gnd),
+	.combout(\EOP~5_combout ),
+	.cout());
+defparam \EOP~5 .lut_mask = 16'h6996;
+defparam \EOP~5 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~6 (
+	.dataa(\rx_holding_reg[2]~q ),
+	.datab(\endofpacketvalue_reg[3]~q ),
+	.datac(\rx_holding_reg[3]~q ),
+	.datad(\endofpacketvalue_reg[2]~q ),
+	.cin(gnd),
+	.combout(\EOP~6_combout ),
+	.cout());
+defparam \EOP~6 .lut_mask = 16'h6996;
+defparam \EOP~6 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \EOP~7 (
+	.dataa(\endofpacketvalue_reg[4]~q ),
+	.datab(\rx_holding_reg[5]~q ),
+	.datac(\endofpacketvalue_reg[5]~q ),
+	.datad(\rx_holding_reg[4]~q ),
+	.cin(gnd),
+	.combout(\EOP~7_combout ),
+	.cout());
+defparam \EOP~7 .lut_mask = 16'h6996;
+defparam \EOP~7 .sum_lutc_input = "datac";
+
 dffeas \rx_holding_reg[6] (
 	.clk(clk),
 	.d(\shift_reg[6]~q ),
@@ -50267,130 +50254,100 @@ dffeas \rx_holding_reg[7] (
 defparam \rx_holding_reg[7] .is_wysiwyg = "true";
 defparam \rx_holding_reg[7] .power_up = "low";
 
-cycloneive_lcell_comb \EOP~5 (
+cycloneive_lcell_comb \EOP~8 (
 	.dataa(\endofpacketvalue_reg[7]~q ),
 	.datab(\endofpacketvalue_reg[6]~q ),
 	.datac(\rx_holding_reg[6]~q ),
 	.datad(\rx_holding_reg[7]~q ),
 	.cin(gnd),
-	.combout(\EOP~5_combout ),
-	.cout());
-defparam \EOP~5 .lut_mask = 16'h6996;
-defparam \EOP~5 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~6 (
-	.dataa(\EOP~2_combout ),
-	.datab(\EOP~3_combout ),
-	.datac(\EOP~4_combout ),
-	.datad(\EOP~5_combout ),
-	.cin(gnd),
-	.combout(\EOP~6_combout ),
-	.cout());
-defparam \EOP~6 .lut_mask = 16'hFFFE;
-defparam \EOP~6 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~7 (
-	.dataa(data_from_cpu[7]),
-	.datab(data_from_cpu[6]),
-	.datac(\endofpacketvalue_reg[6]~q ),
-	.datad(\endofpacketvalue_reg[7]~q ),
-	.cin(gnd),
-	.combout(\EOP~7_combout ),
-	.cout());
-defparam \EOP~7 .lut_mask = 16'h6996;
-defparam \EOP~7 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~8 (
-	.dataa(\EOP~0_combout ),
-	.datab(\EOP~1_combout ),
-	.datac(\EOP~6_combout ),
-	.datad(\EOP~7_combout ),
-	.cin(gnd),
 	.combout(\EOP~8_combout ),
 	.cout());
-defparam \EOP~8 .lut_mask = 16'hFFFE;
+defparam \EOP~8 .lut_mask = 16'h6996;
 defparam \EOP~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \EOP~9 (
-	.dataa(data_from_cpu[5]),
-	.datab(data_from_cpu[4]),
-	.datac(\endofpacketvalue_reg[4]~q ),
-	.datad(\endofpacketvalue_reg[5]~q ),
+	.dataa(\EOP~5_combout ),
+	.datab(\EOP~6_combout ),
+	.datac(\EOP~7_combout ),
+	.datad(\EOP~8_combout ),
 	.cin(gnd),
 	.combout(\EOP~9_combout ),
 	.cout());
-defparam \EOP~9 .lut_mask = 16'h6996;
+defparam \EOP~9 .lut_mask = 16'hFFFE;
 defparam \EOP~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \EOP~10 (
-	.dataa(data_from_cpu[0]),
-	.datab(data_from_cpu[1]),
-	.datac(\endofpacketvalue_reg[1]~q ),
-	.datad(\endofpacketvalue_reg[0]~q ),
+	.dataa(\p1_data_rd_strobe~combout ),
+	.datab(\EOP~1_combout ),
+	.datac(\EOP~4_combout ),
+	.datad(\EOP~9_combout ),
 	.cin(gnd),
 	.combout(\EOP~10_combout ),
 	.cout());
-defparam \EOP~10 .lut_mask = 16'h6996;
+defparam \EOP~10 .lut_mask = 16'hFFFE;
 defparam \EOP~10 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \EOP~11 (
-	.dataa(data_from_cpu[3]),
-	.datab(data_from_cpu[2]),
-	.datac(\endofpacketvalue_reg[2]~q ),
-	.datad(\endofpacketvalue_reg[3]~q ),
+	.dataa(\endofpacketvalue_reg[13]~q ),
+	.datab(\endofpacketvalue_reg[12]~q ),
+	.datac(\endofpacketvalue_reg[15]~q ),
+	.datad(\endofpacketvalue_reg[14]~q ),
 	.cin(gnd),
 	.combout(\EOP~11_combout ),
 	.cout());
-defparam \EOP~11 .lut_mask = 16'h6996;
+defparam \EOP~11 .lut_mask = 16'h7FFF;
 defparam \EOP~11 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \EOP~12 (
-	.dataa(\EOP~10_combout ),
-	.datab(\EOP~11_combout ),
-	.datac(\EOP~7_combout ),
-	.datad(gnd),
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\endofpacketvalue_reg[11]~q ),
+	.datad(\endofpacketvalue_reg[10]~q ),
 	.cin(gnd),
 	.combout(\EOP~12_combout ),
 	.cout());
-defparam \EOP~12 .lut_mask = 16'hFEFE;
+defparam \EOP~12 .lut_mask = 16'h0FFF;
 defparam \EOP~12 .sum_lutc_input = "datac";
 
+dffeas \endofpacketvalue_reg[8] (
+	.clk(clk),
+	.d(data_from_cpu[8]),
+	.asdata(vcc),
+	.clrn(!reset_n),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\endofpacketvalue_wr_strobe~combout ),
+	.q(\endofpacketvalue_reg[8]~q ),
+	.prn(vcc));
+defparam \endofpacketvalue_reg[8] .is_wysiwyg = "true";
+defparam \endofpacketvalue_reg[8] .power_up = "low";
+
 cycloneive_lcell_comb \EOP~13 (
-	.dataa(\p1_rd_strobe~0_combout ),
-	.datab(\p1_data_rd_strobe~0_combout ),
-	.datac(\EOP~6_combout ),
-	.datad(gnd),
+	.dataa(\EOP~11_combout ),
+	.datab(\EOP~12_combout ),
+	.datac(\endofpacketvalue_reg[9]~q ),
+	.datad(\endofpacketvalue_reg[8]~q ),
 	.cin(gnd),
 	.combout(\EOP~13_combout ),
 	.cout());
-defparam \EOP~13 .lut_mask = 16'hFEFE;
+defparam \EOP~13 .lut_mask = 16'hEFFF;
 defparam \EOP~13 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \EOP~14 (
-	.dataa(\EOP~9_combout ),
-	.datab(\p1_data_wr_strobe~combout ),
-	.datac(\EOP~12_combout ),
-	.datad(\EOP~13_combout ),
+	.dataa(\EOP~q ),
+	.datab(\EOP~10_combout ),
+	.datac(\EOP~13_combout ),
+	.datad(\status_wr_strobe~combout ),
 	.cin(gnd),
 	.combout(\EOP~14_combout ),
 	.cout());
-defparam \EOP~14 .lut_mask = 16'hFFFE;
+defparam \EOP~14 .lut_mask = 16'hFEFF;
 defparam \EOP~14 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \EOP~15 (
-	.dataa(\EOP~q ),
-	.datab(\status_wr_strobe~combout ),
-	.datac(\EOP~8_combout ),
-	.datad(\EOP~14_combout ),
-	.cin(gnd),
-	.combout(\EOP~15_combout ),
-	.cout());
-defparam \EOP~15 .lut_mask = 16'hFFFB;
-defparam \EOP~15 .sum_lutc_input = "datac";
 
 dffeas EOP(
 	.clk(clk),
-	.d(\EOP~15_combout ),
+	.d(\EOP~14_combout ),
 	.asdata(vcc),
 	.clrn(!reset_n),
 	.aload(gnd),
@@ -56460,8 +56417,6 @@ module niosII_niosII_mm_interconnect_0 (
 	r_sync_rst,
 	r_sync_rst1,
 	saved_grant_0,
-	saved_grant_1,
-	out_data_buffer_38,
 	src_data_38,
 	src_data_39,
 	src_data_40,
@@ -56470,7 +56425,7 @@ module niosII_niosII_mm_interconnect_0 (
 	entries_0,
 	mem_used_1,
 	d_read,
-	read_accepted,
+	uav_read,
 	hold_waitrequest,
 	d_write,
 	write_accepted,
@@ -56504,15 +56459,14 @@ module niosII_niosII_mm_interconnect_0 (
 	mem_used_12,
 	wire_pfdena_reg_ena,
 	out_data_buffer_651,
-	out_data_buffer_381,
+	out_data_buffer_38,
 	out_data_buffer_39,
 	altera_reset_synchronizer_int_chain_out,
 	saved_grant_01,
 	d_byteenable_1,
 	use_reg,
-	saved_grant_11,
+	saved_grant_1,
 	WideOr0,
-	Equal0,
 	i_read,
 	F_pc_24,
 	F_pc_23,
@@ -56529,16 +56483,16 @@ module niosII_niosII_mm_interconnect_0 (
 	F_pc_12,
 	F_pc_11,
 	F_pc_10,
-	Equal1,
-	Equal4,
-	WideOr1,
-	m0_write1,
-	mem_used_7,
+	src_valid2,
+	Equal0,
 	src_data_66,
+	mem_used_7,
+	m0_write1,
+	Equal4,
+	src12_valid,
+	Equal1,
 	F_pc_8,
 	out_data_28,
-	src_valid2,
-	src12_valid,
 	m0_write2,
 	out_data_42,
 	F_pc_9,
@@ -56577,11 +56531,13 @@ module niosII_niosII_mm_interconnect_0 (
 	mem_84_0,
 	mem_66_0,
 	read_latency_shift_reg_0,
+	out_data_toggle_flopped1,
+	dreg_01,
 	read_latency_shift_reg_01,
 	read_latency_shift_reg_02,
 	mem_54_0,
 	src0_valid,
-	WideOr11,
+	WideOr1,
 	mem_used_13,
 	wait_latency_counter_0,
 	wait_latency_counter_11,
@@ -56593,17 +56549,17 @@ module niosII_niosII_mm_interconnect_0 (
 	waitrequest1,
 	mem_used_15,
 	cpu_data_master_waitrequest,
-	src_payload3,
 	src_data_661,
 	av_begintransfer,
 	d_writedata_10,
-	src_payload4,
+	out_data_buffer_6,
+	src_payload3,
 	rst1,
 	out_data_buffer_66,
 	d_byteenable_2,
 	d_byteenable_3,
 	src1_valid,
-	read_accepted1,
+	read_accepted,
 	src1_valid1,
 	hbreak_enabled,
 	read_latency_shift_reg2,
@@ -56622,12 +56578,12 @@ module niosII_niosII_mm_interconnect_0 (
 	d_writedata_21,
 	d_writedata_22,
 	d_writedata_23,
-	WideOr12,
+	WideOr11,
 	write1,
 	Equal121,
 	rf_source_valid,
 	uav_write,
-	src_payload5,
+	src_payload4,
 	out_valid,
 	av_readdata_pre_0,
 	out_data_buffer_01,
@@ -56672,7 +56628,7 @@ module niosII_niosII_mm_interconnect_0 (
 	out_data_15,
 	period_l_wr_strobe,
 	src_data_461,
-	out_data_toggle_flopped1,
+	out_data_toggle_flopped2,
 	av_readdata_pre_11,
 	out_data_buffer_11,
 	out_payload_11,
@@ -56683,7 +56639,7 @@ module niosII_niosII_mm_interconnect_0 (
 	src_data_13,
 	av_readdata_pre_16,
 	out_data_buffer_16,
-	src_payload6,
+	src_payload5,
 	av_readdata_pre_12,
 	out_data_buffer_12,
 	data_reg_12,
@@ -56723,7 +56679,7 @@ module niosII_niosII_mm_interconnect_0 (
 	out_payload_7,
 	F_iw_7,
 	av_readdata_pre_6,
-	out_data_buffer_6,
+	out_data_buffer_61,
 	data_reg_6,
 	out_payload_6,
 	F_iw_6,
@@ -56755,11 +56711,13 @@ module niosII_niosII_mm_interconnect_0 (
 	out_data_buffer_18,
 	av_readdata_pre_17,
 	out_data_buffer_17,
-	src_payload7,
+	src_payload6,
 	readdata_02,
 	readdata_03,
 	readdata_04,
 	readdata_05,
+	av_readdata_pre_301,
+	src_payload7,
 	out_valid1,
 	src_data_0,
 	readdata_06,
@@ -56771,13 +56729,12 @@ module niosII_niosII_mm_interconnect_0 (
 	readdata_15,
 	readdata_110,
 	src_data_12,
-	src_data_2,
 	readdata_24,
 	readdata_25,
 	readdata_26,
 	readdata_27,
 	readdata_28,
-	src_data_21,
+	src_data_2,
 	readdata_31,
 	readdata_32,
 	readdata_33,
@@ -56785,10 +56742,10 @@ module niosII_niosII_mm_interconnect_0 (
 	readdata_35,
 	src_data_31,
 	readdata_41,
+	src0_valid1,
 	readdata_42,
 	readdata_43,
 	readdata_44,
-	av_readdata_pre_301,
 	src_data_41,
 	readdata_5,
 	readdata_51,
@@ -56823,11 +56780,11 @@ module niosII_niosII_mm_interconnect_0 (
 	counter_reg_bit_2,
 	counter_reg_bit_1,
 	counter_reg_bit_0,
-	dreg_01,
+	dreg_02,
 	av_waitrequest,
 	mem_used_16,
 	out_data_buffer_661,
-	out_data_buffer_382,
+	out_data_buffer_381,
 	out_data_buffer_71,
 	za_valid,
 	readdata_111,
@@ -56845,10 +56802,10 @@ module niosII_niosII_mm_interconnect_0 (
 	readdata_74,
 	readdata_64,
 	out_data_buffer_261,
+	src_payload10,
 	readdata_212,
 	readdata_30,
 	out_data_buffer_251,
-	src_payload10,
 	readdata_29,
 	out_data_buffer_241,
 	readdata_281,
@@ -57009,7 +56966,6 @@ module niosII_niosII_mm_interconnect_0 (
 	src_data_431,
 	src_data_441,
 	src_data_451,
-	src_payload26,
 	av_readdata_1,
 	readdata_119,
 	av_readdata_2,
@@ -57019,24 +56975,25 @@ module niosII_niosII_mm_interconnect_0 (
 	av_readdata_6,
 	av_readdata_7,
 	out_data_buffer_210,
-	src_payload27,
+	src_payload26,
 	src_data_33,
+	src_payload27,
 	src_payload28,
-	src_payload29,
 	src_data_34,
+	src_payload29,
 	src_payload30,
 	src_payload31,
 	src_payload32,
 	src_payload33,
-	src_payload34,
 	readdata_312,
+	src_payload34,
 	src_payload35,
 	src_payload36,
 	src_payload37,
 	src_payload38,
 	src_payload39,
-	src_payload40,
 	src_data_35,
+	src_payload40,
 	src_payload41,
 	src_payload42,
 	src_payload43,
@@ -57045,16 +57002,16 @@ module niosII_niosII_mm_interconnect_0 (
 	src_payload46,
 	src_payload47,
 	src_payload48,
-	src_payload49,
 	rvalid,
-	src_payload50,
+	src_payload49,
 	woverflow,
+	src_payload50,
 	src_payload51,
-	src_payload52,
 	ac,
 	av_readdata_8,
 	out_data_buffer_111,
 	out_data_buffer_32,
+	src_payload52,
 	src_payload53,
 	src_payload54,
 	src_payload55,
@@ -57062,11 +57019,10 @@ module niosII_niosII_mm_interconnect_0 (
 	src_payload57,
 	src_payload58,
 	src_payload59,
-	src_payload60,
 	out_data_buffer_101,
 	out_data_buffer_41,
 	out_data_buffer_51,
-	out_data_buffer_61,
+	out_data_buffer_62,
 	write2,
 	clk_clk)/* synthesis synthesis_greybox=1 */;
 input 	wire_pll7_clk_0;
@@ -57129,8 +57085,6 @@ input 	readdata_161;
 input 	r_sync_rst;
 input 	r_sync_rst1;
 output 	saved_grant_0;
-output 	saved_grant_1;
-output 	out_data_buffer_38;
 output 	src_data_38;
 output 	src_data_39;
 output 	src_data_40;
@@ -57139,7 +57093,7 @@ input 	entries_1;
 input 	entries_0;
 output 	mem_used_1;
 input 	d_read;
-output 	read_accepted;
+output 	uav_read;
 output 	hold_waitrequest;
 input 	d_write;
 output 	write_accepted;
@@ -57173,15 +57127,14 @@ output 	dreg_0;
 output 	mem_used_12;
 input 	wire_pfdena_reg_ena;
 output 	out_data_buffer_651;
-output 	out_data_buffer_381;
+output 	out_data_buffer_38;
 output 	out_data_buffer_39;
 input 	altera_reset_synchronizer_int_chain_out;
 output 	saved_grant_01;
 input 	d_byteenable_1;
 output 	use_reg;
-output 	saved_grant_11;
+output 	saved_grant_1;
 output 	WideOr0;
-input 	Equal0;
 input 	i_read;
 input 	F_pc_24;
 input 	F_pc_23;
@@ -57198,16 +57151,16 @@ input 	F_pc_13;
 input 	F_pc_12;
 input 	F_pc_11;
 input 	F_pc_10;
-output 	Equal1;
-output 	Equal4;
-output 	WideOr1;
-output 	m0_write1;
-output 	mem_used_7;
+output 	src_valid2;
+input 	Equal0;
 output 	src_data_66;
+output 	mem_used_7;
+output 	m0_write1;
+output 	Equal4;
+output 	src12_valid;
+output 	Equal1;
 input 	F_pc_8;
 output 	out_data_28;
-output 	src_valid2;
-output 	src12_valid;
 output 	m0_write2;
 output 	out_data_42;
 input 	F_pc_9;
@@ -57246,11 +57199,13 @@ input 	waitrequest;
 output 	mem_84_0;
 output 	mem_66_0;
 output 	read_latency_shift_reg_0;
+output 	out_data_toggle_flopped1;
+output 	dreg_01;
 output 	read_latency_shift_reg_01;
 output 	read_latency_shift_reg_02;
 output 	mem_54_0;
 output 	src0_valid;
-output 	WideOr11;
+output 	WideOr1;
 output 	mem_used_13;
 output 	wait_latency_counter_0;
 output 	wait_latency_counter_11;
@@ -57262,17 +57217,17 @@ output 	saved_grant_02;
 input 	waitrequest1;
 output 	mem_used_15;
 output 	cpu_data_master_waitrequest;
-output 	src_payload3;
 output 	src_data_661;
 output 	av_begintransfer;
 input 	d_writedata_10;
-output 	src_payload4;
+output 	out_data_buffer_6;
+output 	src_payload3;
 input 	rst1;
 output 	out_data_buffer_66;
 input 	d_byteenable_2;
 input 	d_byteenable_3;
 output 	src1_valid;
-output 	read_accepted1;
+output 	read_accepted;
 output 	src1_valid1;
 input 	hbreak_enabled;
 output 	read_latency_shift_reg2;
@@ -57291,12 +57246,12 @@ input 	d_writedata_20;
 input 	d_writedata_21;
 input 	d_writedata_22;
 input 	d_writedata_23;
-output 	WideOr12;
+output 	WideOr11;
 output 	write1;
 output 	Equal121;
 output 	rf_source_valid;
 output 	uav_write;
-output 	src_payload5;
+output 	src_payload4;
 output 	out_valid;
 output 	av_readdata_pre_0;
 output 	out_data_buffer_01;
@@ -57341,7 +57296,7 @@ output 	out_data_14;
 output 	out_data_15;
 input 	period_l_wr_strobe;
 output 	src_data_461;
-output 	out_data_toggle_flopped1;
+output 	out_data_toggle_flopped2;
 output 	av_readdata_pre_11;
 output 	out_data_buffer_11;
 output 	out_payload_11;
@@ -57352,7 +57307,7 @@ output 	out_payload_13;
 output 	src_data_13;
 output 	av_readdata_pre_16;
 output 	out_data_buffer_16;
-output 	src_payload6;
+output 	src_payload5;
 output 	av_readdata_pre_12;
 output 	out_data_buffer_12;
 output 	data_reg_12;
@@ -57392,7 +57347,7 @@ output 	data_reg_7;
 output 	out_payload_7;
 input 	F_iw_7;
 output 	av_readdata_pre_6;
-output 	out_data_buffer_6;
+output 	out_data_buffer_61;
 output 	data_reg_6;
 output 	out_payload_6;
 input 	F_iw_6;
@@ -57424,11 +57379,13 @@ output 	av_readdata_pre_18;
 output 	out_data_buffer_18;
 output 	av_readdata_pre_17;
 output 	out_data_buffer_17;
-output 	src_payload7;
+output 	src_payload6;
 input 	readdata_02;
 input 	readdata_03;
 input 	readdata_04;
 input 	readdata_05;
+output 	av_readdata_pre_301;
+output 	src_payload7;
 output 	out_valid1;
 output 	src_data_0;
 input 	readdata_06;
@@ -57440,13 +57397,12 @@ input 	readdata_14;
 input 	readdata_15;
 input 	readdata_110;
 output 	src_data_12;
-output 	src_data_2;
 input 	readdata_24;
 input 	readdata_25;
 input 	readdata_26;
 input 	readdata_27;
 input 	readdata_28;
-output 	src_data_21;
+output 	src_data_2;
 input 	readdata_31;
 input 	readdata_32;
 input 	readdata_33;
@@ -57454,10 +57410,10 @@ input 	readdata_34;
 input 	readdata_35;
 output 	src_data_31;
 input 	readdata_41;
+output 	src0_valid1;
 input 	readdata_42;
 input 	readdata_43;
 input 	readdata_44;
-output 	av_readdata_pre_301;
 output 	src_data_41;
 input 	readdata_5;
 input 	readdata_51;
@@ -57492,11 +57448,11 @@ input 	counter_reg_bit_3;
 input 	counter_reg_bit_2;
 input 	counter_reg_bit_1;
 input 	counter_reg_bit_0;
-output 	dreg_01;
+output 	dreg_02;
 input 	av_waitrequest;
 output 	mem_used_16;
 output 	out_data_buffer_661;
-output 	out_data_buffer_382;
+output 	out_data_buffer_381;
 output 	out_data_buffer_71;
 input 	za_valid;
 input 	readdata_111;
@@ -57514,10 +57470,10 @@ input 	readdata_8;
 input 	readdata_74;
 input 	readdata_64;
 output 	out_data_buffer_261;
+output 	src_payload10;
 input 	readdata_212;
 input 	readdata_30;
 output 	out_data_buffer_251;
-output 	src_payload10;
 input 	readdata_29;
 output 	out_data_buffer_241;
 input 	readdata_281;
@@ -57678,7 +57634,6 @@ output 	src_data_421;
 output 	src_data_431;
 output 	src_data_441;
 output 	src_data_451;
-output 	src_payload26;
 input 	av_readdata_1;
 input 	readdata_119;
 input 	av_readdata_2;
@@ -57688,24 +57643,25 @@ input 	av_readdata_5;
 input 	av_readdata_6;
 input 	av_readdata_7;
 output 	out_data_buffer_210;
-output 	src_payload27;
+output 	src_payload26;
 output 	src_data_33;
+output 	src_payload27;
 output 	src_payload28;
-output 	src_payload29;
 output 	src_data_34;
+output 	src_payload29;
 output 	src_payload30;
 output 	src_payload31;
 output 	src_payload32;
 output 	src_payload33;
-output 	src_payload34;
 input 	readdata_312;
+output 	src_payload34;
 output 	src_payload35;
 output 	src_payload36;
 output 	src_payload37;
 output 	src_payload38;
 output 	src_payload39;
-output 	src_payload40;
 output 	src_data_35;
+output 	src_payload40;
 output 	src_payload41;
 output 	src_payload42;
 output 	src_payload43;
@@ -57714,16 +57670,16 @@ output 	src_payload45;
 output 	src_payload46;
 output 	src_payload47;
 output 	src_payload48;
-output 	src_payload49;
 input 	rvalid;
-output 	src_payload50;
+output 	src_payload49;
 input 	woverflow;
+output 	src_payload50;
 output 	src_payload51;
-output 	src_payload52;
 input 	ac;
 input 	av_readdata_8;
 output 	out_data_buffer_111;
 output 	out_data_buffer_32;
+output 	src_payload52;
 output 	src_payload53;
 output 	src_payload54;
 output 	src_payload55;
@@ -57731,11 +57687,10 @@ output 	src_payload56;
 output 	src_payload57;
 output 	src_payload58;
 output 	src_payload59;
-output 	src_payload60;
 output 	out_data_buffer_101;
 output 	out_data_buffer_41;
 output 	out_data_buffer_51;
-output 	out_data_buffer_61;
+output 	out_data_buffer_62;
 output 	write2;
 input 	clk_clk;
 
@@ -57756,13 +57711,15 @@ wire \jtag_avalon_jtag_slave_translator|av_readdata_pre[19]~q ;
 wire \jtag_avalon_jtag_slave_translator|av_readdata_pre[18]~q ;
 wire \jtag_avalon_jtag_slave_translator|av_readdata_pre[17]~q ;
 wire \jtag_avalon_jtag_slave_translator|av_readdata_pre[16]~q ;
+wire \cmd_mux_010|saved_grant[1]~q ;
+wire \crosser_003|clock_xer|out_data_buffer[38]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[38]~q ;
 wire \crosser_003|clock_xer|out_data_buffer[39]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[39]~q ;
 wire \crosser_003|clock_xer|out_data_buffer[40]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[40]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[10]~q ;
-wire \cpu_data_master_translator|uav_read~0_combout ;
+wire \cpu_data_master_translator|read_accepted~q ;
 wire \crosser_001|clock_xer|out_data_buffer[0]~q ;
 wire \crosser_001|clock_xer|out_data_toggle_flopped~q ;
 wire \crosser_001|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
@@ -57780,17 +57737,17 @@ wire \crosser_003|clock_xer|out_data_buffer[46]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[46]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[7]~q ;
 wire \port_led_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ;
-wire \router|Equal6~0_combout ;
-wire \router|src_channel[12]~0_combout ;
-wire \router|Equal2~1_combout ;
-wire \router|src_channel[12]~1_combout ;
-wire \router|src_channel[12]~3_combout ;
 wire \cpu_instruction_master_translator|read_accepted~q ;
 wire \cpu_instruction_master_agent|cp_valid~combout ;
 wire \router_001|Equal1~4_combout ;
-wire \router|Equal5~0_combout ;
-wire \router|src_channel[12]~4_combout ;
 wire \cpu_instruction_master_translator|uav_read~combout ;
+wire \router|Equal6~0_combout ;
+wire \router|src_channel[12]~0_combout ;
+wire \router|Equal5~0_combout ;
+wire \router|src_channel[12]~1_combout ;
+wire \router|Equal2~1_combout ;
+wire \router|src_channel[12]~2_combout ;
+wire \router|src_channel[12]~4_combout ;
 wire \cmd_mux_012|src_data[46]~combout ;
 wire \cmd_mux_012|src_data[60]~combout ;
 wire \cmd_mux_012|src_data[47]~combout ;
@@ -57816,8 +57773,6 @@ wire \cmd_mux_012|src_data[44]~combout ;
 wire \cmd_mux_012|src_data[45]~combout ;
 wire \adc_0_adc_slave_translator|read_latency_shift_reg[0]~q ;
 wire \crosser_004|clock_xer|out_data_toggle_flopped~q ;
-wire \crosser_005|clock_xer|out_data_toggle_flopped~q ;
-wire \crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
 wire \crosser_004|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
 wire \crosser_007|clock_xer|out_data_toggle_flopped~q ;
 wire \crosser_007|clock_xer|in_to_out_synchronizer|dreg[0]~q ;
@@ -57832,8 +57787,7 @@ wire \sdram_s1_agent_rsp_fifo|mem_used[0]~q ;
 wire \sdram_s1_agent_rsp_fifo|mem[0][87]~q ;
 wire \sdram_s1_agent|rp_valid~combout ;
 wire \sdram_s1_agent_rsp_fifo|mem[0][88]~q ;
-wire \sdram_s1_agent|uncompressor|burst_uncompress_address_base[1]~q ;
-wire \sdram_s1_agent|uncompressor|burst_uncompress_address_offset[1]~q ;
+wire \sdram_s1_agent|uncompressor|source_addr[1]~0_combout ;
 wire \sdram_s1_agent_rsp_fifo|mem[0][19]~q ;
 wire \sdram_s1_agent|comb~0_combout ;
 wire \sdram_s1_rsp_width_adapter|always10~1_combout ;
@@ -57850,16 +57804,17 @@ wire \timer_0_s1_translator|read_latency_shift_reg~0_combout ;
 wire \rs232_1_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ;
 wire \port_key_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ;
 wire \port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ;
+wire \cmd_demux|WideOr0~5_combout ;
 wire \sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ;
+wire \sys_id_control_slave_translator|av_waitrequest_generated~1_combout ;
 wire \sys_id_control_slave_translator|wait_latency_counter[1]~q ;
-wire \router|always1~0_combout ;
-wire \sys_id_control_slave_translator|wait_latency_counter[0]~q ;
 wire \cmd_demux|sink_ready~2_combout ;
 wire \crosser_002|clock_xer|take_in_data~0_combout ;
 wire \router|Equal13~1_combout ;
 wire \crosser|clock_xer|in_data_toggle~q ;
 wire \crosser|clock_xer|out_to_in_synchronizer|dreg[0]~q ;
-wire \cmd_demux|WideOr0~8_combout ;
+wire \cmd_demux|WideOr0~6_combout ;
+wire \cmd_demux|WideOr0~7_combout ;
 wire \crosser_003|clock_xer|out_data_buffer[66]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[66]~q ;
 wire \epcs_epcs_control_port_agent_rsp_fifo|mem_used[0]~q ;
@@ -57880,7 +57835,6 @@ wire \crosser_001|clock_xer|out_data_buffer[64]~q ;
 wire \epcs_epcs_control_port_agent|nonposted_write_endofpacket~0_combout ;
 wire \epcs_epcs_control_port_translator|uav_waitrequest~0_combout ;
 wire \crosser_003|clock_xer|take_in_data~2_combout ;
-wire \crosser_001|clock_xer|out_data_buffer[6]~q ;
 wire \sys_pll_pll_slave_agent_rsp_fifo|mem_used[0]~q ;
 wire \crosser_002|clock_xer|out_data_buffer[105]~q ;
 wire \crosser_002|clock_xer|out_data_buffer[64]~q ;
@@ -57892,6 +57846,7 @@ wire \crosser_007|clock_xer|in_ready~0_combout ;
 wire \sys_pll_pll_slave_agent|uncompressor|sink_ready~0_combout ;
 wire \cmd_demux|src12_valid~2_combout ;
 wire \cmd_mux_012|src_payload[0]~combout ;
+wire \cmd_mux_012|WideOr1~combout ;
 wire \sdram_s1_agent|cp_ready~combout ;
 wire \cmd_mux_012|src_data[34]~combout ;
 wire \cmd_mux_012|src_data[35]~combout ;
@@ -57908,9 +57863,9 @@ wire \rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~0_combout ;
 wire \timer_0_s1_translator|av_waitrequest_generated~0_combout ;
 wire \sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ;
 wire \sdram_s1_agent_rsp_fifo|mem[0][57]~q ;
-wire \sys_id_control_slave_translator|av_waitrequest_generated~1_combout ;
-wire \cmd_demux|sink_ready~4_combout ;
+wire \router|always1~0_combout ;
 wire \sys_id_control_slave_agent|m0_write~0_combout ;
+wire \cmd_demux|sink_ready~4_combout ;
 wire \crosser_003|clock_xer|out_data_buffer[84]~q ;
 wire \epcs_epcs_control_port_agent|rp_valid~combout ;
 wire \crosser_001|clock_xer|out_data_buffer[5]~q ;
@@ -57926,42 +57881,41 @@ wire \sdram_s1_rsp_width_adapter|data_reg[5]~q ;
 wire \sdram_s1_rsp_width_adapter|data_reg[15]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[4]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[0]~q ;
-wire \crosser_004|clock_xer|out_valid~combout ;
-wire \crosser_005|clock_xer|out_data_buffer[0]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[0]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[0]~q ;
 wire \crosser_007|clock_xer|out_valid~combout ;
 wire \crosser_007|clock_xer|out_data_buffer[0]~q ;
+wire \crosser_005|clock_xer|out_data_buffer[0]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[0]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[1]~q ;
-wire \crosser_005|clock_xer|out_data_buffer[1]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[1]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[1]~q ;
 wire \crosser_007|clock_xer|out_data_buffer[1]~q ;
+wire \crosser_005|clock_xer|out_data_buffer[1]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[1]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[2]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[2]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[2]~q ;
+wire \crosser_004|clock_xer|out_valid~combout ;
 wire \crosser_004|clock_xer|out_data_buffer[2]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[3]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[3]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[3]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[3]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[4]~q ;
-wire \crosser_005|clock_xer|out_data_buffer[4]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[4]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[4]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[4]~q ;
+wire \crosser_005|clock_xer|out_data_buffer[4]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[5]~q ;
-wire \rsp_demux_009|src0_valid~0_combout ;
-wire \crosser_004|clock_xer|out_data_buffer[5]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[5]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[5]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[5]~q ;
+wire \crosser_004|clock_xer|out_data_buffer[5]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[6]~q ;
-wire \crosser_004|clock_xer|out_data_buffer[6]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[6]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[6]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[6]~q ;
+wire \crosser_004|clock_xer|out_data_buffer[6]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[7]~q ;
-wire \crosser_004|clock_xer|out_data_buffer[7]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[7]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[7]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[7]~q ;
+wire \crosser_004|clock_xer|out_data_buffer[7]~q ;
 wire \cmd_mux_012|src_payload~0_combout ;
 wire \cmd_mux_012|src_payload~1_combout ;
 wire \cmd_mux_012|src_payload~2_combout ;
@@ -58003,9 +57957,9 @@ wire \adc_0_adc_slave_translator|av_readdata_pre[15]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[15]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[15]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[15]~q ;
-wire \crosser_004|clock_xer|out_data_buffer[14]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[14]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[14]~q ;
+wire \crosser_004|clock_xer|out_data_buffer[14]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[13]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[13]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[13]~q ;
@@ -58013,8 +57967,8 @@ wire \crosser_004|clock_xer|out_data_buffer[12]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[12]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[12]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[11]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[11]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[11]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[11]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[10]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[10]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[10]~q ;
@@ -58025,8 +57979,8 @@ wire \crosser_005|clock_xer|out_data_buffer[9]~q ;
 wire \timer_0_s1_translator|av_readdata_pre[9]~q ;
 wire \adc_0_adc_slave_translator|av_readdata_pre[8]~q ;
 wire \crosser_004|clock_xer|out_data_buffer[8]~q ;
-wire \timer_0_s1_translator|av_readdata_pre[8]~q ;
 wire \crosser_005|clock_xer|out_data_buffer[8]~q ;
+wire \timer_0_s1_translator|av_readdata_pre[8]~q ;
 wire \crosser_001|clock_xer|out_data_buffer[3]~q ;
 wire \epcs_epcs_control_port_translator|av_readdata_pre[0]~q ;
 wire \epcs_epcs_control_port_agent_rdata_fifo|out_data[0]~0_combout ;
@@ -58235,7 +58189,7 @@ readdata_10,readdata_9,readdata_8,readdata_74,readdata_64,readdata_54,readdata_4
 	.read_latency_shift_reg_0(read_latency_shift_reg_0),
 	.write(\cpu_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
 	.mem(\cpu_debug_mem_slave_agent_rsp_fifo|mem~1_combout ),
-	.WideOr1(WideOr12),
+	.WideOr1(WideOr11),
 	.av_readdata_pre_0(av_readdata_pre_0),
 	.av_readdata_pre_1(av_readdata_pre_1),
 	.av_readdata_pre_2(av_readdata_pre_2),
@@ -58274,17 +58228,16 @@ niosII_altera_merlin_slave_translator_11 sys_id_control_slave_translator(
 	.W_alu_result_3(W_alu_result_3),
 	.av_readdata({gnd,W_alu_result_2,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
 	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.uav_read(uav_read),
 	.cp_valid(cp_valid),
 	.m0_write(m0_write),
 	.Equal9(Equal9),
 	.Equal6(\router|Equal6~0_combout ),
 	.read_latency_shift_reg_0(read_latency_shift_reg_02),
 	.mem_used_1(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.wait_latency_counter_1(\sys_id_control_slave_translator|wait_latency_counter[1]~q ),
-	.wait_latency_counter_0(\sys_id_control_slave_translator|wait_latency_counter[0]~q ),
-	.sink_ready(\cmd_demux|sink_ready~2_combout ),
 	.av_waitrequest_generated(\sys_id_control_slave_translator|av_waitrequest_generated~1_combout ),
+	.wait_latency_counter_1(\sys_id_control_slave_translator|wait_latency_counter[1]~q ),
+	.sink_ready(\cmd_demux|sink_ready~2_combout ),
 	.m0_write1(\sys_id_control_slave_agent|m0_write~0_combout ),
 	.av_readdata_pre_30(av_readdata_pre_301));
 
@@ -58293,7 +58246,7 @@ niosII_altera_merlin_slave_translator_9 rs232_1_avalon_rs232_slave_translator(
 	.W_alu_result_3(W_alu_result_3),
 	.reset(r_sync_rst),
 	.d_read(d_read),
-	.read_accepted(read_accepted),
+	.read_accepted(\cpu_data_master_translator|read_accepted~q ),
 	.hold_waitrequest(hold_waitrequest),
 	.Equal9(Equal9),
 	.Equal6(\router|Equal6~0_combout ),
@@ -58319,7 +58272,7 @@ niosII_altera_merlin_slave_translator_4 port_gpio_0_avalon_parallel_port_slave_t
 	.W_alu_result_4(W_alu_result_4),
 	.reset(r_sync_rst),
 	.Equal6(\router|Equal6~0_combout ),
-	.src_channel_12(\router|src_channel[12]~1_combout ),
+	.src_channel_12(\router|src_channel[12]~2_combout ),
 	.read_latency_shift_reg_0(read_latency_shift_reg_01),
 	.mem_used_1(\port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
 	.read_latency_shift_reg(read_latency_shift_reg2),
@@ -58330,7 +58283,7 @@ niosII_altera_merlin_slave_translator_7 port_sw_avalon_parallel_port_slave_trans
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
 	.d_read(d_read),
-	.read_accepted(read_accepted),
+	.read_accepted(\cpu_data_master_translator|read_accepted~q ),
 	.hold_waitrequest(hold_waitrequest),
 	.read_latency_shift_reg_0(\port_sw_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
 	.write(write));
@@ -58339,7 +58292,7 @@ niosII_altera_merlin_slave_translator_5 port_key_avalon_parallel_port_slave_tran
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
 	.d_read(d_read),
-	.read_accepted(read_accepted),
+	.read_accepted(\cpu_data_master_translator|read_accepted~q ),
 	.hold_waitrequest(hold_waitrequest),
 	.read_latency_shift_reg_0(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
 	.read_latency_shift_reg(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg~2_combout ),
@@ -58369,7 +58322,7 @@ niosII_altera_merlin_slave_translator_3 jtag_avalon_jtag_slave_translator(
 	.reset(altera_reset_synchronizer_int_chain_out),
 	.rst1(rst1),
 	.b_full(b_full),
-	.out_data_toggle_flopped(out_data_toggle_flopped1),
+	.out_data_toggle_flopped(out_data_toggle_flopped2),
 	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,rvalid,woverflow,gnd,b_non_empty,gnd,ac,av_readdata_9,av_readdata_8,av_readdata_7,av_readdata_6,av_readdata_5,av_readdata_4,av_readdata_3,av_readdata_2,av_readdata_1,av_readdata_0}),
 	.counter_reg_bit_5(counter_reg_bit_5),
 	.counter_reg_bit_4(counter_reg_bit_4),
@@ -58377,7 +58330,7 @@ niosII_altera_merlin_slave_translator_3 jtag_avalon_jtag_slave_translator(
 	.counter_reg_bit_2(counter_reg_bit_2),
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
-	.dreg_0(dreg_01),
+	.dreg_0(dreg_02),
 	.av_waitrequest(av_waitrequest),
 	.mem_used_1(mem_used_16),
 	.out_data_buffer_66(out_data_buffer_661),
@@ -58438,7 +58391,7 @@ niosII_altera_merlin_master_translator_1 cpu_instruction_master_translator(
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
 	.hold_waitrequest(hold_waitrequest),
-	.saved_grant_1(saved_grant_11),
+	.saved_grant_1(saved_grant_1),
 	.i_read(i_read),
 	.read_accepted1(\cpu_instruction_master_translator|read_accepted~q ),
 	.Equal1(\router_001|Equal1~4_combout ),
@@ -58451,7 +58404,7 @@ niosII_altera_merlin_master_translator_1 cpu_instruction_master_translator(
 	.out_data_toggle_flopped(\crosser_006|clock_xer|out_data_toggle_flopped~q ),
 	.dreg_0(\crosser_006|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
 	.src1_valid(src1_valid),
-	.read_accepted2(read_accepted1),
+	.read_accepted2(read_accepted),
 	.src1_valid1(src1_valid1),
 	.saved_grant_11(\cmd_mux_009|saved_grant[1]~q ));
 
@@ -58459,16 +58412,126 @@ niosII_altera_merlin_master_translator cpu_data_master_translator(
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
 	.d_read(d_read),
-	.read_accepted1(read_accepted),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.read_accepted1(\cpu_data_master_translator|read_accepted~q ),
+	.uav_read(uav_read),
 	.hold_waitrequest(hold_waitrequest),
 	.d_write(d_write),
 	.write_accepted1(write_accepted),
-	.WideOr1(WideOr11),
+	.WideOr1(WideOr1),
 	.WideOr0(\cmd_demux|WideOr0~1_combout ),
-	.WideOr01(\cmd_demux|WideOr0~8_combout ),
+	.WideOr01(\cmd_demux|WideOr0~5_combout ),
+	.sink_ready(\cmd_demux|sink_ready~2_combout ),
+	.take_in_data(\crosser_002|clock_xer|take_in_data~0_combout ),
+	.WideOr02(\cmd_demux|WideOr0~6_combout ),
+	.WideOr03(\cmd_demux|WideOr0~7_combout ),
 	.av_waitrequest(cpu_data_master_waitrequest),
 	.uav_write(uav_write));
+
+niosII_altera_avalon_sc_fifo_1 cpu_debug_mem_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.reset(r_sync_rst),
+	.uav_read(uav_read),
+	.uav_read1(\cpu_instruction_master_translator|uav_read~combout ),
+	.mem_84_0(mem_84_0),
+	.mem_66_0(mem_66_0),
+	.read_latency_shift_reg_0(read_latency_shift_reg_0),
+	.saved_grant_0(saved_grant_02),
+	.waitrequest(waitrequest1),
+	.mem_used_1(mem_used_15),
+	.write(\cpu_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
+	.saved_grant_1(\cmd_mux_009|saved_grant[1]~q ),
+	.mem(\cpu_debug_mem_slave_agent_rsp_fifo|mem~1_combout ),
+	.WideOr1(WideOr11),
+	.rf_source_valid(rf_source_valid));
+
+niosII_altera_merlin_slave_agent_1 cpu_debug_mem_slave_agent(
+	.mem(\cpu_debug_mem_slave_agent_rsp_fifo|mem~1_combout ),
+	.WideOr1(WideOr11),
+	.rf_source_valid(rf_source_valid));
+
+niosII_altera_avalon_sc_fifo_14 sys_id_control_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.reset(r_sync_rst),
+	.read_latency_shift_reg_0(read_latency_shift_reg_02),
+	.mem_used_1(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.sink_ready(\cmd_demux|sink_ready~2_combout ),
+	.sink_ready1(\cmd_demux|sink_ready~4_combout ));
+
+niosII_altera_merlin_slave_agent_11 sys_id_control_slave_agent(
+	.mem_used_1(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.always1(\router|always1~0_combout ),
+	.m0_write(\sys_id_control_slave_agent|m0_write~0_combout ));
+
+niosII_altera_avalon_sc_fifo_11 rs232_1_avalon_rs232_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.W_alu_result_3(W_alu_result_3),
+	.reset(r_sync_rst),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.Equal9(Equal9),
+	.Equal6(\router|Equal6~0_combout ),
+	.read_latency_shift_reg_0(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
+	.mem_used_1(\rs232_1_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.read_latency_shift_reg(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~3_combout ));
+
+niosII_altera_avalon_sc_fifo_10 rs232_0_avalon_rs232_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.reset(r_sync_rst),
+	.read_latency_shift_reg_0(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
+	.Equal12(Equal12),
+	.mem_used_1(mem_used_14),
+	.read_latency_shift_reg(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg~2_combout ),
+	.read_latency_shift_reg1(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~0_combout ));
+
+niosII_altera_avalon_sc_fifo_6 port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.reset(r_sync_rst),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.Equal6(\router|Equal6~0_combout ),
+	.src_channel_12(\router|src_channel[12]~2_combout ),
+	.read_latency_shift_reg_0(read_latency_shift_reg_01),
+	.mem_used_1(\port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.read_latency_shift_reg(\port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg~1_combout ));
+
+niosII_altera_avalon_sc_fifo_9 port_sw_avalon_parallel_port_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_4(W_alu_result_4),
+	.reset(r_sync_rst),
+	.d_read(d_read),
+	.read_accepted(\cpu_data_master_translator|read_accepted~q ),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.cp_valid(cp_valid),
+	.src_channel_12(\router|src_channel[12]~2_combout ),
+	.read_latency_shift_reg_0(\port_sw_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.write(write),
+	.write1(write2));
+
+niosII_altera_avalon_sc_fifo_7 port_key_avalon_parallel_port_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_4(W_alu_result_4),
+	.reset(r_sync_rst),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.cp_valid(cp_valid),
+	.src_channel_12(\router|src_channel[12]~2_combout ),
+	.read_latency_shift_reg_0(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.mem_used_1(\port_key_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.write(write1));
+
+niosII_altera_avalon_sc_fifo_8 port_led_avalon_parallel_port_slave_agent_rsp_fifo(
+	.clk(wire_pll7_clk_0),
+	.reset(r_sync_rst),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.Equal9(Equal9),
+	.mem_used_1(\port_led_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.Equal5(\router|Equal5~0_combout ),
+	.read_latency_shift_reg_0(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~1_combout ));
 
 niosII_altera_avalon_sc_fifo_4 jtag_avalon_jtag_slave_agent_rdata_fifo(
 	.av_readdata_pre_22(\jtag_avalon_jtag_slave_translator|av_readdata_pre[22]~q ),
@@ -58527,8 +58590,8 @@ niosII_altera_avalon_sc_fifo_4 jtag_avalon_jtag_slave_agent_rdata_fifo(
 niosII_altera_avalon_sc_fifo_5 jtag_avalon_jtag_slave_agent_rsp_fifo(
 	.reset(altera_reset_synchronizer_int_chain_out),
 	.in_data_toggle(\crosser_004|clock_xer|in_data_toggle~q ),
-	.out_data_toggle_flopped(out_data_toggle_flopped1),
-	.dreg_0(dreg_01),
+	.out_data_toggle_flopped(out_data_toggle_flopped2),
+	.dreg_0(dreg_02),
 	.mem_used_1(mem_used_16),
 	.out_data_buffer_66(out_data_buffer_661),
 	.read_latency_shift_reg_0(\jtag_avalon_jtag_slave_translator|read_latency_shift_reg[0]~q ),
@@ -58555,7 +58618,7 @@ niosII_altera_avalon_sc_fifo adc_0_adc_slave_agent_rsp_fifo(
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
 	.mem_used_1(mem_used_1),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.uav_read(uav_read),
 	.hold_waitrequest(hold_waitrequest),
 	.Equal3(Equal3),
 	.read_latency_shift_reg_0(\adc_0_adc_slave_translator|read_latency_shift_reg[0]~q ),
@@ -58565,7 +58628,7 @@ niosII_altera_avalon_sc_fifo adc_0_adc_slave_agent_rsp_fifo(
 
 niosII_altera_merlin_slave_agent adc_0_adc_slave_agent(
 	.mem_used_1(mem_used_1),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.uav_read(uav_read),
 	.cp_valid(cp_valid),
 	.Equal3(Equal3),
 	.m0_read1(m0_read),
@@ -58580,7 +58643,7 @@ niosII_altera_merlin_master_agent_1 cpu_instruction_master_agent(
 niosII_altera_merlin_master_agent cpu_data_master_agent(
 	.clk(wire_pll7_clk_0),
 	.r_sync_rst(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.uav_read(uav_read),
 	.hold_waitrequest1(hold_waitrequest),
 	.d_write(d_write),
 	.write_accepted(write_accepted),
@@ -58617,141 +58680,6 @@ niosII_altera_merlin_slave_translator_13 timer_0_s1_translator(
 	.av_readdata_pre_9(\timer_0_s1_translator|av_readdata_pre[9]~q ),
 	.av_readdata_pre_8(\timer_0_s1_translator|av_readdata_pre[8]~q ),
 	.av_readdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,readdata_156,readdata_143,readdata_133,readdata_123,readdata_116,readdata_102,readdata_95,readdata_85,readdata_76,readdata_66,readdata_56,readdata_46,readdata_37,readdata_214,readdata_114,readdata_08}));
-
-niosII_altera_avalon_sc_fifo_6 port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
-	.Equal6(\router|Equal6~0_combout ),
-	.src_channel_12(\router|src_channel[12]~1_combout ),
-	.read_latency_shift_reg_0(read_latency_shift_reg_01),
-	.mem_used_1(\port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.read_latency_shift_reg(\port_gpio_0_avalon_parallel_port_slave_translator|read_latency_shift_reg~1_combout ));
-
-niosII_altera_avalon_sc_fifo_9 port_sw_avalon_parallel_port_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_4(W_alu_result_4),
-	.reset(r_sync_rst),
-	.d_read(d_read),
-	.read_accepted(read_accepted),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
-	.cp_valid(cp_valid),
-	.src_channel_12(\router|src_channel[12]~1_combout ),
-	.read_latency_shift_reg_0(\port_sw_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.write(write),
-	.write1(write2));
-
-niosII_altera_avalon_sc_fifo_7 port_key_avalon_parallel_port_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_4(W_alu_result_4),
-	.reset(r_sync_rst),
-	.d_read(d_read),
-	.read_accepted(read_accepted),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
-	.cp_valid(cp_valid),
-	.src_channel_12(\router|src_channel[12]~1_combout ),
-	.read_latency_shift_reg_0(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.mem_used_1(\port_key_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.write(write1));
-
-niosII_altera_avalon_sc_fifo_8 port_led_avalon_parallel_port_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
-	.Equal9(Equal9),
-	.mem_used_1(\port_led_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.Equal5(\router|Equal5~0_combout ),
-	.read_latency_shift_reg_0(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg~1_combout ));
-
-niosII_niosII_mm_interconnect_0_router_001 router_001(
-	.F_pc_24(F_pc_24),
-	.F_pc_23(F_pc_23),
-	.F_pc_22(F_pc_22),
-	.F_pc_21(F_pc_21),
-	.F_pc_20(F_pc_20),
-	.F_pc_19(F_pc_19),
-	.F_pc_18(F_pc_18),
-	.F_pc_17(F_pc_17),
-	.F_pc_16(F_pc_16),
-	.F_pc_15(F_pc_15),
-	.F_pc_14(F_pc_14),
-	.F_pc_13(F_pc_13),
-	.F_pc_12(F_pc_12),
-	.F_pc_11(F_pc_11),
-	.F_pc_10(F_pc_10),
-	.Equal1(\router_001|Equal1~4_combout ));
-
-niosII_niosII_mm_interconnect_0_router router(
-	.W_alu_result_6(W_alu_result_6),
-	.W_alu_result_26(W_alu_result_26),
-	.W_alu_result_25(W_alu_result_25),
-	.W_alu_result_24(W_alu_result_24),
-	.W_alu_result_23(W_alu_result_23),
-	.W_alu_result_22(W_alu_result_22),
-	.W_alu_result_21(W_alu_result_21),
-	.W_alu_result_20(W_alu_result_20),
-	.W_alu_result_19(W_alu_result_19),
-	.W_alu_result_18(W_alu_result_18),
-	.W_alu_result_17(W_alu_result_17),
-	.W_alu_result_16(W_alu_result_16),
-	.W_alu_result_15(W_alu_result_15),
-	.W_alu_result_14(W_alu_result_14),
-	.W_alu_result_13(W_alu_result_13),
-	.W_alu_result_12(W_alu_result_12),
-	.W_alu_result_11(W_alu_result_11),
-	.W_alu_result_10(W_alu_result_10),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_7(W_alu_result_7),
-	.W_alu_result_9(W_alu_result_9),
-	.W_alu_result_8(W_alu_result_8),
-	.W_alu_result_4(W_alu_result_4),
-	.W_alu_result_3(W_alu_result_3),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.Equal3(Equal3),
-	.Equal9(Equal9),
-	.Equal6(\router|Equal6~0_combout ),
-	.src_channel_12(\router|src_channel[12]~0_combout ),
-	.Equal2(\router|Equal2~1_combout ),
-	.src_channel_121(\router|src_channel[12]~1_combout ),
-	.src_channel_122(\router|src_channel[12]~3_combout ),
-	.Equal1(Equal1),
-	.Equal4(Equal4),
-	.Equal5(\router|Equal5~0_combout ),
-	.src_channel_123(\router|src_channel[12]~4_combout ),
-	.src_channel_124(\router|src_channel[12]~5_combout ),
-	.Equal12(Equal12),
-	.always1(\router|always1~0_combout ),
-	.Equal13(\router|Equal13~1_combout ),
-	.Equal121(Equal121),
-	.Equal51(\router|Equal5~2_combout ));
-
-niosII_altera_avalon_sc_fifo_17 timer_0_s1_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
-	.Equal4(Equal4),
-	.read_latency_shift_reg_0(\timer_0_s1_translator|read_latency_shift_reg[0]~q ),
-	.mem_used_1(mem_used_13),
-	.wait_latency_counter_1(wait_latency_counter_11),
-	.av_waitrequest_generated(\timer_0_s1_translator|av_waitrequest_generated~0_combout ),
-	.period_l_wr_strobe(period_l_wr_strobe));
-
-niosII_altera_merlin_slave_agent_13 timer_0_s1_agent(
-	.hold_waitrequest(hold_waitrequest),
-	.d_write(d_write),
-	.write_accepted(write_accepted),
-	.m0_write(m0_write),
-	.Equal4(Equal4),
-	.mem_used_1(mem_used_13),
-	.m0_write1(\timer_0_s1_agent|m0_write~1_combout ));
 
 niosII_altera_avalon_sc_fifo_12 sdram_s1_agent_rdata_fifo(
 	.clk(wire_pll7_clk_0),
@@ -58799,10 +58727,9 @@ niosII_altera_avalon_sc_fifo_13 sdram_s1_agent_rsp_fifo(
 	.reset(r_sync_rst),
 	.saved_grant_0(saved_grant_01),
 	.use_reg(use_reg),
-	.saved_grant_1(saved_grant_11),
-	.WideOr1(WideOr1),
-	.mem_used_7(mem_used_7),
+	.saved_grant_1(saved_grant_1),
 	.src_data_66(src_data_66),
+	.mem_used_7(mem_used_7),
 	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
 	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
 	.mem_87_0(\sdram_s1_agent_rsp_fifo|mem[0][87]~q ),
@@ -58812,6 +58739,7 @@ niosII_altera_avalon_sc_fifo_13 sdram_s1_agent_rsp_fifo(
 	.comb(\sdram_s1_agent|comb~0_combout ),
 	.mem_66_0(\sdram_s1_agent_rsp_fifo|mem[0][66]~q ),
 	.mem_48_0(\sdram_s1_agent_rsp_fifo|mem[0][48]~q ),
+	.WideOr1(\cmd_mux_012|WideOr1~combout ),
 	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
 	.mem_57_0(\sdram_s1_agent_rsp_fifo|mem[0][57]~q ),
 	.cp_ready(\sdram_s1_agent|cp_ready~2_combout ),
@@ -58830,29 +58758,28 @@ niosII_altera_merlin_slave_agent_10 sdram_s1_agent(
 	.saved_grant_0(saved_grant_01),
 	.d_byteenable_1(d_byteenable_1),
 	.use_reg(use_reg),
-	.saved_grant_1(saved_grant_11),
+	.saved_grant_1(saved_grant_1),
 	.WideOr0(WideOr0),
-	.Equal0(Equal0),
-	.Equal1(Equal1),
-	.WideOr1(WideOr1),
-	.m0_write1(m0_write1),
-	.mem_used_7(mem_used_7),
-	.src_data_66(src_data_66),
 	.src_valid(src_valid2),
+	.Equal0(Equal0),
+	.src_data_66(src_data_66),
+	.mem_used_7(mem_used_7),
+	.m0_write1(m0_write1),
 	.src12_valid(src12_valid),
+	.Equal1(Equal1),
 	.m0_write2(m0_write2),
 	.out_valid(\sdram_s1_agent_rdata_fifo|out_valid~q ),
 	.mem_used_0(\sdram_s1_agent_rsp_fifo|mem_used[0]~q ),
 	.mem_87_0(\sdram_s1_agent_rsp_fifo|mem[0][87]~q ),
 	.rp_valid1(\sdram_s1_agent|rp_valid~combout ),
 	.mem_54_0(mem_54_0),
-	.burst_uncompress_address_base_1(\sdram_s1_agent|uncompressor|burst_uncompress_address_base[1]~q ),
-	.burst_uncompress_address_offset_1(\sdram_s1_agent|uncompressor|burst_uncompress_address_offset[1]~q ),
+	.source_addr_1(\sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
 	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
 	.comb(\sdram_s1_agent|comb~0_combout ),
+	.WideOr1(\cmd_mux_012|WideOr1~combout ),
 	.cp_ready1(\sdram_s1_agent|cp_ready~combout ),
 	.mem_57_0(\sdram_s1_agent_rsp_fifo|mem[0][57]~q ),
-	.source_addr_1(source_addr_1),
+	.source_addr_11(source_addr_1),
 	.cp_ready2(\sdram_s1_agent|cp_ready~2_combout ),
 	.rf_source_data_87(\sdram_s1_agent|rf_source_data[87]~2_combout ));
 
@@ -58973,7 +58900,7 @@ niosII_altera_avalon_sc_fifo_2 epcs_epcs_control_port_agent_rdata_fifo(
 niosII_altera_avalon_sc_fifo_3 epcs_epcs_control_port_agent_rsp_fifo(
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst1),
-	.saved_grant_1(saved_grant_1),
+	.saved_grant_1(\cmd_mux_010|saved_grant[1]~q ),
 	.mem_used_1(mem_used_11),
 	.last_cycle(\cmd_mux_010|last_cycle~0_combout ),
 	.src_data_66(src_data_661),
@@ -59004,61 +58931,88 @@ niosII_altera_merlin_slave_agent_2 epcs_epcs_control_port_agent(
 	.rp_valid2(\epcs_epcs_control_port_agent|rp_valid~combout ),
 	.WideOr1(\cmd_mux_010|WideOr1~combout ));
 
-niosII_altera_avalon_sc_fifo_1 cpu_debug_mem_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.uav_read1(\cpu_instruction_master_translator|uav_read~combout ),
-	.mem_84_0(mem_84_0),
-	.mem_66_0(mem_66_0),
-	.read_latency_shift_reg_0(read_latency_shift_reg_0),
-	.saved_grant_0(saved_grant_02),
-	.waitrequest(waitrequest1),
-	.mem_used_1(mem_used_15),
-	.write(\cpu_debug_mem_slave_agent_rsp_fifo|write~0_combout ),
-	.saved_grant_1(\cmd_mux_009|saved_grant[1]~q ),
-	.mem(\cpu_debug_mem_slave_agent_rsp_fifo|mem~1_combout ),
-	.WideOr1(WideOr12),
-	.rf_source_valid(rf_source_valid));
+niosII_niosII_mm_interconnect_0_router_001 router_001(
+	.F_pc_24(F_pc_24),
+	.F_pc_23(F_pc_23),
+	.F_pc_22(F_pc_22),
+	.F_pc_21(F_pc_21),
+	.F_pc_20(F_pc_20),
+	.F_pc_19(F_pc_19),
+	.F_pc_18(F_pc_18),
+	.F_pc_17(F_pc_17),
+	.F_pc_16(F_pc_16),
+	.F_pc_15(F_pc_15),
+	.F_pc_14(F_pc_14),
+	.F_pc_13(F_pc_13),
+	.F_pc_12(F_pc_12),
+	.F_pc_11(F_pc_11),
+	.F_pc_10(F_pc_10),
+	.Equal1(\router_001|Equal1~4_combout ));
 
-niosII_altera_merlin_slave_agent_1 cpu_debug_mem_slave_agent(
-	.mem(\cpu_debug_mem_slave_agent_rsp_fifo|mem~1_combout ),
-	.WideOr1(WideOr12),
-	.rf_source_valid(rf_source_valid));
-
-niosII_altera_avalon_sc_fifo_14 sys_id_control_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
-	.reset(r_sync_rst),
-	.read_latency_shift_reg_0(read_latency_shift_reg_02),
-	.mem_used_1(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.sink_ready(\cmd_demux|sink_ready~2_combout ),
-	.sink_ready1(\cmd_demux|sink_ready~4_combout ));
-
-niosII_altera_merlin_slave_agent_11 sys_id_control_slave_agent(
-	.mem_used_1(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.always1(\router|always1~0_combout ),
-	.m0_write(\sys_id_control_slave_agent|m0_write~0_combout ));
-
-niosII_altera_avalon_sc_fifo_11 rs232_1_avalon_rs232_slave_agent_rsp_fifo(
-	.clk(wire_pll7_clk_0),
+niosII_niosII_mm_interconnect_0_router router(
+	.W_alu_result_6(W_alu_result_6),
+	.W_alu_result_26(W_alu_result_26),
+	.W_alu_result_25(W_alu_result_25),
+	.W_alu_result_24(W_alu_result_24),
+	.W_alu_result_23(W_alu_result_23),
+	.W_alu_result_22(W_alu_result_22),
+	.W_alu_result_21(W_alu_result_21),
+	.W_alu_result_20(W_alu_result_20),
+	.W_alu_result_19(W_alu_result_19),
+	.W_alu_result_18(W_alu_result_18),
+	.W_alu_result_17(W_alu_result_17),
+	.W_alu_result_16(W_alu_result_16),
+	.W_alu_result_15(W_alu_result_15),
+	.W_alu_result_14(W_alu_result_14),
+	.W_alu_result_13(W_alu_result_13),
+	.W_alu_result_12(W_alu_result_12),
+	.W_alu_result_11(W_alu_result_11),
+	.W_alu_result_10(W_alu_result_10),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_7(W_alu_result_7),
+	.W_alu_result_9(W_alu_result_9),
+	.W_alu_result_8(W_alu_result_8),
+	.W_alu_result_4(W_alu_result_4),
 	.W_alu_result_3(W_alu_result_3),
-	.reset(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.hold_waitrequest(hold_waitrequest),
+	.uav_read(uav_read),
+	.Equal3(Equal3),
 	.Equal9(Equal9),
 	.Equal6(\router|Equal6~0_combout ),
-	.read_latency_shift_reg_0(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
-	.mem_used_1(\rs232_1_avalon_rs232_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.read_latency_shift_reg(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg~3_combout ));
+	.src_channel_12(\router|src_channel[12]~0_combout ),
+	.Equal4(Equal4),
+	.Equal5(\router|Equal5~0_combout ),
+	.src_channel_121(\router|src_channel[12]~1_combout ),
+	.Equal2(\router|Equal2~1_combout ),
+	.src_channel_122(\router|src_channel[12]~2_combout ),
+	.src_channel_123(\router|src_channel[12]~4_combout ),
+	.Equal1(Equal1),
+	.src_channel_124(\router|src_channel[12]~5_combout ),
+	.Equal12(Equal12),
+	.Equal13(\router|Equal13~1_combout ),
+	.Equal121(Equal121),
+	.always1(\router|always1~0_combout ),
+	.Equal51(\router|Equal5~2_combout ));
 
-niosII_altera_avalon_sc_fifo_10 rs232_0_avalon_rs232_slave_agent_rsp_fifo(
+niosII_altera_avalon_sc_fifo_17 timer_0_s1_agent_rsp_fifo(
 	.clk(wire_pll7_clk_0),
 	.reset(r_sync_rst),
-	.read_latency_shift_reg_0(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
-	.Equal12(Equal12),
-	.mem_used_1(mem_used_14),
-	.read_latency_shift_reg(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg~2_combout ),
-	.read_latency_shift_reg1(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg~0_combout ));
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.Equal4(Equal4),
+	.read_latency_shift_reg_0(\timer_0_s1_translator|read_latency_shift_reg[0]~q ),
+	.mem_used_1(mem_used_13),
+	.wait_latency_counter_1(wait_latency_counter_11),
+	.av_waitrequest_generated(\timer_0_s1_translator|av_waitrequest_generated~0_combout ),
+	.period_l_wr_strobe(period_l_wr_strobe));
+
+niosII_altera_merlin_slave_agent_13 timer_0_s1_agent(
+	.hold_waitrequest(hold_waitrequest),
+	.d_write(d_write),
+	.write_accepted(write_accepted),
+	.m0_write(m0_write),
+	.Equal4(Equal4),
+	.mem_used_1(mem_used_13),
+	.m0_write1(\timer_0_s1_agent|m0_write~1_combout ));
 
 niosII_niosII_mm_interconnect_0_cmd_demux_001 cmd_demux_001(
 	.hold_waitrequest(hold_waitrequest),
@@ -59073,56 +59027,953 @@ niosII_niosII_mm_interconnect_0_cmd_demux_001 cmd_demux_001(
 niosII_niosII_mm_interconnect_0_cmd_demux cmd_demux(
 	.W_alu_result_5(W_alu_result_5),
 	.W_alu_result_4(W_alu_result_4),
+	.W_alu_result_3(W_alu_result_3),
+	.uav_read(uav_read),
 	.hold_waitrequest(hold_waitrequest),
-	.d_write(d_write),
-	.write_accepted(write_accepted),
 	.cp_valid(cp_valid),
 	.Equal9(Equal9),
-	.mem_used_1(\port_led_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.read_latency_shift_reg(read_latency_shift_reg),
 	.saved_grant_0(saved_grant_01),
+	.Equal6(\router|Equal6~0_combout ),
 	.src_channel_12(\router|src_channel[12]~0_combout ),
-	.Equal2(\router|Equal2~1_combout ),
 	.src_channel_121(\router|src_channel[12]~1_combout ),
-	.src_channel_122(\router|src_channel[12]~3_combout ),
-	.Equal1(Equal1),
+	.Equal2(\router|Equal2~1_combout ),
+	.src_channel_122(\router|src_channel[12]~2_combout ),
 	.src_channel_123(\router|src_channel[12]~4_combout ),
 	.src12_valid(src12_valid),
+	.Equal1(Equal1),
 	.waitrequest(waitrequest),
 	.m0_read(\adc_0_adc_slave_agent|m0_read~0_combout ),
 	.last_cycle(\cmd_mux_012|last_cycle~0_combout ),
 	.in_ready(\crosser_001|clock_xer|in_ready~0_combout ),
 	.src_channel_124(\router|src_channel[12]~5_combout ),
 	.WideOr0(\cmd_demux|WideOr0~1_combout ),
-	.read_latency_shift_reg(\timer_0_s1_translator|read_latency_shift_reg~0_combout ),
-	.read_latency_shift_reg1(read_latency_shift_reg1),
-	.mem_used_11(\port_key_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
-	.mem_used_12(\port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.read_latency_shift_reg1(\timer_0_s1_translator|read_latency_shift_reg~0_combout ),
+	.read_latency_shift_reg2(read_latency_shift_reg1),
 	.write(write),
 	.Equal12(Equal12),
-	.mem_used_13(mem_used_14),
-	.mem_used_14(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.mem_used_1(mem_used_14),
+	.mem_used_11(\port_key_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.mem_used_12(\port_gpio_0_avalon_parallel_port_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.WideOr01(\cmd_demux|WideOr0~5_combout ),
+	.mem_used_13(\sys_id_control_slave_agent_rsp_fifo|mem_used[1]~q ),
+	.av_waitrequest_generated(\sys_id_control_slave_translator|av_waitrequest_generated~1_combout ),
 	.wait_latency_counter_1(\sys_id_control_slave_translator|wait_latency_counter[1]~q ),
-	.always1(\router|always1~0_combout ),
-	.wait_latency_counter_0(\sys_id_control_slave_translator|wait_latency_counter[0]~q ),
 	.sink_ready(\cmd_demux|sink_ready~2_combout ),
 	.take_in_data(\crosser_002|clock_xer|take_in_data~0_combout ),
 	.saved_grant_01(saved_grant_02),
 	.waitrequest1(waitrequest1),
-	.mem_used_15(mem_used_15),
+	.mem_used_14(mem_used_15),
 	.Equal13(\router|Equal13~1_combout ),
 	.in_data_toggle(\crosser|clock_xer|in_data_toggle~q ),
 	.dreg_0(\crosser|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
-	.WideOr01(\cmd_demux|WideOr0~8_combout ),
+	.WideOr02(\cmd_demux|WideOr0~6_combout ),
+	.WideOr03(\cmd_demux|WideOr0~7_combout ),
 	.src12_valid1(\cmd_demux|src12_valid~2_combout ),
-	.av_waitrequest_generated(\sys_id_control_slave_translator|av_waitrequest_generated~1_combout ),
+	.always1(\router|always1~0_combout ),
 	.sink_ready1(\cmd_demux|sink_ready~4_combout ));
+
+niosII_niosII_mm_interconnect_0_cmd_mux_009_1 cmd_mux_010(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.r_sync_rst(r_sync_rst1),
+	.saved_grant_0(saved_grant_0),
+	.saved_grant_1(\cmd_mux_010|saved_grant[1]~q ),
+	.out_data_buffer_38(\crosser_003|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_381(\crosser_001|clock_xer|out_data_buffer[38]~q ),
+	.src_data_38(src_data_38),
+	.out_data_buffer_39(\crosser_003|clock_xer|out_data_buffer[39]~q ),
+	.out_data_buffer_391(\crosser_001|clock_xer|out_data_buffer[39]~q ),
+	.src_data_39(src_data_39),
+	.out_data_buffer_40(\crosser_003|clock_xer|out_data_buffer[40]~q ),
+	.out_data_buffer_401(\crosser_001|clock_xer|out_data_buffer[40]~q ),
+	.src_data_40(src_data_40),
+	.out_data_buffer_10(\crosser_001|clock_xer|out_data_buffer[10]~q ),
+	.src_payload(src_payload),
+	.out_data_buffer_0(\crosser_001|clock_xer|out_data_buffer[0]~q ),
+	.src_payload1(src_payload1),
+	.out_data_toggle_flopped(\crosser_001|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_0(\crosser_001|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.out_valid(\crosser_001|clock_xer|out_valid~combout ),
+	.out_data_toggle_flopped1(\crosser_003|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_01(\crosser_003|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.out_valid1(\crosser_003|clock_xer|out_valid~combout ),
+	.wait_latency_counter_0(\epcs_epcs_control_port_translator|wait_latency_counter[0]~q ),
+	.waitrequest_reset_override(\epcs_epcs_control_port_translator|waitrequest_reset_override~q ),
+	.mem_used_1(mem_used_11),
+	.wait_latency_counter_1(wait_latency_counter_1),
+	.last_cycle(\cmd_mux_010|last_cycle~0_combout ),
+	.out_data_buffer_105(\crosser_003|clock_xer|out_data_buffer[105]~q ),
+	.out_data_buffer_1051(\crosser_001|clock_xer|out_data_buffer[105]~q ),
+	.src_payload_0(\cmd_mux_010|src_payload[0]~combout ),
+	.src_valid(src_valid),
+	.src_valid1(src_valid1),
+	.out_data_buffer_46(\crosser_003|clock_xer|out_data_buffer[46]~q ),
+	.out_data_buffer_461(\crosser_001|clock_xer|out_data_buffer[46]~q ),
+	.src_data_46(src_data_46),
+	.out_data_buffer_7(\crosser_001|clock_xer|out_data_buffer[7]~q ),
+	.src_payload2(src_payload2),
+	.out_data_buffer_66(\crosser_003|clock_xer|out_data_buffer[66]~q ),
+	.out_data_buffer_661(\crosser_001|clock_xer|out_data_buffer[66]~q ),
+	.src_data_66(src_data_661),
+	.out_data_buffer_6(out_data_buffer_6),
+	.src_payload3(src_payload3),
+	.out_data_buffer_5(\crosser_001|clock_xer|out_data_buffer[5]~q ),
+	.src_payload4(src_payload4),
+	.out_data_buffer_4(\crosser_001|clock_xer|out_data_buffer[4]~q ),
+	.src_payload5(src_payload6),
+	.out_data_buffer_3(\crosser_001|clock_xer|out_data_buffer[3]~q ),
+	.src_payload6(src_payload19),
+	.out_data_buffer_2(\crosser_001|clock_xer|out_data_buffer[2]~q ),
+	.src_payload7(src_payload21),
+	.out_data_buffer_1(\crosser_001|clock_xer|out_data_buffer[1]~q ),
+	.src_payload8(src_payload25),
+	.out_data_buffer_41(\crosser_003|clock_xer|out_data_buffer[41]~q ),
+	.out_data_buffer_411(\crosser_001|clock_xer|out_data_buffer[41]~q ),
+	.src_data_41(src_data_412),
+	.out_data_buffer_42(\crosser_003|clock_xer|out_data_buffer[42]~q ),
+	.out_data_buffer_421(\crosser_001|clock_xer|out_data_buffer[42]~q ),
+	.src_data_42(src_data_421),
+	.out_data_buffer_43(\crosser_003|clock_xer|out_data_buffer[43]~q ),
+	.out_data_buffer_431(\crosser_001|clock_xer|out_data_buffer[43]~q ),
+	.src_data_43(src_data_431),
+	.out_data_buffer_44(\crosser_003|clock_xer|out_data_buffer[44]~q ),
+	.out_data_buffer_441(\crosser_001|clock_xer|out_data_buffer[44]~q ),
+	.src_data_44(src_data_441),
+	.out_data_buffer_45(\crosser_003|clock_xer|out_data_buffer[45]~q ),
+	.out_data_buffer_451(\crosser_001|clock_xer|out_data_buffer[45]~q ),
+	.src_data_45(src_data_451),
+	.out_data_buffer_11(\crosser_001|clock_xer|out_data_buffer[11]~q ),
+	.src_payload9(src_payload52),
+	.out_data_buffer_13(\crosser_001|clock_xer|out_data_buffer[13]~q ),
+	.src_payload10(src_payload53),
+	.out_data_buffer_12(\crosser_001|clock_xer|out_data_buffer[12]~q ),
+	.src_payload11(src_payload54),
+	.out_data_buffer_14(\crosser_001|clock_xer|out_data_buffer[14]~q ),
+	.src_payload12(src_payload55),
+	.out_data_buffer_15(\crosser_001|clock_xer|out_data_buffer[15]~q ),
+	.src_payload13(src_payload56),
+	.out_data_buffer_9(\crosser_001|clock_xer|out_data_buffer[9]~q ),
+	.src_payload14(src_payload58),
+	.out_data_buffer_8(\crosser_001|clock_xer|out_data_buffer[8]~q ),
+	.src_payload15(src_payload59),
+	.WideOr11(\cmd_mux_010|WideOr1~combout ));
+
+niosII_niosII_mm_interconnect_0_cmd_mux_009 cmd_mux_009(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.W_alu_result_6(W_alu_result_6),
+	.W_alu_result_10(W_alu_result_10),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_7(W_alu_result_7),
+	.W_alu_result_9(W_alu_result_9),
+	.W_alu_result_8(W_alu_result_8),
+	.W_alu_result_4(W_alu_result_4),
+	.W_alu_result_3(W_alu_result_3),
+	.W_alu_result_2(W_alu_result_2),
+	.d_writedata_24(d_writedata_24),
+	.d_writedata_25(d_writedata_25),
+	.d_writedata_26(d_writedata_26),
+	.d_writedata_27(d_writedata_27),
+	.d_writedata_28(d_writedata_28),
+	.d_writedata_29(d_writedata_29),
+	.d_writedata_30(d_writedata_30),
+	.d_writedata_31(d_writedata_31),
+	.r_sync_rst(r_sync_rst),
+	.cp_valid(cp_valid),
+	.d_writedata_0(d_writedata_0),
+	.d_byteenable_0(d_byteenable_0),
+	.d_writedata_1(d_writedata_1),
+	.d_writedata_2(d_writedata_2),
+	.d_writedata_3(d_writedata_3),
+	.d_writedata_4(d_writedata_4),
+	.d_writedata_5(d_writedata_5),
+	.d_writedata_6(d_writedata_6),
+	.d_writedata_7(d_writedata_7),
+	.d_byteenable_1(d_byteenable_1),
+	.Equal2(\router|Equal2~1_combout ),
+	.F_pc_8(F_pc_8),
+	.F_pc_0(F_pc_0),
+	.F_pc_1(F_pc_1),
+	.F_pc_2(F_pc_2),
+	.F_pc_3(F_pc_3),
+	.F_pc_4(F_pc_4),
+	.F_pc_5(F_pc_5),
+	.F_pc_6(F_pc_6),
+	.F_pc_7(F_pc_7),
+	.saved_grant_0(saved_grant_02),
+	.waitrequest(waitrequest1),
+	.mem_used_1(mem_used_15),
+	.d_writedata_10(d_writedata_10),
+	.d_byteenable_2(d_byteenable_2),
+	.d_byteenable_3(d_byteenable_3),
+	.saved_grant_1(\cmd_mux_009|saved_grant[1]~q ),
+	.hbreak_enabled(hbreak_enabled),
+	.d_writedata_8(d_writedata_8),
+	.d_writedata_9(d_writedata_9),
+	.d_writedata_11(d_writedata_11),
+	.d_writedata_12(d_writedata_12),
+	.d_writedata_13(d_writedata_13),
+	.d_writedata_14(d_writedata_14),
+	.d_writedata_15(d_writedata_15),
+	.d_writedata_16(d_writedata_16),
+	.d_writedata_17(d_writedata_17),
+	.d_writedata_18(d_writedata_18),
+	.d_writedata_19(d_writedata_19),
+	.d_writedata_20(d_writedata_20),
+	.d_writedata_21(d_writedata_21),
+	.d_writedata_22(d_writedata_22),
+	.d_writedata_23(d_writedata_23),
+	.src0_valid(\cmd_demux_001|src0_valid~0_combout ),
+	.WideOr11(WideOr11),
+	.src_data_46(src_data_461),
+	.src_payload(src_payload8),
+	.src_payload1(src_payload9),
+	.src_data_38(src_data_381),
+	.src_data_39(src_data_391),
+	.src_data_40(src_data_401),
+	.src_data_41(src_data_411),
+	.src_data_42(src_data_42),
+	.src_data_43(src_data_43),
+	.src_data_44(src_data_44),
+	.src_data_45(src_data_45),
+	.src_data_32(src_data_32),
+	.src_payload2(src_payload20),
+	.src_payload3(src_payload22),
+	.src_payload4(src_payload23),
+	.src_payload5(src_payload24),
+	.src_payload6(src_payload26),
+	.src_data_33(src_data_33),
+	.src_payload7(src_payload27),
+	.src_payload8(src_payload28),
+	.src_data_34(src_data_34),
+	.src_payload9(src_payload29),
+	.src_payload10(src_payload30),
+	.src_payload11(src_payload31),
+	.src_payload12(src_payload32),
+	.src_payload13(src_payload33),
+	.src_payload14(src_payload34),
+	.src_payload15(src_payload35),
+	.src_payload16(src_payload36),
+	.src_payload17(src_payload37),
+	.src_payload18(src_payload38),
+	.src_payload19(src_payload39),
+	.src_data_35(src_data_35),
+	.src_payload20(src_payload40),
+	.src_payload21(src_payload41),
+	.src_payload22(src_payload42),
+	.src_payload23(src_payload43),
+	.src_payload24(src_payload44),
+	.src_payload25(src_payload45),
+	.src_payload26(src_payload46),
+	.src_payload27(src_payload47),
+	.src_payload28(src_payload48),
+	.src_payload29(src_payload49),
+	.src_payload30(src_payload50),
+	.src_payload31(src_payload51),
+	.src_payload32(src_payload57));
+
+niosII_niosII_mm_interconnect_0_cmd_mux_009_2 cmd_mux_012(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.W_alu_result_6(W_alu_result_6),
+	.W_alu_result_24(W_alu_result_24),
+	.W_alu_result_23(W_alu_result_23),
+	.W_alu_result_22(W_alu_result_22),
+	.W_alu_result_21(W_alu_result_21),
+	.W_alu_result_20(W_alu_result_20),
+	.W_alu_result_19(W_alu_result_19),
+	.W_alu_result_18(W_alu_result_18),
+	.W_alu_result_17(W_alu_result_17),
+	.W_alu_result_16(W_alu_result_16),
+	.W_alu_result_15(W_alu_result_15),
+	.W_alu_result_14(W_alu_result_14),
+	.W_alu_result_13(W_alu_result_13),
+	.W_alu_result_12(W_alu_result_12),
+	.W_alu_result_11(W_alu_result_11),
+	.W_alu_result_10(W_alu_result_10),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_7(W_alu_result_7),
+	.W_alu_result_9(W_alu_result_9),
+	.W_alu_result_8(W_alu_result_8),
+	.W_alu_result_4(W_alu_result_4),
+	.W_alu_result_3(W_alu_result_3),
+	.W_alu_result_2(W_alu_result_2),
+	.d_writedata_24(d_writedata_24),
+	.d_writedata_25(d_writedata_25),
+	.d_writedata_26(d_writedata_26),
+	.d_writedata_27(d_writedata_27),
+	.d_writedata_28(d_writedata_28),
+	.d_writedata_29(d_writedata_29),
+	.d_writedata_30(d_writedata_30),
+	.d_writedata_31(d_writedata_31),
+	.r_sync_rst(r_sync_rst),
+	.uav_read(uav_read),
+	.cp_valid(cp_valid),
+	.saved_grant_0(saved_grant_01),
+	.saved_grant_1(saved_grant_1),
+	.WideOr0(WideOr0),
+	.cp_valid1(\cpu_instruction_master_agent|cp_valid~combout ),
+	.F_pc_22(F_pc_22),
+	.F_pc_21(F_pc_21),
+	.F_pc_20(F_pc_20),
+	.F_pc_19(F_pc_19),
+	.F_pc_18(F_pc_18),
+	.F_pc_17(F_pc_17),
+	.F_pc_16(F_pc_16),
+	.F_pc_15(F_pc_15),
+	.F_pc_14(F_pc_14),
+	.F_pc_13(F_pc_13),
+	.F_pc_12(F_pc_12),
+	.F_pc_11(F_pc_11),
+	.F_pc_10(F_pc_10),
+	.Equal1(\router_001|Equal1~4_combout ),
+	.src_valid(src_valid2),
+	.Equal0(Equal0),
+	.uav_read1(\cpu_instruction_master_translator|uav_read~combout ),
+	.src_data_66(src_data_66),
+	.mem_used_7(mem_used_7),
+	.src_channel_12(\router|src_channel[12]~0_combout ),
+	.src_channel_121(\router|src_channel[12]~1_combout ),
+	.src_channel_122(\router|src_channel[12]~4_combout ),
+	.Equal11(Equal1),
+	.F_pc_8(F_pc_8),
+	.src_data_46(\cmd_mux_012|src_data[46]~combout ),
+	.src_data_60(\cmd_mux_012|src_data[60]~combout ),
+	.F_pc_9(F_pc_9),
+	.src_data_47(\cmd_mux_012|src_data[47]~combout ),
+	.src_data_49(\cmd_mux_012|src_data[49]~combout ),
+	.src_data_48(\cmd_mux_012|src_data[48]~combout ),
+	.src_data_51(\cmd_mux_012|src_data[51]~combout ),
+	.src_data_50(\cmd_mux_012|src_data[50]~combout ),
+	.src_data_53(\cmd_mux_012|src_data[53]~combout ),
+	.src_data_52(\cmd_mux_012|src_data[52]~combout ),
+	.src_data_55(\cmd_mux_012|src_data[55]~combout ),
+	.src_data_54(\cmd_mux_012|src_data[54]~combout ),
+	.src_data_57(\cmd_mux_012|src_data[57]~combout ),
+	.src_data_56(\cmd_mux_012|src_data[56]~combout ),
+	.src_data_59(\cmd_mux_012|src_data[59]~combout ),
+	.src_data_58(\cmd_mux_012|src_data[58]~combout ),
+	.F_pc_0(F_pc_0),
+	.src_data_38(\cmd_mux_012|src_data[38]~combout ),
+	.F_pc_1(F_pc_1),
+	.src_data_39(\cmd_mux_012|src_data[39]~combout ),
+	.F_pc_2(F_pc_2),
+	.src_data_40(\cmd_mux_012|src_data[40]~combout ),
+	.F_pc_3(F_pc_3),
+	.src_data_41(\cmd_mux_012|src_data[41]~combout ),
+	.F_pc_4(F_pc_4),
+	.src_data_42(\cmd_mux_012|src_data[42]~combout ),
+	.F_pc_5(F_pc_5),
+	.src_data_43(\cmd_mux_012|src_data[43]~combout ),
+	.F_pc_6(F_pc_6),
+	.src_data_44(\cmd_mux_012|src_data[44]~combout ),
+	.F_pc_7(F_pc_7),
+	.src_data_45(\cmd_mux_012|src_data[45]~combout ),
+	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
+	.last_cycle(\cmd_mux_012|last_cycle~0_combout ),
+	.src12_valid(\cmd_demux|src12_valid~2_combout ),
+	.src_payload_0(\cmd_mux_012|src_payload[0]~combout ),
+	.WideOr11(\cmd_mux_012|WideOr1~combout ),
+	.d_byteenable_2(d_byteenable_2),
+	.src_data_34(\cmd_mux_012|src_data[34]~combout ),
+	.d_byteenable_3(d_byteenable_3),
+	.src_data_35(\cmd_mux_012|src_data[35]~combout ),
+	.d_writedata_16(d_writedata_16),
+	.d_writedata_17(d_writedata_17),
+	.d_writedata_18(d_writedata_18),
+	.d_writedata_19(d_writedata_19),
+	.d_writedata_20(d_writedata_20),
+	.d_writedata_21(d_writedata_21),
+	.d_writedata_22(d_writedata_22),
+	.d_writedata_23(d_writedata_23),
+	.src_payload(\cmd_mux_012|src_payload~0_combout ),
+	.src_payload1(\cmd_mux_012|src_payload~1_combout ),
+	.src_payload2(\cmd_mux_012|src_payload~2_combout ),
+	.src_payload3(\cmd_mux_012|src_payload~3_combout ),
+	.src_payload4(\cmd_mux_012|src_payload~4_combout ),
+	.src_payload5(\cmd_mux_012|src_payload~5_combout ),
+	.src_payload6(\cmd_mux_012|src_payload~6_combout ),
+	.src_payload7(\cmd_mux_012|src_payload~7_combout ),
+	.src_payload8(\cmd_mux_012|src_payload~8_combout ),
+	.src_payload9(\cmd_mux_012|src_payload~9_combout ),
+	.src_payload10(\cmd_mux_012|src_payload~10_combout ),
+	.src_payload11(\cmd_mux_012|src_payload~11_combout ),
+	.src_payload12(\cmd_mux_012|src_payload~12_combout ),
+	.src_payload13(\cmd_mux_012|src_payload~13_combout ),
+	.src_payload14(\cmd_mux_012|src_payload~14_combout ),
+	.src_payload15(\cmd_mux_012|src_payload~15_combout ),
+	.src2_valid(\cmd_demux_001|src2_valid~2_combout ));
+
+niosII_niosII_mm_interconnect_0_rsp_mux_001 rsp_mux_001(
+	.src1_valid(src1_valid1),
+	.source_addr_1(source_addr_1),
+	.src_payload(src_payload5));
+
+niosII_niosII_mm_interconnect_0_rsp_mux rsp_mux(
+	.readdata_0(readdata_0),
+	.readdata_01(readdata_01),
+	.readdata_1(readdata_1),
+	.readdata_11(readdata_11),
+	.readdata_23(readdata_23),
+	.readdata_231(readdata_231),
+	.readdata_22(readdata_22),
+	.readdata_221(readdata_221),
+	.readdata_21(readdata_21),
+	.readdata_211(readdata_211),
+	.readdata_20(readdata_20),
+	.readdata_201(readdata_201),
+	.readdata_19(readdata_19),
+	.readdata_191(readdata_191),
+	.readdata_18(readdata_18),
+	.readdata_181(readdata_181),
+	.readdata_17(readdata_17),
+	.readdata_171(readdata_171),
+	.readdata_16(readdata_16),
+	.readdata_161(readdata_161),
+	.read_latency_shift_reg_0(\adc_0_adc_slave_translator|read_latency_shift_reg[0]~q ),
+	.mem_84_0(mem_84_0),
+	.mem_66_0(mem_66_0),
+	.read_latency_shift_reg_01(read_latency_shift_reg_0),
+	.out_data_toggle_flopped(\crosser_004|clock_xer|out_data_toggle_flopped~q ),
+	.out_data_toggle_flopped1(out_data_toggle_flopped1),
+	.dreg_0(dreg_01),
+	.dreg_01(\crosser_004|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.out_data_toggle_flopped2(\crosser_007|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_02(\crosser_007|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.read_latency_shift_reg_02(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_03(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_04(\port_sw_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_05(read_latency_shift_reg_01),
+	.read_latency_shift_reg_06(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_07(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
+	.read_latency_shift_reg_08(read_latency_shift_reg_02),
+	.read_latency_shift_reg_09(\timer_0_s1_translator|read_latency_shift_reg[0]~q ),
+	.mem_54_0(mem_54_0),
+	.source_addr_1(\sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
+	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.comb(\sdram_s1_agent|comb~0_combout ),
+	.src0_valid(src0_valid),
+	.WideOr11(WideOr1),
+	.av_readdata_pre_0(av_readdata_pre_0),
+	.out_payload_0(out_payload_0),
+	.source_addr_11(source_addr_1),
+	.F_iw_0(F_iw_0),
+	.av_readdata_pre_1(av_readdata_pre_1),
+	.data_reg_1(\sdram_s1_rsp_width_adapter|data_reg[1]~q ),
+	.out_payload_1(out_payload_1),
+	.src_data_1(src_data_1),
+	.av_readdata_pre_2(av_readdata_pre_2),
+	.out_payload_2(out_payload_2),
+	.F_iw_2(F_iw_2),
+	.av_readdata_pre_3(av_readdata_pre_3),
+	.data_reg_3(\sdram_s1_rsp_width_adapter|data_reg[3]~q ),
+	.out_payload_3(out_payload_3),
+	.src_data_3(src_data_3),
+	.av_readdata_pre_4(av_readdata_pre_4),
+	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
+	.out_payload_4(out_payload_4),
+	.src_data_4(src_data_4),
+	.av_readdata_pre_11(av_readdata_pre_11),
+	.data_reg_11(\sdram_s1_rsp_width_adapter|data_reg[11]~q ),
+	.out_payload_11(out_payload_11),
+	.src_data_11(src_data_11),
+	.av_readdata_pre_13(av_readdata_pre_13),
+	.data_reg_13(\sdram_s1_rsp_width_adapter|data_reg[13]~q ),
+	.out_payload_13(out_payload_13),
+	.src_data_13(src_data_13),
+	.av_readdata_pre_16(av_readdata_pre_16),
+	.av_readdata_pre_12(av_readdata_pre_12),
+	.F_iw_12(F_iw_12),
+	.av_readdata_pre_5(av_readdata_pre_5),
+	.data_reg_5(\sdram_s1_rsp_width_adapter|data_reg[5]~q ),
+	.out_payload_5(out_payload_5),
+	.src_data_5(src_data_5),
+	.av_readdata_pre_14(av_readdata_pre_14),
+	.F_iw_14(F_iw_14),
+	.av_readdata_pre_15(av_readdata_pre_15),
+	.data_reg_15(\sdram_s1_rsp_width_adapter|data_reg[15]~q ),
+	.out_payload_15(out_payload_15),
+	.src_data_15(src_data_15),
+	.av_readdata_pre_10(av_readdata_pre_10),
+	.F_iw_10(F_iw_10),
+	.av_readdata_pre_9(av_readdata_pre_9),
+	.F_iw_9(F_iw_9),
+	.av_readdata_pre_8(av_readdata_pre_8),
+	.F_iw_8(F_iw_8),
+	.av_readdata_pre_7(av_readdata_pre_7),
+	.out_payload_7(out_payload_7),
+	.F_iw_7(F_iw_7),
+	.av_readdata_pre_6(av_readdata_pre_6),
+	.out_payload_6(out_payload_6),
+	.F_iw_6(F_iw_6),
+	.av_readdata_pre_21(av_readdata_pre_21),
+	.av_readdata_pre_23(av_readdata_pre_23),
+	.av_readdata_pre_22(av_readdata_pre_22),
+	.av_readdata_pre_20(av_readdata_pre_20),
+	.av_readdata_pre_19(av_readdata_pre_19),
+	.av_readdata_pre_18(av_readdata_pre_18),
+	.av_readdata_pre_17(av_readdata_pre_17),
+	.readdata_02(readdata_02),
+	.av_readdata_pre_01(\adc_0_adc_slave_translator|av_readdata_pre[0]~q ),
+	.readdata_03(readdata_03),
+	.readdata_04(readdata_04),
+	.readdata_05(readdata_05),
+	.out_data_buffer_0(\crosser_004|clock_xer|out_data_buffer[0]~q ),
+	.av_readdata_pre_30(av_readdata_pre_301),
+	.src_payload(src_payload7),
+	.out_valid(out_valid1),
+	.out_valid1(\crosser_007|clock_xer|out_valid~combout ),
+	.out_data_buffer_01(\crosser_007|clock_xer|out_data_buffer[0]~q ),
+	.out_data_buffer_02(\crosser_005|clock_xer|out_data_buffer[0]~q ),
+	.av_readdata_pre_02(\timer_0_s1_translator|av_readdata_pre[0]~q ),
+	.src_data_0(src_data_0),
+	.readdata_12(readdata_13),
+	.av_readdata_pre_110(\adc_0_adc_slave_translator|av_readdata_pre[1]~q ),
+	.readdata_13(readdata_14),
+	.readdata_14(readdata_15),
+	.readdata_15(readdata_110),
+	.out_data_buffer_1(\crosser_004|clock_xer|out_data_buffer[1]~q ),
+	.out_data_buffer_11(\crosser_007|clock_xer|out_data_buffer[1]~q ),
+	.out_data_buffer_12(\crosser_005|clock_xer|out_data_buffer[1]~q ),
+	.av_readdata_pre_111(\timer_0_s1_translator|av_readdata_pre[1]~q ),
+	.src_data_12(src_data_12),
+	.readdata_2(readdata_24),
+	.av_readdata_pre_24(\adc_0_adc_slave_translator|av_readdata_pre[2]~q ),
+	.readdata_24(readdata_25),
+	.readdata_25(readdata_26),
+	.readdata_26(readdata_27),
+	.readdata_27(readdata_28),
+	.out_data_buffer_2(\crosser_005|clock_xer|out_data_buffer[2]~q ),
+	.av_readdata_pre_25(\timer_0_s1_translator|av_readdata_pre[2]~q ),
+	.out_valid2(\crosser_004|clock_xer|out_valid~combout ),
+	.out_data_buffer_21(\crosser_004|clock_xer|out_data_buffer[2]~q ),
+	.src_data_2(src_data_2),
+	.readdata_3(readdata_31),
+	.av_readdata_pre_31(\adc_0_adc_slave_translator|av_readdata_pre[3]~q ),
+	.readdata_31(readdata_32),
+	.readdata_32(readdata_33),
+	.readdata_33(readdata_34),
+	.readdata_34(readdata_35),
+	.out_data_buffer_3(\crosser_005|clock_xer|out_data_buffer[3]~q ),
+	.av_readdata_pre_32(\timer_0_s1_translator|av_readdata_pre[3]~q ),
+	.out_data_buffer_31(\crosser_004|clock_xer|out_data_buffer[3]~q ),
+	.src_data_31(src_data_31),
+	.readdata_4(readdata_41),
+	.av_readdata_pre_41(\adc_0_adc_slave_translator|av_readdata_pre[4]~q ),
+	.src0_valid1(src0_valid1),
+	.readdata_41(readdata_42),
+	.readdata_42(readdata_43),
+	.out_data_buffer_4(\crosser_004|clock_xer|out_data_buffer[4]~q ),
+	.readdata_43(readdata_44),
+	.av_readdata_pre_42(\timer_0_s1_translator|av_readdata_pre[4]~q ),
+	.out_data_buffer_41(\crosser_005|clock_xer|out_data_buffer[4]~q ),
+	.src_data_41(src_data_41),
+	.readdata_5(readdata_5),
+	.av_readdata_pre_51(\adc_0_adc_slave_translator|av_readdata_pre[5]~q ),
+	.readdata_51(readdata_51),
+	.readdata_52(readdata_52),
+	.readdata_53(readdata_53),
+	.out_data_buffer_5(\crosser_005|clock_xer|out_data_buffer[5]~q ),
+	.av_readdata_pre_52(\timer_0_s1_translator|av_readdata_pre[5]~q ),
+	.out_data_buffer_51(\crosser_004|clock_xer|out_data_buffer[5]~q ),
+	.src_data_51(src_data_51),
+	.readdata_6(readdata_6),
+	.av_readdata_pre_61(\adc_0_adc_slave_translator|av_readdata_pre[6]~q ),
+	.readdata_61(readdata_61),
+	.readdata_62(readdata_62),
+	.readdata_63(readdata_63),
+	.out_data_buffer_6(\crosser_005|clock_xer|out_data_buffer[6]~q ),
+	.av_readdata_pre_62(\timer_0_s1_translator|av_readdata_pre[6]~q ),
+	.out_data_buffer_61(\crosser_004|clock_xer|out_data_buffer[6]~q ),
+	.src_data_6(src_data_6),
+	.readdata_7(readdata_7),
+	.av_readdata_pre_71(\adc_0_adc_slave_translator|av_readdata_pre[7]~q ),
+	.readdata_71(readdata_71),
+	.readdata_72(readdata_72),
+	.readdata_73(readdata_73),
+	.out_data_buffer_7(\crosser_005|clock_xer|out_data_buffer[7]~q ),
+	.av_readdata_pre_72(\timer_0_s1_translator|av_readdata_pre[7]~q ),
+	.out_data_buffer_71(\crosser_004|clock_xer|out_data_buffer[7]~q ),
+	.src_data_7(src_data_7),
+	.src_payload1(src_payload10),
+	.readdata_232(readdata_232),
+	.out_data_buffer_23(\crosser_005|clock_xer|out_data_buffer[23]~q ),
+	.src_payload2(src_payload11),
+	.readdata_222(readdata_222),
+	.out_data_buffer_22(\crosser_005|clock_xer|out_data_buffer[22]~q ),
+	.out_data_buffer_221(\crosser_004|clock_xer|out_data_buffer[22]~q ),
+	.src_payload3(src_payload12),
+	.readdata_212(readdata_213),
+	.out_data_buffer_211(\crosser_005|clock_xer|out_data_buffer[21]~q ),
+	.out_data_buffer_212(\crosser_004|clock_xer|out_data_buffer[21]~q ),
+	.src_payload4(src_payload13),
+	.readdata_202(readdata_202),
+	.out_data_buffer_20(\crosser_005|clock_xer|out_data_buffer[20]~q ),
+	.out_data_buffer_201(\crosser_004|clock_xer|out_data_buffer[20]~q ),
+	.src_payload5(src_payload14),
+	.readdata_192(readdata_192),
+	.out_data_buffer_19(\crosser_005|clock_xer|out_data_buffer[19]~q ),
+	.out_data_buffer_191(\crosser_004|clock_xer|out_data_buffer[19]~q ),
+	.src_payload6(src_payload15),
+	.readdata_182(readdata_182),
+	.out_data_buffer_18(\crosser_005|clock_xer|out_data_buffer[18]~q ),
+	.out_data_buffer_181(\crosser_004|clock_xer|out_data_buffer[18]~q ),
+	.src_payload7(src_payload16),
+	.readdata_172(readdata_172),
+	.out_data_buffer_17(\crosser_005|clock_xer|out_data_buffer[17]~q ),
+	.out_data_buffer_171(\crosser_004|clock_xer|out_data_buffer[17]~q ),
+	.src_payload8(src_payload17),
+	.readdata_162(readdata_163),
+	.out_data_buffer_16(\crosser_005|clock_xer|out_data_buffer[16]~q ),
+	.out_data_buffer_161(\crosser_004|clock_xer|out_data_buffer[16]~q ),
+	.src_payload9(src_payload18),
+	.readdata_151(readdata_152),
+	.av_readdata_pre_151(\adc_0_adc_slave_translator|av_readdata_pre[15]~q ),
+	.readdata_152(readdata_153),
+	.readdata_153(readdata_154),
+	.out_data_buffer_15(\crosser_004|clock_xer|out_data_buffer[15]~q ),
+	.out_data_buffer_151(\crosser_005|clock_xer|out_data_buffer[15]~q ),
+	.av_readdata_pre_152(\timer_0_s1_translator|av_readdata_pre[15]~q ),
+	.src_data_151(src_data_151),
+	.av_readdata_pre_141(\timer_0_s1_translator|av_readdata_pre[14]~q ),
+	.readdata_141(readdata_142),
+	.out_data_buffer_14(\crosser_005|clock_xer|out_data_buffer[14]~q ),
+	.out_data_buffer_141(\crosser_004|clock_xer|out_data_buffer[14]~q ),
+	.src_data_14(src_data_14),
+	.av_readdata_pre_131(\timer_0_s1_translator|av_readdata_pre[13]~q ),
+	.readdata_131(readdata_132),
+	.out_data_buffer_13(\crosser_005|clock_xer|out_data_buffer[13]~q ),
+	.out_data_buffer_131(\crosser_004|clock_xer|out_data_buffer[13]~q ),
+	.src_data_131(src_data_131),
+	.out_data_buffer_121(\crosser_004|clock_xer|out_data_buffer[12]~q ),
+	.readdata_121(readdata_122),
+	.av_readdata_pre_121(\timer_0_s1_translator|av_readdata_pre[12]~q ),
+	.out_data_buffer_122(\crosser_005|clock_xer|out_data_buffer[12]~q ),
+	.src_data_121(src_data_121),
+	.readdata_111(readdata_112),
+	.av_readdata_pre_112(\adc_0_adc_slave_translator|av_readdata_pre[11]~q ),
+	.out_data_buffer_111(\crosser_005|clock_xer|out_data_buffer[11]~q ),
+	.av_readdata_pre_113(\timer_0_s1_translator|av_readdata_pre[11]~q ),
+	.src_data_111(src_data_111),
+	.av_readdata_pre_101(\timer_0_s1_translator|av_readdata_pre[10]~q ),
+	.readdata_10(readdata_101),
+	.av_readdata_pre_102(\adc_0_adc_slave_translator|av_readdata_pre[10]~q ),
+	.out_data_buffer_10(\crosser_005|clock_xer|out_data_buffer[10]~q ),
+	.out_data_buffer_101(\crosser_004|clock_xer|out_data_buffer[10]~q ),
+	.src_data_10(src_data_10),
+	.readdata_9(readdata_91),
+	.av_readdata_pre_91(\adc_0_adc_slave_translator|av_readdata_pre[9]~q ),
+	.readdata_91(readdata_92),
+	.readdata_92(readdata_93),
+	.out_data_buffer_9(\crosser_004|clock_xer|out_data_buffer[9]~q ),
+	.out_data_buffer_91(\crosser_005|clock_xer|out_data_buffer[9]~q ),
+	.av_readdata_pre_92(\timer_0_s1_translator|av_readdata_pre[9]~q ),
+	.src_data_9(src_data_9),
+	.readdata_8(readdata_81),
+	.av_readdata_pre_81(\adc_0_adc_slave_translator|av_readdata_pre[8]~q ),
+	.readdata_81(readdata_82),
+	.readdata_82(readdata_83),
+	.out_data_buffer_8(\crosser_004|clock_xer|out_data_buffer[8]~q ),
+	.out_data_buffer_81(\crosser_005|clock_xer|out_data_buffer[8]~q ),
+	.av_readdata_pre_82(\timer_0_s1_translator|av_readdata_pre[8]~q ),
+	.src_data_8(src_data_8));
+
+niosII_niosII_mm_interconnect_0_rsp_demux_009_2 rsp_demux_012(
+	.rp_valid(\sdram_s1_agent|rp_valid~combout ),
+	.always10(\sdram_s1_rsp_width_adapter|always10~1_combout ),
+	.mem_66_0(\sdram_s1_agent_rsp_fifo|mem[0][66]~q ),
+	.mem_48_0(\sdram_s1_agent_rsp_fifo|mem[0][48]~q ),
+	.src0_valid(src0_valid),
+	.src1_valid(src1_valid1));
+
+niosII_niosII_mm_interconnect_0_rsp_demux_009_1 rsp_demux_010(
+	.mem_84_0(\epcs_epcs_control_port_agent_rsp_fifo|mem[0][84]~q ),
+	.mem_66_0(\epcs_epcs_control_port_agent_rsp_fifo|mem[0][66]~q ),
+	.in_data_toggle(\crosser_006|clock_xer|in_data_toggle~q ),
+	.dreg_0(\crosser_006|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
+	.in_data_toggle1(\crosser_005|clock_xer|in_data_toggle~q ),
+	.dreg_01(\crosser_005|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
+	.take_in_data(\crosser_006|clock_xer|take_in_data~0_combout ),
+	.WideOr0(\rsp_demux_010|WideOr0~1_combout ));
+
+niosII_niosII_mm_interconnect_0_rsp_demux_009 rsp_demux_009(
+	.mem_84_0(mem_84_0),
+	.mem_66_0(mem_66_0),
+	.read_latency_shift_reg_0(read_latency_shift_reg_0),
+	.src1_valid(src1_valid),
+	.src0_valid(src0_valid1));
+
+niosII_altera_avalon_st_handshake_clock_crosser_1 crosser_001(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.W_alu_result_6(W_alu_result_6),
+	.W_alu_result_10(W_alu_result_10),
+	.W_alu_result_5(W_alu_result_5),
+	.W_alu_result_7(W_alu_result_7),
+	.W_alu_result_9(W_alu_result_9),
+	.W_alu_result_8(W_alu_result_8),
+	.W_alu_result_4(W_alu_result_4),
+	.W_alu_result_3(W_alu_result_3),
+	.W_alu_result_2(W_alu_result_2),
+	.r_sync_rst(r_sync_rst),
+	.r_sync_rst1(r_sync_rst1),
+	.saved_grant_0(saved_grant_0),
+	.out_data_buffer_38(\crosser_001|clock_xer|out_data_buffer[38]~q ),
+	.out_data_buffer_39(\crosser_001|clock_xer|out_data_buffer[39]~q ),
+	.out_data_buffer_40(\crosser_001|clock_xer|out_data_buffer[40]~q ),
+	.out_data_buffer_10(\crosser_001|clock_xer|out_data_buffer[10]~q ),
+	.uav_read(uav_read),
+	.out_data_buffer_0(\crosser_001|clock_xer|out_data_buffer[0]~q ),
+	.out_data_toggle_flopped(\crosser_001|clock_xer|out_data_toggle_flopped~q ),
+	.dreg_0(\crosser_001|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.out_valid(\crosser_001|clock_xer|out_valid~combout ),
+	.last_cycle(\cmd_mux_010|last_cycle~0_combout ),
+	.out_data_buffer_105(\crosser_001|clock_xer|out_data_buffer[105]~q ),
+	.out_data_buffer_46(\crosser_001|clock_xer|out_data_buffer[46]~q ),
+	.out_data_buffer_65(out_data_buffer_65),
+	.out_data_buffer_7(\crosser_001|clock_xer|out_data_buffer[7]~q ),
+	.d_writedata_0(d_writedata_0),
+	.d_writedata_1(d_writedata_1),
+	.d_writedata_2(d_writedata_2),
+	.d_writedata_3(d_writedata_3),
+	.d_writedata_4(d_writedata_4),
+	.d_writedata_5(d_writedata_5),
+	.d_writedata_6(d_writedata_6),
+	.d_writedata_7(d_writedata_7),
+	.src12_valid(src12_valid),
+	.Equal1(Equal1),
+	.in_ready(\crosser_001|clock_xer|in_ready~0_combout ),
+	.out_data_buffer_66(\crosser_001|clock_xer|out_data_buffer[66]~q ),
+	.out_data_buffer_64(\crosser_001|clock_xer|out_data_buffer[64]~q ),
+	.d_writedata_10(d_writedata_10),
+	.out_data_buffer_6(out_data_buffer_6),
+	.d_writedata_8(d_writedata_8),
+	.d_writedata_9(d_writedata_9),
+	.d_writedata_11(d_writedata_11),
+	.d_writedata_12(d_writedata_12),
+	.d_writedata_13(d_writedata_13),
+	.d_writedata_14(d_writedata_14),
+	.d_writedata_15(d_writedata_15),
+	.uav_write(uav_write),
+	.out_data_buffer_5(\crosser_001|clock_xer|out_data_buffer[5]~q ),
+	.out_data_buffer_4(\crosser_001|clock_xer|out_data_buffer[4]~q ),
+	.out_data_buffer_3(\crosser_001|clock_xer|out_data_buffer[3]~q ),
+	.out_data_buffer_2(\crosser_001|clock_xer|out_data_buffer[2]~q ),
+	.out_data_buffer_1(\crosser_001|clock_xer|out_data_buffer[1]~q ),
+	.out_data_buffer_41(\crosser_001|clock_xer|out_data_buffer[41]~q ),
+	.out_data_buffer_42(\crosser_001|clock_xer|out_data_buffer[42]~q ),
+	.out_data_buffer_43(\crosser_001|clock_xer|out_data_buffer[43]~q ),
+	.out_data_buffer_44(\crosser_001|clock_xer|out_data_buffer[44]~q ),
+	.out_data_buffer_45(\crosser_001|clock_xer|out_data_buffer[45]~q ),
+	.out_data_buffer_11(\crosser_001|clock_xer|out_data_buffer[11]~q ),
+	.out_data_buffer_13(\crosser_001|clock_xer|out_data_buffer[13]~q ),
+	.out_data_buffer_12(\crosser_001|clock_xer|out_data_buffer[12]~q ),
+	.out_data_buffer_14(\crosser_001|clock_xer|out_data_buffer[14]~q ),
+	.out_data_buffer_15(\crosser_001|clock_xer|out_data_buffer[15]~q ),
+	.out_data_buffer_9(\crosser_001|clock_xer|out_data_buffer[9]~q ),
+	.out_data_buffer_8(\crosser_001|clock_xer|out_data_buffer[8]~q ));
+
+niosII_altera_avalon_st_handshake_clock_crosser crosser(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.W_alu_result_2(W_alu_result_2),
+	.r_sync_rst(r_sync_rst),
+	.uav_read(uav_read),
+	.cp_valid(cp_valid),
+	.d_writedata_0(d_writedata_0),
+	.d_writedata_1(d_writedata_1),
+	.d_writedata_2(d_writedata_2),
+	.d_writedata_3(d_writedata_3),
+	.d_writedata_4(d_writedata_4),
+	.d_writedata_5(d_writedata_5),
+	.d_writedata_6(d_writedata_6),
+	.d_writedata_7(d_writedata_7),
+	.altera_reset_synchronizer_int_chain_out(altera_reset_synchronizer_int_chain_out),
+	.Equal13(\router|Equal13~1_combout ),
+	.in_data_toggle(\crosser|clock_xer|in_data_toggle~q ),
+	.dreg_0(\crosser|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
+	.d_writedata_10(d_writedata_10),
+	.uav_write(uav_write),
+	.out_data_toggle_flopped(out_data_toggle_flopped2),
+	.dreg_01(dreg_02),
+	.av_waitrequest(av_waitrequest),
+	.mem_used_1(mem_used_16),
+	.out_data_buffer_66(out_data_buffer_661),
+	.out_data_buffer_38(out_data_buffer_381),
+	.out_data_buffer_7(out_data_buffer_71),
+	.out_data_buffer_65(out_data_buffer_652),
+	.out_data_buffer_105(\crosser|clock_xer|out_data_buffer[105]~q ),
+	.out_data_buffer_64(\crosser|clock_xer|out_data_buffer[64]~q ),
+	.out_data_buffer_0(out_data_buffer_02),
+	.out_data_buffer_1(out_data_buffer_110),
+	.out_data_buffer_2(out_data_buffer_210),
+	.out_data_buffer_3(out_data_buffer_32),
+	.out_data_buffer_10(out_data_buffer_101),
+	.out_data_buffer_4(out_data_buffer_41),
+	.out_data_buffer_5(out_data_buffer_51),
+	.out_data_buffer_6(out_data_buffer_62),
+	.clk_clk(clk_clk));
+
+niosII_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
+	.clk(wire_pll7_clk_0),
+	.byteen_reg_0(byteen_reg_0),
+	.byteen_reg_1(byteen_reg_1),
+	.address_reg_1(\sdram_s1_cmd_width_adapter|address_reg[1]~q ),
+	.reset(r_sync_rst),
+	.d_writedata_0(d_writedata_0),
+	.d_writedata_1(d_writedata_1),
+	.d_writedata_2(d_writedata_2),
+	.d_writedata_3(d_writedata_3),
+	.d_writedata_4(d_writedata_4),
+	.d_writedata_5(d_writedata_5),
+	.d_writedata_6(d_writedata_6),
+	.d_writedata_7(d_writedata_7),
+	.saved_grant_0(saved_grant_01),
+	.use_reg1(use_reg),
+	.WideOr0(WideOr0),
+	.Equal0(Equal0),
+	.mem_used_7(mem_used_7),
+	.src_data_46(\cmd_mux_012|src_data[46]~combout ),
+	.out_data_28(out_data_28),
+	.src_data_60(\cmd_mux_012|src_data[60]~combout ),
+	.out_data_42(out_data_42),
+	.src_data_47(\cmd_mux_012|src_data[47]~combout ),
+	.out_data_29(out_data_29),
+	.src_data_49(\cmd_mux_012|src_data[49]~combout ),
+	.out_data_31(out_data_31),
+	.src_data_48(\cmd_mux_012|src_data[48]~combout ),
+	.out_data_30(out_data_30),
+	.src_data_51(\cmd_mux_012|src_data[51]~combout ),
+	.out_data_33(out_data_33),
+	.src_data_50(\cmd_mux_012|src_data[50]~combout ),
+	.out_data_32(out_data_32),
+	.src_data_53(\cmd_mux_012|src_data[53]~combout ),
+	.out_data_35(out_data_35),
+	.src_data_52(\cmd_mux_012|src_data[52]~combout ),
+	.out_data_34(out_data_34),
+	.src_data_55(\cmd_mux_012|src_data[55]~combout ),
+	.out_data_37(out_data_37),
+	.src_data_54(\cmd_mux_012|src_data[54]~combout ),
+	.out_data_36(out_data_36),
+	.src_data_57(\cmd_mux_012|src_data[57]~combout ),
+	.out_data_39(out_data_39),
+	.src_data_56(\cmd_mux_012|src_data[56]~combout ),
+	.out_data_38(out_data_38),
+	.src_data_59(\cmd_mux_012|src_data[59]~combout ),
+	.out_data_41(out_data_41),
+	.src_data_58(\cmd_mux_012|src_data[58]~combout ),
+	.out_data_40(out_data_40),
+	.out_data_19(out_data_19),
+	.src_data_38(\cmd_mux_012|src_data[38]~combout ),
+	.out_data_20(out_data_20),
+	.src_data_39(\cmd_mux_012|src_data[39]~combout ),
+	.out_data_21(out_data_21),
+	.src_data_40(\cmd_mux_012|src_data[40]~combout ),
+	.out_data_22(out_data_22),
+	.src_data_41(\cmd_mux_012|src_data[41]~combout ),
+	.out_data_23(out_data_23),
+	.src_data_42(\cmd_mux_012|src_data[42]~combout ),
+	.out_data_24(out_data_24),
+	.src_data_43(\cmd_mux_012|src_data[43]~combout ),
+	.out_data_25(out_data_25),
+	.src_data_44(\cmd_mux_012|src_data[44]~combout ),
+	.out_data_26(out_data_26),
+	.src_data_45(\cmd_mux_012|src_data[45]~combout ),
+	.out_data_27(out_data_27),
+	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
+	.d_writedata_10(d_writedata_10),
+	.in_endofpacket(\cmd_mux_012|src_payload[0]~combout ),
+	.WideOr1(\cmd_mux_012|WideOr1~combout ),
+	.cp_ready(\sdram_s1_agent|cp_ready~combout ),
+	.src_data_34(\cmd_mux_012|src_data[34]~combout ),
+	.src_data_35(\cmd_mux_012|src_data[35]~combout ),
+	.d_writedata_8(d_writedata_8),
+	.d_writedata_9(d_writedata_9),
+	.d_writedata_11(d_writedata_11),
+	.d_writedata_12(d_writedata_12),
+	.d_writedata_13(d_writedata_13),
+	.d_writedata_14(d_writedata_14),
+	.d_writedata_15(d_writedata_15),
+	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
+	.out_data_0(out_data_0),
+	.out_data_1(out_data_1),
+	.out_data_2(out_data_2),
+	.out_data_3(out_data_3),
+	.out_data_4(out_data_4),
+	.out_data_5(out_data_5),
+	.out_data_6(out_data_6),
+	.out_data_7(out_data_7),
+	.out_data_8(out_data_8),
+	.out_data_9(out_data_9),
+	.out_data_10(out_data_10),
+	.out_data_11(out_data_11),
+	.out_data_12(out_data_12),
+	.out_data_13(out_data_13),
+	.out_data_14(out_data_14),
+	.out_data_15(out_data_15),
+	.src_payload(\cmd_mux_012|src_payload~0_combout ),
+	.src_payload1(\cmd_mux_012|src_payload~1_combout ),
+	.src_payload2(\cmd_mux_012|src_payload~2_combout ),
+	.src_payload3(\cmd_mux_012|src_payload~3_combout ),
+	.src_payload4(\cmd_mux_012|src_payload~4_combout ),
+	.src_payload5(\cmd_mux_012|src_payload~5_combout ),
+	.src_payload6(\cmd_mux_012|src_payload~6_combout ),
+	.src_payload7(\cmd_mux_012|src_payload~7_combout ),
+	.src_payload8(\cmd_mux_012|src_payload~8_combout ),
+	.src_payload9(\cmd_mux_012|src_payload~9_combout ),
+	.src_payload10(\cmd_mux_012|src_payload~10_combout ),
+	.src_payload11(\cmd_mux_012|src_payload~11_combout ),
+	.src_payload12(\cmd_mux_012|src_payload~12_combout ),
+	.src_payload13(\cmd_mux_012|src_payload~13_combout ),
+	.src_payload14(\cmd_mux_012|src_payload~14_combout ),
+	.src_payload15(\cmd_mux_012|src_payload~15_combout ));
+
+niosII_altera_merlin_width_adapter_1 sdram_s1_rsp_width_adapter(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.r_sync_rst(r_sync_rst),
+	.rp_valid(\sdram_s1_agent|rp_valid~combout ),
+	.mem_88_0(\sdram_s1_agent_rsp_fifo|mem[0][88]~q ),
+	.mem_54_0(mem_54_0),
+	.source_addr_1(\sdram_s1_agent|uncompressor|source_addr[1]~0_combout ),
+	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.comb(\sdram_s1_agent|comb~0_combout ),
+	.always10(\sdram_s1_rsp_width_adapter|always10~1_combout ),
+	.data_reg_0(data_reg_0),
+	.out_payload_0(out_payload_0),
+	.source_addr_11(source_addr_1),
+	.data_reg_1(\sdram_s1_rsp_width_adapter|data_reg[1]~q ),
+	.out_payload_1(out_payload_1),
+	.data_reg_2(data_reg_2),
+	.out_payload_2(out_payload_2),
+	.data_reg_3(\sdram_s1_rsp_width_adapter|data_reg[3]~q ),
+	.out_payload_3(out_payload_3),
+	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
+	.out_payload_4(out_payload_4),
+	.data_reg_11(\sdram_s1_rsp_width_adapter|data_reg[11]~q ),
+	.out_payload_11(out_payload_11),
+	.data_reg_13(\sdram_s1_rsp_width_adapter|data_reg[13]~q ),
+	.out_payload_13(out_payload_13),
+	.data_reg_12(data_reg_12),
+	.out_payload_12(out_payload_12),
+	.data_reg_5(\sdram_s1_rsp_width_adapter|data_reg[5]~q ),
+	.out_payload_5(out_payload_5),
+	.data_reg_14(data_reg_14),
+	.out_payload_14(out_payload_14),
+	.data_reg_15(\sdram_s1_rsp_width_adapter|data_reg[15]~q ),
+	.out_payload_15(out_payload_15),
+	.data_reg_10(data_reg_10),
+	.out_payload_10(out_payload_10),
+	.data_reg_9(data_reg_9),
+	.out_payload_9(out_payload_9),
+	.data_reg_8(data_reg_8),
+	.out_payload_8(out_payload_8),
+	.data_reg_7(data_reg_7),
+	.out_payload_7(out_payload_7),
+	.data_reg_6(data_reg_6),
+	.out_payload_6(out_payload_6));
 
 niosII_altera_avalon_st_handshake_clock_crosser_5 crosser_005(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
 	.r_sync_rst(r_sync_rst),
 	.r_sync_rst1(r_sync_rst1),
-	.out_data_toggle_flopped(\crosser_005|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
+	.out_data_toggle_flopped(out_data_toggle_flopped1),
+	.dreg_0(dreg_01),
 	.in_data_toggle(\crosser_005|clock_xer|in_data_toggle~q ),
 	.dreg_01(\crosser_005|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
 	.take_in_data(\crosser_006|clock_xer|take_in_data~0_combout ),
@@ -59200,9 +60051,9 @@ niosII_altera_avalon_st_handshake_clock_crosser_4 crosser_004(
 	.out_data_toggle_flopped(\crosser_004|clock_xer|out_data_toggle_flopped~q ),
 	.dreg_0(\crosser_004|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
 	.in_data_toggle(\crosser_004|clock_xer|in_data_toggle~q ),
-	.out_valid(\crosser_004|clock_xer|out_valid~combout ),
 	.out_data_buffer_0(\crosser_004|clock_xer|out_data_buffer[0]~q ),
 	.out_data_buffer_1(\crosser_004|clock_xer|out_data_buffer[1]~q ),
+	.out_valid(\crosser_004|clock_xer|out_valid~combout ),
 	.out_data_buffer_2(\crosser_004|clock_xer|out_data_buffer[2]~q ),
 	.out_data_buffer_3(\crosser_004|clock_xer|out_data_buffer[3]~q ),
 	.out_data_buffer_4(\crosser_004|clock_xer|out_data_buffer[4]~q ),
@@ -59254,8 +60105,8 @@ niosII_altera_avalon_st_handshake_clock_crosser_3 crosser_003(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
 	.r_sync_rst(r_sync_rst),
 	.r_sync_rst1(r_sync_rst1),
-	.saved_grant_1(saved_grant_1),
-	.out_data_buffer_38(out_data_buffer_38),
+	.saved_grant_1(\cmd_mux_010|saved_grant[1]~q ),
+	.out_data_buffer_38(\crosser_003|clock_xer|out_data_buffer[38]~q ),
 	.out_data_buffer_39(\crosser_003|clock_xer|out_data_buffer[39]~q ),
 	.out_data_buffer_40(\crosser_003|clock_xer|out_data_buffer[40]~q ),
 	.hold_waitrequest(hold_waitrequest),
@@ -59294,7 +60145,7 @@ niosII_altera_avalon_st_handshake_clock_crosser_2 crosser_002(
 	.W_alu_result_3(W_alu_result_3),
 	.W_alu_result_2(W_alu_result_2),
 	.r_sync_rst(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
+	.uav_read(uav_read),
 	.cp_valid(cp_valid),
 	.d_writedata_0(d_writedata_0),
 	.d_writedata_1(d_writedata_1),
@@ -59303,11 +60154,11 @@ niosII_altera_avalon_st_handshake_clock_crosser_2 crosser_002(
 	.dreg_0(dreg_0),
 	.mem_used_1(mem_used_12),
 	.out_data_buffer_65(out_data_buffer_651),
-	.out_data_buffer_38(out_data_buffer_381),
+	.out_data_buffer_38(out_data_buffer_38),
 	.out_data_buffer_39(out_data_buffer_39),
 	.altera_reset_synchronizer_int_chain_out(altera_reset_synchronizer_int_chain_out),
-	.src_channel_12(\router|src_channel[12]~1_combout ),
 	.Equal5(\router|Equal5~0_combout ),
+	.src_channel_12(\router|src_channel[12]~2_combout ),
 	.take_in_data(\crosser_002|clock_xer|take_in_data~0_combout ),
 	.rst1(rst1),
 	.out_data_buffer_66(out_data_buffer_66),
@@ -59317,901 +60168,6 @@ niosII_altera_avalon_st_handshake_clock_crosser_2 crosser_002(
 	.Equal51(\router|Equal5~2_combout ),
 	.out_data_buffer_1(out_data_buffer_111),
 	.clk_clk(clk_clk));
-
-niosII_altera_avalon_st_handshake_clock_crosser_1 crosser_001(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_6(W_alu_result_6),
-	.W_alu_result_10(W_alu_result_10),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_7(W_alu_result_7),
-	.W_alu_result_9(W_alu_result_9),
-	.W_alu_result_8(W_alu_result_8),
-	.W_alu_result_4(W_alu_result_4),
-	.W_alu_result_3(W_alu_result_3),
-	.W_alu_result_2(W_alu_result_2),
-	.r_sync_rst(r_sync_rst),
-	.r_sync_rst1(r_sync_rst1),
-	.saved_grant_0(saved_grant_0),
-	.out_data_buffer_38(\crosser_001|clock_xer|out_data_buffer[38]~q ),
-	.out_data_buffer_39(\crosser_001|clock_xer|out_data_buffer[39]~q ),
-	.out_data_buffer_40(\crosser_001|clock_xer|out_data_buffer[40]~q ),
-	.out_data_buffer_10(\crosser_001|clock_xer|out_data_buffer[10]~q ),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.out_data_buffer_0(\crosser_001|clock_xer|out_data_buffer[0]~q ),
-	.out_data_toggle_flopped(\crosser_001|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\crosser_001|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.out_valid(\crosser_001|clock_xer|out_valid~combout ),
-	.last_cycle(\cmd_mux_010|last_cycle~0_combout ),
-	.out_data_buffer_105(\crosser_001|clock_xer|out_data_buffer[105]~q ),
-	.out_data_buffer_46(\crosser_001|clock_xer|out_data_buffer[46]~q ),
-	.out_data_buffer_65(out_data_buffer_65),
-	.out_data_buffer_7(\crosser_001|clock_xer|out_data_buffer[7]~q ),
-	.d_writedata_0(d_writedata_0),
-	.d_writedata_1(d_writedata_1),
-	.d_writedata_2(d_writedata_2),
-	.d_writedata_3(d_writedata_3),
-	.d_writedata_4(d_writedata_4),
-	.d_writedata_5(d_writedata_5),
-	.d_writedata_6(d_writedata_6),
-	.d_writedata_7(d_writedata_7),
-	.Equal1(Equal1),
-	.src12_valid(src12_valid),
-	.in_ready(\crosser_001|clock_xer|in_ready~0_combout ),
-	.out_data_buffer_66(\crosser_001|clock_xer|out_data_buffer[66]~q ),
-	.out_data_buffer_64(\crosser_001|clock_xer|out_data_buffer[64]~q ),
-	.d_writedata_10(d_writedata_10),
-	.out_data_buffer_6(\crosser_001|clock_xer|out_data_buffer[6]~q ),
-	.d_writedata_8(d_writedata_8),
-	.d_writedata_9(d_writedata_9),
-	.d_writedata_11(d_writedata_11),
-	.d_writedata_12(d_writedata_12),
-	.d_writedata_13(d_writedata_13),
-	.d_writedata_14(d_writedata_14),
-	.d_writedata_15(d_writedata_15),
-	.uav_write(uav_write),
-	.out_data_buffer_5(\crosser_001|clock_xer|out_data_buffer[5]~q ),
-	.out_data_buffer_4(\crosser_001|clock_xer|out_data_buffer[4]~q ),
-	.out_data_buffer_3(\crosser_001|clock_xer|out_data_buffer[3]~q ),
-	.out_data_buffer_2(\crosser_001|clock_xer|out_data_buffer[2]~q ),
-	.out_data_buffer_1(\crosser_001|clock_xer|out_data_buffer[1]~q ),
-	.out_data_buffer_41(\crosser_001|clock_xer|out_data_buffer[41]~q ),
-	.out_data_buffer_42(\crosser_001|clock_xer|out_data_buffer[42]~q ),
-	.out_data_buffer_43(\crosser_001|clock_xer|out_data_buffer[43]~q ),
-	.out_data_buffer_44(\crosser_001|clock_xer|out_data_buffer[44]~q ),
-	.out_data_buffer_45(\crosser_001|clock_xer|out_data_buffer[45]~q ),
-	.out_data_buffer_11(\crosser_001|clock_xer|out_data_buffer[11]~q ),
-	.out_data_buffer_13(\crosser_001|clock_xer|out_data_buffer[13]~q ),
-	.out_data_buffer_12(\crosser_001|clock_xer|out_data_buffer[12]~q ),
-	.out_data_buffer_14(\crosser_001|clock_xer|out_data_buffer[14]~q ),
-	.out_data_buffer_15(\crosser_001|clock_xer|out_data_buffer[15]~q ),
-	.out_data_buffer_9(\crosser_001|clock_xer|out_data_buffer[9]~q ),
-	.out_data_buffer_8(\crosser_001|clock_xer|out_data_buffer[8]~q ));
-
-niosII_altera_avalon_st_handshake_clock_crosser crosser(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_2(W_alu_result_2),
-	.r_sync_rst(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.cp_valid(cp_valid),
-	.d_writedata_0(d_writedata_0),
-	.d_writedata_1(d_writedata_1),
-	.d_writedata_2(d_writedata_2),
-	.d_writedata_3(d_writedata_3),
-	.d_writedata_4(d_writedata_4),
-	.d_writedata_5(d_writedata_5),
-	.d_writedata_6(d_writedata_6),
-	.d_writedata_7(d_writedata_7),
-	.altera_reset_synchronizer_int_chain_out(altera_reset_synchronizer_int_chain_out),
-	.Equal13(\router|Equal13~1_combout ),
-	.in_data_toggle(\crosser|clock_xer|in_data_toggle~q ),
-	.dreg_0(\crosser|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
-	.d_writedata_10(d_writedata_10),
-	.uav_write(uav_write),
-	.out_data_toggle_flopped(out_data_toggle_flopped1),
-	.dreg_01(dreg_01),
-	.av_waitrequest(av_waitrequest),
-	.mem_used_1(mem_used_16),
-	.out_data_buffer_66(out_data_buffer_661),
-	.out_data_buffer_38(out_data_buffer_382),
-	.out_data_buffer_7(out_data_buffer_71),
-	.out_data_buffer_65(out_data_buffer_652),
-	.out_data_buffer_105(\crosser|clock_xer|out_data_buffer[105]~q ),
-	.out_data_buffer_64(\crosser|clock_xer|out_data_buffer[64]~q ),
-	.out_data_buffer_0(out_data_buffer_02),
-	.out_data_buffer_1(out_data_buffer_110),
-	.out_data_buffer_2(out_data_buffer_210),
-	.out_data_buffer_3(out_data_buffer_32),
-	.out_data_buffer_10(out_data_buffer_101),
-	.out_data_buffer_4(out_data_buffer_41),
-	.out_data_buffer_5(out_data_buffer_51),
-	.out_data_buffer_6(out_data_buffer_61),
-	.clk_clk(clk_clk));
-
-niosII_altera_merlin_width_adapter sdram_s1_cmd_width_adapter(
-	.clk(wire_pll7_clk_0),
-	.byteen_reg_0(byteen_reg_0),
-	.byteen_reg_1(byteen_reg_1),
-	.address_reg_1(\sdram_s1_cmd_width_adapter|address_reg[1]~q ),
-	.reset(r_sync_rst),
-	.d_writedata_0(d_writedata_0),
-	.d_writedata_1(d_writedata_1),
-	.d_writedata_2(d_writedata_2),
-	.d_writedata_3(d_writedata_3),
-	.d_writedata_4(d_writedata_4),
-	.d_writedata_5(d_writedata_5),
-	.d_writedata_6(d_writedata_6),
-	.d_writedata_7(d_writedata_7),
-	.saved_grant_0(saved_grant_01),
-	.use_reg1(use_reg),
-	.WideOr0(WideOr0),
-	.Equal0(Equal0),
-	.WideOr1(WideOr1),
-	.mem_used_7(mem_used_7),
-	.src_data_46(\cmd_mux_012|src_data[46]~combout ),
-	.out_data_28(out_data_28),
-	.src_data_60(\cmd_mux_012|src_data[60]~combout ),
-	.out_data_42(out_data_42),
-	.src_data_47(\cmd_mux_012|src_data[47]~combout ),
-	.out_data_29(out_data_29),
-	.src_data_49(\cmd_mux_012|src_data[49]~combout ),
-	.out_data_31(out_data_31),
-	.src_data_48(\cmd_mux_012|src_data[48]~combout ),
-	.out_data_30(out_data_30),
-	.src_data_51(\cmd_mux_012|src_data[51]~combout ),
-	.out_data_33(out_data_33),
-	.src_data_50(\cmd_mux_012|src_data[50]~combout ),
-	.out_data_32(out_data_32),
-	.src_data_53(\cmd_mux_012|src_data[53]~combout ),
-	.out_data_35(out_data_35),
-	.src_data_52(\cmd_mux_012|src_data[52]~combout ),
-	.out_data_34(out_data_34),
-	.src_data_55(\cmd_mux_012|src_data[55]~combout ),
-	.out_data_37(out_data_37),
-	.src_data_54(\cmd_mux_012|src_data[54]~combout ),
-	.out_data_36(out_data_36),
-	.src_data_57(\cmd_mux_012|src_data[57]~combout ),
-	.out_data_39(out_data_39),
-	.src_data_56(\cmd_mux_012|src_data[56]~combout ),
-	.out_data_38(out_data_38),
-	.src_data_59(\cmd_mux_012|src_data[59]~combout ),
-	.out_data_41(out_data_41),
-	.src_data_58(\cmd_mux_012|src_data[58]~combout ),
-	.out_data_40(out_data_40),
-	.out_data_19(out_data_19),
-	.src_data_38(\cmd_mux_012|src_data[38]~combout ),
-	.out_data_20(out_data_20),
-	.src_data_39(\cmd_mux_012|src_data[39]~combout ),
-	.out_data_21(out_data_21),
-	.src_data_40(\cmd_mux_012|src_data[40]~combout ),
-	.out_data_22(out_data_22),
-	.src_data_41(\cmd_mux_012|src_data[41]~combout ),
-	.out_data_23(out_data_23),
-	.src_data_42(\cmd_mux_012|src_data[42]~combout ),
-	.out_data_24(out_data_24),
-	.src_data_43(\cmd_mux_012|src_data[43]~combout ),
-	.out_data_25(out_data_25),
-	.src_data_44(\cmd_mux_012|src_data[44]~combout ),
-	.out_data_26(out_data_26),
-	.src_data_45(\cmd_mux_012|src_data[45]~combout ),
-	.out_data_27(out_data_27),
-	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
-	.d_writedata_10(d_writedata_10),
-	.in_endofpacket(\cmd_mux_012|src_payload[0]~combout ),
-	.cp_ready(\sdram_s1_agent|cp_ready~combout ),
-	.src_data_34(\cmd_mux_012|src_data[34]~combout ),
-	.src_data_35(\cmd_mux_012|src_data[35]~combout ),
-	.d_writedata_8(d_writedata_8),
-	.d_writedata_9(d_writedata_9),
-	.d_writedata_11(d_writedata_11),
-	.d_writedata_12(d_writedata_12),
-	.d_writedata_13(d_writedata_13),
-	.d_writedata_14(d_writedata_14),
-	.d_writedata_15(d_writedata_15),
-	.out_endofpacket(\sdram_s1_cmd_width_adapter|out_endofpacket~0_combout ),
-	.out_data_0(out_data_0),
-	.out_data_1(out_data_1),
-	.out_data_2(out_data_2),
-	.out_data_3(out_data_3),
-	.out_data_4(out_data_4),
-	.out_data_5(out_data_5),
-	.out_data_6(out_data_6),
-	.out_data_7(out_data_7),
-	.out_data_8(out_data_8),
-	.out_data_9(out_data_9),
-	.out_data_10(out_data_10),
-	.out_data_11(out_data_11),
-	.out_data_12(out_data_12),
-	.out_data_13(out_data_13),
-	.out_data_14(out_data_14),
-	.out_data_15(out_data_15),
-	.src_payload(\cmd_mux_012|src_payload~0_combout ),
-	.src_payload1(\cmd_mux_012|src_payload~1_combout ),
-	.src_payload2(\cmd_mux_012|src_payload~2_combout ),
-	.src_payload3(\cmd_mux_012|src_payload~3_combout ),
-	.src_payload4(\cmd_mux_012|src_payload~4_combout ),
-	.src_payload5(\cmd_mux_012|src_payload~5_combout ),
-	.src_payload6(\cmd_mux_012|src_payload~6_combout ),
-	.src_payload7(\cmd_mux_012|src_payload~7_combout ),
-	.src_payload8(\cmd_mux_012|src_payload~8_combout ),
-	.src_payload9(\cmd_mux_012|src_payload~9_combout ),
-	.src_payload10(\cmd_mux_012|src_payload~10_combout ),
-	.src_payload11(\cmd_mux_012|src_payload~11_combout ),
-	.src_payload12(\cmd_mux_012|src_payload~12_combout ),
-	.src_payload13(\cmd_mux_012|src_payload~13_combout ),
-	.src_payload14(\cmd_mux_012|src_payload~14_combout ),
-	.src_payload15(\cmd_mux_012|src_payload~15_combout ));
-
-niosII_altera_merlin_width_adapter_1 sdram_s1_rsp_width_adapter(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.r_sync_rst(r_sync_rst),
-	.rp_valid(\sdram_s1_agent|rp_valid~combout ),
-	.mem_88_0(\sdram_s1_agent_rsp_fifo|mem[0][88]~q ),
-	.mem_54_0(mem_54_0),
-	.burst_uncompress_address_base_1(\sdram_s1_agent|uncompressor|burst_uncompress_address_base[1]~q ),
-	.burst_uncompress_address_offset_1(\sdram_s1_agent|uncompressor|burst_uncompress_address_offset[1]~q ),
-	.mem_19_0(\sdram_s1_agent_rsp_fifo|mem[0][19]~q ),
-	.comb(\sdram_s1_agent|comb~0_combout ),
-	.always10(\sdram_s1_rsp_width_adapter|always10~1_combout ),
-	.data_reg_0(data_reg_0),
-	.out_payload_0(out_payload_0),
-	.source_addr_1(source_addr_1),
-	.data_reg_1(\sdram_s1_rsp_width_adapter|data_reg[1]~q ),
-	.out_payload_1(out_payload_1),
-	.data_reg_2(data_reg_2),
-	.out_payload_2(out_payload_2),
-	.data_reg_3(\sdram_s1_rsp_width_adapter|data_reg[3]~q ),
-	.out_payload_3(out_payload_3),
-	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
-	.out_payload_4(out_payload_4),
-	.data_reg_11(\sdram_s1_rsp_width_adapter|data_reg[11]~q ),
-	.out_payload_11(out_payload_11),
-	.data_reg_13(\sdram_s1_rsp_width_adapter|data_reg[13]~q ),
-	.out_payload_13(out_payload_13),
-	.data_reg_12(data_reg_12),
-	.out_payload_12(out_payload_12),
-	.data_reg_5(\sdram_s1_rsp_width_adapter|data_reg[5]~q ),
-	.out_payload_5(out_payload_5),
-	.data_reg_14(data_reg_14),
-	.out_payload_14(out_payload_14),
-	.data_reg_15(\sdram_s1_rsp_width_adapter|data_reg[15]~q ),
-	.out_payload_15(out_payload_15),
-	.data_reg_10(data_reg_10),
-	.out_payload_10(out_payload_10),
-	.data_reg_9(data_reg_9),
-	.out_payload_9(out_payload_9),
-	.data_reg_8(data_reg_8),
-	.out_payload_8(out_payload_8),
-	.data_reg_7(data_reg_7),
-	.out_payload_7(out_payload_7),
-	.data_reg_6(data_reg_6),
-	.out_payload_6(out_payload_6));
-
-niosII_niosII_mm_interconnect_0_rsp_mux_001 rsp_mux_001(
-	.src1_valid(src1_valid1),
-	.source_addr_1(source_addr_1),
-	.src_payload(src_payload6));
-
-niosII_niosII_mm_interconnect_0_rsp_mux rsp_mux(
-	.readdata_0(readdata_0),
-	.readdata_01(readdata_01),
-	.readdata_1(readdata_1),
-	.readdata_11(readdata_11),
-	.readdata_23(readdata_23),
-	.readdata_231(readdata_231),
-	.readdata_22(readdata_22),
-	.readdata_221(readdata_221),
-	.readdata_21(readdata_21),
-	.readdata_211(readdata_211),
-	.readdata_20(readdata_20),
-	.readdata_201(readdata_201),
-	.readdata_19(readdata_19),
-	.readdata_191(readdata_191),
-	.readdata_18(readdata_18),
-	.readdata_181(readdata_181),
-	.readdata_17(readdata_17),
-	.readdata_171(readdata_171),
-	.readdata_16(readdata_16),
-	.readdata_161(readdata_161),
-	.read_latency_shift_reg_0(\adc_0_adc_slave_translator|read_latency_shift_reg[0]~q ),
-	.mem_84_0(mem_84_0),
-	.mem_66_0(mem_66_0),
-	.read_latency_shift_reg_01(read_latency_shift_reg_0),
-	.out_data_toggle_flopped(\crosser_004|clock_xer|out_data_toggle_flopped~q ),
-	.out_data_toggle_flopped1(\crosser_005|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\crosser_005|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.dreg_01(\crosser_004|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.out_data_toggle_flopped2(\crosser_007|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_02(\crosser_007|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.read_latency_shift_reg_02(\port_led_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_03(\port_key_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_04(\port_sw_avalon_parallel_port_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_05(read_latency_shift_reg_01),
-	.read_latency_shift_reg_06(\rs232_0_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_07(\rs232_1_avalon_rs232_slave_translator|read_latency_shift_reg[0]~q ),
-	.read_latency_shift_reg_08(read_latency_shift_reg_02),
-	.read_latency_shift_reg_09(\timer_0_s1_translator|read_latency_shift_reg[0]~q ),
-	.mem_54_0(mem_54_0),
-	.src0_valid(src0_valid),
-	.WideOr11(WideOr11),
-	.av_readdata_pre_0(av_readdata_pre_0),
-	.out_payload_0(out_payload_0),
-	.source_addr_1(source_addr_1),
-	.F_iw_0(F_iw_0),
-	.av_readdata_pre_1(av_readdata_pre_1),
-	.data_reg_1(\sdram_s1_rsp_width_adapter|data_reg[1]~q ),
-	.out_payload_1(out_payload_1),
-	.src_data_1(src_data_1),
-	.av_readdata_pre_2(av_readdata_pre_2),
-	.out_payload_2(out_payload_2),
-	.F_iw_2(F_iw_2),
-	.av_readdata_pre_3(av_readdata_pre_3),
-	.data_reg_3(\sdram_s1_rsp_width_adapter|data_reg[3]~q ),
-	.out_payload_3(out_payload_3),
-	.src_data_3(src_data_3),
-	.av_readdata_pre_4(av_readdata_pre_4),
-	.data_reg_4(\sdram_s1_rsp_width_adapter|data_reg[4]~q ),
-	.out_payload_4(out_payload_4),
-	.src_data_4(src_data_4),
-	.av_readdata_pre_11(av_readdata_pre_11),
-	.data_reg_11(\sdram_s1_rsp_width_adapter|data_reg[11]~q ),
-	.out_payload_11(out_payload_11),
-	.src_data_11(src_data_11),
-	.av_readdata_pre_13(av_readdata_pre_13),
-	.data_reg_13(\sdram_s1_rsp_width_adapter|data_reg[13]~q ),
-	.out_payload_13(out_payload_13),
-	.src_data_13(src_data_13),
-	.av_readdata_pre_16(av_readdata_pre_16),
-	.av_readdata_pre_12(av_readdata_pre_12),
-	.F_iw_12(F_iw_12),
-	.av_readdata_pre_5(av_readdata_pre_5),
-	.data_reg_5(\sdram_s1_rsp_width_adapter|data_reg[5]~q ),
-	.out_payload_5(out_payload_5),
-	.src_data_5(src_data_5),
-	.av_readdata_pre_14(av_readdata_pre_14),
-	.F_iw_14(F_iw_14),
-	.av_readdata_pre_15(av_readdata_pre_15),
-	.data_reg_15(\sdram_s1_rsp_width_adapter|data_reg[15]~q ),
-	.out_payload_15(out_payload_15),
-	.src_data_15(src_data_15),
-	.av_readdata_pre_10(av_readdata_pre_10),
-	.F_iw_10(F_iw_10),
-	.av_readdata_pre_9(av_readdata_pre_9),
-	.F_iw_9(F_iw_9),
-	.av_readdata_pre_8(av_readdata_pre_8),
-	.F_iw_8(F_iw_8),
-	.av_readdata_pre_7(av_readdata_pre_7),
-	.out_payload_7(out_payload_7),
-	.F_iw_7(F_iw_7),
-	.av_readdata_pre_6(av_readdata_pre_6),
-	.out_payload_6(out_payload_6),
-	.F_iw_6(F_iw_6),
-	.av_readdata_pre_21(av_readdata_pre_21),
-	.av_readdata_pre_23(av_readdata_pre_23),
-	.av_readdata_pre_22(av_readdata_pre_22),
-	.av_readdata_pre_20(av_readdata_pre_20),
-	.av_readdata_pre_19(av_readdata_pre_19),
-	.av_readdata_pre_18(av_readdata_pre_18),
-	.av_readdata_pre_17(av_readdata_pre_17),
-	.readdata_02(readdata_02),
-	.av_readdata_pre_01(\adc_0_adc_slave_translator|av_readdata_pre[0]~q ),
-	.readdata_03(readdata_03),
-	.readdata_04(readdata_04),
-	.readdata_05(readdata_05),
-	.out_valid(\crosser_004|clock_xer|out_valid~combout ),
-	.out_valid1(out_valid1),
-	.out_data_buffer_0(\crosser_005|clock_xer|out_data_buffer[0]~q ),
-	.out_data_buffer_01(\crosser_004|clock_xer|out_data_buffer[0]~q ),
-	.av_readdata_pre_02(\timer_0_s1_translator|av_readdata_pre[0]~q ),
-	.out_valid2(\crosser_007|clock_xer|out_valid~combout ),
-	.out_data_buffer_02(\crosser_007|clock_xer|out_data_buffer[0]~q ),
-	.src_data_0(src_data_0),
-	.readdata_12(readdata_13),
-	.av_readdata_pre_110(\adc_0_adc_slave_translator|av_readdata_pre[1]~q ),
-	.readdata_13(readdata_14),
-	.readdata_14(readdata_15),
-	.readdata_15(readdata_110),
-	.out_data_buffer_1(\crosser_005|clock_xer|out_data_buffer[1]~q ),
-	.out_data_buffer_11(\crosser_004|clock_xer|out_data_buffer[1]~q ),
-	.av_readdata_pre_111(\timer_0_s1_translator|av_readdata_pre[1]~q ),
-	.out_data_buffer_12(\crosser_007|clock_xer|out_data_buffer[1]~q ),
-	.src_data_12(src_data_12),
-	.src_data_2(src_data_2),
-	.readdata_2(readdata_24),
-	.av_readdata_pre_24(\adc_0_adc_slave_translator|av_readdata_pre[2]~q ),
-	.readdata_24(readdata_25),
-	.readdata_25(readdata_26),
-	.readdata_26(readdata_27),
-	.readdata_27(readdata_28),
-	.out_data_buffer_2(\crosser_005|clock_xer|out_data_buffer[2]~q ),
-	.av_readdata_pre_25(\timer_0_s1_translator|av_readdata_pre[2]~q ),
-	.out_data_buffer_21(\crosser_004|clock_xer|out_data_buffer[2]~q ),
-	.src_data_21(src_data_21),
-	.readdata_3(readdata_31),
-	.av_readdata_pre_31(\adc_0_adc_slave_translator|av_readdata_pre[3]~q ),
-	.readdata_31(readdata_32),
-	.readdata_32(readdata_33),
-	.readdata_33(readdata_34),
-	.readdata_34(readdata_35),
-	.out_data_buffer_3(\crosser_005|clock_xer|out_data_buffer[3]~q ),
-	.av_readdata_pre_32(\timer_0_s1_translator|av_readdata_pre[3]~q ),
-	.out_data_buffer_31(\crosser_004|clock_xer|out_data_buffer[3]~q ),
-	.src_data_31(src_data_31),
-	.readdata_4(readdata_41),
-	.av_readdata_pre_41(\adc_0_adc_slave_translator|av_readdata_pre[4]~q ),
-	.readdata_41(readdata_42),
-	.readdata_42(readdata_43),
-	.readdata_43(readdata_44),
-	.av_readdata_pre_30(av_readdata_pre_301),
-	.out_data_buffer_4(\crosser_005|clock_xer|out_data_buffer[4]~q ),
-	.av_readdata_pre_42(\timer_0_s1_translator|av_readdata_pre[4]~q ),
-	.out_data_buffer_41(\crosser_004|clock_xer|out_data_buffer[4]~q ),
-	.src_data_41(src_data_41),
-	.readdata_5(readdata_5),
-	.av_readdata_pre_51(\adc_0_adc_slave_translator|av_readdata_pre[5]~q ),
-	.src0_valid1(\rsp_demux_009|src0_valid~0_combout ),
-	.readdata_51(readdata_51),
-	.readdata_52(readdata_52),
-	.out_data_buffer_5(\crosser_004|clock_xer|out_data_buffer[5]~q ),
-	.readdata_53(readdata_53),
-	.av_readdata_pre_52(\timer_0_s1_translator|av_readdata_pre[5]~q ),
-	.out_data_buffer_51(\crosser_005|clock_xer|out_data_buffer[5]~q ),
-	.src_data_51(src_data_51),
-	.readdata_6(readdata_6),
-	.av_readdata_pre_61(\adc_0_adc_slave_translator|av_readdata_pre[6]~q ),
-	.readdata_61(readdata_61),
-	.readdata_62(readdata_62),
-	.out_data_buffer_6(\crosser_004|clock_xer|out_data_buffer[6]~q ),
-	.readdata_63(readdata_63),
-	.av_readdata_pre_62(\timer_0_s1_translator|av_readdata_pre[6]~q ),
-	.out_data_buffer_61(\crosser_005|clock_xer|out_data_buffer[6]~q ),
-	.src_data_6(src_data_6),
-	.readdata_7(readdata_7),
-	.av_readdata_pre_71(\adc_0_adc_slave_translator|av_readdata_pre[7]~q ),
-	.readdata_71(readdata_71),
-	.readdata_72(readdata_72),
-	.out_data_buffer_7(\crosser_004|clock_xer|out_data_buffer[7]~q ),
-	.readdata_73(readdata_73),
-	.av_readdata_pre_72(\timer_0_s1_translator|av_readdata_pre[7]~q ),
-	.out_data_buffer_71(\crosser_005|clock_xer|out_data_buffer[7]~q ),
-	.src_data_7(src_data_7),
-	.src_payload(src_payload10),
-	.readdata_232(readdata_232),
-	.out_data_buffer_23(\crosser_005|clock_xer|out_data_buffer[23]~q ),
-	.src_payload1(src_payload11),
-	.readdata_222(readdata_222),
-	.out_data_buffer_22(\crosser_005|clock_xer|out_data_buffer[22]~q ),
-	.out_data_buffer_221(\crosser_004|clock_xer|out_data_buffer[22]~q ),
-	.src_payload2(src_payload12),
-	.readdata_212(readdata_213),
-	.out_data_buffer_211(\crosser_005|clock_xer|out_data_buffer[21]~q ),
-	.out_data_buffer_212(\crosser_004|clock_xer|out_data_buffer[21]~q ),
-	.src_payload3(src_payload13),
-	.readdata_202(readdata_202),
-	.out_data_buffer_20(\crosser_005|clock_xer|out_data_buffer[20]~q ),
-	.out_data_buffer_201(\crosser_004|clock_xer|out_data_buffer[20]~q ),
-	.src_payload4(src_payload14),
-	.readdata_192(readdata_192),
-	.out_data_buffer_19(\crosser_005|clock_xer|out_data_buffer[19]~q ),
-	.out_data_buffer_191(\crosser_004|clock_xer|out_data_buffer[19]~q ),
-	.src_payload5(src_payload15),
-	.readdata_182(readdata_182),
-	.out_data_buffer_18(\crosser_005|clock_xer|out_data_buffer[18]~q ),
-	.out_data_buffer_181(\crosser_004|clock_xer|out_data_buffer[18]~q ),
-	.src_payload6(src_payload16),
-	.readdata_172(readdata_172),
-	.out_data_buffer_17(\crosser_005|clock_xer|out_data_buffer[17]~q ),
-	.out_data_buffer_171(\crosser_004|clock_xer|out_data_buffer[17]~q ),
-	.src_payload7(src_payload17),
-	.readdata_162(readdata_163),
-	.out_data_buffer_16(\crosser_005|clock_xer|out_data_buffer[16]~q ),
-	.out_data_buffer_161(\crosser_004|clock_xer|out_data_buffer[16]~q ),
-	.src_payload8(src_payload18),
-	.readdata_151(readdata_152),
-	.av_readdata_pre_151(\adc_0_adc_slave_translator|av_readdata_pre[15]~q ),
-	.readdata_152(readdata_153),
-	.readdata_153(readdata_154),
-	.out_data_buffer_15(\crosser_004|clock_xer|out_data_buffer[15]~q ),
-	.out_data_buffer_151(\crosser_005|clock_xer|out_data_buffer[15]~q ),
-	.av_readdata_pre_152(\timer_0_s1_translator|av_readdata_pre[15]~q ),
-	.src_data_151(src_data_151),
-	.out_data_buffer_14(\crosser_004|clock_xer|out_data_buffer[14]~q ),
-	.readdata_141(readdata_142),
-	.av_readdata_pre_141(\timer_0_s1_translator|av_readdata_pre[14]~q ),
-	.out_data_buffer_141(\crosser_005|clock_xer|out_data_buffer[14]~q ),
-	.src_data_14(src_data_14),
-	.av_readdata_pre_131(\timer_0_s1_translator|av_readdata_pre[13]~q ),
-	.readdata_131(readdata_132),
-	.out_data_buffer_13(\crosser_005|clock_xer|out_data_buffer[13]~q ),
-	.out_data_buffer_131(\crosser_004|clock_xer|out_data_buffer[13]~q ),
-	.src_data_131(src_data_131),
-	.out_data_buffer_121(\crosser_004|clock_xer|out_data_buffer[12]~q ),
-	.readdata_121(readdata_122),
-	.av_readdata_pre_121(\timer_0_s1_translator|av_readdata_pre[12]~q ),
-	.out_data_buffer_122(\crosser_005|clock_xer|out_data_buffer[12]~q ),
-	.src_data_121(src_data_121),
-	.readdata_111(readdata_112),
-	.av_readdata_pre_112(\adc_0_adc_slave_translator|av_readdata_pre[11]~q ),
-	.av_readdata_pre_113(\timer_0_s1_translator|av_readdata_pre[11]~q ),
-	.out_data_buffer_111(\crosser_005|clock_xer|out_data_buffer[11]~q ),
-	.src_data_111(src_data_111),
-	.av_readdata_pre_101(\timer_0_s1_translator|av_readdata_pre[10]~q ),
-	.readdata_10(readdata_101),
-	.av_readdata_pre_102(\adc_0_adc_slave_translator|av_readdata_pre[10]~q ),
-	.out_data_buffer_10(\crosser_005|clock_xer|out_data_buffer[10]~q ),
-	.out_data_buffer_101(\crosser_004|clock_xer|out_data_buffer[10]~q ),
-	.src_data_10(src_data_10),
-	.readdata_9(readdata_91),
-	.av_readdata_pre_91(\adc_0_adc_slave_translator|av_readdata_pre[9]~q ),
-	.readdata_91(readdata_92),
-	.readdata_92(readdata_93),
-	.out_data_buffer_9(\crosser_004|clock_xer|out_data_buffer[9]~q ),
-	.out_data_buffer_91(\crosser_005|clock_xer|out_data_buffer[9]~q ),
-	.av_readdata_pre_92(\timer_0_s1_translator|av_readdata_pre[9]~q ),
-	.src_data_9(src_data_9),
-	.readdata_8(readdata_81),
-	.av_readdata_pre_81(\adc_0_adc_slave_translator|av_readdata_pre[8]~q ),
-	.readdata_81(readdata_82),
-	.readdata_82(readdata_83),
-	.out_data_buffer_8(\crosser_004|clock_xer|out_data_buffer[8]~q ),
-	.av_readdata_pre_82(\timer_0_s1_translator|av_readdata_pre[8]~q ),
-	.out_data_buffer_81(\crosser_005|clock_xer|out_data_buffer[8]~q ),
-	.src_data_8(src_data_8));
-
-niosII_niosII_mm_interconnect_0_rsp_demux_009_2 rsp_demux_012(
-	.rp_valid(\sdram_s1_agent|rp_valid~combout ),
-	.always10(\sdram_s1_rsp_width_adapter|always10~1_combout ),
-	.mem_66_0(\sdram_s1_agent_rsp_fifo|mem[0][66]~q ),
-	.mem_48_0(\sdram_s1_agent_rsp_fifo|mem[0][48]~q ),
-	.src0_valid(src0_valid),
-	.src1_valid(src1_valid1));
-
-niosII_niosII_mm_interconnect_0_rsp_demux_009_1 rsp_demux_010(
-	.mem_84_0(\epcs_epcs_control_port_agent_rsp_fifo|mem[0][84]~q ),
-	.mem_66_0(\epcs_epcs_control_port_agent_rsp_fifo|mem[0][66]~q ),
-	.in_data_toggle(\crosser_006|clock_xer|in_data_toggle~q ),
-	.dreg_0(\crosser_006|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
-	.in_data_toggle1(\crosser_005|clock_xer|in_data_toggle~q ),
-	.dreg_01(\crosser_005|clock_xer|out_to_in_synchronizer|dreg[0]~q ),
-	.take_in_data(\crosser_006|clock_xer|take_in_data~0_combout ),
-	.WideOr0(\rsp_demux_010|WideOr0~1_combout ));
-
-niosII_niosII_mm_interconnect_0_rsp_demux_009 rsp_demux_009(
-	.mem_84_0(mem_84_0),
-	.mem_66_0(mem_66_0),
-	.read_latency_shift_reg_0(read_latency_shift_reg_0),
-	.src1_valid(src1_valid),
-	.src0_valid(\rsp_demux_009|src0_valid~0_combout ));
-
-niosII_niosII_mm_interconnect_0_cmd_mux_009_2 cmd_mux_012(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_6(W_alu_result_6),
-	.W_alu_result_24(W_alu_result_24),
-	.W_alu_result_23(W_alu_result_23),
-	.W_alu_result_22(W_alu_result_22),
-	.W_alu_result_21(W_alu_result_21),
-	.W_alu_result_20(W_alu_result_20),
-	.W_alu_result_19(W_alu_result_19),
-	.W_alu_result_18(W_alu_result_18),
-	.W_alu_result_17(W_alu_result_17),
-	.W_alu_result_16(W_alu_result_16),
-	.W_alu_result_15(W_alu_result_15),
-	.W_alu_result_14(W_alu_result_14),
-	.W_alu_result_13(W_alu_result_13),
-	.W_alu_result_12(W_alu_result_12),
-	.W_alu_result_11(W_alu_result_11),
-	.W_alu_result_10(W_alu_result_10),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_7(W_alu_result_7),
-	.W_alu_result_9(W_alu_result_9),
-	.W_alu_result_8(W_alu_result_8),
-	.W_alu_result_4(W_alu_result_4),
-	.W_alu_result_3(W_alu_result_3),
-	.W_alu_result_2(W_alu_result_2),
-	.d_writedata_24(d_writedata_24),
-	.d_writedata_25(d_writedata_25),
-	.d_writedata_26(d_writedata_26),
-	.d_writedata_27(d_writedata_27),
-	.d_writedata_28(d_writedata_28),
-	.d_writedata_29(d_writedata_29),
-	.d_writedata_30(d_writedata_30),
-	.d_writedata_31(d_writedata_31),
-	.r_sync_rst(r_sync_rst),
-	.uav_read(\cpu_data_master_translator|uav_read~0_combout ),
-	.cp_valid(cp_valid),
-	.saved_grant_0(saved_grant_01),
-	.saved_grant_1(saved_grant_11),
-	.WideOr0(WideOr0),
-	.Equal0(Equal0),
-	.src_channel_12(\router|src_channel[12]~0_combout ),
-	.src_channel_121(\router|src_channel[12]~3_combout ),
-	.cp_valid1(\cpu_instruction_master_agent|cp_valid~combout ),
-	.F_pc_22(F_pc_22),
-	.F_pc_21(F_pc_21),
-	.F_pc_20(F_pc_20),
-	.F_pc_19(F_pc_19),
-	.F_pc_18(F_pc_18),
-	.F_pc_17(F_pc_17),
-	.F_pc_16(F_pc_16),
-	.F_pc_15(F_pc_15),
-	.F_pc_14(F_pc_14),
-	.F_pc_13(F_pc_13),
-	.F_pc_12(F_pc_12),
-	.F_pc_11(F_pc_11),
-	.F_pc_10(F_pc_10),
-	.Equal1(\router_001|Equal1~4_combout ),
-	.Equal11(Equal1),
-	.src_channel_122(\router|src_channel[12]~4_combout ),
-	.WideOr11(WideOr1),
-	.mem_used_7(mem_used_7),
-	.uav_read1(\cpu_instruction_master_translator|uav_read~combout ),
-	.src_data_66(src_data_66),
-	.F_pc_8(F_pc_8),
-	.src_data_46(\cmd_mux_012|src_data[46]~combout ),
-	.src_valid(src_valid2),
-	.src_data_60(\cmd_mux_012|src_data[60]~combout ),
-	.F_pc_9(F_pc_9),
-	.src_data_47(\cmd_mux_012|src_data[47]~combout ),
-	.src_data_49(\cmd_mux_012|src_data[49]~combout ),
-	.src_data_48(\cmd_mux_012|src_data[48]~combout ),
-	.src_data_51(\cmd_mux_012|src_data[51]~combout ),
-	.src_data_50(\cmd_mux_012|src_data[50]~combout ),
-	.src_data_53(\cmd_mux_012|src_data[53]~combout ),
-	.src_data_52(\cmd_mux_012|src_data[52]~combout ),
-	.src_data_55(\cmd_mux_012|src_data[55]~combout ),
-	.src_data_54(\cmd_mux_012|src_data[54]~combout ),
-	.src_data_57(\cmd_mux_012|src_data[57]~combout ),
-	.src_data_56(\cmd_mux_012|src_data[56]~combout ),
-	.src_data_59(\cmd_mux_012|src_data[59]~combout ),
-	.src_data_58(\cmd_mux_012|src_data[58]~combout ),
-	.F_pc_0(F_pc_0),
-	.src_data_38(\cmd_mux_012|src_data[38]~combout ),
-	.F_pc_1(F_pc_1),
-	.src_data_39(\cmd_mux_012|src_data[39]~combout ),
-	.F_pc_2(F_pc_2),
-	.src_data_40(\cmd_mux_012|src_data[40]~combout ),
-	.F_pc_3(F_pc_3),
-	.src_data_41(\cmd_mux_012|src_data[41]~combout ),
-	.F_pc_4(F_pc_4),
-	.src_data_42(\cmd_mux_012|src_data[42]~combout ),
-	.F_pc_5(F_pc_5),
-	.src_data_43(\cmd_mux_012|src_data[43]~combout ),
-	.F_pc_6(F_pc_6),
-	.src_data_44(\cmd_mux_012|src_data[44]~combout ),
-	.F_pc_7(F_pc_7),
-	.src_data_45(\cmd_mux_012|src_data[45]~combout ),
-	.count_0(\sdram_s1_cmd_width_adapter|count[0]~q ),
-	.last_cycle(\cmd_mux_012|last_cycle~0_combout ),
-	.src12_valid(\cmd_demux|src12_valid~2_combout ),
-	.src_payload_0(\cmd_mux_012|src_payload[0]~combout ),
-	.d_byteenable_2(d_byteenable_2),
-	.src_data_34(\cmd_mux_012|src_data[34]~combout ),
-	.d_byteenable_3(d_byteenable_3),
-	.src_data_35(\cmd_mux_012|src_data[35]~combout ),
-	.d_writedata_16(d_writedata_16),
-	.d_writedata_17(d_writedata_17),
-	.d_writedata_18(d_writedata_18),
-	.d_writedata_19(d_writedata_19),
-	.d_writedata_20(d_writedata_20),
-	.d_writedata_21(d_writedata_21),
-	.d_writedata_22(d_writedata_22),
-	.d_writedata_23(d_writedata_23),
-	.src_payload(\cmd_mux_012|src_payload~0_combout ),
-	.src_payload1(\cmd_mux_012|src_payload~1_combout ),
-	.src_payload2(\cmd_mux_012|src_payload~2_combout ),
-	.src_payload3(\cmd_mux_012|src_payload~3_combout ),
-	.src_payload4(\cmd_mux_012|src_payload~4_combout ),
-	.src_payload5(\cmd_mux_012|src_payload~5_combout ),
-	.src_payload6(\cmd_mux_012|src_payload~6_combout ),
-	.src_payload7(\cmd_mux_012|src_payload~7_combout ),
-	.src_payload8(\cmd_mux_012|src_payload~8_combout ),
-	.src_payload9(\cmd_mux_012|src_payload~9_combout ),
-	.src_payload10(\cmd_mux_012|src_payload~10_combout ),
-	.src_payload11(\cmd_mux_012|src_payload~11_combout ),
-	.src_payload12(\cmd_mux_012|src_payload~12_combout ),
-	.src_payload13(\cmd_mux_012|src_payload~13_combout ),
-	.src_payload14(\cmd_mux_012|src_payload~14_combout ),
-	.src_payload15(\cmd_mux_012|src_payload~15_combout ),
-	.src2_valid(\cmd_demux_001|src2_valid~2_combout ));
-
-niosII_niosII_mm_interconnect_0_cmd_mux_009_1 cmd_mux_010(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.r_sync_rst(r_sync_rst1),
-	.saved_grant_0(saved_grant_0),
-	.saved_grant_1(saved_grant_1),
-	.out_data_buffer_38(out_data_buffer_38),
-	.out_data_buffer_381(\crosser_001|clock_xer|out_data_buffer[38]~q ),
-	.src_data_38(src_data_38),
-	.out_data_buffer_39(\crosser_003|clock_xer|out_data_buffer[39]~q ),
-	.out_data_buffer_391(\crosser_001|clock_xer|out_data_buffer[39]~q ),
-	.src_data_39(src_data_39),
-	.out_data_buffer_40(\crosser_003|clock_xer|out_data_buffer[40]~q ),
-	.out_data_buffer_401(\crosser_001|clock_xer|out_data_buffer[40]~q ),
-	.src_data_40(src_data_40),
-	.out_data_buffer_10(\crosser_001|clock_xer|out_data_buffer[10]~q ),
-	.src_payload(src_payload),
-	.out_data_buffer_0(\crosser_001|clock_xer|out_data_buffer[0]~q ),
-	.src_payload1(src_payload1),
-	.out_data_toggle_flopped(\crosser_001|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_0(\crosser_001|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.out_valid(\crosser_001|clock_xer|out_valid~combout ),
-	.out_data_toggle_flopped1(\crosser_003|clock_xer|out_data_toggle_flopped~q ),
-	.dreg_01(\crosser_003|clock_xer|in_to_out_synchronizer|dreg[0]~q ),
-	.out_valid1(\crosser_003|clock_xer|out_valid~combout ),
-	.wait_latency_counter_0(\epcs_epcs_control_port_translator|wait_latency_counter[0]~q ),
-	.waitrequest_reset_override(\epcs_epcs_control_port_translator|waitrequest_reset_override~q ),
-	.mem_used_1(mem_used_11),
-	.wait_latency_counter_1(wait_latency_counter_1),
-	.last_cycle(\cmd_mux_010|last_cycle~0_combout ),
-	.out_data_buffer_105(\crosser_003|clock_xer|out_data_buffer[105]~q ),
-	.out_data_buffer_1051(\crosser_001|clock_xer|out_data_buffer[105]~q ),
-	.src_payload_0(\cmd_mux_010|src_payload[0]~combout ),
-	.src_valid(src_valid),
-	.src_valid1(src_valid1),
-	.out_data_buffer_46(\crosser_003|clock_xer|out_data_buffer[46]~q ),
-	.out_data_buffer_461(\crosser_001|clock_xer|out_data_buffer[46]~q ),
-	.src_data_46(src_data_46),
-	.out_data_buffer_7(\crosser_001|clock_xer|out_data_buffer[7]~q ),
-	.src_payload2(src_payload2),
-	.src_payload3(src_payload3),
-	.out_data_buffer_66(\crosser_003|clock_xer|out_data_buffer[66]~q ),
-	.out_data_buffer_661(\crosser_001|clock_xer|out_data_buffer[66]~q ),
-	.src_data_66(src_data_661),
-	.out_data_buffer_6(\crosser_001|clock_xer|out_data_buffer[6]~q ),
-	.src_payload4(src_payload4),
-	.out_data_buffer_5(\crosser_001|clock_xer|out_data_buffer[5]~q ),
-	.src_payload5(src_payload5),
-	.out_data_buffer_4(\crosser_001|clock_xer|out_data_buffer[4]~q ),
-	.src_payload6(src_payload7),
-	.out_data_buffer_3(\crosser_001|clock_xer|out_data_buffer[3]~q ),
-	.src_payload7(src_payload19),
-	.out_data_buffer_2(\crosser_001|clock_xer|out_data_buffer[2]~q ),
-	.src_payload8(src_payload21),
-	.out_data_buffer_1(\crosser_001|clock_xer|out_data_buffer[1]~q ),
-	.src_payload9(src_payload25),
-	.out_data_buffer_41(\crosser_003|clock_xer|out_data_buffer[41]~q ),
-	.out_data_buffer_411(\crosser_001|clock_xer|out_data_buffer[41]~q ),
-	.src_data_41(src_data_412),
-	.out_data_buffer_42(\crosser_003|clock_xer|out_data_buffer[42]~q ),
-	.out_data_buffer_421(\crosser_001|clock_xer|out_data_buffer[42]~q ),
-	.src_data_42(src_data_421),
-	.out_data_buffer_43(\crosser_003|clock_xer|out_data_buffer[43]~q ),
-	.out_data_buffer_431(\crosser_001|clock_xer|out_data_buffer[43]~q ),
-	.src_data_43(src_data_431),
-	.out_data_buffer_44(\crosser_003|clock_xer|out_data_buffer[44]~q ),
-	.out_data_buffer_441(\crosser_001|clock_xer|out_data_buffer[44]~q ),
-	.src_data_44(src_data_441),
-	.out_data_buffer_45(\crosser_003|clock_xer|out_data_buffer[45]~q ),
-	.out_data_buffer_451(\crosser_001|clock_xer|out_data_buffer[45]~q ),
-	.src_data_45(src_data_451),
-	.src_payload10(src_payload26),
-	.out_data_buffer_11(\crosser_001|clock_xer|out_data_buffer[11]~q ),
-	.src_payload11(src_payload53),
-	.out_data_buffer_13(\crosser_001|clock_xer|out_data_buffer[13]~q ),
-	.src_payload12(src_payload54),
-	.out_data_buffer_12(\crosser_001|clock_xer|out_data_buffer[12]~q ),
-	.src_payload13(src_payload55),
-	.out_data_buffer_14(\crosser_001|clock_xer|out_data_buffer[14]~q ),
-	.src_payload14(src_payload56),
-	.out_data_buffer_15(\crosser_001|clock_xer|out_data_buffer[15]~q ),
-	.src_payload15(src_payload57),
-	.out_data_buffer_9(\crosser_001|clock_xer|out_data_buffer[9]~q ),
-	.src_payload16(src_payload59),
-	.out_data_buffer_8(\crosser_001|clock_xer|out_data_buffer[8]~q ),
-	.src_payload17(src_payload60),
-	.WideOr11(\cmd_mux_010|WideOr1~combout ));
-
-niosII_niosII_mm_interconnect_0_cmd_mux_009 cmd_mux_009(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_6(W_alu_result_6),
-	.W_alu_result_10(W_alu_result_10),
-	.W_alu_result_5(W_alu_result_5),
-	.W_alu_result_7(W_alu_result_7),
-	.W_alu_result_9(W_alu_result_9),
-	.W_alu_result_8(W_alu_result_8),
-	.W_alu_result_4(W_alu_result_4),
-	.W_alu_result_3(W_alu_result_3),
-	.W_alu_result_2(W_alu_result_2),
-	.d_writedata_24(d_writedata_24),
-	.d_writedata_25(d_writedata_25),
-	.d_writedata_26(d_writedata_26),
-	.d_writedata_27(d_writedata_27),
-	.d_writedata_28(d_writedata_28),
-	.d_writedata_29(d_writedata_29),
-	.d_writedata_30(d_writedata_30),
-	.d_writedata_31(d_writedata_31),
-	.r_sync_rst(r_sync_rst),
-	.cp_valid(cp_valid),
-	.d_writedata_0(d_writedata_0),
-	.d_byteenable_0(d_byteenable_0),
-	.d_writedata_1(d_writedata_1),
-	.d_writedata_2(d_writedata_2),
-	.d_writedata_3(d_writedata_3),
-	.d_writedata_4(d_writedata_4),
-	.d_writedata_5(d_writedata_5),
-	.d_writedata_6(d_writedata_6),
-	.d_writedata_7(d_writedata_7),
-	.d_byteenable_1(d_byteenable_1),
-	.Equal2(\router|Equal2~1_combout ),
-	.F_pc_8(F_pc_8),
-	.F_pc_0(F_pc_0),
-	.F_pc_1(F_pc_1),
-	.F_pc_2(F_pc_2),
-	.F_pc_3(F_pc_3),
-	.F_pc_4(F_pc_4),
-	.F_pc_5(F_pc_5),
-	.F_pc_6(F_pc_6),
-	.F_pc_7(F_pc_7),
-	.saved_grant_0(saved_grant_02),
-	.waitrequest(waitrequest1),
-	.mem_used_1(mem_used_15),
-	.d_writedata_10(d_writedata_10),
-	.d_byteenable_2(d_byteenable_2),
-	.d_byteenable_3(d_byteenable_3),
-	.saved_grant_1(\cmd_mux_009|saved_grant[1]~q ),
-	.hbreak_enabled(hbreak_enabled),
-	.d_writedata_8(d_writedata_8),
-	.d_writedata_9(d_writedata_9),
-	.d_writedata_11(d_writedata_11),
-	.d_writedata_12(d_writedata_12),
-	.d_writedata_13(d_writedata_13),
-	.d_writedata_14(d_writedata_14),
-	.d_writedata_15(d_writedata_15),
-	.d_writedata_16(d_writedata_16),
-	.d_writedata_17(d_writedata_17),
-	.d_writedata_18(d_writedata_18),
-	.d_writedata_19(d_writedata_19),
-	.d_writedata_20(d_writedata_20),
-	.d_writedata_21(d_writedata_21),
-	.d_writedata_22(d_writedata_22),
-	.d_writedata_23(d_writedata_23),
-	.src0_valid(\cmd_demux_001|src0_valid~0_combout ),
-	.WideOr11(WideOr12),
-	.src_data_46(src_data_461),
-	.src_payload(src_payload8),
-	.src_payload1(src_payload9),
-	.src_data_38(src_data_381),
-	.src_data_39(src_data_391),
-	.src_data_40(src_data_401),
-	.src_data_41(src_data_411),
-	.src_data_42(src_data_42),
-	.src_data_43(src_data_43),
-	.src_data_44(src_data_44),
-	.src_data_45(src_data_45),
-	.src_data_32(src_data_32),
-	.src_payload2(src_payload20),
-	.src_payload3(src_payload22),
-	.src_payload4(src_payload23),
-	.src_payload5(src_payload24),
-	.src_payload6(src_payload27),
-	.src_data_33(src_data_33),
-	.src_payload7(src_payload28),
-	.src_payload8(src_payload29),
-	.src_data_34(src_data_34),
-	.src_payload9(src_payload30),
-	.src_payload10(src_payload31),
-	.src_payload11(src_payload32),
-	.src_payload12(src_payload33),
-	.src_payload13(src_payload34),
-	.src_payload14(src_payload35),
-	.src_payload15(src_payload36),
-	.src_payload16(src_payload37),
-	.src_payload17(src_payload38),
-	.src_payload18(src_payload39),
-	.src_payload19(src_payload40),
-	.src_data_35(src_data_35),
-	.src_payload20(src_payload41),
-	.src_payload21(src_payload42),
-	.src_payload22(src_payload43),
-	.src_payload23(src_payload44),
-	.src_payload24(src_payload45),
-	.src_payload25(src_payload46),
-	.src_payload26(src_payload47),
-	.src_payload27(src_payload48),
-	.src_payload28(src_payload49),
-	.src_payload29(src_payload50),
-	.src_payload30(src_payload51),
-	.src_payload31(src_payload52),
-	.src_payload32(src_payload58));
 
 niosII_altera_avalon_st_handshake_clock_crosser_7 crosser_007(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
@@ -60257,7 +60213,7 @@ niosII_altera_avalon_st_handshake_clock_crosser_6 crosser_006(
 	.out_data_buffer_9(out_data_buffer_9),
 	.out_data_buffer_8(out_data_buffer_8),
 	.out_data_buffer_7(out_data_buffer_7),
-	.out_data_buffer_6(out_data_buffer_6),
+	.out_data_buffer_6(out_data_buffer_61),
 	.out_data_buffer_21(out_data_buffer_21),
 	.out_data_buffer_30(out_data_buffer_30),
 	.out_data_buffer_29(out_data_buffer_29),
@@ -64541,8 +64497,6 @@ module niosII_altera_avalon_sc_fifo_7 (
 	W_alu_result_5,
 	W_alu_result_4,
 	reset,
-	d_read,
-	read_accepted,
 	uav_read,
 	hold_waitrequest,
 	cp_valid,
@@ -64554,8 +64508,6 @@ input 	clk;
 input 	W_alu_result_5;
 input 	W_alu_result_4;
 input 	reset;
-input 	d_read;
-input 	read_accepted;
 input 	uav_read;
 input 	hold_waitrequest;
 input 	cp_valid;
@@ -64643,20 +64595,20 @@ defparam \mem_used[0] .is_wysiwyg = "true";
 defparam \mem_used[0] .power_up = "low";
 
 cycloneive_lcell_comb \mem_used[1]~0 (
-	.dataa(W_alu_result_5),
-	.datab(hold_waitrequest),
-	.datac(read_accepted),
-	.datad(gnd),
+	.dataa(hold_waitrequest),
+	.datab(uav_read),
+	.datac(\mem_used[0]~q ),
+	.datad(read_latency_shift_reg_0),
 	.cin(gnd),
 	.combout(\mem_used[1]~0_combout ),
 	.cout());
-defparam \mem_used[1]~0 .lut_mask = 16'hEFEF;
+defparam \mem_used[1]~0 .lut_mask = 16'hFEFF;
 defparam \mem_used[1]~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \mem_used[1]~1 (
-	.dataa(W_alu_result_4),
-	.datab(src_channel_12),
-	.datac(d_read),
+	.dataa(W_alu_result_5),
+	.datab(W_alu_result_4),
+	.datac(src_channel_12),
 	.datad(\mem_used[1]~0_combout ),
 	.cin(gnd),
 	.combout(\mem_used[1]~1_combout ),
@@ -64665,14 +64617,14 @@ defparam \mem_used[1]~1 .lut_mask = 16'hFFFE;
 defparam \mem_used[1]~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \mem_used[1]~2 (
-	.dataa(mem_used_1),
-	.datab(read_latency_shift_reg_0),
-	.datac(\mem_used[0]~q ),
-	.datad(\mem_used[1]~1_combout ),
+	.dataa(\mem_used[1]~1_combout ),
+	.datab(mem_used_1),
+	.datac(read_latency_shift_reg_0),
+	.datad(\mem_used[0]~q ),
 	.cin(gnd),
 	.combout(\mem_used[1]~2_combout ),
 	.cout());
-defparam \mem_used[1]~2 .lut_mask = 16'hBFB3;
+defparam \mem_used[1]~2 .lut_mask = 16'hEFFF;
 defparam \mem_used[1]~2 .sum_lutc_input = "datac";
 
 endmodule
@@ -69025,9 +68977,8 @@ module niosII_altera_avalon_sc_fifo_13 (
 	saved_grant_0,
 	use_reg,
 	saved_grant_1,
-	WideOr1,
-	mem_used_7,
 	src_data_66,
+	mem_used_7,
 	out_valid,
 	mem_used_0,
 	mem_87_0,
@@ -69037,6 +68988,7 @@ module niosII_altera_avalon_sc_fifo_13 (
 	comb,
 	mem_66_0,
 	mem_48_0,
+	WideOr1,
 	out_endofpacket,
 	mem_57_0,
 	cp_ready,
@@ -69047,9 +68999,8 @@ input 	reset;
 input 	saved_grant_0;
 input 	use_reg;
 input 	saved_grant_1;
-input 	WideOr1;
-output 	mem_used_7;
 input 	src_data_66;
+output 	mem_used_7;
 input 	out_valid;
 output 	mem_used_0;
 output 	mem_87_0;
@@ -69059,6 +69010,7 @@ output 	mem_19_0;
 input 	comb;
 output 	mem_66_0;
 output 	mem_48_0;
+input 	WideOr1;
 input 	out_endofpacket;
 output 	mem_57_0;
 input 	cp_ready;
@@ -71623,8 +71575,8 @@ module niosII_altera_avalon_st_handshake_clock_crosser_1 (
 	d_writedata_5,
 	d_writedata_6,
 	d_writedata_7,
-	Equal1,
 	src12_valid,
+	Equal1,
 	in_ready,
 	out_data_buffer_66,
 	out_data_buffer_64,
@@ -71690,8 +71642,8 @@ input 	d_writedata_4;
 input 	d_writedata_5;
 input 	d_writedata_6;
 input 	d_writedata_7;
-input 	Equal1;
 input 	src12_valid;
+input 	Equal1;
 output 	in_ready;
 output 	out_data_buffer_66;
 output 	out_data_buffer_64;
@@ -71755,8 +71707,8 @@ d_writedata_10,d_writedata_9,d_writedata_8,d_writedata_7,d_writedata_6,d_writeda
 	.out_data_buffer_46(out_data_buffer_46),
 	.out_data_buffer_65(out_data_buffer_65),
 	.out_data_buffer_7(out_data_buffer_7),
-	.Equal1(Equal1),
 	.src12_valid(src12_valid),
+	.Equal1(Equal1),
 	.in_ready(in_ready),
 	.out_data_buffer_66(out_data_buffer_66),
 	.out_data_buffer_64(out_data_buffer_64),
@@ -71800,8 +71752,8 @@ module niosII_altera_avalon_st_clock_crosser (
 	out_data_buffer_46,
 	out_data_buffer_65,
 	out_data_buffer_7,
-	Equal1,
 	src12_valid,
+	Equal1,
 	in_ready,
 	out_data_buffer_66,
 	out_data_buffer_64,
@@ -71841,8 +71793,8 @@ output 	out_data_buffer_105;
 output 	out_data_buffer_46;
 output 	out_data_buffer_65;
 output 	out_data_buffer_7;
-input 	Equal1;
 input 	src12_valid;
+input 	Equal1;
 output 	in_ready;
 output 	out_data_buffer_66;
 output 	out_data_buffer_64;
@@ -71910,17 +71862,17 @@ wire \in_data_buffer[9]~q ;
 wire \in_data_buffer[8]~q ;
 
 
-niosII_altera_std_synchronizer_nocut_1 out_to_in_synchronizer(
-	.clk(wire_pll7_clk_0),
-	.reset_n(in_reset),
-	.din(out_data_toggle_flopped1),
-	.dreg_0(\out_to_in_synchronizer|dreg[0]~q ));
-
 niosII_altera_std_synchronizer_nocut in_to_out_synchronizer(
 	.clk(wire_pll7_clk_0),
 	.reset_n(out_reset),
 	.dreg_0(dreg_0),
 	.din(\in_data_toggle~q ));
+
+niosII_altera_std_synchronizer_nocut_1 out_to_in_synchronizer(
+	.clk(wire_pll7_clk_0),
+	.reset_n(in_reset),
+	.din(out_data_toggle_flopped1),
+	.dreg_0(\out_to_in_synchronizer|dreg[0]~q ));
 
 dffeas \out_data_buffer[38] (
 	.clk(wire_pll7_clk_0),
@@ -72940,8 +72892,8 @@ module niosII_altera_avalon_st_handshake_clock_crosser_2 (
 	out_data_buffer_38,
 	out_data_buffer_39,
 	altera_reset_synchronizer_int_chain_out,
-	src_channel_12,
 	Equal5,
+	src_channel_12,
 	take_in_data,
 	rst1,
 	out_data_buffer_66,
@@ -72967,8 +72919,8 @@ output 	out_data_buffer_65;
 output 	out_data_buffer_38;
 output 	out_data_buffer_39;
 input 	altera_reset_synchronizer_int_chain_out;
-input 	src_channel_12;
 input 	Equal5;
+input 	src_channel_12;
 output 	take_in_data;
 input 	rst1;
 output 	out_data_buffer_66;
@@ -73004,8 +72956,8 @@ gnd,gnd,W_alu_result_3,W_alu_result_2,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gn
 	.out_data_buffer_38(out_data_buffer_38),
 	.out_data_buffer_39(out_data_buffer_39),
 	.out_reset(altera_reset_synchronizer_int_chain_out),
-	.src_channel_12(src_channel_12),
 	.Equal5(Equal5),
+	.src_channel_12(src_channel_12),
 	.take_in_data1(take_in_data),
 	.rst1(rst1),
 	.out_data_buffer_66(out_data_buffer_66),
@@ -73030,8 +72982,8 @@ module niosII_altera_avalon_st_clock_crosser_1 (
 	out_data_buffer_38,
 	out_data_buffer_39,
 	out_reset,
-	src_channel_12,
 	Equal5,
+	src_channel_12,
 	take_in_data1,
 	rst1,
 	out_data_buffer_66,
@@ -73052,8 +73004,8 @@ output 	out_data_buffer_65;
 output 	out_data_buffer_38;
 output 	out_data_buffer_39;
 input 	out_reset;
-input 	src_channel_12;
 input 	Equal5;
+input 	src_channel_12;
 output 	take_in_data1;
 input 	rst1;
 output 	out_data_buffer_66;
@@ -74251,9 +74203,9 @@ module niosII_altera_avalon_st_handshake_clock_crosser_4 (
 	out_data_toggle_flopped,
 	dreg_0,
 	in_data_toggle,
-	out_valid,
 	out_data_buffer_0,
 	out_data_buffer_1,
+	out_valid,
 	out_data_buffer_2,
 	out_data_buffer_3,
 	out_data_buffer_4,
@@ -74306,9 +74258,9 @@ input 	altera_reset_synchronizer_int_chain_out;
 output 	out_data_toggle_flopped;
 output 	dreg_0;
 output 	in_data_toggle;
-output 	out_valid;
 output 	out_data_buffer_0;
 output 	out_data_buffer_1;
+output 	out_valid;
 output 	out_data_buffer_2;
 output 	out_data_buffer_3;
 output 	out_data_buffer_4;
@@ -74374,9 +74326,9 @@ niosII_altera_avalon_st_clock_crosser_3 clock_xer(
 	.out_data_toggle_flopped1(out_data_toggle_flopped),
 	.dreg_0(dreg_0),
 	.in_data_toggle1(in_data_toggle),
-	.out_valid1(out_valid),
 	.out_data_buffer_0(out_data_buffer_0),
 	.out_data_buffer_1(out_data_buffer_1),
+	.out_valid1(out_valid),
 	.out_data_buffer_2(out_data_buffer_2),
 	.out_data_buffer_3(out_data_buffer_3),
 	.out_data_buffer_4(out_data_buffer_4),
@@ -74414,9 +74366,9 @@ module niosII_altera_avalon_st_clock_crosser_3 (
 	out_data_toggle_flopped1,
 	dreg_0,
 	in_data_toggle1,
-	out_valid1,
 	out_data_buffer_0,
 	out_data_buffer_1,
+	out_valid1,
 	out_data_buffer_2,
 	out_data_buffer_3,
 	out_data_buffer_4,
@@ -74448,9 +74400,9 @@ input 	in_reset;
 output 	out_data_toggle_flopped1;
 output 	dreg_0;
 output 	in_data_toggle1;
-output 	out_valid1;
 output 	out_data_buffer_0;
 output 	out_data_buffer_1;
+output 	out_valid1;
 output 	out_data_buffer_2;
 output 	out_data_buffer_3;
 output 	out_data_buffer_4;
@@ -74552,17 +74504,6 @@ dffeas in_data_toggle(
 defparam in_data_toggle.is_wysiwyg = "true";
 defparam in_data_toggle.power_up = "low";
 
-cycloneive_lcell_comb out_valid(
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(out_data_toggle_flopped1),
-	.datad(dreg_0),
-	.cin(gnd),
-	.combout(out_valid1),
-	.cout());
-defparam out_valid.lut_mask = 16'h0FF0;
-defparam out_valid.sum_lutc_input = "datac";
-
 dffeas \out_data_buffer[0] (
 	.clk(wire_pll7_clk_0),
 	.d(\in_data_buffer[0]~q ),
@@ -74590,6 +74531,17 @@ dffeas \out_data_buffer[1] (
 	.prn(vcc));
 defparam \out_data_buffer[1] .is_wysiwyg = "true";
 defparam \out_data_buffer[1] .power_up = "low";
+
+cycloneive_lcell_comb out_valid(
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped1),
+	.datad(dreg_0),
+	.cin(gnd),
+	.combout(out_valid1),
+	.cout());
+defparam out_valid.lut_mask = 16'h0FF0;
+defparam out_valid.sum_lutc_input = "datac";
 
 dffeas \out_data_buffer[2] (
 	.clk(wire_pll7_clk_0),
@@ -79275,6 +79227,10 @@ module niosII_altera_merlin_master_translator (
 	WideOr1,
 	WideOr0,
 	WideOr01,
+	sink_ready,
+	take_in_data,
+	WideOr02,
+	WideOr03,
 	av_waitrequest,
 	uav_write)/* synthesis synthesis_greybox=1 */;
 input 	clk;
@@ -79288,6 +79244,10 @@ output 	write_accepted1;
 input 	WideOr1;
 input 	WideOr0;
 input 	WideOr01;
+input 	sink_ready;
+input 	take_in_data;
+input 	WideOr02;
+input 	WideOr03;
 output 	av_waitrequest;
 output 	uav_write;
 
@@ -79306,6 +79266,8 @@ wire \write_accepted~0_combout ;
 wire \end_begintransfer~0_combout ;
 wire \end_begintransfer~q ;
 wire \av_waitrequest~0_combout ;
+wire \av_waitrequest~1_combout ;
+wire \av_waitrequest~2_combout ;
 
 
 dffeas read_accepted(
@@ -79347,16 +79309,16 @@ dffeas write_accepted(
 defparam write_accepted.is_wysiwyg = "true";
 defparam write_accepted.power_up = "low";
 
-cycloneive_lcell_comb \av_waitrequest~1 (
-	.dataa(d_read),
-	.datab(WideOr1),
-	.datac(d_write),
-	.datad(\av_waitrequest~0_combout ),
+cycloneive_lcell_comb \av_waitrequest~3 (
+	.dataa(WideOr1),
+	.datab(d_read),
+	.datac(\av_waitrequest~0_combout ),
+	.datad(\av_waitrequest~2_combout ),
 	.cin(gnd),
 	.combout(av_waitrequest),
 	.cout());
-defparam \av_waitrequest~1 .lut_mask = 16'h8DFF;
-defparam \av_waitrequest~1 .sum_lutc_input = "datac";
+defparam \av_waitrequest~3 .lut_mask = 16'hB8FF;
+defparam \av_waitrequest~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \uav_write~0 (
 	.dataa(d_write),
@@ -79372,7 +79334,7 @@ defparam \uav_write~0 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \read_accepted~0 (
 	.dataa(hold_waitrequest),
 	.datab(WideOr0),
-	.datac(WideOr01),
+	.datac(WideOr03),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(\read_accepted~0_combout ),
@@ -79428,15 +79390,37 @@ defparam end_begintransfer.is_wysiwyg = "true";
 defparam end_begintransfer.power_up = "low";
 
 cycloneive_lcell_comb \av_waitrequest~0 (
-	.dataa(\end_begintransfer~q ),
+	.dataa(d_write),
 	.datab(write_accepted1),
-	.datac(\read_accepted~0_combout ),
-	.datad(gnd),
+	.datac(hold_waitrequest),
+	.datad(\end_begintransfer~q ),
 	.cin(gnd),
 	.combout(\av_waitrequest~0_combout ),
 	.cout());
-defparam \av_waitrequest~0 .lut_mask = 16'hFEFE;
+defparam \av_waitrequest~0 .lut_mask = 16'h7FFF;
 defparam \av_waitrequest~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_waitrequest~1 (
+	.dataa(take_in_data),
+	.datab(WideOr02),
+	.datac(write_accepted1),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\av_waitrequest~1_combout ),
+	.cout());
+defparam \av_waitrequest~1 .lut_mask = 16'hFEFE;
+defparam \av_waitrequest~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \av_waitrequest~2 (
+	.dataa(sink_ready),
+	.datab(WideOr0),
+	.datac(WideOr01),
+	.datad(\av_waitrequest~1_combout ),
+	.cin(gnd),
+	.combout(\av_waitrequest~2_combout ),
+	.cout());
+defparam \av_waitrequest~2 .lut_mask = 16'hFFFE;
+defparam \av_waitrequest~2 .sum_lutc_input = "datac";
 
 endmodule
 
@@ -79839,27 +79823,26 @@ module niosII_altera_merlin_slave_agent_10 (
 	use_reg,
 	saved_grant_1,
 	WideOr0,
-	Equal0,
-	Equal1,
-	WideOr1,
-	m0_write1,
-	mem_used_7,
-	src_data_66,
 	src_valid,
+	Equal0,
+	src_data_66,
+	mem_used_7,
+	m0_write1,
 	src12_valid,
+	Equal1,
 	m0_write2,
 	out_valid,
 	mem_used_0,
 	mem_87_0,
 	rp_valid1,
 	mem_54_0,
-	burst_uncompress_address_base_1,
-	burst_uncompress_address_offset_1,
+	source_addr_1,
 	mem_19_0,
 	comb,
+	WideOr1,
 	cp_ready1,
 	mem_57_0,
-	source_addr_1,
+	source_addr_11,
 	cp_ready2,
 	rf_source_data_87)/* synthesis synthesis_greybox=1 */;
 input 	wire_pll7_clk_0;
@@ -79876,27 +79859,26 @@ input 	d_byteenable_1;
 input 	use_reg;
 input 	saved_grant_1;
 output 	WideOr0;
-input 	Equal0;
-input 	Equal1;
-input 	WideOr1;
-output 	m0_write1;
-input 	mem_used_7;
-input 	src_data_66;
 input 	src_valid;
+input 	Equal0;
+input 	src_data_66;
+input 	mem_used_7;
+output 	m0_write1;
 input 	src12_valid;
+input 	Equal1;
 output 	m0_write2;
 input 	out_valid;
 input 	mem_used_0;
 input 	mem_87_0;
 output 	rp_valid1;
 input 	mem_54_0;
-output 	burst_uncompress_address_base_1;
-output 	burst_uncompress_address_offset_1;
+output 	source_addr_1;
 input 	mem_19_0;
 output 	comb;
+input 	WideOr1;
 output 	cp_ready1;
 input 	mem_57_0;
-output 	source_addr_1;
+output 	source_addr_11;
 output 	cp_ready2;
 output 	rf_source_data_87;
 
@@ -79922,12 +79904,11 @@ niosII_altera_merlin_burst_uncompressor_10 uncompressor(
 	.mem_used_0(mem_used_0),
 	.mem_87_0(mem_87_0),
 	.mem_54_0(mem_54_0),
-	.burst_uncompress_address_base_1(burst_uncompress_address_base_1),
-	.burst_uncompress_address_offset_1(burst_uncompress_address_offset_1),
+	.source_addr_1(source_addr_1),
 	.mem_19_0(mem_19_0),
 	.comb(comb),
 	.mem_57_0(mem_57_0),
-	.source_addr_1(source_addr_1));
+	.source_addr_11(source_addr_11));
 
 cycloneive_lcell_comb \WideOr0~2 (
 	.dataa(\WideOr0~0_combout ),
@@ -80070,24 +80051,22 @@ module niosII_altera_merlin_burst_uncompressor_10 (
 	mem_used_0,
 	mem_87_0,
 	mem_54_0,
-	burst_uncompress_address_base_1,
-	burst_uncompress_address_offset_1,
+	source_addr_1,
 	mem_19_0,
 	comb,
 	mem_57_0,
-	source_addr_1)/* synthesis synthesis_greybox=1 */;
+	source_addr_11)/* synthesis synthesis_greybox=1 */;
 input 	clk;
 input 	reset;
 input 	out_valid;
 input 	mem_used_0;
 input 	mem_87_0;
 input 	mem_54_0;
-output 	burst_uncompress_address_base_1;
-output 	burst_uncompress_address_offset_1;
+output 	source_addr_1;
 input 	mem_19_0;
 input 	comb;
 input 	mem_57_0;
-output 	source_addr_1;
+output 	source_addr_11;
 
 wire gnd;
 wire vcc;
@@ -80099,6 +80078,7 @@ assign vcc = 1'b1;
 assign unknown = 1'b0;
 
 wire \burst_uncompress_address_base~0_combout ;
+wire \burst_uncompress_address_base[1]~q ;
 wire \comb~0_combout ;
 wire \Add2~0_combout ;
 wire \p1_burst_uncompress_address_offset[0]~combout ;
@@ -80107,46 +80087,30 @@ wire \comb~1_combout ;
 wire \Add2~1 ;
 wire \Add2~2_combout ;
 wire \p1_burst_uncompress_address_offset[1]~combout ;
+wire \burst_uncompress_address_offset[1]~q ;
 
-
-dffeas \burst_uncompress_address_base[1] (
-	.clk(clk),
-	.d(\burst_uncompress_address_base~0_combout ),
-	.asdata(vcc),
-	.clrn(!reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(comb),
-	.q(burst_uncompress_address_base_1),
-	.prn(vcc));
-defparam \burst_uncompress_address_base[1] .is_wysiwyg = "true";
-defparam \burst_uncompress_address_base[1] .power_up = "low";
-
-dffeas \burst_uncompress_address_offset[1] (
-	.clk(clk),
-	.d(\p1_burst_uncompress_address_offset[1]~combout ),
-	.asdata(vcc),
-	.clrn(!reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(comb),
-	.q(burst_uncompress_address_offset_1),
-	.prn(vcc));
-defparam \burst_uncompress_address_offset[1] .is_wysiwyg = "true";
-defparam \burst_uncompress_address_offset[1] .power_up = "low";
 
 cycloneive_lcell_comb \source_addr[1]~0 (
-	.dataa(mem_19_0),
-	.datab(comb),
-	.datac(burst_uncompress_address_base_1),
-	.datad(burst_uncompress_address_offset_1),
+	.dataa(\burst_uncompress_address_base[1]~q ),
+	.datab(\burst_uncompress_address_offset[1]~q ),
+	.datac(gnd),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(source_addr_1),
 	.cout());
-defparam \source_addr[1]~0 .lut_mask = 16'hFFB8;
+defparam \source_addr[1]~0 .lut_mask = 16'hEEEE;
 defparam \source_addr[1]~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \source_addr[1]~1 (
+	.dataa(mem_19_0),
+	.datab(comb),
+	.datac(\burst_uncompress_address_base[1]~q ),
+	.datad(\burst_uncompress_address_offset[1]~q ),
+	.cin(gnd),
+	.combout(source_addr_11),
+	.cout());
+defparam \source_addr[1]~1 .lut_mask = 16'hFFB8;
+defparam \source_addr[1]~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \burst_uncompress_address_base~0 (
 	.dataa(mem_19_0),
@@ -80159,8 +80123,22 @@ cycloneive_lcell_comb \burst_uncompress_address_base~0 (
 defparam \burst_uncompress_address_base~0 .lut_mask = 16'hAAFF;
 defparam \burst_uncompress_address_base~0 .sum_lutc_input = "datac";
 
+dffeas \burst_uncompress_address_base[1] (
+	.clk(clk),
+	.d(\burst_uncompress_address_base~0_combout ),
+	.asdata(vcc),
+	.clrn(!reset),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(comb),
+	.q(\burst_uncompress_address_base[1]~q ),
+	.prn(vcc));
+defparam \burst_uncompress_address_base[1] .is_wysiwyg = "true";
+defparam \burst_uncompress_address_base[1] .power_up = "low";
+
 cycloneive_lcell_comb \comb~0 (
-	.dataa(burst_uncompress_address_offset_1),
+	.dataa(\burst_uncompress_address_offset[1]~q ),
 	.datab(mem_19_0),
 	.datac(gnd),
 	.datad(comb),
@@ -80238,6 +80216,20 @@ cycloneive_lcell_comb \p1_burst_uncompress_address_offset[1] (
 	.cout());
 defparam \p1_burst_uncompress_address_offset[1] .lut_mask = 16'hEEEE;
 defparam \p1_burst_uncompress_address_offset[1] .sum_lutc_input = "datac";
+
+dffeas \burst_uncompress_address_offset[1] (
+	.clk(clk),
+	.d(\p1_burst_uncompress_address_offset[1]~combout ),
+	.asdata(vcc),
+	.clrn(!reset),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(comb),
+	.q(\burst_uncompress_address_offset[1]~q ),
+	.prn(vcc));
+defparam \burst_uncompress_address_offset[1] .is_wysiwyg = "true";
+defparam \burst_uncompress_address_offset[1] .power_up = "low";
 
 endmodule
 
@@ -82927,10 +82919,9 @@ module niosII_altera_merlin_slave_translator_11 (
 	Equal6,
 	read_latency_shift_reg_0,
 	mem_used_1,
-	wait_latency_counter_1,
-	wait_latency_counter_0,
-	sink_ready,
 	av_waitrequest_generated,
+	wait_latency_counter_1,
+	sink_ready,
 	m0_write1,
 	av_readdata_pre_30)/* synthesis synthesis_greybox=1 */;
 input 	clk;
@@ -82944,10 +82935,9 @@ input 	Equal9;
 input 	Equal6;
 output 	read_latency_shift_reg_0;
 input 	mem_used_1;
-output 	wait_latency_counter_1;
-output 	wait_latency_counter_0;
-input 	sink_ready;
 output 	av_waitrequest_generated;
+output 	wait_latency_counter_1;
+input 	sink_ready;
 input 	m0_write1;
 output 	av_readdata_pre_30;
 
@@ -82962,8 +82952,9 @@ assign unknown = 1'b0;
 
 wire \wait_latency_counter[0]~0_combout ;
 wire \wait_latency_counter~1_combout ;
-wire \wait_latency_counter~2_combout ;
+wire \wait_latency_counter[0]~q ;
 wire \av_waitrequest_generated~0_combout ;
+wire \wait_latency_counter~2_combout ;
 
 
 dffeas \read_latency_shift_reg[0] (
@@ -82980,9 +82971,20 @@ dffeas \read_latency_shift_reg[0] (
 defparam \read_latency_shift_reg[0] .is_wysiwyg = "true";
 defparam \read_latency_shift_reg[0] .power_up = "low";
 
+cycloneive_lcell_comb \av_waitrequest_generated~1 (
+	.dataa(\wait_latency_counter[0]~q ),
+	.datab(m0_write),
+	.datac(Equal9),
+	.datad(\av_waitrequest_generated~0_combout ),
+	.cin(gnd),
+	.combout(av_waitrequest_generated),
+	.cout());
+defparam \av_waitrequest_generated~1 .lut_mask = 16'h6996;
+defparam \av_waitrequest_generated~1 .sum_lutc_input = "datac";
+
 dffeas \wait_latency_counter[1] (
 	.clk(clk),
-	.d(\wait_latency_counter~1_combout ),
+	.d(\wait_latency_counter~2_combout ),
 	.asdata(vcc),
 	.clrn(!reset),
 	.aload(gnd),
@@ -82993,31 +82995,6 @@ dffeas \wait_latency_counter[1] (
 	.prn(vcc));
 defparam \wait_latency_counter[1] .is_wysiwyg = "true";
 defparam \wait_latency_counter[1] .power_up = "low";
-
-dffeas \wait_latency_counter[0] (
-	.clk(clk),
-	.d(\wait_latency_counter~2_combout ),
-	.asdata(vcc),
-	.clrn(!reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.q(wait_latency_counter_0),
-	.prn(vcc));
-defparam \wait_latency_counter[0] .is_wysiwyg = "true";
-defparam \wait_latency_counter[0] .power_up = "low";
-
-cycloneive_lcell_comb \av_waitrequest_generated~1 (
-	.dataa(wait_latency_counter_0),
-	.datab(m0_write),
-	.datac(Equal9),
-	.datad(\av_waitrequest_generated~0_combout ),
-	.cin(gnd),
-	.combout(av_waitrequest_generated),
-	.cout());
-defparam \av_waitrequest_generated~1 .lut_mask = 16'h6996;
-defparam \av_waitrequest_generated~1 .sum_lutc_input = "datac";
 
 dffeas \av_readdata_pre[30] (
 	.clk(clk),
@@ -83045,26 +83022,29 @@ defparam \wait_latency_counter[0]~0 .lut_mask = 16'hFEFF;
 defparam \wait_latency_counter[0]~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \wait_latency_counter~1 (
-	.dataa(\wait_latency_counter[0]~0_combout ),
-	.datab(gnd),
-	.datac(wait_latency_counter_1),
-	.datad(wait_latency_counter_0),
-	.cin(gnd),
-	.combout(\wait_latency_counter~1_combout ),
-	.cout());
-defparam \wait_latency_counter~1 .lut_mask = 16'hAFFA;
-defparam \wait_latency_counter~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \wait_latency_counter~2 (
-	.dataa(wait_latency_counter_0),
+	.dataa(\wait_latency_counter[0]~q ),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(\wait_latency_counter[0]~0_combout ),
 	.cin(gnd),
-	.combout(\wait_latency_counter~2_combout ),
+	.combout(\wait_latency_counter~1_combout ),
 	.cout());
-defparam \wait_latency_counter~2 .lut_mask = 16'hFF55;
-defparam \wait_latency_counter~2 .sum_lutc_input = "datac";
+defparam \wait_latency_counter~1 .lut_mask = 16'hFF55;
+defparam \wait_latency_counter~1 .sum_lutc_input = "datac";
+
+dffeas \wait_latency_counter[0] (
+	.clk(clk),
+	.d(\wait_latency_counter~1_combout ),
+	.asdata(vcc),
+	.clrn(!reset),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.q(\wait_latency_counter[0]~q ),
+	.prn(vcc));
+defparam \wait_latency_counter[0] .is_wysiwyg = "true";
+defparam \wait_latency_counter[0] .power_up = "low";
 
 cycloneive_lcell_comb \av_waitrequest_generated~0 (
 	.dataa(mem_used_1),
@@ -83076,6 +83056,17 @@ cycloneive_lcell_comb \av_waitrequest_generated~0 (
 	.cout());
 defparam \av_waitrequest_generated~0 .lut_mask = 16'hFFBF;
 defparam \av_waitrequest_generated~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \wait_latency_counter~2 (
+	.dataa(\wait_latency_counter[0]~0_combout ),
+	.datab(gnd),
+	.datac(wait_latency_counter_1),
+	.datad(\wait_latency_counter[0]~q ),
+	.cin(gnd),
+	.combout(\wait_latency_counter~2_combout ),
+	.cout());
+defparam \wait_latency_counter~2 .lut_mask = 16'hAFFA;
+defparam \wait_latency_counter~2 .sum_lutc_input = "datac";
 
 endmodule
 
@@ -83595,7 +83586,6 @@ module niosII_altera_merlin_width_adapter (
 	use_reg1,
 	WideOr0,
 	Equal0,
-	WideOr1,
 	mem_used_7,
 	src_data_46,
 	out_data_28,
@@ -83647,6 +83637,7 @@ module niosII_altera_merlin_width_adapter (
 	count_0,
 	d_writedata_10,
 	in_endofpacket,
+	WideOr1,
 	cp_ready,
 	src_data_34,
 	src_data_35,
@@ -83707,7 +83698,6 @@ input 	saved_grant_0;
 output 	use_reg1;
 input 	WideOr0;
 input 	Equal0;
-input 	WideOr1;
 input 	mem_used_7;
 input 	src_data_46;
 output 	out_data_28;
@@ -83759,6 +83749,7 @@ output 	out_data_27;
 output 	count_0;
 input 	d_writedata_10;
 input 	in_endofpacket;
+input 	WideOr1;
 input 	cp_ready;
 input 	src_data_34;
 input 	src_data_35;
@@ -84991,14 +84982,13 @@ module niosII_altera_merlin_width_adapter_1 (
 	rp_valid,
 	mem_88_0,
 	mem_54_0,
-	burst_uncompress_address_base_1,
-	burst_uncompress_address_offset_1,
+	source_addr_1,
 	mem_19_0,
 	comb,
 	always10,
 	data_reg_0,
 	out_payload_0,
-	source_addr_1,
+	source_addr_11,
 	data_reg_1,
 	out_payload_1,
 	data_reg_2,
@@ -85034,14 +85024,13 @@ input 	r_sync_rst;
 input 	rp_valid;
 input 	mem_88_0;
 input 	mem_54_0;
-input 	burst_uncompress_address_base_1;
-input 	burst_uncompress_address_offset_1;
+input 	source_addr_1;
 input 	mem_19_0;
 input 	comb;
 output 	always10;
 output 	data_reg_0;
 input 	out_payload_0;
-input 	source_addr_1;
+input 	source_addr_11;
 output 	data_reg_1;
 input 	out_payload_1;
 output 	data_reg_2;
@@ -85102,14 +85091,14 @@ wire \data_reg~15_combout ;
 
 
 cycloneive_lcell_comb \always10~1 (
-	.dataa(mem_88_0),
-	.datab(mem_54_0),
-	.datac(\always10~0_combout ),
-	.datad(gnd),
+	.dataa(\always10~0_combout ),
+	.datab(source_addr_1),
+	.datac(mem_19_0),
+	.datad(comb),
 	.cin(gnd),
 	.combout(always10),
 	.cout());
-defparam \always10~1 .lut_mask = 16'hFBFB;
+defparam \always10~1 .lut_mask = 16'hFAFC;
 defparam \always10~1 .sum_lutc_input = "datac";
 
 dffeas \data_reg[0] (
@@ -85337,20 +85326,20 @@ defparam \data_reg[6] .is_wysiwyg = "true";
 defparam \data_reg[6] .power_up = "low";
 
 cycloneive_lcell_comb \always10~0 (
-	.dataa(burst_uncompress_address_base_1),
-	.datab(burst_uncompress_address_offset_1),
-	.datac(mem_19_0),
-	.datad(comb),
+	.dataa(mem_88_0),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(mem_54_0),
 	.cin(gnd),
 	.combout(\always10~0_combout ),
 	.cout());
-defparam \always10~0 .lut_mask = 16'hFAFC;
+defparam \always10~0 .lut_mask = 16'hAAFF;
 defparam \always10~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data_reg~0 (
 	.dataa(data_reg_0),
 	.datab(out_payload_0),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~0_combout ),
@@ -85361,7 +85350,7 @@ defparam \data_reg~0 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~1 (
 	.dataa(data_reg_1),
 	.datab(out_payload_1),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~1_combout ),
@@ -85372,7 +85361,7 @@ defparam \data_reg~1 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~2 (
 	.dataa(data_reg_2),
 	.datab(out_payload_2),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~2_combout ),
@@ -85383,7 +85372,7 @@ defparam \data_reg~2 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~3 (
 	.dataa(data_reg_3),
 	.datab(out_payload_3),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~3_combout ),
@@ -85394,7 +85383,7 @@ defparam \data_reg~3 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~4 (
 	.dataa(data_reg_4),
 	.datab(out_payload_4),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~4_combout ),
@@ -85405,7 +85394,7 @@ defparam \data_reg~4 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~5 (
 	.dataa(data_reg_11),
 	.datab(out_payload_11),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~5_combout ),
@@ -85416,7 +85405,7 @@ defparam \data_reg~5 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~6 (
 	.dataa(data_reg_13),
 	.datab(out_payload_13),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~6_combout ),
@@ -85427,7 +85416,7 @@ defparam \data_reg~6 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~7 (
 	.dataa(data_reg_12),
 	.datab(out_payload_12),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~7_combout ),
@@ -85438,7 +85427,7 @@ defparam \data_reg~7 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~8 (
 	.dataa(data_reg_5),
 	.datab(out_payload_5),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~8_combout ),
@@ -85449,7 +85438,7 @@ defparam \data_reg~8 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~9 (
 	.dataa(data_reg_14),
 	.datab(out_payload_14),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~9_combout ),
@@ -85460,7 +85449,7 @@ defparam \data_reg~9 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~10 (
 	.dataa(data_reg_15),
 	.datab(out_payload_15),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~10_combout ),
@@ -85471,7 +85460,7 @@ defparam \data_reg~10 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~11 (
 	.dataa(data_reg_10),
 	.datab(out_payload_10),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~11_combout ),
@@ -85482,7 +85471,7 @@ defparam \data_reg~11 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~12 (
 	.dataa(data_reg_9),
 	.datab(out_payload_9),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~12_combout ),
@@ -85493,7 +85482,7 @@ defparam \data_reg~12 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~13 (
 	.dataa(data_reg_8),
 	.datab(out_payload_8),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~13_combout ),
@@ -85504,7 +85493,7 @@ defparam \data_reg~13 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~14 (
 	.dataa(data_reg_7),
 	.datab(out_payload_7),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~14_combout ),
@@ -85515,7 +85504,7 @@ defparam \data_reg~14 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \data_reg~15 (
 	.dataa(data_reg_6),
 	.datab(out_payload_6),
-	.datac(source_addr_1),
+	.datac(source_addr_11),
 	.datad(always10),
 	.cin(gnd),
 	.combout(\data_reg~15_combout ),
@@ -85528,93 +85517,97 @@ endmodule
 module niosII_niosII_mm_interconnect_0_cmd_demux (
 	W_alu_result_5,
 	W_alu_result_4,
+	W_alu_result_3,
+	uav_read,
 	hold_waitrequest,
-	d_write,
-	write_accepted,
 	cp_valid,
 	Equal9,
-	mem_used_1,
+	read_latency_shift_reg,
 	saved_grant_0,
+	Equal6,
 	src_channel_12,
-	Equal2,
 	src_channel_121,
+	Equal2,
 	src_channel_122,
-	Equal1,
 	src_channel_123,
 	src12_valid,
+	Equal1,
 	waitrequest,
 	m0_read,
 	last_cycle,
 	in_ready,
 	src_channel_124,
 	WideOr0,
-	read_latency_shift_reg,
 	read_latency_shift_reg1,
-	mem_used_11,
-	mem_used_12,
+	read_latency_shift_reg2,
 	write,
 	Equal12,
+	mem_used_1,
+	mem_used_11,
+	mem_used_12,
+	WideOr01,
 	mem_used_13,
-	mem_used_14,
+	av_waitrequest_generated,
 	wait_latency_counter_1,
-	always1,
-	wait_latency_counter_0,
 	sink_ready,
 	take_in_data,
 	saved_grant_01,
 	waitrequest1,
-	mem_used_15,
+	mem_used_14,
 	Equal13,
 	in_data_toggle,
 	dreg_0,
-	WideOr01,
+	WideOr02,
+	WideOr03,
 	src12_valid1,
-	av_waitrequest_generated,
+	always1,
 	sink_ready1)/* synthesis synthesis_greybox=1 */;
 input 	W_alu_result_5;
 input 	W_alu_result_4;
+input 	W_alu_result_3;
+input 	uav_read;
 input 	hold_waitrequest;
-input 	d_write;
-input 	write_accepted;
 input 	cp_valid;
 input 	Equal9;
-input 	mem_used_1;
+input 	read_latency_shift_reg;
 input 	saved_grant_0;
+input 	Equal6;
 input 	src_channel_12;
-input 	Equal2;
 input 	src_channel_121;
+input 	Equal2;
 input 	src_channel_122;
-input 	Equal1;
 input 	src_channel_123;
 output 	src12_valid;
+input 	Equal1;
 input 	waitrequest;
 input 	m0_read;
 input 	last_cycle;
 input 	in_ready;
 input 	src_channel_124;
 output 	WideOr0;
-input 	read_latency_shift_reg;
 input 	read_latency_shift_reg1;
-input 	mem_used_11;
-input 	mem_used_12;
+input 	read_latency_shift_reg2;
 input 	write;
 input 	Equal12;
+input 	mem_used_1;
+input 	mem_used_11;
+input 	mem_used_12;
+output 	WideOr01;
 input 	mem_used_13;
-input 	mem_used_14;
+input 	av_waitrequest_generated;
 input 	wait_latency_counter_1;
-input 	always1;
-input 	wait_latency_counter_0;
 output 	sink_ready;
 input 	take_in_data;
 input 	saved_grant_01;
 input 	waitrequest1;
-input 	mem_used_15;
+input 	mem_used_14;
 input 	Equal13;
 input 	in_data_toggle;
 input 	dreg_0;
-output 	WideOr01;
+output 	WideOr02;
+output 	WideOr03;
 output 	src12_valid1;
-input 	av_waitrequest_generated;
+input 	always1;
 output 	sink_ready1;
 
 wire gnd;
@@ -85627,22 +85620,20 @@ assign vcc = 1'b1;
 assign unknown = 1'b0;
 
 wire \WideOr0~0_combout ;
-wire \sink_ready~5_combout ;
 wire \WideOr0~2_combout ;
 wire \WideOr0~3_combout ;
 wire \WideOr0~4_combout ;
-wire \WideOr0~5_combout ;
-wire \WideOr0~6_combout ;
+wire \sink_ready~0_combout ;
+wire \sink_ready~1_combout ;
 wire \sink_ready~3_combout ;
-wire \WideOr0~7_combout ;
 wire \src12_valid~1_combout ;
 
 
 cycloneive_lcell_comb \src12_valid~0 (
 	.dataa(cp_valid),
 	.datab(src_channel_12),
-	.datac(src_channel_123),
-	.datad(src_channel_122),
+	.datac(src_channel_121),
+	.datad(src_channel_123),
 	.cin(gnd),
 	.combout(src12_valid),
 	.cout());
@@ -85660,32 +85651,54 @@ cycloneive_lcell_comb \WideOr0~1 (
 defparam \WideOr0~1 .lut_mask = 16'hEFFF;
 defparam \WideOr0~1 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \sink_ready~2 (
-	.dataa(mem_used_14),
-	.datab(wait_latency_counter_1),
-	.datac(always1),
-	.datad(\sink_ready~5_combout ),
-	.cin(gnd),
-	.combout(sink_ready),
-	.cout());
-defparam \sink_ready~2 .lut_mask = 16'hFFF7;
-defparam \sink_ready~2 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \WideOr0~8 (
-	.dataa(\WideOr0~6_combout ),
-	.datab(sink_ready),
-	.datac(take_in_data),
-	.datad(\WideOr0~7_combout ),
+cycloneive_lcell_comb \WideOr0~5 (
+	.dataa(hold_waitrequest),
+	.datab(read_latency_shift_reg1),
+	.datac(read_latency_shift_reg2),
+	.datad(\WideOr0~4_combout ),
 	.cin(gnd),
 	.combout(WideOr01),
 	.cout());
-defparam \WideOr0~8 .lut_mask = 16'hFFFE;
-defparam \WideOr0~8 .sum_lutc_input = "datac";
+defparam \WideOr0~5 .lut_mask = 16'hFFFE;
+defparam \WideOr0~5 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \sink_ready~2 (
+	.dataa(av_waitrequest_generated),
+	.datab(\sink_ready~1_combout ),
+	.datac(mem_used_13),
+	.datad(wait_latency_counter_1),
+	.cin(gnd),
+	.combout(sink_ready),
+	.cout());
+defparam \sink_ready~2 .lut_mask = 16'hEFFF;
+defparam \sink_ready~2 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \WideOr0~6 (
+	.dataa(\sink_ready~3_combout ),
+	.datab(Equal13),
+	.datac(in_data_toggle),
+	.datad(dreg_0),
+	.cin(gnd),
+	.combout(WideOr02),
+	.cout());
+defparam \WideOr0~6 .lut_mask = 16'hEFFE;
+defparam \WideOr0~6 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \WideOr0~7 (
+	.dataa(WideOr01),
+	.datab(sink_ready),
+	.datac(take_in_data),
+	.datad(WideOr02),
+	.cin(gnd),
+	.combout(WideOr03),
+	.cout());
+defparam \WideOr0~7 .lut_mask = 16'hFFFE;
+defparam \WideOr0~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src12_valid~2 (
 	.dataa(src_channel_12),
-	.datab(src_channel_123),
-	.datac(src_channel_122),
+	.datab(src_channel_121),
+	.datac(src_channel_123),
 	.datad(\src12_valid~1_combout ),
 	.cin(gnd),
 	.combout(src12_valid1),
@@ -85715,93 +85728,71 @@ cycloneive_lcell_comb \WideOr0~0 (
 defparam \WideOr0~0 .lut_mask = 16'hACFF;
 defparam \WideOr0~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \sink_ready~5 (
-	.dataa(hold_waitrequest),
-	.datab(d_write),
-	.datac(write_accepted),
-	.datad(wait_latency_counter_0),
-	.cin(gnd),
-	.combout(\sink_ready~5_combout ),
-	.cout());
-defparam \sink_ready~5 .lut_mask = 16'hEBBE;
-defparam \sink_ready~5 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \WideOr0~2 (
-	.dataa(mem_used_11),
-	.datab(W_alu_result_5),
-	.datac(W_alu_result_4),
+	.dataa(W_alu_result_5),
+	.datab(W_alu_result_4),
+	.datac(mem_used_11),
 	.datad(mem_used_12),
 	.cin(gnd),
 	.combout(\WideOr0~2_combout ),
 	.cout());
-defparam \WideOr0~2 .lut_mask = 16'h7DFF;
+defparam \WideOr0~2 .lut_mask = 16'h8DFF;
 defparam \WideOr0~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \WideOr0~3 (
-	.dataa(W_alu_result_4),
+	.dataa(Equal12),
 	.datab(mem_used_1),
-	.datac(\WideOr0~2_combout ),
-	.datad(gnd),
+	.datac(src_channel_122),
+	.datad(\WideOr0~2_combout ),
 	.cin(gnd),
 	.combout(\WideOr0~3_combout ),
 	.cout());
-defparam \WideOr0~3 .lut_mask = 16'hFBFB;
+defparam \WideOr0~3 .lut_mask = 16'hFFFB;
 defparam \WideOr0~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \WideOr0~4 (
-	.dataa(Equal9),
-	.datab(W_alu_result_4),
-	.datac(src_channel_121),
-	.datad(\WideOr0~3_combout ),
+	.dataa(write),
+	.datab(read_latency_shift_reg),
+	.datac(\WideOr0~3_combout ),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\WideOr0~4_combout ),
 	.cout());
-defparam \WideOr0~4 .lut_mask = 16'hFFB8;
+defparam \WideOr0~4 .lut_mask = 16'hFEFE;
 defparam \WideOr0~4 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \WideOr0~5 (
-	.dataa(\WideOr0~4_combout ),
-	.datab(write),
-	.datac(Equal12),
-	.datad(mem_used_13),
-	.cin(gnd),
-	.combout(\WideOr0~5_combout ),
-	.cout());
-defparam \WideOr0~5 .lut_mask = 16'hFEFF;
-defparam \WideOr0~5 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \WideOr0~6 (
+cycloneive_lcell_comb \sink_ready~0 (
 	.dataa(hold_waitrequest),
-	.datab(read_latency_shift_reg),
-	.datac(read_latency_shift_reg1),
-	.datad(\WideOr0~5_combout ),
+	.datab(W_alu_result_3),
+	.datac(gnd),
+	.datad(gnd),
 	.cin(gnd),
-	.combout(\WideOr0~6_combout ),
+	.combout(\sink_ready~0_combout ),
 	.cout());
-defparam \WideOr0~6 .lut_mask = 16'hFFFE;
-defparam \WideOr0~6 .sum_lutc_input = "datac";
+defparam \sink_ready~0 .lut_mask = 16'hBBBB;
+defparam \sink_ready~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \sink_ready~1 (
+	.dataa(uav_read),
+	.datab(Equal9),
+	.datac(Equal6),
+	.datad(\sink_ready~0_combout ),
+	.cin(gnd),
+	.combout(\sink_ready~1_combout ),
+	.cout());
+defparam \sink_ready~1 .lut_mask = 16'hFFFE;
+defparam \sink_ready~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \sink_ready~3 (
 	.dataa(Equal2),
 	.datab(saved_grant_01),
 	.datac(waitrequest1),
-	.datad(mem_used_15),
+	.datad(mem_used_14),
 	.cin(gnd),
 	.combout(\sink_ready~3_combout ),
 	.cout());
 defparam \sink_ready~3 .lut_mask = 16'hEFFF;
 defparam \sink_ready~3 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \WideOr0~7 (
-	.dataa(\sink_ready~3_combout ),
-	.datab(Equal13),
-	.datac(in_data_toggle),
-	.datad(dreg_0),
-	.cin(gnd),
-	.combout(\WideOr0~7_combout ),
-	.cout());
-defparam \WideOr0~7 .lut_mask = 16'hEFFE;
-defparam \WideOr0~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src12_valid~1 (
 	.dataa(cp_valid),
@@ -86875,22 +86866,21 @@ module niosII_niosII_mm_interconnect_0_cmd_mux_009_1 (
 	src_data_46,
 	out_data_buffer_7,
 	src_payload2,
-	src_payload3,
 	out_data_buffer_66,
 	out_data_buffer_661,
 	src_data_66,
 	out_data_buffer_6,
-	src_payload4,
+	src_payload3,
 	out_data_buffer_5,
-	src_payload5,
+	src_payload4,
 	out_data_buffer_4,
-	src_payload6,
+	src_payload5,
 	out_data_buffer_3,
-	src_payload7,
+	src_payload6,
 	out_data_buffer_2,
-	src_payload8,
+	src_payload7,
 	out_data_buffer_1,
-	src_payload9,
+	src_payload8,
 	out_data_buffer_41,
 	out_data_buffer_411,
 	src_data_41,
@@ -86906,21 +86896,20 @@ module niosII_niosII_mm_interconnect_0_cmd_mux_009_1 (
 	out_data_buffer_45,
 	out_data_buffer_451,
 	src_data_45,
-	src_payload10,
 	out_data_buffer_11,
-	src_payload11,
+	src_payload9,
 	out_data_buffer_13,
-	src_payload12,
+	src_payload10,
 	out_data_buffer_12,
-	src_payload13,
+	src_payload11,
 	out_data_buffer_14,
-	src_payload14,
+	src_payload12,
 	out_data_buffer_15,
-	src_payload15,
+	src_payload13,
 	out_data_buffer_9,
-	src_payload16,
+	src_payload14,
 	out_data_buffer_8,
-	src_payload17,
+	src_payload15,
 	WideOr11)/* synthesis synthesis_greybox=1 */;
 input 	wire_pll7_clk_0;
 input 	r_sync_rst;
@@ -86960,22 +86949,21 @@ input 	out_data_buffer_461;
 output 	src_data_46;
 input 	out_data_buffer_7;
 output 	src_payload2;
-output 	src_payload3;
 input 	out_data_buffer_66;
 input 	out_data_buffer_661;
 output 	src_data_66;
 input 	out_data_buffer_6;
-output 	src_payload4;
+output 	src_payload3;
 input 	out_data_buffer_5;
-output 	src_payload5;
+output 	src_payload4;
 input 	out_data_buffer_4;
-output 	src_payload6;
+output 	src_payload5;
 input 	out_data_buffer_3;
-output 	src_payload7;
+output 	src_payload6;
 input 	out_data_buffer_2;
-output 	src_payload8;
+output 	src_payload7;
 input 	out_data_buffer_1;
-output 	src_payload9;
+output 	src_payload8;
 input 	out_data_buffer_41;
 input 	out_data_buffer_411;
 output 	src_data_41;
@@ -86991,21 +86979,20 @@ output 	src_data_44;
 input 	out_data_buffer_45;
 input 	out_data_buffer_451;
 output 	src_data_45;
-output 	src_payload10;
 input 	out_data_buffer_11;
-output 	src_payload11;
+output 	src_payload9;
 input 	out_data_buffer_13;
-output 	src_payload12;
+output 	src_payload10;
 input 	out_data_buffer_12;
-output 	src_payload13;
+output 	src_payload11;
 input 	out_data_buffer_14;
-output 	src_payload14;
+output 	src_payload12;
 input 	out_data_buffer_15;
-output 	src_payload15;
+output 	src_payload13;
 input 	out_data_buffer_9;
-output 	src_payload16;
+output 	src_payload14;
 input 	out_data_buffer_8;
-output 	src_payload17;
+output 	src_payload15;
 output 	WideOr11;
 
 wire gnd;
@@ -87184,17 +87171,6 @@ cycloneive_lcell_comb \src_payload~2 (
 defparam \src_payload~2 .lut_mask = 16'hEEEE;
 defparam \src_payload~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~3 (
-	.dataa(saved_grant_0),
-	.datab(out_data_buffer_381),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_payload3),
-	.cout());
-defparam \src_payload~3 .lut_mask = 16'hEEEE;
-defparam \src_payload~3 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \src_data[66] (
 	.dataa(saved_grant_0),
 	.datab(saved_grant_1),
@@ -87206,9 +87182,20 @@ cycloneive_lcell_comb \src_data[66] (
 defparam \src_data[66] .lut_mask = 16'hFFFE;
 defparam \src_data[66] .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~4 (
+cycloneive_lcell_comb \src_payload~3 (
 	.dataa(saved_grant_0),
 	.datab(out_data_buffer_6),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(src_payload3),
+	.cout());
+defparam \src_payload~3 .lut_mask = 16'hEEEE;
+defparam \src_payload~3 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~4 (
+	.dataa(saved_grant_0),
+	.datab(out_data_buffer_5),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87219,7 +87206,7 @@ defparam \src_payload~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~5 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_5),
+	.datab(out_data_buffer_4),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87230,7 +87217,7 @@ defparam \src_payload~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~6 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_4),
+	.datab(out_data_buffer_3),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87241,7 +87228,7 @@ defparam \src_payload~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~7 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_3),
+	.datab(out_data_buffer_2),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87252,7 +87239,7 @@ defparam \src_payload~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~8 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_2),
+	.datab(out_data_buffer_1),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87260,17 +87247,6 @@ cycloneive_lcell_comb \src_payload~8 (
 	.cout());
 defparam \src_payload~8 .lut_mask = 16'hEEEE;
 defparam \src_payload~8 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~9 (
-	.dataa(saved_grant_0),
-	.datab(out_data_buffer_1),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_payload9),
-	.cout());
-defparam \src_payload~9 .lut_mask = 16'hEEEE;
-defparam \src_payload~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[41] (
 	.dataa(saved_grant_0),
@@ -87327,9 +87303,20 @@ cycloneive_lcell_comb \src_data[45] (
 defparam \src_data[45] .lut_mask = 16'hFFFE;
 defparam \src_data[45] .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~9 (
+	.dataa(saved_grant_0),
+	.datab(out_data_buffer_11),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(src_payload9),
+	.cout());
+defparam \src_payload~9 .lut_mask = 16'hEEEE;
+defparam \src_payload~9 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~10 (
-	.dataa(saved_grant_1),
-	.datab(out_data_buffer_38),
+	.dataa(saved_grant_0),
+	.datab(out_data_buffer_13),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87340,7 +87327,7 @@ defparam \src_payload~10 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~11 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_11),
+	.datab(out_data_buffer_12),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87351,7 +87338,7 @@ defparam \src_payload~11 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~12 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_13),
+	.datab(out_data_buffer_14),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87362,7 +87349,7 @@ defparam \src_payload~12 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~13 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_12),
+	.datab(out_data_buffer_15),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87373,7 +87360,7 @@ defparam \src_payload~13 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~14 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_14),
+	.datab(out_data_buffer_9),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87384,7 +87371,7 @@ defparam \src_payload~14 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~15 (
 	.dataa(saved_grant_0),
-	.datab(out_data_buffer_15),
+	.datab(out_data_buffer_8),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
@@ -87392,28 +87379,6 @@ cycloneive_lcell_comb \src_payload~15 (
 	.cout());
 defparam \src_payload~15 .lut_mask = 16'hEEEE;
 defparam \src_payload~15 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~16 (
-	.dataa(saved_grant_0),
-	.datab(out_data_buffer_9),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_payload16),
-	.cout());
-defparam \src_payload~16 .lut_mask = 16'hEEEE;
-defparam \src_payload~16 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~17 (
-	.dataa(saved_grant_0),
-	.datab(out_data_buffer_8),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_payload17),
-	.cout());
-defparam \src_payload~17 .lut_mask = 16'hEEEE;
-defparam \src_payload~17 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb WideOr1(
 	.dataa(saved_grant_0),
@@ -87612,9 +87577,6 @@ module niosII_niosII_mm_interconnect_0_cmd_mux_009_2 (
 	saved_grant_0,
 	saved_grant_1,
 	WideOr0,
-	Equal0,
-	src_channel_12,
-	src_channel_121,
 	cp_valid1,
 	F_pc_22,
 	F_pc_21,
@@ -87630,15 +87592,17 @@ module niosII_niosII_mm_interconnect_0_cmd_mux_009_2 (
 	F_pc_11,
 	F_pc_10,
 	Equal1,
-	Equal11,
-	src_channel_122,
-	WideOr11,
-	mem_used_7,
+	src_valid,
+	Equal0,
 	uav_read1,
 	src_data_66,
+	mem_used_7,
+	src_channel_12,
+	src_channel_121,
+	src_channel_122,
+	Equal11,
 	F_pc_8,
 	src_data_46,
-	src_valid,
 	src_data_60,
 	F_pc_9,
 	src_data_47,
@@ -87674,6 +87638,7 @@ module niosII_niosII_mm_interconnect_0_cmd_mux_009_2 (
 	last_cycle,
 	src12_valid,
 	src_payload_0,
+	WideOr11,
 	d_byteenable_2,
 	src_data_34,
 	d_byteenable_3,
@@ -87741,9 +87706,6 @@ input 	cp_valid;
 output 	saved_grant_0;
 output 	saved_grant_1;
 input 	WideOr0;
-input 	Equal0;
-input 	src_channel_12;
-input 	src_channel_121;
 input 	cp_valid1;
 input 	F_pc_22;
 input 	F_pc_21;
@@ -87759,15 +87721,17 @@ input 	F_pc_12;
 input 	F_pc_11;
 input 	F_pc_10;
 input 	Equal1;
-input 	Equal11;
-input 	src_channel_122;
-output 	WideOr11;
-input 	mem_used_7;
+output 	src_valid;
+input 	Equal0;
 input 	uav_read1;
 output 	src_data_66;
+input 	mem_used_7;
+input 	src_channel_12;
+input 	src_channel_121;
+input 	src_channel_122;
+input 	Equal11;
 input 	F_pc_8;
 output 	src_data_46;
-output 	src_valid;
 output 	src_data_60;
 input 	F_pc_9;
 output 	src_data_47;
@@ -87803,6 +87767,7 @@ input 	count_0;
 output 	last_cycle;
 input 	src12_valid;
 output 	src_payload_0;
+output 	WideOr11;
 input 	d_byteenable_2;
 output 	src_data_34;
 input 	d_byteenable_3;
@@ -87888,16 +87853,16 @@ dffeas \saved_grant[1] (
 defparam \saved_grant[1] .is_wysiwyg = "true";
 defparam \saved_grant[1] .power_up = "low";
 
-cycloneive_lcell_comb WideOr1(
-	.dataa(src_channel_12),
-	.datab(src_channel_121),
-	.datac(\WideOr1~0_combout ),
-	.datad(\WideOr1~1_combout ),
+cycloneive_lcell_comb \src_valid~0 (
+	.dataa(saved_grant_1),
+	.datab(cp_valid1),
+	.datac(gnd),
+	.datad(Equal1),
 	.cin(gnd),
-	.combout(WideOr11),
+	.combout(src_valid),
 	.cout());
-defparam WideOr1.lut_mask = 16'hFFF7;
-defparam WideOr1.sum_lutc_input = "datac";
+defparam \src_valid~0 .lut_mask = 16'hEEFF;
+defparam \src_valid~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[66] (
 	.dataa(uav_read),
@@ -87920,17 +87885,6 @@ cycloneive_lcell_comb \src_data[46] (
 	.cout());
 defparam \src_data[46] .lut_mask = 16'hFFFE;
 defparam \src_data[46] .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_valid~0 (
-	.dataa(saved_grant_1),
-	.datab(cp_valid1),
-	.datac(gnd),
-	.datad(Equal1),
-	.cin(gnd),
-	.combout(src_valid),
-	.cout());
-defparam \src_valid~0 .lut_mask = 16'hEEFF;
-defparam \src_valid~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[60] (
 	.dataa(W_alu_result_24),
@@ -88196,6 +88150,17 @@ cycloneive_lcell_comb \src_payload[0] (
 defparam \src_payload[0] .lut_mask = 16'hEEEE;
 defparam \src_payload[0] .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb WideOr1(
+	.dataa(src_channel_12),
+	.datab(src_channel_122),
+	.datac(\WideOr1~0_combout ),
+	.datad(\WideOr1~1_combout ),
+	.cin(gnd),
+	.combout(WideOr11),
+	.cout());
+defparam WideOr1.lut_mask = 16'hFFF7;
+defparam WideOr1.sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_data[34] (
 	.dataa(saved_grant_1),
 	.datab(saved_grant_0),
@@ -88445,7 +88410,7 @@ cycloneive_lcell_comb \WideOr1~1 (
 	.dataa(saved_grant_0),
 	.datab(Equal11),
 	.datac(cp_valid),
-	.datad(src_channel_122),
+	.datad(src_channel_121),
 	.cin(gnd),
 	.combout(\WideOr1~1_combout ),
 	.cout());
@@ -88589,18 +88554,18 @@ module niosII_niosII_mm_interconnect_0_router (
 	Equal9,
 	Equal6,
 	src_channel_12,
-	Equal2,
-	src_channel_121,
-	src_channel_122,
-	Equal1,
 	Equal4,
 	Equal5,
+	src_channel_121,
+	Equal2,
+	src_channel_122,
 	src_channel_123,
+	Equal1,
 	src_channel_124,
 	Equal12,
-	always1,
 	Equal13,
 	Equal121,
+	always1,
 	Equal51)/* synthesis synthesis_greybox=1 */;
 input 	W_alu_result_6;
 input 	W_alu_result_26;
@@ -88631,18 +88596,18 @@ output 	Equal3;
 output 	Equal9;
 output 	Equal6;
 output 	src_channel_12;
-output 	Equal2;
-output 	src_channel_121;
-output 	src_channel_122;
-output 	Equal1;
 output 	Equal4;
 output 	Equal5;
+output 	src_channel_121;
+output 	Equal2;
+output 	src_channel_122;
 output 	src_channel_123;
+output 	Equal1;
 output 	src_channel_124;
 output 	Equal12;
-output 	always1;
 output 	Equal13;
 output 	Equal121;
+output 	always1;
 output 	Equal51;
 
 wire gnd;
@@ -88660,10 +88625,12 @@ wire \Equal3~2_combout ;
 wire \Equal3~3_combout ;
 wire \Equal3~4_combout ;
 wire \Equal3~5_combout ;
-wire \Equal3~7_combout ;
-wire \Equal2~0_combout ;
-wire \src_channel[12]~2_combout ;
+wire \Equal9~0_combout ;
+wire \Equal9~1_combout ;
 wire \Equal4~0_combout ;
+wire \Equal2~0_combout ;
+wire \Equal3~7_combout ;
+wire \src_channel[12]~3_combout ;
 wire \Equal12~0_combout ;
 wire \Equal13~0_combout ;
 wire \Equal5~1_combout ;
@@ -88680,16 +88647,16 @@ cycloneive_lcell_comb \Equal3~6 (
 defparam \Equal3~6 .lut_mask = 16'hFFFD;
 defparam \Equal3~6 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal9~0 (
-	.dataa(W_alu_result_7),
-	.datab(\Equal3~3_combout ),
-	.datac(\Equal3~7_combout ),
-	.datad(W_alu_result_6),
+cycloneive_lcell_comb \Equal9~2 (
+	.dataa(\Equal3~1_combout ),
+	.datab(\Equal3~2_combout ),
+	.datac(\Equal9~0_combout ),
+	.datad(\Equal9~1_combout ),
 	.cin(gnd),
 	.combout(Equal9),
 	.cout());
-defparam \Equal9~0 .lut_mask = 16'hFEFF;
-defparam \Equal9~0 .sum_lutc_input = "datac";
+defparam \Equal9~2 .lut_mask = 16'hFFFE;
+defparam \Equal9~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal6~0 (
 	.dataa(W_alu_result_4),
@@ -88713,50 +88680,6 @@ cycloneive_lcell_comb \src_channel[12]~0 (
 defparam \src_channel[12]~0 .lut_mask = 16'hFFFE;
 defparam \src_channel[12]~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal2~1 (
-	.dataa(\Equal3~0_combout ),
-	.datab(\Equal3~1_combout ),
-	.datac(\Equal3~2_combout ),
-	.datad(\Equal2~0_combout ),
-	.cin(gnd),
-	.combout(Equal2),
-	.cout());
-defparam \Equal2~1 .lut_mask = 16'hFFFE;
-defparam \Equal2~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_channel[12]~1 (
-	.dataa(W_alu_result_6),
-	.datab(\Equal3~3_combout ),
-	.datac(\Equal3~7_combout ),
-	.datad(W_alu_result_7),
-	.cin(gnd),
-	.combout(src_channel_121),
-	.cout());
-defparam \src_channel[12]~1 .lut_mask = 16'hFEFF;
-defparam \src_channel[12]~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_channel[12]~3 (
-	.dataa(Equal9),
-	.datab(Equal2),
-	.datac(src_channel_121),
-	.datad(\src_channel[12]~2_combout ),
-	.cin(gnd),
-	.combout(src_channel_122),
-	.cout());
-defparam \src_channel[12]~3 .lut_mask = 16'hFFFE;
-defparam \src_channel[12]~3 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal1~0 (
-	.dataa(\Equal3~3_combout ),
-	.datab(W_alu_result_12),
-	.datac(W_alu_result_13),
-	.datad(W_alu_result_11),
-	.cin(gnd),
-	.combout(Equal1),
-	.cout());
-defparam \Equal1~0 .lut_mask = 16'hEFFF;
-defparam \Equal1~0 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \Equal4~1 (
 	.dataa(W_alu_result_5),
 	.datab(\Equal3~3_combout ),
@@ -88779,21 +88702,65 @@ cycloneive_lcell_comb \Equal5~0 (
 defparam \Equal5~0 .lut_mask = 16'h0FFF;
 defparam \Equal5~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_channel[12]~4 (
+cycloneive_lcell_comb \src_channel[12]~1 (
 	.dataa(Equal3),
 	.datab(Equal4),
 	.datac(Equal9),
 	.datad(Equal5),
+	.cin(gnd),
+	.combout(src_channel_121),
+	.cout());
+defparam \src_channel[12]~1 .lut_mask = 16'hFFFE;
+defparam \src_channel[12]~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Equal2~1 (
+	.dataa(\Equal3~0_combout ),
+	.datab(\Equal3~1_combout ),
+	.datac(\Equal3~2_combout ),
+	.datad(\Equal2~0_combout ),
+	.cin(gnd),
+	.combout(Equal2),
+	.cout());
+defparam \Equal2~1 .lut_mask = 16'hFFFE;
+defparam \Equal2~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_channel[12]~2 (
+	.dataa(W_alu_result_6),
+	.datab(\Equal3~3_combout ),
+	.datac(\Equal3~7_combout ),
+	.datad(W_alu_result_7),
+	.cin(gnd),
+	.combout(src_channel_122),
+	.cout());
+defparam \src_channel[12]~2 .lut_mask = 16'hFEFF;
+defparam \src_channel[12]~2 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_channel[12]~4 (
+	.dataa(Equal9),
+	.datab(Equal2),
+	.datac(src_channel_122),
+	.datad(\src_channel[12]~3_combout ),
 	.cin(gnd),
 	.combout(src_channel_123),
 	.cout());
 defparam \src_channel[12]~4 .lut_mask = 16'hFFFE;
 defparam \src_channel[12]~4 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Equal1~0 (
+	.dataa(\Equal3~3_combout ),
+	.datab(W_alu_result_12),
+	.datac(W_alu_result_13),
+	.datad(W_alu_result_11),
+	.cin(gnd),
+	.combout(Equal1),
+	.cout());
+defparam \Equal1~0 .lut_mask = 16'hEFFF;
+defparam \Equal1~0 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_channel[12]~5 (
 	.dataa(src_channel_12),
-	.datab(src_channel_123),
-	.datac(src_channel_122),
+	.datab(src_channel_121),
+	.datac(src_channel_123),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(src_channel_124),
@@ -88802,29 +88769,18 @@ defparam \src_channel[12]~5 .lut_mask = 16'hFEFE;
 defparam \src_channel[12]~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal12~1 (
-	.dataa(W_alu_result_5),
-	.datab(\Equal3~3_combout ),
-	.datac(\Equal3~7_combout ),
+	.dataa(\Equal3~3_combout ),
+	.datab(\Equal3~7_combout ),
+	.datac(W_alu_result_6),
 	.datad(\Equal12~0_combout ),
 	.cin(gnd),
 	.combout(Equal12),
 	.cout());
-defparam \Equal12~1 .lut_mask = 16'hFFFE;
+defparam \Equal12~1 .lut_mask = 16'hFFEF;
 defparam \Equal12~1 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \always1~0 (
-	.dataa(uav_read),
-	.datab(Equal9),
-	.datac(Equal6),
-	.datad(W_alu_result_3),
-	.cin(gnd),
-	.combout(always1),
-	.cout());
-defparam \always1~0 .lut_mask = 16'hFEFF;
-defparam \always1~0 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \Equal13~1 (
-	.dataa(W_alu_result_3),
+	.dataa(W_alu_result_7),
 	.datab(\Equal3~3_combout ),
 	.datac(\Equal3~7_combout ),
 	.datad(\Equal13~0_combout ),
@@ -88844,6 +88800,17 @@ cycloneive_lcell_comb \Equal12~2 (
 	.cout());
 defparam \Equal12~2 .lut_mask = 16'hAFFF;
 defparam \Equal12~2 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \always1~0 (
+	.dataa(uav_read),
+	.datab(Equal9),
+	.datac(Equal6),
+	.datad(W_alu_result_3),
+	.cin(gnd),
+	.combout(always1),
+	.cout());
+defparam \always1~0 .lut_mask = 16'hFEFF;
+defparam \always1~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal5~2 (
 	.dataa(W_alu_result_5),
@@ -88922,38 +88889,27 @@ cycloneive_lcell_comb \Equal3~5 (
 defparam \Equal3~5 .lut_mask = 16'h7FFF;
 defparam \Equal3~5 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal3~7 (
-	.dataa(\Equal3~4_combout ),
-	.datab(gnd),
+cycloneive_lcell_comb \Equal9~0 (
+	.dataa(W_alu_result_6),
+	.datab(W_alu_result_14),
 	.datac(W_alu_result_9),
 	.datad(W_alu_result_8),
 	.cin(gnd),
-	.combout(\Equal3~7_combout ),
+	.combout(\Equal9~0_combout ),
 	.cout());
-defparam \Equal3~7 .lut_mask = 16'hAFFF;
-defparam \Equal3~7 .sum_lutc_input = "datac";
+defparam \Equal9~0 .lut_mask = 16'h7FFF;
+defparam \Equal9~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal2~0 (
-	.dataa(W_alu_result_12),
-	.datab(W_alu_result_11),
-	.datac(W_alu_result_13),
-	.datad(W_alu_result_14),
-	.cin(gnd),
-	.combout(\Equal2~0_combout ),
-	.cout());
-defparam \Equal2~0 .lut_mask = 16'hEFFF;
-defparam \Equal2~0 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_channel[12]~2 (
-	.dataa(W_alu_result_5),
-	.datab(W_alu_result_4),
-	.datac(gnd),
+cycloneive_lcell_comb \Equal9~1 (
+	.dataa(W_alu_result_7),
+	.datab(\Equal3~0_combout ),
+	.datac(\Equal3~4_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_channel[12]~2_combout ),
+	.combout(\Equal9~1_combout ),
 	.cout());
-defparam \src_channel[12]~2 .lut_mask = 16'hBBBB;
-defparam \src_channel[12]~2 .sum_lutc_input = "datac";
+defparam \Equal9~1 .lut_mask = 16'hFEFE;
+defparam \Equal9~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal4~0 (
 	.dataa(W_alu_result_7),
@@ -88966,26 +88922,59 @@ cycloneive_lcell_comb \Equal4~0 (
 defparam \Equal4~0 .lut_mask = 16'h7FFF;
 defparam \Equal4~0 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Equal2~0 (
+	.dataa(W_alu_result_12),
+	.datab(W_alu_result_11),
+	.datac(W_alu_result_13),
+	.datad(W_alu_result_14),
+	.cin(gnd),
+	.combout(\Equal2~0_combout ),
+	.cout());
+defparam \Equal2~0 .lut_mask = 16'hEFFF;
+defparam \Equal2~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Equal3~7 (
+	.dataa(\Equal3~4_combout ),
+	.datab(gnd),
+	.datac(W_alu_result_9),
+	.datad(W_alu_result_8),
+	.cin(gnd),
+	.combout(\Equal3~7_combout ),
+	.cout());
+defparam \Equal3~7 .lut_mask = 16'hAFFF;
+defparam \Equal3~7 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_channel[12]~3 (
+	.dataa(W_alu_result_5),
+	.datab(W_alu_result_4),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_channel[12]~3_combout ),
+	.cout());
+defparam \src_channel[12]~3 .lut_mask = 16'hBBBB;
+defparam \src_channel[12]~3 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \Equal12~0 (
-	.dataa(W_alu_result_4),
-	.datab(W_alu_result_3),
-	.datac(W_alu_result_7),
-	.datad(W_alu_result_6),
+	.dataa(W_alu_result_5),
+	.datab(W_alu_result_4),
+	.datac(W_alu_result_3),
+	.datad(W_alu_result_7),
 	.cin(gnd),
 	.combout(\Equal12~0_combout ),
 	.cout());
-defparam \Equal12~0 .lut_mask = 16'hF7FF;
+defparam \Equal12~0 .lut_mask = 16'hFFBF;
 defparam \Equal12~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal13~0 (
 	.dataa(W_alu_result_5),
-	.datab(W_alu_result_4),
-	.datac(W_alu_result_7),
+	.datab(W_alu_result_3),
+	.datac(W_alu_result_4),
 	.datad(W_alu_result_6),
 	.cin(gnd),
 	.combout(\Equal13~0_combout ),
 	.cout());
-defparam \Equal13~0 .lut_mask = 16'hFBFF;
+defparam \Equal13~0 .lut_mask = 16'hEFFF;
 defparam \Equal13~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal5~1 (
@@ -89297,11 +89286,14 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	read_latency_shift_reg_08,
 	read_latency_shift_reg_09,
 	mem_54_0,
+	source_addr_1,
+	mem_19_0,
+	comb,
 	src0_valid,
 	WideOr11,
 	av_readdata_pre_0,
 	out_payload_0,
-	source_addr_1,
+	source_addr_11,
 	F_iw_0,
 	av_readdata_pre_1,
 	data_reg_1,
@@ -89363,13 +89355,14 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	readdata_03,
 	readdata_04,
 	readdata_05,
+	out_data_buffer_0,
+	av_readdata_pre_30,
+	src_payload,
 	out_valid,
 	out_valid1,
-	out_data_buffer_0,
 	out_data_buffer_01,
-	av_readdata_pre_02,
-	out_valid2,
 	out_data_buffer_02,
+	av_readdata_pre_02,
 	src_data_0,
 	readdata_12,
 	av_readdata_pre_110,
@@ -89378,10 +89371,9 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	readdata_15,
 	out_data_buffer_1,
 	out_data_buffer_11,
-	av_readdata_pre_111,
 	out_data_buffer_12,
+	av_readdata_pre_111,
 	src_data_12,
-	src_data_2,
 	readdata_2,
 	av_readdata_pre_24,
 	readdata_24,
@@ -89390,8 +89382,9 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	readdata_27,
 	out_data_buffer_2,
 	av_readdata_pre_25,
+	out_valid2,
 	out_data_buffer_21,
-	src_data_21,
+	src_data_2,
 	readdata_3,
 	av_readdata_pre_31,
 	readdata_31,
@@ -89404,21 +89397,20 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	src_data_31,
 	readdata_4,
 	av_readdata_pre_41,
+	src0_valid1,
 	readdata_41,
 	readdata_42,
-	readdata_43,
-	av_readdata_pre_30,
 	out_data_buffer_4,
+	readdata_43,
 	av_readdata_pre_42,
 	out_data_buffer_41,
 	src_data_41,
 	readdata_5,
 	av_readdata_pre_51,
-	src0_valid1,
 	readdata_51,
 	readdata_52,
-	out_data_buffer_5,
 	readdata_53,
+	out_data_buffer_5,
 	av_readdata_pre_52,
 	out_data_buffer_51,
 	src_data_51,
@@ -89426,8 +89418,8 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	av_readdata_pre_61,
 	readdata_61,
 	readdata_62,
-	out_data_buffer_6,
 	readdata_63,
+	out_data_buffer_6,
 	av_readdata_pre_62,
 	out_data_buffer_61,
 	src_data_6,
@@ -89435,43 +89427,43 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	av_readdata_pre_71,
 	readdata_71,
 	readdata_72,
-	out_data_buffer_7,
 	readdata_73,
+	out_data_buffer_7,
 	av_readdata_pre_72,
 	out_data_buffer_71,
 	src_data_7,
-	src_payload,
+	src_payload1,
 	readdata_232,
 	out_data_buffer_23,
-	src_payload1,
+	src_payload2,
 	readdata_222,
 	out_data_buffer_22,
 	out_data_buffer_221,
-	src_payload2,
+	src_payload3,
 	readdata_212,
 	out_data_buffer_211,
 	out_data_buffer_212,
-	src_payload3,
+	src_payload4,
 	readdata_202,
 	out_data_buffer_20,
 	out_data_buffer_201,
-	src_payload4,
+	src_payload5,
 	readdata_192,
 	out_data_buffer_19,
 	out_data_buffer_191,
-	src_payload5,
+	src_payload6,
 	readdata_182,
 	out_data_buffer_18,
 	out_data_buffer_181,
-	src_payload6,
+	src_payload7,
 	readdata_172,
 	out_data_buffer_17,
 	out_data_buffer_171,
-	src_payload7,
+	src_payload8,
 	readdata_162,
 	out_data_buffer_16,
 	out_data_buffer_161,
-	src_payload8,
+	src_payload9,
 	readdata_151,
 	av_readdata_pre_151,
 	readdata_152,
@@ -89480,9 +89472,9 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	out_data_buffer_151,
 	av_readdata_pre_152,
 	src_data_151,
-	out_data_buffer_14,
-	readdata_141,
 	av_readdata_pre_141,
+	readdata_141,
+	out_data_buffer_14,
 	out_data_buffer_141,
 	src_data_14,
 	av_readdata_pre_131,
@@ -89497,8 +89489,8 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	src_data_121,
 	readdata_111,
 	av_readdata_pre_112,
-	av_readdata_pre_113,
 	out_data_buffer_111,
+	av_readdata_pre_113,
 	src_data_111,
 	av_readdata_pre_101,
 	readdata_10,
@@ -89519,8 +89511,8 @@ module niosII_niosII_mm_interconnect_0_rsp_mux (
 	readdata_81,
 	readdata_82,
 	out_data_buffer_8,
-	av_readdata_pre_82,
 	out_data_buffer_81,
+	av_readdata_pre_82,
 	src_data_8)/* synthesis synthesis_greybox=1 */;
 input 	readdata_0;
 input 	readdata_01;
@@ -89561,11 +89553,14 @@ input 	read_latency_shift_reg_07;
 input 	read_latency_shift_reg_08;
 input 	read_latency_shift_reg_09;
 input 	mem_54_0;
+input 	source_addr_1;
+input 	mem_19_0;
+input 	comb;
 input 	src0_valid;
 output 	WideOr11;
 input 	av_readdata_pre_0;
 input 	out_payload_0;
-input 	source_addr_1;
+input 	source_addr_11;
 input 	F_iw_0;
 input 	av_readdata_pre_1;
 input 	data_reg_1;
@@ -89627,13 +89622,14 @@ input 	av_readdata_pre_01;
 input 	readdata_03;
 input 	readdata_04;
 input 	readdata_05;
+input 	out_data_buffer_0;
+input 	av_readdata_pre_30;
+output 	src_payload;
 input 	out_valid;
 input 	out_valid1;
-input 	out_data_buffer_0;
 input 	out_data_buffer_01;
-input 	av_readdata_pre_02;
-input 	out_valid2;
 input 	out_data_buffer_02;
+input 	av_readdata_pre_02;
 output 	src_data_0;
 input 	readdata_12;
 input 	av_readdata_pre_110;
@@ -89642,10 +89638,9 @@ input 	readdata_14;
 input 	readdata_15;
 input 	out_data_buffer_1;
 input 	out_data_buffer_11;
-input 	av_readdata_pre_111;
 input 	out_data_buffer_12;
+input 	av_readdata_pre_111;
 output 	src_data_12;
-output 	src_data_2;
 input 	readdata_2;
 input 	av_readdata_pre_24;
 input 	readdata_24;
@@ -89654,8 +89649,9 @@ input 	readdata_26;
 input 	readdata_27;
 input 	out_data_buffer_2;
 input 	av_readdata_pre_25;
+input 	out_valid2;
 input 	out_data_buffer_21;
-output 	src_data_21;
+output 	src_data_2;
 input 	readdata_3;
 input 	av_readdata_pre_31;
 input 	readdata_31;
@@ -89668,21 +89664,20 @@ input 	out_data_buffer_31;
 output 	src_data_31;
 input 	readdata_4;
 input 	av_readdata_pre_41;
+input 	src0_valid1;
 input 	readdata_41;
 input 	readdata_42;
-input 	readdata_43;
-input 	av_readdata_pre_30;
 input 	out_data_buffer_4;
+input 	readdata_43;
 input 	av_readdata_pre_42;
 input 	out_data_buffer_41;
 output 	src_data_41;
 input 	readdata_5;
 input 	av_readdata_pre_51;
-input 	src0_valid1;
 input 	readdata_51;
 input 	readdata_52;
-input 	out_data_buffer_5;
 input 	readdata_53;
+input 	out_data_buffer_5;
 input 	av_readdata_pre_52;
 input 	out_data_buffer_51;
 output 	src_data_51;
@@ -89690,8 +89685,8 @@ input 	readdata_6;
 input 	av_readdata_pre_61;
 input 	readdata_61;
 input 	readdata_62;
-input 	out_data_buffer_6;
 input 	readdata_63;
+input 	out_data_buffer_6;
 input 	av_readdata_pre_62;
 input 	out_data_buffer_61;
 output 	src_data_6;
@@ -89699,43 +89694,43 @@ input 	readdata_7;
 input 	av_readdata_pre_71;
 input 	readdata_71;
 input 	readdata_72;
-input 	out_data_buffer_7;
 input 	readdata_73;
+input 	out_data_buffer_7;
 input 	av_readdata_pre_72;
 input 	out_data_buffer_71;
 output 	src_data_7;
-output 	src_payload;
+output 	src_payload1;
 input 	readdata_232;
 input 	out_data_buffer_23;
-output 	src_payload1;
+output 	src_payload2;
 input 	readdata_222;
 input 	out_data_buffer_22;
 input 	out_data_buffer_221;
-output 	src_payload2;
+output 	src_payload3;
 input 	readdata_212;
 input 	out_data_buffer_211;
 input 	out_data_buffer_212;
-output 	src_payload3;
+output 	src_payload4;
 input 	readdata_202;
 input 	out_data_buffer_20;
 input 	out_data_buffer_201;
-output 	src_payload4;
+output 	src_payload5;
 input 	readdata_192;
 input 	out_data_buffer_19;
 input 	out_data_buffer_191;
-output 	src_payload5;
+output 	src_payload6;
 input 	readdata_182;
 input 	out_data_buffer_18;
 input 	out_data_buffer_181;
-output 	src_payload6;
+output 	src_payload7;
 input 	readdata_172;
 input 	out_data_buffer_17;
 input 	out_data_buffer_171;
-output 	src_payload7;
+output 	src_payload8;
 input 	readdata_162;
 input 	out_data_buffer_16;
 input 	out_data_buffer_161;
-output 	src_payload8;
+output 	src_payload9;
 input 	readdata_151;
 input 	av_readdata_pre_151;
 input 	readdata_152;
@@ -89744,9 +89739,9 @@ input 	out_data_buffer_15;
 input 	out_data_buffer_151;
 input 	av_readdata_pre_152;
 output 	src_data_151;
-input 	out_data_buffer_14;
-input 	readdata_141;
 input 	av_readdata_pre_141;
+input 	readdata_141;
+input 	out_data_buffer_14;
 input 	out_data_buffer_141;
 output 	src_data_14;
 input 	av_readdata_pre_131;
@@ -89761,8 +89756,8 @@ input 	out_data_buffer_122;
 output 	src_data_121;
 input 	readdata_111;
 input 	av_readdata_pre_112;
-input 	av_readdata_pre_113;
 input 	out_data_buffer_111;
+input 	av_readdata_pre_113;
 output 	src_data_111;
 input 	av_readdata_pre_101;
 input 	readdata_10;
@@ -89783,8 +89778,8 @@ input 	av_readdata_pre_81;
 input 	readdata_81;
 input 	readdata_82;
 input 	out_data_buffer_8;
-input 	av_readdata_pre_82;
 input 	out_data_buffer_81;
+input 	av_readdata_pre_82;
 output 	src_data_8;
 
 wire gnd;
@@ -89802,124 +89797,126 @@ wire \WideOr1~2_combout ;
 wire \WideOr1~3_combout ;
 wire \WideOr1~4_combout ;
 wire \src_payload~0_combout ;
+wire \src_data[0]~21_combout ;
+wire \src_data[0]~22_combout ;
 wire \src_data[0]~23_combout ;
 wire \src_data[0]~24_combout ;
+wire \src_payload~1_combout ;
 wire \src_data[0]~25_combout ;
 wire \src_data[0]~26_combout ;
 wire \src_data[0]~27_combout ;
-wire \src_data[0]~28_combout ;
-wire \src_data[0]~29_combout ;
-wire \src_payload~1_combout ;
+wire \src_payload~3_combout ;
+wire \src_data[1]~29_combout ;
+wire \src_data[1]~30_combout ;
 wire \src_data[1]~31_combout ;
 wire \src_data[1]~32_combout ;
+wire \src_payload~4_combout ;
 wire \src_data[1]~33_combout ;
 wire \src_data[1]~34_combout ;
 wire \src_data[1]~35_combout ;
-wire \src_data[1]~36_combout ;
-wire \src_data[1]~37_combout ;
-wire \src_payload~2_combout ;
+wire \src_payload~5_combout ;
+wire \src_data[2]~37_combout ;
+wire \src_data[2]~38_combout ;
+wire \src_data[2]~39_combout ;
 wire \src_data[2]~40_combout ;
 wire \src_data[2]~41_combout ;
-wire \src_data[2]~42_combout ;
-wire \src_data[2]~43_combout ;
-wire \src_data[2]~44_combout ;
-wire \src_payload~3_combout ;
+wire \src_data[2]~110_combout ;
+wire \src_payload~6_combout ;
+wire \src_data[3]~43_combout ;
+wire \src_data[3]~44_combout ;
+wire \src_data[3]~45_combout ;
 wire \src_data[3]~46_combout ;
 wire \src_data[3]~47_combout ;
-wire \src_data[3]~48_combout ;
-wire \src_data[3]~49_combout ;
-wire \src_data[3]~50_combout ;
-wire \src_data[3]~51_combout ;
-wire \src_payload~4_combout ;
+wire \src_data[3]~111_combout ;
+wire \src_data[4]~49_combout ;
+wire \src_data[4]~50_combout ;
+wire \src_data[4]~51_combout ;
+wire \src_data[4]~52_combout ;
 wire \src_data[4]~53_combout ;
-wire \src_data[4]~54_combout ;
-wire \src_data[4]~55_combout ;
-wire \src_data[4]~56_combout ;
-wire \src_data[4]~57_combout ;
-wire \src_data[4]~114_combout ;
+wire \src_data[4]~112_combout ;
+wire \src_data[5]~55_combout ;
+wire \src_data[5]~56_combout ;
+wire \src_data[5]~57_combout ;
+wire \src_data[5]~58_combout ;
 wire \src_data[5]~59_combout ;
-wire \src_data[5]~60_combout ;
-wire \src_data[5]~61_combout ;
-wire \src_data[5]~62_combout ;
-wire \src_data[5]~63_combout ;
-wire \src_data[5]~115_combout ;
+wire \src_data[5]~113_combout ;
+wire \src_data[6]~61_combout ;
+wire \src_data[6]~62_combout ;
+wire \src_data[6]~63_combout ;
+wire \src_data[6]~64_combout ;
 wire \src_data[6]~65_combout ;
-wire \src_data[6]~66_combout ;
-wire \src_data[6]~67_combout ;
-wire \src_data[6]~68_combout ;
-wire \src_data[6]~69_combout ;
-wire \src_data[6]~116_combout ;
+wire \src_data[6]~114_combout ;
+wire \src_data[7]~67_combout ;
+wire \src_data[7]~68_combout ;
+wire \src_data[7]~69_combout ;
+wire \src_data[7]~70_combout ;
 wire \src_data[7]~71_combout ;
-wire \src_data[7]~72_combout ;
-wire \src_data[7]~73_combout ;
-wire \src_data[7]~74_combout ;
-wire \src_data[7]~75_combout ;
-wire \src_data[7]~117_combout ;
-wire \src_payload~6_combout ;
-wire \src_payload~7_combout ;
+wire \src_data[7]~115_combout ;
 wire \src_payload~8_combout ;
+wire \src_payload~9_combout ;
 wire \src_payload~10_combout ;
-wire \src_payload~11_combout ;
 wire \src_payload~12_combout ;
 wire \src_payload~13_combout ;
+wire \src_payload~14_combout ;
 wire \src_payload~15_combout ;
-wire \src_payload~16_combout ;
 wire \src_payload~17_combout ;
 wire \src_payload~18_combout ;
+wire \src_payload~19_combout ;
 wire \src_payload~20_combout ;
-wire \src_payload~21_combout ;
 wire \src_payload~22_combout ;
 wire \src_payload~23_combout ;
+wire \src_payload~24_combout ;
 wire \src_payload~25_combout ;
-wire \src_payload~26_combout ;
 wire \src_payload~27_combout ;
 wire \src_payload~28_combout ;
+wire \src_payload~29_combout ;
 wire \src_payload~30_combout ;
-wire \src_payload~31_combout ;
 wire \src_payload~32_combout ;
 wire \src_payload~33_combout ;
+wire \src_payload~34_combout ;
 wire \src_payload~35_combout ;
-wire \src_payload~36_combout ;
 wire \src_payload~37_combout ;
 wire \src_payload~38_combout ;
+wire \src_payload~39_combout ;
 wire \src_payload~40_combout ;
-wire \src_payload~41_combout ;
 wire \src_payload~42_combout ;
 wire \src_payload~43_combout ;
-wire \src_data[15]~77_combout ;
-wire \src_data[15]~78_combout ;
-wire \src_data[15]~79_combout ;
-wire \src_data[15]~80_combout ;
-wire \src_data[15]~81_combout ;
-wire \src_data[14]~83_combout ;
-wire \src_data[14]~84_combout ;
-wire \src_data[14]~118_combout ;
+wire \src_payload~44_combout ;
 wire \src_payload~45_combout ;
-wire \src_data[13]~86_combout ;
-wire \src_data[13]~87_combout ;
-wire \src_data[13]~88_combout ;
-wire \src_data[12]~90_combout ;
-wire \src_data[12]~91_combout ;
-wire \src_data[12]~119_combout ;
-wire \src_data[11]~93_combout ;
-wire \src_data[11]~94_combout ;
-wire \src_data[11]~95_combout ;
-wire \src_data[11]~120_combout ;
-wire \src_data[10]~97_combout ;
-wire \src_data[10]~98_combout ;
-wire \src_data[10]~99_combout ;
-wire \src_data[10]~100_combout ;
+wire \src_data[15]~73_combout ;
+wire \src_data[15]~74_combout ;
+wire \src_data[15]~75_combout ;
+wire \src_data[15]~76_combout ;
+wire \src_payload~47_combout ;
+wire \src_data[15]~77_combout ;
+wire \src_payload~48_combout ;
+wire \src_data[14]~79_combout ;
+wire \src_data[14]~80_combout ;
+wire \src_data[14]~81_combout ;
+wire \src_payload~49_combout ;
+wire \src_data[13]~83_combout ;
+wire \src_data[13]~84_combout ;
+wire \src_data[13]~85_combout ;
+wire \src_data[12]~87_combout ;
+wire \src_data[12]~88_combout ;
+wire \src_data[12]~116_combout ;
+wire \src_data[11]~90_combout ;
+wire \src_data[11]~91_combout ;
+wire \src_data[11]~92_combout ;
+wire \src_payload~50_combout ;
+wire \src_data[10]~94_combout ;
+wire \src_data[10]~95_combout ;
+wire \src_data[10]~96_combout ;
+wire \src_data[9]~98_combout ;
+wire \src_data[9]~99_combout ;
+wire \src_data[9]~100_combout ;
+wire \src_data[9]~101_combout ;
 wire \src_data[9]~102_combout ;
-wire \src_data[9]~103_combout ;
-wire \src_data[9]~104_combout ;
-wire \src_data[9]~105_combout ;
-wire \src_data[9]~106_combout ;
+wire \src_data[8]~104_combout ;
+wire \src_data[8]~105_combout ;
+wire \src_data[8]~106_combout ;
+wire \src_data[8]~107_combout ;
 wire \src_data[8]~108_combout ;
-wire \src_data[8]~109_combout ;
-wire \src_data[8]~110_combout ;
-wire \src_data[8]~111_combout ;
-wire \src_data[8]~112_combout ;
-wire \src_data[8]~121_combout ;
 
 
 cycloneive_lcell_comb WideOr1(
@@ -89933,368 +89930,368 @@ cycloneive_lcell_comb WideOr1(
 defparam WideOr1.lut_mask = 16'hBFFF;
 defparam WideOr1.sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[1]~16 (
+cycloneive_lcell_comb \src_data[1]~14 (
 	.dataa(mem_54_0),
 	.datab(data_reg_1),
 	.datac(out_payload_1),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_1),
 	.cout());
-defparam \src_data[1]~16 .lut_mask = 16'hFEFF;
-defparam \src_data[1]~16 .sum_lutc_input = "datac";
+defparam \src_data[1]~14 .lut_mask = 16'hFEFF;
+defparam \src_data[1]~14 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[3]~17 (
+cycloneive_lcell_comb \src_data[3]~15 (
 	.dataa(mem_54_0),
 	.datab(data_reg_3),
 	.datac(out_payload_3),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_3),
 	.cout());
-defparam \src_data[3]~17 .lut_mask = 16'hFEFF;
-defparam \src_data[3]~17 .sum_lutc_input = "datac";
+defparam \src_data[3]~15 .lut_mask = 16'hFEFF;
+defparam \src_data[3]~15 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[4]~18 (
+cycloneive_lcell_comb \src_data[4]~16 (
 	.dataa(mem_54_0),
 	.datab(data_reg_4),
 	.datac(out_payload_4),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_4),
 	.cout());
-defparam \src_data[4]~18 .lut_mask = 16'hFEFF;
-defparam \src_data[4]~18 .sum_lutc_input = "datac";
+defparam \src_data[4]~16 .lut_mask = 16'hFEFF;
+defparam \src_data[4]~16 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[11]~19 (
+cycloneive_lcell_comb \src_data[11]~17 (
 	.dataa(mem_54_0),
 	.datab(data_reg_11),
 	.datac(out_payload_11),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_11),
 	.cout());
-defparam \src_data[11]~19 .lut_mask = 16'hFEFF;
-defparam \src_data[11]~19 .sum_lutc_input = "datac";
+defparam \src_data[11]~17 .lut_mask = 16'hFEFF;
+defparam \src_data[11]~17 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[13]~20 (
+cycloneive_lcell_comb \src_data[13]~18 (
 	.dataa(mem_54_0),
 	.datab(data_reg_13),
 	.datac(out_payload_13),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_13),
 	.cout());
-defparam \src_data[13]~20 .lut_mask = 16'hFEFF;
-defparam \src_data[13]~20 .sum_lutc_input = "datac";
+defparam \src_data[13]~18 .lut_mask = 16'hFEFF;
+defparam \src_data[13]~18 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[5]~21 (
+cycloneive_lcell_comb \src_data[5]~19 (
 	.dataa(mem_54_0),
 	.datab(data_reg_5),
 	.datac(out_payload_5),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_5),
 	.cout());
-defparam \src_data[5]~21 .lut_mask = 16'hFEFF;
-defparam \src_data[5]~21 .sum_lutc_input = "datac";
+defparam \src_data[5]~19 .lut_mask = 16'hFEFF;
+defparam \src_data[5]~19 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[15]~22 (
+cycloneive_lcell_comb \src_data[15]~20 (
 	.dataa(mem_54_0),
 	.datab(data_reg_15),
 	.datac(out_payload_15),
-	.datad(source_addr_1),
+	.datad(source_addr_11),
 	.cin(gnd),
 	.combout(src_data_15),
 	.cout());
-defparam \src_data[15]~22 .lut_mask = 16'hFEFF;
-defparam \src_data[15]~22 .sum_lutc_input = "datac";
+defparam \src_data[15]~20 .lut_mask = 16'hFEFF;
+defparam \src_data[15]~20 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[0]~30 (
-	.dataa(\src_data[0]~26_combout ),
-	.datab(\src_data[0]~29_combout ),
-	.datac(src0_valid),
-	.datad(F_iw_0),
-	.cin(gnd),
-	.combout(src_data_0),
-	.cout());
-defparam \src_data[0]~30 .lut_mask = 16'hFFFE;
-defparam \src_data[0]~30 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~38 (
-	.dataa(\src_data[1]~34_combout ),
-	.datab(\src_data[1]~37_combout ),
-	.datac(src0_valid),
-	.datad(src_data_1),
-	.cin(gnd),
-	.combout(src_data_12),
-	.cout());
-defparam \src_data[1]~38 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~38 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~39 (
-	.dataa(src0_valid),
-	.datab(F_iw_2),
-	.datac(gnd),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_data_2),
-	.cout());
-defparam \src_data[2]~39 .lut_mask = 16'hEEEE;
-defparam \src_data[2]~39 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~45 (
-	.dataa(\src_data[2]~43_combout ),
-	.datab(\src_data[2]~44_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_21),
-	.cin(gnd),
-	.combout(src_data_21),
-	.cout());
-defparam \src_data[2]~45 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~45 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[3]~52 (
-	.dataa(\src_data[3]~51_combout ),
-	.datab(src0_valid),
-	.datac(src_data_3),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(src_data_31),
-	.cout());
-defparam \src_data[3]~52 .lut_mask = 16'hFEFE;
-defparam \src_data[3]~52 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~58 (
-	.dataa(\src_data[4]~56_combout ),
-	.datab(\src_data[4]~114_combout ),
-	.datac(src0_valid),
-	.datad(src_data_4),
-	.cin(gnd),
-	.combout(src_data_41),
-	.cout());
-defparam \src_data[4]~58 .lut_mask = 16'hFFFE;
-defparam \src_data[4]~58 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[5]~64 (
-	.dataa(\src_data[5]~62_combout ),
-	.datab(\src_data[5]~115_combout ),
-	.datac(src0_valid),
-	.datad(src_data_5),
-	.cin(gnd),
-	.combout(src_data_51),
-	.cout());
-defparam \src_data[5]~64 .lut_mask = 16'hFFFE;
-defparam \src_data[5]~64 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[6]~70 (
-	.dataa(\src_data[6]~68_combout ),
-	.datab(\src_data[6]~116_combout ),
-	.datac(src0_valid),
-	.datad(F_iw_6),
-	.cin(gnd),
-	.combout(src_data_6),
-	.cout());
-defparam \src_data[6]~70 .lut_mask = 16'hFFFE;
-defparam \src_data[6]~70 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[7]~76 (
-	.dataa(\src_data[7]~74_combout ),
-	.datab(\src_data[7]~117_combout ),
-	.datac(src0_valid),
-	.datad(F_iw_7),
-	.cin(gnd),
-	.combout(src_data_7),
-	.cout());
-defparam \src_data[7]~76 .lut_mask = 16'hFFFE;
-defparam \src_data[7]~76 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~5 (
-	.dataa(source_addr_1),
-	.datab(src0_valid),
+cycloneive_lcell_comb \src_payload~2 (
+	.dataa(read_latency_shift_reg_08),
+	.datab(av_readdata_pre_30),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(src_payload),
 	.cout());
-defparam \src_payload~5 .lut_mask = 16'hEEEE;
-defparam \src_payload~5 .sum_lutc_input = "datac";
+defparam \src_payload~2 .lut_mask = 16'hEEEE;
+defparam \src_payload~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~9 (
-	.dataa(\src_payload~8_combout ),
-	.datab(source_addr_1),
+cycloneive_lcell_comb \src_data[0]~28 (
+	.dataa(\src_data[0]~24_combout ),
+	.datab(\src_data[0]~27_combout ),
 	.datac(src0_valid),
-	.datad(out_payload_7),
+	.datad(F_iw_0),
+	.cin(gnd),
+	.combout(src_data_0),
+	.cout());
+defparam \src_data[0]~28 .lut_mask = 16'hFFFE;
+defparam \src_data[0]~28 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~36 (
+	.dataa(\src_data[1]~32_combout ),
+	.datab(\src_data[1]~35_combout ),
+	.datac(src0_valid),
+	.datad(src_data_1),
+	.cin(gnd),
+	.combout(src_data_12),
+	.cout());
+defparam \src_data[1]~36 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~36 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~42 (
+	.dataa(\src_data[2]~40_combout ),
+	.datab(\src_data[2]~110_combout ),
+	.datac(src0_valid),
+	.datad(F_iw_2),
+	.cin(gnd),
+	.combout(src_data_2),
+	.cout());
+defparam \src_data[2]~42 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~42 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[3]~48 (
+	.dataa(\src_data[3]~46_combout ),
+	.datab(\src_data[3]~111_combout ),
+	.datac(src0_valid),
+	.datad(src_data_3),
+	.cin(gnd),
+	.combout(src_data_31),
+	.cout());
+defparam \src_data[3]~48 .lut_mask = 16'hFFFE;
+defparam \src_data[3]~48 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[4]~54 (
+	.dataa(\src_data[4]~52_combout ),
+	.datab(\src_data[4]~112_combout ),
+	.datac(src0_valid),
+	.datad(src_data_4),
+	.cin(gnd),
+	.combout(src_data_41),
+	.cout());
+defparam \src_data[4]~54 .lut_mask = 16'hFFFE;
+defparam \src_data[4]~54 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[5]~60 (
+	.dataa(\src_data[5]~58_combout ),
+	.datab(\src_data[5]~113_combout ),
+	.datac(src0_valid),
+	.datad(src_data_5),
+	.cin(gnd),
+	.combout(src_data_51),
+	.cout());
+defparam \src_data[5]~60 .lut_mask = 16'hFFFE;
+defparam \src_data[5]~60 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[6]~66 (
+	.dataa(\src_data[6]~64_combout ),
+	.datab(\src_data[6]~114_combout ),
+	.datac(src0_valid),
+	.datad(F_iw_6),
+	.cin(gnd),
+	.combout(src_data_6),
+	.cout());
+defparam \src_data[6]~66 .lut_mask = 16'hFFFE;
+defparam \src_data[6]~66 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[7]~72 (
+	.dataa(\src_data[7]~70_combout ),
+	.datab(\src_data[7]~115_combout ),
+	.datac(src0_valid),
+	.datad(F_iw_7),
+	.cin(gnd),
+	.combout(src_data_7),
+	.cout());
+defparam \src_data[7]~72 .lut_mask = 16'hFFFE;
+defparam \src_data[7]~72 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~7 (
+	.dataa(src0_valid),
+	.datab(source_addr_1),
+	.datac(mem_19_0),
+	.datad(comb),
 	.cin(gnd),
 	.combout(src_payload1),
 	.cout());
-defparam \src_payload~9 .lut_mask = 16'hFFFE;
-defparam \src_payload~9 .sum_lutc_input = "datac";
+defparam \src_payload~7 .lut_mask = 16'hFAFC;
+defparam \src_payload~7 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~14 (
-	.dataa(\src_payload~10_combout ),
-	.datab(\src_payload~13_combout ),
-	.datac(out_payload_6),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~11 (
+	.dataa(\src_payload~9_combout ),
+	.datab(\src_payload~10_combout ),
+	.datac(out_payload_7),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload2),
 	.cout());
-defparam \src_payload~14 .lut_mask = 16'hFFFE;
-defparam \src_payload~14 .sum_lutc_input = "datac";
+defparam \src_payload~11 .lut_mask = 16'hFFFE;
+defparam \src_payload~11 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~19 (
-	.dataa(\src_payload~15_combout ),
-	.datab(\src_payload~18_combout ),
-	.datac(out_payload_5),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~16 (
+	.dataa(\src_payload~12_combout ),
+	.datab(\src_payload~15_combout ),
+	.datac(out_payload_6),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload3),
 	.cout());
-defparam \src_payload~19 .lut_mask = 16'hFFFE;
-defparam \src_payload~19 .sum_lutc_input = "datac";
+defparam \src_payload~16 .lut_mask = 16'hFFFE;
+defparam \src_payload~16 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~24 (
-	.dataa(\src_payload~20_combout ),
-	.datab(\src_payload~23_combout ),
-	.datac(out_payload_4),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~21 (
+	.dataa(\src_payload~17_combout ),
+	.datab(\src_payload~20_combout ),
+	.datac(out_payload_5),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload4),
 	.cout());
-defparam \src_payload~24 .lut_mask = 16'hFFFE;
-defparam \src_payload~24 .sum_lutc_input = "datac";
+defparam \src_payload~21 .lut_mask = 16'hFFFE;
+defparam \src_payload~21 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~29 (
-	.dataa(\src_payload~25_combout ),
-	.datab(\src_payload~28_combout ),
-	.datac(out_payload_3),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~26 (
+	.dataa(\src_payload~22_combout ),
+	.datab(\src_payload~25_combout ),
+	.datac(out_payload_4),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload5),
 	.cout());
-defparam \src_payload~29 .lut_mask = 16'hFFFE;
-defparam \src_payload~29 .sum_lutc_input = "datac";
+defparam \src_payload~26 .lut_mask = 16'hFFFE;
+defparam \src_payload~26 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~34 (
-	.dataa(\src_payload~30_combout ),
-	.datab(\src_payload~33_combout ),
-	.datac(out_payload_2),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~31 (
+	.dataa(\src_payload~27_combout ),
+	.datab(\src_payload~30_combout ),
+	.datac(out_payload_3),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload6),
 	.cout());
-defparam \src_payload~34 .lut_mask = 16'hFFFE;
-defparam \src_payload~34 .sum_lutc_input = "datac";
+defparam \src_payload~31 .lut_mask = 16'hFFFE;
+defparam \src_payload~31 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~39 (
-	.dataa(\src_payload~35_combout ),
-	.datab(\src_payload~38_combout ),
-	.datac(out_payload_1),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~36 (
+	.dataa(\src_payload~32_combout ),
+	.datab(\src_payload~35_combout ),
+	.datac(out_payload_2),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload7),
 	.cout());
-defparam \src_payload~39 .lut_mask = 16'hFFFE;
-defparam \src_payload~39 .sum_lutc_input = "datac";
+defparam \src_payload~36 .lut_mask = 16'hFFFE;
+defparam \src_payload~36 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~44 (
-	.dataa(\src_payload~40_combout ),
-	.datab(\src_payload~43_combout ),
-	.datac(out_payload_0),
-	.datad(src_payload),
+cycloneive_lcell_comb \src_payload~41 (
+	.dataa(\src_payload~37_combout ),
+	.datab(\src_payload~40_combout ),
+	.datac(out_payload_1),
+	.datad(src_payload1),
 	.cin(gnd),
 	.combout(src_payload8),
 	.cout());
-defparam \src_payload~44 .lut_mask = 16'hFFFE;
-defparam \src_payload~44 .sum_lutc_input = "datac";
+defparam \src_payload~41 .lut_mask = 16'hFFFE;
+defparam \src_payload~41 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[15]~82 (
-	.dataa(\src_data[15]~80_combout ),
-	.datab(\src_data[15]~81_combout ),
+cycloneive_lcell_comb \src_payload~46 (
+	.dataa(\src_payload~42_combout ),
+	.datab(\src_payload~45_combout ),
+	.datac(out_payload_0),
+	.datad(src_payload1),
+	.cin(gnd),
+	.combout(src_payload9),
+	.cout());
+defparam \src_payload~46 .lut_mask = 16'hFFFE;
+defparam \src_payload~46 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~78 (
+	.dataa(\src_data[15]~76_combout ),
+	.datab(\src_data[15]~77_combout ),
 	.datac(src0_valid),
 	.datad(src_data_15),
 	.cin(gnd),
 	.combout(src_data_151),
 	.cout());
-defparam \src_data[15]~82 .lut_mask = 16'hFFFE;
-defparam \src_data[15]~82 .sum_lutc_input = "datac";
+defparam \src_data[15]~78 .lut_mask = 16'hFFFE;
+defparam \src_data[15]~78 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[14]~85 (
-	.dataa(\src_data[14]~83_combout ),
-	.datab(\src_data[14]~118_combout ),
+cycloneive_lcell_comb \src_data[14]~82 (
+	.dataa(\src_payload~48_combout ),
+	.datab(\src_data[14]~81_combout ),
 	.datac(src0_valid),
 	.datad(F_iw_14),
 	.cin(gnd),
 	.combout(src_data_14),
 	.cout());
-defparam \src_data[14]~85 .lut_mask = 16'hFFFE;
-defparam \src_data[14]~85 .sum_lutc_input = "datac";
+defparam \src_data[14]~82 .lut_mask = 16'hFFFE;
+defparam \src_data[14]~82 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[13]~89 (
-	.dataa(\src_payload~45_combout ),
-	.datab(\src_data[13]~88_combout ),
+cycloneive_lcell_comb \src_data[13]~86 (
+	.dataa(\src_payload~49_combout ),
+	.datab(\src_data[13]~85_combout ),
 	.datac(src0_valid),
 	.datad(src_data_13),
 	.cin(gnd),
 	.combout(src_data_131),
 	.cout());
-defparam \src_data[13]~89 .lut_mask = 16'hFFFE;
-defparam \src_data[13]~89 .sum_lutc_input = "datac";
+defparam \src_data[13]~86 .lut_mask = 16'hFFFE;
+defparam \src_data[13]~86 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[12]~92 (
-	.dataa(\src_data[12]~90_combout ),
-	.datab(\src_data[12]~119_combout ),
+cycloneive_lcell_comb \src_data[12]~89 (
+	.dataa(\src_data[12]~87_combout ),
+	.datab(\src_data[12]~116_combout ),
 	.datac(src0_valid),
 	.datad(F_iw_12),
 	.cin(gnd),
 	.combout(src_data_121),
 	.cout());
-defparam \src_data[12]~92 .lut_mask = 16'hFFFE;
-defparam \src_data[12]~92 .sum_lutc_input = "datac";
+defparam \src_data[12]~89 .lut_mask = 16'hFFFE;
+defparam \src_data[12]~89 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[11]~96 (
-	.dataa(\src_data[11]~94_combout ),
-	.datab(\src_data[11]~120_combout ),
-	.datac(src0_valid),
-	.datad(src_data_11),
+cycloneive_lcell_comb \src_data[11]~93 (
+	.dataa(\src_data[11]~92_combout ),
+	.datab(src0_valid),
+	.datac(src_data_11),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(src_data_111),
 	.cout());
-defparam \src_data[11]~96 .lut_mask = 16'hFFFE;
-defparam \src_data[11]~96 .sum_lutc_input = "datac";
+defparam \src_data[11]~93 .lut_mask = 16'hFEFE;
+defparam \src_data[11]~93 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[10]~101 (
-	.dataa(\src_data[10]~97_combout ),
-	.datab(\src_data[10]~100_combout ),
+cycloneive_lcell_comb \src_data[10]~97 (
+	.dataa(\src_payload~50_combout ),
+	.datab(\src_data[10]~96_combout ),
 	.datac(src0_valid),
 	.datad(F_iw_10),
 	.cin(gnd),
 	.combout(src_data_10),
 	.cout());
-defparam \src_data[10]~101 .lut_mask = 16'hFFFE;
-defparam \src_data[10]~101 .sum_lutc_input = "datac";
+defparam \src_data[10]~97 .lut_mask = 16'hFFFE;
+defparam \src_data[10]~97 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[9]~107 (
-	.dataa(\src_data[9]~105_combout ),
-	.datab(\src_data[9]~106_combout ),
+cycloneive_lcell_comb \src_data[9]~103 (
+	.dataa(\src_data[9]~101_combout ),
+	.datab(\src_data[9]~102_combout ),
 	.datac(src0_valid),
 	.datad(F_iw_9),
 	.cin(gnd),
 	.combout(src_data_9),
 	.cout());
-defparam \src_data[9]~107 .lut_mask = 16'hFFFE;
-defparam \src_data[9]~107 .sum_lutc_input = "datac";
+defparam \src_data[9]~103 .lut_mask = 16'hFFFE;
+defparam \src_data[9]~103 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[8]~113 (
-	.dataa(\src_data[8]~111_combout ),
-	.datab(\src_data[8]~121_combout ),
+cycloneive_lcell_comb \src_data[8]~109 (
+	.dataa(\src_data[8]~107_combout ),
+	.datab(\src_data[8]~108_combout ),
 	.datac(src0_valid),
 	.datad(F_iw_8),
 	.cin(gnd),
 	.combout(src_data_8),
 	.cout());
-defparam \src_data[8]~113 .lut_mask = 16'hFFFE;
-defparam \src_data[8]~113 .sum_lutc_input = "datac";
+defparam \src_data[8]~109 .lut_mask = 16'hFFFE;
+defparam \src_data[8]~109 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \WideOr1~0 (
 	.dataa(mem_84_0),
@@ -90362,11 +90359,33 @@ cycloneive_lcell_comb \src_payload~0 (
 defparam \src_payload~0 .lut_mask = 16'hEFFF;
 defparam \src_payload~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[0]~23 (
+cycloneive_lcell_comb \src_data[0]~21 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_02),
 	.datad(av_readdata_pre_01),
+	.cin(gnd),
+	.combout(\src_data[0]~21_combout ),
+	.cout());
+defparam \src_data[0]~21 .lut_mask = 16'hFFFE;
+defparam \src_data[0]~21 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[0]~22 (
+	.dataa(read_latency_shift_reg_03),
+	.datab(read_latency_shift_reg_04),
+	.datac(readdata_03),
+	.datad(readdata_04),
+	.cin(gnd),
+	.combout(\src_data[0]~22_combout ),
+	.cout());
+defparam \src_data[0]~22 .lut_mask = 16'hFFFE;
+defparam \src_data[0]~22 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[0]~23 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_0),
+	.datad(readdata_05),
 	.cin(gnd),
 	.combout(\src_data[0]~23_combout ),
 	.cout());
@@ -90374,21 +90393,32 @@ defparam \src_data[0]~23 .lut_mask = 16'hFFFE;
 defparam \src_data[0]~23 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[0]~24 (
-	.dataa(read_latency_shift_reg_03),
-	.datab(read_latency_shift_reg_04),
-	.datac(readdata_03),
-	.datad(readdata_04),
+	.dataa(\src_payload~0_combout ),
+	.datab(\src_data[0]~21_combout ),
+	.datac(\src_data[0]~22_combout ),
+	.datad(\src_data[0]~23_combout ),
 	.cin(gnd),
 	.combout(\src_data[0]~24_combout ),
 	.cout());
 defparam \src_data[0]~24 .lut_mask = 16'hFFFE;
 defparam \src_data[0]~24 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~1 (
+	.dataa(out_data_buffer_0),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped),
+	.datad(dreg_01),
+	.cin(gnd),
+	.combout(\src_payload~1_combout ),
+	.cout());
+defparam \src_payload~1 .lut_mask = 16'hAFFA;
+defparam \src_payload~1 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_data[0]~25 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_0),
-	.datad(readdata_05),
+	.dataa(\src_payload~1_combout ),
+	.datab(src_payload),
+	.datac(read_latency_shift_reg_07),
+	.datad(readdata_01),
 	.cin(gnd),
 	.combout(\src_data[0]~25_combout ),
 	.cout());
@@ -90396,10 +90426,10 @@ defparam \src_data[0]~25 .lut_mask = 16'hFFFE;
 defparam \src_data[0]~25 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[0]~26 (
-	.dataa(\src_payload~0_combout ),
-	.datab(\src_data[0]~23_combout ),
-	.datac(\src_data[0]~24_combout ),
-	.datad(\src_data[0]~25_combout ),
+	.dataa(out_valid),
+	.datab(out_valid1),
+	.datac(out_data_buffer_01),
+	.datad(out_data_buffer_02),
 	.cin(gnd),
 	.combout(\src_data[0]~26_combout ),
 	.cout());
@@ -90407,195 +90437,19 @@ defparam \src_data[0]~26 .lut_mask = 16'hFFFE;
 defparam \src_data[0]~26 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[0]~27 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_0),
-	.datad(out_data_buffer_01),
+	.dataa(\src_data[0]~25_combout ),
+	.datab(\src_data[0]~26_combout ),
+	.datac(read_latency_shift_reg_09),
+	.datad(av_readdata_pre_02),
 	.cin(gnd),
 	.combout(\src_data[0]~27_combout ),
 	.cout());
 defparam \src_data[0]~27 .lut_mask = 16'hFFFE;
 defparam \src_data[0]~27 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[0]~28 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_01),
-	.datad(av_readdata_pre_02),
-	.cin(gnd),
-	.combout(\src_data[0]~28_combout ),
-	.cout());
-defparam \src_data[0]~28 .lut_mask = 16'hFFFE;
-defparam \src_data[0]~28 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[0]~29 (
-	.dataa(\src_data[0]~27_combout ),
-	.datab(\src_data[0]~28_combout ),
-	.datac(out_valid2),
-	.datad(out_data_buffer_02),
-	.cin(gnd),
-	.combout(\src_data[0]~29_combout ),
-	.cout());
-defparam \src_data[0]~29 .lut_mask = 16'hFFFE;
-defparam \src_data[0]~29 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~1 (
-	.dataa(read_latency_shift_reg_01),
-	.datab(av_readdata_pre_1),
-	.datac(mem_84_0),
-	.datad(mem_66_0),
-	.cin(gnd),
-	.combout(\src_payload~1_combout ),
-	.cout());
-defparam \src_payload~1 .lut_mask = 16'hEFFF;
-defparam \src_payload~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~31 (
-	.dataa(read_latency_shift_reg_0),
-	.datab(read_latency_shift_reg_02),
-	.datac(readdata_12),
-	.datad(av_readdata_pre_110),
-	.cin(gnd),
-	.combout(\src_data[1]~31_combout ),
-	.cout());
-defparam \src_data[1]~31 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~31 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~32 (
-	.dataa(read_latency_shift_reg_03),
-	.datab(read_latency_shift_reg_04),
-	.datac(readdata_13),
-	.datad(readdata_14),
-	.cin(gnd),
-	.combout(\src_data[1]~32_combout ),
-	.cout());
-defparam \src_data[1]~32 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~32 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~33 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_1),
-	.datad(readdata_15),
-	.cin(gnd),
-	.combout(\src_data[1]~33_combout ),
-	.cout());
-defparam \src_data[1]~33 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~33 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~34 (
-	.dataa(\src_payload~1_combout ),
-	.datab(\src_data[1]~31_combout ),
-	.datac(\src_data[1]~32_combout ),
-	.datad(\src_data[1]~33_combout ),
-	.cin(gnd),
-	.combout(\src_data[1]~34_combout ),
-	.cout());
-defparam \src_data[1]~34 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~34 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~35 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_1),
-	.datad(out_data_buffer_11),
-	.cin(gnd),
-	.combout(\src_data[1]~35_combout ),
-	.cout());
-defparam \src_data[1]~35 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~35 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~36 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_11),
-	.datad(av_readdata_pre_111),
-	.cin(gnd),
-	.combout(\src_data[1]~36_combout ),
-	.cout());
-defparam \src_data[1]~36 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~36 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[1]~37 (
-	.dataa(\src_data[1]~35_combout ),
-	.datab(\src_data[1]~36_combout ),
-	.datac(out_valid2),
-	.datad(out_data_buffer_12),
-	.cin(gnd),
-	.combout(\src_data[1]~37_combout ),
-	.cout());
-defparam \src_data[1]~37 .lut_mask = 16'hFFFE;
-defparam \src_data[1]~37 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~2 (
-	.dataa(read_latency_shift_reg_01),
-	.datab(av_readdata_pre_2),
-	.datac(mem_84_0),
-	.datad(mem_66_0),
-	.cin(gnd),
-	.combout(\src_payload~2_combout ),
-	.cout());
-defparam \src_payload~2 .lut_mask = 16'hEFFF;
-defparam \src_payload~2 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~40 (
-	.dataa(read_latency_shift_reg_0),
-	.datab(read_latency_shift_reg_02),
-	.datac(readdata_2),
-	.datad(av_readdata_pre_24),
-	.cin(gnd),
-	.combout(\src_data[2]~40_combout ),
-	.cout());
-defparam \src_data[2]~40 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~40 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~41 (
-	.dataa(read_latency_shift_reg_04),
-	.datab(read_latency_shift_reg_05),
-	.datac(readdata_24),
-	.datad(readdata_25),
-	.cin(gnd),
-	.combout(\src_data[2]~41_combout ),
-	.cout());
-defparam \src_data[2]~41 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~41 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~42 (
-	.dataa(read_latency_shift_reg_06),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_26),
-	.datad(readdata_27),
-	.cin(gnd),
-	.combout(\src_data[2]~42_combout ),
-	.cout());
-defparam \src_data[2]~42 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~42 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~43 (
-	.dataa(\src_payload~2_combout ),
-	.datab(\src_data[2]~40_combout ),
-	.datac(\src_data[2]~41_combout ),
-	.datad(\src_data[2]~42_combout ),
-	.cin(gnd),
-	.combout(\src_data[2]~43_combout ),
-	.cout());
-defparam \src_data[2]~43 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~43 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[2]~44 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(out_valid1),
-	.datac(out_data_buffer_2),
-	.datad(av_readdata_pre_25),
-	.cin(gnd),
-	.combout(\src_data[2]~44_combout ),
-	.cout());
-defparam \src_data[2]~44 .lut_mask = 16'hFFFE;
-defparam \src_data[2]~44 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \src_payload~3 (
 	.dataa(read_latency_shift_reg_01),
-	.datab(av_readdata_pre_3),
+	.datab(av_readdata_pre_1),
 	.datac(mem_84_0),
 	.datad(mem_66_0),
 	.cin(gnd),
@@ -90604,11 +90458,220 @@ cycloneive_lcell_comb \src_payload~3 (
 defparam \src_payload~3 .lut_mask = 16'hEFFF;
 defparam \src_payload~3 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[3]~46 (
+cycloneive_lcell_comb \src_data[1]~29 (
+	.dataa(read_latency_shift_reg_0),
+	.datab(read_latency_shift_reg_02),
+	.datac(readdata_12),
+	.datad(av_readdata_pre_110),
+	.cin(gnd),
+	.combout(\src_data[1]~29_combout ),
+	.cout());
+defparam \src_data[1]~29 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~29 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~30 (
+	.dataa(read_latency_shift_reg_03),
+	.datab(read_latency_shift_reg_04),
+	.datac(readdata_13),
+	.datad(readdata_14),
+	.cin(gnd),
+	.combout(\src_data[1]~30_combout ),
+	.cout());
+defparam \src_data[1]~30 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~30 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~31 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_1),
+	.datad(readdata_15),
+	.cin(gnd),
+	.combout(\src_data[1]~31_combout ),
+	.cout());
+defparam \src_data[1]~31 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~31 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~32 (
+	.dataa(\src_payload~3_combout ),
+	.datab(\src_data[1]~29_combout ),
+	.datac(\src_data[1]~30_combout ),
+	.datad(\src_data[1]~31_combout ),
+	.cin(gnd),
+	.combout(\src_data[1]~32_combout ),
+	.cout());
+defparam \src_data[1]~32 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~32 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~4 (
+	.dataa(out_data_buffer_1),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped),
+	.datad(dreg_01),
+	.cin(gnd),
+	.combout(\src_payload~4_combout ),
+	.cout());
+defparam \src_payload~4 .lut_mask = 16'hAFFA;
+defparam \src_payload~4 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~33 (
+	.dataa(src_payload),
+	.datab(\src_payload~4_combout ),
+	.datac(read_latency_shift_reg_07),
+	.datad(readdata_11),
+	.cin(gnd),
+	.combout(\src_data[1]~33_combout ),
+	.cout());
+defparam \src_data[1]~33 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~33 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~34 (
+	.dataa(out_valid),
+	.datab(out_valid1),
+	.datac(out_data_buffer_11),
+	.datad(out_data_buffer_12),
+	.cin(gnd),
+	.combout(\src_data[1]~34_combout ),
+	.cout());
+defparam \src_data[1]~34 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~34 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[1]~35 (
+	.dataa(\src_data[1]~33_combout ),
+	.datab(\src_data[1]~34_combout ),
+	.datac(read_latency_shift_reg_09),
+	.datad(av_readdata_pre_111),
+	.cin(gnd),
+	.combout(\src_data[1]~35_combout ),
+	.cout());
+defparam \src_data[1]~35 .lut_mask = 16'hFFFE;
+defparam \src_data[1]~35 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~5 (
+	.dataa(read_latency_shift_reg_01),
+	.datab(av_readdata_pre_2),
+	.datac(mem_84_0),
+	.datad(mem_66_0),
+	.cin(gnd),
+	.combout(\src_payload~5_combout ),
+	.cout());
+defparam \src_payload~5 .lut_mask = 16'hEFFF;
+defparam \src_payload~5 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~37 (
+	.dataa(read_latency_shift_reg_0),
+	.datab(read_latency_shift_reg_02),
+	.datac(readdata_2),
+	.datad(av_readdata_pre_24),
+	.cin(gnd),
+	.combout(\src_data[2]~37_combout ),
+	.cout());
+defparam \src_data[2]~37 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~37 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~38 (
+	.dataa(read_latency_shift_reg_04),
+	.datab(read_latency_shift_reg_05),
+	.datac(readdata_24),
+	.datad(readdata_25),
+	.cin(gnd),
+	.combout(\src_data[2]~38_combout ),
+	.cout());
+defparam \src_data[2]~38 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~38 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~39 (
+	.dataa(read_latency_shift_reg_06),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_26),
+	.datad(readdata_27),
+	.cin(gnd),
+	.combout(\src_data[2]~39_combout ),
+	.cout());
+defparam \src_data[2]~39 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~39 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~40 (
+	.dataa(\src_payload~5_combout ),
+	.datab(\src_data[2]~37_combout ),
+	.datac(\src_data[2]~38_combout ),
+	.datad(\src_data[2]~39_combout ),
+	.cin(gnd),
+	.combout(\src_data[2]~40_combout ),
+	.cout());
+defparam \src_data[2]~40 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~40 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~41 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_2),
+	.datad(av_readdata_pre_25),
+	.cin(gnd),
+	.combout(\src_data[2]~41_combout ),
+	.cout());
+defparam \src_data[2]~41 .lut_mask = 16'hFFFE;
+defparam \src_data[2]~41 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[2]~110 (
+	.dataa(out_data_toggle_flopped),
+	.datab(dreg_01),
+	.datac(\src_data[2]~41_combout ),
+	.datad(out_data_buffer_21),
+	.cin(gnd),
+	.combout(\src_data[2]~110_combout ),
+	.cout());
+defparam \src_data[2]~110 .lut_mask = 16'hFFF6;
+defparam \src_data[2]~110 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~6 (
+	.dataa(read_latency_shift_reg_01),
+	.datab(av_readdata_pre_3),
+	.datac(mem_84_0),
+	.datad(mem_66_0),
+	.cin(gnd),
+	.combout(\src_payload~6_combout ),
+	.cout());
+defparam \src_payload~6 .lut_mask = 16'hEFFF;
+defparam \src_payload~6 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[3]~43 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_3),
 	.datad(av_readdata_pre_31),
+	.cin(gnd),
+	.combout(\src_data[3]~43_combout ),
+	.cout());
+defparam \src_data[3]~43 .lut_mask = 16'hFFFE;
+defparam \src_data[3]~43 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[3]~44 (
+	.dataa(read_latency_shift_reg_04),
+	.datab(read_latency_shift_reg_05),
+	.datac(readdata_31),
+	.datad(readdata_32),
+	.cin(gnd),
+	.combout(\src_data[3]~44_combout ),
+	.cout());
+defparam \src_data[3]~44 .lut_mask = 16'hFFFE;
+defparam \src_data[3]~44 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[3]~45 (
+	.dataa(read_latency_shift_reg_06),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_33),
+	.datad(readdata_34),
+	.cin(gnd),
+	.combout(\src_data[3]~45_combout ),
+	.cout());
+defparam \src_data[3]~45 .lut_mask = 16'hFFFE;
+defparam \src_data[3]~45 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[3]~46 (
+	.dataa(\src_payload~6_combout ),
+	.datab(\src_data[3]~43_combout ),
+	.datac(\src_data[3]~44_combout ),
+	.datad(\src_data[3]~45_combout ),
 	.cin(gnd),
 	.combout(\src_data[3]~46_combout ),
 	.cout());
@@ -90616,527 +90679,461 @@ defparam \src_data[3]~46 .lut_mask = 16'hFFFE;
 defparam \src_data[3]~46 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_data[3]~47 (
-	.dataa(read_latency_shift_reg_04),
-	.datab(read_latency_shift_reg_05),
-	.datac(readdata_31),
-	.datad(readdata_32),
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_3),
+	.datad(av_readdata_pre_32),
 	.cin(gnd),
 	.combout(\src_data[3]~47_combout ),
 	.cout());
 defparam \src_data[3]~47 .lut_mask = 16'hFFFE;
 defparam \src_data[3]~47 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[3]~48 (
-	.dataa(read_latency_shift_reg_06),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_33),
-	.datad(readdata_34),
-	.cin(gnd),
-	.combout(\src_data[3]~48_combout ),
-	.cout());
-defparam \src_data[3]~48 .lut_mask = 16'hFFFE;
-defparam \src_data[3]~48 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[3]~49 (
-	.dataa(\src_payload~3_combout ),
-	.datab(\src_data[3]~46_combout ),
+cycloneive_lcell_comb \src_data[3]~111 (
+	.dataa(out_data_toggle_flopped),
+	.datab(dreg_01),
 	.datac(\src_data[3]~47_combout ),
-	.datad(\src_data[3]~48_combout ),
-	.cin(gnd),
-	.combout(\src_data[3]~49_combout ),
-	.cout());
-defparam \src_data[3]~49 .lut_mask = 16'hFFFE;
-defparam \src_data[3]~49 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[3]~50 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(out_valid1),
-	.datac(out_data_buffer_3),
-	.datad(av_readdata_pre_32),
-	.cin(gnd),
-	.combout(\src_data[3]~50_combout ),
-	.cout());
-defparam \src_data[3]~50 .lut_mask = 16'hFFFE;
-defparam \src_data[3]~50 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[3]~51 (
-	.dataa(\src_data[3]~49_combout ),
-	.datab(\src_data[3]~50_combout ),
-	.datac(out_valid),
 	.datad(out_data_buffer_31),
 	.cin(gnd),
-	.combout(\src_data[3]~51_combout ),
+	.combout(\src_data[3]~111_combout ),
 	.cout());
-defparam \src_data[3]~51 .lut_mask = 16'hFFFE;
-defparam \src_data[3]~51 .sum_lutc_input = "datac";
+defparam \src_data[3]~111 .lut_mask = 16'hFFF6;
+defparam \src_data[3]~111 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~4 (
-	.dataa(read_latency_shift_reg_01),
-	.datab(av_readdata_pre_4),
-	.datac(mem_84_0),
-	.datad(mem_66_0),
-	.cin(gnd),
-	.combout(\src_payload~4_combout ),
-	.cout());
-defparam \src_payload~4 .lut_mask = 16'hEFFF;
-defparam \src_payload~4 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~53 (
+cycloneive_lcell_comb \src_data[4]~49 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_4),
 	.datad(av_readdata_pre_41),
+	.cin(gnd),
+	.combout(\src_data[4]~49_combout ),
+	.cout());
+defparam \src_data[4]~49 .lut_mask = 16'hFFFE;
+defparam \src_data[4]~49 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[4]~50 (
+	.dataa(\src_data[4]~49_combout ),
+	.datab(src0_valid1),
+	.datac(av_readdata_pre_4),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_data[4]~50_combout ),
+	.cout());
+defparam \src_data[4]~50 .lut_mask = 16'hFEFE;
+defparam \src_data[4]~50 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[4]~51 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_41),
+	.datad(readdata_42),
+	.cin(gnd),
+	.combout(\src_data[4]~51_combout ),
+	.cout());
+defparam \src_data[4]~51 .lut_mask = 16'hFFFE;
+defparam \src_data[4]~51 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[4]~52 (
+	.dataa(\src_data[4]~50_combout ),
+	.datab(\src_data[4]~51_combout ),
+	.datac(out_valid2),
+	.datad(out_data_buffer_4),
+	.cin(gnd),
+	.combout(\src_data[4]~52_combout ),
+	.cout());
+defparam \src_data[4]~52 .lut_mask = 16'hFFFE;
+defparam \src_data[4]~52 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[4]~53 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_43),
+	.datad(av_readdata_pre_42),
 	.cin(gnd),
 	.combout(\src_data[4]~53_combout ),
 	.cout());
 defparam \src_data[4]~53 .lut_mask = 16'hFFFE;
 defparam \src_data[4]~53 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[4]~54 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_41),
-	.datad(readdata_42),
-	.cin(gnd),
-	.combout(\src_data[4]~54_combout ),
-	.cout());
-defparam \src_data[4]~54 .lut_mask = 16'hFFFE;
-defparam \src_data[4]~54 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~55 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_43),
-	.datad(av_readdata_pre_30),
-	.cin(gnd),
-	.combout(\src_data[4]~55_combout ),
-	.cout());
-defparam \src_data[4]~55 .lut_mask = 16'hFFFE;
-defparam \src_data[4]~55 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~56 (
-	.dataa(\src_payload~4_combout ),
-	.datab(\src_data[4]~53_combout ),
-	.datac(\src_data[4]~54_combout ),
-	.datad(\src_data[4]~55_combout ),
-	.cin(gnd),
-	.combout(\src_data[4]~56_combout ),
-	.cout());
-defparam \src_data[4]~56 .lut_mask = 16'hFFFE;
-defparam \src_data[4]~56 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~57 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(out_valid1),
-	.datac(out_data_buffer_4),
-	.datad(av_readdata_pre_42),
-	.cin(gnd),
-	.combout(\src_data[4]~57_combout ),
-	.cout());
-defparam \src_data[4]~57 .lut_mask = 16'hFFFE;
-defparam \src_data[4]~57 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[4]~114 (
-	.dataa(out_data_toggle_flopped),
-	.datab(dreg_01),
-	.datac(\src_data[4]~57_combout ),
+cycloneive_lcell_comb \src_data[4]~112 (
+	.dataa(out_data_toggle_flopped1),
+	.datab(dreg_0),
+	.datac(\src_data[4]~53_combout ),
 	.datad(out_data_buffer_41),
 	.cin(gnd),
-	.combout(\src_data[4]~114_combout ),
+	.combout(\src_data[4]~112_combout ),
 	.cout());
-defparam \src_data[4]~114 .lut_mask = 16'hFFF6;
-defparam \src_data[4]~114 .sum_lutc_input = "datac";
+defparam \src_data[4]~112 .lut_mask = 16'hFFF6;
+defparam \src_data[4]~112 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[5]~59 (
+cycloneive_lcell_comb \src_data[5]~55 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_5),
 	.datad(av_readdata_pre_51),
+	.cin(gnd),
+	.combout(\src_data[5]~55_combout ),
+	.cout());
+defparam \src_data[5]~55 .lut_mask = 16'hFFFE;
+defparam \src_data[5]~55 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[5]~56 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_51),
+	.datad(readdata_52),
+	.cin(gnd),
+	.combout(\src_data[5]~56_combout ),
+	.cout());
+defparam \src_data[5]~56 .lut_mask = 16'hFFFE;
+defparam \src_data[5]~56 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[5]~57 (
+	.dataa(src_payload),
+	.datab(\src_data[5]~56_combout ),
+	.datac(read_latency_shift_reg_07),
+	.datad(readdata_53),
+	.cin(gnd),
+	.combout(\src_data[5]~57_combout ),
+	.cout());
+defparam \src_data[5]~57 .lut_mask = 16'hFFFE;
+defparam \src_data[5]~57 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[5]~58 (
+	.dataa(\src_data[5]~55_combout ),
+	.datab(\src_data[5]~57_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_5),
+	.cin(gnd),
+	.combout(\src_data[5]~58_combout ),
+	.cout());
+defparam \src_data[5]~58 .lut_mask = 16'hFFFE;
+defparam \src_data[5]~58 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[5]~59 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_5),
+	.datad(av_readdata_pre_52),
 	.cin(gnd),
 	.combout(\src_data[5]~59_combout ),
 	.cout());
 defparam \src_data[5]~59 .lut_mask = 16'hFFFE;
 defparam \src_data[5]~59 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[5]~60 (
-	.dataa(\src_data[5]~59_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_5),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\src_data[5]~60_combout ),
-	.cout());
-defparam \src_data[5]~60 .lut_mask = 16'hFEFE;
-defparam \src_data[5]~60 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[5]~61 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_51),
-	.datad(readdata_52),
-	.cin(gnd),
-	.combout(\src_data[5]~61_combout ),
-	.cout());
-defparam \src_data[5]~61 .lut_mask = 16'hFFFE;
-defparam \src_data[5]~61 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[5]~62 (
-	.dataa(\src_data[5]~60_combout ),
-	.datab(\src_data[5]~61_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_5),
-	.cin(gnd),
-	.combout(\src_data[5]~62_combout ),
-	.cout());
-defparam \src_data[5]~62 .lut_mask = 16'hFFFE;
-defparam \src_data[5]~62 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[5]~63 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_53),
-	.datad(av_readdata_pre_52),
-	.cin(gnd),
-	.combout(\src_data[5]~63_combout ),
-	.cout());
-defparam \src_data[5]~63 .lut_mask = 16'hFFFE;
-defparam \src_data[5]~63 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[5]~115 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[5]~63_combout ),
+cycloneive_lcell_comb \src_data[5]~113 (
+	.dataa(out_data_toggle_flopped),
+	.datab(dreg_01),
+	.datac(\src_data[5]~59_combout ),
 	.datad(out_data_buffer_51),
 	.cin(gnd),
-	.combout(\src_data[5]~115_combout ),
+	.combout(\src_data[5]~113_combout ),
 	.cout());
-defparam \src_data[5]~115 .lut_mask = 16'hFFF6;
-defparam \src_data[5]~115 .sum_lutc_input = "datac";
+defparam \src_data[5]~113 .lut_mask = 16'hFFF6;
+defparam \src_data[5]~113 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[6]~65 (
+cycloneive_lcell_comb \src_data[6]~61 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_6),
 	.datad(av_readdata_pre_61),
+	.cin(gnd),
+	.combout(\src_data[6]~61_combout ),
+	.cout());
+defparam \src_data[6]~61 .lut_mask = 16'hFFFE;
+defparam \src_data[6]~61 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[6]~62 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_61),
+	.datad(readdata_62),
+	.cin(gnd),
+	.combout(\src_data[6]~62_combout ),
+	.cout());
+defparam \src_data[6]~62 .lut_mask = 16'hFFFE;
+defparam \src_data[6]~62 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[6]~63 (
+	.dataa(src_payload),
+	.datab(\src_data[6]~62_combout ),
+	.datac(read_latency_shift_reg_07),
+	.datad(readdata_63),
+	.cin(gnd),
+	.combout(\src_data[6]~63_combout ),
+	.cout());
+defparam \src_data[6]~63 .lut_mask = 16'hFFFE;
+defparam \src_data[6]~63 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[6]~64 (
+	.dataa(\src_data[6]~61_combout ),
+	.datab(\src_data[6]~63_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_6),
+	.cin(gnd),
+	.combout(\src_data[6]~64_combout ),
+	.cout());
+defparam \src_data[6]~64 .lut_mask = 16'hFFFE;
+defparam \src_data[6]~64 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[6]~65 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_6),
+	.datad(av_readdata_pre_62),
 	.cin(gnd),
 	.combout(\src_data[6]~65_combout ),
 	.cout());
 defparam \src_data[6]~65 .lut_mask = 16'hFFFE;
 defparam \src_data[6]~65 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[6]~66 (
-	.dataa(\src_data[6]~65_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_6),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\src_data[6]~66_combout ),
-	.cout());
-defparam \src_data[6]~66 .lut_mask = 16'hFEFE;
-defparam \src_data[6]~66 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[6]~67 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_61),
-	.datad(readdata_62),
-	.cin(gnd),
-	.combout(\src_data[6]~67_combout ),
-	.cout());
-defparam \src_data[6]~67 .lut_mask = 16'hFFFE;
-defparam \src_data[6]~67 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[6]~68 (
-	.dataa(\src_data[6]~66_combout ),
-	.datab(\src_data[6]~67_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_6),
-	.cin(gnd),
-	.combout(\src_data[6]~68_combout ),
-	.cout());
-defparam \src_data[6]~68 .lut_mask = 16'hFFFE;
-defparam \src_data[6]~68 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[6]~69 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_63),
-	.datad(av_readdata_pre_62),
-	.cin(gnd),
-	.combout(\src_data[6]~69_combout ),
-	.cout());
-defparam \src_data[6]~69 .lut_mask = 16'hFFFE;
-defparam \src_data[6]~69 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[6]~116 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[6]~69_combout ),
+cycloneive_lcell_comb \src_data[6]~114 (
+	.dataa(out_data_toggle_flopped),
+	.datab(dreg_01),
+	.datac(\src_data[6]~65_combout ),
 	.datad(out_data_buffer_61),
 	.cin(gnd),
-	.combout(\src_data[6]~116_combout ),
+	.combout(\src_data[6]~114_combout ),
 	.cout());
-defparam \src_data[6]~116 .lut_mask = 16'hFFF6;
-defparam \src_data[6]~116 .sum_lutc_input = "datac";
+defparam \src_data[6]~114 .lut_mask = 16'hFFF6;
+defparam \src_data[6]~114 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[7]~71 (
+cycloneive_lcell_comb \src_data[7]~67 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_02),
 	.datac(readdata_7),
 	.datad(av_readdata_pre_71),
+	.cin(gnd),
+	.combout(\src_data[7]~67_combout ),
+	.cout());
+defparam \src_data[7]~67 .lut_mask = 16'hFFFE;
+defparam \src_data[7]~67 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[7]~68 (
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_71),
+	.datad(readdata_72),
+	.cin(gnd),
+	.combout(\src_data[7]~68_combout ),
+	.cout());
+defparam \src_data[7]~68 .lut_mask = 16'hFFFE;
+defparam \src_data[7]~68 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[7]~69 (
+	.dataa(src_payload),
+	.datab(\src_data[7]~68_combout ),
+	.datac(read_latency_shift_reg_07),
+	.datad(readdata_73),
+	.cin(gnd),
+	.combout(\src_data[7]~69_combout ),
+	.cout());
+defparam \src_data[7]~69 .lut_mask = 16'hFFFE;
+defparam \src_data[7]~69 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[7]~70 (
+	.dataa(\src_data[7]~67_combout ),
+	.datab(\src_data[7]~69_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_7),
+	.cin(gnd),
+	.combout(\src_data[7]~70_combout ),
+	.cout());
+defparam \src_data[7]~70 .lut_mask = 16'hFFFE;
+defparam \src_data[7]~70 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[7]~71 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_7),
+	.datad(av_readdata_pre_72),
 	.cin(gnd),
 	.combout(\src_data[7]~71_combout ),
 	.cout());
 defparam \src_data[7]~71 .lut_mask = 16'hFFFE;
 defparam \src_data[7]~71 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[7]~72 (
-	.dataa(\src_data[7]~71_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_7),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\src_data[7]~72_combout ),
-	.cout());
-defparam \src_data[7]~72 .lut_mask = 16'hFEFE;
-defparam \src_data[7]~72 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[7]~73 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_71),
-	.datad(readdata_72),
-	.cin(gnd),
-	.combout(\src_data[7]~73_combout ),
-	.cout());
-defparam \src_data[7]~73 .lut_mask = 16'hFFFE;
-defparam \src_data[7]~73 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[7]~74 (
-	.dataa(\src_data[7]~72_combout ),
-	.datab(\src_data[7]~73_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_7),
-	.cin(gnd),
-	.combout(\src_data[7]~74_combout ),
-	.cout());
-defparam \src_data[7]~74 .lut_mask = 16'hFFFE;
-defparam \src_data[7]~74 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[7]~75 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_73),
-	.datad(av_readdata_pre_72),
-	.cin(gnd),
-	.combout(\src_data[7]~75_combout ),
-	.cout());
-defparam \src_data[7]~75 .lut_mask = 16'hFFFE;
-defparam \src_data[7]~75 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[7]~117 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[7]~75_combout ),
+cycloneive_lcell_comb \src_data[7]~115 (
+	.dataa(out_data_toggle_flopped),
+	.datab(dreg_01),
+	.datac(\src_data[7]~71_combout ),
 	.datad(out_data_buffer_71),
 	.cin(gnd),
-	.combout(\src_data[7]~117_combout ),
+	.combout(\src_data[7]~115_combout ),
 	.cout());
-defparam \src_data[7]~117 .lut_mask = 16'hFFF6;
-defparam \src_data[7]~117 .sum_lutc_input = "datac";
+defparam \src_data[7]~115 .lut_mask = 16'hFFF6;
+defparam \src_data[7]~115 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~6 (
+cycloneive_lcell_comb \src_payload~8 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_23),
 	.datad(readdata_232),
-	.cin(gnd),
-	.combout(\src_payload~6_combout ),
-	.cout());
-defparam \src_payload~6 .lut_mask = 16'hFFFE;
-defparam \src_payload~6 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~7 (
-	.dataa(out_valid1),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_231),
-	.datad(out_data_buffer_23),
-	.cin(gnd),
-	.combout(\src_payload~7_combout ),
-	.cout());
-defparam \src_payload~7 .lut_mask = 16'hFFFE;
-defparam \src_payload~7 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~8 (
-	.dataa(\src_payload~6_combout ),
-	.datab(\src_payload~7_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_23),
 	.cin(gnd),
 	.combout(\src_payload~8_combout ),
 	.cout());
 defparam \src_payload~8 .lut_mask = 16'hFFFE;
 defparam \src_payload~8 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~9 (
+	.dataa(\src_payload~8_combout ),
+	.datab(src0_valid1),
+	.datac(av_readdata_pre_23),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_payload~9_combout ),
+	.cout());
+defparam \src_payload~9 .lut_mask = 16'hFEFE;
+defparam \src_payload~9 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~10 (
+	.dataa(out_valid),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_231),
+	.datad(out_data_buffer_23),
+	.cin(gnd),
+	.combout(\src_payload~10_combout ),
+	.cout());
+defparam \src_payload~10 .lut_mask = 16'hFFFE;
+defparam \src_payload~10 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~12 (
 	.dataa(read_latency_shift_reg_07),
 	.datab(readdata_22),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_payload~10_combout ),
+	.combout(\src_payload~12_combout ),
 	.cout());
-defparam \src_payload~10 .lut_mask = 16'hEEEE;
-defparam \src_payload~10 .sum_lutc_input = "datac";
+defparam \src_payload~12 .lut_mask = 16'hEEEE;
+defparam \src_payload~12 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~11 (
+cycloneive_lcell_comb \src_payload~13 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_221),
 	.datad(readdata_222),
-	.cin(gnd),
-	.combout(\src_payload~11_combout ),
-	.cout());
-defparam \src_payload~11 .lut_mask = 16'hFFFE;
-defparam \src_payload~11 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~12 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_22),
-	.datad(out_data_buffer_221),
-	.cin(gnd),
-	.combout(\src_payload~12_combout ),
-	.cout());
-defparam \src_payload~12 .lut_mask = 16'hFFFE;
-defparam \src_payload~12 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~13 (
-	.dataa(\src_payload~11_combout ),
-	.datab(\src_payload~12_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_22),
 	.cin(gnd),
 	.combout(\src_payload~13_combout ),
 	.cout());
 defparam \src_payload~13 .lut_mask = 16'hFFFE;
 defparam \src_payload~13 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~14 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_22),
+	.datad(out_data_buffer_221),
+	.cin(gnd),
+	.combout(\src_payload~14_combout ),
+	.cout());
+defparam \src_payload~14 .lut_mask = 16'hFFFE;
+defparam \src_payload~14 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~15 (
+	.dataa(\src_payload~13_combout ),
+	.datab(\src_payload~14_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_22),
+	.cin(gnd),
+	.combout(\src_payload~15_combout ),
+	.cout());
+defparam \src_payload~15 .lut_mask = 16'hFFFE;
+defparam \src_payload~15 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~17 (
 	.dataa(read_latency_shift_reg_07),
 	.datab(readdata_21),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_payload~15_combout ),
+	.combout(\src_payload~17_combout ),
 	.cout());
-defparam \src_payload~15 .lut_mask = 16'hEEEE;
-defparam \src_payload~15 .sum_lutc_input = "datac";
+defparam \src_payload~17 .lut_mask = 16'hEEEE;
+defparam \src_payload~17 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~16 (
+cycloneive_lcell_comb \src_payload~18 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_211),
 	.datad(readdata_212),
-	.cin(gnd),
-	.combout(\src_payload~16_combout ),
-	.cout());
-defparam \src_payload~16 .lut_mask = 16'hFFFE;
-defparam \src_payload~16 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~17 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_211),
-	.datad(out_data_buffer_212),
-	.cin(gnd),
-	.combout(\src_payload~17_combout ),
-	.cout());
-defparam \src_payload~17 .lut_mask = 16'hFFFE;
-defparam \src_payload~17 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~18 (
-	.dataa(\src_payload~16_combout ),
-	.datab(\src_payload~17_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_21),
 	.cin(gnd),
 	.combout(\src_payload~18_combout ),
 	.cout());
 defparam \src_payload~18 .lut_mask = 16'hFFFE;
 defparam \src_payload~18 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~19 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_211),
+	.datad(out_data_buffer_212),
+	.cin(gnd),
+	.combout(\src_payload~19_combout ),
+	.cout());
+defparam \src_payload~19 .lut_mask = 16'hFFFE;
+defparam \src_payload~19 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~20 (
+	.dataa(\src_payload~18_combout ),
+	.datab(\src_payload~19_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_21),
+	.cin(gnd),
+	.combout(\src_payload~20_combout ),
+	.cout());
+defparam \src_payload~20 .lut_mask = 16'hFFFE;
+defparam \src_payload~20 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~22 (
 	.dataa(read_latency_shift_reg_07),
 	.datab(readdata_20),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_payload~20_combout ),
+	.combout(\src_payload~22_combout ),
 	.cout());
-defparam \src_payload~20 .lut_mask = 16'hEEEE;
-defparam \src_payload~20 .sum_lutc_input = "datac";
+defparam \src_payload~22 .lut_mask = 16'hEEEE;
+defparam \src_payload~22 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~21 (
+cycloneive_lcell_comb \src_payload~23 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_201),
 	.datad(readdata_202),
-	.cin(gnd),
-	.combout(\src_payload~21_combout ),
-	.cout());
-defparam \src_payload~21 .lut_mask = 16'hFFFE;
-defparam \src_payload~21 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~22 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_20),
-	.datad(out_data_buffer_201),
-	.cin(gnd),
-	.combout(\src_payload~22_combout ),
-	.cout());
-defparam \src_payload~22 .lut_mask = 16'hFFFE;
-defparam \src_payload~22 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~23 (
-	.dataa(\src_payload~21_combout ),
-	.datab(\src_payload~22_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_20),
 	.cin(gnd),
 	.combout(\src_payload~23_combout ),
 	.cout());
 defparam \src_payload~23 .lut_mask = 16'hFFFE;
 defparam \src_payload~23 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~24 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_20),
+	.datad(out_data_buffer_201),
+	.cin(gnd),
+	.combout(\src_payload~24_combout ),
+	.cout());
+defparam \src_payload~24 .lut_mask = 16'hFFFE;
+defparam \src_payload~24 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~25 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_19),
-	.datad(av_readdata_pre_30),
+	.dataa(\src_payload~23_combout ),
+	.datab(\src_payload~24_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_20),
 	.cin(gnd),
 	.combout(\src_payload~25_combout ),
 	.cout());
 defparam \src_payload~25 .lut_mask = 16'hFFFE;
 defparam \src_payload~25 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~26 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_191),
-	.datad(readdata_192),
-	.cin(gnd),
-	.combout(\src_payload~26_combout ),
-	.cout());
-defparam \src_payload~26 .lut_mask = 16'hFFFE;
-defparam \src_payload~26 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \src_payload~27 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_19),
-	.datad(out_data_buffer_191),
+	.dataa(read_latency_shift_reg_08),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_19),
+	.datad(av_readdata_pre_30),
 	.cin(gnd),
 	.combout(\src_payload~27_combout ),
 	.cout());
@@ -91144,87 +91141,87 @@ defparam \src_payload~27 .lut_mask = 16'hFFFE;
 defparam \src_payload~27 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~28 (
-	.dataa(\src_payload~26_combout ),
-	.datab(\src_payload~27_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_19),
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_191),
+	.datad(readdata_192),
 	.cin(gnd),
 	.combout(\src_payload~28_combout ),
 	.cout());
 defparam \src_payload~28 .lut_mask = 16'hFFFE;
 defparam \src_payload~28 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~29 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_19),
+	.datad(out_data_buffer_191),
+	.cin(gnd),
+	.combout(\src_payload~29_combout ),
+	.cout());
+defparam \src_payload~29 .lut_mask = 16'hFFFE;
+defparam \src_payload~29 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~30 (
+	.dataa(\src_payload~28_combout ),
+	.datab(\src_payload~29_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_19),
+	.cin(gnd),
+	.combout(\src_payload~30_combout ),
+	.cout());
+defparam \src_payload~30 .lut_mask = 16'hFFFE;
+defparam \src_payload~30 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~32 (
 	.dataa(read_latency_shift_reg_07),
 	.datab(readdata_18),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_payload~30_combout ),
+	.combout(\src_payload~32_combout ),
 	.cout());
-defparam \src_payload~30 .lut_mask = 16'hEEEE;
-defparam \src_payload~30 .sum_lutc_input = "datac";
+defparam \src_payload~32 .lut_mask = 16'hEEEE;
+defparam \src_payload~32 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~31 (
+cycloneive_lcell_comb \src_payload~33 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_181),
 	.datad(readdata_182),
-	.cin(gnd),
-	.combout(\src_payload~31_combout ),
-	.cout());
-defparam \src_payload~31 .lut_mask = 16'hFFFE;
-defparam \src_payload~31 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~32 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_18),
-	.datad(out_data_buffer_181),
-	.cin(gnd),
-	.combout(\src_payload~32_combout ),
-	.cout());
-defparam \src_payload~32 .lut_mask = 16'hFFFE;
-defparam \src_payload~32 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~33 (
-	.dataa(\src_payload~31_combout ),
-	.datab(\src_payload~32_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_18),
 	.cin(gnd),
 	.combout(\src_payload~33_combout ),
 	.cout());
 defparam \src_payload~33 .lut_mask = 16'hFFFE;
 defparam \src_payload~33 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~34 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_18),
+	.datad(out_data_buffer_181),
+	.cin(gnd),
+	.combout(\src_payload~34_combout ),
+	.cout());
+defparam \src_payload~34 .lut_mask = 16'hFFFE;
+defparam \src_payload~34 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~35 (
-	.dataa(read_latency_shift_reg_07),
-	.datab(readdata_17),
-	.datac(gnd),
-	.datad(gnd),
+	.dataa(\src_payload~33_combout ),
+	.datab(\src_payload~34_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_18),
 	.cin(gnd),
 	.combout(\src_payload~35_combout ),
 	.cout());
-defparam \src_payload~35 .lut_mask = 16'hEEEE;
+defparam \src_payload~35 .lut_mask = 16'hFFFE;
 defparam \src_payload~35 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~36 (
-	.dataa(read_latency_shift_reg_05),
-	.datab(read_latency_shift_reg_06),
-	.datac(readdata_171),
-	.datad(readdata_172),
-	.cin(gnd),
-	.combout(\src_payload~36_combout ),
-	.cout());
-defparam \src_payload~36 .lut_mask = 16'hFFFE;
-defparam \src_payload~36 .sum_lutc_input = "datac";
-
 cycloneive_lcell_comb \src_payload~37 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_17),
-	.datad(out_data_buffer_171),
+	.dataa(read_latency_shift_reg_08),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_17),
+	.datad(av_readdata_pre_30),
 	.cin(gnd),
 	.combout(\src_payload~37_combout ),
 	.cout());
@@ -91232,433 +91229,455 @@ defparam \src_payload~37 .lut_mask = 16'hFFFE;
 defparam \src_payload~37 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \src_payload~38 (
-	.dataa(\src_payload~36_combout ),
-	.datab(\src_payload~37_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_17),
+	.dataa(read_latency_shift_reg_05),
+	.datab(read_latency_shift_reg_06),
+	.datac(readdata_171),
+	.datad(readdata_172),
 	.cin(gnd),
 	.combout(\src_payload~38_combout ),
 	.cout());
 defparam \src_payload~38 .lut_mask = 16'hFFFE;
 defparam \src_payload~38 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \src_payload~39 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_17),
+	.datad(out_data_buffer_171),
+	.cin(gnd),
+	.combout(\src_payload~39_combout ),
+	.cout());
+defparam \src_payload~39 .lut_mask = 16'hFFFE;
+defparam \src_payload~39 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \src_payload~40 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_16),
-	.datad(av_readdata_pre_30),
+	.dataa(\src_payload~38_combout ),
+	.datab(\src_payload~39_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_17),
 	.cin(gnd),
 	.combout(\src_payload~40_combout ),
 	.cout());
 defparam \src_payload~40 .lut_mask = 16'hFFFE;
 defparam \src_payload~40 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~41 (
+cycloneive_lcell_comb \src_payload~42 (
+	.dataa(read_latency_shift_reg_07),
+	.datab(readdata_16),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_payload~42_combout ),
+	.cout());
+defparam \src_payload~42 .lut_mask = 16'hEEEE;
+defparam \src_payload~42 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~43 (
 	.dataa(read_latency_shift_reg_05),
 	.datab(read_latency_shift_reg_06),
 	.datac(readdata_161),
 	.datad(readdata_162),
-	.cin(gnd),
-	.combout(\src_payload~41_combout ),
-	.cout());
-defparam \src_payload~41 .lut_mask = 16'hFFFE;
-defparam \src_payload~41 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~42 (
-	.dataa(out_valid),
-	.datab(out_valid1),
-	.datac(out_data_buffer_16),
-	.datad(out_data_buffer_161),
-	.cin(gnd),
-	.combout(\src_payload~42_combout ),
-	.cout());
-defparam \src_payload~42 .lut_mask = 16'hFFFE;
-defparam \src_payload~42 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_payload~43 (
-	.dataa(\src_payload~41_combout ),
-	.datab(\src_payload~42_combout ),
-	.datac(src0_valid1),
-	.datad(av_readdata_pre_16),
 	.cin(gnd),
 	.combout(\src_payload~43_combout ),
 	.cout());
 defparam \src_payload~43 .lut_mask = 16'hFFFE;
 defparam \src_payload~43 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[15]~77 (
+cycloneive_lcell_comb \src_payload~44 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_16),
+	.datad(out_data_buffer_161),
+	.cin(gnd),
+	.combout(\src_payload~44_combout ),
+	.cout());
+defparam \src_payload~44 .lut_mask = 16'hFFFE;
+defparam \src_payload~44 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~45 (
+	.dataa(\src_payload~43_combout ),
+	.datab(\src_payload~44_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_16),
+	.cin(gnd),
+	.combout(\src_payload~45_combout ),
+	.cout());
+defparam \src_payload~45 .lut_mask = 16'hFFFE;
+defparam \src_payload~45 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~73 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_151),
 	.datad(av_readdata_pre_151),
+	.cin(gnd),
+	.combout(\src_data[15]~73_combout ),
+	.cout());
+defparam \src_data[15]~73 .lut_mask = 16'hFFFE;
+defparam \src_data[15]~73 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~74 (
+	.dataa(\src_data[15]~73_combout ),
+	.datab(src0_valid1),
+	.datac(av_readdata_pre_15),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_data[15]~74_combout ),
+	.cout());
+defparam \src_data[15]~74 .lut_mask = 16'hFEFE;
+defparam \src_data[15]~74 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~75 (
+	.dataa(read_latency_shift_reg_06),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_152),
+	.datad(readdata_153),
+	.cin(gnd),
+	.combout(\src_data[15]~75_combout ),
+	.cout());
+defparam \src_data[15]~75 .lut_mask = 16'hFFFE;
+defparam \src_data[15]~75 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~76 (
+	.dataa(\src_data[15]~74_combout ),
+	.datab(\src_data[15]~75_combout ),
+	.datac(out_valid2),
+	.datad(out_data_buffer_15),
+	.cin(gnd),
+	.combout(\src_data[15]~76_combout ),
+	.cout());
+defparam \src_data[15]~76 .lut_mask = 16'hFFFE;
+defparam \src_data[15]~76 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~47 (
+	.dataa(out_data_buffer_151),
+	.datab(gnd),
+	.datac(out_data_toggle_flopped1),
+	.datad(dreg_0),
+	.cin(gnd),
+	.combout(\src_payload~47_combout ),
+	.cout());
+defparam \src_payload~47 .lut_mask = 16'hAFFA;
+defparam \src_payload~47 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[15]~77 (
+	.dataa(src_payload),
+	.datab(\src_payload~47_combout ),
+	.datac(read_latency_shift_reg_09),
+	.datad(av_readdata_pre_152),
 	.cin(gnd),
 	.combout(\src_data[15]~77_combout ),
 	.cout());
 defparam \src_data[15]~77 .lut_mask = 16'hFFFE;
 defparam \src_data[15]~77 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[15]~78 (
-	.dataa(\src_data[15]~77_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_15),
+cycloneive_lcell_comb \src_payload~48 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(av_readdata_pre_141),
+	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_data[15]~78_combout ),
+	.combout(\src_payload~48_combout ),
 	.cout());
-defparam \src_data[15]~78 .lut_mask = 16'hFEFE;
-defparam \src_data[15]~78 .sum_lutc_input = "datac";
+defparam \src_payload~48 .lut_mask = 16'hEEEE;
+defparam \src_payload~48 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[15]~79 (
-	.dataa(read_latency_shift_reg_06),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_152),
-	.datad(readdata_153),
-	.cin(gnd),
-	.combout(\src_data[15]~79_combout ),
-	.cout());
-defparam \src_data[15]~79 .lut_mask = 16'hFFFE;
-defparam \src_data[15]~79 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[15]~80 (
-	.dataa(\src_data[15]~78_combout ),
-	.datab(\src_data[15]~79_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_15),
-	.cin(gnd),
-	.combout(\src_data[15]~80_combout ),
-	.cout());
-defparam \src_data[15]~80 .lut_mask = 16'hFFFE;
-defparam \src_data[15]~80 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[15]~81 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(out_valid1),
-	.datac(out_data_buffer_151),
-	.datad(av_readdata_pre_152),
-	.cin(gnd),
-	.combout(\src_data[15]~81_combout ),
-	.cout());
-defparam \src_data[15]~81 .lut_mask = 16'hFFFE;
-defparam \src_data[15]~81 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[14]~83 (
-	.dataa(src0_valid1),
-	.datab(out_valid),
-	.datac(out_data_buffer_14),
-	.datad(av_readdata_pre_14),
-	.cin(gnd),
-	.combout(\src_data[14]~83_combout ),
-	.cout());
-defparam \src_data[14]~83 .lut_mask = 16'hFFFE;
-defparam \src_data[14]~83 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[14]~84 (
-	.dataa(read_latency_shift_reg_09),
+cycloneive_lcell_comb \src_data[14]~79 (
+	.dataa(read_latency_shift_reg_08),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_141),
-	.datad(av_readdata_pre_141),
+	.datad(av_readdata_pre_30),
 	.cin(gnd),
-	.combout(\src_data[14]~84_combout ),
+	.combout(\src_data[14]~79_combout ),
 	.cout());
-defparam \src_data[14]~84 .lut_mask = 16'hFFFE;
-defparam \src_data[14]~84 .sum_lutc_input = "datac";
+defparam \src_data[14]~79 .lut_mask = 16'hFFFE;
+defparam \src_data[14]~79 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[14]~118 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[14]~84_combout ),
+cycloneive_lcell_comb \src_data[14]~80 (
+	.dataa(out_valid2),
+	.datab(out_valid),
+	.datac(out_data_buffer_14),
 	.datad(out_data_buffer_141),
 	.cin(gnd),
-	.combout(\src_data[14]~118_combout ),
+	.combout(\src_data[14]~80_combout ),
 	.cout());
-defparam \src_data[14]~118 .lut_mask = 16'hFFF6;
-defparam \src_data[14]~118 .sum_lutc_input = "datac";
+defparam \src_data[14]~80 .lut_mask = 16'hFFFE;
+defparam \src_data[14]~80 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_payload~45 (
+cycloneive_lcell_comb \src_data[14]~81 (
+	.dataa(\src_data[14]~79_combout ),
+	.datab(\src_data[14]~80_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_14),
+	.cin(gnd),
+	.combout(\src_data[14]~81_combout ),
+	.cout());
+defparam \src_data[14]~81 .lut_mask = 16'hFFFE;
+defparam \src_data[14]~81 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~49 (
 	.dataa(read_latency_shift_reg_09),
 	.datab(av_readdata_pre_131),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_payload~45_combout ),
+	.combout(\src_payload~49_combout ),
 	.cout());
-defparam \src_payload~45 .lut_mask = 16'hEEEE;
-defparam \src_payload~45 .sum_lutc_input = "datac";
+defparam \src_payload~49 .lut_mask = 16'hEEEE;
+defparam \src_payload~49 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[13]~86 (
+cycloneive_lcell_comb \src_data[13]~83 (
 	.dataa(read_latency_shift_reg_08),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_131),
 	.datad(av_readdata_pre_30),
 	.cin(gnd),
-	.combout(\src_data[13]~86_combout ),
+	.combout(\src_data[13]~83_combout ),
 	.cout());
-defparam \src_data[13]~86 .lut_mask = 16'hFFFE;
-defparam \src_data[13]~86 .sum_lutc_input = "datac";
+defparam \src_data[13]~83 .lut_mask = 16'hFFFE;
+defparam \src_data[13]~83 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[13]~87 (
-	.dataa(out_valid),
-	.datab(out_valid1),
+cycloneive_lcell_comb \src_data[13]~84 (
+	.dataa(out_valid2),
+	.datab(out_valid),
 	.datac(out_data_buffer_13),
 	.datad(out_data_buffer_131),
 	.cin(gnd),
-	.combout(\src_data[13]~87_combout ),
+	.combout(\src_data[13]~84_combout ),
 	.cout());
-defparam \src_data[13]~87 .lut_mask = 16'hFFFE;
-defparam \src_data[13]~87 .sum_lutc_input = "datac";
+defparam \src_data[13]~84 .lut_mask = 16'hFFFE;
+defparam \src_data[13]~84 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[13]~88 (
-	.dataa(\src_data[13]~86_combout ),
-	.datab(\src_data[13]~87_combout ),
+cycloneive_lcell_comb \src_data[13]~85 (
+	.dataa(\src_data[13]~83_combout ),
+	.datab(\src_data[13]~84_combout ),
 	.datac(src0_valid1),
 	.datad(av_readdata_pre_13),
 	.cin(gnd),
-	.combout(\src_data[13]~88_combout ),
+	.combout(\src_data[13]~85_combout ),
 	.cout());
-defparam \src_data[13]~88 .lut_mask = 16'hFFFE;
-defparam \src_data[13]~88 .sum_lutc_input = "datac";
+defparam \src_data[13]~85 .lut_mask = 16'hFFFE;
+defparam \src_data[13]~85 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[12]~90 (
+cycloneive_lcell_comb \src_data[12]~87 (
 	.dataa(src0_valid1),
-	.datab(out_valid),
+	.datab(out_valid2),
 	.datac(out_data_buffer_121),
 	.datad(av_readdata_pre_12),
 	.cin(gnd),
-	.combout(\src_data[12]~90_combout ),
+	.combout(\src_data[12]~87_combout ),
 	.cout());
-defparam \src_data[12]~90 .lut_mask = 16'hFFFE;
-defparam \src_data[12]~90 .sum_lutc_input = "datac";
+defparam \src_data[12]~87 .lut_mask = 16'hFFFE;
+defparam \src_data[12]~87 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[12]~91 (
+cycloneive_lcell_comb \src_data[12]~88 (
 	.dataa(read_latency_shift_reg_09),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_121),
 	.datad(av_readdata_pre_121),
 	.cin(gnd),
-	.combout(\src_data[12]~91_combout ),
+	.combout(\src_data[12]~88_combout ),
 	.cout());
-defparam \src_data[12]~91 .lut_mask = 16'hFFFE;
-defparam \src_data[12]~91 .sum_lutc_input = "datac";
+defparam \src_data[12]~88 .lut_mask = 16'hFFFE;
+defparam \src_data[12]~88 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[12]~119 (
+cycloneive_lcell_comb \src_data[12]~116 (
 	.dataa(out_data_toggle_flopped1),
 	.datab(dreg_0),
-	.datac(\src_data[12]~91_combout ),
+	.datac(\src_data[12]~88_combout ),
 	.datad(out_data_buffer_122),
 	.cin(gnd),
-	.combout(\src_data[12]~119_combout ),
+	.combout(\src_data[12]~116_combout ),
 	.cout());
-defparam \src_data[12]~119 .lut_mask = 16'hFFF6;
-defparam \src_data[12]~119 .sum_lutc_input = "datac";
+defparam \src_data[12]~116 .lut_mask = 16'hFFF6;
+defparam \src_data[12]~116 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[11]~93 (
+cycloneive_lcell_comb \src_data[11]~90 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_111),
 	.datad(av_readdata_pre_112),
 	.cin(gnd),
-	.combout(\src_data[11]~93_combout ),
+	.combout(\src_data[11]~90_combout ),
 	.cout());
-defparam \src_data[11]~93 .lut_mask = 16'hFFFE;
-defparam \src_data[11]~93 .sum_lutc_input = "datac";
+defparam \src_data[11]~90 .lut_mask = 16'hFFFE;
+defparam \src_data[11]~90 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[11]~94 (
-	.dataa(\src_data[11]~93_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_11),
+cycloneive_lcell_comb \src_data[11]~91 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_111),
+	.datad(av_readdata_pre_113),
+	.cin(gnd),
+	.combout(\src_data[11]~91_combout ),
+	.cout());
+defparam \src_data[11]~91 .lut_mask = 16'hFFFE;
+defparam \src_data[11]~91 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[11]~92 (
+	.dataa(\src_data[11]~90_combout ),
+	.datab(\src_data[11]~91_combout ),
+	.datac(src0_valid1),
+	.datad(av_readdata_pre_11),
+	.cin(gnd),
+	.combout(\src_data[11]~92_combout ),
+	.cout());
+defparam \src_data[11]~92 .lut_mask = 16'hFFFE;
+defparam \src_data[11]~92 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_payload~50 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(av_readdata_pre_101),
+	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_data[11]~94_combout ),
+	.combout(\src_payload~50_combout ),
 	.cout());
-defparam \src_data[11]~94 .lut_mask = 16'hFEFE;
-defparam \src_data[11]~94 .sum_lutc_input = "datac";
+defparam \src_payload~50 .lut_mask = 16'hEEEE;
+defparam \src_payload~50 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[11]~95 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_09),
-	.datac(av_readdata_pre_113),
-	.datad(av_readdata_pre_30),
-	.cin(gnd),
-	.combout(\src_data[11]~95_combout ),
-	.cout());
-defparam \src_data[11]~95 .lut_mask = 16'hFFFE;
-defparam \src_data[11]~95 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[11]~120 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[11]~95_combout ),
-	.datad(out_data_buffer_111),
-	.cin(gnd),
-	.combout(\src_data[11]~120_combout ),
-	.cout());
-defparam \src_data[11]~120 .lut_mask = 16'hFFF6;
-defparam \src_data[11]~120 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[10]~97 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_09),
-	.datac(av_readdata_pre_101),
-	.datad(av_readdata_pre_30),
-	.cin(gnd),
-	.combout(\src_data[10]~97_combout ),
-	.cout());
-defparam \src_data[10]~97 .lut_mask = 16'hFFFE;
-defparam \src_data[10]~97 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[10]~98 (
+cycloneive_lcell_comb \src_data[10]~94 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_10),
 	.datad(av_readdata_pre_102),
 	.cin(gnd),
-	.combout(\src_data[10]~98_combout ),
+	.combout(\src_data[10]~94_combout ),
 	.cout());
-defparam \src_data[10]~98 .lut_mask = 16'hFFFE;
-defparam \src_data[10]~98 .sum_lutc_input = "datac";
+defparam \src_data[10]~94 .lut_mask = 16'hFFFE;
+defparam \src_data[10]~94 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[10]~99 (
-	.dataa(out_valid),
-	.datab(out_valid1),
+cycloneive_lcell_comb \src_data[10]~95 (
+	.dataa(out_valid2),
+	.datab(out_valid),
 	.datac(out_data_buffer_10),
 	.datad(out_data_buffer_101),
 	.cin(gnd),
-	.combout(\src_data[10]~99_combout ),
+	.combout(\src_data[10]~95_combout ),
 	.cout());
-defparam \src_data[10]~99 .lut_mask = 16'hFFFE;
-defparam \src_data[10]~99 .sum_lutc_input = "datac";
+defparam \src_data[10]~95 .lut_mask = 16'hFFFE;
+defparam \src_data[10]~95 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[10]~100 (
-	.dataa(\src_data[10]~98_combout ),
-	.datab(\src_data[10]~99_combout ),
+cycloneive_lcell_comb \src_data[10]~96 (
+	.dataa(\src_data[10]~94_combout ),
+	.datab(\src_data[10]~95_combout ),
 	.datac(src0_valid1),
 	.datad(av_readdata_pre_10),
 	.cin(gnd),
-	.combout(\src_data[10]~100_combout ),
+	.combout(\src_data[10]~96_combout ),
 	.cout());
-defparam \src_data[10]~100 .lut_mask = 16'hFFFE;
-defparam \src_data[10]~100 .sum_lutc_input = "datac";
+defparam \src_data[10]~96 .lut_mask = 16'hFFFE;
+defparam \src_data[10]~96 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[9]~102 (
+cycloneive_lcell_comb \src_data[9]~98 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_9),
 	.datad(av_readdata_pre_91),
+	.cin(gnd),
+	.combout(\src_data[9]~98_combout ),
+	.cout());
+defparam \src_data[9]~98 .lut_mask = 16'hFFFE;
+defparam \src_data[9]~98 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[9]~99 (
+	.dataa(\src_data[9]~98_combout ),
+	.datab(src0_valid1),
+	.datac(av_readdata_pre_9),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\src_data[9]~99_combout ),
+	.cout());
+defparam \src_data[9]~99 .lut_mask = 16'hFEFE;
+defparam \src_data[9]~99 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[9]~100 (
+	.dataa(read_latency_shift_reg_06),
+	.datab(read_latency_shift_reg_07),
+	.datac(readdata_91),
+	.datad(readdata_92),
+	.cin(gnd),
+	.combout(\src_data[9]~100_combout ),
+	.cout());
+defparam \src_data[9]~100 .lut_mask = 16'hFFFE;
+defparam \src_data[9]~100 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[9]~101 (
+	.dataa(\src_data[9]~99_combout ),
+	.datab(\src_data[9]~100_combout ),
+	.datac(out_valid2),
+	.datad(out_data_buffer_9),
+	.cin(gnd),
+	.combout(\src_data[9]~101_combout ),
+	.cout());
+defparam \src_data[9]~101 .lut_mask = 16'hFFFE;
+defparam \src_data[9]~101 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \src_data[9]~102 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_91),
+	.datad(av_readdata_pre_92),
 	.cin(gnd),
 	.combout(\src_data[9]~102_combout ),
 	.cout());
 defparam \src_data[9]~102 .lut_mask = 16'hFFFE;
 defparam \src_data[9]~102 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[9]~103 (
-	.dataa(\src_data[9]~102_combout ),
-	.datab(src0_valid1),
-	.datac(av_readdata_pre_9),
-	.datad(gnd),
-	.cin(gnd),
-	.combout(\src_data[9]~103_combout ),
-	.cout());
-defparam \src_data[9]~103 .lut_mask = 16'hFEFE;
-defparam \src_data[9]~103 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[9]~104 (
-	.dataa(read_latency_shift_reg_06),
-	.datab(read_latency_shift_reg_07),
-	.datac(readdata_91),
-	.datad(readdata_92),
-	.cin(gnd),
-	.combout(\src_data[9]~104_combout ),
-	.cout());
-defparam \src_data[9]~104 .lut_mask = 16'hFFFE;
-defparam \src_data[9]~104 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[9]~105 (
-	.dataa(\src_data[9]~103_combout ),
-	.datab(\src_data[9]~104_combout ),
-	.datac(out_valid),
-	.datad(out_data_buffer_9),
-	.cin(gnd),
-	.combout(\src_data[9]~105_combout ),
-	.cout());
-defparam \src_data[9]~105 .lut_mask = 16'hFFFE;
-defparam \src_data[9]~105 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[9]~106 (
-	.dataa(read_latency_shift_reg_09),
-	.datab(out_valid1),
-	.datac(out_data_buffer_91),
-	.datad(av_readdata_pre_92),
-	.cin(gnd),
-	.combout(\src_data[9]~106_combout ),
-	.cout());
-defparam \src_data[9]~106 .lut_mask = 16'hFFFE;
-defparam \src_data[9]~106 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[8]~108 (
+cycloneive_lcell_comb \src_data[8]~104 (
 	.dataa(read_latency_shift_reg_0),
 	.datab(read_latency_shift_reg_05),
 	.datac(readdata_8),
 	.datad(av_readdata_pre_81),
 	.cin(gnd),
-	.combout(\src_data[8]~108_combout ),
+	.combout(\src_data[8]~104_combout ),
 	.cout());
-defparam \src_data[8]~108 .lut_mask = 16'hFFFE;
-defparam \src_data[8]~108 .sum_lutc_input = "datac";
+defparam \src_data[8]~104 .lut_mask = 16'hFFFE;
+defparam \src_data[8]~104 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[8]~109 (
-	.dataa(\src_data[8]~108_combout ),
+cycloneive_lcell_comb \src_data[8]~105 (
+	.dataa(\src_data[8]~104_combout ),
 	.datab(src0_valid1),
 	.datac(av_readdata_pre_8),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\src_data[8]~109_combout ),
+	.combout(\src_data[8]~105_combout ),
 	.cout());
-defparam \src_data[8]~109 .lut_mask = 16'hFEFE;
-defparam \src_data[8]~109 .sum_lutc_input = "datac";
+defparam \src_data[8]~105 .lut_mask = 16'hFEFE;
+defparam \src_data[8]~105 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[8]~110 (
+cycloneive_lcell_comb \src_data[8]~106 (
 	.dataa(read_latency_shift_reg_06),
 	.datab(read_latency_shift_reg_07),
 	.datac(readdata_81),
 	.datad(readdata_82),
 	.cin(gnd),
-	.combout(\src_data[8]~110_combout ),
+	.combout(\src_data[8]~106_combout ),
 	.cout());
-defparam \src_data[8]~110 .lut_mask = 16'hFFFE;
-defparam \src_data[8]~110 .sum_lutc_input = "datac";
+defparam \src_data[8]~106 .lut_mask = 16'hFFFE;
+defparam \src_data[8]~106 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[8]~111 (
-	.dataa(\src_data[8]~109_combout ),
-	.datab(\src_data[8]~110_combout ),
-	.datac(out_valid),
+cycloneive_lcell_comb \src_data[8]~107 (
+	.dataa(\src_data[8]~105_combout ),
+	.datab(\src_data[8]~106_combout ),
+	.datac(out_valid2),
 	.datad(out_data_buffer_8),
 	.cin(gnd),
-	.combout(\src_data[8]~111_combout ),
+	.combout(\src_data[8]~107_combout ),
 	.cout());
-defparam \src_data[8]~111 .lut_mask = 16'hFFFE;
-defparam \src_data[8]~111 .sum_lutc_input = "datac";
+defparam \src_data[8]~107 .lut_mask = 16'hFFFE;
+defparam \src_data[8]~107 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \src_data[8]~112 (
-	.dataa(read_latency_shift_reg_08),
-	.datab(read_latency_shift_reg_09),
-	.datac(av_readdata_pre_82),
-	.datad(av_readdata_pre_30),
+cycloneive_lcell_comb \src_data[8]~108 (
+	.dataa(read_latency_shift_reg_09),
+	.datab(out_valid),
+	.datac(out_data_buffer_81),
+	.datad(av_readdata_pre_82),
 	.cin(gnd),
-	.combout(\src_data[8]~112_combout ),
+	.combout(\src_data[8]~108_combout ),
 	.cout());
-defparam \src_data[8]~112 .lut_mask = 16'hFFFE;
-defparam \src_data[8]~112 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \src_data[8]~121 (
-	.dataa(out_data_toggle_flopped1),
-	.datab(dreg_0),
-	.datac(\src_data[8]~112_combout ),
-	.datad(out_data_buffer_81),
-	.cin(gnd),
-	.combout(\src_data[8]~121_combout ),
-	.cout());
-defparam \src_data[8]~121 .lut_mask = 16'hFFF6;
-defparam \src_data[8]~121 .sum_lutc_input = "datac";
+defparam \src_data[8]~108 .lut_mask = 16'hFFFE;
+defparam \src_data[8]~108 .sum_lutc_input = "datac";
 
 endmodule
 
@@ -95344,22 +95363,21 @@ module niosII_niosII_port_led (
 	d_writedata_0,
 	data,
 	d_byteenable_0,
-	Equal6,
+	data1,
 	read_latency_shift_reg,
 	d_writedata_1,
-	data1,
-	d_writedata_2,
 	data2,
-	d_writedata_3,
+	d_writedata_2,
 	data3,
-	d_writedata_4,
+	d_writedata_3,
 	data4,
-	d_writedata_5,
+	d_writedata_4,
 	data5,
-	d_writedata_6,
+	d_writedata_5,
 	data6,
-	d_writedata_7,
+	d_writedata_6,
 	data7,
+	d_writedata_7,
 	data8,
 	readdata_0,
 	readdata_1,
@@ -95388,22 +95406,21 @@ input 	cp_valid;
 input 	d_writedata_0;
 output 	data;
 input 	d_byteenable_0;
-input 	Equal6;
+output 	data1;
 input 	read_latency_shift_reg;
 input 	d_writedata_1;
-output 	data1;
-input 	d_writedata_2;
 output 	data2;
-input 	d_writedata_3;
+input 	d_writedata_2;
 output 	data3;
-input 	d_writedata_4;
+input 	d_writedata_3;
 output 	data4;
-input 	d_writedata_5;
+input 	d_writedata_4;
 output 	data5;
-input 	d_writedata_6;
+input 	d_writedata_5;
 output 	data6;
-input 	d_writedata_7;
+input 	d_writedata_6;
 output 	data7;
+input 	d_writedata_7;
 output 	data8;
 output 	readdata_0;
 output 	readdata_1;
@@ -95423,8 +95440,8 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \data~1_combout ;
-wire \data[6]~2_combout ;
+wire \data~2_combout ;
+wire \data[6]~3_combout ;
 wire \data[0]~q ;
 wire \data[1]~q ;
 wire \data[2]~q ;
@@ -95575,19 +95592,19 @@ cycloneive_lcell_comb \data~0 (
 defparam \data~0 .lut_mask = 16'hAAFF;
 defparam \data~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \data~3 (
-	.dataa(d_writedata_1),
-	.datab(gnd),
+cycloneive_lcell_comb \data~1 (
+	.dataa(d_write),
+	.datab(d_byteenable_0),
 	.datac(gnd),
-	.datad(r_sync_rst),
+	.datad(write_accepted),
 	.cin(gnd),
 	.combout(data1),
 	.cout());
-defparam \data~3 .lut_mask = 16'hAAFF;
-defparam \data~3 .sum_lutc_input = "datac";
+defparam \data~1 .lut_mask = 16'hEEFF;
+defparam \data~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~4 (
-	.dataa(d_writedata_2),
+	.dataa(d_writedata_1),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95598,7 +95615,7 @@ defparam \data~4 .lut_mask = 16'hAAFF;
 defparam \data~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~5 (
-	.dataa(d_writedata_3),
+	.dataa(d_writedata_2),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95609,7 +95626,7 @@ defparam \data~5 .lut_mask = 16'hAAFF;
 defparam \data~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~6 (
-	.dataa(d_writedata_4),
+	.dataa(d_writedata_3),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95620,7 +95637,7 @@ defparam \data~6 .lut_mask = 16'hAAFF;
 defparam \data~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~7 (
-	.dataa(d_writedata_5),
+	.dataa(d_writedata_4),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95631,7 +95648,7 @@ defparam \data~7 .lut_mask = 16'hAAFF;
 defparam \data~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~8 (
-	.dataa(d_writedata_6),
+	.dataa(d_writedata_5),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95642,7 +95659,7 @@ defparam \data~8 .lut_mask = 16'hAAFF;
 defparam \data~8 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~9 (
-	.dataa(d_writedata_7),
+	.dataa(d_writedata_6),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(r_sync_rst),
@@ -95653,14 +95670,14 @@ defparam \data~9 .lut_mask = 16'hAAFF;
 defparam \data~9 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \data~10 (
-	.dataa(d_write),
-	.datab(d_byteenable_0),
+	.dataa(d_writedata_7),
+	.datab(gnd),
 	.datac(gnd),
-	.datad(write_accepted),
+	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(data8),
 	.cout());
-defparam \data~10 .lut_mask = 16'hEEFF;
+defparam \data~10 .lut_mask = 16'hAAFF;
 defparam \data~10 .sum_lutc_input = "datac";
 
 dffeas \readdata[0] (
@@ -95775,27 +95792,27 @@ dffeas \readdata[7] (
 defparam \readdata[7] .is_wysiwyg = "true";
 defparam \readdata[7] .power_up = "low";
 
-cycloneive_lcell_comb \data~1 (
-	.dataa(write_accepted),
-	.datab(hold_waitrequest),
-	.datac(d_write),
-	.datad(d_byteenable_0),
+cycloneive_lcell_comb \data~2 (
+	.dataa(W_alu_result_3),
+	.datab(W_alu_result_2),
+	.datac(hold_waitrequest),
+	.datad(data1),
 	.cin(gnd),
-	.combout(\data~1_combout ),
+	.combout(\data~2_combout ),
 	.cout());
-defparam \data~1 .lut_mask = 16'hBFFF;
-defparam \data~1 .sum_lutc_input = "datac";
+defparam \data~2 .lut_mask = 16'hEFFF;
+defparam \data~2 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \data[6]~2 (
-	.dataa(\data~1_combout ),
-	.datab(Equal6),
+cycloneive_lcell_comb \data[6]~3 (
+	.dataa(\data~2_combout ),
+	.datab(gnd),
 	.datac(read_latency_shift_reg),
 	.datad(r_sync_rst),
 	.cin(gnd),
-	.combout(\data[6]~2_combout ),
+	.combout(\data[6]~3_combout ),
 	.cout());
-defparam \data[6]~2 .lut_mask = 16'hFFFD;
-defparam \data[6]~2 .sum_lutc_input = "datac";
+defparam \data[6]~3 .lut_mask = 16'hFFF5;
+defparam \data[6]~3 .sum_lutc_input = "datac";
 
 dffeas \data[0] (
 	.clk(clk),
@@ -95805,7 +95822,7 @@ dffeas \data[0] (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[0]~q ),
 	.prn(vcc));
 defparam \data[0] .is_wysiwyg = "true";
@@ -95813,13 +95830,13 @@ defparam \data[0] .power_up = "low";
 
 dffeas \data[1] (
 	.clk(clk),
-	.d(data1),
+	.d(data2),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[1]~q ),
 	.prn(vcc));
 defparam \data[1] .is_wysiwyg = "true";
@@ -95827,13 +95844,13 @@ defparam \data[1] .power_up = "low";
 
 dffeas \data[2] (
 	.clk(clk),
-	.d(data2),
+	.d(data3),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[2]~q ),
 	.prn(vcc));
 defparam \data[2] .is_wysiwyg = "true";
@@ -95841,13 +95858,13 @@ defparam \data[2] .power_up = "low";
 
 dffeas \data[3] (
 	.clk(clk),
-	.d(data3),
+	.d(data4),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[3]~q ),
 	.prn(vcc));
 defparam \data[3] .is_wysiwyg = "true";
@@ -95855,13 +95872,13 @@ defparam \data[3] .power_up = "low";
 
 dffeas \data[4] (
 	.clk(clk),
-	.d(data4),
+	.d(data5),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[4]~q ),
 	.prn(vcc));
 defparam \data[4] .is_wysiwyg = "true";
@@ -95869,13 +95886,13 @@ defparam \data[4] .power_up = "low";
 
 dffeas \data[5] (
 	.clk(clk),
-	.d(data5),
+	.d(data6),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[5]~q ),
 	.prn(vcc));
 defparam \data[5] .is_wysiwyg = "true";
@@ -95883,13 +95900,13 @@ defparam \data[5] .power_up = "low";
 
 dffeas \data[6] (
 	.clk(clk),
-	.d(data6),
+	.d(data7),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[6]~q ),
 	.prn(vcc));
 defparam \data[6] .is_wysiwyg = "true";
@@ -95897,13 +95914,13 @@ defparam \data[6] .power_up = "low";
 
 dffeas \data[7] (
 	.clk(clk),
-	.d(data7),
+	.d(data8),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\data[6]~2_combout ),
+	.ena(\data[6]~3_combout ),
 	.q(\data[7]~q ),
 	.prn(vcc));
 defparam \data[7] .is_wysiwyg = "true";
@@ -96351,25 +96368,24 @@ module niosII_niosII_rs232_0 (
 	readdata_16,
 	serial_data_out,
 	r_sync_rst,
-	d_read,
-	read_accepted,
+	uav_read,
 	hold_waitrequest,
 	cp_valid,
 	data,
 	d_byteenable_0,
-	Equal9,
 	data1,
+	Equal9,
 	data2,
 	data3,
 	data4,
 	data5,
 	data6,
 	data7,
+	data8,
 	Equal12,
 	mem_used_1,
 	Equal121,
 	data_to_uart_0,
-	data8,
 	read_latency_shift_reg,
 	readdata_2,
 	readdata_3,
@@ -96405,25 +96421,24 @@ output 	readdata_17;
 output 	readdata_16;
 output 	serial_data_out;
 input 	r_sync_rst;
-input 	d_read;
-input 	read_accepted;
+input 	uav_read;
 input 	hold_waitrequest;
 input 	cp_valid;
 input 	data;
 input 	d_byteenable_0;
-input 	Equal9;
 input 	data1;
+input 	Equal9;
 input 	data2;
 input 	data3;
 input 	data4;
 input 	data5;
 input 	data6;
 input 	data7;
+input 	data8;
 input 	Equal12;
 input 	mem_used_1;
 input 	Equal121;
 output 	data_to_uart_0;
-input 	data8;
 input 	read_latency_shift_reg;
 output 	readdata_2;
 output 	readdata_3;
@@ -96512,38 +96527,6 @@ wire \readdata~18_combout ;
 wire \readdata~19_combout ;
 
 
-niosII_altera_up_rs232_in_deserializer RS232_In_Deserializer(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_2(W_alu_result_2),
-	.q_b_0(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[0] ),
-	.q_b_1(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[1] ),
-	.q_b_2(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[2] ),
-	.q_b_3(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[3] ),
-	.q_b_4(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[4] ),
-	.q_b_5(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[5] ),
-	.q_b_6(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[6] ),
-	.q_b_7(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[7] ),
-	.r_sync_rst(r_sync_rst),
-	.d_read(d_read),
-	.read_accepted(read_accepted),
-	.hold_waitrequest(hold_waitrequest),
-	.d_byteenable_0(d_byteenable_0),
-	.Equal9(Equal9),
-	.mem_used_1(mem_used_1),
-	.Equal12(Equal121),
-	.fifo_read_available_7(\RS232_In_Deserializer|fifo_read_available[7]~q ),
-	.fifo_read_available_6(\RS232_In_Deserializer|fifo_read_available[6]~q ),
-	.fifo_read_available_5(\RS232_In_Deserializer|fifo_read_available[5]~q ),
-	.fifo_read_available_4(\RS232_In_Deserializer|fifo_read_available[4]~q ),
-	.fifo_read_available_3(\RS232_In_Deserializer|fifo_read_available[3]~q ),
-	.fifo_read_available_2(\RS232_In_Deserializer|fifo_read_available[2]~q ),
-	.fifo_read_available_1(\RS232_In_Deserializer|fifo_read_available[1]~q ),
-	.fifo_read_available_0(\RS232_In_Deserializer|fifo_read_available[0]~q ),
-	.empty_dff(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q ),
-	.comb(comb),
-	.GND_port(GND_port),
-	.rs232_0_RXD(rs232_0_RXD));
-
 niosII_altera_up_rs232_out_serializer RS232_Out_Serializer(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
 	.write_fifo_write_en(\write_fifo_write_en~q ),
@@ -96567,6 +96550,37 @@ niosII_altera_up_rs232_out_serializer RS232_Out_Serializer(
 	.data_to_uart_7(data_to_uart_7),
 	.GND_port(GND_port));
 
+niosII_altera_up_rs232_in_deserializer RS232_In_Deserializer(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.W_alu_result_2(W_alu_result_2),
+	.q_b_0(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[0] ),
+	.q_b_1(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[1] ),
+	.q_b_2(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[2] ),
+	.q_b_3(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[3] ),
+	.q_b_4(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[4] ),
+	.q_b_5(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[5] ),
+	.q_b_6(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[6] ),
+	.q_b_7(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[7] ),
+	.r_sync_rst(r_sync_rst),
+	.uav_read(uav_read),
+	.hold_waitrequest(hold_waitrequest),
+	.d_byteenable_0(d_byteenable_0),
+	.Equal9(Equal9),
+	.mem_used_1(mem_used_1),
+	.Equal12(Equal121),
+	.fifo_read_available_7(\RS232_In_Deserializer|fifo_read_available[7]~q ),
+	.fifo_read_available_6(\RS232_In_Deserializer|fifo_read_available[6]~q ),
+	.fifo_read_available_5(\RS232_In_Deserializer|fifo_read_available[5]~q ),
+	.fifo_read_available_4(\RS232_In_Deserializer|fifo_read_available[4]~q ),
+	.fifo_read_available_3(\RS232_In_Deserializer|fifo_read_available[3]~q ),
+	.fifo_read_available_2(\RS232_In_Deserializer|fifo_read_available[2]~q ),
+	.fifo_read_available_1(\RS232_In_Deserializer|fifo_read_available[1]~q ),
+	.fifo_read_available_0(\RS232_In_Deserializer|fifo_read_available[0]~q ),
+	.empty_dff(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q ),
+	.comb(comb),
+	.GND_port(GND_port),
+	.rs232_0_RXD(rs232_0_RXD));
+
 dffeas write_fifo_write_en(
 	.clk(wire_pll7_clk_0),
 	.d(\write_fifo_write_en~0_combout ),
@@ -96583,7 +96597,7 @@ defparam write_fifo_write_en.power_up = "low";
 
 cycloneive_lcell_comb \write_fifo_write_en~0 (
 	.dataa(cp_valid),
-	.datab(data8),
+	.datab(data1),
 	.datac(read_latency_shift_reg),
 	.datad(W_alu_result_2),
 	.cin(gnd),
@@ -96846,7 +96860,7 @@ defparam \readdata[7] .power_up = "low";
 
 dffeas \data_to_uart[1] (
 	.clk(wire_pll7_clk_0),
-	.d(data1),
+	.d(data2),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96902,7 +96916,7 @@ defparam \readdata[8] .power_up = "low";
 
 dffeas \data_to_uart[2] (
 	.clk(wire_pll7_clk_0),
-	.d(data2),
+	.d(data3),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96916,7 +96930,7 @@ defparam \data_to_uart[2] .power_up = "low";
 
 dffeas \data_to_uart[3] (
 	.clk(wire_pll7_clk_0),
-	.d(data3),
+	.d(data4),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96930,7 +96944,7 @@ defparam \data_to_uart[3] .power_up = "low";
 
 dffeas \data_to_uart[4] (
 	.clk(wire_pll7_clk_0),
-	.d(data4),
+	.d(data5),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96944,7 +96958,7 @@ defparam \data_to_uart[4] .power_up = "low";
 
 dffeas \data_to_uart[5] (
 	.clk(wire_pll7_clk_0),
-	.d(data5),
+	.d(data6),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96958,7 +96972,7 @@ defparam \data_to_uart[5] .power_up = "low";
 
 dffeas \data_to_uart[6] (
 	.clk(wire_pll7_clk_0),
-	.d(data6),
+	.d(data7),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96972,7 +96986,7 @@ defparam \data_to_uart[6] .power_up = "low";
 
 dffeas \data_to_uart[7] (
 	.clk(wire_pll7_clk_0),
-	.d(data7),
+	.d(data8),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -96986,7 +97000,7 @@ defparam \data_to_uart[7] .power_up = "low";
 
 cycloneive_lcell_comb \write_fifo_write_en~1 (
 	.dataa(cp_valid),
-	.datab(data8),
+	.datab(data1),
 	.datac(Equal12),
 	.datad(mem_used_1),
 	.cin(gnd),
@@ -97069,7 +97083,7 @@ defparam read_interrupt.power_up = "low";
 
 dffeas write_interrupt_en(
 	.clk(wire_pll7_clk_0),
-	.d(data1),
+	.d(data2),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -97329,8 +97343,7 @@ module niosII_altera_up_rs232_in_deserializer (
 	q_b_6,
 	q_b_7,
 	r_sync_rst,
-	d_read,
-	read_accepted,
+	uav_read,
 	hold_waitrequest,
 	d_byteenable_0,
 	Equal9,
@@ -97359,8 +97372,7 @@ output 	q_b_5;
 output 	q_b_6;
 output 	q_b_7;
 input 	r_sync_rst;
-input 	d_read;
-input 	read_accepted;
+input 	uav_read;
 input 	hold_waitrequest;
 input 	d_byteenable_0;
 input 	Equal9;
@@ -97515,11 +97527,11 @@ cycloneive_lcell_comb \comb~2 (
 	.dataa(empty_dff),
 	.datab(comb),
 	.datac(gnd),
-	.datad(W_alu_result_2),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\comb~2_combout ),
 	.cout());
-defparam \comb~2 .lut_mask = 16'hEEFF;
+defparam \comb~2 .lut_mask = 16'hEEEE;
 defparam \comb~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \comb~3 (
@@ -97880,9 +97892,9 @@ defparam \fifo_read_available[0] .power_up = "low";
 
 cycloneive_lcell_comb \comb~1 (
 	.dataa(hold_waitrequest),
-	.datab(d_read),
+	.datab(uav_read),
 	.datac(d_byteenable_0),
-	.datad(read_accepted),
+	.datad(W_alu_result_2),
 	.cin(gnd),
 	.combout(comb),
 	.cout());
@@ -98883,14 +98895,6 @@ wire \usedw_will_be_1~3_combout ;
 wire \empty_dff~0_combout ;
 
 
-niosII_altsyncram_dqb1 FIFOram(
-	.clock0(clock),
-	.q_b({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
-	.address_a({\wr_ptr|counter_reg_bit[6]~q ,\wr_ptr|counter_reg_bit[5]~q ,\wr_ptr|counter_reg_bit[4]~q ,\wr_ptr|counter_reg_bit[3]~q ,\wr_ptr|counter_reg_bit[2]~q ,\wr_ptr|counter_reg_bit[1]~q ,\wr_ptr|counter_reg_bit[0]~q }),
-	.wren_a(wreq),
-	.data_a({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
-	.address_b({\ram_read_address[6]~6_combout ,\ram_read_address[5]~5_combout ,\ram_read_address[4]~4_combout ,\ram_read_address[3]~3_combout ,\ram_read_address[2]~2_combout ,\ram_read_address[1]~1_combout ,\ram_read_address[0]~0_combout }));
-
 niosII_cntr_0ab wr_ptr(
 	.clock(clock),
 	.full_dff(full_dff1),
@@ -98933,6 +98937,14 @@ niosII_cntr_v9b rd_ptr_msb(
 	.comb(comb),
 	.rd_ptr_lsb(\rd_ptr_lsb~q ),
 	.GND_port(GND_port));
+
+niosII_altsyncram_dqb1 FIFOram(
+	.clock0(clock),
+	.q_b({q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]}),
+	.address_a({\wr_ptr|counter_reg_bit[6]~q ,\wr_ptr|counter_reg_bit[5]~q ,\wr_ptr|counter_reg_bit[4]~q ,\wr_ptr|counter_reg_bit[3]~q ,\wr_ptr|counter_reg_bit[2]~q ,\wr_ptr|counter_reg_bit[1]~q ,\wr_ptr|counter_reg_bit[0]~q }),
+	.wren_a(wreq),
+	.data_a({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
+	.address_b({\ram_read_address[6]~6_combout ,\ram_read_address[5]~5_combout ,\ram_read_address[4]~4_combout ,\ram_read_address[3]~3_combout ,\ram_read_address[2]~2_combout ,\ram_read_address[1]~1_combout ,\ram_read_address[0]~0_combout }));
 
 dffeas \low_addressa[0] (
 	.clk(clock),
@@ -102206,6 +102218,20 @@ wire \usedw_will_be_1~3_combout ;
 wire \empty_dff~0_combout ;
 
 
+niosII_cntr_0ab_1 wr_ptr(
+	.clock(clock),
+	.write_fifo_write_en(write_fifo_write_en),
+	.full_dff(full_dff1),
+	.counter_reg_bit_0(\wr_ptr|counter_reg_bit[0]~q ),
+	.counter_reg_bit_1(\wr_ptr|counter_reg_bit[1]~q ),
+	.counter_reg_bit_2(\wr_ptr|counter_reg_bit[2]~q ),
+	.counter_reg_bit_3(\wr_ptr|counter_reg_bit[3]~q ),
+	.counter_reg_bit_4(\wr_ptr|counter_reg_bit[4]~q ),
+	.counter_reg_bit_5(\wr_ptr|counter_reg_bit[5]~q ),
+	.counter_reg_bit_6(\wr_ptr|counter_reg_bit[6]~q ),
+	.r_sync_rst(r_sync_rst),
+	.GND_port(GND_port));
+
 niosII_cntr_ca7_1 usedw_counter(
 	.clock(clock),
 	.write_fifo_write_en(write_fifo_write_en),
@@ -102242,20 +102268,6 @@ niosII_altsyncram_dqb1_1 FIFOram(
 	.wren_a(wreq),
 	.data_a({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
 	.address_b({\ram_read_address[6]~6_combout ,\ram_read_address[5]~5_combout ,\ram_read_address[4]~4_combout ,\ram_read_address[3]~3_combout ,\ram_read_address[2]~2_combout ,\ram_read_address[1]~1_combout ,\ram_read_address[0]~0_combout }));
-
-niosII_cntr_0ab_1 wr_ptr(
-	.clock(clock),
-	.write_fifo_write_en(write_fifo_write_en),
-	.full_dff(full_dff1),
-	.counter_reg_bit_0(\wr_ptr|counter_reg_bit[0]~q ),
-	.counter_reg_bit_1(\wr_ptr|counter_reg_bit[1]~q ),
-	.counter_reg_bit_2(\wr_ptr|counter_reg_bit[2]~q ),
-	.counter_reg_bit_3(\wr_ptr|counter_reg_bit[3]~q ),
-	.counter_reg_bit_4(\wr_ptr|counter_reg_bit[4]~q ),
-	.counter_reg_bit_5(\wr_ptr|counter_reg_bit[5]~q ),
-	.counter_reg_bit_6(\wr_ptr|counter_reg_bit[6]~q ),
-	.r_sync_rst(r_sync_rst),
-	.GND_port(GND_port));
 
 dffeas \low_addressa[0] (
 	.clk(clock),
@@ -103959,9 +103971,9 @@ module niosII_niosII_rs232_0_1 (
 	cp_valid,
 	data,
 	data1,
+	data2,
 	read_latency_shift_reg,
 	data_to_uart_0,
-	data2,
 	readdata_2,
 	readdata_3,
 	readdata_4,
@@ -103999,9 +104011,9 @@ input 	r_sync_rst;
 input 	cp_valid;
 input 	data;
 input 	data1;
+input 	data2;
 input 	read_latency_shift_reg;
 input 	data_to_uart_0;
-input 	data2;
 output 	readdata_2;
 output 	readdata_3;
 output 	readdata_4;
@@ -104089,32 +104101,6 @@ wire \readdata~18_combout ;
 wire \readdata~19_combout ;
 
 
-niosII_altera_up_rs232_in_deserializer_1 RS232_In_Deserializer(
-	.wire_pll7_clk_0(wire_pll7_clk_0),
-	.W_alu_result_2(W_alu_result_2),
-	.q_b_0(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[0] ),
-	.q_b_1(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[1] ),
-	.q_b_2(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[2] ),
-	.q_b_3(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[3] ),
-	.q_b_4(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[4] ),
-	.q_b_5(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[5] ),
-	.q_b_6(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[6] ),
-	.q_b_7(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[7] ),
-	.r_sync_rst(r_sync_rst),
-	.read_latency_shift_reg(read_latency_shift_reg),
-	.fifo_read_available_7(\RS232_In_Deserializer|fifo_read_available[7]~q ),
-	.fifo_read_available_6(\RS232_In_Deserializer|fifo_read_available[6]~q ),
-	.fifo_read_available_5(\RS232_In_Deserializer|fifo_read_available[5]~q ),
-	.fifo_read_available_4(\RS232_In_Deserializer|fifo_read_available[4]~q ),
-	.fifo_read_available_3(\RS232_In_Deserializer|fifo_read_available[3]~q ),
-	.fifo_read_available_2(\RS232_In_Deserializer|fifo_read_available[2]~q ),
-	.fifo_read_available_1(\RS232_In_Deserializer|fifo_read_available[1]~q ),
-	.fifo_read_available_0(\RS232_In_Deserializer|fifo_read_available[0]~q ),
-	.empty_dff(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q ),
-	.comb(comb),
-	.GND_port(GND_port),
-	.rs232_1_RXD(rs232_1_RXD));
-
 niosII_altera_up_rs232_out_serializer_1 RS232_Out_Serializer(
 	.wire_pll7_clk_0(wire_pll7_clk_0),
 	.write_fifo_write_en(\write_fifo_write_en~q ),
@@ -104138,6 +104124,31 @@ niosII_altera_up_rs232_out_serializer_1 RS232_Out_Serializer(
 	.data_to_uart_7(data_to_uart_7),
 	.GND_port(GND_port));
 
+niosII_altera_up_rs232_in_deserializer_1 RS232_In_Deserializer(
+	.wire_pll7_clk_0(wire_pll7_clk_0),
+	.q_b_0(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[0] ),
+	.q_b_1(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[1] ),
+	.q_b_2(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[2] ),
+	.q_b_3(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[3] ),
+	.q_b_4(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[4] ),
+	.q_b_5(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[5] ),
+	.q_b_6(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[6] ),
+	.q_b_7(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b[7] ),
+	.r_sync_rst(r_sync_rst),
+	.read_latency_shift_reg(read_latency_shift_reg),
+	.fifo_read_available_7(\RS232_In_Deserializer|fifo_read_available[7]~q ),
+	.fifo_read_available_6(\RS232_In_Deserializer|fifo_read_available[6]~q ),
+	.fifo_read_available_5(\RS232_In_Deserializer|fifo_read_available[5]~q ),
+	.fifo_read_available_4(\RS232_In_Deserializer|fifo_read_available[4]~q ),
+	.fifo_read_available_3(\RS232_In_Deserializer|fifo_read_available[3]~q ),
+	.fifo_read_available_2(\RS232_In_Deserializer|fifo_read_available[2]~q ),
+	.fifo_read_available_1(\RS232_In_Deserializer|fifo_read_available[1]~q ),
+	.fifo_read_available_0(\RS232_In_Deserializer|fifo_read_available[0]~q ),
+	.empty_dff(\RS232_In_Deserializer|RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q ),
+	.comb(comb),
+	.GND_port(GND_port),
+	.rs232_1_RXD(rs232_1_RXD));
+
 dffeas write_fifo_write_en(
 	.clk(wire_pll7_clk_0),
 	.d(\write_fifo_write_en~0_combout ),
@@ -104154,7 +104165,7 @@ defparam write_fifo_write_en.power_up = "low";
 
 cycloneive_lcell_comb \write_fifo_write_en~0 (
 	.dataa(cp_valid),
-	.datab(data2),
+	.datab(data1),
 	.datac(read_latency_shift_reg),
 	.datad(W_alu_result_2),
 	.cin(gnd),
@@ -104446,7 +104457,7 @@ defparam \readdata[8] .power_up = "low";
 cycloneive_lcell_comb \write_interrupt_en~0 (
 	.dataa(cp_valid),
 	.datab(W_alu_result_2),
-	.datac(data2),
+	.datac(data1),
 	.datad(read_latency_shift_reg),
 	.cin(gnd),
 	.combout(\write_interrupt_en~0_combout ),
@@ -104528,7 +104539,7 @@ defparam read_interrupt.power_up = "low";
 
 dffeas write_interrupt_en(
 	.clk(wire_pll7_clk_0),
-	.d(data1),
+	.d(data2),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -104778,7 +104789,6 @@ endmodule
 
 module niosII_altera_up_rs232_in_deserializer_1 (
 	wire_pll7_clk_0,
-	W_alu_result_2,
 	q_b_0,
 	q_b_1,
 	q_b_2,
@@ -104802,7 +104812,6 @@ module niosII_altera_up_rs232_in_deserializer_1 (
 	GND_port,
 	rs232_1_RXD)/* synthesis synthesis_greybox=1 */;
 input 	wire_pll7_clk_0;
-input 	W_alu_result_2;
 output 	q_b_0;
 output 	q_b_1;
 output 	q_b_2;
@@ -104897,11 +104906,13 @@ niosII_altera_up_sync_fifo_2 RS232_In_FIFO(
 	.counter_reg_bit_1(\RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit[1]~q ),
 	.counter_reg_bit_0(\RS232_In_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit[0]~q ),
 	.r_sync_rst(r_sync_rst),
+	.read_latency_shift_reg(read_latency_shift_reg),
 	.empty_dff(empty_dff),
+	.comb(comb),
 	.all_bits_transmitted(\RS232_In_Counters|all_bits_transmitted~q ),
-	.comb(\comb~0_combout ),
+	.comb1(\comb~0_combout ),
 	.data_in_shift_reg_1(\data_in_shift_reg[1]~q ),
-	.comb1(\comb~1_combout ),
+	.comb2(\comb~1_combout ),
 	.data_in_shift_reg_2(\data_in_shift_reg[2]~q ),
 	.data_in_shift_reg_3(\data_in_shift_reg[3]~q ),
 	.data_in_shift_reg_4(\data_in_shift_reg[4]~q ),
@@ -104961,11 +104972,11 @@ cycloneive_lcell_comb \comb~1 (
 	.dataa(read_latency_shift_reg),
 	.datab(empty_dff),
 	.datac(comb),
-	.datad(W_alu_result_2),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\comb~1_combout ),
 	.cout());
-defparam \comb~1 .lut_mask = 16'hFEFF;
+defparam \comb~1 .lut_mask = 16'hFEFE;
 defparam \comb~1 .sum_lutc_input = "datac";
 
 dffeas \data_in_shift_reg[2] (
@@ -105994,11 +106005,13 @@ module niosII_altera_up_sync_fifo_2 (
 	counter_reg_bit_1,
 	counter_reg_bit_0,
 	r_sync_rst,
+	read_latency_shift_reg,
 	empty_dff,
-	all_bits_transmitted,
 	comb,
-	data_in_shift_reg_1,
+	all_bits_transmitted,
 	comb1,
+	data_in_shift_reg_1,
+	comb2,
 	data_in_shift_reg_2,
 	data_in_shift_reg_3,
 	data_in_shift_reg_4,
@@ -106025,11 +106038,13 @@ output 	counter_reg_bit_2;
 output 	counter_reg_bit_1;
 output 	counter_reg_bit_0;
 input 	r_sync_rst;
+input 	read_latency_shift_reg;
 output 	empty_dff;
-input 	all_bits_transmitted;
 input 	comb;
-input 	data_in_shift_reg_1;
+input 	all_bits_transmitted;
 input 	comb1;
+input 	data_in_shift_reg_1;
+input 	comb2;
 input 	data_in_shift_reg_2;
 input 	data_in_shift_reg_3;
 input 	data_in_shift_reg_4;
@@ -106062,11 +106077,13 @@ niosII_scfifo_5 Sync_FIFO(
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
 	.r_sync_rst(r_sync_rst),
+	.read_latency_shift_reg(read_latency_shift_reg),
 	.empty_dff(empty_dff),
+	.comb(comb),
 	.all_bits_transmitted(all_bits_transmitted),
-	.wrreq(comb),
+	.wrreq(comb1),
 	.data({data_in_shift_reg_8,data_in_shift_reg_7,data_in_shift_reg_6,data_in_shift_reg_5,data_in_shift_reg_4,data_in_shift_reg_3,data_in_shift_reg_2,data_in_shift_reg_1}),
-	.comb(comb1),
+	.comb1(comb2),
 	.GND_port(GND_port));
 
 endmodule
@@ -106083,11 +106100,13 @@ module niosII_scfifo_5 (
 	counter_reg_bit_1,
 	counter_reg_bit_0,
 	r_sync_rst,
+	read_latency_shift_reg,
 	empty_dff,
+	comb,
 	all_bits_transmitted,
 	wrreq,
 	data,
-	comb,
+	comb1,
 	GND_port)/* synthesis synthesis_greybox=1 */;
 input 	clock;
 output 	[7:0] q;
@@ -106100,11 +106119,13 @@ output 	counter_reg_bit_2;
 output 	counter_reg_bit_1;
 output 	counter_reg_bit_0;
 input 	r_sync_rst;
+input 	read_latency_shift_reg;
 output 	empty_dff;
+input 	comb;
 input 	all_bits_transmitted;
 input 	wrreq;
 input 	[7:0] data;
-input 	comb;
+input 	comb1;
 input 	GND_port;
 
 wire gnd;
@@ -106130,11 +106151,13 @@ niosII_scfifo_a341_2 auto_generated(
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
 	.r_sync_rst(r_sync_rst),
+	.read_latency_shift_reg(read_latency_shift_reg),
 	.empty_dff(empty_dff),
+	.comb(comb),
 	.all_bits_transmitted(all_bits_transmitted),
 	.wrreq(wrreq),
 	.data({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
-	.comb(comb),
+	.comb1(comb1),
 	.GND_port(GND_port));
 
 endmodule
@@ -106151,11 +106174,13 @@ module niosII_scfifo_a341_2 (
 	counter_reg_bit_1,
 	counter_reg_bit_0,
 	r_sync_rst,
+	read_latency_shift_reg,
 	empty_dff,
+	comb,
 	all_bits_transmitted,
 	wrreq,
 	data,
-	comb,
+	comb1,
 	GND_port)/* synthesis synthesis_greybox=1 */;
 input 	clock;
 output 	[7:0] q;
@@ -106168,11 +106193,13 @@ output 	counter_reg_bit_2;
 output 	counter_reg_bit_1;
 output 	counter_reg_bit_0;
 input 	r_sync_rst;
+input 	read_latency_shift_reg;
 output 	empty_dff;
+input 	comb;
 input 	all_bits_transmitted;
 input 	wrreq;
 input 	[7:0] data;
-input 	comb;
+input 	comb1;
 input 	GND_port;
 
 wire gnd;
@@ -106198,11 +106225,13 @@ niosII_a_dpfifo_tq31_2 dpfifo(
 	.counter_reg_bit_1(counter_reg_bit_1),
 	.counter_reg_bit_0(counter_reg_bit_0),
 	.r_sync_rst(r_sync_rst),
+	.read_latency_shift_reg(read_latency_shift_reg),
 	.empty_dff1(empty_dff),
+	.comb(comb),
 	.all_bits_transmitted(all_bits_transmitted),
 	.wreq(wrreq),
 	.data({data[7],data[6],data[5],data[4],data[3],data[2],data[1],data[0]}),
-	.comb(comb),
+	.comb1(comb1),
 	.GND_port(GND_port));
 
 endmodule
@@ -106219,11 +106248,13 @@ module niosII_a_dpfifo_tq31_2 (
 	counter_reg_bit_1,
 	counter_reg_bit_0,
 	r_sync_rst,
+	read_latency_shift_reg,
 	empty_dff1,
+	comb,
 	all_bits_transmitted,
 	wreq,
 	data,
-	comb,
+	comb1,
 	GND_port)/* synthesis synthesis_greybox=1 */;
 input 	clock;
 output 	[7:0] q;
@@ -106236,11 +106267,13 @@ output 	counter_reg_bit_2;
 output 	counter_reg_bit_1;
 output 	counter_reg_bit_0;
 input 	r_sync_rst;
+input 	read_latency_shift_reg;
 output 	empty_dff1;
+input 	comb;
 input 	all_bits_transmitted;
 input 	wreq;
 input 	[7:0] data;
-input 	comb;
+input 	comb1;
 input 	GND_port;
 
 wire gnd;
@@ -106334,7 +106367,7 @@ niosII_cntr_ca7_2 usedw_counter(
 	.r_sync_rst(r_sync_rst),
 	.all_bits_transmitted(all_bits_transmitted),
 	.updown(wreq),
-	.comb(comb),
+	.comb(comb1),
 	.GND_port(GND_port));
 
 niosII_cntr_v9b_2 rd_ptr_msb(
@@ -106346,7 +106379,7 @@ niosII_cntr_v9b_2 rd_ptr_msb(
 	.counter_reg_bit_4(\rd_ptr_msb|counter_reg_bit[4]~q ),
 	.counter_reg_bit_5(\rd_ptr_msb|counter_reg_bit[5]~q ),
 	.r_sync_rst(r_sync_rst),
-	.comb(comb),
+	.comb(comb1),
 	.rd_ptr_lsb(\rd_ptr_lsb~q ),
 	.GND_port(GND_port));
 
@@ -106389,7 +106422,7 @@ defparam rd_ptr_lsb.power_up = "low";
 cycloneive_lcell_comb \ram_read_address[0]~0 (
 	.dataa(\low_addressa[0]~q ),
 	.datab(gnd),
-	.datac(comb),
+	.datac(comb1),
 	.datad(\rd_ptr_lsb~q ),
 	.cin(gnd),
 	.combout(\ram_read_address[0]~0_combout ),
@@ -106415,7 +106448,7 @@ cycloneive_lcell_comb \ram_read_address[1]~1 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[0]~q ),
 	.datab(\low_addressa[1]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[1]~1_combout ),
 	.cout());
@@ -106440,7 +106473,7 @@ cycloneive_lcell_comb \ram_read_address[2]~2 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[1]~q ),
 	.datab(\low_addressa[2]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[2]~2_combout ),
 	.cout());
@@ -106465,7 +106498,7 @@ cycloneive_lcell_comb \ram_read_address[3]~3 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[2]~q ),
 	.datab(\low_addressa[3]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[3]~3_combout ),
 	.cout());
@@ -106490,7 +106523,7 @@ cycloneive_lcell_comb \ram_read_address[4]~4 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[3]~q ),
 	.datab(\low_addressa[4]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[4]~4_combout ),
 	.cout());
@@ -106515,7 +106548,7 @@ cycloneive_lcell_comb \ram_read_address[5]~5 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[4]~q ),
 	.datab(\low_addressa[5]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[5]~5_combout ),
 	.cout());
@@ -106540,7 +106573,7 @@ cycloneive_lcell_comb \ram_read_address[6]~6 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[5]~q ),
 	.datab(\low_addressa[6]~q ),
 	.datac(gnd),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\ram_read_address[6]~6_combout ),
 	.cout());
@@ -106549,7 +106582,7 @@ defparam \ram_read_address[6]~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \low_addressa[0]~0 (
 	.dataa(\low_addressa[0]~q ),
-	.datab(comb),
+	.datab(comb1),
 	.datac(\rd_ptr_lsb~q ),
 	.datad(r_sync_rst),
 	.cin(gnd),
@@ -106571,19 +106604,19 @@ defparam \rd_ptr_lsb~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \rd_ptr_lsb~1 (
 	.dataa(r_sync_rst),
-	.datab(comb),
-	.datac(gnd),
-	.datad(gnd),
+	.datab(read_latency_shift_reg),
+	.datac(empty_dff1),
+	.datad(comb),
 	.cin(gnd),
 	.combout(\rd_ptr_lsb~1_combout ),
 	.cout());
-defparam \rd_ptr_lsb~1 .lut_mask = 16'hEEEE;
+defparam \rd_ptr_lsb~1 .lut_mask = 16'hFFFE;
 defparam \rd_ptr_lsb~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \low_addressa[1]~1 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[0]~q ),
 	.datab(\low_addressa[1]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[1]~1_combout ),
@@ -106594,7 +106627,7 @@ defparam \low_addressa[1]~1 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \low_addressa[2]~2 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[1]~q ),
 	.datab(\low_addressa[2]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[2]~2_combout ),
@@ -106605,7 +106638,7 @@ defparam \low_addressa[2]~2 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \low_addressa[3]~3 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[2]~q ),
 	.datab(\low_addressa[3]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[3]~3_combout ),
@@ -106616,7 +106649,7 @@ defparam \low_addressa[3]~3 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \low_addressa[4]~4 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[3]~q ),
 	.datab(\low_addressa[4]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[4]~4_combout ),
@@ -106627,7 +106660,7 @@ defparam \low_addressa[4]~4 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \low_addressa[5]~5 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[4]~q ),
 	.datab(\low_addressa[5]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[5]~5_combout ),
@@ -106638,7 +106671,7 @@ defparam \low_addressa[5]~5 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \low_addressa[6]~6 (
 	.dataa(\rd_ptr_msb|counter_reg_bit[5]~q ),
 	.datab(\low_addressa[6]~q ),
-	.datac(comb),
+	.datac(comb1),
 	.datad(r_sync_rst),
 	.cin(gnd),
 	.combout(\low_addressa[6]~6_combout ),
@@ -106686,8 +106719,8 @@ defparam \_~0 .lut_mask = 16'hFFFE;
 defparam \_~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \_~1 (
-	.dataa(all_bits_transmitted),
-	.datab(counter_reg_bit_0),
+	.dataa(counter_reg_bit_1),
+	.datab(wreq),
 	.datac(counter_reg_bit_2),
 	.datad(\_~0_combout ),
 	.cin(gnd),
@@ -106697,9 +106730,9 @@ defparam \_~1 .lut_mask = 16'hFFFE;
 defparam \_~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \_~2 (
-	.dataa(counter_reg_bit_1),
+	.dataa(counter_reg_bit_0),
 	.datab(full_dff1),
-	.datac(comb),
+	.datac(comb1),
 	.datad(\_~1_combout ),
 	.cin(gnd),
 	.combout(\_~2_combout ),
@@ -106725,7 +106758,7 @@ cycloneive_lcell_comb \usedw_will_be_1~4 (
 	.dataa(all_bits_transmitted),
 	.datab(full_dff1),
 	.datac(\usedw_is_1_dff~q ),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\usedw_will_be_1~4_combout ),
 	.cout());
@@ -106758,7 +106791,7 @@ cycloneive_lcell_comb \usedw_will_be_2~0 (
 	.dataa(\_~4_combout ),
 	.datab(\usedw_is_1_dff~q ),
 	.datac(wreq),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\usedw_will_be_2~0_combout ),
 	.cout());
@@ -106769,7 +106802,7 @@ cycloneive_lcell_comb \usedw_will_be_2~1 (
 	.dataa(\usedw_will_be_2~0_combout ),
 	.datab(\usedw_is_2_dff~q ),
 	.datac(wreq),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\usedw_will_be_2~1_combout ),
 	.cout());
@@ -106792,7 +106825,7 @@ defparam usedw_is_2_dff.power_up = "low";
 
 cycloneive_lcell_comb \usedw_will_be_0~0 (
 	.dataa(wreq),
-	.datab(comb),
+	.datab(comb1),
 	.datac(\usedw_is_1_dff~q ),
 	.datad(r_sync_rst),
 	.cin(gnd),
@@ -106805,7 +106838,7 @@ cycloneive_lcell_comb \usedw_will_be_0~1 (
 	.dataa(\usedw_will_be_0~0_combout ),
 	.datab(\usedw_is_0_dff~q ),
 	.datac(wreq),
-	.datad(comb),
+	.datad(comb1),
 	.cin(gnd),
 	.combout(\usedw_will_be_0~1_combout ),
 	.cout());
@@ -106828,7 +106861,7 @@ defparam usedw_is_0_dff.power_up = "low";
 
 cycloneive_lcell_comb \usedw_will_be_1~2 (
 	.dataa(\usedw_is_2_dff~q ),
-	.datab(comb),
+	.datab(comb1),
 	.datac(\usedw_is_0_dff~q ),
 	.datad(wreq),
 	.cin(gnd),
@@ -111399,15 +111432,14 @@ module niosII_niosII_sdram (
 	use_reg,
 	saved_grant_1,
 	WideOr0,
-	Equal0,
-	Equal1,
-	WideOr1,
-	m0_write,
-	mem_used_7,
-	src_data_66,
-	out_data_28,
 	src_valid,
+	Equal0,
+	src_data_66,
+	mem_used_7,
+	m0_write,
 	src12_valid,
+	Equal1,
+	out_data_28,
 	m0_write1,
 	out_data_42,
 	out_data_29,
@@ -111531,15 +111563,14 @@ input 	d_byteenable_1;
 input 	use_reg;
 input 	saved_grant_1;
 input 	WideOr0;
-output 	Equal0;
-input 	Equal1;
-input 	WideOr1;
-input 	m0_write;
-input 	mem_used_7;
-input 	src_data_66;
-input 	out_data_28;
 input 	src_valid;
+output 	Equal0;
+input 	src_data_66;
+input 	mem_used_7;
+input 	m0_write;
 input 	src12_valid;
+input 	Equal1;
+input 	out_data_28;
 input 	m0_write1;
 input 	out_data_42;
 input 	out_data_29;
@@ -111846,20 +111877,22 @@ wire \Selector38~5_combout ;
 wire \m_count[1]~q ;
 wire \LessThan1~0_combout ;
 wire \Selector27~0_combout ;
-wire \Selector35~0_combout ;
+wire \Selector35~2_combout ;
 wire \Selector25~4_combout ;
 wire \Selector25~5_combout ;
 wire \m_state.000000010~q ;
-wire \Selector34~1_combout ;
-wire \Selector34~2_combout ;
+wire \Selector34~5_combout ;
 wire \Selector34~3_combout ;
+wire \Selector35~0_combout ;
+wire \Selector35~1_combout ;
+wire \Selector34~4_combout ;
 wire \m_next.000010000~q ;
 wire \Selector27~1_combout ;
 wire \Selector28~0_combout ;
 wire \Selector27~3_combout ;
 wire \Selector27~4_combout ;
-wire \Selector27~5_combout ;
 wire \WideOr8~0_combout ;
+wire \Selector27~5_combout ;
 wire \Selector27~6_combout ;
 wire \m_state.000010000~q ;
 wire \Selector39~7_combout ;
@@ -111876,7 +111909,7 @@ wire \Selector36~2_combout ;
 wire \m_next.010000000~q ;
 wire \Selector31~0_combout ;
 wire \m_state.010000000~q ;
-wire \Selector34~0_combout ;
+wire \Selector34~2_combout ;
 wire \m_next.000001000~q ;
 wire \Selector27~2_combout ;
 wire \m_state.000001000~q ;
@@ -111890,7 +111923,6 @@ wire \m_addr[1]~3_combout ;
 wire \Selector33~1_combout ;
 wire \Selector33~2_combout ;
 wire \Selector33~3_combout ;
-wire \Selector33~4_combout ;
 wire \m_next.000000001~q ;
 wire \Selector24~0_combout ;
 wire \Selector24~1_combout ;
@@ -112062,15 +112094,14 @@ niosII_niosII_sdram_input_efifo_module the_niosII_sdram_input_efifo_module(
 	.rd_data_17(\the_niosII_sdram_input_efifo_module|rd_data[17]~26_combout ),
 	.saved_grant_0(saved_grant_0),
 	.WideOr0(WideOr0),
-	.Equal0(Equal0),
-	.Equal11(Equal1),
-	.WideOr1(WideOr1),
-	.m0_write(m0_write),
-	.mem_used_7(mem_used_7),
-	.src_data_66(src_data_66),
-	.out_data_28(out_data_28),
 	.src_valid(src_valid),
+	.Equal0(Equal0),
+	.src_data_66(src_data_66),
+	.mem_used_7(mem_used_7),
+	.m0_write(m0_write),
 	.src12_valid(src12_valid),
+	.Equal11(Equal1),
+	.out_data_28(out_data_28),
 	.m0_write1(m0_write1),
 	.out_data_42(out_data_42),
 	.out_data_29(out_data_29),
@@ -114704,16 +114735,16 @@ cycloneive_lcell_comb \Selector27~0 (
 defparam \Selector27~0 .lut_mask = 16'hEFFF;
 defparam \Selector27~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Selector35~0 (
+cycloneive_lcell_comb \Selector35~2 (
 	.dataa(\active_rnw~q ),
 	.datab(\m_state.010000000~q ),
 	.datac(\m_state.100000000~q ),
 	.datad(\m_next~19_combout ),
 	.cin(gnd),
-	.combout(\Selector35~0_combout ),
+	.combout(\Selector35~2_combout ),
 	.cout());
-defparam \Selector35~0 .lut_mask = 16'h7FFF;
-defparam \Selector35~0 .sum_lutc_input = "datac";
+defparam \Selector35~2 .lut_mask = 16'h7FFF;
+defparam \Selector35~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Selector25~4 (
 	.dataa(\init_done~q ),
@@ -114751,48 +114782,70 @@ dffeas \m_state.000000010 (
 defparam \m_state.000000010 .is_wysiwyg = "true";
 defparam \m_state.000000010 .power_up = "low";
 
-cycloneive_lcell_comb \Selector34~1 (
-	.dataa(\m_state.000000010~q ),
-	.datab(\m_state.010000000~q ),
-	.datac(\m_state.100000000~q ),
-	.datad(\m_next~19_combout ),
+cycloneive_lcell_comb \Selector34~5 (
+	.dataa(\m_state.000001000~q ),
+	.datab(\m_state.000010000~q ),
+	.datac(\Selector41~0_combout ),
+	.datad(\refresh_request~q ),
 	.cin(gnd),
-	.combout(\Selector34~1_combout ),
+	.combout(\Selector34~5_combout ),
 	.cout());
-defparam \Selector34~1 .lut_mask = 16'hFFFE;
-defparam \Selector34~1 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Selector34~2 (
-	.dataa(\refresh_request~q ),
-	.datab(\init_done~q ),
-	.datac(\m_state.000000001~q ),
-	.datad(\WideOr9~0_combout ),
-	.cin(gnd),
-	.combout(\Selector34~2_combout ),
-	.cout());
-defparam \Selector34~2 .lut_mask = 16'hDEFF;
-defparam \Selector34~2 .sum_lutc_input = "datac";
+defparam \Selector34~5 .lut_mask = 16'hFFFE;
+defparam \Selector34~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Selector34~3 (
-	.dataa(\Selector41~0_combout ),
-	.datab(\Selector34~1_combout ),
-	.datac(\m_state.000000001~q ),
-	.datad(\Selector34~2_combout ),
+	.dataa(\m_state.000000010~q ),
+	.datab(\refresh_request~q ),
+	.datac(\init_done~q ),
+	.datad(\m_state.000000001~q ),
 	.cin(gnd),
 	.combout(\Selector34~3_combout ),
 	.cout());
-defparam \Selector34~3 .lut_mask = 16'hEFFE;
+defparam \Selector34~3 .lut_mask = 16'hEFFF;
 defparam \Selector34~3 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Selector35~0 (
+	.dataa(\m_state.100000000~q ),
+	.datab(\m_state.010000000~q ),
+	.datac(\refresh_request~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\Selector35~0_combout ),
+	.cout());
+defparam \Selector35~0 .lut_mask = 16'h7F7F;
+defparam \Selector35~0 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Selector35~1 (
+	.dataa(\m_state.100000000~q ),
+	.datab(\the_niosII_sdram_input_efifo_module|Equal1~0_combout ),
+	.datac(\pending~10_combout ),
+	.datad(\Selector35~0_combout ),
+	.cin(gnd),
+	.combout(\Selector35~1_combout ),
+	.cout());
+defparam \Selector35~1 .lut_mask = 16'hFFF7;
+defparam \Selector35~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \Selector34~4 (
+	.dataa(\Selector34~5_combout ),
+	.datab(\Selector34~3_combout ),
+	.datac(gnd),
+	.datad(\Selector35~1_combout ),
+	.cin(gnd),
+	.combout(\Selector34~4_combout ),
+	.cout());
+defparam \Selector34~4 .lut_mask = 16'hEEFF;
+defparam \Selector34~4 .sum_lutc_input = "datac";
 
 dffeas \m_next.000010000 (
 	.clk(wire_pll7_clk_0),
-	.d(\Selector35~0_combout ),
+	.d(\Selector35~2_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(!\m_state.000000010~q ),
 	.sload(gnd),
-	.ena(\Selector34~3_combout ),
+	.ena(\Selector34~4_combout ),
 	.q(\m_next.000010000~q ),
 	.prn(vcc));
 defparam \m_next.000010000 .is_wysiwyg = "true";
@@ -114821,10 +114874,10 @@ defparam \Selector28~0 .lut_mask = 16'hFEFF;
 defparam \Selector28~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Selector27~3 (
-	.dataa(\refresh_request~q ),
-	.datab(\m_state.000000001~q ),
-	.datac(\Selector41~0_combout ),
-	.datad(\WideOr9~0_combout ),
+	.dataa(\m_state.100000000~q ),
+	.datab(\m_state.000000100~q ),
+	.datac(\Selector32~0_combout ),
+	.datad(\LessThan1~0_combout ),
 	.cin(gnd),
 	.combout(\Selector27~3_combout ),
 	.cout());
@@ -114832,26 +114885,15 @@ defparam \Selector27~3 .lut_mask = 16'hEFFF;
 defparam \Selector27~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Selector27~4 (
-	.dataa(\the_niosII_sdram_input_efifo_module|Equal1~0_combout ),
-	.datab(\refresh_request~q ),
-	.datac(\init_done~q ),
-	.datad(\m_state.000000001~q ),
+	.dataa(\m_state.000000001~q ),
+	.datab(\WideOr9~0_combout ),
+	.datac(\the_niosII_sdram_input_efifo_module|Equal1~0_combout ),
+	.datad(\init_done~q ),
 	.cin(gnd),
 	.combout(\Selector27~4_combout ),
 	.cout());
-defparam \Selector27~4 .lut_mask = 16'hEFFF;
+defparam \Selector27~4 .lut_mask = 16'hB1FF;
 defparam \Selector27~4 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Selector27~5 (
-	.dataa(\m_state.100000000~q ),
-	.datab(\m_state.000000100~q ),
-	.datac(\Selector32~0_combout ),
-	.datad(\LessThan1~0_combout ),
-	.cin(gnd),
-	.combout(\Selector27~5_combout ),
-	.cout());
-defparam \Selector27~5 .lut_mask = 16'hEFFF;
-defparam \Selector27~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \WideOr8~0 (
 	.dataa(gnd),
@@ -114864,15 +114906,26 @@ cycloneive_lcell_comb \WideOr8~0 (
 defparam \WideOr8~0 .lut_mask = 16'h3FFF;
 defparam \WideOr8~0 .sum_lutc_input = "datac";
 
+cycloneive_lcell_comb \Selector27~5 (
+	.dataa(\WideOr8~0_combout ),
+	.datab(\refresh_request~q ),
+	.datac(\m_state.000000001~q ),
+	.datad(\Selector27~4_combout ),
+	.cin(gnd),
+	.combout(\Selector27~5_combout ),
+	.cout());
+defparam \Selector27~5 .lut_mask = 16'hFFDF;
+defparam \Selector27~5 .sum_lutc_input = "datac";
+
 cycloneive_lcell_comb \Selector27~6 (
-	.dataa(\Selector27~3_combout ),
-	.datab(\Selector27~4_combout ),
-	.datac(\Selector27~5_combout ),
-	.datad(\WideOr8~0_combout ),
+	.dataa(\Selector41~0_combout ),
+	.datab(\Selector27~3_combout ),
+	.datac(\Selector27~4_combout ),
+	.datad(\Selector27~5_combout ),
 	.cin(gnd),
 	.combout(\Selector27~6_combout ),
 	.cout());
-defparam \Selector27~6 .lut_mask = 16'hFEFF;
+defparam \Selector27~6 .lut_mask = 16'hFFFD;
 defparam \Selector27~6 .sum_lutc_input = "datac";
 
 dffeas \m_state.000010000 (
@@ -115055,26 +115108,26 @@ dffeas \m_state.010000000 (
 defparam \m_state.010000000 .is_wysiwyg = "true";
 defparam \m_state.010000000 .power_up = "low";
 
-cycloneive_lcell_comb \Selector34~0 (
+cycloneive_lcell_comb \Selector34~2 (
 	.dataa(\active_rnw~q ),
 	.datab(\m_state.100000000~q ),
 	.datac(\m_next~19_combout ),
 	.datad(\m_state.010000000~q ),
 	.cin(gnd),
-	.combout(\Selector34~0_combout ),
+	.combout(\Selector34~2_combout ),
 	.cout());
-defparam \Selector34~0 .lut_mask = 16'hBFFF;
-defparam \Selector34~0 .sum_lutc_input = "datac";
+defparam \Selector34~2 .lut_mask = 16'hBFFF;
+defparam \Selector34~2 .sum_lutc_input = "datac";
 
 dffeas \m_next.000001000 (
 	.clk(wire_pll7_clk_0),
-	.d(\Selector34~0_combout ),
+	.d(\Selector34~2_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(!\m_state.000000010~q ),
 	.sload(gnd),
-	.ena(\Selector34~3_combout ),
+	.ena(\Selector34~4_combout ),
 	.q(\m_next.000001000~q ),
 	.prn(vcc));
 defparam \m_next.000001000 .is_wysiwyg = "true";
@@ -115204,34 +115257,23 @@ cycloneive_lcell_comb \Selector33~2 (
 	.cin(gnd),
 	.combout(\Selector33~2_combout ),
 	.cout());
-defparam \Selector33~2 .lut_mask = 16'hFFFD;
+defparam \Selector33~2 .lut_mask = 16'hBFFF;
 defparam \Selector33~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Selector33~3 (
-	.dataa(\m_state.100000000~q ),
-	.datab(\refresh_request~q ),
-	.datac(\the_niosII_sdram_input_efifo_module|Equal1~0_combout ),
-	.datad(\pending~10_combout ),
+	.dataa(\Selector33~0_combout ),
+	.datab(\Selector33~2_combout ),
+	.datac(gnd),
+	.datad(\Selector35~1_combout ),
 	.cin(gnd),
 	.combout(\Selector33~3_combout ),
 	.cout());
-defparam \Selector33~3 .lut_mask = 16'hFEFF;
+defparam \Selector33~3 .lut_mask = 16'hFF77;
 defparam \Selector33~3 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Selector33~4 (
-	.dataa(\m_state.010000000~q ),
-	.datab(\Selector33~0_combout ),
-	.datac(\Selector33~2_combout ),
-	.datad(\Selector33~3_combout ),
-	.cin(gnd),
-	.combout(\Selector33~4_combout ),
-	.cout());
-defparam \Selector33~4 .lut_mask = 16'hF7FF;
-defparam \Selector33~4 .sum_lutc_input = "datac";
 
 dffeas \m_next.000000001 (
 	.clk(wire_pll7_clk_0),
-	.d(\Selector33~4_combout ),
+	.d(\Selector33~3_combout ),
 	.asdata(vcc),
 	.clrn(!r_sync_rst),
 	.aload(gnd),
@@ -116843,15 +116885,14 @@ module niosII_niosII_sdram_input_efifo_module (
 	rd_data_17,
 	saved_grant_0,
 	WideOr0,
-	Equal0,
-	Equal11,
-	WideOr1,
-	m0_write,
-	mem_used_7,
-	src_data_66,
-	out_data_28,
 	src_valid,
+	Equal0,
+	src_data_66,
+	mem_used_7,
+	m0_write,
 	src12_valid,
+	Equal11,
+	out_data_28,
 	m0_write1,
 	out_data_42,
 	out_data_29,
@@ -116947,15 +116988,14 @@ output 	rd_data_16;
 output 	rd_data_17;
 input 	saved_grant_0;
 input 	WideOr0;
-output 	Equal0;
-input 	Equal11;
-input 	WideOr1;
-input 	m0_write;
-input 	mem_used_7;
-input 	src_data_66;
-input 	out_data_28;
 input 	src_valid;
+output 	Equal0;
+input 	src_data_66;
+input 	mem_used_7;
+input 	m0_write;
 input 	src12_valid;
+input 	Equal11;
+input 	out_data_28;
 input 	m0_write1;
 input 	out_data_42;
 input 	out_data_29;
@@ -117027,10 +117067,11 @@ assign unknown = 1'b0;
 
 wire \always2~0_combout ;
 wire \always2~1_combout ;
+wire \always2~2_combout ;
 wire \entries[1]~0_combout ;
 wire \entries[0]~1_combout ;
-wire \always2~2_combout ;
 wire \always2~3_combout ;
+wire \always2~4_combout ;
 wire \wr_address~0_combout ;
 wire \wr_address~q ;
 wire \entry_1[42]~3_combout ;
@@ -117651,32 +117692,43 @@ defparam \rd_data[15]~42 .lut_mask = 16'hAACC;
 defparam \rd_data[15]~42 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \always2~0 (
-	.dataa(m0_write),
-	.datab(mem_used_7),
-	.datac(src_data_66),
-	.datad(gnd),
+	.dataa(Equal0),
+	.datab(src_data_66),
+	.datac(mem_used_7),
+	.datad(m0_write),
 	.cin(gnd),
 	.combout(\always2~0_combout ),
 	.cout());
-defparam \always2~0 .lut_mask = 16'hFBFB;
+defparam \always2~0 .lut_mask = 16'hFFDF;
 defparam \always2~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \always2~1 (
-	.dataa(WideOr0),
-	.datab(Equal0),
-	.datac(WideOr1),
-	.datad(\always2~0_combout ),
+	.dataa(saved_grant_0),
+	.datab(src12_valid),
+	.datac(Equal11),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(\always2~1_combout ),
 	.cout());
-defparam \always2~1 .lut_mask = 16'hFFFB;
+defparam \always2~1 .lut_mask = 16'hEFEF;
 defparam \always2~1 .sum_lutc_input = "datac";
+
+cycloneive_lcell_comb \always2~2 (
+	.dataa(WideOr0),
+	.datab(src_valid),
+	.datac(\always2~0_combout ),
+	.datad(\always2~1_combout ),
+	.cin(gnd),
+	.combout(\always2~2_combout ),
+	.cout());
+defparam \always2~2 .lut_mask = 16'hFFFE;
+defparam \always2~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \entries[1]~0 (
 	.dataa(entries_1),
 	.datab(f_select),
 	.datac(entries_0),
-	.datad(\always2~1_combout ),
+	.datad(\always2~2_combout ),
 	.cin(gnd),
 	.combout(\entries[1]~0_combout ),
 	.cout());
@@ -117686,7 +117738,7 @@ defparam \entries[1]~0 .sum_lutc_input = "datac";
 cycloneive_lcell_comb \entries[0]~1 (
 	.dataa(entries_0),
 	.datab(f_select),
-	.datac(\always2~1_combout ),
+	.datac(\always2~2_combout ),
 	.datad(gnd),
 	.cin(gnd),
 	.combout(\entries[0]~1_combout ),
@@ -117694,32 +117746,32 @@ cycloneive_lcell_comb \entries[0]~1 (
 defparam \entries[0]~1 .lut_mask = 16'h9696;
 defparam \entries[0]~1 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \always2~2 (
+cycloneive_lcell_comb \always2~3 (
 	.dataa(src_data_66),
 	.datab(mem_used_7),
 	.datac(src_valid),
 	.datad(saved_grant_0),
 	.cin(gnd),
-	.combout(\always2~2_combout ),
+	.combout(\always2~3_combout ),
 	.cout());
-defparam \always2~2 .lut_mask = 16'hFFFB;
-defparam \always2~2 .sum_lutc_input = "datac";
+defparam \always2~3 .lut_mask = 16'hFFFB;
+defparam \always2~3 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \always2~3 (
+cycloneive_lcell_comb \always2~4 (
 	.dataa(src_valid),
 	.datab(src12_valid),
 	.datac(Equal11),
-	.datad(\always2~2_combout ),
+	.datad(\always2~3_combout ),
 	.cin(gnd),
-	.combout(\always2~3_combout ),
+	.combout(\always2~4_combout ),
 	.cout());
-defparam \always2~3 .lut_mask = 16'hFFEF;
-defparam \always2~3 .sum_lutc_input = "datac";
+defparam \always2~4 .lut_mask = 16'hFFEF;
+defparam \always2~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \wr_address~0 (
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\always2~1_combout ),
+	.datac(\always2~2_combout ),
 	.datad(\wr_address~q ),
 	.cin(gnd),
 	.combout(\wr_address~0_combout ),
@@ -117754,7 +117806,7 @@ defparam \entry_1[42]~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \entry_1[42]~2 (
 	.dataa(m0_write1),
-	.datab(\always2~3_combout ),
+	.datab(\always2~4_combout ),
 	.datac(WideOr0),
 	.datad(\entry_1[42]~3_combout ),
 	.cin(gnd),
@@ -117790,7 +117842,7 @@ defparam \entry_0[42]~3 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \entry_0[42]~2 (
 	.dataa(m0_write1),
-	.datab(\always2~3_combout ),
+	.datab(\always2~4_combout ),
 	.datac(WideOr0),
 	.datad(\entry_0[42]~3_combout ),
 	.cin(gnd),
@@ -119460,12 +119512,11 @@ module niosII_niosII_timer_0 (
 	write_accepted,
 	read_mux_out,
 	writedata,
-	Equal6,
 	Equal4,
 	mem_used_1,
 	wait_latency_counter_0,
 	wait_latency_counter_1,
-	Equal61,
+	Equal6,
 	uav_write,
 	period_l_wr_strobe1,
 	timeout_occurred1,
@@ -119496,12 +119547,11 @@ input 	d_write;
 input 	write_accepted;
 output 	read_mux_out;
 input 	[15:0] writedata;
-output 	Equal6;
 input 	Equal4;
 input 	mem_used_1;
 input 	wait_latency_counter_0;
 input 	wait_latency_counter_1;
-output 	Equal61;
+output 	Equal6;
 input 	uav_write;
 output 	period_l_wr_strobe1;
 output 	timeout_occurred1;
@@ -119534,7 +119584,7 @@ assign unknown = 1'b0;
 
 wire \internal_counter[0]~32_combout ;
 wire \period_l_register[0]~0_combout ;
-wire \Equal6~2_combout ;
+wire \Equal6~1_combout ;
 wire \period_l_wr_strobe~combout ;
 wire \period_l_register[0]~q ;
 wire \period_l_wr_strobe~3_combout ;
@@ -119624,7 +119674,7 @@ wire \Equal0~4_combout ;
 wire \internal_counter[15]~63 ;
 wire \internal_counter[16]~64_combout ;
 wire \period_h_register[0]~0_combout ;
-wire \Equal6~3_combout ;
+wire \Equal6~2_combout ;
 wire \period_h_wr_strobe~combout ;
 wire \period_h_register[0]~q ;
 wire \internal_counter[16]~q ;
@@ -119703,8 +119753,8 @@ wire \snap_strobe~0_combout ;
 wire \counter_snapshot[0]~q ;
 wire \counter_snapshot[16]~1_combout ;
 wire \counter_snapshot[16]~q ;
+wire \Equal6~3_combout ;
 wire \Equal6~4_combout ;
-wire \Equal6~5_combout ;
 wire \read_mux_out[0]~2_combout ;
 wire \read_mux_out[0]~3_combout ;
 wire \read_mux_out[0]~combout ;
@@ -119808,26 +119858,15 @@ defparam \read_mux_out~0 .lut_mask = 16'h3FFF;
 defparam \read_mux_out~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal6~0 (
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(W_alu_result_3),
-	.datad(W_alu_result_2),
-	.cin(gnd),
-	.combout(Equal6),
-	.cout());
-defparam \Equal6~0 .lut_mask = 16'h0FFF;
-defparam \Equal6~0 .sum_lutc_input = "datac";
-
-cycloneive_lcell_comb \Equal6~1 (
 	.dataa(W_alu_result_2),
 	.datab(gnd),
 	.datac(W_alu_result_4),
 	.datad(W_alu_result_3),
 	.cin(gnd),
-	.combout(Equal61),
+	.combout(Equal6),
 	.cout());
-defparam \Equal6~1 .lut_mask = 16'hAFFF;
-defparam \Equal6~1 .sum_lutc_input = "datac";
+defparam \Equal6~0 .lut_mask = 16'hAFFF;
+defparam \Equal6~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \period_l_wr_strobe~2 (
 	.dataa(hold_waitrequest),
@@ -120114,21 +120153,21 @@ cycloneive_lcell_comb \period_l_register[0]~0 (
 defparam \period_l_register[0]~0 .lut_mask = 16'h5555;
 defparam \period_l_register[0]~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal6~2 (
+cycloneive_lcell_comb \Equal6~1 (
 	.dataa(W_alu_result_3),
 	.datab(gnd),
 	.datac(W_alu_result_4),
 	.datad(W_alu_result_2),
 	.cin(gnd),
-	.combout(\Equal6~2_combout ),
+	.combout(\Equal6~1_combout ),
 	.cout());
-defparam \Equal6~2 .lut_mask = 16'hAFFF;
-defparam \Equal6~2 .sum_lutc_input = "datac";
+defparam \Equal6~1 .lut_mask = 16'hAFFF;
+defparam \Equal6~1 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb period_l_wr_strobe(
 	.dataa(uav_write),
 	.datab(period_l_wr_strobe1),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(wait_latency_counter_0),
 	.cin(gnd),
 	.combout(\period_l_wr_strobe~combout ),
@@ -120199,7 +120238,7 @@ defparam \always0~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb control_wr_strobe(
 	.dataa(uav_write),
-	.datab(Equal61),
+	.datab(Equal6),
 	.datac(period_l_wr_strobe1),
 	.datad(wait_latency_counter_0),
 	.cin(gnd),
@@ -121033,21 +121072,21 @@ cycloneive_lcell_comb \period_h_register[0]~0 (
 defparam \period_h_register[0]~0 .lut_mask = 16'h5555;
 defparam \period_h_register[0]~0 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal6~3 (
+cycloneive_lcell_comb \Equal6~2 (
 	.dataa(W_alu_result_3),
 	.datab(W_alu_result_2),
 	.datac(gnd),
 	.datad(W_alu_result_4),
 	.cin(gnd),
-	.combout(\Equal6~3_combout ),
+	.combout(\Equal6~2_combout ),
 	.cout());
-defparam \Equal6~3 .lut_mask = 16'hEEFF;
-defparam \Equal6~3 .sum_lutc_input = "datac";
+defparam \Equal6~2 .lut_mask = 16'hEEFF;
+defparam \Equal6~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb period_h_wr_strobe(
 	.dataa(uav_write),
 	.datab(period_l_wr_strobe1),
-	.datac(\Equal6~3_combout ),
+	.datac(\Equal6~2_combout ),
 	.datad(wait_latency_counter_0),
 	.cin(gnd),
 	.combout(\period_h_wr_strobe~combout ),
@@ -121368,25 +121407,25 @@ defparam \internal_counter[23] .is_wysiwyg = "true";
 defparam \internal_counter[23] .power_up = "low";
 
 cycloneive_lcell_comb \Equal0~6 (
-	.dataa(\internal_counter[20]~q ),
-	.datab(\internal_counter[21]~q ),
+	.dataa(gnd),
+	.datab(gnd),
 	.datac(\internal_counter[22]~q ),
 	.datad(\internal_counter[23]~q ),
 	.cin(gnd),
 	.combout(\Equal0~6_combout ),
 	.cout());
-defparam \Equal0~6 .lut_mask = 16'h7FFF;
+defparam \Equal0~6 .lut_mask = 16'h0FFF;
 defparam \Equal0~6 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \Equal0~7 (
 	.dataa(\Equal0~5_combout ),
 	.datab(\Equal0~6_combout ),
-	.datac(gnd),
-	.datad(gnd),
+	.datac(\internal_counter[20]~q ),
+	.datad(\internal_counter[21]~q ),
 	.cin(gnd),
 	.combout(\Equal0~7_combout ),
 	.cout());
-defparam \Equal0~7 .lut_mask = 16'hEEEE;
+defparam \Equal0~7 .lut_mask = 16'hEFFF;
 defparam \Equal0~7 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \internal_counter[24]~80 (
@@ -121771,8 +121810,8 @@ defparam \timeout_occurred~0 .lut_mask = 16'hEFFF;
 defparam \timeout_occurred~0 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[0]~1 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_l_register[0]~q ),
 	.datad(\period_h_register[0]~q ),
 	.cin(gnd),
@@ -121842,33 +121881,33 @@ dffeas \counter_snapshot[16] (
 defparam \counter_snapshot[16] .is_wysiwyg = "true";
 defparam \counter_snapshot[16] .power_up = "low";
 
-cycloneive_lcell_comb \Equal6~4 (
+cycloneive_lcell_comb \Equal6~3 (
 	.dataa(W_alu_result_4),
 	.datab(W_alu_result_2),
 	.datac(gnd),
 	.datad(W_alu_result_3),
 	.cin(gnd),
-	.combout(\Equal6~4_combout ),
+	.combout(\Equal6~3_combout ),
 	.cout());
-defparam \Equal6~4 .lut_mask = 16'hEEFF;
-defparam \Equal6~4 .sum_lutc_input = "datac";
+defparam \Equal6~3 .lut_mask = 16'hEEFF;
+defparam \Equal6~3 .sum_lutc_input = "datac";
 
-cycloneive_lcell_comb \Equal6~5 (
+cycloneive_lcell_comb \Equal6~4 (
 	.dataa(W_alu_result_4),
 	.datab(gnd),
 	.datac(W_alu_result_3),
 	.datad(W_alu_result_2),
 	.cin(gnd),
-	.combout(\Equal6~5_combout ),
+	.combout(\Equal6~4_combout ),
 	.cout());
-defparam \Equal6~5 .lut_mask = 16'hAFFF;
-defparam \Equal6~5 .sum_lutc_input = "datac";
+defparam \Equal6~4 .lut_mask = 16'hAFFF;
+defparam \Equal6~4 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[0]~2 (
 	.dataa(\counter_snapshot[0]~q ),
 	.datab(\counter_snapshot[16]~q ),
-	.datac(\Equal6~4_combout ),
-	.datad(\Equal6~5_combout ),
+	.datac(\Equal6~3_combout ),
+	.datad(\Equal6~4_combout ),
 	.cin(gnd),
 	.combout(\read_mux_out[0]~2_combout ),
 	.cout());
@@ -121877,7 +121916,7 @@ defparam \read_mux_out[0]~2 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[0]~3 (
 	.dataa(read_mux_out),
-	.datab(Equal61),
+	.datab(Equal6),
 	.datac(control_register_0),
 	.datad(timeout_occurred1),
 	.cin(gnd),
@@ -121898,9 +121937,9 @@ defparam \read_mux_out[0] .lut_mask = 16'hFEFE;
 defparam \read_mux_out[0] .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[1]~4 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[1]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[1]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[1]~4_combout ),
@@ -121948,8 +121987,8 @@ defparam \counter_snapshot[1] .is_wysiwyg = "true";
 defparam \counter_snapshot[1] .power_up = "low";
 
 cycloneive_lcell_comb \read_mux_out[1]~5 (
-	.dataa(\Equal6~5_combout ),
-	.datab(\Equal6~4_combout ),
+	.dataa(\Equal6~4_combout ),
+	.datab(\Equal6~3_combout ),
 	.datac(\counter_snapshot[17]~q ),
 	.datad(\counter_snapshot[1]~q ),
 	.cin(gnd),
@@ -121960,7 +121999,7 @@ defparam \read_mux_out[1]~5 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[1]~6 (
 	.dataa(read_mux_out),
-	.datab(Equal61),
+	.datab(Equal6),
 	.datac(\control_register[1]~q ),
 	.datad(\counter_is_running~q ),
 	.cin(gnd),
@@ -121981,9 +122020,9 @@ defparam \read_mux_out[1] .lut_mask = 16'hFEFE;
 defparam \read_mux_out[1] .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[2]~7 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[2]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[2]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[2]~7_combout ),
@@ -122031,8 +122070,8 @@ defparam \counter_snapshot[2] .is_wysiwyg = "true";
 defparam \counter_snapshot[2] .power_up = "low";
 
 cycloneive_lcell_comb \read_mux_out[2]~8 (
-	.dataa(\Equal6~5_combout ),
-	.datab(\Equal6~4_combout ),
+	.dataa(\Equal6~4_combout ),
+	.datab(\Equal6~3_combout ),
 	.datac(\counter_snapshot[18]~q ),
 	.datad(\counter_snapshot[2]~q ),
 	.cin(gnd),
@@ -122058,7 +122097,7 @@ defparam \control_register[2] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[2] (
 	.dataa(\read_mux_out[2]~7_combout ),
 	.datab(\read_mux_out[2]~8_combout ),
-	.datac(Equal61),
+	.datac(Equal6),
 	.datad(\control_register[2]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[2]~combout ),
@@ -122067,9 +122106,9 @@ defparam \read_mux_out[2] .lut_mask = 16'hFFFE;
 defparam \read_mux_out[2] .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[3]~9 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[3]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[3]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[3]~9_combout ),
@@ -122117,8 +122156,8 @@ defparam \counter_snapshot[3] .is_wysiwyg = "true";
 defparam \counter_snapshot[3] .power_up = "low";
 
 cycloneive_lcell_comb \read_mux_out[3]~10 (
-	.dataa(\Equal6~5_combout ),
-	.datab(\Equal6~4_combout ),
+	.dataa(\Equal6~4_combout ),
+	.datab(\Equal6~3_combout ),
 	.datac(\counter_snapshot[19]~q ),
 	.datad(\counter_snapshot[3]~q ),
 	.cin(gnd),
@@ -122144,7 +122183,7 @@ defparam \control_register[3] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[3] (
 	.dataa(\read_mux_out[3]~9_combout ),
 	.datab(\read_mux_out[3]~10_combout ),
-	.datac(Equal61),
+	.datac(Equal6),
 	.datad(\control_register[3]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[3]~combout ),
@@ -122153,9 +122192,9 @@ defparam \read_mux_out[3] .lut_mask = 16'hFFFE;
 defparam \read_mux_out[3] .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[4]~11 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[4]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[4]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[4]~11_combout ),
@@ -122216,7 +122255,7 @@ defparam \counter_snapshot[20] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[4]~13 (
 	.dataa(\read_mux_out[4]~11_combout ),
 	.datab(\read_mux_out~12_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[20]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[4]~13_combout ),
@@ -122225,8 +122264,8 @@ defparam \read_mux_out[4]~13 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[4]~13 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[5]~14 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[5]~q ),
 	.datad(\period_l_register[5]~q ),
 	.cin(gnd),
@@ -122277,7 +122316,7 @@ defparam \counter_snapshot[21] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[5]~16 (
 	.dataa(\read_mux_out[5]~14_combout ),
 	.datab(\read_mux_out~15_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[21]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[5]~16_combout ),
@@ -122286,8 +122325,8 @@ defparam \read_mux_out[5]~16 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[5]~16 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[6]~17 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[6]~q ),
 	.datad(\period_l_register[6]~q ),
 	.cin(gnd),
@@ -122338,7 +122377,7 @@ defparam \counter_snapshot[22] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[6]~19 (
 	.dataa(\read_mux_out[6]~17_combout ),
 	.datab(\read_mux_out~18_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[22]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[6]~19_combout ),
@@ -122347,9 +122386,9 @@ defparam \read_mux_out[6]~19 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[6]~19 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[7]~20 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[7]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[7]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[7]~20_combout ),
@@ -122410,7 +122449,7 @@ defparam \counter_snapshot[23] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[7]~22 (
 	.dataa(\read_mux_out[7]~20_combout ),
 	.datab(\read_mux_out~21_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[23]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[7]~22_combout ),
@@ -122419,9 +122458,9 @@ defparam \read_mux_out[7]~22 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[7]~22 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[15]~23 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[15]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[15]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[15]~23_combout ),
@@ -122482,7 +122521,7 @@ defparam \counter_snapshot[31] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[15]~25 (
 	.dataa(\read_mux_out[15]~23_combout ),
 	.datab(\read_mux_out~24_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[31]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[15]~25_combout ),
@@ -122491,8 +122530,8 @@ defparam \read_mux_out[15]~25 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[15]~25 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[14]~26 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[14]~q ),
 	.datad(\period_l_register[14]~q ),
 	.cin(gnd),
@@ -122543,7 +122582,7 @@ defparam \counter_snapshot[30] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[14]~28 (
 	.dataa(\read_mux_out[14]~26_combout ),
 	.datab(\read_mux_out~27_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[30]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[14]~28_combout ),
@@ -122552,8 +122591,8 @@ defparam \read_mux_out[14]~28 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[14]~28 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[13]~29 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[13]~q ),
 	.datad(\period_l_register[13]~q ),
 	.cin(gnd),
@@ -122604,7 +122643,7 @@ defparam \counter_snapshot[29] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[13]~31 (
 	.dataa(\read_mux_out[13]~29_combout ),
 	.datab(\read_mux_out~30_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[29]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[13]~31_combout ),
@@ -122613,8 +122652,8 @@ defparam \read_mux_out[13]~31 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[13]~31 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[12]~32 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[12]~q ),
 	.datad(\period_l_register[12]~q ),
 	.cin(gnd),
@@ -122665,7 +122704,7 @@ defparam \counter_snapshot[28] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[12]~34 (
 	.dataa(\read_mux_out[12]~32_combout ),
 	.datab(\read_mux_out~33_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[28]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[12]~34_combout ),
@@ -122674,8 +122713,8 @@ defparam \read_mux_out[12]~34 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[12]~34 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[11]~35 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[11]~q ),
 	.datad(\period_l_register[11]~q ),
 	.cin(gnd),
@@ -122726,7 +122765,7 @@ defparam \counter_snapshot[27] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[11]~37 (
 	.dataa(\read_mux_out[11]~35_combout ),
 	.datab(\read_mux_out~36_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[27]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[11]~37_combout ),
@@ -122735,9 +122774,9 @@ defparam \read_mux_out[11]~37 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[11]~37 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[10]~38 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[10]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[10]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[10]~38_combout ),
@@ -122798,7 +122837,7 @@ defparam \counter_snapshot[26] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[10]~40 (
 	.dataa(\read_mux_out[10]~38_combout ),
 	.datab(\read_mux_out~39_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[26]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[10]~40_combout ),
@@ -122807,9 +122846,9 @@ defparam \read_mux_out[10]~40 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[10]~40 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[9]~41 (
-	.dataa(\Equal6~3_combout ),
+	.dataa(\Equal6~2_combout ),
 	.datab(\period_h_register[9]~q ),
-	.datac(\Equal6~2_combout ),
+	.datac(\Equal6~1_combout ),
 	.datad(\period_l_register[9]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[9]~41_combout ),
@@ -122870,7 +122909,7 @@ defparam \counter_snapshot[25] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[9]~43 (
 	.dataa(\read_mux_out[9]~41_combout ),
 	.datab(\read_mux_out~42_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[25]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[9]~43_combout ),
@@ -122879,8 +122918,8 @@ defparam \read_mux_out[9]~43 .lut_mask = 16'hFFFE;
 defparam \read_mux_out[9]~43 .sum_lutc_input = "datac";
 
 cycloneive_lcell_comb \read_mux_out[8]~44 (
-	.dataa(\Equal6~2_combout ),
-	.datab(\Equal6~3_combout ),
+	.dataa(\Equal6~1_combout ),
+	.datab(\Equal6~2_combout ),
 	.datac(\period_h_register[8]~q ),
 	.datad(\period_l_register[8]~q ),
 	.cin(gnd),
@@ -122931,7 +122970,7 @@ defparam \counter_snapshot[24] .power_up = "low";
 cycloneive_lcell_comb \read_mux_out[8]~46 (
 	.dataa(\read_mux_out[8]~44_combout ),
 	.datab(\read_mux_out~45_combout ),
-	.datac(\Equal6~4_combout ),
+	.datac(\Equal6~3_combout ),
 	.datad(\counter_snapshot[24]~q ),
 	.cin(gnd),
 	.combout(\read_mux_out[8]~46_combout ),

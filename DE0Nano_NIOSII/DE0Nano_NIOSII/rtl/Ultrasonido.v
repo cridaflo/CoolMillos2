@@ -29,6 +29,7 @@ initial estado = 1'b0;
 initial contador1 = 4'h0000;
 initial contador2 = 4'h0000;
 always @(posedge Ultrasonido_Clock)
+begin
 if(estado == 1'b0)
 begin
 contador1 = contador1 + 1;
@@ -41,12 +42,16 @@ contador2 = contador2 + 1;
 contador1 = 4'h0000;
 Ultrasonido_Trigger_Out = 1'b0;
 end
+end
+
 always @(negedge Ultrasonido_Clock)
+begin
 if(contador1 == 4'h01FF)
 estado = 1'b1;
-else if(Ultrasonido_Echo_In == 0 & contador2 != 4'h0000)
+else if(Ultrasonido_Echo_In == 1 & contador2 != 4'h0000)
 begin
 estado = 1'b0;
 Ultrasonido_Conteo_Out = contador2;
 end 
+end
 endmodule

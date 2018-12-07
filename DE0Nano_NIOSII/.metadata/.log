@@ -1,0 +1,38 @@
+!SESSION 2018-12-07 15:28:17.163 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/quartus/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/quartus/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 15:31:37.562
+!MESSAGE Indexed 'Primer_intento_bsp' (89 sources, 77 headers) in 2,17 sec: 1.521 declarations; 3.856 references; 130 unresolved inclusions; 6 syntax errors; 240 unresolved names (4,3 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 15:31:40.103
+!MESSAGE Indexed 'Primer_intento' (1 sources, 21 headers) in 0,144 sec: 983 declarations; 1.599 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+!SESSION 2018-12-07 16:10:30.081 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/quartus/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization D:/quartus/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 16:16:26.869
+!MESSAGE Indexed 'Segundo_intento_bsp' (89 sources, 65 headers) in 1,63 sec: 1.377 declarations; 3.660 references; 127 unresolved inclusions; 4 syntax errors; 239 unresolved names (4,5 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 16:16:29.658
+!MESSAGE Indexed 'Segundo_intento' (1 sources, 0 headers) in 0,008 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 16:32:24.791
+!MESSAGE Indexed 'Tercer_intento_bsp' (89 sources, 77 headers) in 1 sec: 1.521 declarations; 3.856 references; 130 unresolved inclusions; 6 syntax errors; 240 unresolved names (4,3 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-07 16:32:26.937
+!MESSAGE Indexed 'Tercer_intento' (1 sources, 0 headers) in 0,007 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-12-07 16:33:11.805
+!MESSAGE Executing: [D:/quartus/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x4002090 --id=0x0 --timestamp=1544217955]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-12-07 16:33:14.468
+!MESSAGE Executing: [D:/quartus/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x4002090 --id=0x0 --timestamp=1544217955 /cygdrive/d/tareas/arquitectura/proyectos/proyecto3/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/software/Tercer_intento/Tercer_intento.elf]

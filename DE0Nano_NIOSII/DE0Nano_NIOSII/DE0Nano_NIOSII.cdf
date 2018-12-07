@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/TEMP.UANDES/Documents/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/") File("DE0Nano_NIOSII.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("D:/tareas/arquitectura/proyectos/proyecto3/CoolMillos2/DE0Nano_NIOSII/DE0Nano_NIOSII/") File("DE0Nano_NIOSII.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

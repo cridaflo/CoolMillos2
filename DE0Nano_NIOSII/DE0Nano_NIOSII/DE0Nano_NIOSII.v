@@ -132,18 +132,29 @@ wire [7:0] LED_fake;
 wire [7:0] LED_fake2;
 wire [7:0] LED_fake3;
 wire [33:0] GPIO_0_fake;
-
+wire [7:0]fila_1,fila_2,fila_3,fila_4,fila_5,fila_6,fila_7,fila_8,max_in;
+wire [2:0]act_add;
+wire [15:0] sal_Ultra;
+wire [7:0]conteo_piso;
 //=======================================================
 //  Structural coding
 //=======================================================
-moduloEstadoInfrarojo #(.TIMEOUT(32768)) u1(
+
+Ultrasonido#(.DATAWIDTH(16)) u7( 
+ .Ultrasonido_Conteo_Out(sal_Ultra),
+ .Ultrasonido_Trigger_Out(GPIO_0[8]),
+ .Ultrasonido_Clock (CLOCK_50), 
+ .Ultrasonido_Echo_In(GPIO_0[9])
+ ) ;
+
+moduloEstadoInfrarojo #(.TIMEOUT(100)) u1(
          .reset(~KEY[0]),
 			.clock(CLOCK_50),
 			.inSignal(GPIO_0[0]),
 			.outSignal(GPIO_0[1]),
-			.conteo(LED),
+			.conteo(conteo_piso),
 			.contadorOut(LED_fake2),
-			.hayNegro(LED_fake3[0])
+			.hayNegro(LED_fake[1])
 );
     niosII u0 (
         .clk_clk            (CLOCK_50),            //         clk.clk
@@ -152,7 +163,7 @@ moduloEstadoInfrarojo #(.TIMEOUT(32768)) u1(
         .rs232_0_TXD        (GPIO_0_fake[32]),        //            .TXD
         .rs232_1_RXD        (GPIO_0_IN[1]),        //     rs232_1.RXD
         .rs232_1_TXD        (GPIO_0_fake[33]),         //            .TXD
-        .port_led_export    (LED_fake),    					//    port_led.export
+        .port_led_export    (LED_fake3),    					//    port_led.export
         .port_key_export    (KEY),    					//    port_key.export
         .port_sw_export     (SW),     					//     port_sw.export
         .port_gpio_0_export (GPIO_0_fake[31:0]), 			// port_gpio_0.export
@@ -177,5 +188,60 @@ moduloEstadoInfrarojo #(.TIMEOUT(32768)) u1(
 
     );
 
-
+matrix_ctrl u3(
+    .clk(CLOCK_50),
+	 .reset(~KEY[0]),
+    .disp_data(max_in),
+    .intensity(4'b0101),
+    .disp_addr(act_add),
+    .max7219_din(GPIO_0[5]),
+	 .max7219_ncs(GPIO_0[6]),
+	 .max7219_clk(GPIO_0[7]) 
+    );
+Matriz#(.DATAWIDTH(8)) u4( 
+ // / / / / / / / / / / OUTPUTS / / / / / / / / / / 
+ .Matriz_Fila1_Out(fila_1),
+ .Matriz_Fila2_Out(fila_2),
+ .Matriz_Fila3_Out(fila_3),
+ .Matriz_Fila4_Out(fila_4),
+ .Matriz_Fila5_Out(fila_5),
+ .Matriz_Fila6_Out(fila_6),
+ .Matriz_Fila7_Out(fila_7),
+ .Matriz_Fila8_Out(fila_8), 
+ // / / / / / / / / / / INPUTS / / / / / / / / / / 
+ .Matriz_Izq2_In(8'b00000000),
+ .Matriz_Izq1_In(LED_fake),
+ .Matriz_Der1_In(8'b00000000),
+ .Matriz_Der2_In(conteo_piso)
+ );
+imagen u5(
+    .act_add(act_add),
+	 .fila_1(fila_1), 
+	 .fila_2(fila_2), 
+	 .fila_3(fila_3), 
+	 .fila_4(fila_4), 
+	 .fila_5(fila_5), 
+	 .fila_6(fila_6), 
+	 .fila_7(fila_7), 
+	 .fila_8(fila_8),
+    .max_in(max_in)
+    );
+moduloPWM u6(
+.reset(KEY[0]),
+.clock(CLOCK_50),
+.inPWM(8'b10000000),
+.outPWM(GPIO_0[10])
+);
+Leds #(.TIEMPO(50000000)) u8(
+.reset(~KEY[0]),
+.clock(CLOCK_50),
+.salida(LED_fake[7])
+);
+Leds #(.TIEMPO(25000000)) u9(
+.reset(~KEY[0]),
+.clock(CLOCK_50),
+.salida(LED_fake[6])
+);
+assign LED_fake[0] = ~LED_fake[1];
+assign LED = sal_Ultra[7:0];
 endmodule

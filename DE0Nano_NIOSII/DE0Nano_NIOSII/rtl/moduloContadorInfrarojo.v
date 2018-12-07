@@ -4,6 +4,7 @@ module moduloContadorInfrarojo #(parameter TIMEOUT = 2000)(reset, clock, inSigna
 input reset;//Reset
 input clock;//Clock
 input inSignal;
+reg [5:0] conteoNegro;
 output reg outSignal=0;
 output reg hayNegro=0;
 //REGS
@@ -20,6 +21,7 @@ begin
 			contador=0;
 			outSignal=0;
 			hayNegro=0;
+			conteoNegro =0;
 		end
 	else
 	begin
@@ -33,6 +35,7 @@ begin
 					end
 				else
 					begin
+						
 						contador=contador+1;
 						outSignal=1;
 					end
@@ -44,12 +47,15 @@ begin
 					estado=0;
 					contador=5'h00000;
 					hayNegro=0;
+					//conteoNegro = 0;
 					end
 				else if(contador>TIMEOUT)
 					begin
 					estado=0;
 					contador=5'h00000;
-					hayNegro=1;
+					//conteoNegro=conteoNegro +1;
+					//if (conteoNegro[3]==1)
+					//	hayNegro = 1;
 					end
 				else
 					contador=contador+1;

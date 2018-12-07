@@ -1,0 +1,1102 @@
+Archive member included to satisfy reference by file (symbol)
+
+../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+                              ../Tercer_intento_bsp//obj/HAL/src/crt0.o (alt_main)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_epcs_flash_init)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_up_rs232_read_fd)
+../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o) (epcs_sector_erase)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (close)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (_do_ctors)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (_do_dtors)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o) (alt_find_dev)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o) (alt_flash_dev_list)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_irq_register)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_active)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o) (alt_avalon_spi_command)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_entry)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (atexit)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o) (exit)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                              d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_global_impure_ptr)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o) (errno)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o) (memcmp)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                              d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o) (__register_exitproc)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                              d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (__call_exitprocs)
+d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o) (__mulsi3)
+../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+                              d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sdram_BEFORE_EXCEPTION 0x0000000002000000 0x0000000000000020
+sdram            0x0000000002000020 0x0000000001ffffe0
+reset            0x0000000004001000 0x0000000000000020
+epcs             0x0000000004001020 0x00000000000007e0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+START GROUP
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+LOAD ../Tercer_intento_bsp/\libhal_bsp.a
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+                0x0000000002000000                __alt_mem_sdram = 0x2000000
+                0x0000000004001000                __alt_mem_epcs = 0x4001000
+
+.entry          0x0000000004001000        0x0
+ *(.entry)
+ .entry         0x0000000004001000        0x0 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+                0x0000000004001000                __reset
+
+.exceptions     0x0000000002000020      0x214
+                [!provide]                        PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000002000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000002000020        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000002000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000002000020        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000002000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000002000020       0x54 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000002000074       0x10 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000002000084        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000002000088        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000200008c        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000200008c        0x8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000002000094       0x14 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000020000a8        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000020000a8        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000020000a8       0x54 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000020000fc       0xd8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000020000fc                alt_irq_handler
+ .exceptions    0x00000000020001d4       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000020001d4                alt_instruction_exception_entry
+                [!provide]                        PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000002000234     0x3998
+                [!provide]                        PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000002000234       0x38 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+                0x0000000002000234                _start
+ .text          0x000000000200026c       0x94 obj/default/hello_world.o
+                0x000000000200026c                main
+ .text          0x0000000002000300       0x7c ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000002000300                alt_main
+ .text          0x000000000200037c      0x130 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000000020003b0                alt_irq_init
+                0x00000000020003e8                alt_sys_init
+ .text          0x00000000020004ac      0xafc ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                0x00000000020004e0                alt_epcs_flash_init
+                0x0000000002000a18                alt_epcs_flash_write
+                0x0000000002000c78                alt_epcs_flash_get_info
+                0x0000000002000d98                alt_epcs_flash_erase_block
+                0x0000000002000e10                alt_epcs_flash_write_block
+                0x0000000002000f10                alt_epcs_flash_read
+ .text          0x0000000002000fa8      0x164 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x0000000002000fa8                altera_avalon_jtag_uart_read_fd
+                0x0000000002001008                altera_avalon_jtag_uart_write_fd
+                0x0000000002001068                altera_avalon_jtag_uart_close_fd
+                0x00000000020010b8                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x000000000200110c      0x3cc ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x000000000200110c                altera_avalon_jtag_uart_init
+                0x0000000002001470                altera_avalon_jtag_uart_close
+ .text          0x00000000020014d8       0xf0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x00000000020014d8                altera_avalon_jtag_uart_ioctl
+ .text          0x00000000020015c8      0x21c ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00000000020015c8                altera_avalon_jtag_uart_read
+ .text          0x00000000020017e4      0x224 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00000000020017e4                altera_avalon_jtag_uart_write
+ .text          0x0000000002001a08       0xf0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000002001a84                alt_avalon_timer_sc_init
+ .text          0x0000000002001af8      0x390 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                0x0000000002001af8                alt_up_rs232_enable_read_interrupt
+                0x0000000002001b54                alt_up_rs232_disable_read_interrupt
+                0x0000000002001bb4                alt_up_rs232_get_used_space_in_read_FIFO
+                0x0000000002001bf4                alt_up_rs232_get_available_space_in_write_FIFO
+                0x0000000002001c30                alt_up_rs232_check_parity
+                0x0000000002001c74                alt_up_rs232_write_data
+                0x0000000002001cb4                alt_up_rs232_read_data
+                0x0000000002001d28                alt_up_rs232_read_fd
+                0x0000000002001db8                alt_up_rs232_write_fd
+                0x0000000002001e4c                alt_up_rs232_open_dev
+ .text          0x0000000002001e88      0x63c ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+                0x0000000002001e88                epcs_read_status_register
+                0x0000000002001f58                epcs_sector_erase
+                0x0000000002002054                epcs_read_buffer
+                0x0000000002002148                epcs_write_enable
+                0x000000000200219c                epcs_write_status_register
+                0x0000000002002208                epcs_write_buffer
+                0x0000000002002324                epcs_read_electronic_signature
+                0x000000000200238c                epcs_read_device_id
+                0x000000000200240c                epcs_enter_4_bytes_mode
+                0x0000000002002468                epcs_exit_4_bytes_mode
+ .text          0x00000000020024c4      0x12c ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x00000000020024c4                alt_alarm_start
+ .text          0x00000000020025f0      0x114 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+                0x000000000200262c                close
+ .text          0x0000000002002704       0x2c ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000002002730       0xe0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x000000000200276c                alt_dev_llist_insert
+ .text          0x0000000002002810       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x0000000002002810                _do_ctors
+ .text          0x0000000002002870       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x0000000002002870                _do_dtors
+ .text          0x00000000020028d0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00000000020028d0       0x90 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x00000000020028d0                alt_find_dev
+ .text          0x0000000002002960       0xbc ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                0x0000000002002960                alt_flash_open_dev
+                0x00000000020029c8                alt_flash_close_dev
+ .text          0x0000000002002a1c      0x160 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000000002002b00                alt_io_redirect
+ .text          0x0000000002002b7c      0x180 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x0000000002002b7c                alt_irq_register
+ .text          0x0000000002002cfc        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000002002cfc      0x284 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000000002002e24                open
+ .text          0x0000000002002f80       0x84 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000000002002f80                alt_release_fd
+ .text          0x0000000002003004      0x1a4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000002003004                alt_alarm_stop
+                0x00000000020030a0                alt_tick
+ .text          0x00000000020031a8       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00000000020031a8                altera_nios2_gen2_irq_init
+ .text          0x00000000020031cc      0x1fc ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                0x00000000020031cc                alt_avalon_spi_command
+ .text          0x00000000020033c8      0x108 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x00000000020033c8                alt_find_file
+ .text          0x00000000020034d0       0xc4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x00000000020034d0                alt_get_fd
+ .text          0x0000000002003594        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000002003594        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000002003594        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000002003594       0x9c ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000002003594                alt_exception_cause_generated_bad_addr
+ .text          0x0000000002003630        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .text.atexit   0x0000000002003630       0x14 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                0x0000000002003630                atexit
+ .text          0x0000000002003644        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .text.exit     0x0000000002003644       0x38 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                0x0000000002003644                exit
+ .text          0x000000000200367c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .text          0x000000000200367c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .text          0x000000000200367c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x000000000200367c       0x7c d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                0x000000000200367c                memcmp
+ .text          0x00000000020036f8        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x00000000020036f8      0x148 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                0x00000000020036f8                memcpy
+ .text          0x0000000002003840        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000002003840       0x98 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                0x0000000002003840                strlen
+ .text          0x00000000020038d8        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x00000000020038d8      0x118 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                0x00000000020038d8                __register_exitproc
+ .text          0x00000000020039f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000020039f0      0x180 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                0x00000000020039f0                __call_exitprocs
+ .text          0x0000000002003b70       0x28 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x0000000002003b70                __mulsi3
+ .text          0x0000000002003b98       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0000000002003b98                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000002003bcc                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x0000000002003bcc                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x0000000002003bcc                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0000000002003bcc                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0000000002003bcc                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0000000002003bcc                . = ALIGN (0x4)
+
+.rodata         0x0000000002003bcc       0xa4
+                [!provide]                        PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000000002003bcc                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000002003bcc        0xa ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ *fill*         0x0000000002003bd6        0x2 
+ .rodata        0x0000000002003bd8       0x85 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x0000000002003c5d        0x3 
+ .rodata        0x0000000002003c60        0xa ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ *fill*         0x0000000002003c6a        0x2 
+ .rodata.str1.4
+                0x0000000002003c6c        0x4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                                          0x2 (size before relaxing)
+ *(.rodata1)
+                0x0000000002003c70                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000002003c70     0x1860
+                [!provide]                        PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000002003c70                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000002003c70        0x0 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000002003c70        0x0 obj/default/hello_world.o
+ .data          0x0000000002003c70        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000002003c70     0x1260 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0000000002004ed0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x0000000002004ed0      0x1a8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000002004ed0                alt_dev_null
+                0x0000000002004ef8                alt_fd_list
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000002005078        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000002005078        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .data          0x0000000002005078        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .data          0x0000000002005078        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000002005078      0x424 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .data          0x000000000200549c        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x000000000200549c        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+                0x000000000200d49c                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000000000200549c       0x14 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+                0x000000000200549c                alt_fs_list
+                0x00000000020054a4                alt_dev_list
+                0x00000000020054ac                alt_max_fd
+ .sdata         0x00000000020054b0        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00000000020054b0                alt_errno
+ .sdata         0x00000000020054b4        0x8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                0x00000000020054b4                alt_flash_dev_list
+ .sdata         0x00000000020054bc        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000020054bc                alt_priority_mask
+ .sdata         0x00000000020054c0        0x8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00000000020054c0                alt_alarm_list
+ .sdata._global_impure_ptr
+                0x00000000020054c8        0x4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                0x00000000020054c8                _global_impure_ptr
+ .sdata._impure_ptr
+                0x00000000020054cc        0x4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                0x00000000020054cc                _impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00000000020054d0                . = ALIGN (0x4)
+                0x00000000020054d0                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00000000020054d0      0x120
+                0x00000000020054d0                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00000000020054d0        0xc ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000020054d0                alt_argc
+                0x00000000020054d4                alt_argv
+                0x00000000020054d8                alt_envp
+ .sbss          0x00000000020054dc        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000020054dc                alt_irq_active
+ .sbss          0x00000000020054e0        0x8 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00000000020054e0                _alt_tick_rate
+                0x00000000020054e4                _alt_nticks
+ .sbss          0x00000000020054e8        0x4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000020054e8                alt_instruction_exception_handler
+ .sbss          0x00000000020054ec        0x4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                0x00000000020054ec                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .bss           0x00000000020054f0        0x0 obj/default/hello_world.o
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000020054f0        0x0 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x00000000020054f0        0x0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x00000000020054f0      0x100 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000020054f0                alt_irq
+                0x00000000020055f0                . = ALIGN (0x4)
+                0x00000000020055f0                __bss_end = ABSOLUTE (.)
+
+.sdram          0x00000000020055f0        0x0
+                [!provide]                        PROVIDE (_alt_partition_sdram_start, ABSOLUTE (.))
+ *(.sdram .sdram. sdram.*)
+                0x00000000020055f0                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_sdram_end, ABSOLUTE (.))
+                0x00000000020055f0                _end = ABSOLUTE (.)
+                0x00000000020055f0                end = ABSOLUTE (.)
+                0x00000000020055f0                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_sdram_load_addr, LOADADDR (.sdram))
+
+.epcs           0x0000000004001020        0x0
+                [!provide]                        PROVIDE (_alt_partition_epcs_start, ABSOLUTE (.))
+ *(.epcs .epcs. epcs.*)
+                0x0000000004001020                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_epcs_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_epcs_load_addr, LOADADDR (.epcs))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/hello_world.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000023       0x24 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x0000000000000023       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x5f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000020       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x0000000000000040       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000060       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000080       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x0000000000000100       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000120       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000140       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x0000000000000160       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_aranges
+                0x0000000000000180       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x0000000000000200       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x0000000000000220       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x0000000000000240       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x0000000000000260       0x18 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000278       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x0000000000000298       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_aranges
+                0x00000000000002b8       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000000000002d8       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_aranges
+                0x00000000000002f8       0x18 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x0000000000000310       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x0000000000000330       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x0000000000000350       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x0000000000000370       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000390       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_aranges
+                0x00000000000003b0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000000000003d0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000000000003f0       0x30 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000420       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000440       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000478       0x28 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x00000000000004a0       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000000000004c0       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000000000004e0       0x18 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000004f8       0x18 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000510       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x0000000000000530       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000550       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000570       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000590       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x00000000000005b0       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x00000000000005d0       0x20 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x906c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0xa9 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000000000000a9       0xec obj/default/hello_world.o
+ .debug_info    0x0000000000000195      0x157 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000002ec      0x8ed ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000000bd9      0x872 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_info    0x000000000000144b      0x52e ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0000000000001979      0x3c3 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x0000000000001d3c      0x280 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000000000001fbc      0x35b ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000002317      0x356 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x000000000000266d      0x249 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x00000000000028b6      0x568 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_info    0x0000000000002e1e      0x44f ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_info    0x000000000000326d      0x2e2 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x000000000000354f      0x321 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000000000003870      0x49c ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000003d0c      0x1a9 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0000000000003eb5       0x83 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000000000003f38       0x83 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x0000000000003fbb       0xa6 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000004061      0x2e9 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x000000000000434a      0x3d7 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_info    0x0000000000004721      0x4a5 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000000000004bc6      0x329 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0000000000004eef       0x88 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000004f77      0x3bb ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000000000005332      0x2b0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00000000000055e2      0x2af ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000000000005891       0xb8 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000005949      0x18d ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_info    0x0000000000005ad6      0x2e6 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000000000005dbc      0x310 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00000000000060cc       0xae ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000000000000617a      0x1a7 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000006321       0xb4 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00000000000063d5      0x1e7 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00000000000065bc       0xfe d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_info    0x00000000000066ba      0x8e4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000006f9e      0x8a1 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_info    0x000000000000783f       0x8a d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000078c9      0x11a d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000079e3      0x144 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000007b27       0xe2 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000007c09      0x934 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_info    0x000000000000853d      0x965 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000008ea2       0xb4 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000008f56      0x116 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x2ea6
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000014       0x74 obj/default/hello_world.o
+ .debug_abbrev  0x0000000000000088       0xc1 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000000149      0x190 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000000000002d9      0x1c9 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_abbrev  0x00000000000004a2      0x127 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x00000000000005c9      0x19e ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x0000000000000767      0x111 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x0000000000000878      0x1aa ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x0000000000000a22      0x1a8 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000000000000bca      0x155 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000000d1f      0x135 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_abbrev  0x0000000000000e54      0x169 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_abbrev  0x0000000000000fbd      0x162 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x000000000000111f      0x11f ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x000000000000123e       0xd9 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000001317      0x114 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x000000000000142b       0x79 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x00000000000014a4       0x79 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x000000000000151d       0x5a ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000001577       0xf0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000000000001667      0x11a ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_abbrev  0x0000000000001781      0x114 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000000000001895      0x186 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x0000000000001a1b       0x40 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000001a5b      0x148 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x0000000000001ba3       0xde ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x0000000000001c81      0x16b ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000001dec       0x67 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000001e53       0x8a ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_abbrev  0x0000000000001edd       0xf0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000000000001fcd      0x10d ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00000000000020da       0x12 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000000000020ec      0x13a ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000002226       0x12 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000002238       0xdc ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000002314       0xaa d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x00000000000023be      0x1e5 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x00000000000025a3      0x18f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000002732       0x37 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000002769       0x7f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00000000000027e8       0xa3 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000000000000288b       0x90 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000000000000291b      0x21e d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000002b39      0x22e d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000002d67       0x6f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x0000000000002dd6       0xd0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x0000000000000000     0x3155
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x51 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000051       0x4b obj/default/hello_world.o
+ .debug_line    0x000000000000009c       0xd1 ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000000000000016d      0x219 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000000386      0x2c7 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_line    0x000000000000064d      0x12f ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x000000000000077c      0x19f ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x000000000000091b      0x131 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x0000000000000a4c      0x185 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000000bd1      0x184 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000000d55      0x113 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000000e68      0x13e ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_line    0x0000000000000fa6      0x113 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_line    0x00000000000010b9      0x10d ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x00000000000011c6      0x159 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x000000000000131f       0xec ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x000000000000140b       0xcf ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000000000014da       0x59 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x0000000000001533       0x59 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x000000000000158c       0x51 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000015dd       0xb5 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000000000001692       0xde ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_line    0x0000000000001770      0x129 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000000000001899      0x155 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x00000000000019ee       0x50 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000001a3e      0x12b ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000000000001b69       0xb0 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000000000001c19      0x113 ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000001d2c       0x8d ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000001db9       0xb7 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_line    0x0000000000001e70       0xd1 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000000000001f41       0xd7 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000000000002018       0x6b ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000002083       0xcd ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000002150       0xb3 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000002203       0xb9 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x00000000000022bc       0xe7 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_line    0x00000000000023a3      0x1fc d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_line    0x000000000000259f      0x160 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+ .debug_line    0x00000000000026ff       0x5f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+ .debug_line    0x000000000000275e      0x176 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_line    0x00000000000028d4      0x18c d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000002a60      0x16f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000002bcf      0x21f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000002dee      0x23a d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000003028       0x80 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x00000000000030a8       0xad ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x0000000000000000      0xf3c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x2c obj/default/hello_world.o
+ .debug_frame   0x000000000000002c       0x2c ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000058       0x88 ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000000e0      0x198 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_frame   0x0000000000000278       0xb0 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x0000000000000328       0xa4 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x00000000000003cc       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x0000000000000400       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x0000000000000438       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000000000000470       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x00000000000004d0      0x188 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_frame   0x0000000000000658      0x1f0 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_frame   0x0000000000000848       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x000000000000087c       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000000000008dc       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000910       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x0000000000000970       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x00000000000009a8       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x00000000000009e0       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x0000000000000a18       0x60 ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_frame   0x0000000000000a78       0x64 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x0000000000000adc       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_frame   0x0000000000000b10       0x8c ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x0000000000000b9c       0x3c ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000000000000bd8       0x5c ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000000000000c34       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000c68       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_frame   0x0000000000000c9c       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x0000000000000cd4       0x3c ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000000000000d10       0x38 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000d48       0x5c ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000000000000da4       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000dc4       0x28 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000dec       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000000e0c       0x38 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000e44       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000e64       0x38 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000e9c       0x54 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000ef0       0x20 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x0000000000000f10       0x2c ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x0000000000000000     0x222d
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x131 obj/default/hello_world.o
+                                        0x17a (size before relaxing)
+ .debug_str     0x0000000000000131      0x10a ../Tercer_intento_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1fd (size before relaxing)
+ .debug_str     0x000000000000023b      0x3ac ../Tercer_intento_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x5f3 (size before relaxing)
+ .debug_str     0x00000000000005e7      0x220 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                                        0x592 (size before relaxing)
+ .debug_str     0x0000000000000807       0xb2 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                        0x3db (size before relaxing)
+ .debug_str     0x00000000000008b9       0xd1 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                                        0x390 (size before relaxing)
+ .debug_str     0x000000000000098a       0x4a ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                                        0x2ca (size before relaxing)
+ .debug_str     0x00000000000009d4       0x7f ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x340 (size before relaxing)
+ .debug_str     0x0000000000000a53       0x4a ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x341 (size before relaxing)
+ .debug_str     0x0000000000000a9d       0x6d ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                                        0x2a3 (size before relaxing)
+ .debug_str     0x0000000000000b0a      0x182 ../Tercer_intento_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                                        0x3a3 (size before relaxing)
+ .debug_str     0x0000000000000c8c      0x178 ../Tercer_intento_bsp/\libhal_bsp.a(epcs_commands.o)
+                                        0x316 (size before relaxing)
+ .debug_str     0x0000000000000e04       0x59 ../Tercer_intento_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                                        0x2d6 (size before relaxing)
+ .debug_str     0x0000000000000e5d       0x44 ../Tercer_intento_bsp/\libhal_bsp.a(alt_close.o)
+                                        0x242 (size before relaxing)
+ .debug_str     0x0000000000000ea1      0x119 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x33c (size before relaxing)
+ .debug_str     0x0000000000000fba       0x34 ../Tercer_intento_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                        0x203 (size before relaxing)
+ .debug_str     0x0000000000000fee       0x48 ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                                        0x107 (size before relaxing)
+ .debug_str     0x0000000000001036       0x4c ../Tercer_intento_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                                        0x106 (size before relaxing)
+ .debug_str     0x0000000000001082       0x14 ../Tercer_intento_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x17c (size before relaxing)
+ .debug_str     0x0000000000001096       0x24 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                        0x223 (size before relaxing)
+ .debug_str     0x00000000000010ba       0x3f ../Tercer_intento_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                                        0x342 (size before relaxing)
+ .debug_str     0x00000000000010f9       0x56 ../Tercer_intento_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                        0x34d (size before relaxing)
+ .debug_str     0x000000000000114f       0x70 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_register.o)
+                                        0x23f (size before relaxing)
+ .debug_str     0x00000000000011bf       0x17 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x171 (size before relaxing)
+ .debug_str     0x00000000000011d6       0x29 ../Tercer_intento_bsp/\libhal_bsp.a(alt_open.o)
+                                        0x282 (size before relaxing)
+ .debug_str     0x00000000000011ff       0x28 ../Tercer_intento_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                        0x20a (size before relaxing)
+ .debug_str     0x0000000000001227       0x4a ../Tercer_intento_bsp/\libhal_bsp.a(alt_tick.o)
+                                        0x2aa (size before relaxing)
+ .debug_str     0x0000000000001271       0x3b ../Tercer_intento_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x1bc (size before relaxing)
+ .debug_str     0x00000000000012ac       0x90 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                                        0x217 (size before relaxing)
+ .debug_str     0x000000000000133c       0x26 ../Tercer_intento_bsp/\libhal_bsp.a(alt_find_file.o)
+                                        0x231 (size before relaxing)
+ .debug_str     0x0000000000001362       0x30 ../Tercer_intento_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                        0x253 (size before relaxing)
+ .debug_str     0x0000000000001392       0x3a ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x1ef (size before relaxing)
+ .debug_str     0x00000000000013cc      0x48b ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5d7 (size before relaxing)
+ .debug_str     0x0000000000001857      0x17c d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+                                        0x221 (size before relaxing)
+ .debug_str     0x00000000000019d3      0x3a7 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+                                        0x5be (size before relaxing)
+ .debug_str     0x0000000000001d7a       0xd6 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-impure.o)
+                                        0x5b5 (size before relaxing)
+ .debug_str     0x0000000000001e50       0x3f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-int_errno.o)
+                                        0x1dd (size before relaxing)
+ .debug_str     0x0000000000001e8f       0xcc d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+                                        0x1e4 (size before relaxing)
+ .debug_str     0x0000000000001f5b       0x6b d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+                                        0x20b (size before relaxing)
+ .debug_str     0x0000000000001fc6       0x51 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+                                        0x1f7 (size before relaxing)
+ .debug_str     0x0000000000002017       0x3f d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+                                        0x5f6 (size before relaxing)
+ .debug_str     0x0000000000002056       0x65 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+                                        0x5e2 (size before relaxing)
+ .debug_str     0x00000000000020bb      0x148 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                        0x193 (size before relaxing)
+ .debug_str     0x0000000000002203       0x2a ../Tercer_intento_bsp/\libhal_bsp.a(alt_exit.o)
+                                        0x1b1 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x803
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x2c d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_loc     0x000000000000002c       0x1e d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_loc     0x000000000000004a      0x126 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_loc     0x0000000000000170      0x266 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_loc     0x00000000000003d6       0x47 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_loc     0x000000000000041d      0x185 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_loc     0x00000000000005a2      0x1ce d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x0000000000000770       0x93 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../Tercer_intento_bsp//obj/HAL/src/crt0.o
+                0x0000000004000000                __alt_data_end = 0x4000000
+                0x0000000004000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit, __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start, end)
+                [!provide]                        PROVIDE (__alt_heap_limit, 0x4000000)
+OUTPUT(Tercer_intento.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x158
+ .debug_ranges  0x0000000000000000       0x30 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_ranges  0x0000000000000030       0x18 ../Tercer_intento_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x0000000000000048       0x28 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000070       0x10 ../Tercer_intento_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x0000000000000080       0x30 ../Tercer_intento_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000000000000b0       0x18 ../Tercer_intento_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x00000000000000c8       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-atexit.o)
+ .debug_ranges  0x00000000000000d8       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-exit.o)
+ .debug_ranges  0x00000000000000e8       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcmp.o)
+ .debug_ranges  0x00000000000000f8       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000108       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-strlen.o)
+ .debug_ranges  0x0000000000000118       0x10 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__atexit.o)
+ .debug_ranges  0x0000000000000128       0x30 d:/quartus/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libc.a(lib_a-__call_atexit.o)
